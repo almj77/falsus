@@ -1,0 +1,922 @@
+﻿[
+  {
+    "CountryAlpha2": "AF",
+    "Demonym": "Afghan"
+  },
+  {
+    "CountryAlpha2": "AX",
+    "Demonym": "Ålandic"
+  },
+  {
+    "CountryAlpha2": "AL",
+    "Demonym": "Albanian"
+  },
+  {
+    "CountryAlpha2": "DZ",
+    "Demonym": "Algerian"
+  },
+  {
+    "CountryAlpha2": "AS",
+    "Demonym": "American Samoan"
+  },
+  {
+    "CountryAlpha2": "AD",
+    "Demonym": "Andorran"
+  },
+  {
+    "CountryAlpha2": "AO",
+    "Demonym": "Angolan"
+  },
+  {
+    "CountryAlpha2": "AI",
+    "Demonym": "Anguillian"
+  },
+  {
+    "CountryAlpha2": "AG",
+    "Demonym": "Antiguan Barbudan"
+  },
+  {
+    "CountryAlpha2": "AR",
+    "Demonym": "Argentine"
+  },
+  {
+    "CountryAlpha2": "AM",
+    "Demonym": "Armenian"
+  },
+  {
+    "CountryAlpha2": "AW",
+    "Demonym": "Aruban"
+  },
+  {
+    "CountryAlpha2": "AU",
+    "Demonym": "Australian"
+  },
+  {
+    "CountryAlpha2": "AT",
+    "Demonym": "Austrian"
+  },
+  {
+    "CountryAlpha2": "AZ",
+    "Demonym": "Azerbaijani"
+  },
+  {
+    "CountryAlpha2": "BS",
+    "Demonym": "Bahamian"
+  },
+  {
+    "CountryAlpha2": "BH",
+    "Demonym": "Bahraini"
+  },
+  {
+    "CountryAlpha2": "BD",
+    "Demonym": "Bangladeshi"
+  },
+  {
+    "CountryAlpha2": "BB",
+    "Demonym": "Barbadian"
+  },
+  {
+    "CountryAlpha2": "BY",
+    "Demonym": "Belarusian"
+  },
+  {
+    "CountryAlpha2": "BE",
+    "Demonym": "Belgian"
+  },
+  {
+    "CountryAlpha2": "BZ",
+    "Demonym": "Belizean"
+  },
+  {
+    "CountryAlpha2": "BJ",
+    "Demonym": "Beninese"
+  },
+  {
+    "CountryAlpha2": "BM",
+    "Demonym": "Bermudian"
+  },
+  {
+    "CountryAlpha2": "BT",
+    "Demonym": "Bhutanese"
+  },
+  {
+    "CountryAlpha2": "BO",
+    "Demonym": "Bolivian"
+  },
+  {
+    "CountryAlpha2": "BA",
+    "Demonym": "Bosnian"
+  },
+  {
+    "CountryAlpha2": "BW",
+    "Demonym": "Batswana"
+  },
+  {
+    "CountryAlpha2": "BR",
+    "Demonym": "Brazilian"
+  },
+  {
+    "CountryAlpha2": "BN",
+    "Demonym": "Bruneian"
+  },
+  {
+    "CountryAlpha2": "BG",
+    "Demonym": "Bulgarian"
+  },
+  {
+    "CountryAlpha2": "BF",
+    "Demonym": "Burkinabé"
+  },
+  {
+    "CountryAlpha2": "BI",
+    "Demonym": "Burundian"
+  },
+  {
+    "CountryAlpha2": "CV",
+    "Demonym": "Cape Verdean"
+  },
+  {
+    "CountryAlpha2": "KH",
+    "Demonym": "Cambodian"
+  },
+  {
+    "CountryAlpha2": "CM",
+    "Demonym": "Cameroonian"
+  },
+  {
+    "CountryAlpha2": "CA",
+    "Demonym": "Canadian"
+  },
+  {
+    "CountryAlpha2": "KY",
+    "Demonym": "Caymanian"
+  },
+  {
+    "CountryAlpha2": "CF",
+    "Demonym": "Central African"
+  },
+  {
+    "CountryAlpha2": "TD",
+    "Demonym": "Chadian"
+  },
+  {
+    "CountryAlpha2": "CL",
+    "Demonym": "Chilean"
+  },
+  {
+    "CountryAlpha2": "CN",
+    "Demonym": "Chinese"
+  },
+  {
+    "CountryAlpha2": "CO",
+    "Demonym": "Colombian"
+  },
+  {
+    "CountryAlpha2": "KM",
+    "Demonym": "Comorian"
+  },
+  {
+    "CountryAlpha2": "CG",
+    "Demonym": "Congolese"
+  },
+  {
+    "CountryAlpha2": "CD",
+    "Demonym": "Congolese"
+  },
+  {
+    "CountryAlpha2": "CK",
+    "Demonym": "Cook Islander"
+  },
+  {
+    "CountryAlpha2": "CR",
+    "Demonym": "Costa Rican"
+  },
+  {
+    "CountryAlpha2": "CI",
+    "Demonym": "Ivorian"
+  },
+  {
+    "CountryAlpha2": "HR",
+    "Demonym": "Croatian"
+  },
+  {
+    "CountryAlpha2": "CU",
+    "Demonym": "Cuban"
+  },
+  {
+    "CountryAlpha2": "CW",
+    "Demonym": "Dutch"
+  },
+  {
+    "CountryAlpha2": "CY",
+    "Demonym": "Cypriot"
+  },
+  {
+    "CountryAlpha2": "CZ",
+    "Demonym": "Czech"
+  },
+  {
+    "CountryAlpha2": "DK",
+    "Demonym": "Danish"
+  },
+  {
+    "CountryAlpha2": "DJ",
+    "Demonym": "Djiboutian"
+  },
+  {
+    "CountryAlpha2": "DM",
+    "Demonym": "Dominican"
+  },
+  {
+    "CountryAlpha2": "DO",
+    "Demonym": "Dominican"
+  },
+  {
+    "CountryAlpha2": "EC",
+    "Demonym": "Ecuadorian"
+  },
+  {
+    "CountryAlpha2": "EG",
+    "Demonym": "Egyptian"
+  },
+  {
+    "CountryAlpha2": "SV",
+    "Demonym": "Salvadoran"
+  },
+  {
+    "CountryAlpha2": "GQ",
+    "Demonym": "Equatoguinean"
+  },
+  {
+    "CountryAlpha2": "ER",
+    "Demonym": "Eritrean"
+  },
+  {
+    "CountryAlpha2": "EE",
+    "Demonym": "Estonian"
+  },
+  {
+    "CountryAlpha2": "SZ",
+    "Demonym": "Swati/Swazi"
+  },
+  {
+    "CountryAlpha2": "ET",
+    "Demonym": "Ethiopian"
+  },
+  {
+    "CountryAlpha2": "FK",
+    "Demonym": "Falkland Islander"
+  },
+  {
+    "CountryAlpha2": "FO",
+    "Demonym": "Faroe Islander"
+  },
+  {
+    "CountryAlpha2": "FJ",
+    "Demonym": "Fijian"
+  },
+  {
+    "CountryAlpha2": "FI",
+    "Demonym": "Finnish"
+  },
+  {
+    "CountryAlpha2": "FR",
+    "Demonym": "French"
+  },
+  {
+    "CountryAlpha2": "PF",
+    "Demonym": "French Polynesian"
+  },
+  {
+    "CountryAlpha2": "GA",
+    "Demonym": "Gabonese"
+  },
+  {
+    "CountryAlpha2": "GM",
+    "Demonym": "Gambian"
+  },
+  {
+    "CountryAlpha2": "GE",
+    "Demonym": "Georgian"
+  },
+  {
+    "CountryAlpha2": "DE",
+    "Demonym": "German"
+  },
+  {
+    "CountryAlpha2": "GH",
+    "Demonym": "Ghanaian"
+  },
+  {
+    "CountryAlpha2": "GI",
+    "Demonym": "Gibraltarian"
+  },
+  {
+    "CountryAlpha2": "GR",
+    "Demonym": "Greek"
+  },
+  {
+    "CountryAlpha2": "GL",
+    "Demonym": "Greenlander"
+  },
+  {
+    "CountryAlpha2": "GD",
+    "Demonym": "Grenadian"
+  },
+  {
+    "CountryAlpha2": "GU",
+    "Demonym": "Guamanian"
+  },
+  {
+    "CountryAlpha2": "GT",
+    "Demonym": "Guatemalan"
+  },
+  {
+    "CountryAlpha2": "GN",
+    "Demonym": "Guinean"
+  },
+  {
+    "CountryAlpha2": "GW",
+    "Demonym": "Bissau-Guinean"
+  },
+  {
+    "CountryAlpha2": "GY",
+    "Demonym": "Guyanese"
+  },
+  {
+    "CountryAlpha2": "HT",
+    "Demonym": "Haitian"
+  },
+  {
+    "CountryAlpha2": "VA",
+    "Demonym": "Italian"
+  },
+  {
+    "CountryAlpha2": "HN",
+    "Demonym": "Honduran"
+  },
+  {
+    "CountryAlpha2": "HK",
+    "Demonym": "Hongkonger"
+  },
+  {
+    "CountryAlpha2": "HU",
+    "Demonym": "Hungarian"
+  },
+  {
+    "CountryAlpha2": "IS",
+    "Demonym": "Icelander"
+  },
+  {
+    "CountryAlpha2": "IN",
+    "Demonym": "Indian"
+  },
+  {
+    "CountryAlpha2": "ID",
+    "Demonym": "Indonesian"
+  },
+  {
+    "CountryAlpha2": "IR",
+    "Demonym": "Iranian"
+  },
+  {
+    "CountryAlpha2": "IQ",
+    "Demonym": "Iraqi"
+  },
+  {
+    "CountryAlpha2": "IE",
+    "Demonym": "Irish"
+  },
+  {
+    "CountryAlpha2": "IM",
+    "Demonym": "Manx"
+  },
+  {
+    "CountryAlpha2": "IL",
+    "Demonym": "Israeli"
+  },
+  {
+    "CountryAlpha2": "IT",
+    "Demonym": "Italian"
+  },
+  {
+    "CountryAlpha2": "JM",
+    "Demonym": "Jamaican"
+  },
+  {
+    "CountryAlpha2": "JP",
+    "Demonym": "Japanese"
+  },
+  {
+    "CountryAlpha2": "JE",
+    "Demonym": "Islanders"
+  },
+  {
+    "CountryAlpha2": "JO",
+    "Demonym": "Jordanian"
+  },
+  {
+    "CountryAlpha2": "KZ",
+    "Demonym": "Kazakhstani"
+  },
+  {
+    "CountryAlpha2": "KE",
+    "Demonym": "Kenyan"
+  },
+  {
+    "CountryAlpha2": "KI",
+    "Demonym": "I-Kiribati"
+  },
+  {
+    "CountryAlpha2": "KP",
+    "Demonym": "North Korean"
+  },
+  {
+    "CountryAlpha2": "KR",
+    "Demonym": "South Korean"
+  },
+  {
+    "CountryAlpha2": "KW",
+    "Demonym": "Kuwaiti"
+  },
+  {
+    "CountryAlpha2": "KG",
+    "Demonym": "Kyrgyzstani"
+  },
+  {
+    "CountryAlpha2": "LA",
+    "Demonym": "Lao"
+  },
+  {
+    "CountryAlpha2": "LV",
+    "Demonym": "Latvian"
+  },
+  {
+    "CountryAlpha2": "LB",
+    "Demonym": "Lebanese"
+  },
+  {
+    "CountryAlpha2": "LS",
+    "Demonym": "Mosotho (singular)"
+  },
+  {
+    "CountryAlpha2": "LR",
+    "Demonym": "Liberian"
+  },
+  {
+    "CountryAlpha2": "LY",
+    "Demonym": "Libyan"
+  },
+  {
+    "CountryAlpha2": "LI",
+    "Demonym": "Liechtensteiner"
+  },
+  {
+    "CountryAlpha2": "LT",
+    "Demonym": "Lithuanian"
+  },
+  {
+    "CountryAlpha2": "LU",
+    "Demonym": "Luxembourger"
+  },
+  {
+    "CountryAlpha2": "MO",
+    "Demonym": "Macau"
+  },
+  {
+    "CountryAlpha2": "MG",
+    "Demonym": "Malagasy"
+  },
+  {
+    "CountryAlpha2": "MW",
+    "Demonym": "Malawian"
+  },
+  {
+    "CountryAlpha2": "MY",
+    "Demonym": "Malaysian"
+  },
+  {
+    "CountryAlpha2": "MV",
+    "Demonym": "Maldivian"
+  },
+  {
+    "CountryAlpha2": "ML",
+    "Demonym": "Malian"
+  },
+  {
+    "CountryAlpha2": "MT",
+    "Demonym": "Maltese"
+  },
+  {
+    "CountryAlpha2": "MH",
+    "Demonym": "Marshallese"
+  },
+  {
+    "CountryAlpha2": "MR",
+    "Demonym": "Mauritanian"
+  },
+  {
+    "CountryAlpha2": "MU",
+    "Demonym": "Mauritian"
+  },
+  {
+    "CountryAlpha2": "MX",
+    "Demonym": "Mexican"
+  },
+  {
+    "CountryAlpha2": "FM",
+    "Demonym": "Micronesian"
+  },
+  {
+    "CountryAlpha2": "MD",
+    "Demonym": "Moldovan"
+  },
+  {
+    "CountryAlpha2": "MC",
+    "Demonym": "Monégasque"
+  },
+  {
+    "CountryAlpha2": "MN",
+    "Demonym": "Mongol"
+  },
+  {
+    "CountryAlpha2": "ME",
+    "Demonym": "Montenegrin"
+  },
+  {
+    "CountryAlpha2": "MS",
+    "Demonym": "Montserratian"
+  },
+  {
+    "CountryAlpha2": "MA",
+    "Demonym": "Moroccan"
+  },
+  {
+    "CountryAlpha2": "MZ",
+    "Demonym": "Mozambican"
+  },
+  {
+    "CountryAlpha2": "MM",
+    "Demonym": "Burmese"
+  },
+  {
+    "CountryAlpha2": "NA",
+    "Demonym": "Namibian"
+  },
+  {
+    "CountryAlpha2": "NR",
+    "Demonym": "Nauruan"
+  },
+  {
+    "CountryAlpha2": "NP",
+    "Demonym": "Nepali"
+  },
+  {
+    "CountryAlpha2": "NL",
+    "Demonym": "Dutch"
+  },
+  {
+    "CountryAlpha2": "NC",
+    "Demonym": "New Caledonian"
+  },
+  {
+    "CountryAlpha2": "NZ",
+    "Demonym": "New Zealander"
+  },
+  {
+    "CountryAlpha2": "NI",
+    "Demonym": "Nicaraguan"
+  },
+  {
+    "CountryAlpha2": "NE",
+    "Demonym": "Nigerien"
+  },
+  {
+    "CountryAlpha2": "NG",
+    "Demonym": "Nigerian"
+  },
+  {
+    "CountryAlpha2": "NU",
+    "Demonym": "Niuean"
+  },
+  {
+    "CountryAlpha2": "NF",
+    "Demonym": "Norfolk Islander"
+  },
+  {
+    "CountryAlpha2": "MK",
+    "Demonym": "Macedonian"
+  },
+  {
+    "CountryAlpha2": "MP",
+    "Demonym": "Northern Mariana Islander"
+  },
+  {
+    "CountryAlpha2": "NO",
+    "Demonym": "Norwegian"
+  },
+  {
+    "CountryAlpha2": "OM",
+    "Demonym": "Omani"
+  },
+  {
+    "CountryAlpha2": "PK",
+    "Demonym": "Pakistani"
+  },
+  {
+    "CountryAlpha2": "PW",
+    "Demonym": "Palauan"
+  },
+  {
+    "CountryAlpha2": "PS",
+    "Demonym": "Palestinian"
+  },
+  {
+    "CountryAlpha2": "PA",
+    "Demonym": "Panamanian"
+  },
+  {
+    "CountryAlpha2": "PG",
+    "Demonym": "Papua New Guinean"
+  },
+  {
+    "CountryAlpha2": "PY",
+    "Demonym": "Paraguayan"
+  },
+  {
+    "CountryAlpha2": "PE",
+    "Demonym": "Peruvian"
+  },
+  {
+    "CountryAlpha2": "PH",
+    "Demonym": "Filipino"
+  },
+  {
+    "CountryAlpha2": "PN",
+    "Demonym": "Pitcairn Islander"
+  },
+  {
+    "CountryAlpha2": "PL",
+    "Demonym": "Polish"
+  },
+  {
+    "CountryAlpha2": "PT",
+    "Demonym": "Portuguese"
+  },
+  {
+    "CountryAlpha2": "PR",
+    "Demonym": "Puerto Rican"
+  },
+  {
+    "CountryAlpha2": "QA",
+    "Demonym": "Qatari"
+  },
+  {
+    "CountryAlpha2": "RO",
+    "Demonym": "Romanian"
+  },
+  {
+    "CountryAlpha2": "RU",
+    "Demonym": "Russian"
+  },
+  {
+    "CountryAlpha2": "RW",
+    "Demonym": "Rwandan"
+  },
+  {
+    "CountryAlpha2": "BL",
+    "Demonym": "Barthélemois"
+  },
+  {
+    "CountryAlpha2": "KN",
+    "Demonym": "Kittitian"
+  },
+  {
+    "CountryAlpha2": "LC",
+    "Demonym": "Saint Lucian"
+  },
+  {
+    "CountryAlpha2": "MF",
+    "Demonym": "Saint-Martinois"
+  },
+  {
+    "CountryAlpha2": "PM",
+    "Demonym": "Saint-Pierrais"
+  },
+  {
+    "CountryAlpha2": "VC",
+    "Demonym": "Saint Vincentian"
+  },
+  {
+    "CountryAlpha2": "WS",
+    "Demonym": "Samoan"
+  },
+  {
+    "CountryAlpha2": "SM",
+    "Demonym": "Sammarinese"
+  },
+  {
+    "CountryAlpha2": "ST",
+    "Demonym": "São Toméan"
+  },
+  {
+    "CountryAlpha2": "SA",
+    "Demonym": "Saudi"
+  },
+  {
+    "CountryAlpha2": "SN",
+    "Demonym": "Senegalese"
+  },
+  {
+    "CountryAlpha2": "RS",
+    "Demonym": "Serbian"
+  },
+  {
+    "CountryAlpha2": "SC",
+    "Demonym": "Seychellois"
+  },
+  {
+    "CountryAlpha2": "SL",
+    "Demonym": "Sierra Leonean"
+  },
+  {
+    "CountryAlpha2": "SG",
+    "Demonym": "Singaporean"
+  },
+  {
+    "CountryAlpha2": "SX",
+    "Demonym": "St. Maartener"
+  },
+  {
+    "CountryAlpha2": "SK",
+    "Demonym": "Slovak"
+  },
+  {
+    "CountryAlpha2": "SI",
+    "Demonym": "Slovene"
+  },
+  {
+    "CountryAlpha2": "SB",
+    "Demonym": "Solomon Islander"
+  },
+  {
+    "CountryAlpha2": "SO",
+    "Demonym": "Somali"
+  },
+  {
+    "CountryAlpha2": "ZA",
+    "Demonym": "South African"
+  },
+  {
+    "CountryAlpha2": "GS",
+    "Demonym": "South Georgian"
+  },
+  {
+    "CountryAlpha2": "SS",
+    "Demonym": "South Sudanese"
+  },
+  {
+    "CountryAlpha2": "ES",
+    "Demonym": "Spanish"
+  },
+  {
+    "CountryAlpha2": "LK",
+    "Demonym": "Sri Lankan"
+  },
+  {
+    "CountryAlpha2": "SD",
+    "Demonym": "Sudanese"
+  },
+  {
+    "CountryAlpha2": "SR",
+    "Demonym": "Surinamese"
+  },
+  {
+    "CountryAlpha2": "SE",
+    "Demonym": "Swedish"
+  },
+  {
+    "CountryAlpha2": "CH",
+    "Demonym": "German"
+  },
+  {
+    "CountryAlpha2": "SY",
+    "Demonym": "Syrian"
+  },
+  {
+    "CountryAlpha2": "TJ",
+    "Demonym": "Tajik"
+  },
+  {
+    "CountryAlpha2": "TZ",
+    "Demonym": "Tanzanian"
+  },
+  {
+    "CountryAlpha2": "TH",
+    "Demonym": "Thai"
+  },
+  {
+    "CountryAlpha2": "TL",
+    "Demonym": "East Timorese"
+  },
+  {
+    "CountryAlpha2": "TG",
+    "Demonym": "Togolese"
+  },
+  {
+    "CountryAlpha2": "TK",
+    "Demonym": "Tokelauan"
+  },
+  {
+    "CountryAlpha2": "TO",
+    "Demonym": "Tongan"
+  },
+  {
+    "CountryAlpha2": "TT",
+    "Demonym": "Trinidadian and Tobagonian"
+  },
+  {
+    "CountryAlpha2": "TN",
+    "Demonym": "Tunisian"
+  },
+  {
+    "CountryAlpha2": "TR",
+    "Demonym": "Turkish"
+  },
+  {
+    "CountryAlpha2": "TM",
+    "Demonym": "Turkmenistani"
+  },
+  {
+    "CountryAlpha2": "TC",
+    "Demonym": "Turks and Caicos Islander"
+  },
+  {
+    "CountryAlpha2": "UG",
+    "Demonym": "Ugandan"
+  },
+  {
+    "CountryAlpha2": "UA",
+    "Demonym": "Ukrainian"
+  },
+  {
+    "CountryAlpha2": "AE",
+    "Demonym": "Emirati"
+  },
+  {
+    "CountryAlpha2": "GB",
+    "Demonym": "British"
+  },
+  {
+    "CountryAlpha2": "US",
+    "Demonym": "American"
+  },
+  {
+    "CountryAlpha2": "UM",
+    "Demonym": "American Islander"
+  },
+  {
+    "CountryAlpha2": "UY",
+    "Demonym": "Uruguayan"
+  },
+  {
+    "CountryAlpha2": "UZ",
+    "Demonym": "Uzbek"
+  },
+  {
+    "CountryAlpha2": "VU",
+    "Demonym": "Ni-Vanuatu and Vanuatuan"
+  },
+  {
+    "CountryAlpha2": "VE",
+    "Demonym": "Venezuelan"
+  },
+  {
+    "CountryAlpha2": "VN",
+    "Demonym": "Vietnamese"
+  },
+  {
+    "CountryAlpha2": "VG",
+    "Demonym": "Virgin Islander"
+  },
+  {
+    "CountryAlpha2": "VI",
+    "Demonym": "Virgin Islander"
+  },
+  {
+    "CountryAlpha2": "WF",
+    "Demonym": "Wallisian"
+  },
+  {
+    "CountryAlpha2": "YE",
+    "Demonym": "Yemeni"
+  },
+  {
+    "CountryAlpha2": "ZM",
+    "Demonym": "Zambian"
+  },
+  {
+    "CountryAlpha2": "ZW",
+    "Demonym": "Zimbabwean"
+  }
+]

@@ -1,0 +1,1593 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Falsus</name>
+    </assembly>
+    <members>
+        <member name="T:Falsus.Configuration.DataGeneratorConfiguration">
+            <summary>
+            Defines a serializable structure for the <see cref="T:Falsus.DataGenerator"/>
+            configuration.
+            </summary>
+        </member>
+        <member name="P:Falsus.Configuration.DataGeneratorConfiguration.Seed">
+            <summary>
+            Gets or sets the number used to calculate a starting value for the pseudo-random number sequence.
+            </summary>
+            <value>
+            A nullable integer to seed the pseudo-random number generator.
+            </value>
+        </member>
+        <member name="P:Falsus.Configuration.DataGeneratorConfiguration.Properties">
+            <summary>
+            Gets or sets an array of property configurations used
+            to configure a <see cref="T:Falsus.DataGenerator"/>.
+            </summary>
+            <value>
+            An array of <see cref="T:Falsus.Configuration.DataGeneratorConfigurationProperty"/>.
+            </value>
+        </member>
+        <member name="T:Falsus.Configuration.DataGeneratorConfigurationProperty">
+            <summary>
+            Defines the structure for a serializable
+            property configuration.
+            </summary>
+        </member>
+        <member name="P:Falsus.Configuration.DataGeneratorConfigurationProperty.Id">
+            <summary>
+            Gets or sets the unique identifier of this property.
+            </summary>
+            <value>
+            A <see cref="T:System.String"/> containing the unique identifier of this property.
+            </value>
+        </member>
+        <member name="P:Falsus.Configuration.DataGeneratorConfigurationProperty.Provider">
+            <summary>
+            Gets or sets the fully qualified name of the provider attached to this property.
+            </summary>
+            <value>
+            A string containing the fully qualified class name.
+            </value>
+        </member>
+        <member name="P:Falsus.Configuration.DataGeneratorConfigurationProperty.IsUnique">
+            <summary>
+            Gets or sets a value indicating whether or not this property allows duplicate values
+            to be generated.
+            </summary>
+            <value>
+            True if this property does not allow duplicate values, otherwise false.
+            </value>
+        </member>
+        <member name="P:Falsus.Configuration.DataGeneratorConfigurationProperty.IsNotNull">
+            <summary>
+            Gets or sets a value indicating whether or not this property allows null values.
+            </summary>
+            <value>
+            True if this property does not allow null values, otherwise false.
+            </value>
+        </member>
+        <member name="P:Falsus.Configuration.DataGeneratorConfigurationProperty.Arguments">
+            <summary>
+            Gets or sets a dictionary containing the arguments for this property.
+            </summary>
+            <value>
+            A <see cref="T:System.Collections.Generic.Dictionary`2"/> index by argument name that contains
+            the identifiers of the properties representing the
+            arguments binded to this property.
+            </value>
+        </member>
+        <member name="P:Falsus.Configuration.DataGeneratorConfigurationProperty.ValueType">
+            <summary>
+            Gets or sets the fully qualified name of the type of the value that will be generated for this property.
+            </summary>
+            <value>
+            A string containing the fully qualified class name.
+            </value>
+        </member>
+        <member name="P:Falsus.Configuration.DataGeneratorConfigurationProperty.ProviderConfiguration">
+            <summary>
+            Gets or sets a json representation of the provider configuration.
+            </summary>
+            <value>
+            A string containing the JSON serialization of the provider
+            configuration class.
+            </value>
+        </member>
+        <member name="P:Falsus.Configuration.DataGeneratorConfigurationProperty.Weights">
+            <summary>
+            Gets or sets an array of named tuples containing the weight and the object value.
+            </summary>
+            <value>
+            An array of named tuples.
+            </value>
+        </member>
+        <member name="P:Falsus.Configuration.DataGeneratorConfigurationProperty.WeightedRanges">
+            <summary>
+            Gets or sets the specification for the weighted ranges for this property.
+            </summary>
+            <value>
+            An array of the generic <see cref="T:Falsus.GeneratorProperties.WeightedRange`1"/> class.
+            </value>
+        </member>
+        <member name="T:Falsus.DataGenerator">
+            <summary>
+            Represents the point of entry to the data generation process,
+            providing methods to configure properties and providers.
+            </summary>
+        </member>
+        <member name="F:Falsus.DataGenerator.randomizer">
+            <summary>
+            The pseudo-random number generator.
+            </summary>
+        </member>
+        <member name="F:Falsus.DataGenerator.seed">
+            <summary>
+            A number used to calculate a starting value for the pseudo-random number sequence.
+            </summary>
+        </member>
+        <member name="F:Falsus.DataGenerator.properties">
+            <summary>
+            A dictionary of <see cref="T:Falsus.GeneratorProperties.IDataGeneratorProperty"/> indexed by
+            the <see cref="P:Falsus.GeneratorProperties.IDataGeneratorProperty.Id"/> property.
+            </summary>
+        </member>
+        <member name="F:Falsus.DataGenerator.preGeneratedValues">
+            <summary>
+            A dictionary of <see cref="T:System.Object"/> collections indexed by
+            the <see cref="P:Falsus.GeneratorProperties.IDataGeneratorProperty.Id"/> property.
+            Contains a list of pre-generated values, used when a
+            given property has weighted or ranged value generation.
+            </summary>
+        </member>
+        <member name="F:Falsus.DataGenerator.objectsToExclude">
+            <summary>
+            A dictionary of <see cref="T:System.Object"/> collections indexed by
+            the <see cref="P:Falsus.GeneratorProperties.IDataGeneratorProperty.Id"/> property.
+            Contains the list of <see cref="T:System.Object"/>s that have been
+            generated and that should be excluded from the possible
+            values in order to maintain the dataset unique.
+            </summary>
+        </member>
+        <member name="M:Falsus.DataGenerator.#ctor">
+            <summary>
+            Initializes a new instance of the <see cref="T:Falsus.DataGenerator"/> class.
+            </summary>
+        </member>
+        <member name="M:Falsus.DataGenerator.#ctor(System.Int32)">
+            <summary>
+            Initializes a new instance of the <see cref="T:Falsus.DataGenerator"/> class.
+            </summary>
+            <param name="seed">
+            A number used to calculate a starting value for the pseudo-random number sequence.
+            </param>
+        </member>
+        <member name="E:Falsus.DataGenerator.PropertyLoad">
+            <summary>
+            Occurs before a property is loaded.
+            </summary>
+        </member>
+        <member name="E:Falsus.DataGenerator.PropertyLoaded">
+            <summary>
+            Occurs after a property has been loaded.
+            </summary>
+        </member>
+        <member name="E:Falsus.DataGenerator.ValueGenerated">
+            <summary>
+            Occurs after a value is generated for a property.
+            </summary>
+        </member>
+        <member name="E:Falsus.DataGenerator.RowGenerated">
+            <summary>
+            Occurs after an entire row has been generated.
+            </summary>
+        </member>
+        <member name="M:Falsus.DataGenerator.WithProperty``1(System.String)">
+            <summary>
+            Registers a new property for data generation.
+            </summary>
+            <typeparam name="T">The type of the value that the property will hold.</typeparam>
+            <param name="propertyId">The unique identifier for this property.</param>
+            <returns>This instance.</returns>
+        </member>
+        <member name="M:Falsus.DataGenerator.WithWeightedProperty``1(System.String)">
+            <summary>
+            Registers a new weighted property for data generation.
+            </summary>
+            <typeparam name="T">The type of the value that the property will hold.</typeparam>
+            <param name="propertyId">The unique identifier for this property.</param>
+            <returns>This instance.</returns>
+        </member>
+        <member name="M:Falsus.DataGenerator.WithRangedProperty``1(System.String)">
+            <summary>
+            Registers a new ranged property for data generation.
+            </summary>
+            <typeparam name="T">The type of the value that the property will hold.</typeparam>
+            <param name="propertyId">The unique identifier for this property.</param>
+            <returns>This instance.</returns>
+        </member>
+        <member name="M:Falsus.DataGenerator.Configure(Falsus.Configuration.DataGeneratorConfiguration)">
+            <summary>
+            Configures this instance based on the values from a single class, instead of having
+            to call any other methods.
+            </summary>
+            <param name="configuration">
+            An instance of <see cref="T:Falsus.Configuration.DataGeneratorConfiguration"/> defining the configuration for this class.
+            </param>
+            <returns>This instance.</returns>
+        </member>
+        <member name="M:Falsus.DataGenerator.Generate(System.Int32)">
+            <summary>
+            Generates <paramref name="rowCount"/> rows with data for all of the
+            specified properties according to the specified constraints.
+            </summary>
+            <param name="rowCount">The total number of rows to generate.</param>
+            <returns>
+            An array of <see cref="T:System.Collections.Generic.Dictionary`2"/>. Each dictionary
+            represents a row, containing the unique identifier of the property
+            as the key and the <see cref="T:System.Object"/> value.
+            </returns>
+        </member>
+        <member name="M:Falsus.DataGenerator.ValidateProperties">
+            <summary>
+            Ensures that all the engine configuration is valid.
+            </summary>
+            <exception cref="T:System.Exception">
+            Thrown when a weighted property is set as unique or
+            the weight values exceed 100%.
+            </exception>
+        </member>
+        <member name="M:Falsus.DataGenerator.GetSortedProperties">
+            <summary>
+            Sorts the properties according to their arguments/dependencies
+            so that the engine calculates the value for the arguments before
+            calculating the value for the property that depends on those arguments.
+            </summary>
+            <returns>
+            A dictionary of <see cref="T:Falsus.GeneratorProperties.IDataGeneratorProperty"/> indexed by the
+            <see cref="P:Falsus.GeneratorProperties.IDataGeneratorProperty.Id"/> property.
+            </returns>
+        </member>
+        <member name="M:Falsus.DataGenerator.TopologicalSort(System.Collections.Generic.HashSet{System.Collections.Generic.KeyValuePair{System.String,Falsus.GeneratorProperties.IDataGeneratorProperty}},System.Collections.Generic.HashSet{System.Tuple{System.Collections.Generic.KeyValuePair{System.String,Falsus.GeneratorProperties.IDataGeneratorProperty},System.Collections.Generic.KeyValuePair{System.String,Falsus.GeneratorProperties.IDataGeneratorProperty}}})">
+            <summary>
+            Gets a sorted list of arguments of the specified <paramref name="nodes"/> and <paramref name="edges"/>.
+            </summary>
+            <remarks>
+            This method implements a topological sorting using Kahn's algorithm
+            https://en.wikipedia.org/wiki/Topological_sorting.
+            </remarks>
+            <param name="nodes">All nodes of directed acyclic graph.</param>
+            <param name="edges">All edges of directed acyclic graph.</param>
+            <returns>
+            A sorted list of <see cref="T:System.Collections.Generic.KeyValuePair`2"/>
+            containing the <see cref="T:Falsus.GeneratorProperties.IDataGeneratorProperty"/> indexed by the
+            <see cref="P:Falsus.GeneratorProperties.IDataGeneratorProperty.Id"/> property.
+            </returns>
+        </member>
+        <member name="T:Falsus.DataGeneratorContext">
+            <summary>
+            Defines the context for the data generation of a single property.
+            </summary>
+            <remarks>
+            A new context is created for each row and for each property of that row.
+            </remarks>
+        </member>
+        <member name="F:Falsus.DataGeneratorContext.row">
+            <summary>
+            Gets a dictionary of <see cref="T:System.Object"/> instances
+            indexed by <see cref="P:Falsus.GeneratorProperties.IDataGeneratorProperty.Id"/> property.
+            </summary>
+        </member>
+        <member name="F:Falsus.DataGeneratorContext.argumentsByPropertyName">
+            <summary>
+            Gets a dictionary of argument <see cref="T:Falsus.GeneratorProperties.IDataGeneratorProperty"/>s
+            indexed by <see cref="P:Falsus.GeneratorProperties.IDataGeneratorProperty.Id"/> property.
+            </summary>
+        </member>
+        <member name="F:Falsus.DataGeneratorContext.argumentsByArgumentName">
+            <summary>
+            Gets a dictionary of argument <see cref="T:Falsus.GeneratorProperties.IDataGeneratorProperty"/>s
+            indexed by the argument name.
+            </summary>
+        </member>
+        <member name="M:Falsus.DataGeneratorContext.#ctor(System.Collections.Generic.Dictionary{System.String,System.Object},System.Int32,System.Int32,Falsus.GeneratorProperties.IDataGeneratorProperty,System.Collections.Generic.Dictionary{System.String,Falsus.GeneratorProperties.IDataGeneratorProperty[]})">
+            <summary>
+            Initializes a new instance of the <see cref="T:Falsus.DataGeneratorContext"/> class.
+            </summary>
+            <param name="row">
+            A dictionary of <see cref="T:System.Object"/> instances containing the values
+            already generated for the current row.
+            </param>
+            <param name="index">
+            The index of the current row.
+            </param>
+            <param name="rowCount">
+            The total number of rows. Represents the expected total number of rows.
+            </param>
+            <param name="currentProperty">
+            An implementation of <see cref="T:Falsus.GeneratorProperties.IDataGeneratorProperty"/> representing
+            the property binded to this context.
+            </param>
+            <param name="arguments">
+            The dictionary of <see cref="T:Falsus.GeneratorProperties.IDataGeneratorProperty"/>s that can be
+            fetched from this context.
+            </param>
+        </member>
+        <member name="P:Falsus.DataGeneratorContext.CurrentRowIndex">
+            <summary>
+            Gets the index of the current row.
+            </summary>
+            <value>
+            An <see cref="T:System.Int32"/> value representing the index of the current row.
+            </value>
+            <remarks>
+            The row index starts from 0.
+            </remarks>
+        </member>
+        <member name="P:Falsus.DataGeneratorContext.CurrentProperty">
+            <summary>
+            Gets an implementation of <see cref="T:Falsus.GeneratorProperties.IDataGeneratorProperty"/> that
+            represents the property binded to this context.
+            </summary>
+            <value>
+            An instance that implements the <see cref="T:Falsus.GeneratorProperties.IDataGeneratorProperty"/> interface.
+            </value>
+        </member>
+        <member name="P:Falsus.DataGeneratorContext.RequestedRowCount">
+            <summary>
+            Gets the requested number of rows.
+            </summary>
+            <value>
+            An <see cref="T:System.Int32"/> value representing the
+            expected total number of rows.
+            </value>
+        </member>
+        <member name="P:Falsus.DataGeneratorContext.Arguments">
+            <summary>
+            Gets the list of arguments that can be fetched from this context.
+            </summary>
+            <value>
+            A <see cref="T:System.Collections.Generic.Dictionary`2"/> containing the
+            name of the argument as key and the collection of
+            <see cref="T:Falsus.GeneratorProperties.IDataGeneratorProperty"/> instances as value.
+            </value>
+        </member>
+        <member name="M:Falsus.DataGeneratorContext.HasArgumentValue(System.String)">
+            <summary>
+            Determines whether or not this context has an argument
+            with the same name as the provided <paramref name="id"/>.
+            </summary>
+            <param name="id">The name of the argument.</param>
+            <returns>
+            True if this context contains an argument with the provided
+            name, otherwise false.
+            </returns>
+        </member>
+        <member name="M:Falsus.DataGeneratorContext.GetArgumentValue``1(System.String)">
+            <summary>
+            Retrieves the value for the argument with the specified name.
+            </summary>
+            <typeparam name="T">The expected type of the argument value.</typeparam>
+            <param name="id">The name of the argument.</param>
+            <returns>
+            An instance of <typeparamref name="T"/> containing the value of the argument
+            within the current context.
+            </returns>
+            <exception cref="T:System.InvalidOperationException">
+            Throw if one of the following conditions is met:
+            <list type="bullet">
+            <item>There is no argument with the specified name.</item>
+            <item>The argument with the specified name is null.</item>
+            <item>Access to the argument property is not allowed.</item>
+            </list>
+            </exception>
+        </member>
+        <member name="M:Falsus.DataGeneratorContext.GetArgumentValue(System.String)">
+            <summary>
+            Retrieves the value for the argument with the specified name.
+            </summary>
+            <param name="id">The name of the argument.</param>
+            <returns>
+            An instance of <see cref="T:System.Object"/> containing the value of the argument
+            within the current context.
+            </returns>
+            <exception cref="T:System.InvalidOperationException">
+            Throw if one of the following conditions is met:
+            <list type="bullet">
+            <item>There is no argument with the specified name.</item>
+            <item>The argument with the specified name is null.</item>
+            <item>Access to the argument property is not allowed.</item>
+            </list>
+            </exception>
+            <remarks>
+            If value type is known use <see cref="M:Falsus.DataGeneratorContext.GetArgumentValue``1(System.String)"/> overload.
+            </remarks>
+        </member>
+        <member name="M:Falsus.DataGeneratorContext.GetArgumentValues``1(System.String)">
+            <summary>
+            Retrieves the values for the argument with the specified name.
+            </summary>
+            <typeparam name="T">The expected type of the collection values.</typeparam>
+            <param name="id">The name of the argument.</param>
+            <returns>
+            An array of <typeparamref name="T"/> instances containing the values of the argument
+            within the current context.
+            </returns>
+            <exception cref="T:System.InvalidOperationException">
+            Throw if one of the following conditions is met:
+            <list type="bullet">
+            <item>There is no argument with the specified name.</item>
+            <item>The argument with the specified name is null.</item>
+            <item>Access to the argument property is not allowed.</item>
+            </list>
+            </exception>
+        </member>
+        <member name="M:Falsus.DataGeneratorContext.GetArgumentValues(System.String)">
+            <summary>
+            Retrieves the values for the argument with the specified name.
+            </summary>
+            <param name="id">The name of the argument.</param>
+            <returns>
+            An array of <see cref="T:System.Object"/> instances containing the values of the argument
+            within the current context.
+            </returns>
+            <exception cref="T:System.InvalidOperationException">
+            Throw if one of the following conditions is met:
+            <list type="bullet">
+            <item>There is no argument with the specified name.</item>
+            <item>The argument with the specified name is null.</item>
+            <item>Access to the argument property is not allowed.</item>
+            </list>
+            </exception>
+            <remarks>
+            If value type is known use <see cref="M:Falsus.DataGeneratorContext.GetArgumentValues``1(System.String)"/> overload.
+            </remarks>
+        </member>
+        <member name="M:Falsus.DataGeneratorContext.GetRowProperty``1(System.String)">
+            <summary>
+            Retrieves the value for the property with the specified identifier.
+            </summary>
+            <typeparam name="T">The expected type of the property value.</typeparam>
+            <param name="id">The unique identifier of the property.</param>
+            <returns>
+            An instance of <typeparamref name="T"/> containing the value of the property
+            within the current context.
+            </returns>
+            <exception cref="T:System.InvalidOperationException">
+            Throw if one of the following conditions is met:
+            <list type="bullet">
+            <item>Access to the argument property is not allowed.</item>
+            <item>The requested property does not hold an instance of <typeparamref name="T"/>.</item>
+            </list>
+            </exception>
+        </member>
+        <member name="M:Falsus.DataGeneratorContext.GetRowProperty(System.String)">
+            <summary>
+            Retrieves the value for the property with the specified identifier.
+            </summary>
+            <param name="id">The unique identifier of the property.</param>
+            <returns>
+            An instance of <see cref="T:System.Object"/> containing the value of the property
+            within the current context.
+            </returns>
+            <exception cref="T:System.InvalidOperationException">
+            Throw if one Access to the argument property is not allowed.
+            </exception>
+            <remarks>
+            If value type is known use <see cref="M:Falsus.DataGeneratorContext.GetRowProperty``1(System.String)"/> overload.
+            </remarks>
+        </member>
+        <member name="T:Falsus.GeneratorProperties.DataGeneratorProperty`1">
+            <summary>
+            Defines a generic property that can be
+            attached to a data provider.
+            </summary>
+            <typeparam name="T">The type of the value that will be generated for this property.</typeparam>
+        </member>
+        <member name="F:Falsus.GeneratorProperties.DataGeneratorProperty`1.arguments">
+            <summary>
+            Gets the dictionary containing the arguments for this property.
+            </summary>
+            <value>
+            A <see cref="T:System.Collections.Generic.Dictionary`2"/> index by argument name that contains
+            implementations of <see cref="T:Falsus.GeneratorProperties.IDataGeneratorProperty"/> representing the
+            arguments binded to this property.
+            </value>
+            <remarks>
+            This dictionary contains a <see cref="T:System.Collections.Generic.List`1"/> of <see cref="T:Falsus.GeneratorProperties.IDataGeneratorProperty"/>
+            that is used internally to store the arguments added by the fluent methods.
+            </remarks>
+        </member>
+        <member name="M:Falsus.GeneratorProperties.DataGeneratorProperty`1.#ctor(System.String)">
+            <summary>
+            Initializes a new instance of the <see cref="T:Falsus.GeneratorProperties.DataGeneratorProperty`1"/> class.
+            </summary>
+            <param name="id">The unique identifier of this property.</param>
+        </member>
+        <member name="M:Falsus.GeneratorProperties.DataGeneratorProperty`1.#ctor(System.String,System.Boolean,System.Boolean,Falsus.Providers.IDataGeneratorProvider{`0},System.Collections.Generic.Dictionary{System.String,Falsus.GeneratorProperties.IDataGeneratorProperty[]})">
+            <summary>
+            Initializes a new instance of the <see cref="T:Falsus.GeneratorProperties.DataGeneratorProperty`1"/> class.
+            </summary>
+            <param name="id">The unique identifier of this property.</param>
+            <param name="isUnique">
+            Indicates whether or not this property allows duplicate values
+            to be generated.
+            </param>
+            <param name="isNotNull">
+            Indicates whether or not this property allows null values.
+            </param>
+            <param name="provider">
+            the provider responsible for generating values for this property.
+            </param>
+            <param name="arguments">
+            A dictionary, indexed by argument name, that contains the arguments for this property.
+            </param>
+        </member>
+        <member name="M:Falsus.GeneratorProperties.DataGeneratorProperty`1.#ctor(System.String,System.Boolean,System.Boolean,Falsus.Providers.IDataGeneratorProvider{`0})">
+            <summary>
+            Initializes a new instance of the <see cref="T:Falsus.GeneratorProperties.DataGeneratorProperty`1"/> class.
+            </summary>
+            <param name="id">The unique identifier of this property.</param>
+            <param name="isUnique">
+            Indicates whether or not this property allows duplicate values
+            to be generated.
+            </param>
+            <param name="isNotNull">
+            Indicates whether or not this property allows null values.
+            </param>
+            <param name="provider">
+            the provider responsible for generating values for this property.
+            </param>
+        </member>
+        <member name="P:Falsus.GeneratorProperties.DataGeneratorProperty`1.Id">
+            <summary>
+            Gets the unique identifier of this property.
+            </summary>
+            <value>
+            A <see cref="T:System.String"/> containing the unique identifier of this property.
+            </value>
+        </member>
+        <member name="P:Falsus.GeneratorProperties.DataGeneratorProperty`1.Provider">
+            <summary>
+            Gets the <see cref="T:Falsus.Providers.IDataGeneratorProvider"/> attached to this property.
+            </summary>
+            <value>
+            An implementation of <see cref="T:Falsus.Providers.IDataGeneratorProvider"/>.
+            </value>
+        </member>
+        <member name="P:Falsus.GeneratorProperties.DataGeneratorProperty`1.IsUnique">
+            <summary>
+            Gets a value indicating whether or not this property allows duplicate values
+            to be generated.
+            </summary>
+            <value>
+            True if this property does not allow duplicate values, otherwise false.
+            </value>
+        </member>
+        <member name="P:Falsus.GeneratorProperties.DataGeneratorProperty`1.AllowNull">
+            <summary>
+            Gets a value indicating whether or not this property allows null values.
+            </summary>
+            <value>
+            True if this property does not allow null values, otherwise false.
+            </value>
+        </member>
+        <member name="P:Falsus.GeneratorProperties.DataGeneratorProperty`1.ValueType">
+            <summary>
+            Gets the type of the value that will be generated for this property.
+            </summary>
+            <value>
+            The <see cref="T:System.Type"/> of the value that will be generated for this property.
+            </value>
+        </member>
+        <member name="P:Falsus.GeneratorProperties.DataGeneratorProperty`1.Arguments">
+            <summary>
+            Gets the dictionary containing the arguments for this property.
+            </summary>
+            <value>
+            A <see cref="T:System.Collections.Generic.Dictionary`2"/> index by argument name that contains
+            implementations of <see cref="T:Falsus.GeneratorProperties.IDataGeneratorProperty"/> representing the
+            arguments binded to this property.
+            </value>
+            <remarks>
+            When generating data, properties defined as arguments for this property
+            will be generated first, ensuring that when this property is called
+            the values for argument properties are already defined.
+            </remarks>
+        </member>
+        <member name="M:Falsus.GeneratorProperties.DataGeneratorProperty`1.FromProvider(Falsus.Providers.IDataGeneratorProvider{`0})">
+            <summary>
+            Specifies the provider responsible for generating values for this property.
+            </summary>
+            <param name="instance">An implementation of <see cref="T:Falsus.Providers.IDataGeneratorProvider`1"/>.</param>
+            <returns>This instance.</returns>
+        </member>
+        <member name="M:Falsus.GeneratorProperties.DataGeneratorProperty`1.WithArgument(System.String,Falsus.GeneratorProperties.IDataGeneratorProperty)">
+            <summary>
+            Specifies an argument for this property.
+            </summary>
+            <param name="providerArgName">The unique name of the argument.</param>
+            <param name="property">The <see cref="T:Falsus.GeneratorProperties.IDataGeneratorProperty"/> that represents the argument value.</param>
+            <returns>This instance.</returns>
+        </member>
+        <member name="M:Falsus.GeneratorProperties.DataGeneratorProperty`1.WithArgument``1(System.String,Falsus.GeneratorProperties.DataGeneratorProperty{``0})">
+            <summary>
+            Specifies an argument for this property.
+            </summary>
+            <typeparam name="T1">The <see cref="T:System.Type"/> of the argument.</typeparam>
+            <param name="providerArgName">The unique name of the argument.</param>
+            <param name="property">The <see cref="T:Falsus.GeneratorProperties.DataGeneratorProperty`1"/> that represents the argument value.</param>
+            <returns>This instance.</returns>
+        </member>
+        <member name="M:Falsus.GeneratorProperties.DataGeneratorProperty`1.Unique">
+            <summary>
+            Indicates that this property does not allow duplicate values.
+            </summary>
+            <returns>This instance.</returns>
+        </member>
+        <member name="M:Falsus.GeneratorProperties.DataGeneratorProperty`1.NotNull">
+            <summary>
+            Indicates that this property does not allow null values.
+            </summary>
+            <returns>This instance.</returns>
+        </member>
+        <member name="T:Falsus.GeneratorProperties.IDataGeneratorProperty">
+            <summary>
+            Defines an interface for a property that can be
+            attached to a data provider.
+            </summary>
+        </member>
+        <member name="P:Falsus.GeneratorProperties.IDataGeneratorProperty.Id">
+            <summary>
+            Gets the unique identifier of this property.
+            </summary>
+            <value>
+            A <see cref="T:System.String"/> containing the unique identifier of this property.
+            </value>
+        </member>
+        <member name="P:Falsus.GeneratorProperties.IDataGeneratorProperty.Provider">
+            <summary>
+            Gets the <see cref="T:Falsus.Providers.IDataGeneratorProvider"/> attached to this property.
+            </summary>
+            <value>
+            An implementation of <see cref="T:Falsus.Providers.IDataGeneratorProvider"/>.
+            </value>
+        </member>
+        <member name="P:Falsus.GeneratorProperties.IDataGeneratorProperty.IsUnique">
+            <summary>
+            Gets a value indicating whether or not this property allows duplicate values
+            to be generated.
+            </summary>
+            <value>
+            True if this property does not allow duplicate values, otherwise false.
+            </value>
+        </member>
+        <member name="P:Falsus.GeneratorProperties.IDataGeneratorProperty.AllowNull">
+            <summary>
+            Gets a value indicating whether or not this property allows null values.
+            </summary>
+            <value>
+            True if this property does not allow null values, otherwise false.
+            </value>
+        </member>
+        <member name="P:Falsus.GeneratorProperties.IDataGeneratorProperty.Arguments">
+            <summary>
+            Gets the dictionary containing the arguments for this property.
+            </summary>
+            <value>
+            A <see cref="T:System.Collections.Generic.Dictionary`2"/> index by argument name that contains
+            implementations of <see cref="T:Falsus.GeneratorProperties.IDataGeneratorProperty"/> representing the
+            arguments binded to this property.
+            </value>
+            <remarks>
+            When generating data, properties defined as arguments for this property
+            will be generated first, ensuring that when this property is called
+            the values for argument properties are already defined.
+            </remarks>
+        </member>
+        <member name="P:Falsus.GeneratorProperties.IDataGeneratorProperty.ValueType">
+            <summary>
+            Gets the type of the value that will be generated for this property.
+            </summary>
+            <value>
+            The <see cref="T:System.Type"/> of the value that will be generated for this property.
+            </value>
+        </member>
+        <member name="M:Falsus.GeneratorProperties.IDataGeneratorProperty.WithArgument(System.String,Falsus.GeneratorProperties.IDataGeneratorProperty)">
+            <summary>
+            Specifies an argument for this property.
+            </summary>
+            <param name="providerArgName">The unique name of the argument.</param>
+            <param name="property">The <see cref="T:Falsus.GeneratorProperties.IDataGeneratorProperty"/> that represents the argument value.</param>
+            <returns>This instance.</returns>
+        </member>
+        <member name="T:Falsus.GeneratorProperties.IRangedDataGeneratorProperty">
+            <summary>
+            Defines an interface for a property whose values
+            should be generated based on weighted ranges.
+            </summary>
+        </member>
+        <member name="P:Falsus.GeneratorProperties.IRangedDataGeneratorProperty.WeightedRanges">
+            <summary>
+            Gets an array of <see cref="T:Falsus.GeneratorProperties.WeightedRange"/> instances.
+            </summary>
+            <value>
+            An array of <see cref="T:Falsus.GeneratorProperties.WeightedRange"/> instances.
+            </value>
+        </member>
+        <member name="T:Falsus.GeneratorProperties.IWeightedDataGeneratorProperty">
+            <summary>
+            Defines an interface for a property whose values
+            should be generated based on weights.
+            </summary>
+        </member>
+        <member name="P:Falsus.GeneratorProperties.IWeightedDataGeneratorProperty.Weights">
+            <summary>
+            Gets an array of named tuples containing the weight and the object value.
+            </summary>
+            <value>
+            An array of named tuples.
+            </value>
+        </member>
+        <member name="T:Falsus.GeneratorProperties.RangedDataGeneratorProperty`1">
+            <summary>
+            Defines a property whose values
+            should be generated based on weighted ranges.
+            </summary>
+            <seealso cref="T:Falsus.GeneratorProperties.DataGeneratorProperty`1"/>
+            <seealso cref="T:Falsus.GeneratorProperties.IRangedDataGeneratorProperty"/>
+            <typeparam name="T">The type of the value that will be generated for this property.</typeparam>
+        </member>
+        <member name="F:Falsus.GeneratorProperties.RangedDataGeneratorProperty`1.genericRanges">
+            <summary>
+            An array containing the specification of the weighted ranges.
+            </summary>
+        </member>
+        <member name="M:Falsus.GeneratorProperties.RangedDataGeneratorProperty`1.#ctor(System.String)">
+            <summary>
+            Initializes a new instance of the <see cref="T:Falsus.GeneratorProperties.RangedDataGeneratorProperty`1"/> class.
+            </summary>
+            <param name="id">The unique identifier of this property.</param>
+        </member>
+        <member name="M:Falsus.GeneratorProperties.RangedDataGeneratorProperty`1.#ctor(System.String,System.Boolean,System.Boolean,Falsus.Providers.IDataGeneratorProvider{`0},System.Collections.Generic.Dictionary{System.String,Falsus.GeneratorProperties.IDataGeneratorProperty[]},Falsus.GeneratorProperties.WeightedRange{`0}[])">
+            <summary>
+            Initializes a new instance of the <see cref="T:Falsus.GeneratorProperties.RangedDataGeneratorProperty`1"/> class.
+            </summary>
+            <param name="id">The unique identifier of this property.</param>
+            <param name="isUnique">
+            Indicates whether or not this property allows duplicate values
+            to be generated.
+            </param>
+            <param name="isNotNull">
+            Indicates whether or not this property allows null values.
+            </param>
+            <param name="arguments">
+            A dictionary, indexed by argument name, that contains the arguments for this property.
+            </param>
+            <param name="provider">
+            the provider responsible for generating values for this property.
+            </param>
+            <param name="weightedRanges">
+            The the specification for the weighted ranges for this property.
+            </param>
+        </member>
+        <member name="M:Falsus.GeneratorProperties.RangedDataGeneratorProperty`1.#ctor(System.String,System.Boolean,System.Boolean,Falsus.Providers.IDataGeneratorProvider{`0},Falsus.GeneratorProperties.WeightedRange{`0}[])">
+            <summary>
+            Initializes a new instance of the <see cref="T:Falsus.GeneratorProperties.RangedDataGeneratorProperty`1"/> class.
+            </summary>
+            <param name="id">The unique identifier of this property.</param>
+            <param name="isUnique">
+            Indicates whether or not this property allows duplicate values
+            to be generated.
+            </param>
+            <param name="isNotNull">
+            Indicates whether or not this property allows null values.
+            </param>
+            <param name="provider">
+            the provider responsible for generating values for this property.
+            </param>
+            <param name="weightedRanges">
+            The the specification for the weighted ranges for this property.
+            </param>
+        </member>
+        <member name="P:Falsus.GeneratorProperties.RangedDataGeneratorProperty`1.WeightedRanges">
+            <summary>
+            Gets the specification for the weighted ranges for this property.
+            </summary>
+            <value>
+            An array of the generic <see cref="T:Falsus.GeneratorProperties.WeightedRange`1"/> class.
+            </value>
+        </member>
+        <member name="P:Falsus.GeneratorProperties.RangedDataGeneratorProperty`1.Falsus#GeneratorProperties#IRangedDataGeneratorProperty#WeightedRanges">
+            <summary>
+            Gets an array of <see cref="T:Falsus.GeneratorProperties.WeightedRange"/> instances.
+            </summary>
+            <value>
+            An array of <see cref="T:Falsus.GeneratorProperties.WeightedRange"/> instances.
+            </value>
+        </member>
+        <member name="M:Falsus.GeneratorProperties.RangedDataGeneratorProperty`1.FromProvider(Falsus.Providers.IDataGeneratorProvider{`0})">
+            <summary>
+            Specifies the provider responsible for generating values for this property.
+            </summary>
+            <param name="instance">An implementation of <see cref="T:Falsus.Providers.IDataGeneratorProvider`1"/>.</param>
+            <returns>This instance.</returns>
+        </member>
+        <member name="M:Falsus.GeneratorProperties.RangedDataGeneratorProperty`1.WithWeightedRanges(Falsus.GeneratorProperties.WeightedRange{`0}[])">
+            <summary>
+            Specifies the weighted ranges for this property.
+            </summary>
+            <param name="ranges">An array of <see cref="T:Falsus.GeneratorProperties.WeightedRange`1"/> instances.</param>
+            <returns>This instance.</returns>
+        </member>
+        <member name="T:Falsus.GeneratorProperties.WeightedDataGeneratorProperty`1">
+            <summary>
+            Definesa property whose values should be generated based on weights.
+            </summary>
+            <typeparam name="T">The type of the value that will be generated for this property.</typeparam>
+            <seealso cref="T:Falsus.GeneratorProperties.DataGeneratorProperty`1"/>
+            <seealso cref="T:Falsus.GeneratorProperties.IWeightedDataGeneratorProperty"/>
+        </member>
+        <member name="F:Falsus.GeneratorProperties.WeightedDataGeneratorProperty`1.genericWeights">
+            <summary>
+            Gets an array of named tuples containing the weight and the object value.
+            </summary>
+            <value>
+            An array of named tuples.
+            </value>
+        </member>
+        <member name="M:Falsus.GeneratorProperties.WeightedDataGeneratorProperty`1.#ctor(System.String)">
+            <summary>
+            Initializes a new instance of the <see cref="T:Falsus.GeneratorProperties.WeightedDataGeneratorProperty`1"/> class.
+            </summary>
+            <param name="id">The unique identifier of this property.</param>
+        </member>
+        <member name="M:Falsus.GeneratorProperties.WeightedDataGeneratorProperty`1.#ctor(System.String,System.Boolean,System.Boolean,Falsus.Providers.IDataGeneratorProvider{`0},System.Collections.Generic.Dictionary{System.String,Falsus.GeneratorProperties.IDataGeneratorProperty[]},System.ValueTuple{System.Single,`0}[])">
+            <summary>
+            Initializes a new instance of the <see cref="T:Falsus.GeneratorProperties.WeightedDataGeneratorProperty`1"/> class.
+            </summary>
+            <param name="id">The unique identifier of this property.</param>
+            <param name="isUnique">
+            Indicates whether or not this property allows duplicate values
+            to be generated.
+            </param>
+            <param name="isNotNull">
+            Indicates whether or not this property allows null values.
+            </param>
+            <param name="arguments">
+            A dictionary, indexed by argument name, that contains the arguments for this property.
+            </param>
+            <param name="provider">
+            the provider responsible for generating values for this property.
+            </param>
+            <param name="weights">
+            An array of named tuples containing the weight and the <typeparamref name="T"/> value.
+            </param>
+        </member>
+        <member name="M:Falsus.GeneratorProperties.WeightedDataGeneratorProperty`1.#ctor(System.String,System.Boolean,System.Boolean,Falsus.Providers.IDataGeneratorProvider{`0},System.ValueTuple{System.Single,`0}[])">
+            <summary>
+            Initializes a new instance of the <see cref="T:Falsus.GeneratorProperties.WeightedDataGeneratorProperty`1"/> class.
+            </summary>
+            <param name="id">The unique identifier of this property.</param>
+            <param name="isUnique">
+            Indicates whether or not this property allows duplicate values
+            to be generated.
+            </param>
+            <param name="isNotNull">
+            Indicates whether or not this property allows null values.
+            </param>
+            <param name="provider">
+            the provider responsible for generating values for this property.
+            </param>
+            <param name="weights">
+            An array of named tuples containing the weight and the <typeparamref name="T"/> value.
+            </param>
+        </member>
+        <member name="P:Falsus.GeneratorProperties.WeightedDataGeneratorProperty`1.Weights">
+            <summary>
+            Gets an array of named tuples containing the weight and the <typeparamref name="T"/> value.
+            </summary>
+            <value>
+            An array of named tuples.
+            </value>
+        </member>
+        <member name="P:Falsus.GeneratorProperties.WeightedDataGeneratorProperty`1.Falsus#GeneratorProperties#IWeightedDataGeneratorProperty#Weights">
+            <summary>
+            Gets an array of named tuples containing the weight and the object value.
+            </summary>
+            <value>
+            An array of named tuples.
+            </value>
+        </member>
+        <member name="M:Falsus.GeneratorProperties.WeightedDataGeneratorProperty`1.FromProvider(Falsus.Providers.IDataGeneratorProvider{`0})">
+            <summary>
+            Specifies the provider responsible for generating values for this property.
+            </summary>
+            <param name="instance">An implementation of <see cref="T:Falsus.Providers.IDataGeneratorProvider`1"/>.</param>
+            <returns>This instance.</returns>
+        </member>
+        <member name="M:Falsus.GeneratorProperties.WeightedDataGeneratorProperty`1.WithWeightedValues(System.ValueTuple{System.Single,`0}[])">
+            <summary>
+            Specifies the weighted values for this property.
+            </summary>
+            <param name="weights">An array of named tuples containing the weight and the <typeparamref name="T"/> value.</param>
+            <returns>This instance.</returns>
+        </member>
+        <member name="T:Falsus.GeneratorProperties.WeightedRange">
+            <summary>
+            Defines a weighted range.
+            </summary>
+            <remarks>
+            Use the generic <see cref="T:Falsus.GeneratorProperties.WeightedRange`1"/> class
+            whenever possible.
+            </remarks>
+        </member>
+        <member name="P:Falsus.GeneratorProperties.WeightedRange.Weight">
+            <summary>
+            Gets or sets the weight of the range.
+            </summary>
+            <value>
+            A value between 0 and 1.
+            </value>
+        </member>
+        <member name="P:Falsus.GeneratorProperties.WeightedRange.MinValue">
+            <summary>
+            Gets or sets the minimum value for the range.
+            </summary>
+            <value>
+            An <see cref="T:System.Object"/> representing the minium value for this range.
+            </value>
+            <remarks>
+            The <see cref="T:System.Object"/> must implement <see cref="T:System.IComparable"/>.
+            </remarks>
+        </member>
+        <member name="P:Falsus.GeneratorProperties.WeightedRange.MaxValue">
+            <summary>
+            Gets or sets the maximum value for the range.
+            </summary>
+            <value>
+            An <see cref="T:System.Object"/> representing maximum value for this range.
+            </value>
+            <remarks>
+            The <see cref="T:System.Object"/> must implement <see cref="T:System.IComparable"/>.
+            </remarks>
+        </member>
+        <member name="T:Falsus.GeneratorProperties.WeightedRange`1">
+            <summary>
+            Defines a weighted range of <typeparamref name="T"/> instances..
+            </summary>
+            <typeparam name="T">
+            The type of the range values.
+            Must implement <see cref="T:System.IComparable`1"/>.
+            </typeparam>
+        </member>
+        <member name="P:Falsus.GeneratorProperties.WeightedRange`1.MinValue">
+            <summary>
+            Gets or sets the minimum value for the range.
+            </summary>
+            <value>
+            An instance of <typeparamref name="T"/>representing the minium value for this range.
+            </value>
+            <remarks>
+            The <typeparamref name="T"/> class must implement <see cref="T:System.IComparable"/>.
+            </remarks>
+        </member>
+        <member name="P:Falsus.GeneratorProperties.WeightedRange`1.MaxValue">
+            <summary>
+            Gets or sets the maximum value for the range.
+            </summary>
+            <value>
+            An instance of <typeparamref name="T"/> representing maximum value for this range.
+            </value>
+            <remarks>
+            The <typeparamref name="T"/> class must implement <see cref="T:System.IComparable"/>.
+            </remarks>
+        </member>
+        <member name="T:Falsus.Providers.DataGeneratorProvider`1">
+            <summary>
+            Defines the abstract class for a data provider merging the methods from
+            the <see cref="T:Falsus.Providers.IDataGeneratorProvider"/> and <see cref="T:Falsus.Providers.IDataGeneratorProvider`1"/> interfaces.
+            </summary>
+            <typeparam name="T">The type of data returned by this provider.</typeparam>
+        </member>
+        <member name="P:Falsus.Providers.DataGeneratorProvider`1.Randomizer">
+            <summary>
+            Gets the pseudo-random number generator.
+            </summary>
+            <value>
+            An instance of <see cref="T:System.Random"/>.
+            </value>
+        </member>
+        <member name="M:Falsus.Providers.DataGeneratorProvider`1.GetRangedRowValue(`0,`0,`0[])">
+            <summary>
+            Generates a random instance of <typeparamref name="T"/>
+            that is greater than the value of <paramref name="minValue"/> and lower
+            than the value of <paramref name="maxValue"/>.
+            </summary>
+            <param name="minValue">The exclusive lower bound of the random object returned.</param>
+            <param name="maxValue">The exclusive upper bound of the random object returned.</param>
+            <param name="excludedObjects">
+            An array of <typeparamref name="T"/>s that cannot be returned
+            by the provider.
+            </param>
+            <returns>
+            A random instance of <typeparamref name="T"/> greater than <paramref name="minValue"/>
+            and less than <paramref name="maxValue"/>.
+            </returns>
+            <remarks>
+            <paramref name="maxValue"/> must be greater than <paramref name="minValue"/>.
+            </remarks>
+        </member>
+        <member name="M:Falsus.Providers.DataGeneratorProvider`1.GetRowValue(System.String)">
+            <summary>
+            Gets an instance of <typeparamref name="T"/> based on the provided <paramref name="id"/>.
+            </summary>
+            <param name="id">An unique identifier for the object.</param>
+            <returns>
+            An instance of the <typeparamref name="T"/> with the specified unique identifier.
+            </returns>
+        </member>
+        <member name="M:Falsus.Providers.DataGeneratorProvider`1.GetRowValue(Falsus.DataGeneratorContext,`0[])">
+            <summary>
+            Generates a random instance of <typeparamref name="T"/>
+            based on the context and excluded objects.
+            </summary>
+            <param name="context">
+            An instance of <see cref="T:Falsus.DataGeneratorContext"/> defining
+            the current generation context.
+            </param>
+            <param name="excludedObjects">
+            An array of <typeparamref name="T"/>s that cannot be returned
+            by the provider.
+            </param>
+            <returns>
+            A random instance of <typeparamref name="T"/>.
+            </returns>
+        </member>
+        <member name="M:Falsus.Providers.DataGeneratorProvider`1.GetRowValue(Falsus.DataGeneratorContext,Falsus.GeneratorProperties.WeightedRange{`0}[],`0[])">
+            <summary>
+            Generates a random instance of the object type supported by this provider
+            based on the context and excluded ranges.
+            </summary>
+            <param name="context">
+            An instance of <see cref="T:Falsus.DataGeneratorContext"/> defining
+            the current generation context.
+            </param>
+            <param name="excludedRanges">
+            An array of <see cref="T:Falsus.GeneratorProperties.WeightedRange`1"/>s defining the ranges
+            that cannot be returned by the provider.
+            </param>
+            <param name="excludedObjects">
+            An array of <typeparamref name="T"/>s that cannot be returned
+            by the provider.
+            </param>
+            <returns>
+            A random instance of <typeparamref name="T"/> that is outside of the
+            specified <paramref name="excludedRanges"/>.
+            </returns>
+        </member>
+        <member name="M:Falsus.Providers.DataGeneratorProvider`1.GetValueId(`0)">
+            <summary>
+            Gets a unique identifier for the provided <typeparamref name="T"/> instance.
+            </summary>
+            <param name="value">An instance of <typeparamref name="T"/>.</param>
+            <returns>
+            A <see cref="T:System.String"/> containing the unique identifier of the provided <paramref name="value"/>.
+            </returns>
+        </member>
+        <member name="M:Falsus.Providers.DataGeneratorProvider`1.GetSupportedArguments">
+            <summary>
+            Retrieves the list of arguments supported by the data provider.
+            </summary>
+            <returns>
+            A <see cref="T:System.Collections.Generic.Dictionary`2"/> containing the
+            name of the argument as key and the argument type as value.
+            </returns>
+            <remarks>
+            If not overriden, returns an empty dictionary.
+            </remarks>
+        </member>
+        <member name="M:Falsus.Providers.DataGeneratorProvider`1.GetRangedRowValue(System.Object,System.Object,System.Object[])">
+            <summary>
+            Generates a random instance of the object type supported by this provider
+            that is greater than the value of <paramref name="minValue"/> and lower
+            than the value of <paramref name="maxValue"/>.
+            </summary>
+            <param name="minValue">The exclusive lower bound of the random object returned.</param>
+            <param name="maxValue">The exclusive upper bound of the random object returned.</param>
+            <param name="excludedObjects">
+            An array of <see cref="T:System.Object"/>s that cannot be returned
+            by the provider.
+            </param>
+            <returns>
+            A random instance of <see cref="T:System.Object"/> greater than <paramref name="minValue"/>
+            and less than <paramref name="maxValue"/>.
+            </returns>
+            <remarks>
+            <paramref name="maxValue"/> must be greater than <paramref name="minValue"/>.
+            This method will return the result of <see cref="M:Falsus.Providers.DataGeneratorProvider`1.GetRangedRowValue(`0,`0,`0[])"/>
+            if the provided <see cref="T:System.Object"/>s can be casted to <typeparamref name="T"/>.
+            </remarks>
+        </member>
+        <member name="M:Falsus.Providers.DataGeneratorProvider`1.GetRowValue(Falsus.DataGeneratorContext,System.Object[])">
+            <summary>
+            Generates a random instance of the object type supported by this provider
+            based on the context and excluded objects.
+            </summary>
+            <param name="context">
+            An instance of <see cref="T:Falsus.DataGeneratorContext"/> defining
+            the current generation context.
+            </param>
+            <param name="excludedObjects">
+            An array of <see cref="T:System.Object"/>s that cannot be returned
+            by the provider.
+            </param>
+            <returns>
+            A random instance of <see cref="T:System.Object"/>.
+            </returns>
+            <remarks>
+            This method will return the result of <see cref="M:Falsus.Providers.DataGeneratorProvider`1.GetRowValue(Falsus.DataGeneratorContext,`0[])"/>
+            if the provided <see cref="T:System.Object"/> array can be casted to an array of <typeparamref name="T"/>.
+            </remarks>
+        </member>
+        <member name="M:Falsus.Providers.DataGeneratorProvider`1.GetRowValue(Falsus.DataGeneratorContext,Falsus.GeneratorProperties.WeightedRange[],System.Object[])">
+            <summary>
+            Generates a random instance of the object type supported by this provider
+            based on the context and excluded ranges.
+            </summary>
+            <param name="context">
+            An instance of <see cref="T:Falsus.DataGeneratorContext"/> defining
+            the current generation context.
+            </param>
+            <param name="excludedRanges">
+            An array of <see cref="T:Falsus.GeneratorProperties.WeightedRange"/>s defining the ranges
+            that cannot be returned by the provider.
+            </param>
+            <param name="excludedObjects">
+            An array of <see cref="T:System.Object"/>s that cannot be returned
+            by the provider.
+            </param>
+            <returns>
+            A random instance of <see cref="T:System.Object"/>.
+            </returns>
+            <remarks>
+            This method will return the result of <see cref="M:Falsus.Providers.DataGeneratorProvider`1.GetRowValue(Falsus.DataGeneratorContext,Falsus.GeneratorProperties.WeightedRange{`0}[],`0[])"/>
+            if the provided <see cref="T:Falsus.GeneratorProperties.WeightedRange"/> array can be casted to an array of <see cref="T:Falsus.GeneratorProperties.WeightedRange`1"/>.
+            </remarks>
+        </member>
+        <member name="M:Falsus.Providers.DataGeneratorProvider`1.GetValueId(System.Object)">
+            <summary>
+            Gets a unique identifier for the provided object.
+            </summary>
+            <param name="value">An instance of the object type supported by this provider.</param>
+            <returns>
+            A <see cref="T:System.String"/> containing the unique identifier of the provided instance.
+            </returns>
+            <remarks>
+            This method will return the result of <see cref="M:Falsus.Providers.DataGeneratorProvider`1.GetValueId(`0)"/>
+            if the provided <see cref="T:System.Object"/> can be casted to <typeparamref name="T"/>.
+            </remarks>
+        </member>
+        <member name="M:Falsus.Providers.DataGeneratorProvider`1.Load(Falsus.GeneratorProperties.IDataGeneratorProperty,System.Int32)">
+            <summary>
+            Instructs the data provider to prepare the data for generation.
+            </summary>
+            <param name="property">
+            An implementation of <see cref="T:Falsus.GeneratorProperties.IDataGeneratorProperty"/>
+            defining the property that this provider has been attached to.
+            </param>
+            <param name="rowCount">The desired number of rows to be generated.</param>
+            <remarks>
+            Invoked before any calculation takes place, the goal of this method is
+            usually preparing or caching data for the generation taking place afterwards.
+            This method will return the result of <see cref="M:Falsus.Providers.DataGeneratorProvider`1.Load(Falsus.GeneratorProperties.DataGeneratorProperty{`0},System.Int32)"/>
+            if the provided <see cref="T:Falsus.GeneratorProperties.IDataGeneratorProperty"/> can be casted to a <see cref="T:Falsus.GeneratorProperties.DataGeneratorProperty`1"/>.
+            </remarks>
+        </member>
+        <member name="M:Falsus.Providers.DataGeneratorProvider`1.Load(Falsus.GeneratorProperties.DataGeneratorProperty{`0},System.Int32)">
+            <summary>
+            Instructs the data provider to prepare the data for generation.
+            </summary>
+            <param name="property">
+            An implementation of the generic <see cref="T:Falsus.GeneratorProperties.DataGeneratorProperty`1"/>
+            defining the property that this provider has been attached to.
+            </param>
+            <param name="rowCount">The desired number of rows to be generated.</param>
+            <remarks>
+            Invoked before any calculation takes place, the goal of this method is
+            usually preparing or caching data for the generation taking place afterwards.
+            Does nothing unless overriden.
+            </remarks>
+        </member>
+        <member name="M:Falsus.Providers.DataGeneratorProvider`1.InitializeRandomizer">
+            <summary>
+            Initializes the pseudo-random number generator with the default
+            time-dependent seed.
+            </summary>
+        </member>
+        <member name="M:Falsus.Providers.DataGeneratorProvider`1.InitializeRandomizer(System.Int32)">
+            <summary>
+            Initializes the pseudo-random number generator with the
+            specified <paramref name="seed"/>.
+            </summary>
+            <param name="seed">
+            A number used to calculate a starting value for the pseudo-random number sequence.
+            </param>
+        </member>
+        <member name="M:Falsus.Providers.DataGeneratorProvider`1.Falsus#Providers#IDataGeneratorProvider#GetRowValue(System.String)">
+            <summary>
+            Gets an instance of the object type supported by this provider based
+            on the provided <paramref name="id"/>.
+            </summary>
+            <param name="id">An unique identifier for the object.</param>
+            <returns>
+            An instance of the <see cref="T:System.Object"/> with the specified unique identifier.
+            </returns>
+        </member>
+        <member name="M:Falsus.Providers.DataGeneratorProvider`1.OnInitializeRandomizer(System.Nullable{System.Int32})">
+            <summary>
+            Method invoked after the Random instance has been initialized.
+            </summary>
+            <param name="seed">
+            A number used to calculate a starting value for the pseudo-random number sequence.
+            </param>
+        </member>
+        <member name="T:Falsus.Providers.DataGeneratorProviderArgument">
+            <summary>
+            Defines the structure of an argument for a <see cref="T:Falsus.Providers.DataGeneratorProvider`1"/>.
+            </summary>
+        </member>
+        <member name="M:Falsus.Providers.DataGeneratorProviderArgument.#ctor(System.Type,System.String,System.String)">
+            <summary>
+            Initializes a new instance of the <see cref="T:Falsus.Providers.DataGeneratorProviderArgument"/> class.
+            </summary>
+            <param name="argumentType">
+            The <see cref="T:System.Type"/> of the argument value.
+            </param>
+            <param name="propertyName">
+            The name of the <see cref="T:Falsus.GeneratorProperties.DataGeneratorProperty`1"/> responsible for providing the value.
+            </param>
+            <param name="argumentName">
+            The name of the argument that the <see cref="T:Falsus.Providers.DataGeneratorProvider`1"/> is expecting.
+            </param>
+        </member>
+        <member name="P:Falsus.Providers.DataGeneratorProviderArgument.ArgumentType">
+            <summary>
+            Gets the <see cref="T:System.Type"/> of the argument value.
+            </summary>
+            <value>
+            The <see cref="T:System.Type"/> of the argument value.
+            </value>
+        </member>
+        <member name="P:Falsus.Providers.DataGeneratorProviderArgument.PropertyName">
+            <summary>
+            Gets the name of the <see cref="T:Falsus.GeneratorProperties.DataGeneratorProperty`1"/> responsible for providing the value.
+            </summary>
+            <value>
+            The name of the property.
+            </value>
+        </member>
+        <member name="P:Falsus.Providers.DataGeneratorProviderArgument.ArgumentName">
+            <summary>
+            Gets the name of the argument that the <see cref="T:Falsus.Providers.DataGeneratorProvider`1"/> is expecting.
+            </summary>
+            <value>
+            The name of the argument.
+            </value>
+        </member>
+        <member name="T:Falsus.Providers.GenericArrayProvider`1">
+            <summary>
+            Defines the abstract class for an array based data provider supporting all methods defined by the
+            the <see cref="T:Falsus.Providers.DataGeneratorProvider`1"/> base class.
+            </summary>
+            <typeparam name="T">The type of data returned by this provider.</typeparam>
+            <seealso cref="T:Falsus.Providers.DataGeneratorProvider`1"/>
+        </member>
+        <member name="M:Falsus.Providers.GenericArrayProvider`1.#ctor">
+            <summary>
+            Initializes a new instance of the <see cref="T:Falsus.Providers.GenericArrayProvider`1"/> class.
+            </summary>
+        </member>
+        <member name="M:Falsus.Providers.GenericArrayProvider`1.GetRangedRowValue(`0,`0,`0[])">
+            <summary>
+            Generates a random instance of <typeparamref name="T"/>
+            that is greater than the value of <paramref name="minValue"/> and lower
+            than the value of <paramref name="maxValue"/>.
+            </summary>
+            <param name="minValue">The exclusive lower bound of the random object returned.</param>
+            <param name="maxValue">The exclusive upper bound of the random object returned.</param>
+            <param name="excludedObjects">
+            An array of <typeparamref name="T"/>s that cannot be returned
+            by the provider.
+            </param>
+            <returns>
+            A random instance of <typeparamref name="T"/> greater than <paramref name="minValue"/>
+            and less than <paramref name="maxValue"/>.
+            </returns>
+            <remarks>
+            <paramref name="maxValue"/> must be greater than <paramref name="minValue"/>.
+            </remarks>
+        </member>
+        <member name="M:Falsus.Providers.GenericArrayProvider`1.GetRowValue(Falsus.DataGeneratorContext,`0[])">
+            <summary>
+            Generates a random instance of <typeparamref name="T"/>
+            based on the context and excluded objects.
+            </summary>
+            <param name="context">
+            An instance of <see cref="T:Falsus.DataGeneratorContext"/> defining
+            the current generation context.
+            </param>
+            <param name="excludedObjects">
+            An array of <typeparamref name="T"/>s that cannot be returned
+            by the provider.
+            </param>
+            <returns>
+            A random instance of <typeparamref name="T"/>.
+            </returns>
+        </member>
+        <member name="M:Falsus.Providers.GenericArrayProvider`1.GetRowValue(Falsus.DataGeneratorContext,Falsus.GeneratorProperties.WeightedRange{`0}[],`0[])">
+            <summary>
+            Generates a random instance of the object type supported by this provider
+            based on the context and excluded ranges.
+            </summary>
+            <param name="context">
+            An instance of <see cref="T:Falsus.DataGeneratorContext"/> defining
+            the current generation context.
+            </param>
+            <param name="excludedRanges">
+            An array of <see cref="T:Falsus.GeneratorProperties.WeightedRange`1"/>s defining the ranges
+            that cannot be returned by the provider.
+            </param>
+            <param name="excludedObjects">
+            An array of <typeparamref name="T"/>s that cannot be returned
+            by the provider.
+            </param>
+            <returns>
+            A random instance of <see cref="T:System.Object"/>.
+            </returns>
+        </member>
+        <member name="M:Falsus.Providers.GenericArrayProvider`1.GetValues(Falsus.DataGeneratorContext)">
+            <summary>
+            Gets all instances of <typeparamref name="T"/> based on the generation context.
+            </summary>
+            <param name="context">
+            An instance of <see cref="T:Falsus.DataGeneratorContext"/> defining
+            the current generation context.
+            </param>
+            <returns>
+            An array of <typeparamref name="T"/>s.
+            </returns>
+            <remarks>
+            This method should return all possible values for the <paramref name="context"/>,
+            excluded objects will be removed afterwards.
+            </remarks>
+        </member>
+        <member name="M:Falsus.Providers.GenericArrayProvider`1.GetValues">
+            <summary>
+            Gets all instances of <typeparamref name="T"/>.
+            </summary>
+            <returns>
+            An array of <typeparamref name="T"/>s.
+            </returns>
+        </member>
+        <member name="T:Falsus.Providers.IDataGeneratorProvider">
+            <summary>
+            Defines the interface for a data provider.
+            </summary>
+        </member>
+        <member name="M:Falsus.Providers.IDataGeneratorProvider.GetSupportedArguments">
+            <summary>
+            Retrieves the list of arguments supported by the data provider.
+            </summary>
+            <returns>
+            A <see cref="T:System.Collections.Generic.Dictionary`2"/> containing the
+            name of the argument as key and the argument type as value.
+            </returns>
+        </member>
+        <member name="M:Falsus.Providers.IDataGeneratorProvider.Load(Falsus.GeneratorProperties.IDataGeneratorProperty,System.Int32)">
+            <summary>
+            Instructs the data provider to prepare the data for generation.
+            </summary>
+            <param name="property">
+            An implementation of <see cref="T:Falsus.GeneratorProperties.IDataGeneratorProperty"/>
+            defining the property that this provider has been attached to.
+            </param>
+            <param name="rowCount">The desired number of rows to be generated.</param>
+            <remarks>
+            Invoked before any calculation takes place, the goal of this method is
+            usually preparing or caching data for the generation taking place afterwards.
+            </remarks>
+        </member>
+        <member name="M:Falsus.Providers.IDataGeneratorProvider.GetRowValue(System.String)">
+            <summary>
+            Gets an instance of the object type supported by this provider based
+            on the provided <paramref name="id"/>.
+            </summary>
+            <param name="id">An unique identifier for the object.</param>
+            <returns>
+            An instance of the <see cref="T:System.Object"/> with the specified unique identifier.
+            </returns>
+        </member>
+        <member name="M:Falsus.Providers.IDataGeneratorProvider.GetRowValue(Falsus.DataGeneratorContext,System.Object[])">
+            <summary>
+            Generates a random instance of the object type supported by this provider
+            based on the context and excluded objects.
+            </summary>
+            <param name="context">
+            An instance of <see cref="T:Falsus.DataGeneratorContext"/> defining
+            the current generation context.
+            </param>
+            <param name="excludedObjects">
+            An array of <see cref="T:System.Object"/>s that cannot be returned
+            by the provider.
+            </param>
+            <returns>
+            A random instance of <see cref="T:System.Object"/>.
+            </returns>
+        </member>
+        <member name="M:Falsus.Providers.IDataGeneratorProvider.GetRowValue(Falsus.DataGeneratorContext,Falsus.GeneratorProperties.WeightedRange[],System.Object[])">
+            <summary>
+            Generates a random instance of the object type supported by this provider
+            based on the context and excluded ranges.
+            </summary>
+            <param name="context">
+            An instance of <see cref="T:Falsus.DataGeneratorContext"/> defining
+            the current generation context.
+            </param>
+            <param name="excludedRanges">
+            An array of <see cref="T:Falsus.GeneratorProperties.WeightedRange"/>s defining the ranges
+            that cannot be returned by the provider.
+            </param>
+            <param name="excludedObjects">
+            An array of <see cref="T:System.Object"/>s that cannot be returned
+            by the provider.
+            </param>
+            <returns>
+            A random instance of <see cref="T:System.Object"/> that is outside of
+            the provided <paramref name="excludedRanges"/>.
+            </returns>
+        </member>
+        <member name="M:Falsus.Providers.IDataGeneratorProvider.GetRangedRowValue(System.Object,System.Object,System.Object[])">
+            <summary>
+            Generates a random instance of the object type supported by this provider
+            that is greater than the value of <paramref name="minValue"/> and lower
+            than the value of <paramref name="maxValue"/>.
+            </summary>
+            <param name="minValue">The exclusive lower bound of the random object returned.</param>
+            <param name="maxValue">The exclusive upper bound of the random object returned.</param>
+            <param name="excludedObjects">
+            An array of <see cref="T:System.Object"/>s that cannot be returned
+            by the provider.
+            </param>
+            <returns>
+            A random instance of <see cref="T:System.Object"/> greater than <paramref name="minValue"/>
+            and less than <paramref name="maxValue"/>.
+            </returns>
+            <remarks>
+            <paramref name="maxValue"/> must be greater than <paramref name="minValue"/>.
+            </remarks>
+        </member>
+        <member name="M:Falsus.Providers.IDataGeneratorProvider.GetValueId(System.Object)">
+            <summary>
+            Gets a unique identifier for the provided object.
+            </summary>
+            <param name="value">An instance of the object type supported by this provider.</param>
+            <returns>
+            A <see cref="T:System.String"/> containing the unique identifier of the provided instance.
+            </returns>
+        </member>
+        <member name="M:Falsus.Providers.IDataGeneratorProvider.InitializeRandomizer">
+            <summary>
+            Initializes the pseudo-random number generator with the default
+            time-dependent seed.
+            </summary>
+        </member>
+        <member name="M:Falsus.Providers.IDataGeneratorProvider.InitializeRandomizer(System.Int32)">
+            <summary>
+            Initializes the pseudo-random number generator with the
+            specified <paramref name="seed"/>.
+            </summary>
+            <param name="seed">
+            A number used to calculate a starting value for the pseudo-random number sequence.
+            </param>
+        </member>
+        <member name="T:Falsus.Providers.IDataGeneratorProvider`1">
+            <summary>
+            Defines the interface for typed data provider.
+            </summary>
+            <seealso cref="T:Falsus.Providers.IDataGeneratorProvider"/>
+            <typeparam name="T">The type of the value that is generated by this provider.</typeparam>
+        </member>
+        <member name="M:Falsus.Providers.IDataGeneratorProvider`1.Load(Falsus.GeneratorProperties.DataGeneratorProperty{`0},System.Int32)">
+            <summary>
+            Instructs the data provider to prepare the data for generation.
+            </summary>
+            <param name="property">
+            An implementation of the generic <see cref="T:Falsus.GeneratorProperties.DataGeneratorProperty`1"/>
+            defining the property that this provider has been attached to.
+            </param>
+            <param name="rowCount">The desired number of rows to be generated.</param>
+            <remarks>
+            Invoked before any calculation takes place, the goal of this method is
+            usually preparing or caching data for the generation taking place afterwards.
+            </remarks>
+        </member>
+        <member name="M:Falsus.Providers.IDataGeneratorProvider`1.GetRowValue(System.String)">
+            <summary>
+            Gets an instance of the object type supported by this provider based on
+            the provided <paramref name="id"/>.
+            </summary>
+            <param name="id">An unique identifier for the object.</param>
+            <returns>
+            An instance of the <typeparamref name="T"/> with the specified unique identifier.
+            </returns>
+        </member>
+        <member name="M:Falsus.Providers.IDataGeneratorProvider`1.GetRowValue(Falsus.DataGeneratorContext,`0[])">
+            <summary>
+            Generates a random instance of the object type supported by this provider
+            based on the context and excluded objects.
+            </summary>
+            <param name="context">
+            An instance of <see cref="T:Falsus.DataGeneratorContext"/> defining
+            the current generation context.
+            </param>
+            <param name="excludedObjects">
+            An array of <typeparamref name="T"/> instances that cannot be returned
+            by the provider.
+            </param>
+            <returns>
+            A random instance of <typeparamref name="T"/>.
+            </returns>
+        </member>
+        <member name="M:Falsus.Providers.IDataGeneratorProvider`1.GetRowValue(Falsus.DataGeneratorContext,Falsus.GeneratorProperties.WeightedRange{`0}[],`0[])">
+            <summary>
+            Generates a random instance of the object type supported by this provider
+            based on the context and excluded ranges.
+            </summary>
+            <param name="context">
+            An instance of <see cref="T:Falsus.DataGeneratorContext"/> defining
+            the current generation context.
+            </param>
+            <param name="excludedRanges">
+            An array of <see cref="T:Falsus.GeneratorProperties.WeightedRange`1"/>s defining the ranges
+            that cannot be returned by the provider.
+            </param>
+            <param name="excludedObjects">
+            An array of <typeparamref name="T"/>s that cannot be returned
+            by the provider.
+            </param>
+            <returns>
+            A random instance of <typeparamref name="T"/> that is outside of
+            the provided <paramref name="excludedRanges"/>.
+            </returns>
+        </member>
+        <member name="M:Falsus.Providers.IDataGeneratorProvider`1.GetRangedRowValue(`0,`0,`0[])">
+            <summary>
+            Generates a random instance of the object type supported by this provider
+            that is greater than the value of <paramref name="minValue"/> and lower
+            than the value of <paramref name="maxValue"/>.
+            </summary>
+            <param name="minValue">The exclusive lower bound of the random object returned.</param>
+            <param name="maxValue">The exclusive upper bound of the random object returned.</param>
+            <param name="excludedObjects">
+            An array of <typeparamref name="T"/> instances that cannot be returned
+            by the provider.
+            </param>
+            <returns>
+            A random instance of <typeparamref name="T"/> greater than <paramref name="minValue"/>
+            and less than <paramref name="maxValue"/>.
+            </returns>
+            <remarks>
+            <paramref name="maxValue"/> must be greater than <paramref name="minValue"/>.
+            </remarks>
+        </member>
+        <member name="M:Falsus.Providers.IDataGeneratorProvider`1.GetValueId(`0)">
+            <summary>
+            Gets a unique identifier for the provided object.
+            </summary>
+            <param name="value">An instance of the object type supported by this provider.</param>
+            <returns>
+            A <see cref="T:System.String"/> containing the unique identifier of the provided instance.
+            </returns>
+        </member>
+    </members>
+</doc>
