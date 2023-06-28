@@ -476,6 +476,60 @@
             If value type is known use <see cref="M:Falsus.DataGeneratorContext.GetRowProperty``1(System.String)"/> overload.
             </remarks>
         </member>
+        <member name="T:Falsus.Extensions.RandomExtensions">
+            <summary>
+            Extension methods for the <see cref="T:System.Random"/> class.
+            </summary>
+        </member>
+        <member name="M:Falsus.Extensions.RandomExtensions.NextBoolean(System.Random)">
+            <summary>
+            Returns a random boolean.
+            </summary>
+            <param name="random">The pseudo-random number generator.</param>
+            <returns>A random <see cref="T:System.Boolean"/>.</returns>
+        </member>
+        <member name="M:Falsus.Extensions.RandomExtensions.NextFloat(System.Random)">
+            <summary>
+            Returns a random float.
+            </summary>
+            <param name="random">The pseudo-random number generator.</param>
+            <returns>A random <see cref="T:System.Single"/>.</returns>
+        </member>
+        <member name="M:Falsus.Extensions.RandomExtensions.NextFloat(System.Random,System.Single)">
+            <summary>
+            Returns a random float between 0 and <paramref name="max"/>.
+            </summary>
+            <param name="random">The pseudo-random number generator.</param>
+            <param name="max">The exclusive upper bound of the returned float.</param>
+            <returns>A <see cref="T:System.Single"/> value.</returns>
+        </member>
+        <member name="M:Falsus.Extensions.RandomExtensions.NextFloat(System.Random,System.Single,System.Single)">
+            <summary>
+            Returns a random float between <paramref name="min"/> and <paramref name="max"/>.
+            </summary>
+            <param name="random">The pseudo-random number generator.</param>
+            <param name="min">The inclusive lower bound of the returned float.</param>
+            <param name="max">The exclusive upper bound of the returned float.</param>
+            <returns>A <see cref="T:System.Single"/> value.</returns>
+        </member>
+        <member name="M:Falsus.Extensions.RandomExtensions.NextDouble(System.Random,System.Double,System.Double)">
+            <summary>
+            Returns a random double between <paramref name="min"/> and <paramref name="max"/>.
+            </summary>
+            <param name="random">The pseudo-random number generator.</param>
+            <param name="min">The inclusive lower bound of the returned double.</param>
+            <param name="max">The exclusive upper bound of the returned double.</param>
+            <returns>A <see cref="T:System.Double"/> value.</returns>
+        </member>
+        <member name="M:Falsus.Extensions.RandomExtensions.NextString(System.Random,System.Int32,System.Boolean)">
+            <summary>
+            Returns a random string of the specified <paramref name="length"/>.
+            </summary>
+            <param name="random">The pseudo-random number generator.</param>
+            <param name="length">The number of characters of the random string.</param>
+            <param name="includeSpecialChars">True if the generated string can include special characters.</param>
+            <returns>A <see cref="T:System.String"/> value.</returns>
+        </member>
         <member name="T:Falsus.GeneratorProperties.DataGeneratorProperty`1">
             <summary>
             Defines a generic property that can be
