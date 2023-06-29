@@ -31,12 +31,12 @@ jobs:
     
     # Install dependencies
     - name: Install dependencies
-      run: dotnet restore
+      run: dotnet restore src/Falsus.sln
 
     # Build the Falsus Engine
     - name: Build
-      run: dotnet build --configuration ${{ matrix.configuration }} --no-restore
+      run: dotnet build src/Falsus.sln --configuration ${{ matrix.configuration }} --no-restore
       
     # Execute all unit tests for Falsus Engine
     - name: Execute unit tests
-      run: dotnet test --no-restore --verbosity normal
+      run: dotnet test src/Falsus.sln --no-restore --verbosity normal
