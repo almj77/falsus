@@ -5,8 +5,8 @@
     using System.Linq;
     using Falsus.GeneratorProperties;
     using Falsus.Providers;
+    using Falsus.Shared.Helpers;
     using Falsus.UnitTests.Fakes.Models;
-    using Falsus.UnitTests.Helpers;
 
     public class FakeCountryProvider : GenericArrayProvider<FakeCountryModel>
     {
@@ -36,7 +36,7 @@
         {
             base.Load(property, rowCount);
 
-            countries = ResourceReader.ReadContentsFromFile<FakeCountryModel[]>("Countries.json");
+            countries = ResourceReader.ReadContentsFromFile<FakeCountryModel[]>("Falsus.UnitTests.Datasets.Countries.json");
         }
 
         protected override FakeCountryModel[] GetValues(DataGeneratorContext context)

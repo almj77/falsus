@@ -9,29 +9,25 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <None Remove="Datasets\Nationalities.json" />
-  </ItemGroup>
-
-  <ItemGroup>
-    <EmbeddedResource Include="..\..\Providers\Location\Falsus.Providers.Location\Datasets\Countries.json" Link="Datasets\Countries.json" />
+    <EmbeddedResource Include="..\..\Location\Falsus.Providers.Location\Datasets\Countries.json" Link="Datasets\Countries.json" />
+    <EmbeddedResource Include="..\Falsus.Providers.Finance\Datasets\Currencies.json" Link="Datasets\Currencies.json" />
   </ItemGroup>
 
   <ItemGroup>
     <PackageReference Include="Microsoft.NET.Test.Sdk" Version="17.1.0" />
-    <PackageReference Include="Moq" Version="4.18.4" />
     <PackageReference Include="MSTest.TestAdapter" Version="2.2.8" />
     <PackageReference Include="MSTest.TestFramework" Version="2.2.8" />
     <PackageReference Include="coverlet.collector" Version="3.1.2" />
-    <PackageReference Include="Newtonsoft.Json" Version="13.0.3" />
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\..\Shared\Falsus.Shared\Falsus.Shared.csproj" />
-    <ProjectReference Include="..\Falsus\Falsus.csproj" />
+    <ProjectReference Include="..\..\..\Engine\Falsus\Falsus.csproj" />
+    <ProjectReference Include="..\..\..\Shared\Falsus.Shared\Falsus.Shared.csproj" />
+    <ProjectReference Include="..\Falsus.Providers.Finance\Falsus.Providers.Finance.csproj" />
   </ItemGroup>
 
   <ItemGroup>
-    <EmbeddedResource Include="Datasets\Nationalities.json" />
+    <Folder Include="Datasets\" />
   </ItemGroup>
 
 </Project>
