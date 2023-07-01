@@ -1,31 +1,31 @@
-﻿namespace Falsus.Providers.Number.UnitTests
+﻿namespace Falsus.Providers.DataTypes.UnitTests
 {
     using System;
     using System.Collections.Generic;
     using System.Globalization;
     using System.Linq;
     using Falsus.GeneratorProperties;
-    using Falsus.Providers.Number;
+    using Falsus.Providers.DataTypes;
     using Microsoft.VisualStudio.TestTools.UnitTesting;
 
     [TestClass]
-    public class DoubleProviderUnitTests
+    public class FloatProviderUnitTests
     {
         [TestMethod]
         public void GetRangedRowValueReturnsExpectedValue()
         {
             // Arrange
-            double minDouble = int.MaxValue;
-            double maxDouble = double.MaxValue;
+            float minFloat = 0.25f;
+            float maxFloat = 0.5f;
 
             ProviderResult providerResult = CreateProvider();
-            DoubleProvider provider = providerResult.Provider;
+            FloatProvider provider = providerResult.Provider;
 
             // Act
-            double value = provider.GetRangedRowValue(minDouble, maxDouble, Array.Empty<double>());
+            float value = provider.GetRangedRowValue(minFloat, maxFloat, Array.Empty<float>());
 
             // Assert
-            Assert.IsTrue(value > minDouble && value < maxDouble);
+            Assert.IsTrue(value > minFloat && value < maxFloat);
         }
 
         [TestMethod]
@@ -33,37 +33,36 @@
         public void GetRangedRowValueWithOverflownThrowsException()
         {
             // Arrange
-            double minDouble = 1.7976931348623150E+308;
-            double maxDouble = double.MaxValue;
-            double[] excludedObjects = new double[8] {
-                1.7976931348623150E+308,
-                1.7976931348623151E+308,
-                1.7976931348623152E+308,
-                1.7976931348623153E+308,
-                1.7976931348623154E+308,
-                1.7976931348623155E+308,
-                1.7976931348623156E+308,
-                1.7976931348623157E+308
+            float minFloat = 3.402823460E+38f;
+            float maxFloat = float.MaxValue;
+            float[] excludedObjects = new float[7] {
+                3.402823460E+38f,
+                3.402823461E+38f,
+                3.402823462E+38f,
+                3.402823463E+38f,
+                3.402823464E+38f,
+                3.402823465E+38f,
+                3.402823466E+38f
             };
 
             ProviderResult providerResult = CreateProvider();
-            DoubleProvider provider = providerResult.Provider;
+            FloatProvider provider = providerResult.Provider;
 
             // Act
-            provider.GetRangedRowValue(minDouble, maxDouble, excludedObjects);
+            provider.GetRangedRowValue(minFloat, maxFloat, excludedObjects);
         }
 
         [TestMethod]
         public void GetRowValueReturnsExpectedValue()
         {
             // Arrange
-            double expected = 1275;
+            float expected = 694.856f;
 
             ProviderResult providerResult = CreateProvider();
-            DoubleProvider provider = providerResult.Provider;
+            FloatProvider provider = providerResult.Provider;
 
             // Act
-            double actual = provider.GetRowValue(expected.ToString());
+            float actual = provider.GetRowValue(expected.ToString());
 
             // Assert
             Assert.AreEqual(expected, actual);
@@ -74,11 +73,11 @@
         {
             // Arrange
             ProviderResult providerResult = CreateProvider();
-            DoubleProvider provider = providerResult.Provider;
+            FloatProvider provider = providerResult.Provider;
             DataGeneratorContext context = providerResult.Context;
 
             // Act
-            double? value = provider.GetRowValue(context, Array.Empty<double>());
+            float? value = provider.GetRowValue(context, Array.Empty<float>());
 
             // Assert
             Assert.IsTrue(value.HasValue);
@@ -88,15 +87,15 @@
         public void GetRowValueWithSeedReturnsExpectedValue()
         {
             // Arrange
-            int seed = 669823;
-            double expected = 0.21746937754446147;
+            int seed = 552378;
+            float expected = 0.9764444f;
 
             ProviderResult providerResult = CreateProvider(1, seed);
-            DoubleProvider provider = providerResult.Provider;
+            FloatProvider provider = providerResult.Provider;
             DataGeneratorContext context = providerResult.Context;
 
             // Act
-            double? actual = provider.GetRowValue(context, Array.Empty<double>());
+            float? actual = provider.GetRowValue(context, Array.Empty<float>());
 
             // Assert
             Assert.AreEqual(expected, actual);
@@ -107,11 +106,11 @@
         {
             // Arrange
             ProviderResult providerResult = CreateProvider();
-            DoubleProvider provider = providerResult.Provider;
+            FloatProvider provider = providerResult.Provider;
             DataGeneratorContext context = providerResult.Context;
 
             // Act
-            double? value = provider.GetRowValue(context, Array.Empty<WeightedRange<double>>(), Array.Empty<double>());
+            float? value = provider.GetRowValue(context, Array.Empty<WeightedRange<float>>(), Array.Empty<float>());
 
             // Assert
             Assert.IsTrue(value.HasValue);
@@ -127,32 +126,26 @@
                 ValuesWithinExpectedRange = true
             };
 
-            List<double?> generatedValues = new List<double?>();
-            WeightedRange<double>[] excludedRanges = new WeightedRange<double>[1]
+            List<float?> generatedValues = new List<float?>();
+            WeightedRange<float>[] excludedRanges = new WeightedRange<float>[1]
             {
-                new WeightedRange<double>()
+                new WeightedRange<float>()
                 {
                     MinValue = 0,
-                    MaxValue = double.MaxValue,
+                    MaxValue = float.MaxValue,
                     Weight = 0.25f
                 }
             };
 
-            ProviderResult providerResult = CreateProvider();
-            DoubleProvider provider = providerResult.Provider;
-            DataGeneratorProperty<double> property = providerResult.Property;
+            ProviderResult providerResult = CreateProvider(expected.RowCount);
+            FloatProvider provider = providerResult.Provider;
+            DataGeneratorProperty<float> property = providerResult.Property;
 
             // Act
             for (int i = 0; i < expected.RowCount; i++)
             {
-                DataGeneratorContext context = new DataGeneratorContext(
-                    new Dictionary<string, object>(),
-                    i,
-                    expected.RowCount,
-                    property,
-                    property.Arguments);
-
-                generatedValues.Add(provider.GetRowValue(context, excludedRanges, generatedValues.Where(u => u.HasValue).Select(u => u.Value).ToArray()));
+                DataGeneratorContext context = new DataGeneratorContext(new Dictionary<string, object>(), i, expected.RowCount, property, property.Arguments);
+                generatedValues.Add(provider.GetRowValue(context, excludedRanges, Array.Empty<float>()));
             }
 
             var actual = new
@@ -176,31 +169,25 @@
                 ValuesWithinExpectedRange = true
             };
 
-            List<double?> generatedValues = new List<double?>();
-            WeightedRange<double>[] excludedRanges = new WeightedRange<double>[1]
+            List<float?> generatedValues = new List<float?>();
+            WeightedRange<float>[] excludedRanges = new WeightedRange<float>[1]
             {
-                new WeightedRange<double>()
+                new WeightedRange<float>()
                 {
                     MinValue = 0,
-                    MaxValue = double.MaxValue,
+                    MaxValue = float.MaxValue,
                     Weight = 0.25f
                 }
             };
 
-            ProviderResult providerResult = CreateProvider();
-            DoubleProvider provider = providerResult.Provider;
-            DataGeneratorProperty<double> property = providerResult.Property;
+            ProviderResult providerResult = CreateProvider(expected.RowCount);
+            FloatProvider provider = providerResult.Provider;
+            DataGeneratorProperty<float> property = providerResult.Property;
 
             // Act
             for (int i = 0; i < expected.RowCount; i++)
             {
-                DataGeneratorContext context = new DataGeneratorContext(
-                    new Dictionary<string, object>(),
-                    i,
-                    expected.RowCount,
-                    property,
-                    property.Arguments);
-
+                DataGeneratorContext context = new DataGeneratorContext(new Dictionary<string, object>(), i, expected.RowCount, new DataGeneratorProperty<float>("float"), new Dictionary<string, IDataGeneratorProperty[]>());
                 generatedValues.Add(provider.GetRowValue(context, excludedRanges, generatedValues.Select(u => u.Value).ToArray()));
             }
 
@@ -226,31 +213,31 @@
                 ValuesWithinExpectedRange = true
             };
 
-            List<double?> generatedValues = new List<double?>();
-            WeightedRange<double>[] excludedRanges = new WeightedRange<double>[2]
+            List<float?> generatedValues = new List<float?>();
+            WeightedRange<float>[] excludedRanges = new WeightedRange<float>[2]
             {
-                new WeightedRange<double>()
+                new WeightedRange<float>()
                 {
-                    MinValue = double.MinValue,
-                    MaxValue = 0,
+                    MinValue = -2000,
+                    MaxValue = -1000,
                     Weight = 0.25f
                 },
-                new WeightedRange<double>()
+                new WeightedRange<float>()
                 {
-                    MinValue = 1000,
-                    MaxValue = double.MaxValue - 1000,
+                    MinValue = 5000,
+                    MaxValue = 9000,
                     Weight = 0.25f
                 }
             };
 
-            ProviderResult providerResult = CreateProvider();
-            DoubleProvider provider = providerResult.Provider;
-            DataGeneratorProperty<double> property = providerResult.Property;
+            ProviderResult providerResult = CreateProvider(expected.RowCount);
+            FloatProvider provider = providerResult.Provider;
+            DataGeneratorProperty<float> property = providerResult.Property;
 
             // Act
             for (int i = 0; i < expected.RowCount; i++)
             {
-                DataGeneratorContext context = new DataGeneratorContext(new Dictionary<string, object>(), i, expected.RowCount, property, property.Arguments);
+                DataGeneratorContext context = new DataGeneratorContext(new Dictionary<string, object>(), i, expected.RowCount, new DataGeneratorProperty<float>("float"), new Dictionary<string, IDataGeneratorProperty[]>());
                 generatedValues.Add(provider.GetRowValue(context, excludedRanges, generatedValues.Select(u => u.Value).ToArray()));
             }
 
@@ -258,7 +245,7 @@
             {
                 RowCount = generatedValues.Count(u => u.HasValue),
                 UniquevalueCount = generatedValues.Select(u => u.Value).Distinct().Count(),
-                ValuesWithinExpectedRange = generatedValues.All(u => u.HasValue && u.Value > 0 && u.Value < 1000)
+                ValuesWithinExpectedRange = generatedValues.All(u => u.HasValue && (u.Value < -2000 || (u.Value > -1000 && u.Value < 5000) || (u.Value > 9000)))
             };
 
             // Assert
@@ -272,37 +259,31 @@
             // Arrange
             int expectedRowCount = 1000;
 
-            List<double?> generatedValues = new List<double?>();
-            WeightedRange<double>[] excludedRanges = new WeightedRange<double>[2]
+            List<float?> generatedValues = new List<float?>();
+            WeightedRange<float>[] excludedRanges = new WeightedRange<float>[2]
             {
-                new WeightedRange<double>()
+                new WeightedRange<float>()
                 {
                     MinValue = 0,
-                    MaxValue = double.MaxValue,
+                    MaxValue = float.MaxValue,
                     Weight = 0.25f
                 },
-                new WeightedRange<double>()
+                new WeightedRange<float>()
                 {
-                    MinValue = double.MinValue,
+                    MinValue = float.MinValue,
                     MaxValue = 0,
                     Weight = 0.25f
                 }
             };
 
-            ProviderResult providerResult = CreateProvider();
-            DoubleProvider provider = providerResult.Provider;
-            DataGeneratorProperty<double> property = providerResult.Property;
+            ProviderResult providerResult = CreateProvider(expectedRowCount);
+            FloatProvider provider = providerResult.Provider;
+            DataGeneratorProperty<float> property = providerResult.Property;
 
             // Act
             for (int i = 0; i < expectedRowCount; i++)
             {
-                DataGeneratorContext context = new DataGeneratorContext(
-                    new Dictionary<string, object>(),
-                    i,
-                    expectedRowCount,
-                    property,
-                    property.Arguments);
-
+                DataGeneratorContext context = new DataGeneratorContext(new Dictionary<string, object>(), i, expectedRowCount, new DataGeneratorProperty<float>("float"), new Dictionary<string, IDataGeneratorProperty[]>());
                 generatedValues.Add(provider.GetRowValue(context, excludedRanges, generatedValues.Select(u => u.Value).ToArray()));
             }
         }
@@ -314,33 +295,26 @@
             // Arrange
             int expectedRowCount = 1000;
 
-            List<double?> generatedValues = new List<double?>();
-            WeightedRange<double>[] excludedRanges = new WeightedRange<double>[1]
+            WeightedRange<float>[] excludedRanges = new WeightedRange<float>[1]
             {
-                new WeightedRange<double>()
+                new WeightedRange<float>()
                 {
-                    MinValue = double.MinValue,
-                    MaxValue = 1.7976931348623150E+308,
+                    MinValue = float.MinValue,
+                    MaxValue =  3.40282347E+38f - 0.00000100E+38f,
                     Weight = 0.25f
                 }
             };
 
-            double[] excludedObjects = new double[8] {
-                1.7976931348623150E+308,
-                1.7976931348623151E+308,
-                1.7976931348623152E+308,
-                1.7976931348623153E+308,
-                1.7976931348623154E+308,
-                1.7976931348623155E+308,
-                1.7976931348623156E+308,
-                1.7976931348623157E+308
-            };
+            List<float?> generatedValues = new List<float?>(new float?[3]{
+                3.40282245E+38f,
+                3.40282246E+38f,
+                3.40282247E+38f
+            });
 
-            // Act
-            DoubleProvider provider = new DoubleProvider();
-            DataGeneratorProperty<double> property = new RangedDataGeneratorProperty<double>("double")
+            FloatProvider provider = new FloatProvider();
+            DataGeneratorProperty<float> property = new RangedDataGeneratorProperty<float>("float")
                 .FromProvider(provider)
-                .WithWeightedRanges(new WeightedRange<double>()
+                .WithWeightedRanges(new WeightedRange<float>()
                 {
                     MinValue = 0,
                     MaxValue = 100,
@@ -348,10 +322,12 @@
                 });
 
             provider.InitializeRandomizer();
+
+            // Act
             for (int i = 0; i < expectedRowCount; i++)
             {
                 DataGeneratorContext context = new DataGeneratorContext(new Dictionary<string, object>(), i, expectedRowCount, property, property.Arguments);
-                generatedValues.Add(provider.GetRowValue(context, excludedRanges, excludedObjects));
+                generatedValues.Add(provider.GetRowValue(context, excludedRanges, generatedValues.Where(u => u.HasValue).Select(u => u.Value).ToArray()));
             }
         }
 
@@ -361,21 +337,15 @@
             // Arrange
             int expectedRowCount = 10000;
 
-            List<double?> generatedValues = new List<double?>();
+            List<float?> generatedValues = new List<float?>();
             ProviderResult providerResult = CreateProvider(expectedRowCount);
-            DoubleProvider provider = providerResult.Provider;
-            DataGeneratorProperty<double> property = providerResult.Property;
+            FloatProvider provider = providerResult.Provider;
+            DataGeneratorProperty<float> property = providerResult.Property;
 
             // Act
             for (int i = 0; i < 10000; i++)
             {
-                DataGeneratorContext context = new DataGeneratorContext(
-                    new Dictionary<string, object>(),
-                    i,
-                    expectedRowCount,
-                    property,
-                    property.Arguments);
-
+                DataGeneratorContext context = new DataGeneratorContext(new Dictionary<string, object>(), i, expectedRowCount, property, property.Arguments);
                 generatedValues.Add(provider.GetRowValue(context, generatedValues.Where(u => u.HasValue).Select(u => u.Value).ToArray()));
             }
 
@@ -391,22 +361,16 @@
             // Arrange
             int expectedRowCount = 1000000;
 
-            List<double?> generatedValues = new List<double?>();
+            List<float?> generatedValues = new List<float?>();
             ProviderResult providerResult = CreateProvider(expectedRowCount);
-            DoubleProvider provider = providerResult.Provider;
-            DataGeneratorProperty<double> property = providerResult.Property;
+            FloatProvider provider = providerResult.Provider;
+            DataGeneratorProperty<float> property = providerResult.Property;
 
             // Act
             for (int i = 0; i < 1000000; i++)
             {
-                DataGeneratorContext context = new DataGeneratorContext(
-                    new Dictionary<string, object>(),
-                    i,
-                    expectedRowCount,
-                    property,
-                    property.Arguments);
-
-                generatedValues.Add(provider.GetRowValue(context, Array.Empty<double>()));
+                DataGeneratorContext context = new DataGeneratorContext(new Dictionary<string, object>(), i, expectedRowCount, property, property.Arguments);
+                generatedValues.Add(provider.GetRowValue(context, Array.Empty<float>()));
             }
 
             int actualRowCount = generatedValues.Count(u => u.HasValue);
@@ -419,13 +383,13 @@
         public void GetValueIdReturnsExpectedValue()
         {
             // Arrange
-            string expected = string.Concat("7598", CultureInfo.CurrentCulture.NumberFormat.NumberDecimalSeparator, "4");
+            string expected = string.Concat("521", CultureInfo.CurrentCulture.NumberFormat.NumberDecimalSeparator, "477");
 
             ProviderResult providerResult = CreateProvider();
-            DoubleProvider provider = providerResult.Provider;
+            FloatProvider provider = providerResult.Provider;
 
             // Act
-            string actual = provider.GetValueId(7598.4);
+            string actual = provider.GetValueId(521.477f);
 
             // Assert
             Assert.AreEqual(expected, actual);
@@ -433,7 +397,7 @@
 
         private ProviderResult CreateProvider(int rowCount = 1, int? seed = default)
         {
-            DoubleProvider provider = new DoubleProvider();
+            FloatProvider provider = new FloatProvider();
             if (seed.HasValue)
             {
                 provider.InitializeRandomizer(seed.Value);
@@ -443,7 +407,7 @@
                 provider.InitializeRandomizer();
             }
 
-            DataGeneratorProperty<double> property = new DataGeneratorProperty<double>("double")
+            DataGeneratorProperty<float> property = new DataGeneratorProperty<float>("float")
                 .FromProvider(provider);
 
             provider.Load(property, rowCount);
@@ -460,8 +424,8 @@
 
         private struct ProviderResult
         {
-            public DoubleProvider Provider;
-            public DataGeneratorProperty<double> Property;
+            public FloatProvider Provider;
+            public DataGeneratorProperty<float> Property;
             public DataGeneratorContext Context;
         }
     }

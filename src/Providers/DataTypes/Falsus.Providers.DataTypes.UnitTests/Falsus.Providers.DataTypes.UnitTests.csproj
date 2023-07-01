@@ -17,7 +17,7 @@
 
   <ItemGroup>
     <ProjectReference Include="..\..\..\Engine\Falsus\Falsus.csproj" />
-    <ProjectReference Include="..\Falsus.Providers.Number\Falsus.Providers.Number.csproj" />
+    <ProjectReference Include="..\Falsus.Providers.Datatypes\Falsus.Providers.Datatypes.csproj" />
   </ItemGroup>
 
 </Project>

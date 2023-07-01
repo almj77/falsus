@@ -11,11 +11,11 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Engine", "Engine", "{906B7F
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Providers", "Providers", "{9C6B5946-7774-4289-B48B-227FDB1A5974}"
 EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Number", "Number", "{BB31A8C7-623E-4B39-9777-0B50CE4A0FB2}"
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "DataType", "DataType", "{BB31A8C7-623E-4B39-9777-0B50CE4A0FB2}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Falsus.Providers.Number", "Providers\Number\Falsus.Providers.Number\Falsus.Providers.Number.csproj", "{5412CD30-5861-457F-8431-B997D51068ED}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Falsus.Providers.DataTypes", "Providers\DataTypes\Falsus.Providers.DataTypes\Falsus.Providers.DataTypes.csproj", "{5412CD30-5861-457F-8431-B997D51068ED}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Falsus.Providers.Number.UnitTests", "Providers\Number\Falsus.Providers.Number.UnitTests\Falsus.Providers.Number.UnitTests.csproj", "{855A476C-CA63-4BFC-926B-9CB1BEAA5470}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Falsus.Providers.DataTypes.UnitTests", "Providers\DataTypes\Falsus.Providers.DataTypes.UnitTests\Falsus.Providers.DataTypes.UnitTests.csproj", "{855A476C-CA63-4BFC-926B-9CB1BEAA5470}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

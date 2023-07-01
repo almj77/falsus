@@ -1,4 +1,4 @@
-﻿namespace Falsus.Providers.Number
+﻿namespace Falsus.Providers.DataTypes
 {
     using System;
     using System.Collections.Generic;

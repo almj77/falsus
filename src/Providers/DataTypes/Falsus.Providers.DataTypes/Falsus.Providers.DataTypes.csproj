@@ -7,6 +7,10 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <None Remove="Falsus.Providers.DataTypes.xml" />
+  </ItemGroup>
+
+  <ItemGroup>
     <ProjectReference Include="..\..\..\Engine\Falsus\Falsus.csproj" />
   </ItemGroup>
 

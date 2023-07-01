@@ -1,10 +1,10 @@
-﻿namespace Falsus.Providers.Number.UnitTests
+﻿namespace Falsus.Providers.DataTypes.UnitTests
 {
     using System;
     using System.Collections.Generic;
     using System.Linq;
     using Falsus.GeneratorProperties;
-    using Falsus.Providers.Number;
+    using Falsus.Providers.DataTypes;
     using Microsoft.VisualStudio.TestTools.UnitTesting;
 
     [TestClass]
