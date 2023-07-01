@@ -1,0 +1,26 @@
+#recipe Docs
+#t Samson
+
+// Customize your settings and add new ones here
+//Settings[Keys.Host] = "host.com";
+Settings[DocsKeys.Title] = "Falsus";
+Settings[DocsKeys.SourceFiles] = @"../../src/**/{!bin,!obj,!packages,!*.UnitTests,}/**/*.cs";
+
+// Add any pipeline customizations here
+// Remove Blog
+Pipelines["BlogPosts"].Clear();
+//Pipelines["Pages"].Clear();
+Pipelines["BlogIndexes"].Clear();
+Pipelines["BlogCategories"].Clear();
+Pipelines["BlogTags"].Clear();
+Pipelines["BlogAuthors"].Clear();
+Pipelines["BlogArchives"].Clear();
+Pipelines["BlogYearlyArchives"].Clear();
+Pipelines["BlogFeed"].Clear();
+//Pipelines["RenderPages"].Clear();
+Pipelines["RenderBlogPosts"].Clear();
+//Pipelines["Redirects"].Clear();
+//Pipelines["RenderApi"].Clear();
+//Pipelines["ApiIndex"].Clear();
+//Pipelines["ApiSearchIndex"].Clear();
+//Pipelines["Less"].Clear();
