@@ -39,28 +39,28 @@ var searchModule = function() {
     a(
         {
             id:0,
-            title:"WeightedRange",
-            content:"WeightedRange",
+            title:"RangedDataGeneratorProperty",
+            content:"RangedDataGeneratorProperty",
             description:'',
             tags:''
         },
         {
-            url:'/api/Falsus.GeneratorProperties/WeightedRange',
-            title:"WeightedRange",
+            url:'/api/Falsus.GeneratorProperties/RangedDataGeneratorProperty_1',
+            title:"RangedDataGeneratorProperty<T>",
             description:""
         }
     );
     a(
         {
             id:1,
-            title:"DataGeneratorProvider",
-            content:"DataGeneratorProvider",
+            title:"DataGenerator",
+            content:"DataGenerator",
             description:'',
             tags:''
         },
         {
-            url:'/api/Falsus.Providers/DataGeneratorProvider_1',
-            title:"DataGeneratorProvider<T>",
+            url:'/api/Falsus/DataGenerator',
+            title:"DataGenerator",
             description:""
         }
     );
@@ -81,28 +81,28 @@ var searchModule = function() {
     a(
         {
             id:3,
-            title:"WeightedRange",
-            content:"WeightedRange",
+            title:"DataGeneratorContext",
+            content:"DataGeneratorContext",
             description:'',
             tags:''
         },
         {
-            url:'/api/Falsus.GeneratorProperties/WeightedRange_1',
-            title:"WeightedRange<T>",
+            url:'/api/Falsus/DataGeneratorContext',
+            title:"DataGeneratorContext",
             description:""
         }
     );
     a(
         {
             id:4,
-            title:"IDataGeneratorProvider",
-            content:"IDataGeneratorProvider",
+            title:"WeightedRange",
+            content:"WeightedRange",
             description:'',
             tags:''
         },
         {
-            url:'/api/Falsus.Providers/IDataGeneratorProvider',
-            title:"IDataGeneratorProvider",
+            url:'/api/Falsus.GeneratorProperties/WeightedRange',
+            title:"WeightedRange",
             description:""
         }
     );
@@ -115,7 +115,7 @@ var searchModule = function() {
             tags:''
         },
         {
-            url:'/api/Falsus.Providers.Number/FloatProvider',
+            url:'/api/Falsus.Providers.DataTypes/FloatProvider',
             title:"FloatProvider",
             description:""
         }
@@ -123,14 +123,14 @@ var searchModule = function() {
     a(
         {
             id:6,
-            title:"DataGeneratorConfigurationProperty",
-            content:"DataGeneratorConfigurationProperty",
+            title:"IDataGeneratorProvider",
+            content:"IDataGeneratorProvider",
             description:'',
             tags:''
         },
         {
-            url:'/api/Falsus.Configuration/DataGeneratorConfigurationProperty',
-            title:"DataGeneratorConfigurationProperty",
+            url:'/api/Falsus.Providers/IDataGeneratorProvider',
+            title:"IDataGeneratorProvider",
             description:""
         }
     );
@@ -151,34 +151,6 @@ var searchModule = function() {
     a(
         {
             id:8,
-            title:"IntegerProvider",
-            content:"IntegerProvider",
-            description:'',
-            tags:''
-        },
-        {
-            url:'/api/Falsus.Providers.Number/IntegerProvider',
-            title:"IntegerProvider",
-            description:""
-        }
-    );
-    a(
-        {
-            id:9,
-            title:"DataGeneratorContext",
-            content:"DataGeneratorContext",
-            description:'',
-            tags:''
-        },
-        {
-            url:'/api/Falsus/DataGeneratorContext',
-            title:"DataGeneratorContext",
-            description:""
-        }
-    );
-    a(
-        {
-            id:10,
             title:"DataGeneratorProviderArgument",
             content:"DataGeneratorProviderArgument",
             description:'',
@@ -192,91 +164,49 @@ var searchModule = function() {
     );
     a(
         {
-            id:11,
-            title:"GenericArrayProvider",
-            content:"GenericArrayProvider",
+            id:9,
+            title:"WeightedRange",
+            content:"WeightedRange",
             description:'',
             tags:''
         },
         {
-            url:'/api/Falsus.Providers/GenericArrayProvider_1',
-            title:"GenericArrayProvider<T>",
+            url:'/api/Falsus.GeneratorProperties/WeightedRange_1',
+            title:"WeightedRange<T>",
+            description:""
+        }
+    );
+    a(
+        {
+            id:10,
+            title:"DataGeneratorConfigurationProperty",
+            content:"DataGeneratorConfigurationProperty",
+            description:'',
+            tags:''
+        },
+        {
+            url:'/api/Falsus.Configuration/DataGeneratorConfigurationProperty',
+            title:"DataGeneratorConfigurationProperty",
+            description:""
+        }
+    );
+    a(
+        {
+            id:11,
+            title:"GuidProvider",
+            content:"GuidProvider",
+            description:'',
+            tags:''
+        },
+        {
+            url:'/api/Falsus.Providers.DataTypes/GuidProvider',
+            title:"GuidProvider",
             description:""
         }
     );
     a(
         {
             id:12,
-            title:"DataGeneratorProperty",
-            content:"DataGeneratorProperty",
-            description:'',
-            tags:''
-        },
-        {
-            url:'/api/Falsus.GeneratorProperties/DataGeneratorProperty_1',
-            title:"DataGeneratorProperty<T>",
-            description:""
-        }
-    );
-    a(
-        {
-            id:13,
-            title:"RangedDataGeneratorProperty",
-            content:"RangedDataGeneratorProperty",
-            description:'',
-            tags:''
-        },
-        {
-            url:'/api/Falsus.GeneratorProperties/RangedDataGeneratorProperty_1',
-            title:"RangedDataGeneratorProperty<T>",
-            description:""
-        }
-    );
-    a(
-        {
-            id:14,
-            title:"DataGeneratorConfiguration",
-            content:"DataGeneratorConfiguration",
-            description:'',
-            tags:''
-        },
-        {
-            url:'/api/Falsus.Configuration/DataGeneratorConfiguration',
-            title:"DataGeneratorConfiguration",
-            description:""
-        }
-    );
-    a(
-        {
-            id:15,
-            title:"DoubleProvider",
-            content:"DoubleProvider",
-            description:'',
-            tags:''
-        },
-        {
-            url:'/api/Falsus.Providers.Number/DoubleProvider',
-            title:"DoubleProvider",
-            description:""
-        }
-    );
-    a(
-        {
-            id:16,
-            title:"DataGenerator",
-            content:"DataGenerator",
-            description:'',
-            tags:''
-        },
-        {
-            url:'/api/Falsus/DataGenerator',
-            title:"DataGenerator",
-            description:""
-        }
-    );
-    a(
-        {
-            id:17,
             title:"WeightedDataGeneratorProperty",
             content:"WeightedDataGeneratorProperty",
             description:'',
@@ -290,7 +220,91 @@ var searchModule = function() {
     );
     a(
         {
+            id:13,
+            title:"TimeProvider",
+            content:"TimeProvider",
+            description:'',
+            tags:''
+        },
+        {
+            url:'/api/Falsus.Providers.DataTypes/TimeProvider',
+            title:"TimeProvider",
+            description:""
+        }
+    );
+    a(
+        {
+            id:14,
+            title:"BooleanProvider",
+            content:"BooleanProvider",
+            description:'',
+            tags:''
+        },
+        {
+            url:'/api/Falsus.Providers.DataTypes/BooleanProvider',
+            title:"BooleanProvider",
+            description:""
+        }
+    );
+    a(
+        {
+            id:15,
+            title:"DataGeneratorProvider",
+            content:"DataGeneratorProvider",
+            description:'',
+            tags:''
+        },
+        {
+            url:'/api/Falsus.Providers/DataGeneratorProvider_1',
+            title:"DataGeneratorProvider<T>",
+            description:""
+        }
+    );
+    a(
+        {
+            id:16,
+            title:"IntegerProvider",
+            content:"IntegerProvider",
+            description:'',
+            tags:''
+        },
+        {
+            url:'/api/Falsus.Providers.DataTypes/IntegerProvider',
+            title:"IntegerProvider",
+            description:""
+        }
+    );
+    a(
+        {
+            id:17,
+            title:"DataGeneratorProperty",
+            content:"DataGeneratorProperty",
+            description:'',
+            tags:''
+        },
+        {
+            url:'/api/Falsus.GeneratorProperties/DataGeneratorProperty_1',
+            title:"DataGeneratorProperty<T>",
+            description:""
+        }
+    );
+    a(
+        {
             id:18,
+            title:"DoubleProvider",
+            content:"DoubleProvider",
+            description:'',
+            tags:''
+        },
+        {
+            url:'/api/Falsus.Providers.DataTypes/DoubleProvider',
+            title:"DoubleProvider",
+            description:""
+        }
+    );
+    a(
+        {
+            id:19,
             title:"IDataGeneratorProvider",
             content:"IDataGeneratorProvider",
             description:'',
@@ -299,6 +313,48 @@ var searchModule = function() {
         {
             url:'/api/Falsus.Providers/IDataGeneratorProvider_1',
             title:"IDataGeneratorProvider<T>",
+            description:""
+        }
+    );
+    a(
+        {
+            id:20,
+            title:"DataGeneratorConfiguration",
+            content:"DataGeneratorConfiguration",
+            description:'',
+            tags:''
+        },
+        {
+            url:'/api/Falsus.Configuration/DataGeneratorConfiguration',
+            title:"DataGeneratorConfiguration",
+            description:""
+        }
+    );
+    a(
+        {
+            id:21,
+            title:"GenericArrayProvider",
+            content:"GenericArrayProvider",
+            description:'',
+            tags:''
+        },
+        {
+            url:'/api/Falsus.Providers/GenericArrayProvider_1',
+            title:"GenericArrayProvider<T>",
+            description:""
+        }
+    );
+    a(
+        {
+            id:22,
+            title:"DateProvider",
+            content:"DateProvider",
+            description:'',
+            tags:''
+        },
+        {
+            url:'/api/Falsus.Providers.DataTypes/DateProvider',
+            title:"DateProvider",
             description:""
         }
     );

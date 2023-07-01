@@ -1,0 +1,720 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Falsus.Providers.Datatypes</name>
+    </assembly>
+    <members>
+        <member name="T:Falsus.Providers.DataTypes.BooleanProvider">
+            <summary>
+            Represents a provider of <see cref="T:System.Boolean"/> values.
+            </summary>
+            <seealso cref="T:Falsus.Providers.DataGeneratorProvider`1"/>
+        </member>
+        <member name="M:Falsus.Providers.DataTypes.BooleanProvider.#ctor">
+            <summary>
+            Initializes a new instance of the <see cref="T:Falsus.Providers.DataTypes.BooleanProvider"/> class.
+            </summary>
+        </member>
+        <member name="M:Falsus.Providers.DataTypes.BooleanProvider.GetRangedRowValue(System.Boolean,System.Boolean,System.Boolean[])">
+            <summary>
+            Generates a random <see cref="T:System.Boolean"/> value that is greater than the value
+            of <paramref name="minValue"/> and lower than the value of <paramref name="maxValue"/>.
+            </summary>
+            <param name="minValue">The exclusive lower bound of the random object returned.</param>
+            <param name="maxValue">The exclusive upper bound of the random object returned.</param>
+            <param name="excludedObjects">
+            An array of <see cref="T:System.Boolean"/> values that cannot be returned
+            by the provider.
+            </param>
+            <returns>
+            A random <see cref="T:System.Boolean"/> greater than <paramref name="minValue"/>
+            and less than <paramref name="maxValue"/>.
+            </returns>
+            <remarks>
+            <paramref name="maxValue"/> must be greater than <paramref name="minValue"/>.
+            </remarks>
+            <exception cref="T:System.NotSupportedException">
+            Thrown because there are no ranges between boolean values.
+            </exception>
+        </member>
+        <member name="M:Falsus.Providers.DataTypes.BooleanProvider.GetRowValue(Falsus.DataGeneratorContext,Falsus.GeneratorProperties.WeightedRange{System.Boolean}[],System.Boolean[])">
+            <summary>
+            Generates a random <see cref="T:System.Boolean"/> value
+            based on the context and excluded ranges.
+            </summary>
+            <param name="context">
+            An instance of <see cref="T:Falsus.DataGeneratorContext"/> defining
+            the current generation context.
+            </param>
+            <param name="excludedRanges">
+            An array of <see cref="T:Falsus.GeneratorProperties.WeightedRange`1"/>s defining the ranges
+            that cannot be returned by the provider.
+            </param>
+            <param name="excludedObjects">
+            An array of <see cref="T:System.Boolean"/> values that cannot be returned
+            by the provider.
+            </param>
+            <returns>
+            A random<see cref="T:System.Boolean"/> that is outside of
+            the specified <paramref name="excludedRanges"/>.
+            </returns>
+            <exception cref="T:System.NotSupportedException">
+            Thrown because there are no ranges between boolean values.
+            </exception>
+        </member>
+        <member name="M:Falsus.Providers.DataTypes.BooleanProvider.GetRowValue(System.String)">
+            <summary>
+            Gets a <see cref="T:System.Boolean"/> value based on the provided <paramref name="id"/>.
+            </summary>
+            <param name="id">An unique identifier for the object.</param>
+            <returns>
+            An instance of the <see cref="T:System.Boolean"/> with the specified unique identifier.
+            </returns>
+            <remarks>
+            The <paramref name="id"/> should contain a valid string representation of a <see cref="T:System.Boolean"/>.
+            </remarks>
+        </member>
+        <member name="M:Falsus.Providers.DataTypes.BooleanProvider.GetRowValue(Falsus.DataGeneratorContext,System.Boolean[])">
+            <summary>
+            Generates a random <see cref="T:System.Boolean"/> value based on the context
+            and excluded objects.
+            </summary>
+            <param name="context">
+            An instance of <see cref="T:Falsus.DataGeneratorContext"/> defining
+            the current generation context.
+            </param>
+            <param name="excludedObjects">
+            An array of <see cref="T:System.Boolean"/> values that cannot be returned
+            by the provider.
+            </param>
+            <returns>
+            A random <see cref="T:System.Boolean"/> value.
+            </returns>
+        </member>
+        <member name="M:Falsus.Providers.DataTypes.BooleanProvider.GetValueId(System.Boolean)">
+            <summary>
+            Gets a unique identifier for the provided <see cref="T:System.Boolean"/>.
+            </summary>
+            <param name="value">The <see cref="T:System.Boolean"/> value.</param>
+            <returns>
+            A <see cref="T:System.String"/> containing the unique identifier of the provided value.
+            </returns>
+            <remarks>
+            Returns the string representation of a <see cref="T:System.Boolean"/>.
+            </remarks>
+        </member>
+        <member name="T:Falsus.Providers.DataTypes.DateProvider">
+            <summary>
+            Represents a provider of <see cref="T:System.DateTime"/> values.
+            </summary>
+            <seealso cref="T:Falsus.Providers.DataGeneratorProvider`1"/>
+        </member>
+        <member name="F:Falsus.Providers.DataTypes.DateProvider.datasetLength">
+            <summary>
+            The maximum number of values that can be generated.
+            </summary>
+        </member>
+        <member name="F:Falsus.Providers.DataTypes.DateProvider.maxAttempts">
+            <summary>
+            The maximum number of times the provider will attempt
+            to generate an unique value before throwing an exception.
+            </summary>
+        </member>
+        <member name="M:Falsus.Providers.DataTypes.DateProvider.#ctor">
+            <summary>
+            Initializes a new instance of the <see cref="T:Falsus.Providers.DataTypes.DateProvider"/> class.
+            </summary>
+        </member>
+        <member name="M:Falsus.Providers.DataTypes.DateProvider.GetRangedRowValue(System.DateTime,System.DateTime,System.DateTime[])">
+            <summary>
+            Generates a random <see cref="T:System.DateTime"/> instance
+            that is greater than the value of <paramref name="minValue"/> and lower
+            than the value of <paramref name="maxValue"/>.
+            </summary>
+            <param name="minValue">The exclusive lower bound of the random object returned.</param>
+            <param name="maxValue">The exclusive upper bound of the random object returned.</param>
+            <param name="excludedObjects">
+            An array of <see cref="T:System.DateTime"/> instances that cannot be returned
+            by the provider.
+            </param>
+            <returns>
+            A random instance of <see cref="T:System.DateTime"/> greater than <paramref name="minValue"/>
+            and less than <paramref name="maxValue"/>.
+            </returns>
+            <remarks>
+            <paramref name="maxValue"/> must be greater than <paramref name="minValue"/>.
+            </remarks>
+        </member>
+        <member name="M:Falsus.Providers.DataTypes.DateProvider.GetRowValue(Falsus.DataGeneratorContext,Falsus.GeneratorProperties.WeightedRange{System.DateTime}[],System.DateTime[])">
+            <summary>
+            Generates a random <see cref="T:System.DateTime"/> instance
+            based on the context and excluded ranges.
+            </summary>
+            <param name="context">
+            An instance of <see cref="T:Falsus.DataGeneratorContext"/> defining
+            the current generation context.
+            </param>
+            <param name="excludedRanges">
+            An array of <see cref="T:Falsus.GeneratorProperties.WeightedRange`1"/>s defining the ranges
+            that cannot be returned by the provider.
+            </param>
+            <param name="excludedObjects">
+            An array of <see cref="T:System.DateTime"/> instances that cannot be returned
+            by the provider.
+            </param>
+            <returns>
+            A random instance of <see cref="T:System.DateTime"/> that is outside of
+            the specified <paramref name="excludedRanges"/>.
+            </returns>
+        </member>
+        <member name="M:Falsus.Providers.DataTypes.DateProvider.GetRowValue(System.String)">
+            <summary>
+            Gets an instance of <see cref="T:System.DateTime"/> from the provided <paramref name="id"/>.
+            </summary>
+            <param name="id">An unique identifier for the object.</param>
+            <returns>
+            An instance of the <see cref="T:System.DateTime"/> with the specified unique identifier.
+            </returns>
+            <remarks>
+            The provider expects the <paramref name="id"/> argument to be the
+            string representation of the <see cref="P:System.DateTime.Ticks"/> property.
+            The unique id can be fetched by invoking the
+            <see cref="M:Falsus.Providers.DataTypes.DateProvider.GetValueId(System.DateTime)"/> method.
+            </remarks>
+        </member>
+        <member name="M:Falsus.Providers.DataTypes.DateProvider.GetRowValue(Falsus.DataGeneratorContext,System.DateTime[])">
+            <summary>
+            Generates a random <see cref="T:System.DateTime"/> instance
+            based on the context and excluded objects.
+            </summary>
+            <param name="context">
+            An instance of <see cref="T:Falsus.DataGeneratorContext"/> defining
+            the current generation context.
+            </param>
+            <param name="excludedObjects">
+            An array of <see cref="T:System.DateTime"/> instances that cannot be returned
+            by the provider.
+            </param>
+            <returns>
+            A random instance of <see cref="T:System.DateTime"/>.
+            </returns>
+            <remarks>
+            The <see cref="T:System.DateTime"/> instance generated by this provider
+            will always have the time component set as 00:00:00.
+            </remarks>
+        </member>
+        <member name="M:Falsus.Providers.DataTypes.DateProvider.GetValueId(System.DateTime)">
+            <summary>
+            Gets a unique identifier for the provided <see cref="T:System.DateTime"/> instance.
+            </summary>
+            <param name="value">An instance of <see cref="T:System.DateTime"/>.</param>
+            <returns>
+            A <see cref="T:System.String"/> containing the unique identifier of the provided <see cref="T:System.DateTime"/>.
+            </returns>
+        </member>
+        <member name="T:Falsus.Providers.DataTypes.DoubleProvider">
+            <summary>
+            Represents a provider of <see cref="T:System.Double"/> values.
+            </summary>
+            <seealso cref="T:Falsus.Providers.DataGeneratorProvider`1"/>
+        </member>
+        <member name="F:Falsus.Providers.DataTypes.DoubleProvider.MaxAttempts">
+            <summary>
+            The number of attemps to try to generate a unique value
+            before throwing an exception.
+            </summary>
+        </member>
+        <member name="M:Falsus.Providers.DataTypes.DoubleProvider.#ctor">
+            <summary>
+            Initializes a new instance of the <see cref="T:Falsus.Providers.DataTypes.DoubleProvider"/> class.
+            </summary>
+        </member>
+        <member name="M:Falsus.Providers.DataTypes.DoubleProvider.GetRangedRowValue(System.Double,System.Double,System.Double[])">
+            <summary>
+            Generates a random <see cref="T:System.Double"/> value that is greater than the value
+            of <paramref name="minValue"/> and lower than the value of <paramref name="maxValue"/>.
+            </summary>
+            <param name="minValue">The exclusive lower bound of the random object returned.</param>
+            <param name="maxValue">The exclusive upper bound of the random object returned.</param>
+            <param name="excludedObjects">
+            An array of <see cref="T:System.Double"/> values that cannot be returned
+            by the provider.
+            </param>
+            <returns>
+            A random <see cref="T:System.Double"/> greater than <paramref name="minValue"/>
+            and less than <paramref name="maxValue"/>.
+            </returns>
+            <remarks>
+            <paramref name="maxValue"/> must be greater than <paramref name="minValue"/>.
+            </remarks>
+        </member>
+        <member name="M:Falsus.Providers.DataTypes.DoubleProvider.GetRowValue(Falsus.DataGeneratorContext,Falsus.GeneratorProperties.WeightedRange{System.Double}[],System.Double[])">
+            <summary>
+            Generates a random <see cref="T:System.Double"/> value
+            based on the context and excluded ranges.
+            </summary>
+            <param name="context">
+            An instance of <see cref="T:Falsus.DataGeneratorContext"/> defining
+            the current generation context.
+            </param>
+            <param name="excludedRanges">
+            An array of <see cref="T:Falsus.GeneratorProperties.WeightedRange`1"/>s defining the ranges
+            that cannot be returned by the provider.
+            </param>
+            <param name="excludedObjects">
+            An array of <see cref="T:System.Double"/> values that cannot be returned
+            by the provider.
+            </param>
+            <returns>
+            A random <see cref="T:System.Double"/> value that is outside of
+            the specified <paramref name="excludedRanges"/>.
+            </returns>
+        </member>
+        <member name="M:Falsus.Providers.DataTypes.DoubleProvider.GetRowValue(System.String)">
+            <summary>
+            Gets a <see cref="T:System.Double"/> value based on the provided <paramref name="id"/>.
+            </summary>
+            <param name="id">An unique identifier for the object.</param>
+            <returns>
+            An instance of the <see cref="T:System.Double"/> with the specified unique identifier.
+            </returns>
+            <remarks>
+            The <paramref name="id"/> should contain a valid string representation of a <see cref="T:System.Double"/>.
+            </remarks>
+        </member>
+        <member name="M:Falsus.Providers.DataTypes.DoubleProvider.GetRowValue(Falsus.DataGeneratorContext,System.Double[])">
+            <summary>
+            Generates a random <see cref="T:System.Double"/> value based on the context
+            and excluded objects.
+            </summary>
+            <param name="context">
+            An instance of <see cref="T:Falsus.DataGeneratorContext"/> defining
+            the current generation context.
+            </param>
+            <param name="excludedObjects">
+            An array of <see cref="T:System.Double"/> values that cannot be returned
+            by the provider.
+            </param>
+            <returns>
+            A random <see cref="T:System.Double"/> value.
+            </returns>
+        </member>
+        <member name="M:Falsus.Providers.DataTypes.DoubleProvider.GetValueId(System.Double)">
+            <summary>
+            Gets a unique identifier for the provided <see cref="T:System.Double"/>.
+            </summary>
+            <param name="value">The <see cref="T:System.Double"/> value.</param>
+            <returns>
+            A <see cref="T:System.String"/> containing the unique identifier of the provided value.
+            </returns>
+            <remarks>
+            Returns the string representation of a <see cref="T:System.Double"/>.
+            </remarks>
+        </member>
+        <member name="T:Falsus.Providers.DataTypes.FloatProvider">
+            <summary>
+            Represents a provider of <see cref="T:System.Single"/> values.
+            </summary>
+            <seealso cref="T:Falsus.Providers.DataGeneratorProvider`1"/>
+        </member>
+        <member name="F:Falsus.Providers.DataTypes.FloatProvider.MaxAttempts">
+            <summary>
+            The number of attemps to try to generate a unique value
+            before throwing an exception.
+            </summary>
+        </member>
+        <member name="M:Falsus.Providers.DataTypes.FloatProvider.#ctor">
+            <summary>
+            Initializes a new instance of the <see cref="T:Falsus.Providers.DataTypes.FloatProvider"/> class.
+            </summary>
+        </member>
+        <member name="M:Falsus.Providers.DataTypes.FloatProvider.GetRangedRowValue(System.Single,System.Single,System.Single[])">
+            <summary>
+            Generates a random <see cref="T:System.Single"/> value that is greater than the value
+            of <paramref name="minValue"/> and lower than the value of <paramref name="maxValue"/>.
+            </summary>
+            <param name="minValue">The exclusive lower bound of the random object returned.</param>
+            <param name="maxValue">The exclusive upper bound of the random object returned.</param>
+            <param name="excludedObjects">
+            An array of <see cref="T:System.Single"/> values that cannot be returned
+            by the provider.
+            </param>
+            <returns>
+            A random <see cref="T:System.Single"/> greater than <paramref name="minValue"/>
+            and less than <paramref name="maxValue"/>.
+            </returns>
+            <remarks>
+            <paramref name="maxValue"/> must be greater than <paramref name="minValue"/>.
+            </remarks>
+        </member>
+        <member name="M:Falsus.Providers.DataTypes.FloatProvider.GetRowValue(Falsus.DataGeneratorContext,Falsus.GeneratorProperties.WeightedRange{System.Single}[],System.Single[])">
+            <summary>
+            Generates a random <see cref="T:System.Single"/> value
+            based on the context and excluded ranges.
+            </summary>
+            <param name="context">
+            An instance of <see cref="T:Falsus.DataGeneratorContext"/> defining
+            the current generation context.
+            </param>
+            <param name="excludedRanges">
+            An array of <see cref="T:Falsus.GeneratorProperties.WeightedRange`1"/>s defining the ranges
+            that cannot be returned by the provider.
+            </param>
+            <param name="excludedObjects">
+            An array of <see cref="T:System.Single"/> values that cannot be returned
+            by the provider.
+            </param>
+            <returns>
+            A random <see cref="T:System.Single"/> value that is outside of
+            the specified <paramref name="excludedRanges"/>.
+            </returns>
+        </member>
+        <member name="M:Falsus.Providers.DataTypes.FloatProvider.GetRowValue(System.String)">
+            <summary>
+            Gets a <see cref="T:System.Single"/> value based on the provided <paramref name="id"/>.
+            </summary>
+            <param name="id">An unique identifier for the object.</param>
+            <returns>
+            An instance of the <see cref="T:System.Single"/> with the specified unique identifier.
+            </returns>
+            <remarks>
+            The <paramref name="id"/> should contain a valid string representation of a <see cref="T:System.Single"/>.
+            </remarks>
+        </member>
+        <member name="M:Falsus.Providers.DataTypes.FloatProvider.GetRowValue(Falsus.DataGeneratorContext,System.Single[])">
+            <summary>
+            Generates a random <see cref="T:System.Single"/> value based on the context
+            and excluded objects.
+            </summary>
+            <param name="context">
+            An instance of <see cref="T:Falsus.DataGeneratorContext"/> defining
+            the current generation context.
+            </param>
+            <param name="excludedObjects">
+            An array of <see cref="T:System.Single"/> values that cannot be returned
+            by the provider.
+            </param>
+            <returns>
+            A random <see cref="T:System.Single"/> value.
+            </returns>
+        </member>
+        <member name="M:Falsus.Providers.DataTypes.FloatProvider.GetValueId(System.Single)">
+            <summary>
+            Gets a unique identifier for the provided <see cref="T:System.Single"/>.
+            </summary>
+            <param name="value">The <see cref="T:System.Single"/> value.</param>
+            <returns>
+            A <see cref="T:System.String"/> containing the unique identifier of the provided value.
+            </returns>
+            <remarks>
+            Returns the string representation of a <see cref="T:System.Single"/>.
+            </remarks>
+        </member>
+        <member name="T:Falsus.Providers.DataTypes.GuidProvider">
+            <summary>
+            Represents a provider of <see cref="T:System.Guid"/> values.
+            </summary>
+            <seealso cref="T:Falsus.Providers.DataGeneratorProvider`1"/>
+        </member>
+        <member name="M:Falsus.Providers.DataTypes.GuidProvider.#ctor">
+            <summary>
+            Initializes a new instance of the <see cref="T:Falsus.Providers.DataTypes.GuidProvider"/> class.
+            </summary>
+        </member>
+        <member name="M:Falsus.Providers.DataTypes.GuidProvider.GetRangedRowValue(System.Guid,System.Guid,System.Guid[])">
+            <summary>
+            Generates a random <see cref="T:System.Guid"/> instance
+            that is greater than the value of <paramref name="minValue"/> and lower
+            than the value of <paramref name="maxValue"/>.
+            </summary>
+            <param name="minValue">The exclusive lower bound of the random object returned.</param>
+            <param name="maxValue">The exclusive upper bound of the random object returned.</param>
+            <param name="excludedObjects">
+            An array of <see cref="T:System.Guid"/> instances that cannot be returned
+            by the provider.
+            </param>
+            <returns>
+            A random instance of <see cref="T:System.Guid"/> greater than <paramref name="minValue"/>
+            and less than <paramref name="maxValue"/>.
+            </returns>
+            <remarks>
+            <paramref name="maxValue"/> must be greater than <paramref name="minValue"/>.
+            </remarks>
+            <exception cref="T:System.NotSupportedException">
+            Thrown because the generation of ranged <see cref="T:System.Guid"/>
+            values is not supported.
+            </exception>
+        </member>
+        <member name="M:Falsus.Providers.DataTypes.GuidProvider.GetRowValue(Falsus.DataGeneratorContext,Falsus.GeneratorProperties.WeightedRange{System.Guid}[],System.Guid[])">
+            <summary>
+            Generates a random <see cref="T:System.Guid"/> instance
+            based on the context and excluded ranges.
+            </summary>
+            <param name="context">
+            An instance of <see cref="T:Falsus.DataGeneratorContext"/> defining
+            the current generation context.
+            </param>
+            <param name="excludedRanges">
+            An array of <see cref="T:Falsus.GeneratorProperties.WeightedRange`1"/>s defining the ranges
+            that cannot be returned by the provider.
+            </param>
+            <param name="excludedObjects">
+            An array of <see cref="T:System.Guid"/> instances that cannot be returned
+            by the provider.
+            </param>
+            <returns>
+            A random instance of <see cref="T:System.Guid"/> that is outside of
+            the specified <paramref name="excludedRanges"/>.
+            </returns>
+            <exception cref="T:System.NotSupportedException">
+            Thrown because the generation of ranged <see cref="T:System.Guid"/>
+            values is not supported.
+            </exception>
+        </member>
+        <member name="M:Falsus.Providers.DataTypes.GuidProvider.GetRowValue(System.String)">
+            <summary>
+            Gets an instance of <see cref="T:System.Guid"/> from the provided <paramref name="id"/>.
+            </summary>
+            <param name="id">An unique identifier for the object.</param>
+            <returns>
+            An instance of the <see cref="T:System.Guid"/> with the specified unique identifier.
+            </returns>
+            <remarks>
+            The <paramref name="id"/> should contain a valid string representation of a <see cref="T:System.Guid"/>.
+            </remarks>
+        </member>
+        <member name="M:Falsus.Providers.DataTypes.GuidProvider.GetRowValue(Falsus.DataGeneratorContext,System.Guid[])">
+            <summary>
+            Generates a random <see cref="T:System.Guid"/> instance
+            based on the context and excluded objects.
+            </summary>
+            <param name="context">
+            An instance of <see cref="T:Falsus.DataGeneratorContext"/> defining
+            the current generation context.
+            </param>
+            <param name="excludedObjects">
+            An array of <see cref="T:System.Guid"/> instances that cannot be returned
+            by the provider.
+            </param>
+            <returns>
+            A random instance of <see cref="T:System.Guid"/>.
+            </returns>
+            <remarks>
+            The <paramref name="excludedObjects"/> are not being taken into account since
+            <see cref="T:System.Guid"/> is always unique.
+            </remarks>
+        </member>
+        <member name="M:Falsus.Providers.DataTypes.GuidProvider.GetValueId(System.Guid)">
+            <summary>
+            Gets a unique identifier for the provided <see cref="T:System.Guid"/> instance.
+            </summary>
+            <param name="value">An instance of <see cref="T:System.Guid"/>.</param>
+            <returns>
+            A <see cref="T:System.String"/> containing the unique identifier of the provided <see cref="T:System.Guid"/>.
+            </returns>
+        </member>
+        <member name="T:Falsus.Providers.DataTypes.IntegerProvider">
+            <summary>
+            Represents a provider of <see cref="T:System.Int32"/> values.
+            </summary>
+            <seealso cref="T:Falsus.Providers.DataGeneratorProvider`1"/>
+        </member>
+        <member name="F:Falsus.Providers.DataTypes.IntegerProvider.datasetLength">
+            <summary>
+            The maximum number of values that can be generated.
+            </summary>
+        </member>
+        <member name="F:Falsus.Providers.DataTypes.IntegerProvider.maxAttempts">
+            <summary>
+            The maximum number of times the provider will attempt
+            to generate an unique value before throwing an exception.
+            </summary>
+        </member>
+        <member name="M:Falsus.Providers.DataTypes.IntegerProvider.#ctor">
+            <summary>
+            Initializes a new instance of the <see cref="T:Falsus.Providers.DataTypes.IntegerProvider"/> class.
+            </summary>
+        </member>
+        <member name="M:Falsus.Providers.DataTypes.IntegerProvider.GetRangedRowValue(System.Int32,System.Int32,System.Int32[])">
+            <summary>
+            Generates a random <see cref="T:System.Int32"/> value that is greater than the value
+            of <paramref name="minValue"/> and lower than the value of <paramref name="maxValue"/>.
+            </summary>
+            <param name="minValue">The exclusive lower bound of the random object returned.</param>
+            <param name="maxValue">The exclusive upper bound of the random object returned.</param>
+            <param name="excludedObjects">
+            An array of <see cref="T:System.Int32"/> values that cannot be returned
+            by the provider.
+            </param>
+            <returns>
+            A random <see cref="T:System.Int32"/> greater than <paramref name="minValue"/>
+            and less than <paramref name="maxValue"/>.
+            </returns>
+            <remarks>
+            <paramref name="maxValue"/> must be greater than <paramref name="minValue"/>.
+            </remarks>
+        </member>
+        <member name="M:Falsus.Providers.DataTypes.IntegerProvider.GetRowValue(Falsus.DataGeneratorContext,Falsus.GeneratorProperties.WeightedRange{System.Int32}[],System.Int32[])">
+            <summary>
+            Generates a random <see cref="T:System.Int32"/> value based on the context and excluded ranges.
+            </summary>
+            <param name="context">
+            An instance of <see cref="T:Falsus.DataGeneratorContext"/> defining
+            the current generation context.
+            </param>
+            <param name="excludedRanges">
+            An array of <see cref="T:Falsus.GeneratorProperties.WeightedRange`1"/>s defining the ranges
+            that cannot be returned by the provider.
+            </param>
+            <param name="excludedObjects">
+            An array of <see cref="T:System.Int32"/> values that cannot be returned
+            by the provider.
+            </param>
+            <returns>
+            A random <see cref="T:System.Int32"/> value that is outside of
+            the specified <paramref name="excludedRanges"/>.
+            </returns>
+        </member>
+        <member name="M:Falsus.Providers.DataTypes.IntegerProvider.GetRowValue(System.String)">
+            <summary>
+            Gets an <see cref="T:System.Int32"/> value based on the provided <paramref name="id"/>.
+            </summary>
+            <param name="id">An unique identifier for the object.</param>
+            <returns>
+            An instance of the <see cref="T:System.Int32"/> with the specified unique identifier.
+            </returns>
+            <remarks>
+            The <paramref name="id"/> should contain a valid string representation of a <see cref="T:System.Int32"/>.
+            </remarks>
+        </member>
+        <member name="M:Falsus.Providers.DataTypes.IntegerProvider.GetRowValue(Falsus.DataGeneratorContext,System.Int32[])">
+            <summary>
+            Generates a random <see cref="T:System.Int32"/> value based on the context
+            and excluded objects.
+            </summary>
+            <param name="context">
+            An instance of <see cref="T:Falsus.DataGeneratorContext"/> defining
+            the current generation context.
+            </param>
+            <param name="excludedObjects">
+            An array of <see cref="T:System.Int32"/> values that cannot be returned
+            by the provider.
+            </param>
+            <returns>
+            A random <see cref="T:System.Int32"/> value.
+            </returns>
+        </member>
+        <member name="M:Falsus.Providers.DataTypes.IntegerProvider.GetValueId(System.Int32)">
+            <summary>
+            Gets a unique identifier for the provided <see cref="T:System.Int32"/>.
+            </summary>
+            <param name="value">The <see cref="T:System.Int32"/> value.</param>
+            <returns>
+            A <see cref="T:System.String"/> containing the unique identifier of the provided value.
+            </returns>
+            <remarks>
+            Returns the string representation of an <see cref="T:System.Int32"/>.
+            </remarks>
+        </member>
+        <member name="T:Falsus.Providers.DataTypes.TimeProvider">
+            <summary>
+            Represents a provider of <see cref="T:System.TimeSpan"/> values.
+            </summary>
+            <seealso cref="T:Falsus.Providers.DataGeneratorProvider`1"/>
+        </member>
+        <member name="F:Falsus.Providers.DataTypes.TimeProvider.MaxAttempts">
+            <summary>
+            The number of attemps to try to generate a unique value
+            before throwing an exception.
+            </summary>
+        </member>
+        <member name="M:Falsus.Providers.DataTypes.TimeProvider.#ctor">
+            <summary>
+            Initializes a new instance of the <see cref="T:Falsus.Providers.DataTypes.TimeProvider"/> class.
+            </summary>
+        </member>
+        <member name="M:Falsus.Providers.DataTypes.TimeProvider.GetRangedRowValue(System.TimeSpan,System.TimeSpan,System.TimeSpan[])">
+            <summary>
+            Generates a random <see cref="T:System.TimeSpan"/> instance
+            that is greater than the value of <paramref name="minValue"/> and lower
+            than the value of <paramref name="maxValue"/>.
+            </summary>
+            <param name="minValue">The exclusive lower bound of the random object returned.</param>
+            <param name="maxValue">The exclusive upper bound of the random object returned.</param>
+            <param name="excludedObjects">
+            An array of <see cref="T:System.TimeSpan"/> instances that cannot be returned
+            by the provider.
+            </param>
+            <returns>
+            A random instance of <see cref="T:System.TimeSpan"/> greater than <paramref name="minValue"/>
+            and less than <paramref name="maxValue"/>.
+            </returns>
+            <remarks>
+            <paramref name="maxValue"/> must be greater than <paramref name="minValue"/>.
+            </remarks>
+        </member>
+        <member name="M:Falsus.Providers.DataTypes.TimeProvider.GetRowValue(Falsus.DataGeneratorContext,Falsus.GeneratorProperties.WeightedRange{System.TimeSpan}[],System.TimeSpan[])">
+            <summary>
+            Generates a random <see cref="T:System.TimeSpan"/> instance
+            based on the context and excluded ranges.
+            </summary>
+            <param name="context">
+            An instance of <see cref="T:Falsus.DataGeneratorContext"/> defining
+            the current generation context.
+            </param>
+            <param name="excludedRanges">
+            An array of <see cref="T:Falsus.GeneratorProperties.WeightedRange`1"/>s defining the ranges
+            that cannot be returned by the provider.
+            </param>
+            <param name="excludedObjects">
+            An array of <see cref="T:System.TimeSpan"/> instances that cannot be returned
+            by the provider.
+            </param>
+            <returns>
+            A random instance of <see cref="T:System.TimeSpan"/> that is outside of
+            the specified <paramref name="excludedRanges"/>.
+            </returns>
+        </member>
+        <member name="M:Falsus.Providers.DataTypes.TimeProvider.GetRowValue(System.String)">
+            <summary>
+            Gets an instance of <see cref="T:System.TimeSpan"/> from the provided <paramref name="id"/>.
+            </summary>
+            <param name="id">An unique identifier for the object.</param>
+            <returns>
+            An instance of the <see cref="T:System.TimeSpan"/> with the specified unique identifier.
+            </returns>
+            <remarks>
+            The provider expects the <paramref name="id"/> argument to be the
+            string representation of the <see cref="P:System.TimeSpan.Ticks"/> property.
+            The unique id can be fetched by invoking the
+            <see cref="M:Falsus.Providers.DataTypes.TimeProvider.GetValueId(System.TimeSpan)"/> method.
+            </remarks>
+        </member>
+        <member name="M:Falsus.Providers.DataTypes.TimeProvider.GetRowValue(Falsus.DataGeneratorContext,System.TimeSpan[])">
+            <summary>
+            Generates a random <see cref="T:System.TimeSpan"/> instance
+            based on the context and excluded objects.
+            </summary>
+            <param name="context">
+            An instance of <see cref="T:Falsus.DataGeneratorContext"/> defining
+            the current generation context.
+            </param>
+            <param name="excludedObjects">
+            An array of <see cref="T:System.TimeSpan"/> instances that cannot be returned
+            by the provider.
+            </param>
+            <returns>
+            A random instance of <see cref="T:System.TimeSpan"/>.
+            </returns>
+        </member>
+        <member name="M:Falsus.Providers.DataTypes.TimeProvider.GetValueId(System.TimeSpan)">
+            <summary>
+            Gets a unique identifier for the provided <see cref="T:System.TimeSpan"/> instance.
+            </summary>
+            <param name="value">An instance of <see cref="T:System.TimeSpan"/>.</param>
+            <returns>
+            A <see cref="T:System.String"/> containing the unique identifier of the provided <see cref="T:System.TimeSpan"/>.
+            </returns>
+        </member>
+    </members>
+</doc>
