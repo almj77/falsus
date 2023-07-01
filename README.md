@@ -11,7 +11,18 @@
 - Seamlessly establish dependencies between fields, enabling logical connections (e.g., when a continent is already generated, generate a country that perfectly aligns with its continent).
 
 ### Data Generators
-- Numbers - Generate any kind of random numbers (integer, float, double).
+- Data Types
+	- Boolean
+	- Date
+	- Double
+	- Float
+	- Guid
+	- Integer
+	- Time
+- Finance
+	- Currency
+- Location
+	- Country
 
 ## 🕹 Usage
 ### Basic
