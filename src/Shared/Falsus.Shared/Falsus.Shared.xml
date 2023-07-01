@@ -1,0 +1,165 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Falsus.Shared</name>
+    </assembly>
+    <members>
+        <member name="T:Falsus.Shared.Helpers.ResourceReader">
+            <summary>
+            Helper class to assist in reading DLL embedded resources.
+            </summary>
+        </member>
+        <member name="M:Falsus.Shared.Helpers.ResourceReader.ReadContentsFromFile``1(System.String)">
+            <summary>
+            Reads the contents from the specified resouce file as JSON and deserializes as 
+            an instance of the specified type parameter.
+            </summary>
+            <typeparam name="T">The type to deserilize the JSON.</typeparam>
+            <param name="resourcePath">The path for the embedded resource.</param>
+            <returns>The contents of the specified resource file as 
+            an instnace of the specified type parameter.</returns>
+        </member>
+        <member name="T:Falsus.Shared.Models.CountryModel">
+            <summary>
+            This class represents a geographic country.
+            </summary>
+        </member>
+        <member name="P:Falsus.Shared.Models.CountryModel.Name">
+            <summary>
+            Gets or sets the name of the country.
+            </summary>
+            <value>
+            A <see cref="T:System.String"/> containing the country name.
+            </value>
+        </member>
+        <member name="P:Falsus.Shared.Models.CountryModel.Alpha2">
+            <summary>
+            Gets or sets the Alpha2 ISO Country Code.
+            </summary>
+            <value>
+            A <see cref="T:System.String"/> containing the Alpha2 ISO Country Code.
+            </value>
+        </member>
+        <member name="P:Falsus.Shared.Models.CountryModel.Alpha3">
+            <summary>
+            Gets or sets the Alpha3 ISO Country Code.
+            </summary>
+            <value>
+            A <see cref="T:System.String"/> containing the Alpha3 ISO Country Code.
+            </value>
+        </member>
+        <member name="P:Falsus.Shared.Models.CountryModel.Numeric">
+            <summary>
+            Gets or sets the Numeric Country Code.
+            </summary>
+            <value>
+            A <see cref="T:System.String"/> containing the numeric country code.
+            </value>
+        </member>
+        <member name="M:Falsus.Shared.Models.CountryModel.CompareTo(Falsus.Shared.Models.CountryModel)">
+            <summary>
+            Compares this instance with a specified <see cref="T:Falsus.Shared.Models.CountryModel"/> and
+            returns an integer that indicates whether this instance precedes, follows, or
+            appears in the same position in the sort order as the specified <see cref="T:Falsus.Shared.Models.CountryModel"/>.
+            </summary>
+            <param name="other">The other <see cref="T:Falsus.Shared.Models.CountryModel"/> to be compared with this instance.</param>
+            <returns>
+            A 32-bit signed integer that indicates whether this instance precedes, follows, or
+            appears in the same position in the sort order as the value parameter.
+            </returns>
+        </member>
+        <member name="M:Falsus.Shared.Models.CountryModel.Equals(Falsus.Shared.Models.CountryModel)">
+            <summary>
+            Indicates whether the current object is equal to another object of the same type.
+            </summary>
+            <param name="other">An object to compare with this object.</param>
+            <returns>True if the current object is equal to the other parameter; otherwise, false.</returns>
+        </member>
+        <member name="M:Falsus.Shared.Models.CountryModel.Equals(System.Object)">
+            <summary>
+            Indicates whether the current object is equal to another object of the same type.
+            </summary>
+            <param name="obj">An object to compare with this object.</param>
+            <returns>True if the current object is equal to the other parameter; otherwise, false.</returns>
+        </member>
+        <member name="M:Falsus.Shared.Models.CountryModel.GetHashCode">
+            <summary>
+            Calculates the hash for this instance.
+            </summary>
+            <returns>
+            A hash code for the current object.
+            </returns>
+        </member>
+        <member name="T:Falsus.Shared.Models.CurrencyModel">
+            <summary>
+            This class represents a monetary currency.
+            </summary>
+        </member>
+        <member name="P:Falsus.Shared.Models.CurrencyModel.Id">
+            <summary>
+            Gets or sets the unique identifier for the currency.
+            </summary>
+            <value>
+            A <see cref="T:System.String"/> containing the currency identifier.
+            </value>
+        </member>
+        <member name="P:Falsus.Shared.Models.CurrencyModel.CountryAlpha2">
+            <summary>
+            Gets or sets the Alpha2 ISO Country Code.
+            </summary>
+            <value>
+            A <see cref="T:System.String"/> containing the Alpha2 ISO Country Code.
+            </value>
+        </member>
+        <member name="P:Falsus.Shared.Models.CurrencyModel.CurrencyName">
+            <summary>
+            Gets or sets the name of the currency.
+            </summary>
+            <value>
+            A <see cref="T:System.String"/> containing the name of the currency.
+            </value>
+        </member>
+        <member name="P:Falsus.Shared.Models.CurrencyModel.Symbol">
+            <summary>
+            Gets or sets the currency display symbol.
+            </summary>
+            <value>
+            A <see cref="T:System.String"/> containing the symbol of the currency.
+            </value>
+        </member>
+        <member name="M:Falsus.Shared.Models.CurrencyModel.CompareTo(Falsus.Shared.Models.CurrencyModel)">
+            <summary>
+            Compares this instance with a specified <see cref="T:Falsus.Shared.Models.CurrencyModel"/> and
+            returns an integer that indicates whether this instance precedes, follows, or
+            appears in the same position in the sort order as the specified <see cref="T:Falsus.Shared.Models.CurrencyModel"/>.
+            </summary>
+            <param name="other">The other <see cref="T:Falsus.Shared.Models.CurrencyModel"/> to be compared with this instance.</param>
+            <returns>
+            A 32-bit signed integer that indicates whether this instance precedes, follows, or
+            appears in the same position in the sort order as the value parameter.
+            </returns>
+        </member>
+        <member name="M:Falsus.Shared.Models.CurrencyModel.Equals(Falsus.Shared.Models.CurrencyModel)">
+            <summary>
+            Indicates whether the current object is equal to another object of the same type.
+            </summary>
+            <param name="other">An object to compare with this object.</param>
+            <returns>True if the current object is equal to the other parameter; otherwise, false.</returns>
+        </member>
+        <member name="M:Falsus.Shared.Models.CurrencyModel.Equals(System.Object)">
+            <summary>
+            Indicates whether the current object is equal to another object of the same type.
+            </summary>
+            <param name="obj">An object to compare with this object.</param>
+            <returns>True if the current object is equal to the other parameter; otherwise, false.</returns>
+        </member>
+        <member name="M:Falsus.Shared.Models.CurrencyModel.GetHashCode">
+            <summary>
+            Calculates the hash for this instance.
+            </summary>
+            <returns>
+            A hash code for the current object.
+            </returns>
+        </member>
+    </members>
+</doc>

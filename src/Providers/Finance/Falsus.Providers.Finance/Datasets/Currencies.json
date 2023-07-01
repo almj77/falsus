@@ -1,0 +1,1334 @@
+﻿[
+  {
+    "Id": "AED",
+    "CountryAlpha2": "AE",
+    "CurrencyName": "UAE Dirham",
+    "Symbol": "د.إ"
+  },
+  {
+    "Id": "AFN",
+    "CountryAlpha2": "AF",
+    "CurrencyName": "Afghani",
+    "Symbol": "؋"
+  },
+  {
+    "Id": "ALL",
+    "CountryAlpha2": "AL",
+    "CurrencyName": "Lek",
+    "Symbol": "Lek"
+  },
+  {
+    "Id": "AMD",
+    "CountryAlpha2": "AM",
+    "CurrencyName": "Armenian Dram",
+    "Symbol": "֏"
+  },
+  {
+    "Id": "ANG",
+    "CountryAlpha2": "CW",
+    "CurrencyName": "Netherlands Antillean Guilder",
+    "Symbol": "ƒ"
+  },
+  {
+    "Id": "ANG",
+    "CountryAlpha2": "SX",
+    "CurrencyName": "Netherlands Antillean Guilder",
+    "Symbol": "ƒ"
+  },
+  {
+    "Id": "AOA",
+    "CountryAlpha2": "AO",
+    "CurrencyName": "Kwanza",
+    "Symbol": "Kz"
+  },
+  {
+    "Id": "ARS",
+    "CountryAlpha2": "AR",
+    "CurrencyName": "Argentine Peso",
+    "Symbol": "$"
+  },
+  {
+    "Id": "AUD",
+    "CountryAlpha2": "AU",
+    "CurrencyName": "Australian Dollar",
+    "Symbol": "$"
+  },
+  {
+    "Id": "AUD",
+    "CountryAlpha2": "KI",
+    "CurrencyName": "Australian Dollar",
+    "Symbol": "$"
+  },
+  {
+    "Id": "AUD",
+    "CountryAlpha2": "NR",
+    "CurrencyName": "Australian Dollar",
+    "Symbol": "$"
+  },
+  {
+    "Id": "AUD",
+    "CountryAlpha2": "NF",
+    "CurrencyName": "Australian Dollar",
+    "Symbol": "$"
+  },
+  {
+    "Id": "AWG",
+    "CountryAlpha2": "AW",
+    "CurrencyName": "Aruban Florin",
+    "Symbol": "ƒ"
+  },
+  {
+    "Id": "AZN",
+    "CountryAlpha2": "AZ",
+    "CurrencyName": "Azerbaijanian Manat",
+    "Symbol": "₼"
+  },
+  {
+    "Id": "BAM",
+    "CountryAlpha2": "BA",
+    "CurrencyName": "Convertible Mark",
+    "Symbol": "KM"
+  },
+  {
+    "Id": "BBD",
+    "CountryAlpha2": "BB",
+    "CurrencyName": "Barbados Dollar",
+    "Symbol": "$"
+  },
+  {
+    "Id": "BDT",
+    "CountryAlpha2": "BD",
+    "CurrencyName": "Taka",
+    "Symbol": "৳"
+  },
+  {
+    "Id": "BGN",
+    "CountryAlpha2": "BG",
+    "CurrencyName": "Bulgarian Lev",
+    "Symbol": "лв"
+  },
+  {
+    "Id": "BHD",
+    "CountryAlpha2": "BH",
+    "CurrencyName": "Bahraini Dinar",
+    "Symbol": "د.ب"
+  },
+  {
+    "Id": "BIF",
+    "CountryAlpha2": "BI",
+    "CurrencyName": "Burundi Franc",
+    "Symbol": "FBu"
+  },
+  {
+    "Id": "BMD",
+    "CountryAlpha2": "BM",
+    "CurrencyName": "Bermudian Dollar",
+    "Symbol": "$"
+  },
+  {
+    "Id": "BND",
+    "CountryAlpha2": "BN",
+    "CurrencyName": "Brunei Dollar",
+    "Symbol": "$"
+  },
+  {
+    "Id": "BOB",
+    "CountryAlpha2": "BO",
+    "CurrencyName": "Boliviano",
+    "Symbol": "$b"
+  },
+  {
+    "Id": "BRL",
+    "CountryAlpha2": "BR",
+    "CurrencyName": "Brazilian Real",
+    "Symbol": "R$"
+  },
+  {
+    "Id": "BSD",
+    "CountryAlpha2": "BS",
+    "CurrencyName": "Bahamian Dollar",
+    "Symbol": "$"
+  },
+  {
+    "Id": "BTN",
+    "CountryAlpha2": "BT",
+    "CurrencyName": "Ngultrum",
+    "Symbol": "Nu"
+  },
+  {
+    "Id": "BWP",
+    "CountryAlpha2": "BW",
+    "CurrencyName": "Pula",
+    "Symbol": "P"
+  },
+  {
+    "Id": "BYN",
+    "CountryAlpha2": "BY",
+    "CurrencyName": "Belarussian Ruble",
+    "Symbol": "Br"
+  },
+  {
+    "Id": "BZD",
+    "CountryAlpha2": "BZ",
+    "CurrencyName": "Belize Dollar",
+    "Symbol": "BZ$"
+  },
+  {
+    "Id": "CAD",
+    "CountryAlpha2": "CA",
+    "CurrencyName": "Canadian Dollar",
+    "Symbol": "$"
+  },
+  {
+    "Id": "CDF",
+    "CountryAlpha2": "CD",
+    "CurrencyName": "Congolese Franc",
+    "Symbol": "FC"
+  },
+  {
+    "Id": "CHF",
+    "CountryAlpha2": "LI",
+    "CurrencyName": "Swiss Franc",
+    "Symbol": "CHF"
+  },
+  {
+    "Id": "CHF",
+    "CountryAlpha2": "CH",
+    "CurrencyName": "Swiss Franc",
+    "Symbol": "CHF"
+  },
+  {
+    "Id": "CLF",
+    "CountryAlpha2": "CL",
+    "CurrencyName": "Unidad de Fomento",
+    "Symbol": "UF"
+  },
+  {
+    "Id": "CLP",
+    "CountryAlpha2": "CL",
+    "CurrencyName": "Chilean Peso",
+    "Symbol": "$"
+  },
+  {
+    "Id": "CNY",
+    "CountryAlpha2": "CN",
+    "CurrencyName": "Yuan Renminbi",
+    "Symbol": "¥"
+  },
+  {
+    "Id": "COP",
+    "CountryAlpha2": "CO",
+    "CurrencyName": "Colombian Peso",
+    "Symbol": "$"
+  },
+  {
+    "Id": "CRC",
+    "CountryAlpha2": "CR",
+    "CurrencyName": "Costa Rican Colon",
+    "Symbol": "₡"
+  },
+  {
+    "Id": "CUC",
+    "CountryAlpha2": "CU",
+    "CurrencyName": "Peso Convertible",
+    "Symbol": "$"
+  },
+  {
+    "Id": "CUP",
+    "CountryAlpha2": "CU",
+    "CurrencyName": "Cuban Peso",
+    "Symbol": "₱"
+  },
+  {
+    "Id": "CVE",
+    "CountryAlpha2": "CV",
+    "CurrencyName": "Cabo Verde Escudo",
+    "Symbol": "$"
+  },
+  {
+    "Id": "CZK",
+    "CountryAlpha2": "CZ",
+    "CurrencyName": "Czech Koruna",
+    "Symbol": "Kč"
+  },
+  {
+    "Id": "DJF",
+    "CountryAlpha2": "DJ",
+    "CurrencyName": "Djibouti Franc",
+    "Symbol": "Fdj"
+  },
+  {
+    "Id": "DKK",
+    "CountryAlpha2": "DK",
+    "CurrencyName": "Danish Krone",
+    "Symbol": "kr"
+  },
+  {
+    "Id": "DKK",
+    "CountryAlpha2": "FO",
+    "CurrencyName": "Danish Krone",
+    "Symbol": "kr"
+  },
+  {
+    "Id": "DKK",
+    "CountryAlpha2": "GL",
+    "CurrencyName": "Danish Krone",
+    "Symbol": "kr"
+  },
+  {
+    "Id": "DOP",
+    "CountryAlpha2": "DO",
+    "CurrencyName": "Dominican Peso",
+    "Symbol": "RD$"
+  },
+  {
+    "Id": "DZD",
+    "CountryAlpha2": "DZ",
+    "CurrencyName": "Algerian Dinar",
+    "Symbol": "دج"
+  },
+  {
+    "Id": "EGP",
+    "CountryAlpha2": "EG",
+    "CurrencyName": "Egyptian Pound",
+    "Symbol": "£"
+  },
+  {
+    "Id": "ERN",
+    "CountryAlpha2": "ER",
+    "CurrencyName": "Nakfa",
+    "Symbol": "Nkf"
+  },
+  {
+    "Id": "ETB",
+    "CountryAlpha2": "ET",
+    "CurrencyName": "Ethiopian Birr",
+    "Symbol": "Br"
+  },
+  {
+    "Id": "EUR",
+    "CountryAlpha2": "AD",
+    "CurrencyName": "Euro",
+    "Symbol": "€"
+  },
+  {
+    "Id": "EUR",
+    "CountryAlpha2": "AT",
+    "CurrencyName": "Euro",
+    "Symbol": "€"
+  },
+  {
+    "Id": "EUR",
+    "CountryAlpha2": "BE",
+    "CurrencyName": "Euro",
+    "Symbol": "€"
+  },
+  {
+    "Id": "EUR",
+    "CountryAlpha2": "CY",
+    "CurrencyName": "Euro",
+    "Symbol": "€"
+  },
+  {
+    "Id": "EUR",
+    "CountryAlpha2": "EE",
+    "CurrencyName": "Euro",
+    "Symbol": "€"
+  },
+  {
+    "Id": "EUR",
+    "CountryAlpha2": "FI",
+    "CurrencyName": "Euro",
+    "Symbol": "€"
+  },
+  {
+    "Id": "EUR",
+    "CountryAlpha2": "FR",
+    "CurrencyName": "Euro",
+    "Symbol": "€"
+  },
+  {
+    "Id": "EUR",
+    "CountryAlpha2": "DE",
+    "CurrencyName": "Euro",
+    "Symbol": "€"
+  },
+  {
+    "Id": "EUR",
+    "CountryAlpha2": "GR",
+    "CurrencyName": "Euro",
+    "Symbol": "€"
+  },
+  {
+    "Id": "EUR",
+    "CountryAlpha2": "VA",
+    "CurrencyName": "Euro",
+    "Symbol": "€"
+  },
+  {
+    "Id": "EUR",
+    "CountryAlpha2": "IE",
+    "CurrencyName": "Euro",
+    "Symbol": "€"
+  },
+  {
+    "Id": "EUR",
+    "CountryAlpha2": "IT",
+    "CurrencyName": "Euro",
+    "Symbol": "€"
+  },
+  {
+    "Id": "EUR",
+    "CountryAlpha2": "LV",
+    "CurrencyName": "Euro",
+    "Symbol": "€"
+  },
+  {
+    "Id": "EUR",
+    "CountryAlpha2": "LT",
+    "CurrencyName": "Euro",
+    "Symbol": "€"
+  },
+  {
+    "Id": "EUR",
+    "CountryAlpha2": "LU",
+    "CurrencyName": "Euro",
+    "Symbol": "€"
+  },
+  {
+    "Id": "EUR",
+    "CountryAlpha2": "MT",
+    "CurrencyName": "Euro",
+    "Symbol": "€"
+  },
+  {
+    "Id": "EUR",
+    "CountryAlpha2": "MC",
+    "CurrencyName": "Euro",
+    "Symbol": "€"
+  },
+  {
+    "Id": "EUR",
+    "CountryAlpha2": "ME",
+    "CurrencyName": "Euro",
+    "Symbol": "€"
+  },
+  {
+    "Id": "EUR",
+    "CountryAlpha2": "NL",
+    "CurrencyName": "Euro",
+    "Symbol": "€"
+  },
+  {
+    "Id": "EUR",
+    "CountryAlpha2": "PT",
+    "CurrencyName": "Euro",
+    "Symbol": "€"
+  },
+  {
+    "Id": "EUR",
+    "CountryAlpha2": "BL",
+    "CurrencyName": "Euro",
+    "Symbol": "€"
+  },
+  {
+    "Id": "EUR",
+    "CountryAlpha2": "MF",
+    "CurrencyName": "Euro",
+    "Symbol": "€"
+  },
+  {
+    "Id": "EUR",
+    "CountryAlpha2": "PM",
+    "CurrencyName": "Euro",
+    "Symbol": "€"
+  },
+  {
+    "Id": "EUR",
+    "CountryAlpha2": "SM",
+    "CurrencyName": "Euro",
+    "Symbol": "€"
+  },
+  {
+    "Id": "EUR",
+    "CountryAlpha2": "SK",
+    "CurrencyName": "Euro",
+    "Symbol": "€"
+  },
+  {
+    "Id": "EUR",
+    "CountryAlpha2": "SI",
+    "CurrencyName": "Euro",
+    "Symbol": "€"
+  },
+  {
+    "Id": "EUR",
+    "CountryAlpha2": "ES",
+    "CurrencyName": "Euro",
+    "Symbol": "€"
+  },
+  {
+    "Id": "EUR",
+    "CountryAlpha2": "AX",
+    "CurrencyName": "Euro",
+    "Symbol": "€"
+  },
+  {
+    "Id": "FJD",
+    "CountryAlpha2": "FJ",
+    "CurrencyName": "Fiji Dollar",
+    "Symbol": "$"
+  },
+  {
+    "Id": "FKP",
+    "CountryAlpha2": "FK",
+    "CurrencyName": "Falkland Islands Pound",
+    "Symbol": "£"
+  },
+  {
+    "Id": "GBP",
+    "CountryAlpha2": "IM",
+    "CurrencyName": "Pound Sterling",
+    "Symbol": "£"
+  },
+  {
+    "Id": "GBP",
+    "CountryAlpha2": "JE",
+    "CurrencyName": "Pound Sterling",
+    "Symbol": "£"
+  },
+  {
+    "Id": "GBP",
+    "CountryAlpha2": "GB",
+    "CurrencyName": "Pound Sterling",
+    "Symbol": "£"
+  },
+  {
+    "Id": "GEL",
+    "CountryAlpha2": "GE",
+    "CurrencyName": "Lari",
+    "Symbol": "₾"
+  },
+  {
+    "Id": "GHS",
+    "CountryAlpha2": "GH",
+    "CurrencyName": "Ghana Cedi",
+    "Symbol": "¢"
+  },
+  {
+    "Id": "GIP",
+    "CountryAlpha2": "GI",
+    "CurrencyName": "Gibraltar Pound",
+    "Symbol": "£"
+  },
+  {
+    "Id": "GMD",
+    "CountryAlpha2": "GM",
+    "CurrencyName": "Dalasi",
+    "Symbol": "D"
+  },
+  {
+    "Id": "GTQ",
+    "CountryAlpha2": "GT",
+    "CurrencyName": "Quetzal",
+    "Symbol": "Q"
+  },
+  {
+    "Id": "GYD",
+    "CountryAlpha2": "GY",
+    "CurrencyName": "Guyana Dollar",
+    "Symbol": "$"
+  },
+  {
+    "Id": "HKD",
+    "CountryAlpha2": "HK",
+    "CurrencyName": "Hong Kong Dollar",
+    "Symbol": "$"
+  },
+  {
+    "Id": "HNL",
+    "CountryAlpha2": "HN",
+    "CurrencyName": "Lempira",
+    "Symbol": "L"
+  },
+  {
+    "Id": "HRK",
+    "CountryAlpha2": "HR",
+    "CurrencyName": "Kuna",
+    "Symbol": "kn"
+  },
+  {
+    "Id": "HTG",
+    "CountryAlpha2": "HT",
+    "CurrencyName": "Gourde",
+    "Symbol": "G"
+  },
+  {
+    "Id": "HUF",
+    "CountryAlpha2": "HU",
+    "CurrencyName": "Forint",
+    "Symbol": "Ft"
+  },
+  {
+    "Id": "IDR",
+    "CountryAlpha2": "ID",
+    "CurrencyName": "Rupiah",
+    "Symbol": "Rp"
+  },
+  {
+    "Id": "ILS",
+    "CountryAlpha2": "IL",
+    "CurrencyName": "New Israeli Sheqel",
+    "Symbol": "₪"
+  },
+  {
+    "Id": "INR",
+    "CountryAlpha2": "BT",
+    "CurrencyName": "Indian Rupee",
+    "Symbol": "₹"
+  },
+  {
+    "Id": "INR",
+    "CountryAlpha2": "IN",
+    "CurrencyName": "Indian Rupee",
+    "Symbol": "₹"
+  },
+  {
+    "Id": "IQD",
+    "CountryAlpha2": "IQ",
+    "CurrencyName": "Iraqi Dinar",
+    "Symbol": "د.ع"
+  },
+  {
+    "Id": "IRR",
+    "CountryAlpha2": "IR",
+    "CurrencyName": "Iranian Rial",
+    "Symbol": "﷼"
+  },
+  {
+    "Id": "ISK",
+    "CountryAlpha2": "IS",
+    "CurrencyName": "Iceland Krona",
+    "Symbol": "kr"
+  },
+  {
+    "Id": "JMD",
+    "CountryAlpha2": "JM",
+    "CurrencyName": "Jamaican Dollar",
+    "Symbol": "J$"
+  },
+  {
+    "Id": "JOD",
+    "CountryAlpha2": "JO",
+    "CurrencyName": "Jordanian Dinar",
+    "Symbol": "د.أ"
+  },
+  {
+    "Id": "JPY",
+    "CountryAlpha2": "JP",
+    "CurrencyName": "Yen",
+    "Symbol": "¥"
+  },
+  {
+    "Id": "KES",
+    "CountryAlpha2": "KE",
+    "CurrencyName": "Kenyan Shilling",
+    "Symbol": "KSh"
+  },
+  {
+    "Id": "KGS",
+    "CountryAlpha2": "KG",
+    "CurrencyName": "Som",
+    "Symbol": "лв"
+  },
+  {
+    "Id": "KHR",
+    "CountryAlpha2": "KH",
+    "CurrencyName": "Riel",
+    "Symbol": "៛"
+  },
+  {
+    "Id": "KMF",
+    "CountryAlpha2": "KM",
+    "CurrencyName": "Comoro Franc",
+    "Symbol": "CF"
+  },
+  {
+    "Id": "KPW",
+    "CountryAlpha2": "KP",
+    "CurrencyName": "North Korean Won",
+    "Symbol": "₩"
+  },
+  {
+    "Id": "KRW",
+    "CountryAlpha2": "KR",
+    "CurrencyName": "Won",
+    "Symbol": "₩"
+  },
+  {
+    "Id": "KWD",
+    "CountryAlpha2": "KW",
+    "CurrencyName": "Kuwaiti Dinar",
+    "Symbol": "د.ك"
+  },
+  {
+    "Id": "KYD",
+    "CountryAlpha2": "KY",
+    "CurrencyName": "Cayman Islands Dollar",
+    "Symbol": "$"
+  },
+  {
+    "Id": "KZT",
+    "CountryAlpha2": "KZ",
+    "CurrencyName": "Tenge",
+    "Symbol": "лв"
+  },
+  {
+    "Id": "LAK",
+    "CountryAlpha2": "LA",
+    "CurrencyName": "Kip",
+    "Symbol": "₭"
+  },
+  {
+    "Id": "LBP",
+    "CountryAlpha2": "LB",
+    "CurrencyName": "Lebanese Pound",
+    "Symbol": "£"
+  },
+  {
+    "Id": "LKR",
+    "CountryAlpha2": "LK",
+    "CurrencyName": "Sri Lanka Rupee",
+    "Symbol": "₨"
+  },
+  {
+    "Id": "LRD",
+    "CountryAlpha2": "LR",
+    "CurrencyName": "Liberian Dollar",
+    "Symbol": "$"
+  },
+  {
+    "Id": "LSL",
+    "CountryAlpha2": "LS",
+    "CurrencyName": "Loti",
+    "Symbol": "L"
+  },
+  {
+    "Id": "LYD",
+    "CountryAlpha2": "LY",
+    "CurrencyName": "Libyan Dinar",
+    "Symbol": "LD"
+  },
+  {
+    "Id": "MAD",
+    "CountryAlpha2": "MA",
+    "CurrencyName": "Moroccan Dirham",
+    "Symbol": "DH"
+  },
+  {
+    "Id": "MDL",
+    "CountryAlpha2": "MD",
+    "CurrencyName": "Moldovan Leu",
+    "Symbol": "L"
+  },
+  {
+    "Id": "MGA",
+    "CountryAlpha2": "MG",
+    "CurrencyName": "Malagasy Ariary",
+    "Symbol": "Ar"
+  },
+  {
+    "Id": "MKD",
+    "CountryAlpha2": "MK",
+    "CurrencyName": "Denar",
+    "Symbol": "ден"
+  },
+  {
+    "Id": "MMK",
+    "CountryAlpha2": "MM",
+    "CurrencyName": "Kyat",
+    "Symbol": "K"
+  },
+  {
+    "Id": "MNT",
+    "CountryAlpha2": "MN",
+    "CurrencyName": "Tugrik",
+    "Symbol": "₮"
+  },
+  {
+    "Id": "MOP",
+    "CountryAlpha2": "MO",
+    "CurrencyName": "Pataca",
+    "Symbol": "MOP$"
+  },
+  {
+    "Id": "MUR",
+    "CountryAlpha2": "MU",
+    "CurrencyName": "Mauritius Rupee",
+    "Symbol": "₨"
+  },
+  {
+    "Id": "MVR",
+    "CountryAlpha2": "MV",
+    "CurrencyName": "Rufiyaa",
+    "Symbol": "Rf"
+  },
+  {
+    "Id": "MWK",
+    "CountryAlpha2": "MW",
+    "CurrencyName": "Kwacha",
+    "Symbol": "K"
+  },
+  {
+    "Id": "MXN",
+    "CountryAlpha2": "MX",
+    "CurrencyName": "Mexican Peso",
+    "Symbol": "$"
+  },
+  {
+    "Id": "MYR",
+    "CountryAlpha2": "MY",
+    "CurrencyName": "Malaysian Ringgit",
+    "Symbol": "RM"
+  },
+  {
+    "Id": "MZN",
+    "CountryAlpha2": "MZ",
+    "CurrencyName": "Mozambique Metical",
+    "Symbol": "MT"
+  },
+  {
+    "Id": "NAD",
+    "CountryAlpha2": "NA",
+    "CurrencyName": "Namibia Dollar",
+    "Symbol": "$"
+  },
+  {
+    "Id": "NGN",
+    "CountryAlpha2": "NG",
+    "CurrencyName": "Naira",
+    "Symbol": "₦"
+  },
+  {
+    "Id": "NIO",
+    "CountryAlpha2": "NI",
+    "CurrencyName": "Cordoba Oro",
+    "Symbol": "C$"
+  },
+  {
+    "Id": "NOK",
+    "CountryAlpha2": "NO",
+    "CurrencyName": "Norwegian Krone",
+    "Symbol": "kr"
+  },
+  {
+    "Id": "NPR",
+    "CountryAlpha2": "NP",
+    "CurrencyName": "Nepalese Rupee",
+    "Symbol": "₨"
+  },
+  {
+    "Id": "NZD",
+    "CountryAlpha2": "CK",
+    "CurrencyName": "New Zealand Dollar",
+    "Symbol": "$"
+  },
+  {
+    "Id": "NZD",
+    "CountryAlpha2": "NZ",
+    "CurrencyName": "New Zealand Dollar",
+    "Symbol": "$"
+  },
+  {
+    "Id": "NZD",
+    "CountryAlpha2": "NU",
+    "CurrencyName": "New Zealand Dollar",
+    "Symbol": "$"
+  },
+  {
+    "Id": "NZD",
+    "CountryAlpha2": "PN",
+    "CurrencyName": "New Zealand Dollar",
+    "Symbol": "$"
+  },
+  {
+    "Id": "NZD",
+    "CountryAlpha2": "TK",
+    "CurrencyName": "New Zealand Dollar",
+    "Symbol": "$"
+  },
+  {
+    "Id": "OMR",
+    "CountryAlpha2": "OM",
+    "CurrencyName": "Rial Omani",
+    "Symbol": "﷼"
+  },
+  {
+    "Id": "PAB",
+    "CountryAlpha2": "PA",
+    "CurrencyName": "Balboa",
+    "Symbol": "B/."
+  },
+  {
+    "Id": "PEN",
+    "CountryAlpha2": "PE",
+    "CurrencyName": "Nuevo Sol",
+    "Symbol": "S/."
+  },
+  {
+    "Id": "PGK",
+    "CountryAlpha2": "PG",
+    "CurrencyName": "Kina",
+    "Symbol": "K"
+  },
+  {
+    "Id": "PHP",
+    "CountryAlpha2": "PH",
+    "CurrencyName": "Philippine Peso",
+    "Symbol": "₱"
+  },
+  {
+    "Id": "PKR",
+    "CountryAlpha2": "PK",
+    "CurrencyName": "Pakistan Rupee",
+    "Symbol": "₨"
+  },
+  {
+    "Id": "PLN",
+    "CountryAlpha2": "PL",
+    "CurrencyName": "Zloty",
+    "Symbol": "zł"
+  },
+  {
+    "Id": "PYG",
+    "CountryAlpha2": "PY",
+    "CurrencyName": "Guarani",
+    "Symbol": "Gs"
+  },
+  {
+    "Id": "QAR",
+    "CountryAlpha2": "QA",
+    "CurrencyName": "Qatari Rial",
+    "Symbol": "﷼"
+  },
+  {
+    "Id": "RON",
+    "CountryAlpha2": "RO",
+    "CurrencyName": "Romanian Leu",
+    "Symbol": "lei"
+  },
+  {
+    "Id": "RSD",
+    "CountryAlpha2": "RS",
+    "CurrencyName": "Serbian Dinar",
+    "Symbol": "Дин."
+  },
+  {
+    "Id": "RUB",
+    "CountryAlpha2": "RU",
+    "CurrencyName": "Russian Ruble",
+    "Symbol": "₽"
+  },
+  {
+    "Id": "RWF",
+    "CountryAlpha2": "RW",
+    "CurrencyName": "Rwanda Franc",
+    "Symbol": "FRw"
+  },
+  {
+    "Id": "SAR",
+    "CountryAlpha2": "SA",
+    "CurrencyName": "Saudi Riyal",
+    "Symbol": "﷼"
+  },
+  {
+    "Id": "SBD",
+    "CountryAlpha2": "SB",
+    "CurrencyName": "Solomon Islands Dollar",
+    "Symbol": "$"
+  },
+  {
+    "Id": "SCR",
+    "CountryAlpha2": "SC",
+    "CurrencyName": "Seychelles Rupee",
+    "Symbol": "₨"
+  },
+  {
+    "Id": "SEK",
+    "CountryAlpha2": "SE",
+    "CurrencyName": "Swedish Krona",
+    "Symbol": "kr"
+  },
+  {
+    "Id": "SGD",
+    "CountryAlpha2": "SG",
+    "CurrencyName": "Singapore Dollar",
+    "Symbol": "$"
+  },
+  {
+    "Id": "SLL",
+    "CountryAlpha2": "SL",
+    "CurrencyName": "Leone",
+    "Symbol": "Le"
+  },
+  {
+    "Id": "SOS",
+    "CountryAlpha2": "SO",
+    "CurrencyName": "Somali Shilling",
+    "Symbol": "S"
+  },
+  {
+    "Id": "SRD",
+    "CountryAlpha2": "SR",
+    "CurrencyName": "Surinam Dollar",
+    "Symbol": "$"
+  },
+  {
+    "Id": "STN",
+    "CountryAlpha2": "ST",
+    "CurrencyName": "Dobra",
+    "Symbol": "Db"
+  },
+  {
+    "Id": "SVC",
+    "CountryAlpha2": "SV",
+    "CurrencyName": "El Salvador Colon",
+    "Symbol": "$"
+  },
+  {
+    "Id": "SYP",
+    "CountryAlpha2": "SY",
+    "CurrencyName": "Syrian Pound",
+    "Symbol": "£"
+  },
+  {
+    "Id": "SZL",
+    "CountryAlpha2": "SZ",
+    "CurrencyName": "Lilangeni",
+    "Symbol": "L"
+  },
+  {
+    "Id": "THB",
+    "CountryAlpha2": "TH",
+    "CurrencyName": "Baht",
+    "Symbol": "฿"
+  },
+  {
+    "Id": "TJS",
+    "CountryAlpha2": "TJ",
+    "CurrencyName": "Somoni",
+    "Symbol": "SM"
+  },
+  {
+    "Id": "TMT",
+    "CountryAlpha2": "TM",
+    "CurrencyName": "Turkmenistan New Manat",
+    "Symbol": "T"
+  },
+  {
+    "Id": "TND",
+    "CountryAlpha2": "TN",
+    "CurrencyName": "Tunisian Dinar",
+    "Symbol": "د.ت"
+  },
+  {
+    "Id": "TOP",
+    "CountryAlpha2": "TO",
+    "CurrencyName": "Pa’anga",
+    "Symbol": "T$"
+  },
+  {
+    "Id": "TRY",
+    "CountryAlpha2": "TR",
+    "CurrencyName": "Turkish Lira",
+    "Symbol": "₺"
+  },
+  {
+    "Id": "TTD",
+    "CountryAlpha2": "TT",
+    "CurrencyName": "Trinidad and Tobago Dollar",
+    "Symbol": "TT$"
+  },
+  {
+    "Id": "TZS",
+    "CountryAlpha2": "TZ",
+    "CurrencyName": "Tanzanian Shilling",
+    "Symbol": "TSh"
+  },
+  {
+    "Id": "UAH",
+    "CountryAlpha2": "UA",
+    "CurrencyName": "Hryvnia",
+    "Symbol": "₴"
+  },
+  {
+    "Id": "UGX",
+    "CountryAlpha2": "UG",
+    "CurrencyName": "Uganda Shilling",
+    "Symbol": "Ush"
+  },
+  {
+    "Id": "USD",
+    "CountryAlpha2": "AS",
+    "CurrencyName": "US Dollar",
+    "Symbol": "$"
+  },
+  {
+    "Id": "USD",
+    "CountryAlpha2": "EC",
+    "CurrencyName": "US Dollar",
+    "Symbol": "$"
+  },
+  {
+    "Id": "USD",
+    "CountryAlpha2": "SV",
+    "CurrencyName": "US Dollar",
+    "Symbol": "$"
+  },
+  {
+    "Id": "USD",
+    "CountryAlpha2": "GU",
+    "CurrencyName": "US Dollar",
+    "Symbol": "$"
+  },
+  {
+    "Id": "USD",
+    "CountryAlpha2": "HT",
+    "CurrencyName": "US Dollar",
+    "Symbol": "$"
+  },
+  {
+    "Id": "USD",
+    "CountryAlpha2": "MH",
+    "CurrencyName": "US Dollar",
+    "Symbol": "$"
+  },
+  {
+    "Id": "USD",
+    "CountryAlpha2": "FM",
+    "CurrencyName": "US Dollar",
+    "Symbol": "$"
+  },
+  {
+    "Id": "USD",
+    "CountryAlpha2": "MP",
+    "CurrencyName": "US Dollar",
+    "Symbol": "$"
+  },
+  {
+    "Id": "USD",
+    "CountryAlpha2": "PW",
+    "CurrencyName": "US Dollar",
+    "Symbol": "$"
+  },
+  {
+    "Id": "USD",
+    "CountryAlpha2": "PA",
+    "CurrencyName": "US Dollar",
+    "Symbol": "$"
+  },
+  {
+    "Id": "USD",
+    "CountryAlpha2": "PR",
+    "CurrencyName": "US Dollar",
+    "Symbol": "$"
+  },
+  {
+    "Id": "USD",
+    "CountryAlpha2": "TL",
+    "CurrencyName": "US Dollar",
+    "Symbol": "$"
+  },
+  {
+    "Id": "USD",
+    "CountryAlpha2": "TC",
+    "CurrencyName": "US Dollar",
+    "Symbol": "$"
+  },
+  {
+    "Id": "USD",
+    "CountryAlpha2": "UM",
+    "CurrencyName": "US Dollar",
+    "Symbol": "$"
+  },
+  {
+    "Id": "USD",
+    "CountryAlpha2": "US",
+    "CurrencyName": "US Dollar",
+    "Symbol": "$"
+  },
+  {
+    "Id": "USD",
+    "CountryAlpha2": "VG",
+    "CurrencyName": "US Dollar",
+    "Symbol": "$"
+  },
+  {
+    "Id": "USD",
+    "CountryAlpha2": "VI",
+    "CurrencyName": "US Dollar",
+    "Symbol": "$"
+  },
+  {
+    "Id": "UYU",
+    "CountryAlpha2": "UY",
+    "CurrencyName": "Peso Uruguayo",
+    "Symbol": "$U"
+  },
+  {
+    "Id": "UZS",
+    "CountryAlpha2": "UZ",
+    "CurrencyName": "Uzbekistan Sum",
+    "Symbol": "лв"
+  },
+  {
+    "Id": "VND",
+    "CountryAlpha2": "VN",
+    "CurrencyName": "Dong",
+    "Symbol": "₫"
+  },
+  {
+    "Id": "VUV",
+    "CountryAlpha2": "VU",
+    "CurrencyName": "Vatu",
+    "Symbol": "VT"
+  },
+  {
+    "Id": "WST",
+    "CountryAlpha2": "WS",
+    "CurrencyName": "Tala",
+    "Symbol": "WS$"
+  },
+  {
+    "Id": "XAF",
+    "CountryAlpha2": "CM",
+    "CurrencyName": "CFA Franc BEAC",
+    "Symbol": "FCFA"
+  },
+  {
+    "Id": "XAF",
+    "CountryAlpha2": "CF",
+    "CurrencyName": "CFA Franc BEAC",
+    "Symbol": "FCFA"
+  },
+  {
+    "Id": "XAF",
+    "CountryAlpha2": "TD",
+    "CurrencyName": "CFA Franc BEAC",
+    "Symbol": "FCFA"
+  },
+  {
+    "Id": "XAF",
+    "CountryAlpha2": "CG",
+    "CurrencyName": "CFA Franc BEAC",
+    "Symbol": "FCFA"
+  },
+  {
+    "Id": "XAF",
+    "CountryAlpha2": "GQ",
+    "CurrencyName": "CFA Franc BEAC",
+    "Symbol": "FCFA"
+  },
+  {
+    "Id": "XAF",
+    "CountryAlpha2": "GA",
+    "CurrencyName": "CFA Franc BEAC",
+    "Symbol": "FCFA"
+  },
+  {
+    "Id": "XCD",
+    "CountryAlpha2": "AI",
+    "CurrencyName": "East Caribbean Dollar",
+    "Symbol": "$"
+  },
+  {
+    "Id": "XCD",
+    "CountryAlpha2": "AG",
+    "CurrencyName": "East Caribbean Dollar",
+    "Symbol": "$"
+  },
+  {
+    "Id": "XCD",
+    "CountryAlpha2": "DM",
+    "CurrencyName": "East Caribbean Dollar",
+    "Symbol": "$"
+  },
+  {
+    "Id": "XCD",
+    "CountryAlpha2": "GD",
+    "CurrencyName": "East Caribbean Dollar",
+    "Symbol": "$"
+  },
+  {
+    "Id": "XCD",
+    "CountryAlpha2": "MS",
+    "CurrencyName": "East Caribbean Dollar",
+    "Symbol": "$"
+  },
+  {
+    "Id": "XCD",
+    "CountryAlpha2": "KN",
+    "CurrencyName": "East Caribbean Dollar",
+    "Symbol": "$"
+  },
+  {
+    "Id": "XCD",
+    "CountryAlpha2": "LC",
+    "CurrencyName": "East Caribbean Dollar",
+    "Symbol": "$"
+  },
+  {
+    "Id": "XCD",
+    "CountryAlpha2": "VC",
+    "CurrencyName": "East Caribbean Dollar",
+    "Symbol": "$"
+  },
+  {
+    "Id": "XPF",
+    "CountryAlpha2": "PF",
+    "CurrencyName": "CFP Franc",
+    "Symbol": "F"
+  },
+  {
+    "Id": "XPF",
+    "CountryAlpha2": "NC",
+    "CurrencyName": "CFP Franc",
+    "Symbol": "F"
+  },
+  {
+    "Id": "XPF",
+    "CountryAlpha2": "WF",
+    "CurrencyName": "CFP Franc",
+    "Symbol": "F"
+  },
+  {
+    "Id": "YER",
+    "CountryAlpha2": "YE",
+    "CurrencyName": "Yemeni Rial",
+    "Symbol": "﷼"
+  },
+  {
+    "Id": "ZAR",
+    "CountryAlpha2": "LS",
+    "CurrencyName": "Rand",
+    "Symbol": "R"
+  },
+  {
+    "Id": "ZAR",
+    "CountryAlpha2": "NA",
+    "CurrencyName": "Rand",
+    "Symbol": "R"
+  },
+  {
+    "Id": "ZAR",
+    "CountryAlpha2": "ZA",
+    "CurrencyName": "Rand",
+    "Symbol": "R"
+  },
+  {
+    "Id": "ZMW",
+    "CountryAlpha2": "ZM",
+    "CurrencyName": "Zambian Kwacha",
+    "Symbol": "K"
+  }
+]

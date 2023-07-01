@@ -1,0 +1,98 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Falsus.Providers.Location</name>
+    </assembly>
+    <members>
+        <member name="T:Falsus.Providers.Location.CountryProvider">
+            <summary>
+            Represents a provider of <see cref="T:Falsus.Shared.Models.CountryModel"/> values.
+            </summary>
+            <seealso cref="T:Falsus.Providers.GenericArrayProvider`1"/>
+        </member>
+        <member name="F:Falsus.Providers.Location.CountryProvider.countries">
+            <summary>
+            An array containing all <see cref="T:Falsus.Shared.Models.CountryModel"/> instances.
+            </summary>
+        </member>
+        <member name="M:Falsus.Providers.Location.CountryProvider.GetSupportedArguments">
+            <summary>
+            Gets the definition of the input arguments supported by this provider.
+            </summary>
+            <returns>
+            A <see cref="T:System.Collections.Generic.Dictionary`2"/> containing the name of the
+            argument and the expected type of the argument value.
+            </returns>
+        </member>
+        <member name="M:Falsus.Providers.Location.CountryProvider.GetRowValue(System.String)">
+            <summary>
+            Gets an instance of <see cref="T:Falsus.Shared.Models.CountryModel"/> from the provided <paramref name="id"/>.
+            </summary>
+            <param name="id">An unique identifier for the object.</param>
+            <returns>
+            An instance of the <see cref="T:Falsus.Shared.Models.CountryModel"/> with the specified unique identifier.
+            </returns>
+            <remarks>
+            The unique identifier of the <see cref="T:Falsus.Shared.Models.CountryModel"/> instance is
+            defined by the <see cref="P:Falsus.Shared.Models.CountryModel.Alpha2"/> property.
+            The unique id can be fetched by invoking the
+            <see cref="M:Falsus.Providers.Location.CountryProvider.GetValueId(Falsus.Shared.Models.CountryModel)"/> method.
+            </remarks>
+        </member>
+        <member name="M:Falsus.Providers.Location.CountryProvider.GetValueId(Falsus.Shared.Models.CountryModel)">
+            <summary>
+            Gets a unique identifier for the provided <see cref="T:Falsus.Shared.Models.CountryModel"/> instance.
+            </summary>
+            <param name="value">An instance of <see cref="T:Falsus.Shared.Models.CountryModel"/>.</param>
+            <returns>
+            A <see cref="T:System.String"/> containing the unique identifier of the provided <see cref="T:Falsus.Shared.Models.CountryModel"/>.
+            </returns>
+            <remarks>
+            The unique identifier of the <see cref="T:Falsus.Shared.Models.CountryModel"/> instance is
+            defined by the <see cref="P:Falsus.Shared.Models.CountryModel.Alpha2"/> property.
+            </remarks>
+        </member>
+        <member name="M:Falsus.Providers.Location.CountryProvider.Load(Falsus.GeneratorProperties.DataGeneratorProperty{Falsus.Shared.Models.CountryModel},System.Int32)">
+            <summary>
+            Instructs the data provider to prepare the data for generation based on the
+            provided <see cref="!:CountryProviderConfiguration"/>.
+            </summary>
+            <param name="property">
+            An implementation of the generic <see cref="T:Falsus.GeneratorProperties.DataGeneratorProperty`1"/>
+            defining the property that this provider has been attached to.
+            </param>
+            <param name="rowCount">The desired number of rows to be generated.</param>
+            <remarks>
+            Invoked before any calculation takes place, the goal of this method is
+            usually preparing or caching data for the generation taking place afterwards.
+            </remarks>
+        </member>
+        <member name="M:Falsus.Providers.Location.CountryProvider.GetValues(Falsus.DataGeneratorContext)">
+            <summary>
+            Gets an array of <see cref="T:Falsus.Shared.Models.CountryModel"/> instances
+            representing possible values based on the context information.
+            </summary>
+            <param name="context">
+            An instance of <see cref="T:Falsus.DataGeneratorContext"/> defining
+            the current generation context.
+            </param>
+            <returns>
+            An array of <see cref="T:Falsus.Shared.Models.CountryModel"/> instances.
+            </returns>
+            <remarks>
+            If the <see cref="!:NationalityArgumentName"/> is provided then this method will
+            return the value for a <see cref="T:Falsus.Shared.Models.CountryModel"/> of the specified <see cref="!:NationalityModel"/>
+            argument value.
+            </remarks>
+        </member>
+        <member name="M:Falsus.Providers.Location.CountryProvider.GetValues">
+            <summary>
+            Gets an array of <see cref="T:Falsus.Shared.Models.CountryModel"/> instances
+            representing all possible values.
+            </summary>
+            <returns>
+            An array of <see cref="T:Falsus.Shared.Models.CountryModel"/> instances.
+            </returns>
+        </member>
+    </members>
+</doc>

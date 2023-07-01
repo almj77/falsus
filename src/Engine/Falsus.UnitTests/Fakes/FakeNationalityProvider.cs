@@ -5,8 +5,8 @@
     using System.Linq;
     using Falsus.GeneratorProperties;
     using Falsus.Providers;
+    using Falsus.Shared.Helpers;
     using Falsus.UnitTests.Fakes.Models;
-    using Falsus.UnitTests.Helpers;
 
     public class FakeNationalityProvider : GenericArrayProvider<FakeNationalityModel>
     {
