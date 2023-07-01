@@ -1,7 +1,7 @@
 <?xml version="1.0"?>
 <doc>
     <assembly>
-        <name>Falsus.Providers.DataTypes</name>
+        <name>Falsus.Providers.Datatypes</name>
     </assembly>
     <members>
         <member name="T:Falsus.Providers.DataTypes.BooleanProvider">
