@@ -11,7 +11,7 @@
 - Seamlessly establish dependencies between fields, enabling logical connections (e.g., when a continent is already generated, generate a country that perfectly aligns with its continent).
 
 ### Data Generators
-- Data Types
+#### Data Types
 	- Boolean
 	- Date
 	- Double
@@ -19,10 +19,14 @@
 	- Guid
 	- Integer
 	- Time
-- Finance
+#### Finance
 	- Currency
-- Location
+#### Location
 	- Country
+#### Text
+	- Lorem Ipsum
+	- Regular Expression
+	- Word (Dictionary)
 
 ## 🕹 Usage
 ### Basic
