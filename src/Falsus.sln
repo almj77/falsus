@@ -25,13 +25,19 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Finance", "Finance", "{3DF3
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Falsus.Providers.Finance", "Providers\Finance\Falsus.Providers.Finance\Falsus.Providers.Finance.csproj", "{704DF584-393F-453B-806D-93065F2BFB85}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Falsus.Providers.Finance.UnitTests", "Providers\Finance\Falsus.Providers.Finance.UnitTests\Falsus.Providers.Finance.UnitTests.csproj", "{EF497123-3986-426B-8070-048E1E4736F2}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Falsus.Providers.Finance.UnitTests", "Providers\Finance\Falsus.Providers.Finance.UnitTests\Falsus.Providers.Finance.UnitTests.csproj", "{EF497123-3986-426B-8070-048E1E4736F2}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Location", "Location", "{5DC156C3-E111-40C7-9489-7EC7ADCE72D6}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Falsus.Providers.Location", "Providers\Location\Falsus.Providers.Location\Falsus.Providers.Location.csproj", "{53E05B29-53A2-4EAC-B993-799461C19B2E}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Falsus.Providers.Location", "Providers\Location\Falsus.Providers.Location\Falsus.Providers.Location.csproj", "{53E05B29-53A2-4EAC-B993-799461C19B2E}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Falsus.Providers.Location.UnitTests", "Providers\Location\Falsus.Providers.Location.UnitTests\Falsus.Providers.Location.UnitTests.csproj", "{2B57C503-C8E6-463C-BD42-24A61CA0FC20}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Falsus.Providers.Location.UnitTests", "Providers\Location\Falsus.Providers.Location.UnitTests\Falsus.Providers.Location.UnitTests.csproj", "{2B57C503-C8E6-463C-BD42-24A61CA0FC20}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Text", "Text", "{60DB5778-809F-4AAC-AB38-DC2E27B012A6}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Falsus.Providers.Text", "Providers\Text\Falsus.Providers.Text\Falsus.Providers.Text.csproj", "{83302396-8397-4C02-AC84-514814264D7F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Falsus.Providers.Text.UnitTests", "Providers\Text\Falsus.Providers.Text.UnitTests\Falsus.Providers.Text.UnitTests.csproj", "{99D95AA5-5881-4AE3-A37A-913A92792FA8}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -75,6 +81,14 @@ Global
 		{2B57C503-C8E6-463C-BD42-24A61CA0FC20}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{2B57C503-C8E6-463C-BD42-24A61CA0FC20}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{2B57C503-C8E6-463C-BD42-24A61CA0FC20}.Release|Any CPU.Build.0 = Release|Any CPU
+		{83302396-8397-4C02-AC84-514814264D7F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{83302396-8397-4C02-AC84-514814264D7F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{83302396-8397-4C02-AC84-514814264D7F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{83302396-8397-4C02-AC84-514814264D7F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{99D95AA5-5881-4AE3-A37A-913A92792FA8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{99D95AA5-5881-4AE3-A37A-913A92792FA8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{99D95AA5-5881-4AE3-A37A-913A92792FA8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{99D95AA5-5881-4AE3-A37A-913A92792FA8}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -92,6 +106,9 @@ Global
 		{5DC156C3-E111-40C7-9489-7EC7ADCE72D6} = {9C6B5946-7774-4289-B48B-227FDB1A5974}
 		{53E05B29-53A2-4EAC-B993-799461C19B2E} = {5DC156C3-E111-40C7-9489-7EC7ADCE72D6}
 		{2B57C503-C8E6-463C-BD42-24A61CA0FC20} = {5DC156C3-E111-40C7-9489-7EC7ADCE72D6}
+		{60DB5778-809F-4AAC-AB38-DC2E27B012A6} = {9C6B5946-7774-4289-B48B-227FDB1A5974}
+		{83302396-8397-4C02-AC84-514814264D7F} = {60DB5778-809F-4AAC-AB38-DC2E27B012A6}
+		{99D95AA5-5881-4AE3-A37A-913A92792FA8} = {60DB5778-809F-4AAC-AB38-DC2E27B012A6}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {8744A41F-BD1C-4331-AB9C-915F2BC5D199}

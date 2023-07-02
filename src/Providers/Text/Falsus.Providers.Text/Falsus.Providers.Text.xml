@@ -1,0 +1,552 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Falsus.Providers.Text</name>
+    </assembly>
+    <members>
+        <member name="T:Falsus.Providers.Text.LoremIpsumFragmentType">
+            <summary>
+            Specifies the type of LoremIpsum fragment.
+            </summary>
+        </member>
+        <member name="F:Falsus.Providers.Text.LoremIpsumFragmentType.Paragraph">
+            <summary>
+            A paragraph from the LoremIpsum.
+            </summary>
+        </member>
+        <member name="F:Falsus.Providers.Text.LoremIpsumFragmentType.Sentence">
+            <summary>
+            A sentence from the LoremIpsum.
+            </summary>
+        </member>
+        <member name="F:Falsus.Providers.Text.LoremIpsumFragmentType.Word">
+            <summary>
+            A single word from the LoremIpsum.
+            </summary>
+        </member>
+        <member name="T:Falsus.Providers.Text.LoremIpsumProvider">
+            <summary>
+            Represents a provider of LoremIpsum text fragments.
+            </summary>
+            <remarks>
+            This provider is a wrapper of the NLipsum.Core library.
+            </remarks>
+            <seealso cref="T:Falsus.Providers.DataGeneratorProvider`1"/>
+        </member>
+        <member name="F:Falsus.Providers.Text.LoremIpsumProvider.MaxAttempts">
+            <summary>
+            The number of attemps to try to generate a unique value
+            before throwing an exception.
+            </summary>
+        </member>
+        <member name="F:Falsus.Providers.Text.LoremIpsumProvider.configuration">
+            <summary>
+            The configuration of this provider.
+            </summary>
+        </member>
+        <member name="M:Falsus.Providers.Text.LoremIpsumProvider.#ctor">
+            <summary>
+            Initializes a new instance of the <see cref="T:Falsus.Providers.Text.LoremIpsumProvider"/> class.
+            </summary>
+        </member>
+        <member name="M:Falsus.Providers.Text.LoremIpsumProvider.#ctor(Falsus.Providers.Text.LoremIpsumProviderConfiguration)">
+            <summary>
+            Initializes a new instance of the <see cref="T:Falsus.Providers.Text.LoremIpsumProvider"/> class.
+            </summary>
+            <param name="configuration">The configuration to use.</param>
+            <exception cref="T:System.ArgumentNullException">
+            Thrown when the <see cref="F:Falsus.Providers.Text.LoremIpsumProvider.configuration"/> instance is null.
+            </exception>
+        </member>
+        <member name="M:Falsus.Providers.Text.LoremIpsumProvider.GetRangedRowValue(System.String,System.String,System.String[])">
+            <summary>
+            Generates a random text fragment that is greater than the value
+            of <paramref name="minValue"/> and lower than the value of <paramref name="maxValue"/>.
+            </summary>
+            <param name="minValue">The exclusive lower bound of the random object returned.</param>
+            <param name="maxValue">The exclusive upper bound of the random object returned.</param>
+            <param name="excludedObjects">
+            An array of <see cref="T:System.String"/> values that cannot be returned
+            by the provider.
+            </param>
+            <returns>
+            A random instance of <see cref="T:System.String"/> greater than <paramref name="minValue"/>
+            and less than <paramref name="maxValue"/>.
+            </returns>
+            <remarks>
+            <paramref name="maxValue"/> must be greater than <paramref name="minValue"/>.
+            </remarks>
+            <exception cref="T:System.NotSupportedException">
+            Thrown because the generation of ranged text fragments is not supported.
+            </exception>
+        </member>
+        <member name="M:Falsus.Providers.Text.LoremIpsumProvider.GetRowValue(Falsus.DataGeneratorContext,Falsus.GeneratorProperties.WeightedRange{System.String}[],System.String[])">
+            <summary>
+            Generates a random text fragment
+            based on the context and excluded ranges.
+            </summary>
+            <param name="context">
+            An instance of <see cref="T:Falsus.DataGeneratorContext"/> defining
+            the current generation context.
+            </param>
+            <param name="excludedRanges">
+            An array of <see cref="T:Falsus.GeneratorProperties.WeightedRange`1"/>s defining the ranges
+            that cannot be returned by the provider.
+            </param>
+            <param name="excludedObjects">
+            An array of <see cref="T:System.String"/> values that cannot be returned
+            by the provider.
+            </param>
+            <returns>
+            A random instance of <see cref="T:System.String"/> that is outside of
+            the specified <paramref name="excludedRanges"/>.
+            </returns>
+            <exception cref="T:System.NotSupportedException">
+            Thrown because the generation of ranged text fragments is not supported.
+            </exception>
+        </member>
+        <member name="M:Falsus.Providers.Text.LoremIpsumProvider.GetRowValue(System.String)">
+            <summary>
+            Gets a <see cref="T:System.String"/> value based on the provided <paramref name="id"/>.
+            </summary>
+            <param name="id">An unique identifier for the object.</param>
+            <returns>
+            A <see cref="T:System.String"/> value with the specified unique identifier.
+            </returns>
+            <remarks>
+            Since both the <paramref name="id"/> and returning type are <see cref="T:System.String"/>
+            this method returns exactly what is passed on the <paramref name="id"/> argument.
+            </remarks>
+        </member>
+        <member name="M:Falsus.Providers.Text.LoremIpsumProvider.GetRowValue(Falsus.DataGeneratorContext,System.String[])">
+            <summary>
+            Generates a random text fragment based on the context and excluded objects.
+            </summary>
+            <param name="context">
+            An instance of <see cref="T:Falsus.DataGeneratorContext"/> defining
+            the current generation context.
+            </param>
+            <param name="excludedObjects">
+            An array of <see cref="T:System.String"/> values that cannot be returned
+            by the provider.
+            </param>
+            <returns>
+            A random text fragment.
+            </returns>
+        </member>
+        <member name="M:Falsus.Providers.Text.LoremIpsumProvider.GetValueId(System.String)">
+            <summary>
+            Gets a unique identifier for the provided <see cref="T:System.String"/>.
+            </summary>
+            <param name="value">The <see cref="T:System.String"/> value.</param>
+            <returns>
+            A <see cref="T:System.String"/> containing the unique identifier of the provided value.
+            </returns>
+            <remarks>
+            Since both the <paramref name="value"/> and returning type are <see cref="T:System.String"/>
+            this method returns exactly what is passed on the <paramref name="value"/> argument.
+            </remarks>
+        </member>
+        <member name="M:Falsus.Providers.Text.LoremIpsumProvider.Load(Falsus.GeneratorProperties.DataGeneratorProperty{System.String},System.Int32)">
+            <summary>
+            Instructs the data provider to prepare the data for generation based on the
+            provided <see cref="T:Falsus.Providers.Text.LoremIpsumProviderConfiguration"/>.
+            </summary>
+            <param name="property">
+            An implementation of the generic <see cref="T:Falsus.GeneratorProperties.DataGeneratorProperty`1"/>
+            defining the property that this provider has been attached to.
+            </param>
+            <param name="rowCount">The desired number of rows to be generated.</param>
+            <remarks>
+            Invoked before any calculation takes place, the goal of this method is
+            usually preparing or caching data for the generation taking place afterwards.
+            </remarks>
+        </member>
+        <member name="M:Falsus.Providers.Text.LoremIpsumProvider.GetValue">
+            <summary>
+            Gets a value from the <see cref="T:NLipsum.Core.LipsumGenerator"/> based on the specified fragment type.
+            </summary>
+            <returns>
+            A text fragment.
+            </returns>
+        </member>
+        <member name="M:Falsus.Providers.Text.LoremIpsumProvider.ValidateConfiguration">
+            <summary>
+            Checks if the <see cref="F:Falsus.Providers.Text.LoremIpsumProvider.configuration"/> object is assigned and correct.
+            </summary>
+            <exception cref="T:System.InvalidOperationException">
+            Thrown when the <see cref="P:Falsus.Providers.Text.LoremIpsumProviderConfiguration.FragmentCount"/> is less than zero.
+            </exception>
+        </member>
+        <member name="T:Falsus.Providers.Text.LoremIpsumProviderConfiguration">
+            <summary>
+            This class represents the configuration object of the <see cref="T:Falsus.Providers.Text.LoremIpsumProvider"/> data provider.
+            </summary>
+        </member>
+        <member name="P:Falsus.Providers.Text.LoremIpsumProviderConfiguration.FragmentCount">
+            <summary>
+            Gets or sets the desired number of fragments to generate.
+            </summary>
+            <value>
+            An <see cref="T:System.Int32"/> value representing the number of fragments.
+            </value>
+        </member>
+        <member name="P:Falsus.Providers.Text.LoremIpsumProviderConfiguration.FragmentType">
+            <summary>
+            Gets or sets the type of fragment to generate.
+            </summary>
+            <value>
+            One of the possible values of the <see cref="T:Falsus.Providers.Text.LoremIpsumFragmentType"/> enum.
+            </value>
+            <remarks>
+            Defaults to <see cref="F:Falsus.Providers.Text.LoremIpsumFragmentType.Paragraph"/>.
+            </remarks>
+        </member>
+        <member name="T:Falsus.Providers.Text.Models.WordModel">
+            <summary>
+            This class represents a word in a given language.
+            </summary>
+        </member>
+        <member name="P:Falsus.Providers.Text.Models.WordModel.Word">
+            <summary>
+            Gets or sets the word.
+            </summary>
+            <value>
+            A <see cref="T:System.String"/> containing one word.
+            </value>
+        </member>
+        <member name="P:Falsus.Providers.Text.Models.WordModel.LanguageTwoLetterCode">
+            <summary>
+            Gets or sets the two letter ISO code of the language.
+            </summary>
+            <value>
+            A <see cref="T:System.String"/> containing a two letter ISO language code.
+            </value>
+        </member>
+        <member name="P:Falsus.Providers.Text.Models.WordModel.WordType">
+            <summary>
+            Gets or sets the type of word.
+            </summary>
+            <value>
+            A value of <see cref="P:Falsus.Providers.Text.Models.WordModel.WordType"/>.
+            </value>
+        </member>
+        <member name="T:Falsus.Providers.Text.RegexProvider">
+            <summary>
+            Represents a provider of <see cref="T:System.String"/> values that match
+            a given regular expression.
+            </summary>
+            <seealso cref="T:Falsus.Providers.DataGeneratorProvider`1"/>
+        </member>
+        <member name="F:Falsus.Providers.Text.RegexProvider.MaxAttempts">
+            <summary>
+            The number of attemps to try to generate a unique value
+            before throwing an exception.
+            </summary>
+        </member>
+        <member name="F:Falsus.Providers.Text.RegexProvider.configuration">
+            <summary>
+            The configuration of this provider.
+            </summary>
+        </member>
+        <member name="F:Falsus.Providers.Text.RegexProvider.regexGenerator">
+            <summary>
+            An object that will generate text from a regular expression.
+            </summary>
+        </member>
+        <member name="M:Falsus.Providers.Text.RegexProvider.#ctor(Falsus.Providers.Text.RegexProviderConfiguration)">
+            <summary>
+            Initializes a new instance of the <see cref="T:Falsus.Providers.Text.RegexProvider"/> class.
+            </summary>
+            <param name="configuration">The configuration to use.</param>
+            <remarks>
+            The <paramref name="configuration"/> must not be null and the
+            <see cref="P:Falsus.Providers.Text.RegexProviderConfiguration.Pattern"/> cannot be empty.
+            </remarks>
+            <exception cref="T:System.ArgumentNullException">
+            Thrown when the <see cref="F:Falsus.Providers.Text.RegexProvider.configuration"/> instance is null.
+            </exception>
+        </member>
+        <member name="M:Falsus.Providers.Text.RegexProvider.GetRangedRowValue(System.String,System.String,System.String[])">
+            <summary>
+            Generates a random <see cref="T:System.String"/> value that is greater than the value
+            of <paramref name="minValue"/> and lower than the value of <paramref name="maxValue"/>.
+            </summary>
+            <param name="minValue">The exclusive lower bound of the random object returned.</param>
+            <param name="maxValue">The exclusive upper bound of the random object returned.</param>
+            <param name="excludedObjects">
+            An array of <see cref="T:System.String"/> values that cannot be returned
+            by the provider.
+            </param>
+            <returns>
+            A random <see cref="T:System.String"/> greater than <paramref name="minValue"/>
+            and less than <paramref name="maxValue"/>.
+            </returns>
+            <remarks>
+            <paramref name="maxValue"/> must be greater than <paramref name="minValue"/>.
+            </remarks>
+            <exception cref="T:System.NotSupportedException">
+            Thrown because the generation of ranged <see cref="T:System.String"/>
+            values is not supported.
+            </exception>
+        </member>
+        <member name="M:Falsus.Providers.Text.RegexProvider.GetRowValue(Falsus.DataGeneratorContext,Falsus.GeneratorProperties.WeightedRange{System.String}[],System.String[])">
+            <summary>
+            Generates a random <see cref="T:System.String"/> value
+            based on the context and excluded ranges.
+            </summary>
+            <param name="context">
+            An instance of <see cref="T:Falsus.DataGeneratorContext"/> defining
+            the current generation context.
+            </param>
+            <param name="excludedRanges">
+            An array of <see cref="T:Falsus.GeneratorProperties.WeightedRange`1"/>s defining the ranges
+            that cannot be returned by the provider.
+            </param>
+            <param name="excludedObjects">
+            An array of <see cref="T:System.String"/> values that cannot be returned
+            by the provider.
+            </param>
+            <returns>
+            A random <see cref="T:System.String"/> value that is outside of
+            the specified <paramref name="excludedRanges"/>.
+            </returns>
+            <exception cref="T:System.NotSupportedException">
+            Thrown because the generation of ranged <see cref="T:System.String"/>
+            values is not supported.
+            </exception>
+        </member>
+        <member name="M:Falsus.Providers.Text.RegexProvider.GetRowValue(System.String)">
+            <summary>
+            Gets a <see cref="T:System.String"/> value based on the provided <paramref name="id"/>.
+            </summary>
+            <param name="id">An unique identifier for the object.</param>
+            <returns>
+            A <see cref="T:System.String"/> value with the specified unique identifier.
+            </returns>
+            <remarks>
+            Since both the <paramref name="id"/> and returning type are <see cref="T:System.String"/>
+            this method returns exactly what is passed on the <paramref name="id"/> argument.
+            </remarks>
+        </member>
+        <member name="M:Falsus.Providers.Text.RegexProvider.GetRowValue(Falsus.DataGeneratorContext,System.String[])">
+            <summary>
+            Generates a random <see cref="T:System.String"/> value that matches the configured regular expression
+            based on the context and excluded objects.
+            </summary>
+            <param name="context">
+            An instance of <see cref="T:Falsus.DataGeneratorContext"/> defining
+            the current generation context.
+            </param>
+            <param name="excludedObjects">
+            An array of <see cref="T:System.String"/> values that cannot be returned
+            by the provider.
+            </param>
+            <returns>
+            A random <see cref="T:System.String"/> value.
+            </returns>
+        </member>
+        <member name="M:Falsus.Providers.Text.RegexProvider.GetValueId(System.String)">
+            <summary>
+            Gets a unique identifier for the provided <see cref="T:System.String"/>.
+            </summary>
+            <param name="value">The <see cref="T:System.String"/> value.</param>
+            <returns>
+            A <see cref="T:System.String"/> containing the unique identifier of the provided value.
+            </returns>
+            <remarks>
+            Since both the <paramref name="value"/> and returning type are <see cref="T:System.String"/>
+            this method returns exactly what is passed on the <paramref name="value"/> argument.
+            </remarks>
+        </member>
+        <member name="M:Falsus.Providers.Text.RegexProvider.Load(Falsus.GeneratorProperties.DataGeneratorProperty{System.String},System.Int32)">
+            <summary>
+            Instructs the data provider to prepare the data for generation based on the
+            provided <see cref="T:Falsus.Providers.Text.RegexProviderConfiguration"/>.
+            </summary>
+            <param name="property">
+            An implementation of the generic <see cref="T:Falsus.GeneratorProperties.DataGeneratorProperty`1"/>
+            defining the property that this provider has been attached to.
+            </param>
+            <param name="rowCount">The desired number of rows to be generated.</param>
+            <remarks>
+            Invoked before any calculation takes place, the goal of this method is
+            usually preparing or caching data for the generation taking place afterwards.
+            </remarks>
+        </member>
+        <member name="M:Falsus.Providers.Text.RegexProvider.ValidateConfiguration">
+            <summary>
+            Checks if the <see cref="F:Falsus.Providers.Text.RegexProvider.configuration"/> object is assigned and correct.
+            </summary>
+            <exception cref="T:System.InvalidOperationException">
+            Thrown when the <see cref="P:Falsus.Providers.Text.RegexProviderConfiguration.Pattern"/> is empty.
+            </exception>
+        </member>
+        <member name="T:Falsus.Providers.Text.RegexProviderConfiguration">
+            <summary>
+            This class represents the configuration object of the <see cref="T:Falsus.Providers.Text.RegexProvider"/> data provider.
+            </summary>
+        </member>
+        <member name="P:Falsus.Providers.Text.RegexProviderConfiguration.Pattern">
+            <summary>
+            Gets or sets the regular expression pattern that the values generated by the
+            provider have to match.
+            </summary>
+            <value>A regular expression.</value>
+        </member>
+        <member name="T:Falsus.Providers.Text.WordProvider">
+            <summary>
+            Represents a provider of <see cref="T:System.String"/> values representing words.
+            </summary>
+            <seealso cref="T:Falsus.Providers.GenericArrayProvider`1"/>
+        </member>
+        <member name="F:Falsus.Providers.Text.WordProvider.words">
+            <summary>
+            An array containing all words.
+            </summary>
+            <remarks>
+            Words belonging to types present on the <see cref="P:Falsus.Providers.Text.WordProviderConfiguration.ExcludedWordTypes"/>
+            are excluded from this list.
+            </remarks>
+        </member>
+        <member name="F:Falsus.Providers.Text.WordProvider.configuration">
+            <summary>
+            The configuration of this provider.
+            </summary>
+        </member>
+        <member name="M:Falsus.Providers.Text.WordProvider.#ctor(Falsus.Providers.Text.WordProviderConfiguration)">
+            <summary>
+            Initializes a new instance of the <see cref="T:Falsus.Providers.Text.WordProvider"/> class.
+            </summary>
+            <param name="configuration">The configuration to use.</param>
+            <exception cref="T:System.ArgumentNullException">
+            Thrown when the <see cref="F:Falsus.Providers.Text.WordProvider.configuration"/> instance is null.
+            </exception>
+        </member>
+        <member name="M:Falsus.Providers.Text.WordProvider.GetRowValue(System.String)">
+            <summary>
+            Gets a <see cref="T:System.String"/> value based on the provided <paramref name="id"/>.
+            </summary>
+            <param name="id">An unique identifier for the object.</param>
+            <returns>
+            A <see cref="T:System.String"/> value with the specified unique identifier.
+            </returns>
+            <remarks>
+            Since both the <paramref name="id"/> and returning type are <see cref="T:System.String"/>
+            this method returns exactly what is passed on the <paramref name="id"/> argument.
+            </remarks>
+        </member>
+        <member name="M:Falsus.Providers.Text.WordProvider.GetValueId(System.String)">
+            <summary>
+            Gets a unique identifier for the provided <see cref="T:System.String"/>.
+            </summary>
+            <param name="value">The <see cref="T:System.String"/> value.</param>
+            <returns>
+            A <see cref="T:System.String"/> containing the unique identifier of the provided value.
+            </returns>
+            <remarks>
+            Since both the <paramref name="value"/> and returning type are <see cref="T:System.String"/>
+            this method returns exactly what is passed on the <paramref name="value"/> argument.
+            </remarks>
+        </member>
+        <member name="M:Falsus.Providers.Text.WordProvider.Load(Falsus.GeneratorProperties.DataGeneratorProperty{System.String},System.Int32)">
+            <summary>
+            Instructs the data provider to prepare the data for generation based on the
+            provided <see cref="T:Falsus.Providers.Text.WordProvider"/>.
+            </summary>
+            <param name="property">
+            An implementation of the generic <see cref="T:Falsus.GeneratorProperties.DataGeneratorProperty`1"/>
+            defining the property that this provider has been attached to.
+            </param>
+            <param name="rowCount">The desired number of rows to be generated.</param>
+            <remarks>
+            Invoked before any calculation takes place, the goal of this method is
+            usually preparing or caching data for the generation taking place afterwards.
+            </remarks>
+        </member>
+        <member name="M:Falsus.Providers.Text.WordProvider.GetValues(Falsus.DataGeneratorContext)">
+            <summary>
+            Gets an array of <see cref="T:System.String"/> instances
+            representing possible values based on the context information.
+            </summary>
+            <param name="context">
+            An instance of <see cref="T:Falsus.DataGeneratorContext"/> defining
+            the current generation context.
+            </param>
+            <returns>
+            An array of words.
+            </returns>
+        </member>
+        <member name="M:Falsus.Providers.Text.WordProvider.GetValues">
+            <summary>
+            Gets an array of <see cref="T:System.String"/> instances
+            representing all possible values.
+            </summary>
+            <returns>
+            An array of <see cref="T:System.String"/> instances.
+            </returns>
+        </member>
+        <member name="M:Falsus.Providers.Text.WordProvider.ValidateConfiguration">
+            <summary>
+            Checks if the <see cref="F:Falsus.Providers.Text.WordProvider.configuration"/> object is assigned and correct.
+            </summary>
+            <exception cref="T:System.InvalidOperationException">
+            Thrown when the <see cref="P:Falsus.Providers.Text.WordProviderConfiguration.ExcludedWordTypes"/> has duplicate values.
+            </exception>
+        </member>
+        <member name="T:Falsus.Providers.Text.WordProviderConfiguration">
+            <summary>
+            This class represents the configuration object of the <see cref="T:Falsus.Providers.Text.WordProvider"/> data provider.
+            </summary>
+        </member>
+        <member name="P:Falsus.Providers.Text.WordProviderConfiguration.ExcludedWordTypes">
+            <summary>
+            Gets or sets an array containing the types of words to exclude.
+            </summary>
+            <value>
+            An array of <see cref="T:Falsus.Providers.Text.WordType"/> values representing the
+            types of words to exclude.
+            </value>
+        </member>
+        <member name="T:Falsus.Providers.Text.WordType">
+            <summary>
+            Specifies the type of words.
+            </summary>
+        </member>
+        <member name="F:Falsus.Providers.Text.WordType.None">
+            <summary>
+            None.
+            </summary>
+        </member>
+        <member name="F:Falsus.Providers.Text.WordType.Adjective">
+            <summary>
+            Adjective.
+            </summary>
+        </member>
+        <member name="F:Falsus.Providers.Text.WordType.Adverb">
+            <summary>
+            Adverbs.
+            </summary>
+        </member>
+        <member name="F:Falsus.Providers.Text.WordType.Conjunction">
+            <summary>
+            Conjunctions.
+            </summary>
+        </member>
+        <member name="F:Falsus.Providers.Text.WordType.Interjection">
+            <summary>
+            Interjections.
+            </summary>
+        </member>
+        <member name="F:Falsus.Providers.Text.WordType.Preposition">
+            <summary>
+            Prepositions.
+            </summary>
+        </member>
+        <member name="F:Falsus.Providers.Text.WordType.Verb">
+            <summary>
+            Verbs.
+            </summary>
+        </member>
+    </members>
+</doc>
