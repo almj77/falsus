@@ -12,21 +12,21 @@
 
 ### Data Generators
 #### Data Types
-	- Boolean
-	- Date
-	- Double
-	- Float
-	- Guid
-	- Integer
-	- Time
+- Boolean
+- Date
+- Double
+- Float
+- Guid
+- Integer
+- Time
 #### Finance
-	- Currency
+- Currency
 #### Location
-	- Country
+- Country
 #### Text
-	- Lorem Ipsum
-	- Regular Expression
-	- Word (Dictionary)
+- Lorem Ipsum
+- Regular Expression
+- Word (Dictionary)
 
 ## 🕹 Usage
 ### Basic
@@ -247,4 +247,4 @@ Given the declared dependency between the country and continent properties, the 
 ## 📘 Credits
 Thanks to all contributors of:
 - [NLipsum](https://github.com/alexcpendleton/NLipsum).
-- [Fare - Finite Automata and Regular Expressions] (https://github.com/moodmosaic/Fare)
+- [Fare - Finite Automata and Regular Expressions](https://github.com/moodmosaic/Fare)
