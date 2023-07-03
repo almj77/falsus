@@ -243,3 +243,8 @@ namespace ConsoleApp1
 
 The above code instructs the engine to generate 100 objects containing two properties (Country and Continent).
 Given the declared dependency between the country and continent properties, the Continents will be generated first and the generated Country will always match the specified continent.
+
+## 📘 Credits
+Thanks to all contributors of:
+- [NLipsum](https://github.com/alexcpendleton/NLipsum).
+- [Fare - Finite Automata and Regular Expressions] (https://github.com/moodmosaic/Fare)
