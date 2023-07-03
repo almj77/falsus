@@ -11,7 +11,7 @@
 - Seamlessly establish dependencies between fields, enabling logical connections (e.g., when a continent is already generated, generate a country that perfectly aligns with its continent).
 
 ### Data Generators
-- Data Types
+#### Data Types
 	- Boolean
 	- Date
 	- Double
@@ -19,10 +19,14 @@
 	- Guid
 	- Integer
 	- Time
-- Finance
+#### Finance
 	- Currency
-- Location
+#### Location
 	- Country
+#### Text
+	- Lorem Ipsum
+	- Regular Expression
+	- Word (Dictionary)
 
 ## 🕹 Usage
 ### Basic
@@ -239,3 +243,8 @@ namespace ConsoleApp1
 
 The above code instructs the engine to generate 100 objects containing two properties (Country and Continent).
 Given the declared dependency between the country and continent properties, the Continents will be generated first and the generated Country will always match the specified continent.
+
+## 📘 Credits
+Thanks to all contributors of:
+- [NLipsum](https://github.com/alexcpendleton/NLipsum).
+- [Fare - Finite Automata and Regular Expressions] (https://github.com/moodmosaic/Fare)

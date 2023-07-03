@@ -1,0 +1,36 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net6.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+
+    <IsPackable>false</IsPackable>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Include="..\Falsus.Providers.Text\Models\WordModel.cs" Link="Models\WordModel.cs" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <EmbeddedResource Include="..\Falsus.Providers.Text\Datasets\Words.json" Link="Datasets\Words.json" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.NET.Test.Sdk" Version="17.1.0" />
+    <PackageReference Include="MSTest.TestAdapter" Version="2.2.8" />
+    <PackageReference Include="MSTest.TestFramework" Version="2.2.8" />
+    <PackageReference Include="coverlet.collector" Version="3.1.2" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\..\..\Shared\Falsus.Shared\Falsus.Shared.csproj" />
+    <ProjectReference Include="..\Falsus.Providers.Text\Falsus.Providers.Text.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="Datasets\" />
+    <Folder Include="Models\" />
+  </ItemGroup>
+
+</Project>
