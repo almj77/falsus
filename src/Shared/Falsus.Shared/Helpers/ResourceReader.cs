@@ -1,5 +1,6 @@
 ﻿namespace Falsus.Shared.Helpers
 {
+    using System.Collections.Generic;
     using System.IO;
     using System.Reflection;
     using Newtonsoft.Json;
@@ -27,6 +28,27 @@
                 string jsonFile = reader.ReadToEnd();
                 return JsonConvert.DeserializeObject<T>(jsonFile);
             }
+        }
+
+        /// <summary>
+        /// Gets a list of resources that are embedded within the specified path.
+        /// </summary>
+        /// <param name="path">The root path to retrieve resources from.</param>
+        /// <returns>An array of <see cref="string"/> with paths to embedded resources.</returns>
+        public static string[] GetEmbeddedResourcePaths(string path)
+        {
+            List<string> resourcePaths = new List<string>();
+
+            var assembly = Assembly.GetCallingAssembly();
+            foreach (string resourceName in assembly.GetManifestResourceNames())
+            {
+                if (resourceName.StartsWith(path))
+                {
+                    resourcePaths.Add(resourceName);
+                }
+            }
+
+            return resourcePaths.ToArray();
         }
     }
 }

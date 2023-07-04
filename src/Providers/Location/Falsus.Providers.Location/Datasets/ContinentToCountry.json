@@ -1,0 +1,922 @@
+﻿[
+  {
+    "CountryAlpha2": "AF",
+    "ContinentAlpha2": "AS"
+  },
+  {
+    "CountryAlpha2": "AX",
+    "ContinentAlpha2": "EU"
+  },
+  {
+    "CountryAlpha2": "AL",
+    "ContinentAlpha2": "EU"
+  },
+  {
+    "CountryAlpha2": "DZ",
+    "ContinentAlpha2": "AF"
+  },
+  {
+    "CountryAlpha2": "AS",
+    "ContinentAlpha2": "OC"
+  },
+  {
+    "CountryAlpha2": "AD",
+    "ContinentAlpha2": "EU"
+  },
+  {
+    "CountryAlpha2": "AO",
+    "ContinentAlpha2": "AF"
+  },
+  {
+    "CountryAlpha2": "AI",
+    "ContinentAlpha2": "NA"
+  },
+  {
+    "CountryAlpha2": "AG",
+    "ContinentAlpha2": "NA"
+  },
+  {
+    "CountryAlpha2": "AR",
+    "ContinentAlpha2": "SA"
+  },
+  {
+    "CountryAlpha2": "AM",
+    "ContinentAlpha2": "AS"
+  },
+  {
+    "CountryAlpha2": "AW",
+    "ContinentAlpha2": "NA"
+  },
+  {
+    "CountryAlpha2": "AU",
+    "ContinentAlpha2": "OC"
+  },
+  {
+    "CountryAlpha2": "AT",
+    "ContinentAlpha2": "EU"
+  },
+  {
+    "CountryAlpha2": "AZ",
+    "ContinentAlpha2": "AS"
+  },
+  {
+    "CountryAlpha2": "BS",
+    "ContinentAlpha2": "NA"
+  },
+  {
+    "CountryAlpha2": "BH",
+    "ContinentAlpha2": "AS"
+  },
+  {
+    "CountryAlpha2": "BD",
+    "ContinentAlpha2": "AS"
+  },
+  {
+    "CountryAlpha2": "BB",
+    "ContinentAlpha2": "NA"
+  },
+  {
+    "CountryAlpha2": "BY",
+    "ContinentAlpha2": "EU"
+  },
+  {
+    "CountryAlpha2": "BE",
+    "ContinentAlpha2": "EU"
+  },
+  {
+    "CountryAlpha2": "BZ",
+    "ContinentAlpha2": "NA"
+  },
+  {
+    "CountryAlpha2": "BJ",
+    "ContinentAlpha2": "AF"
+  },
+  {
+    "CountryAlpha2": "BM",
+    "ContinentAlpha2": "NA"
+  },
+  {
+    "CountryAlpha2": "BT",
+    "ContinentAlpha2": "AS"
+  },
+  {
+    "CountryAlpha2": "BO",
+    "ContinentAlpha2": "SA"
+  },
+  {
+    "CountryAlpha2": "BA",
+    "ContinentAlpha2": "EU"
+  },
+  {
+    "CountryAlpha2": "BW",
+    "ContinentAlpha2": "AF"
+  },
+  {
+    "CountryAlpha2": "BR",
+    "ContinentAlpha2": "SA"
+  },
+  {
+    "CountryAlpha2": "BN",
+    "ContinentAlpha2": "AS"
+  },
+  {
+    "CountryAlpha2": "BG",
+    "ContinentAlpha2": "EU"
+  },
+  {
+    "CountryAlpha2": "BF",
+    "ContinentAlpha2": "AF"
+  },
+  {
+    "CountryAlpha2": "BI",
+    "ContinentAlpha2": "AF"
+  },
+  {
+    "CountryAlpha2": "CV",
+    "ContinentAlpha2": "AF"
+  },
+  {
+    "CountryAlpha2": "KH",
+    "ContinentAlpha2": "AS"
+  },
+  {
+    "CountryAlpha2": "CM",
+    "ContinentAlpha2": "AF"
+  },
+  {
+    "CountryAlpha2": "CA",
+    "ContinentAlpha2": "NA"
+  },
+  {
+    "CountryAlpha2": "KY",
+    "ContinentAlpha2": "NA"
+  },
+  {
+    "CountryAlpha2": "CF",
+    "ContinentAlpha2": "AF"
+  },
+  {
+    "CountryAlpha2": "TD",
+    "ContinentAlpha2": "AF"
+  },
+  {
+    "CountryAlpha2": "CL",
+    "ContinentAlpha2": "SA"
+  },
+  {
+    "CountryAlpha2": "CN",
+    "ContinentAlpha2": "AS"
+  },
+  {
+    "CountryAlpha2": "CO",
+    "ContinentAlpha2": "SA"
+  },
+  {
+    "CountryAlpha2": "KM",
+    "ContinentAlpha2": "AF"
+  },
+  {
+    "CountryAlpha2": "CG",
+    "ContinentAlpha2": "AF"
+  },
+  {
+    "CountryAlpha2": "CD",
+    "ContinentAlpha2": "AF"
+  },
+  {
+    "CountryAlpha2": "CK",
+    "ContinentAlpha2": "OC"
+  },
+  {
+    "CountryAlpha2": "CR",
+    "ContinentAlpha2": "NA"
+  },
+  {
+    "CountryAlpha2": "CI",
+    "ContinentAlpha2": "AF"
+  },
+  {
+    "CountryAlpha2": "HR",
+    "ContinentAlpha2": "EU"
+  },
+  {
+    "CountryAlpha2": "CU",
+    "ContinentAlpha2": "NA"
+  },
+  {
+    "CountryAlpha2": "CW",
+    "ContinentAlpha2": "NA"
+  },
+  {
+    "CountryAlpha2": "CY",
+    "ContinentAlpha2": "AS"
+  },
+  {
+    "CountryAlpha2": "CZ",
+    "ContinentAlpha2": "EU"
+  },
+  {
+    "CountryAlpha2": "DK",
+    "ContinentAlpha2": "EU"
+  },
+  {
+    "CountryAlpha2": "DJ",
+    "ContinentAlpha2": "AF"
+  },
+  {
+    "CountryAlpha2": "DM",
+    "ContinentAlpha2": "NA"
+  },
+  {
+    "CountryAlpha2": "DO",
+    "ContinentAlpha2": "NA"
+  },
+  {
+    "CountryAlpha2": "EC",
+    "ContinentAlpha2": "SA"
+  },
+  {
+    "CountryAlpha2": "EG",
+    "ContinentAlpha2": "AF"
+  },
+  {
+    "CountryAlpha2": "SV",
+    "ContinentAlpha2": "NA"
+  },
+  {
+    "CountryAlpha2": "GQ",
+    "ContinentAlpha2": "AF"
+  },
+  {
+    "CountryAlpha2": "ER",
+    "ContinentAlpha2": "AF"
+  },
+  {
+    "CountryAlpha2": "EE",
+    "ContinentAlpha2": "EU"
+  },
+  {
+    "CountryAlpha2": "SZ",
+    "ContinentAlpha2": "AF"
+  },
+  {
+    "CountryAlpha2": "ET",
+    "ContinentAlpha2": "AF"
+  },
+  {
+    "CountryAlpha2": "FK",
+    "ContinentAlpha2": "SA"
+  },
+  {
+    "CountryAlpha2": "FO",
+    "ContinentAlpha2": "EU"
+  },
+  {
+    "CountryAlpha2": "FJ",
+    "ContinentAlpha2": "OC"
+  },
+  {
+    "CountryAlpha2": "FI",
+    "ContinentAlpha2": "EU"
+  },
+  {
+    "CountryAlpha2": "FR",
+    "ContinentAlpha2": "EU"
+  },
+  {
+    "CountryAlpha2": "PF",
+    "ContinentAlpha2": "OC"
+  },
+  {
+    "CountryAlpha2": "GA",
+    "ContinentAlpha2": "AF"
+  },
+  {
+    "CountryAlpha2": "GM",
+    "ContinentAlpha2": "AF"
+  },
+  {
+    "CountryAlpha2": "GE",
+    "ContinentAlpha2": "AS"
+  },
+  {
+    "CountryAlpha2": "DE",
+    "ContinentAlpha2": "EU"
+  },
+  {
+    "CountryAlpha2": "GH",
+    "ContinentAlpha2": "AF"
+  },
+  {
+    "CountryAlpha2": "GI",
+    "ContinentAlpha2": "EU"
+  },
+  {
+    "CountryAlpha2": "GR",
+    "ContinentAlpha2": "EU"
+  },
+  {
+    "CountryAlpha2": "GL",
+    "ContinentAlpha2": "NA"
+  },
+  {
+    "CountryAlpha2": "GD",
+    "ContinentAlpha2": "NA"
+  },
+  {
+    "CountryAlpha2": "GU",
+    "ContinentAlpha2": "OC"
+  },
+  {
+    "CountryAlpha2": "GT",
+    "ContinentAlpha2": "NA"
+  },
+  {
+    "CountryAlpha2": "GN",
+    "ContinentAlpha2": "AF"
+  },
+  {
+    "CountryAlpha2": "GW",
+    "ContinentAlpha2": "AF"
+  },
+  {
+    "CountryAlpha2": "GY",
+    "ContinentAlpha2": "SA"
+  },
+  {
+    "CountryAlpha2": "HT",
+    "ContinentAlpha2": "NA"
+  },
+  {
+    "CountryAlpha2": "VA",
+    "ContinentAlpha2": "EU"
+  },
+  {
+    "CountryAlpha2": "HN",
+    "ContinentAlpha2": "NA"
+  },
+  {
+    "CountryAlpha2": "HK",
+    "ContinentAlpha2": "AS"
+  },
+  {
+    "CountryAlpha2": "HU",
+    "ContinentAlpha2": "EU"
+  },
+  {
+    "CountryAlpha2": "IS",
+    "ContinentAlpha2": "EU"
+  },
+  {
+    "CountryAlpha2": "IN",
+    "ContinentAlpha2": "AS"
+  },
+  {
+    "CountryAlpha2": "ID",
+    "ContinentAlpha2": "AS"
+  },
+  {
+    "CountryAlpha2": "IR",
+    "ContinentAlpha2": "AS"
+  },
+  {
+    "CountryAlpha2": "IQ",
+    "ContinentAlpha2": "AS"
+  },
+  {
+    "CountryAlpha2": "IE",
+    "ContinentAlpha2": "EU"
+  },
+  {
+    "CountryAlpha2": "IM",
+    "ContinentAlpha2": "EU"
+  },
+  {
+    "CountryAlpha2": "IL",
+    "ContinentAlpha2": "AS"
+  },
+  {
+    "CountryAlpha2": "IT",
+    "ContinentAlpha2": "EU"
+  },
+  {
+    "CountryAlpha2": "JM",
+    "ContinentAlpha2": "NA"
+  },
+  {
+    "CountryAlpha2": "JP",
+    "ContinentAlpha2": "AS"
+  },
+  {
+    "CountryAlpha2": "JE",
+    "ContinentAlpha2": "EU"
+  },
+  {
+    "CountryAlpha2": "JO",
+    "ContinentAlpha2": "AS"
+  },
+  {
+    "CountryAlpha2": "KZ",
+    "ContinentAlpha2": "AS"
+  },
+  {
+    "CountryAlpha2": "KE",
+    "ContinentAlpha2": "AF"
+  },
+  {
+    "CountryAlpha2": "KI",
+    "ContinentAlpha2": "OC"
+  },
+  {
+    "CountryAlpha2": "KP",
+    "ContinentAlpha2": "AS"
+  },
+  {
+    "CountryAlpha2": "KR",
+    "ContinentAlpha2": "AS"
+  },
+  {
+    "CountryAlpha2": "KW",
+    "ContinentAlpha2": "AS"
+  },
+  {
+    "CountryAlpha2": "KG",
+    "ContinentAlpha2": "AS"
+  },
+  {
+    "CountryAlpha2": "LA",
+    "ContinentAlpha2": "AS"
+  },
+  {
+    "CountryAlpha2": "LV",
+    "ContinentAlpha2": "EU"
+  },
+  {
+    "CountryAlpha2": "LB",
+    "ContinentAlpha2": "AS"
+  },
+  {
+    "CountryAlpha2": "LS",
+    "ContinentAlpha2": "AF"
+  },
+  {
+    "CountryAlpha2": "LR",
+    "ContinentAlpha2": "AF"
+  },
+  {
+    "CountryAlpha2": "LY",
+    "ContinentAlpha2": "AF"
+  },
+  {
+    "CountryAlpha2": "LI",
+    "ContinentAlpha2": "EU"
+  },
+  {
+    "CountryAlpha2": "LT",
+    "ContinentAlpha2": "EU"
+  },
+  {
+    "CountryAlpha2": "LU",
+    "ContinentAlpha2": "EU"
+  },
+  {
+    "CountryAlpha2": "MO",
+    "ContinentAlpha2": "AS"
+  },
+  {
+    "CountryAlpha2": "MG",
+    "ContinentAlpha2": "AF"
+  },
+  {
+    "CountryAlpha2": "MW",
+    "ContinentAlpha2": "AF"
+  },
+  {
+    "CountryAlpha2": "MY",
+    "ContinentAlpha2": "AS"
+  },
+  {
+    "CountryAlpha2": "MV",
+    "ContinentAlpha2": "AS"
+  },
+  {
+    "CountryAlpha2": "ML",
+    "ContinentAlpha2": "AF"
+  },
+  {
+    "CountryAlpha2": "MT",
+    "ContinentAlpha2": "EU"
+  },
+  {
+    "CountryAlpha2": "MH",
+    "ContinentAlpha2": "OC"
+  },
+  {
+    "CountryAlpha2": "MR",
+    "ContinentAlpha2": "AF"
+  },
+  {
+    "CountryAlpha2": "MU",
+    "ContinentAlpha2": "AF"
+  },
+  {
+    "CountryAlpha2": "MX",
+    "ContinentAlpha2": "NA"
+  },
+  {
+    "CountryAlpha2": "FM",
+    "ContinentAlpha2": "OC"
+  },
+  {
+    "CountryAlpha2": "MD",
+    "ContinentAlpha2": "EU"
+  },
+  {
+    "CountryAlpha2": "MC",
+    "ContinentAlpha2": "EU"
+  },
+  {
+    "CountryAlpha2": "MN",
+    "ContinentAlpha2": "AS"
+  },
+  {
+    "CountryAlpha2": "ME",
+    "ContinentAlpha2": "EU"
+  },
+  {
+    "CountryAlpha2": "MS",
+    "ContinentAlpha2": "NA"
+  },
+  {
+    "CountryAlpha2": "MA",
+    "ContinentAlpha2": "AF"
+  },
+  {
+    "CountryAlpha2": "MZ",
+    "ContinentAlpha2": "AF"
+  },
+  {
+    "CountryAlpha2": "MM",
+    "ContinentAlpha2": "AS"
+  },
+  {
+    "CountryAlpha2": "NA",
+    "ContinentAlpha2": "AF"
+  },
+  {
+    "CountryAlpha2": "NR",
+    "ContinentAlpha2": "OC"
+  },
+  {
+    "CountryAlpha2": "NP",
+    "ContinentAlpha2": "AS"
+  },
+  {
+    "CountryAlpha2": "NL",
+    "ContinentAlpha2": "EU"
+  },
+  {
+    "CountryAlpha2": "NC",
+    "ContinentAlpha2": "OC"
+  },
+  {
+    "CountryAlpha2": "NZ",
+    "ContinentAlpha2": "OC"
+  },
+  {
+    "CountryAlpha2": "NI",
+    "ContinentAlpha2": "NA"
+  },
+  {
+    "CountryAlpha2": "NE",
+    "ContinentAlpha2": "AF"
+  },
+  {
+    "CountryAlpha2": "NG",
+    "ContinentAlpha2": "AF"
+  },
+  {
+    "CountryAlpha2": "NU",
+    "ContinentAlpha2": "OC"
+  },
+  {
+    "CountryAlpha2": "NF",
+    "ContinentAlpha2": "OC"
+  },
+  {
+    "CountryAlpha2": "MK",
+    "ContinentAlpha2": "EU"
+  },
+  {
+    "CountryAlpha2": "MP",
+    "ContinentAlpha2": "OC"
+  },
+  {
+    "CountryAlpha2": "NO",
+    "ContinentAlpha2": "EU"
+  },
+  {
+    "CountryAlpha2": "OM",
+    "ContinentAlpha2": "AS"
+  },
+  {
+    "CountryAlpha2": "PK",
+    "ContinentAlpha2": "AS"
+  },
+  {
+    "CountryAlpha2": "PW",
+    "ContinentAlpha2": "OC"
+  },
+  {
+    "CountryAlpha2": "PS",
+    "ContinentAlpha2": "AS"
+  },
+  {
+    "CountryAlpha2": "PA",
+    "ContinentAlpha2": "NA"
+  },
+  {
+    "CountryAlpha2": "PG",
+    "ContinentAlpha2": "OC"
+  },
+  {
+    "CountryAlpha2": "PY",
+    "ContinentAlpha2": "SA"
+  },
+  {
+    "CountryAlpha2": "PE",
+    "ContinentAlpha2": "SA"
+  },
+  {
+    "CountryAlpha2": "PH",
+    "ContinentAlpha2": "AS"
+  },
+  {
+    "CountryAlpha2": "PN",
+    "ContinentAlpha2": "OC"
+  },
+  {
+    "CountryAlpha2": "PL",
+    "ContinentAlpha2": "EU"
+  },
+  {
+    "CountryAlpha2": "PT",
+    "ContinentAlpha2": "EU"
+  },
+  {
+    "CountryAlpha2": "PR",
+    "ContinentAlpha2": "NA"
+  },
+  {
+    "CountryAlpha2": "QA",
+    "ContinentAlpha2": "AS"
+  },
+  {
+    "CountryAlpha2": "RO",
+    "ContinentAlpha2": "EU"
+  },
+  {
+    "CountryAlpha2": "RU",
+    "ContinentAlpha2": "EU"
+  },
+  {
+    "CountryAlpha2": "RW",
+    "ContinentAlpha2": "AF"
+  },
+  {
+    "CountryAlpha2": "BL",
+    "ContinentAlpha2": "NA"
+  },
+  {
+    "CountryAlpha2": "KN",
+    "ContinentAlpha2": "NA"
+  },
+  {
+    "CountryAlpha2": "LC",
+    "ContinentAlpha2": "NA"
+  },
+  {
+    "CountryAlpha2": "MF",
+    "ContinentAlpha2": "NA"
+  },
+  {
+    "CountryAlpha2": "PM",
+    "ContinentAlpha2": "NA"
+  },
+  {
+    "CountryAlpha2": "VC",
+    "ContinentAlpha2": "NA"
+  },
+  {
+    "CountryAlpha2": "WS",
+    "ContinentAlpha2": "OC"
+  },
+  {
+    "CountryAlpha2": "SM",
+    "ContinentAlpha2": "EU"
+  },
+  {
+    "CountryAlpha2": "ST",
+    "ContinentAlpha2": "AF"
+  },
+  {
+    "CountryAlpha2": "SA",
+    "ContinentAlpha2": "AS"
+  },
+  {
+    "CountryAlpha2": "SN",
+    "ContinentAlpha2": "AF"
+  },
+  {
+    "CountryAlpha2": "RS",
+    "ContinentAlpha2": "EU"
+  },
+  {
+    "CountryAlpha2": "SC",
+    "ContinentAlpha2": "AF"
+  },
+  {
+    "CountryAlpha2": "SL",
+    "ContinentAlpha2": "AF"
+  },
+  {
+    "CountryAlpha2": "SG",
+    "ContinentAlpha2": "AS"
+  },
+  {
+    "CountryAlpha2": "SX",
+    "ContinentAlpha2": "NA"
+  },
+  {
+    "CountryAlpha2": "SK",
+    "ContinentAlpha2": "EU"
+  },
+  {
+    "CountryAlpha2": "SI",
+    "ContinentAlpha2": "EU"
+  },
+  {
+    "CountryAlpha2": "SB",
+    "ContinentAlpha2": "OC"
+  },
+  {
+    "CountryAlpha2": "SO",
+    "ContinentAlpha2": "AF"
+  },
+  {
+    "CountryAlpha2": "ZA",
+    "ContinentAlpha2": "AF"
+  },
+  {
+    "CountryAlpha2": "GS",
+    "ContinentAlpha2": "AN"
+  },
+  {
+    "CountryAlpha2": "SS",
+    "ContinentAlpha2": "AF"
+  },
+  {
+    "CountryAlpha2": "ES",
+    "ContinentAlpha2": "EU"
+  },
+  {
+    "CountryAlpha2": "LK",
+    "ContinentAlpha2": "AS"
+  },
+  {
+    "CountryAlpha2": "SD",
+    "ContinentAlpha2": "AF"
+  },
+  {
+    "CountryAlpha2": "SR",
+    "ContinentAlpha2": "SA"
+  },
+  {
+    "CountryAlpha2": "SE",
+    "ContinentAlpha2": "EU"
+  },
+  {
+    "CountryAlpha2": "CH",
+    "ContinentAlpha2": "EU"
+  },
+  {
+    "CountryAlpha2": "SY",
+    "ContinentAlpha2": "AS"
+  },
+  {
+    "CountryAlpha2": "TJ",
+    "ContinentAlpha2": "AS"
+  },
+  {
+    "CountryAlpha2": "TZ",
+    "ContinentAlpha2": "AF"
+  },
+  {
+    "CountryAlpha2": "TH",
+    "ContinentAlpha2": "AS"
+  },
+  {
+    "CountryAlpha2": "TL",
+    "ContinentAlpha2": "AS"
+  },
+  {
+    "CountryAlpha2": "TG",
+    "ContinentAlpha2": "AF"
+  },
+  {
+    "CountryAlpha2": "TK",
+    "ContinentAlpha2": "OC"
+  },
+  {
+    "CountryAlpha2": "TO",
+    "ContinentAlpha2": "OC"
+  },
+  {
+    "CountryAlpha2": "TT",
+    "ContinentAlpha2": "NA"
+  },
+  {
+    "CountryAlpha2": "TN",
+    "ContinentAlpha2": "AF"
+  },
+  {
+    "CountryAlpha2": "TR",
+    "ContinentAlpha2": "EU"
+  },
+  {
+    "CountryAlpha2": "TM",
+    "ContinentAlpha2": "AS"
+  },
+  {
+    "CountryAlpha2": "TC",
+    "ContinentAlpha2": "NA"
+  },
+  {
+    "CountryAlpha2": "UG",
+    "ContinentAlpha2": "AF"
+  },
+  {
+    "CountryAlpha2": "UA",
+    "ContinentAlpha2": "EU"
+  },
+  {
+    "CountryAlpha2": "AE",
+    "ContinentAlpha2": "AS"
+  },
+  {
+    "CountryAlpha2": "GB",
+    "ContinentAlpha2": "EU"
+  },
+  {
+    "CountryAlpha2": "US",
+    "ContinentAlpha2": "NA"
+  },
+  {
+    "CountryAlpha2": "UM",
+    "ContinentAlpha2": "OC"
+  },
+  {
+    "CountryAlpha2": "UY",
+    "ContinentAlpha2": "SA"
+  },
+  {
+    "CountryAlpha2": "UZ",
+    "ContinentAlpha2": "AS"
+  },
+  {
+    "CountryAlpha2": "VU",
+    "ContinentAlpha2": "OC"
+  },
+  {
+    "CountryAlpha2": "VE",
+    "ContinentAlpha2": "SA"
+  },
+  {
+    "CountryAlpha2": "VN",
+    "ContinentAlpha2": "AS"
+  },
+  {
+    "CountryAlpha2": "VG",
+    "ContinentAlpha2": "NA"
+  },
+  {
+    "CountryAlpha2": "VI",
+    "ContinentAlpha2": "NA"
+  },
+  {
+    "CountryAlpha2": "WF",
+    "ContinentAlpha2": "OC"
+  },
+  {
+    "CountryAlpha2": "YE",
+    "ContinentAlpha2": "AS"
+  },
+  {
+    "CountryAlpha2": "ZM",
+    "ContinentAlpha2": "AF"
+  },
+  {
+    "CountryAlpha2": "ZW",
+    "ContinentAlpha2": "AF"
+  }
+]

@@ -22,7 +22,13 @@
 #### Finance
 - Currency
 #### Location
+- Continent
 - Country
+- Region
+- City
+- Street
+- Postal Code
+- Coordinates
 #### Text
 - Lorem Ipsum
 - Regular Expression
@@ -246,5 +252,5 @@ Given the declared dependency between the country and continent properties, the 
 
 ## 📘 Credits
 Thanks to all contributors of:
-- [NLipsum](https://github.com/alexcpendleton/NLipsum).
+- [NLipsum](https://github.com/alexcpendleton/NLipsum)
 - [Fare - Finite Automata and Regular Expressions](https://github.com/moodmosaic/Fare)

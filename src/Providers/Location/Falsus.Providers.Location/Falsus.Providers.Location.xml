@@ -4,6 +4,396 @@
         <name>Falsus.Providers.Location</name>
     </assembly>
     <members>
+        <member name="T:Falsus.Providers.Location.CityProvider">
+            <summary>
+            Represents a provider of City names.
+            </summary>
+            <seealso cref="T:Falsus.Providers.DataGeneratorProvider`1"/>
+        </member>
+        <member name="F:Falsus.Providers.Location.CityProvider.CountryArgumentName">
+            <summary>
+            The name of the input argument that contains an instance of
+            <see cref="T:Falsus.Shared.Models.CountryModel"/> to use on the value generation process.
+            </summary>
+        </member>
+        <member name="F:Falsus.Providers.Location.CityProvider.citiesByCountry">
+            <summary>
+            A dictionary of <see cref="T:Falsus.Shared.Models.CityModel"/> instances indexed by
+            the <see cref="P:Falsus.Shared.Models.CurrencyModel.CountryAlpha2"/> property.
+            </summary>
+        </member>
+        <member name="M:Falsus.Providers.Location.CityProvider.#ctor">
+            <summary>
+            Initializes a new instance of the <see cref="T:Falsus.Providers.Location.CityProvider"/> class.
+            </summary>
+        </member>
+        <member name="M:Falsus.Providers.Location.CityProvider.GetSupportedArguments">
+            <summary>
+            Gets the definition of the input arguments supported by this provider.
+            </summary>
+            <returns>
+            A <see cref="T:System.Collections.Generic.Dictionary`2"/> containing the name of the
+            argument and the expected type of the argument value.
+            </returns>
+        </member>
+        <member name="M:Falsus.Providers.Location.CityProvider.GetRangedRowValue(Falsus.Shared.Models.CityModel,Falsus.Shared.Models.CityModel,Falsus.Shared.Models.CityModel[])">
+            <summary>
+            Generates a random <see cref="T:Falsus.Shared.Models.CityModel"/> instance.
+            that is greater than the value of <paramref name="minValue"/> and lower
+            than the value of <paramref name="maxValue"/>.
+            </summary>
+            <param name="minValue">The exclusive lower bound of the random object returned.</param>
+            <param name="maxValue">The exclusive upper bound of the random object returned.</param>
+            <param name="excludedObjects">
+            An array of <see cref="T:Falsus.Shared.Models.CityModel"/> values that cannot be returned
+            by the provider.
+            </param>
+            <returns>
+            A random instance of <see cref="T:Falsus.Shared.Models.CityModel"/> greater than <paramref name="minValue"/>
+            and less than <paramref name="maxValue"/>.
+            </returns>
+            <remarks>
+            <paramref name="maxValue"/> must be greater than <paramref name="minValue"/>.
+            </remarks>
+            <exception cref="T:System.NotSupportedException">
+            Thrown because the generation of ranged city names is not supported.
+            </exception>
+        </member>
+        <member name="M:Falsus.Providers.Location.CityProvider.GetRowValue(Falsus.DataGeneratorContext,Falsus.GeneratorProperties.WeightedRange{Falsus.Shared.Models.CityModel}[],Falsus.Shared.Models.CityModel[])">
+            <summary>
+            Generates a random <see cref="T:Falsus.Shared.Models.CityModel"/> instance
+            based on the context and excluded ranges.
+            </summary>
+            <param name="context">
+            An instance of <see cref="T:Falsus.DataGeneratorContext"/> defining
+            the current generation context.
+            </param>
+            <param name="excludedRanges">
+            An array of <see cref="T:Falsus.GeneratorProperties.WeightedRange`1"/>s defining the ranges
+            that cannot be returned by the provider.
+            </param>
+            <param name="excludedObjects">
+            An array of <see cref="T:Falsus.Shared.Models.CityModel"/> values that cannot be returned
+            by the provider.
+            </param>
+            <returns>
+            A random instance of <see cref="T:Falsus.Shared.Models.CityModel"/> that is outside of
+            the specified <paramref name="excludedRanges"/>.
+            </returns>
+            <exception cref="T:System.NotSupportedException">
+            Thrown because the generation of ranged city names is not supported.
+            </exception>
+        </member>
+        <member name="M:Falsus.Providers.Location.CityProvider.GetRowValue(System.String)">
+            <summary>
+            Gets a <see cref="T:Falsus.Shared.Models.CityModel"/> instance based on the provided <paramref name="id"/>.
+            </summary>
+            <param name="id">An unique identifier for the object.</param>
+            <returns>
+            A <see cref="T:Falsus.Shared.Models.CityModel"/> instance that represents the city with the specified unique identifier.
+            </returns>
+        </member>
+        <member name="M:Falsus.Providers.Location.CityProvider.GetRowValue(Falsus.DataGeneratorContext,Falsus.Shared.Models.CityModel[])">
+            <summary>
+            Generates a random <see cref="T:Falsus.Shared.Models.CityModel"/> instance based on the context and excluded objects.
+            </summary>
+            <param name="context">
+            An instance of <see cref="T:Falsus.DataGeneratorContext"/> defining
+            the current generation context.
+            </param>
+            <param name="excludedObjects">
+            An array of <see cref="T:Falsus.Shared.Models.CityModel"/> instances that cannot be returned
+            by the provider.
+            </param>
+            <returns>
+            A random city name.
+            </returns>
+            <remarks>
+            If the <see cref="F:Falsus.Providers.Location.CityProvider.CountryArgumentName"/> is provided then this method will
+            return the name of a city belonging to the specified <see cref="T:Falsus.Shared.Models.CountryModel"/>
+            argument value.
+            </remarks>
+        </member>
+        <member name="M:Falsus.Providers.Location.CityProvider.GetValueId(Falsus.Shared.Models.CityModel)">
+            <summary>
+            Gets a unique identifier for the provided <see cref="T:Falsus.Shared.Models.CityModel"/>.
+            </summary>
+            <param name="value">The <see cref="T:Falsus.Shared.Models.CityModel"/> instance.</param>
+            <returns>
+            A <see cref="T:System.String"/> containing the unique identifier of the provided value.
+            </returns>
+        </member>
+        <member name="M:Falsus.Providers.Location.CityProvider.Load(Falsus.GeneratorProperties.DataGeneratorProperty{Falsus.Shared.Models.CityModel},System.Int32)">
+            <summary>
+            Instructs the data provider to prepare the data for generation based on the
+            provided <see cref="!:CityProviderConfiguration"/>.
+            </summary>
+            <param name="property">
+            An implementation of the generic <see cref="T:Falsus.GeneratorProperties.DataGeneratorProperty`1"/>
+            defining the property that this provider has been attached to.
+            </param>
+            <param name="rowCount">The desired number of rows to be generated.</param>
+            <remarks>
+            Invoked before any calculation takes place, the goal of this method is
+            usually preparing or caching data for the generation taking place afterwards.
+            </remarks>
+        </member>
+        <member name="T:Falsus.Providers.Location.ContinentProvider">
+            <summary>
+            Represents a provider of <see cref="T:Falsus.Shared.Models.ContinentModel"/> values.
+            </summary>
+            <seealso cref="T:Falsus.Providers.GenericArrayProvider`1"/>
+        </member>
+        <member name="F:Falsus.Providers.Location.ContinentProvider.CountryArgumentName">
+            <summary>
+            The name of the input argument that contains an instance of
+            <see cref="T:Falsus.Shared.Models.CountryModel"/> to use on the value generation process.
+            </summary>
+        </member>
+        <member name="F:Falsus.Providers.Location.ContinentProvider.continentsByAlpha2">
+            <summary>
+            A dictionary of <see cref="T:Falsus.Shared.Models.ContinentModel"/> instances indexed by
+            the <see cref="P:Falsus.Shared.Models.ContinentModel.Alpha2"/> property.
+            </summary>
+        </member>
+        <member name="F:Falsus.Providers.Location.ContinentProvider.continentByCountry">
+            <summary>
+            A dictionary of <see cref="T:Falsus.Providers.Location.Models.CountryToContinentModel"/> instances indexed
+            by the <see cref="P:Falsus.Providers.Location.Models.CountryToContinentModel.CountryAlpha2"/> property.
+            </summary>
+        </member>
+        <member name="M:Falsus.Providers.Location.ContinentProvider.#ctor">
+            <summary>
+            Initializes a new instance of the <see cref="T:Falsus.Providers.Location.ContinentProvider"/> class.
+            </summary>
+        </member>
+        <member name="M:Falsus.Providers.Location.ContinentProvider.GetSupportedArguments">
+            <summary>
+            Gets the definition of the input arguments supported by this provider.
+            </summary>
+            <returns>
+            A <see cref="T:System.Collections.Generic.Dictionary`2"/> containing the name of the
+            argument and the expected type of the argument value.
+            </returns>
+        </member>
+        <member name="M:Falsus.Providers.Location.ContinentProvider.GetRowValue(System.String)">
+            <summary>
+            Gets an instance of <see cref="T:Falsus.Shared.Models.ContinentModel"/> from the provided <paramref name="id"/>.
+            </summary>
+            <param name="id">An unique identifier for the object.</param>
+            <returns>
+            An instance of the <see cref="T:Falsus.Shared.Models.ContinentModel"/> with the specified unique identifier.
+            </returns>
+            <remarks>
+            The unique identifier of the <see cref="T:Falsus.Shared.Models.ContinentModel"/> instance is
+            defined by the <see cref="P:Falsus.Shared.Models.ContinentModel.Alpha2"/> property.
+            The unique id can be fetched by invoking the
+            <see cref="M:Falsus.Providers.Location.ContinentProvider.GetValueId(Falsus.Shared.Models.ContinentModel)"/> method.
+            </remarks>
+        </member>
+        <member name="M:Falsus.Providers.Location.ContinentProvider.GetValueId(Falsus.Shared.Models.ContinentModel)">
+            <summary>
+            Gets a unique identifier for the provided <see cref="T:Falsus.Shared.Models.ContinentModel"/> instance.
+            </summary>
+            <param name="value">An instance of <see cref="T:Falsus.Shared.Models.ContinentModel"/>.</param>
+            <returns>
+            A <see cref="T:System.String"/> containing the unique identifier of the provided <see cref="T:Falsus.Shared.Models.ContinentModel"/>.
+            </returns>
+            <remarks>
+            The unique identifier of the <see cref="T:Falsus.Shared.Models.ContinentModel"/> instance is
+            defined by the <see cref="P:Falsus.Shared.Models.ContinentModel.Alpha2"/> property.
+            </remarks>
+        </member>
+        <member name="M:Falsus.Providers.Location.ContinentProvider.Load(Falsus.GeneratorProperties.DataGeneratorProperty{Falsus.Shared.Models.ContinentModel},System.Int32)">
+            <summary>
+            Instructs the data provider to prepare the data for generation based on the
+            provided <see cref="!:ContinentProviderConfiguration"/>.
+            </summary>
+            <param name="property">
+            An implementation of the generic <see cref="T:Falsus.GeneratorProperties.DataGeneratorProperty`1"/>
+            defining the property that this provider has been attached to.
+            </param>
+            <param name="rowCount">The desired number of rows to be generated.</param>
+            <remarks>
+            Invoked before any calculation takes place, the goal of this method is
+            usually preparing or caching data for the generation taking place afterwards.
+            </remarks>
+        </member>
+        <member name="M:Falsus.Providers.Location.ContinentProvider.GetValues(Falsus.DataGeneratorContext)">
+            <summary>
+            Gets an array of <see cref="T:Falsus.Shared.Models.ContinentModel"/> instances
+            representing possible values based on the context information.
+            </summary>
+            <param name="context">
+            An instance of <see cref="T:Falsus.DataGeneratorContext"/> defining
+            the current generation context.
+            </param>
+            <returns>
+            An array of <see cref="T:Falsus.Shared.Models.ContinentModel"/> instances.
+            </returns>
+            <remarks>
+            If the <see cref="F:Falsus.Providers.Location.ContinentProvider.CountryArgumentName"/> is provided then this method will
+            return the value for a <see cref="T:Falsus.Shared.Models.ContinentModel"/> of the specified <see cref="T:Falsus.Shared.Models.CountryModel"/>
+            argument value.
+            </remarks>
+        </member>
+        <member name="M:Falsus.Providers.Location.ContinentProvider.GetValues">
+            <summary>
+            Gets an array of <see cref="T:Falsus.Shared.Models.ContinentModel"/> instances
+            representing all possible values.
+            </summary>
+            <returns>
+            An array of <see cref="T:Falsus.Shared.Models.ContinentModel"/> instances.
+            </returns>
+        </member>
+        <member name="T:Falsus.Providers.Location.CoordinatesProvider">
+            <summary>
+            Represents a provider of <see cref="T:Falsus.Shared.Models.CoordinatesModel"/> values.
+            </summary>
+            <seealso cref="T:Falsus.Providers.DataGeneratorProvider`1"/>
+        </member>
+        <member name="F:Falsus.Providers.Location.CoordinatesProvider.CountryArgumentName">
+            <summary>
+            The name of the input argument that contains an instance of
+            <see cref="T:Falsus.Shared.Models.CountryModel"/> to use on the value generation process.
+            </summary>
+        </member>
+        <member name="F:Falsus.Providers.Location.CoordinatesProvider.cache">
+            <summary>
+            A dictionary of <see cref="T:Falsus.Shared.Models.CoordinatesModel"/> instances indexed
+            by the <see cref="P:Falsus.Shared.Models.CountryModel.Alpha2"/> property.
+            </summary>
+        </member>
+        <member name="M:Falsus.Providers.Location.CoordinatesProvider.#ctor">
+            <summary>
+            Initializes a new instance of the <see cref="T:Falsus.Providers.Location.CoordinatesProvider"/> class.
+            </summary>
+        </member>
+        <member name="M:Falsus.Providers.Location.CoordinatesProvider.GetSupportedArguments">
+            <summary>
+            Gets the definition of the input arguments supported by this provider.
+            </summary>
+            <returns>
+            A <see cref="T:System.Collections.Generic.Dictionary`2"/> containing the name of the
+            argument and the expected type of the argument value.
+            </returns>
+        </member>
+        <member name="M:Falsus.Providers.Location.CoordinatesProvider.GetRangedRowValue(Falsus.Shared.Models.CoordinatesModel,Falsus.Shared.Models.CoordinatesModel,Falsus.Shared.Models.CoordinatesModel[])">
+            <summary>
+            Generates a random <see cref="T:Falsus.Shared.Models.CoordinatesModel"/> instance
+            that is greater than the value of <paramref name="minValue"/> and lower
+            than the value of <paramref name="maxValue"/>.
+            </summary>
+            <param name="minValue">The exclusive lower bound of the random object returned.</param>
+            <param name="maxValue">The exclusive upper bound of the random object returned.</param>
+            <param name="excludedObjects">
+            An array of <see cref="T:Falsus.Shared.Models.CoordinatesModel"/> instances that cannot be returned
+            by the provider.
+            </param>
+            <returns>
+            A random instance of <see cref="T:Falsus.Shared.Models.CoordinatesModel"/> greater than <paramref name="minValue"/>
+            and less than <paramref name="maxValue"/>.
+            </returns>
+            <remarks>
+            <paramref name="maxValue"/> must be greater than <paramref name="minValue"/>.
+            </remarks>
+            <exception cref="T:System.NotSupportedException">
+            Thrown because the generation of ranged <see cref="T:Falsus.Shared.Models.CoordinatesModel"/>
+            values is not supported.
+            </exception>
+        </member>
+        <member name="M:Falsus.Providers.Location.CoordinatesProvider.GetRowValue(Falsus.DataGeneratorContext,Falsus.GeneratorProperties.WeightedRange{Falsus.Shared.Models.CoordinatesModel}[],Falsus.Shared.Models.CoordinatesModel[])">
+            <summary>
+            Generates a random <see cref="T:Falsus.Shared.Models.CoordinatesModel"/> instance
+            based on the context and excluded ranges.
+            </summary>
+            <param name="context">
+            An instance of <see cref="T:Falsus.DataGeneratorContext"/> defining
+            the current generation context.
+            </param>
+            <param name="excludedRanges">
+            An array of <see cref="T:Falsus.GeneratorProperties.WeightedRange`1"/>s defining the ranges
+            that cannot be returned by the provider.
+            </param>
+            <param name="excludedObjects">
+            An array of <see cref="T:Falsus.Shared.Models.CoordinatesModel"/> instances that cannot be returned
+            by the provider.
+            </param>
+            <returns>
+            A random instance of <see cref="T:Falsus.Shared.Models.CoordinatesModel"/> that is outside of
+            the specified <paramref name="excludedRanges"/>.
+            </returns>
+            <exception cref="T:System.NotSupportedException">
+            Thrown because the generation of ranged <see cref="T:Falsus.Shared.Models.CoordinatesModel"/>
+            values is not supported.
+            </exception>
+        </member>
+        <member name="M:Falsus.Providers.Location.CoordinatesProvider.GetRowValue(System.String)">
+            <summary>
+            Gets an instance of <see cref="T:Falsus.Shared.Models.CoordinatesModel"/> from the provided <paramref name="id"/>.
+            </summary>
+            <param name="id">An unique identifier for the object.</param>
+            <returns>
+            An instance of the <see cref="T:Falsus.Shared.Models.CoordinatesModel"/> with the specified unique identifier.
+            </returns>
+            <remarks>
+            The unique identifier of the <see cref="T:Falsus.Shared.Models.CoordinatesModel"/> instance is
+            defined by a comma separated string concatenation of the
+            <see cref="P:Falsus.Shared.Models.CoordinatesModel.Latitude"/> and <see cref="P:Falsus.Shared.Models.CoordinatesModel.Longitude"/> properties.
+            The unique id can be fetched by invoking the
+            <see cref="M:Falsus.Providers.Location.CoordinatesProvider.GetValueId(Falsus.Shared.Models.CoordinatesModel)"/> method.
+            </remarks>
+        </member>
+        <member name="M:Falsus.Providers.Location.CoordinatesProvider.GetRowValue(Falsus.DataGeneratorContext,Falsus.Shared.Models.CoordinatesModel[])">
+            <summary>
+            Generates a random <see cref="T:Falsus.Shared.Models.CoordinatesModel"/> instance
+            based on the context and excluded objects.
+            </summary>
+            <param name="context">
+            An instance of <see cref="T:Falsus.DataGeneratorContext"/> defining
+            the current generation context.
+            </param>
+            <param name="excludedObjects">
+            An array of <see cref="T:Falsus.Shared.Models.CoordinatesModel"/> instances that cannot be returned
+            by the provider.
+            </param>
+            <returns>
+            A random instance of <see cref="T:Falsus.Shared.Models.CoordinatesModel"/>.
+            </returns>
+            <remarks>
+            If the <see cref="F:Falsus.Providers.Location.CoordinatesProvider.CountryArgumentName"/> is provided then this method will
+            return the value for a <see cref="T:Falsus.Shared.Models.CoordinatesModel"/> of the specified <see cref="T:Falsus.Shared.Models.CountryModel"/>
+            argument value.
+            </remarks>
+        </member>
+        <member name="M:Falsus.Providers.Location.CoordinatesProvider.GetValueId(Falsus.Shared.Models.CoordinatesModel)">
+            <summary>
+            Gets a unique identifier for the provided <see cref="T:Falsus.Shared.Models.CoordinatesModel"/> instance.
+            </summary>
+            <param name="value">An instance of <see cref="T:Falsus.Shared.Models.CoordinatesModel"/>.</param>
+            <returns>
+            A <see cref="T:System.String"/> containing the unique identifier of the provided <see cref="T:Falsus.Shared.Models.CoordinatesModel"/>.
+            </returns>
+            <remarks>
+            The unique identifier of the <see cref="T:Falsus.Shared.Models.CoordinatesModel"/> instance is
+            defined by a comma separated string concatenation of the
+            <see cref="P:Falsus.Shared.Models.CoordinatesModel.Latitude"/> and <see cref="P:Falsus.Shared.Models.CoordinatesModel.Longitude"/> properties.
+            </remarks>
+        </member>
+        <member name="M:Falsus.Providers.Location.CoordinatesProvider.Load(Falsus.GeneratorProperties.DataGeneratorProperty{Falsus.Shared.Models.CoordinatesModel},System.Int32)">
+            <summary>
+            Instructs the data provider to prepare the data for generation.
+            </summary>
+            <param name="property">
+            An implementation of the generic <see cref="T:Falsus.GeneratorProperties.DataGeneratorProperty`1"/>
+            defining the property that this provider has been attached to.
+            </param>
+            <param name="rowCount">The desired number of rows to be generated.</param>
+            <remarks>
+            Invoked before any calculation takes place, the goal of this method is
+            usually preparing or caching data for the generation taking place afterwards.
+            </remarks>
+        </member>
         <member name="T:Falsus.Providers.Location.CountryProvider">
             <summary>
             Represents a provider of <see cref="T:Falsus.Shared.Models.CountryModel"/> values.
@@ -93,6 +483,634 @@
             <returns>
             An array of <see cref="T:Falsus.Shared.Models.CountryModel"/> instances.
             </returns>
+        </member>
+        <member name="T:Falsus.Providers.Location.Models.CoordinateToStreetModel">
+            <summary>
+            This class represents the association between coordinates and a street name.
+            </summary>
+        </member>
+        <member name="P:Falsus.Providers.Location.Models.CoordinateToStreetModel.Latitude">
+            <summary>
+            Gets the latitude of the point represented by this instance.
+            </summary>
+            <value>
+            A <see cref="T:System.String"/> containing the latitude value.
+            </value>
+        </member>
+        <member name="P:Falsus.Providers.Location.Models.CoordinateToStreetModel.Longitude">
+            <summary>
+            Gets the longitude of the point represented by this instance.
+            </summary>
+            <value>
+            A <see cref="T:System.String"/> containing the longitude value.
+            </value>
+        </member>
+        <member name="P:Falsus.Providers.Location.Models.CoordinateToStreetModel.Name">
+            <summary>
+            Gets or sets the name of the street.
+            </summary>
+            <value>
+            A <see cref="T:System.String"/> containing the name of the street.
+            </value>
+        </member>
+        <member name="M:Falsus.Providers.Location.Models.CoordinateToStreetModel.CompareTo(Falsus.Providers.Location.Models.CoordinateToStreetModel)">
+            <summary>
+            Compares this instance with a specified <see cref="T:Falsus.Providers.Location.Models.CoordinateToStreetModel"/> and
+            returns an integer that indicates whether this instance precedes, follows, or
+            appears in the same position in the sort order as the specified <see cref="T:Falsus.Providers.Location.Models.CoordinateToStreetModel"/>.
+            </summary>
+            <param name="other">The other <see cref="T:Falsus.Providers.Location.Models.CoordinateToStreetModel"/> to be compared with this instance.</param>
+            <returns>
+            A 32-bit signed integer that indicates whether this instance precedes, follows, or
+            appears in the same position in the sort order as the value parameter.
+            </returns>
+        </member>
+        <member name="M:Falsus.Providers.Location.Models.CoordinateToStreetModel.Equals(Falsus.Providers.Location.Models.CoordinateToStreetModel)">
+            <summary>
+            Indicates whether the current object is equal to another object of the same type.
+            </summary>
+            <param name="other">An object to compare with this object.</param>
+            <returns>True if the current object is equal to the other parameter; otherwise, false.</returns>
+        </member>
+        <member name="M:Falsus.Providers.Location.Models.CoordinateToStreetModel.Equals(System.Object)">
+            <summary>
+            Indicates whether the current object is equal to another object of the same type.
+            </summary>
+            <param name="obj">An object to compare with this object.</param>
+            <returns>True if the current object is equal to the other parameter; otherwise, false.</returns>
+        </member>
+        <member name="M:Falsus.Providers.Location.Models.CoordinateToStreetModel.GetHashCode">
+            <summary>
+            Calculates the hash for this instance.
+            </summary>
+            <returns>
+            A hash code for the current object.
+            </returns>
+        </member>
+        <member name="T:Falsus.Providers.Location.Models.CountryToContinentModel">
+            <summary>
+            This class represents the association between a geographic Country and a geographic Continent.
+            </summary>
+        </member>
+        <member name="P:Falsus.Providers.Location.Models.CountryToContinentModel.CountryAlpha2">
+            <summary>
+            Gets or sets the Alpha2 ISO Country Code.
+            </summary>
+            <value>
+            A <see cref="T:System.String"/> containing the Alpha2 ISO Country Code.
+            </value>
+        </member>
+        <member name="P:Falsus.Providers.Location.Models.CountryToContinentModel.ContinentAlpha2">
+            <summary>
+            Gets or sets the ISO Alpha2 Continent code.
+            </summary>
+            <value>
+            A string containing the ISO Alpha2 Continent Code.
+            </value>
+        </member>
+        <member name="M:Falsus.Providers.Location.Models.CountryToContinentModel.CompareTo(Falsus.Providers.Location.Models.CountryToContinentModel)">
+            <summary>
+            Compares this instance with a specified <see cref="T:Falsus.Providers.Location.Models.CountryToContinentModel"/> and
+            returns an integer that indicates whether this instance precedes, follows, or
+            appears in the same position in the sort order as the specified <see cref="T:Falsus.Providers.Location.Models.CountryToContinentModel"/>.
+            </summary>
+            <param name="other">The other <see cref="T:Falsus.Providers.Location.Models.CountryToContinentModel"/> to be compared with this instance.</param>
+            <returns>
+            A 32-bit signed integer that indicates whether this instance precedes, follows, or
+            appears in the same position in the sort order as the value parameter.
+            </returns>
+        </member>
+        <member name="M:Falsus.Providers.Location.Models.CountryToContinentModel.Equals(Falsus.Providers.Location.Models.CountryToContinentModel)">
+            <summary>
+            Indicates whether the current object is equal to another object of the same type.
+            </summary>
+            <param name="other">An object to compare with this object.</param>
+            <returns>True if the current object is equal to the other parameter; otherwise, false.</returns>
+        </member>
+        <member name="M:Falsus.Providers.Location.Models.CountryToContinentModel.Equals(System.Object)">
+            <summary>
+            Indicates whether the current object is equal to another object of the same type.
+            </summary>
+            <param name="obj">An object to compare with this object.</param>
+            <returns>True if the current object is equal to the other parameter; otherwise, false.</returns>
+        </member>
+        <member name="M:Falsus.Providers.Location.Models.CountryToContinentModel.GetHashCode">
+            <summary>
+            Calculates the hash for this instance.
+            </summary>
+            <returns>
+            A hash code for the current object.
+            </returns>
+        </member>
+        <member name="T:Falsus.Providers.Location.Models.PostalCodePatternModel">
+            <summary>
+            This class represents the pattern that is used to validate postal codes for a given country.
+            </summary>
+        </member>
+        <member name="P:Falsus.Providers.Location.Models.PostalCodePatternModel.CountryAlpha2">
+            <summary>
+            Gets or sets the Alpha2 ISO Country Code.
+            </summary>
+            <value>
+            A <see cref="T:System.String"/> containing the Alpha2 ISO Country Code.
+            </value>
+        </member>
+        <member name="P:Falsus.Providers.Location.Models.PostalCodePatternModel.Pattern">
+            <summary>
+            Gets or sets the Regular Expression pattern for the postal code
+            of a given country.
+            </summary>
+            <value>
+            A <see cref="T:System.String"/> containing a Regular Expression.
+            </value>
+        </member>
+        <member name="M:Falsus.Providers.Location.Models.PostalCodePatternModel.CompareTo(Falsus.Providers.Location.Models.PostalCodePatternModel)">
+            <summary>
+            Compares this instance with a specified <see cref="T:Falsus.Providers.Location.Models.PostalCodePatternModel"/> and
+            returns an integer that indicates whether this instance precedes, follows, or
+            appears in the same position in the sort order as the specified <see cref="T:Falsus.Providers.Location.Models.PostalCodePatternModel"/>.
+            </summary>
+            <param name="other">The other <see cref="T:Falsus.Providers.Location.Models.PostalCodePatternModel"/> to be compared with this instance.</param>
+            <returns>
+            A 32-bit signed integer that indicates whether this instance precedes, follows, or
+            appears in the same position in the sort order as the value parameter.
+            </returns>
+        </member>
+        <member name="M:Falsus.Providers.Location.Models.PostalCodePatternModel.Equals(Falsus.Providers.Location.Models.PostalCodePatternModel)">
+            <summary>
+            Indicates whether the current object is equal to another object of the same type.
+            </summary>
+            <param name="other">An object to compare with this object.</param>
+            <returns>True if the current object is equal to the other parameter; otherwise, false.</returns>
+        </member>
+        <member name="M:Falsus.Providers.Location.Models.PostalCodePatternModel.Equals(System.Object)">
+            <summary>
+            Indicates whether the current object is equal to another object of the same type.
+            </summary>
+            <param name="obj">An object to compare with this object.</param>
+            <returns>True if the current object is equal to the other parameter; otherwise, false.</returns>
+        </member>
+        <member name="M:Falsus.Providers.Location.Models.PostalCodePatternModel.GetHashCode">
+            <summary>
+            Calculates the hash for this instance.
+            </summary>
+            <returns>
+            A hash code for the current object.
+            </returns>
+        </member>
+        <member name="T:Falsus.Providers.Location.PostalCodeProvider">
+            <summary>
+            Represents a provider of postal codes.
+            </summary>
+            <seealso cref="T:Falsus.Providers.DataGeneratorProvider`1"/>
+        </member>
+        <member name="F:Falsus.Providers.Location.PostalCodeProvider.CountryArgumentName">
+            <summary>
+            The name of the input argument that contains an instance of
+            <see cref="T:Falsus.Shared.Models.CountryModel"/> to use on the value generation process.
+            </summary>
+        </member>
+        <member name="F:Falsus.Providers.Location.PostalCodeProvider.MaxAttempts">
+            <summary>
+            The number of attemps to try to generate a unique value
+            before throwing an exception.
+            </summary>
+        </member>
+        <member name="F:Falsus.Providers.Location.PostalCodeProvider.patternByCountry">
+            <summary>
+            A dictionary of the postal code regular expressions indexed by
+            the <see cref="P:Falsus.Shared.Models.CountryModel.Alpha2"/> property.
+            </summary>
+        </member>
+        <member name="M:Falsus.Providers.Location.PostalCodeProvider.#ctor">
+            <summary>
+            Initializes a new instance of the <see cref="T:Falsus.Providers.Location.PostalCodeProvider"/> class.
+            </summary>
+        </member>
+        <member name="M:Falsus.Providers.Location.PostalCodeProvider.GetSupportedArguments">
+            <summary>
+            Gets the definition of the input arguments supported by this provider.
+            </summary>
+            <returns>
+            A <see cref="T:System.Collections.Generic.Dictionary`2"/> containing the name of the
+            argument and the expected type of the argument value.
+            </returns>
+        </member>
+        <member name="M:Falsus.Providers.Location.PostalCodeProvider.GetRangedRowValue(System.String,System.String,System.String[])">
+            <summary>
+            Generates a random postal code
+            that is greater than the value of <paramref name="minValue"/> and lower
+            than the value of <paramref name="maxValue"/>.
+            </summary>
+            <param name="minValue">The exclusive lower bound of the random object returned.</param>
+            <param name="maxValue">The exclusive upper bound of the random object returned.</param>
+            <param name="excludedObjects">
+            An array of <see cref="T:System.String"/> values that cannot be returned
+            by the provider.
+            </param>
+            <returns>
+            A random instance of <see cref="T:System.String"/> greater than <paramref name="minValue"/>
+            and less than <paramref name="maxValue"/>.
+            </returns>
+            <remarks>
+            <paramref name="maxValue"/> must be greater than <paramref name="minValue"/>.
+            </remarks>
+            <exception cref="T:System.NotSupportedException">
+            Thrown because the generation of ranged postal codes is not supported.
+            </exception>
+        </member>
+        <member name="M:Falsus.Providers.Location.PostalCodeProvider.GetRowValue(Falsus.DataGeneratorContext,Falsus.GeneratorProperties.WeightedRange{System.String}[],System.String[])">
+            <summary>
+            Generates a random postal code
+            based on the context and excluded ranges.
+            </summary>
+            <param name="context">
+            An instance of <see cref="T:Falsus.DataGeneratorContext"/> defining
+            the current generation context.
+            </param>
+            <param name="excludedRanges">
+            An array of <see cref="T:Falsus.GeneratorProperties.WeightedRange`1"/>s defining the ranges
+            that cannot be returned by the provider.
+            </param>
+            <param name="excludedObjects">
+            An array of <see cref="T:System.String"/> values that cannot be returned
+            by the provider.
+            </param>
+            <returns>
+            A random instance of <see cref="T:System.String"/> that is outside of
+            the specified <paramref name="excludedRanges"/>.
+            </returns>
+            <exception cref="T:System.NotSupportedException">
+            Thrown because the generation of ranged postal codes is not supported.
+            </exception>
+        </member>
+        <member name="M:Falsus.Providers.Location.PostalCodeProvider.GetRowValue(System.String)">
+            <summary>
+            Gets a <see cref="T:System.String"/> value based on the provided <paramref name="id"/>.
+            </summary>
+            <param name="id">An unique identifier for the object.</param>
+            <returns>
+            A <see cref="T:System.String"/> value with the specified unique identifier.
+            </returns>
+            <remarks>
+            Since both the <paramref name="id"/> and returning type are <see cref="T:System.String"/>
+            this method returns exactly what is passed on the <paramref name="id"/> argument.
+            </remarks>
+        </member>
+        <member name="M:Falsus.Providers.Location.PostalCodeProvider.GetRowValue(Falsus.DataGeneratorContext,System.String[])">
+            <summary>
+            Generates a random postal code based on the context and excluded objects.
+            </summary>
+            <param name="context">
+            An instance of <see cref="T:Falsus.DataGeneratorContext"/> defining
+            the current generation context.
+            </param>
+            <param name="excludedObjects">
+            An array of <see cref="T:System.String"/> values that cannot be returned
+            by the provider.
+            </param>
+            <returns>
+            A random postal code.
+            </returns>
+            <remarks>
+            If the <see cref="F:Falsus.Providers.Location.PostalCodeProvider.CountryArgumentName"/> is provided then this method will
+            return a postal code that matches the pattern for the specified <see cref="T:Falsus.Shared.Models.CountryModel"/>
+            argument value.
+            </remarks>
+        </member>
+        <member name="M:Falsus.Providers.Location.PostalCodeProvider.GetValueId(System.String)">
+            <summary>
+            Gets a unique identifier for the provided <see cref="T:System.String"/>.
+            </summary>
+            <param name="value">The <see cref="T:System.String"/> value.</param>
+            <returns>
+            A <see cref="T:System.String"/> containing the unique identifier of the provided value.
+            </returns>
+            <remarks>
+            Since both the <paramref name="value"/> and returning type are <see cref="T:System.String"/>
+            this method returns exactly what is passed on the <paramref name="value"/> argument.
+            </remarks>
+        </member>
+        <member name="M:Falsus.Providers.Location.PostalCodeProvider.Load(Falsus.GeneratorProperties.DataGeneratorProperty{System.String},System.Int32)">
+            <summary>
+            Instructs the data provider to prepare the data for generation.
+            </summary>
+            <param name="property">
+            An implementation of the generic <see cref="T:Falsus.GeneratorProperties.DataGeneratorProperty`1"/>
+            defining the property that this provider has been attached to.
+            </param>
+            <param name="rowCount">The desired number of rows to be generated.</param>
+            <remarks>
+            Invoked before any calculation takes place, the goal of this method is
+            usually preparing or caching data for the generation taking place afterwards.
+            </remarks>
+        </member>
+        <member name="T:Falsus.Providers.Location.RegionProvider">
+            <summary>
+            Represents a provider of country regions.
+            </summary>
+            <seealso cref="T:Falsus.Providers.DataGeneratorProvider`1"/>
+        </member>
+        <member name="F:Falsus.Providers.Location.RegionProvider.CountryArgumentName">
+            <summary>
+            The name of the input argument that contains an instance of
+            <see cref="T:Falsus.Shared.Models.CountryModel"/> to use on the value generation process.
+            </summary>
+        </member>
+        <member name="F:Falsus.Providers.Location.RegionProvider.regionsByCountry">
+            <summary>
+            A dictionary of <see cref="T:Falsus.Shared.Models.RegionModel"/> instances indexed by
+            the <see cref="P:Falsus.Shared.Models.CountryModel.Alpha2"/> property.
+            </summary>
+        </member>
+        <member name="M:Falsus.Providers.Location.RegionProvider.#ctor">
+            <summary>
+            Initializes a new instance of the <see cref="T:Falsus.Providers.Location.RegionProvider"/> class.
+            </summary>
+        </member>
+        <member name="M:Falsus.Providers.Location.RegionProvider.GetSupportedArguments">
+            <summary>
+            Gets the definition of the input arguments supported by this provider.
+            </summary>
+            <returns>
+            A <see cref="T:System.Collections.Generic.Dictionary`2"/> containing the name of the
+            argument and the expected type of the argument value.
+            </returns>
+        </member>
+        <member name="M:Falsus.Providers.Location.RegionProvider.GetRangedRowValue(Falsus.Shared.Models.RegionModel,Falsus.Shared.Models.RegionModel,Falsus.Shared.Models.RegionModel[])">
+            <summary>
+            Generates a random region name
+            that is greater than the value of <paramref name="minValue"/> and lower
+            than the value of <paramref name="maxValue"/>.
+            </summary>
+            <param name="minValue">The exclusive lower bound of the random object returned.</param>
+            <param name="maxValue">The exclusive upper bound of the random object returned.</param>
+            <param name="excludedObjects">
+            An array of <see cref="T:Falsus.Shared.Models.RegionModel"/> instances that cannot be returned
+            by the provider.
+            </param>
+            <returns>
+            A random instance of <see cref="T:Falsus.Shared.Models.RegionModel"/> greater than <paramref name="minValue"/>
+            and less than <paramref name="maxValue"/>.
+            </returns>
+            <remarks>
+            <paramref name="maxValue"/> must be greater than <paramref name="minValue"/>.
+            </remarks>
+            <exception cref="T:System.NotSupportedException">
+            Thrown because the generation of ranged region names is not supported.
+            </exception>
+        </member>
+        <member name="M:Falsus.Providers.Location.RegionProvider.GetRowValue(Falsus.DataGeneratorContext,Falsus.GeneratorProperties.WeightedRange{Falsus.Shared.Models.RegionModel}[],Falsus.Shared.Models.RegionModel[])">
+            <summary>
+            Generates a random region name
+            based on the context and excluded ranges.
+            </summary>
+            <param name="context">
+            An instance of <see cref="T:Falsus.DataGeneratorContext"/> defining
+            the current generation context.
+            </param>
+            <param name="excludedRanges">
+            An array of <see cref="T:Falsus.GeneratorProperties.WeightedRange`1"/>s defining the ranges
+            that cannot be returned by the provider.
+            </param>
+            <param name="excludedObjects">
+            An array of <see cref="T:Falsus.Shared.Models.RegionModel"/> instances that cannot be returned
+            by the provider.
+            </param>
+            <returns>
+            A random instance of <see cref="T:Falsus.Shared.Models.RegionModel"/> that is outside of
+            the specified <paramref name="excludedRanges"/>.
+            </returns>
+            <exception cref="T:System.NotSupportedException">
+            Thrown because the generation of ranged region names is not supported.
+            </exception>
+        </member>
+        <member name="M:Falsus.Providers.Location.RegionProvider.GetRowValue(System.String)">
+            <summary>
+            Gets a <see cref="T:Falsus.Shared.Models.RegionModel"/> instance based on the provided <paramref name="id"/>.
+            </summary>
+            <param name="id">An unique identifier for the object.</param>
+            <returns>
+            A <see cref="T:Falsus.Shared.Models.RegionModel"/> value with the specified unique identifier.
+            </returns>
+        </member>
+        <member name="M:Falsus.Providers.Location.RegionProvider.GetRowValue(Falsus.DataGeneratorContext,Falsus.Shared.Models.RegionModel[])">
+            <summary>
+            Generates a random region name based on the context and excluded objects.
+            </summary>
+            <param name="context">
+            An instance of <see cref="T:Falsus.DataGeneratorContext"/> defining
+            the current generation context.
+            </param>
+            <param name="excludedObjects">
+            An array of <see cref="T:System.String"/> values that cannot be returned
+            by the provider.
+            </param>
+            <returns>
+            A random region.
+            </returns>
+            <remarks>
+            If the <see cref="F:Falsus.Providers.Location.RegionProvider.CountryArgumentName"/> is provided then this method will
+            return the name of a region belonging to the specified <see cref="T:Falsus.Shared.Models.CountryModel"/>
+            argument value.
+            </remarks>
+        </member>
+        <member name="M:Falsus.Providers.Location.RegionProvider.GetValueId(Falsus.Shared.Models.RegionModel)">
+            <summary>
+            Gets a unique identifier for the provided <see cref="T:Falsus.Shared.Models.RegionModel"/>.
+            </summary>
+            <param name="value">The <see cref="T:Falsus.Shared.Models.RegionModel"/> instance.</param>
+            <returns>
+            A <see cref="T:System.String"/> containing the unique identifier of the provided value.
+            </returns>
+            <remarks>
+            Since both the <paramref name="value"/> and returning type are <see cref="T:System.String"/>
+            this method returns exactly what is passed on the <paramref name="value"/> argument.
+            </remarks>
+        </member>
+        <member name="M:Falsus.Providers.Location.RegionProvider.Load(Falsus.GeneratorProperties.DataGeneratorProperty{Falsus.Shared.Models.RegionModel},System.Int32)">
+            <summary>
+            Instructs the data provider to prepare the data for generation.
+            </summary>
+            <param name="property">
+            An implementation of the generic <see cref="T:Falsus.GeneratorProperties.DataGeneratorProperty`1"/>
+            defining the property that this provider has been attached to.
+            </param>
+            <param name="rowCount">The desired number of rows to be generated.</param>
+            <remarks>
+            Invoked before any calculation takes place, the goal of this method is
+            usually preparing or caching data for the generation taking place afterwards.
+            </remarks>
+        </member>
+        <member name="T:Falsus.Providers.Location.StreetNameProvider">
+            <summary>
+            Represents a provider of street names.
+            </summary>
+            <seealso cref="T:Falsus.Providers.DataGeneratorProvider`1"/>
+        </member>
+        <member name="F:Falsus.Providers.Location.StreetNameProvider.CountryArgumentName">
+            <summary>
+            The name of the input argument that contains an instance of
+            <see cref="T:Falsus.Shared.Models.CountryModel"/> to use on the value generation process.
+            </summary>
+        </member>
+        <member name="F:Falsus.Providers.Location.StreetNameProvider.cache">
+            <summary>
+            A dictionary of <see cref="T:Falsus.Shared.Models.StreetModel"/> instances indexed
+            by the <see cref="P:Falsus.Shared.Models.CountryModel.Alpha2"/> property.
+            </summary>
+        </member>
+        <member name="M:Falsus.Providers.Location.StreetNameProvider.#ctor">
+            <summary>
+            Initializes a new instance of the <see cref="T:Falsus.Providers.Location.StreetNameProvider"/> class.
+            </summary>
+        </member>
+        <member name="M:Falsus.Providers.Location.StreetNameProvider.GetSupportedArguments">
+            <summary>
+            Gets the definition of the input arguments supported by this provider.
+            </summary>
+            <returns>
+            A <see cref="T:System.Collections.Generic.Dictionary`2"/> containing the name of the
+            argument and the expected type of the argument value.
+            </returns>
+        </member>
+        <member name="M:Falsus.Providers.Location.StreetNameProvider.GetRangedRowValue(System.String,System.String,System.String[])">
+            <summary>
+            Generates a random street name
+            that is greater than the value of <paramref name="minValue"/> and lower
+            than the value of <paramref name="maxValue"/>.
+            </summary>
+            <param name="minValue">The exclusive lower bound of the random object returned.</param>
+            <param name="maxValue">The exclusive upper bound of the random object returned.</param>
+            <param name="excludedObjects">
+            An array of <see cref="T:System.String"/> values that cannot be returned
+            by the provider.
+            </param>
+            <returns>
+            A random instance of <see cref="T:System.String"/> greater than <paramref name="minValue"/>
+            and less than <paramref name="maxValue"/>.
+            </returns>
+            <remarks>
+            <paramref name="maxValue"/> must be greater than <paramref name="minValue"/>.
+            </remarks>
+            <exception cref="T:System.NotSupportedException">
+            Thrown because the generation of ranged street names is not supported.
+            </exception>
+        </member>
+        <member name="M:Falsus.Providers.Location.StreetNameProvider.GetRowValue(Falsus.DataGeneratorContext,Falsus.GeneratorProperties.WeightedRange{System.String}[],System.String[])">
+            <summary>
+            Generates a random street name
+            based on the context and excluded ranges.
+            </summary>
+            <param name="context">
+            An instance of <see cref="T:Falsus.DataGeneratorContext"/> defining
+            the current generation context.
+            </param>
+            <param name="excludedRanges">
+            An array of <see cref="T:Falsus.GeneratorProperties.WeightedRange`1"/>s defining the ranges
+            that cannot be returned by the provider.
+            </param>
+            <param name="excludedObjects">
+            An array of <see cref="T:System.String"/> values that cannot be returned
+            by the provider.
+            </param>
+            <returns>
+            A random instance of <see cref="T:System.String"/> that is outside of
+            the specified <paramref name="excludedRanges"/>.
+            </returns>
+            <exception cref="T:System.NotSupportedException">
+            Thrown because the generation of ranged street names is not supported.
+            </exception>
+        </member>
+        <member name="M:Falsus.Providers.Location.StreetNameProvider.GetRowValue(System.String)">
+            <summary>
+            Gets a <see cref="T:System.String"/> value based on the provided <paramref name="id"/>.
+            </summary>
+            <param name="id">An unique identifier for the object.</param>
+            <returns>
+            A <see cref="T:System.String"/> value with the specified unique identifier.
+            </returns>
+            <remarks>
+            Since both the <paramref name="id"/> and returning type are <see cref="T:System.String"/>
+            this method returns exactly what is passed on the <paramref name="id"/> argument.
+            </remarks>
+        </member>
+        <member name="M:Falsus.Providers.Location.StreetNameProvider.GetRowValue(Falsus.DataGeneratorContext,System.String[])">
+            <summary>
+            Generates a random street name based on the context and excluded objects.
+            </summary>
+            <param name="context">
+            An instance of <see cref="T:Falsus.DataGeneratorContext"/> defining
+            the current generation context.
+            </param>
+            <param name="excludedObjects">
+            An array of <see cref="T:System.String"/> values that cannot be returned
+            by the provider.
+            </param>
+            <returns>
+            A random street name.
+            </returns>
+            <remarks>
+            If the <see cref="F:Falsus.Providers.Location.StreetNameProvider.CountryArgumentName"/> is provided then this method will
+            return the name of a street belonging to the specified <see cref="T:Falsus.Shared.Models.CountryModel"/>
+            argument value.
+            </remarks>
+        </member>
+        <member name="M:Falsus.Providers.Location.StreetNameProvider.GetValueId(System.String)">
+            <summary>
+            Gets a unique identifier for the provided <see cref="T:System.String"/>.
+            </summary>
+            <param name="value">The <see cref="T:System.String"/> value.</param>
+            <returns>
+            A <see cref="T:System.String"/> containing the unique identifier of the provided value.
+            </returns>
+            <remarks>
+            Since both the <paramref name="value"/> and returning type are <see cref="T:System.String"/>
+            this method returns exactly what is passed on the <paramref name="value"/> argument.
+            </remarks>
+        </member>
+        <member name="M:Falsus.Providers.Location.StreetNameProvider.Load(Falsus.GeneratorProperties.DataGeneratorProperty{System.String},System.Int32)">
+            <summary>
+            Instructs the data provider to prepare the data for generation.
+            </summary>
+            <param name="property">
+            An implementation of the generic <see cref="T:Falsus.GeneratorProperties.DataGeneratorProperty`1"/>
+            defining the property that this provider has been attached to.
+            </param>
+            <param name="rowCount">The desired number of rows to be generated.</param>
+            <remarks>
+            Invoked before any calculation takes place, the goal of this method is
+            usually preparing or caching data for the generation taking place afterwards.
+            </remarks>
+        </member>
+        <member name="T:Falsus.Shared.Models.StreetModel">
+            <summary>
+            This class represents a street with the associated coordinates.
+            </summary>
+        </member>
+        <member name="P:Falsus.Shared.Models.StreetModel.Name">
+            <summary>
+            Gets or sets the name of the street.
+            </summary>
+            <value>
+            A <see cref="T:System.String"/> containing the street name.
+            </value>
+        </member>
+        <member name="P:Falsus.Shared.Models.StreetModel.Latitude">
+            <summary>
+            Gets or sets the latitude of the point represented by this instance.
+            </summary>
+            <value>
+            A <see cref="T:System.String"/> containing the latitude value.
+            </value>
+        </member>
+        <member name="P:Falsus.Shared.Models.StreetModel.Longitude">
+            <summary>
+            Gets or sets the longitude of the point represented by this instance.
+            </summary>
+            <value>
+            A <see cref="T:System.String"/> containing the longitude value.
+            </value>
         </member>
     </members>
 </doc>

@@ -19,6 +19,193 @@
             <returns>The contents of the specified resource file as 
             an instnace of the specified type parameter.</returns>
         </member>
+        <member name="M:Falsus.Shared.Helpers.ResourceReader.GetEmbeddedResourcePaths(System.String)">
+            <summary>
+            Gets a list of resources that are embedded within the specified path.
+            </summary>
+            <param name="path">The root path to retrieve resources from.</param>
+            <returns>An array of <see cref="T:System.String"/> with paths to embedded resources.</returns>
+        </member>
+        <member name="T:Falsus.Shared.Models.CityModel">
+            <summary>
+            This class represents a geographic city.
+            </summary>
+        </member>
+        <member name="P:Falsus.Shared.Models.CityModel.Name">
+            <summary>
+            Gets or sets the name of the city.
+            </summary>
+            <value>
+            A <see cref="T:System.String"/> containing the name of the city.
+            </value>
+        </member>
+        <member name="P:Falsus.Shared.Models.CityModel.CountryAlpha2">
+            <summary>
+            Gets or sets the ISO Alpha2 unique identifier of the country.
+            </summary>
+            <value>
+            A <see cref="T:System.String"/> containing the Alpha2 ISO country code.
+            </value>
+        </member>
+        <member name="P:Falsus.Shared.Models.CityModel.Region">
+            <summary>
+            Gets or sets the name of the region.
+            </summary>
+            <value>
+            A <see cref="T:System.String"/> containing the city region.
+            </value>
+        </member>
+        <member name="M:Falsus.Shared.Models.CityModel.CompareTo(Falsus.Shared.Models.CityModel)">
+            <summary>
+            Compares this instance with a specified <see cref="T:Falsus.Shared.Models.CityModel"/> and
+            returns an integer that indicates whether this instance precedes, follows, or
+            appears in the same position in the sort order as the specified <see cref="T:Falsus.Shared.Models.CityModel"/>.
+            </summary>
+            <param name="other">The other <see cref="T:Falsus.Shared.Models.CityModel"/> to be compared with this instance.</param>
+            <returns>
+            A 32-bit signed integer that indicates whether this instance precedes, follows, or
+            appears in the same position in the sort order as the value parameter.
+            </returns>
+        </member>
+        <member name="M:Falsus.Shared.Models.CityModel.Equals(Falsus.Shared.Models.CityModel)">
+            <summary>
+            Indicates whether the current object is equal to another object of the same type.
+            </summary>
+            <param name="other">An object to compare with this object.</param>
+            <returns>True if the current object is equal to the other parameter; otherwise, false.</returns>
+        </member>
+        <member name="M:Falsus.Shared.Models.CityModel.Equals(System.Object)">
+            <summary>
+            Indicates whether the current object is equal to another object of the same type.
+            </summary>
+            <param name="obj">An object to compare with this object.</param>
+            <returns>True if the current object is equal to the other parameter; otherwise, false.</returns>
+        </member>
+        <member name="M:Falsus.Shared.Models.CityModel.GetHashCode">
+            <summary>
+            Calculates the hash for this instance.
+            </summary>
+            <returns>
+            A hash code for the current object.
+            </returns>
+        </member>
+        <member name="T:Falsus.Shared.Models.ContinentModel">
+            <summary>
+            This class represents a geographic continent.
+            </summary>
+        </member>
+        <member name="P:Falsus.Shared.Models.ContinentModel.Alpha2">
+            <summary>
+            Gets or sets the ISO Alpha2 Continent code.
+            </summary>
+            <value>
+            A string containing the ISO Alpha2 Continent Code.
+            </value>
+        </member>
+        <member name="P:Falsus.Shared.Models.ContinentModel.Name">
+            <summary>
+            Gets or sets the name of the Continent.
+            </summary>
+            <value>
+            A string containing the continent name.
+            </value>
+        </member>
+        <member name="M:Falsus.Shared.Models.ContinentModel.CompareTo(Falsus.Shared.Models.ContinentModel)">
+            <summary>
+            Compares this instance with a specified <see cref="T:Falsus.Shared.Models.ContinentModel"/> and
+            returns an integer that indicates whether this instance precedes, follows, or
+            appears in the same position in the sort order as the specified <see cref="T:Falsus.Shared.Models.ContinentModel"/>.
+            </summary>
+            <param name="other">The other <see cref="T:Falsus.Shared.Models.ContinentModel"/> to be compared with this instance.</param>
+            <returns>
+            A 32-bit signed integer that indicates whether this instance precedes, follows, or
+            appears in the same position in the sort order as the value parameter.
+            </returns>
+        </member>
+        <member name="M:Falsus.Shared.Models.ContinentModel.Equals(Falsus.Shared.Models.ContinentModel)">
+            <summary>
+            Indicates whether the current object is equal to another object of the same type.
+            </summary>
+            <param name="other">An object to compare with this object.</param>
+            <returns>True if the current object is equal to the other parameter; otherwise, false.</returns>
+        </member>
+        <member name="M:Falsus.Shared.Models.ContinentModel.Equals(System.Object)">
+            <summary>
+            Indicates whether the current object is equal to another object of the same type.
+            </summary>
+            <param name="obj">An object to compare with this object.</param>
+            <returns>True if the current object is equal to the other parameter; otherwise, false.</returns>
+        </member>
+        <member name="M:Falsus.Shared.Models.ContinentModel.GetHashCode">
+            <summary>
+            Calculates the hash for this instance.
+            </summary>
+            <returns>
+            A hash code for the current object.
+            </returns>
+        </member>
+        <member name="T:Falsus.Shared.Models.CoordinatesModel">
+            <summary>
+            This class represents a position on Earth's surface.
+            </summary>
+        </member>
+        <member name="M:Falsus.Shared.Models.CoordinatesModel.#ctor(System.String,System.String)">
+            <summary>
+            Initializes a new instance of the <see cref="T:Falsus.Shared.Models.CoordinatesModel"/> class.
+            </summary>
+            <param name="latitude">The latitute of a point on Earth's surface.</param>
+            <param name="longitude">The longitude of a point on Earth's surface.</param>
+        </member>
+        <member name="P:Falsus.Shared.Models.CoordinatesModel.Latitude">
+            <summary>
+            Gets the latitude of the point represented by this instance.
+            </summary>
+            <value>
+            A <see cref="T:System.String"/> containing the latitude value.
+            </value>
+        </member>
+        <member name="P:Falsus.Shared.Models.CoordinatesModel.Longitude">
+            <summary>
+            Gets the longitude of the point represented by this instance.
+            </summary>
+            <value>
+            A <see cref="T:System.String"/> containing the longitude value.
+            </value>
+        </member>
+        <member name="M:Falsus.Shared.Models.CoordinatesModel.CompareTo(Falsus.Shared.Models.CoordinatesModel)">
+            <summary>
+            Compares this instance with a specified <see cref="T:Falsus.Shared.Models.CoordinatesModel"/> and
+            returns an integer that indicates whether this instance precedes, follows, or
+            appears in the same position in the sort order as the specified <see cref="T:Falsus.Shared.Models.CoordinatesModel"/>.
+            </summary>
+            <param name="other">The other <see cref="T:Falsus.Shared.Models.CoordinatesModel"/> to be compared with this instance.</param>
+            <returns>
+            A 32-bit signed integer that indicates whether this instance precedes, follows, or
+            appears in the same position in the sort order as the value parameter.
+            </returns>
+        </member>
+        <member name="M:Falsus.Shared.Models.CoordinatesModel.Equals(Falsus.Shared.Models.CoordinatesModel)">
+            <summary>
+            Indicates whether the current object is equal to another object of the same type.
+            </summary>
+            <param name="other">An object to compare with this object.</param>
+            <returns>True if the current object is equal to the other parameter; otherwise, false.</returns>
+        </member>
+        <member name="M:Falsus.Shared.Models.CoordinatesModel.Equals(System.Object)">
+            <summary>
+            Indicates whether the current object is equal to another object of the same type.
+            </summary>
+            <param name="obj">An object to compare with this object.</param>
+            <returns>True if the current object is equal to the other parameter; otherwise, false.</returns>
+        </member>
+        <member name="M:Falsus.Shared.Models.CoordinatesModel.GetHashCode">
+            <summary>
+            Calculates the hash for this instance.
+            </summary>
+            <returns>
+            A hash code for the current object.
+            </returns>
+        </member>
         <member name="T:Falsus.Shared.Models.CountryModel">
             <summary>
             This class represents a geographic country.
@@ -154,6 +341,77 @@
             <returns>True if the current object is equal to the other parameter; otherwise, false.</returns>
         </member>
         <member name="M:Falsus.Shared.Models.CurrencyModel.GetHashCode">
+            <summary>
+            Calculates the hash for this instance.
+            </summary>
+            <returns>
+            A hash code for the current object.
+            </returns>
+        </member>
+        <member name="T:Falsus.Shared.Models.RegionModel">
+            <summary>
+            This class represents a geographic region.
+            </summary>
+        </member>
+        <member name="P:Falsus.Shared.Models.RegionModel.Code">
+            <summary>
+            Gets or sets the unique code of the region.
+            </summary>
+            <value>
+            A <see cref="T:System.String"/> containing the region unique code.
+            </value>
+        </member>
+        <member name="P:Falsus.Shared.Models.RegionModel.CountryAlpha2">
+            <summary>
+            Gets or sets the Alpha2 ISO Country Code.
+            </summary>
+            <value>
+            A <see cref="T:System.String"/> containing the Alpha2 ISO Country Code.
+            </value>
+        </member>
+        <member name="P:Falsus.Shared.Models.RegionModel.Name">
+            <summary>
+            Gets or sets the region name.
+            </summary>
+            <value>
+            A <see cref="T:System.String"/> value containing the name of the region.
+            </value>
+        </member>
+        <member name="P:Falsus.Shared.Models.RegionModel.Category">
+            <summary>
+            Gets or sets the region category.
+            </summary>
+            <value>
+            A <see cref="T:System.String"/> value containing the category of the region.
+            </value>
+        </member>
+        <member name="M:Falsus.Shared.Models.RegionModel.CompareTo(Falsus.Shared.Models.RegionModel)">
+            <summary>
+            Compares this instance with a specified <see cref="T:Falsus.Shared.Models.RegionModel"/> and
+            returns an integer that indicates whether this instance precedes, follows, or
+            appears in the same position in the sort order as the specified <see cref="T:Falsus.Shared.Models.RegionModel"/>.
+            </summary>
+            <param name="other">The other <see cref="T:Falsus.Shared.Models.RegionModel"/> to be compared with this instance.</param>
+            <returns>
+            A 32-bit signed integer that indicates whether this instance precedes, follows, or
+            appears in the same position in the sort order as the value parameter.
+            </returns>
+        </member>
+        <member name="M:Falsus.Shared.Models.RegionModel.Equals(Falsus.Shared.Models.RegionModel)">
+            <summary>
+            Indicates whether the current object is equal to another object of the same type.
+            </summary>
+            <param name="other">An object to compare with this object.</param>
+            <returns>True if the current object is equal to the other parameter; otherwise, false.</returns>
+        </member>
+        <member name="M:Falsus.Shared.Models.RegionModel.Equals(System.Object)">
+            <summary>
+            Indicates whether the current object is equal to another object of the same type.
+            </summary>
+            <param name="obj">An object to compare with this object.</param>
+            <returns>True if the current object is equal to the other parameter; otherwise, false.</returns>
+        </member>
+        <member name="M:Falsus.Shared.Models.RegionModel.GetHashCode">
             <summary>
             Calculates the hash for this instance.
             </summary>

@@ -15,8 +15,6 @@ namespace Falsus.UnitTests
     [TestClass]
     public class DataGeneratorUnitTests
     {
-        string connectionString = @"Data Source=.\Datasets\dataset.db";
-
         [TestMethod]
         public void GenerateWithSinglePropertyReturnsExpectedResults()
         {

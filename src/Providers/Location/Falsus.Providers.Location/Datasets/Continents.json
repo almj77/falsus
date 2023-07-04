@@ -1,0 +1,30 @@
+﻿[
+  {
+    "Alpha2": "AF",
+    "Name": "Africa"
+  },
+  {
+    "Alpha2": "NA",
+    "Name": "North America"
+  },
+  {
+    "Alpha2": "OC",
+    "Name": "Oceania"
+  },
+  {
+    "Alpha2": "AN",
+    "Name": "Antarctica"
+  },
+  {
+    "Alpha2": "AS",
+    "Name": "Asia"
+  },
+  {
+    "Alpha2": "EU",
+    "Name": "Europe"
+  },
+  {
+    "Alpha2": "SA",
+    "Name": "South America"
+  }
+]

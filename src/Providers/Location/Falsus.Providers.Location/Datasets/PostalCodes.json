@@ -1,0 +1,570 @@
+﻿[
+  {
+    "CountryAlpha2": "GB",
+    "Pattern": "GIR[ ]?0AA|((AB|AL|B|BA|BB|BD|BH|BL|BN|BR|BS|BT|CA|CB|CF|CH|CM|CO|CR|CT|CV|CW|DA|DD|DE|DG|DH|DL|DN|DT|DY|E|EC|EH|EN|EX|FK|FY|G|GL|GY|GU|HA|HD|HG|HP|HR|HS|HU|HX|IG|IM|IP|IV|JE|KA|KT|KW|KY|L|LA|LD|LE|LL|LN|LS|LU|M|ME|MK|ML|N|NE|NG|NN|NP|NR|NW|OL|OX|PA|PE|PH|PL|PO|PR|RG|RH|RM|S|SA|SE|SG|SK|SL|SM|SN|SO|SP|SR|SS|ST|SW|SY|TA|TD|TF|TN|TQ|TR|TS|TW|UB|W|WA|WC|WD|WF|WN|WR|WS|WV|YO|ZE)(\\d[\\dA-Z]?[ ]?\\d[ABD-HJLN-UW-Z]{2}))|BFPO[ ]?\\d{1,4}"
+  },
+  {
+    "CountryAlpha2": "JE",
+    "Pattern": "JE\\d[\\dA-Z]?[ ]?\\d[ABD-HJLN-UW-Z]{2}"
+  },
+  {
+    "CountryAlpha2": "IM",
+    "Pattern": "IM\\d[\\dA-Z]?[ ]?\\d[ABD-HJLN-UW-Z]{2}"
+  },
+  {
+    "CountryAlpha2": "US",
+    "Pattern": "\\d{5}([ \\-]\\d{4})?"
+  },
+  {
+    "CountryAlpha2": "CA",
+    "Pattern": "[ABCEGHJKLMNPRSTVXY]\\d[ABCEGHJ-NPRSTV-Z][ ]?\\d[ABCEGHJ-NPRSTV-Z]\\d"
+  },
+  {
+    "CountryAlpha2": "DE",
+    "Pattern": "\\d{5}"
+  },
+  {
+    "CountryAlpha2": "JP",
+    "Pattern": "\\d{3}-\\d{4}"
+  },
+  {
+    "CountryAlpha2": "FR",
+    "Pattern": "\\d{2}[ ]?\\d{3}"
+  },
+  {
+    "CountryAlpha2": "AU",
+    "Pattern": "\\d{4}"
+  },
+  {
+    "CountryAlpha2": "IT",
+    "Pattern": "\\d{5}"
+  },
+  {
+    "CountryAlpha2": "CH",
+    "Pattern": "\\d{4}"
+  },
+  {
+    "CountryAlpha2": "AT",
+    "Pattern": "\\d{4}"
+  },
+  {
+    "CountryAlpha2": "ES",
+    "Pattern": "\\d{5}"
+  },
+  {
+    "CountryAlpha2": "NL",
+    "Pattern": "\\d{4}[ ]?[A-Z]{2}"
+  },
+  {
+    "CountryAlpha2": "BE",
+    "Pattern": "\\d{4}"
+  },
+  {
+    "CountryAlpha2": "DK",
+    "Pattern": "\\d{4}"
+  },
+  {
+    "CountryAlpha2": "SE",
+    "Pattern": "\\d{3}[ ]?\\d{2}"
+  },
+  {
+    "CountryAlpha2": "NO",
+    "Pattern": "\\d{4}"
+  },
+  {
+    "CountryAlpha2": "BR",
+    "Pattern": "\\d{5}[\\-]?\\d{3}"
+  },
+  {
+    "CountryAlpha2": "PT",
+    "Pattern": "\\d{4}([\\-]\\d{3})?"
+  },
+  {
+    "CountryAlpha2": "FI",
+    "Pattern": "\\d{5}"
+  },
+  {
+    "CountryAlpha2": "AX",
+    "Pattern": "22\\d{3}"
+  },
+  {
+    "CountryAlpha2": "KR",
+    "Pattern": "\\d{3}[\\-]\\d{3}"
+  },
+  {
+    "CountryAlpha2": "CN",
+    "Pattern": "\\d{6}"
+  },
+  {
+    "CountryAlpha2": "SG",
+    "Pattern": "\\d{6}"
+  },
+  {
+    "CountryAlpha2": "DZ",
+    "Pattern": "\\d{5}"
+  },
+  {
+    "CountryAlpha2": "AD",
+    "Pattern": "AD\\d{3}"
+  },
+  {
+    "CountryAlpha2": "AR",
+    "Pattern": "([A-HJ-NP-Z])?\\d{4}([A-Z]{3})?"
+  },
+  {
+    "CountryAlpha2": "AM",
+    "Pattern": "(37)?\\d{4}"
+  },
+  {
+    "CountryAlpha2": "AZ",
+    "Pattern": "\\d{4}"
+  },
+  {
+    "CountryAlpha2": "BH",
+    "Pattern": "((1[0-2]|[2-9])\\d{2})?"
+  },
+  {
+    "CountryAlpha2": "BD",
+    "Pattern": "\\d{4}"
+  },
+  {
+    "CountryAlpha2": "BB",
+    "Pattern": "(BB\\d{5})?"
+  },
+  {
+    "CountryAlpha2": "BY",
+    "Pattern": "\\d{6}"
+  },
+  {
+    "CountryAlpha2": "BM",
+    "Pattern": "[A-Z]{2}[ ]?[A-Z0-9]{2}"
+  },
+  {
+    "CountryAlpha2": "BA",
+    "Pattern": "\\d{5}"
+  },
+  {
+    "CountryAlpha2": "BN",
+    "Pattern": "[A-Z]{2}[ ]?\\d{4}"
+  },
+  {
+    "CountryAlpha2": "BG",
+    "Pattern": "\\d{4}"
+  },
+  {
+    "CountryAlpha2": "KH",
+    "Pattern": "\\d{5}"
+  },
+  {
+    "CountryAlpha2": "CV",
+    "Pattern": "\\d{4}"
+  },
+  {
+    "CountryAlpha2": "CL",
+    "Pattern": "\\d{7}"
+  },
+  {
+    "CountryAlpha2": "CR",
+    "Pattern": "\\d{4,5}|\\d{3}-\\d{4}"
+  },
+  {
+    "CountryAlpha2": "HR",
+    "Pattern": "\\d{5}"
+  },
+  {
+    "CountryAlpha2": "CY",
+    "Pattern": "\\d{4}"
+  },
+  {
+    "CountryAlpha2": "CZ",
+    "Pattern": "\\d{3}[ ]?\\d{2}"
+  },
+  {
+    "CountryAlpha2": "DO",
+    "Pattern": "\\d{5}"
+  },
+  {
+    "CountryAlpha2": "EC",
+    "Pattern": "([A-Z]\\d{4}[A-Z]|(?:[A-Z]{2})?\\d{6})?"
+  },
+  {
+    "CountryAlpha2": "EG",
+    "Pattern": "\\d{5}"
+  },
+  {
+    "CountryAlpha2": "EE",
+    "Pattern": "\\d{5}"
+  },
+  {
+    "CountryAlpha2": "FO",
+    "Pattern": "\\d{3}"
+  },
+  {
+    "CountryAlpha2": "GE",
+    "Pattern": "\\d{4}"
+  },
+  {
+    "CountryAlpha2": "GR",
+    "Pattern": "\\d{3}[ ]?\\d{2}"
+  },
+  {
+    "CountryAlpha2": "GL",
+    "Pattern": "39\\d{2}"
+  },
+  {
+    "CountryAlpha2": "GT",
+    "Pattern": "\\d{5}"
+  },
+  {
+    "CountryAlpha2": "HT",
+    "Pattern": "\\d{4}"
+  },
+  {
+    "CountryAlpha2": "HN",
+    "Pattern": "(?:\\d{5})?"
+  },
+  {
+    "CountryAlpha2": "HU",
+    "Pattern": "\\d{4}"
+  },
+  {
+    "CountryAlpha2": "IS",
+    "Pattern": "\\d{3}"
+  },
+  {
+    "CountryAlpha2": "IN",
+    "Pattern": "\\d{6}"
+  },
+  {
+    "CountryAlpha2": "ID",
+    "Pattern": "\\d{5}"
+  },
+  {
+    "CountryAlpha2": "IL",
+    "Pattern": "\\d{5}"
+  },
+  {
+    "CountryAlpha2": "JO",
+    "Pattern": "\\d{5}"
+  },
+  {
+    "CountryAlpha2": "KZ",
+    "Pattern": "\\d{6}"
+  },
+  {
+    "CountryAlpha2": "KE",
+    "Pattern": "\\d{5}"
+  },
+  {
+    "CountryAlpha2": "KW",
+    "Pattern": "\\d{5}"
+  },
+  {
+    "CountryAlpha2": "LA",
+    "Pattern": "\\d{5}"
+  },
+  {
+    "CountryAlpha2": "LV",
+    "Pattern": "\\d{4}"
+  },
+  {
+    "CountryAlpha2": "LB",
+    "Pattern": "(\\d{4}([ ]?\\d{4})?)?"
+  },
+  {
+    "CountryAlpha2": "LI",
+    "Pattern": "(948[5-9])|(949[0-7])"
+  },
+  {
+    "CountryAlpha2": "LT",
+    "Pattern": "\\d{5}"
+  },
+  {
+    "CountryAlpha2": "LU",
+    "Pattern": "\\d{4}"
+  },
+  {
+    "CountryAlpha2": "MK",
+    "Pattern": "\\d{4}"
+  },
+  {
+    "CountryAlpha2": "MY",
+    "Pattern": "\\d{5}"
+  },
+  {
+    "CountryAlpha2": "MV",
+    "Pattern": "\\d{5}"
+  },
+  {
+    "CountryAlpha2": "MT",
+    "Pattern": "[A-Z]{3}[ ]?\\d{2,4}"
+  },
+  {
+    "CountryAlpha2": "MU",
+    "Pattern": "(\\d{3}[A-Z]{2}\\d{3})?"
+  },
+  {
+    "CountryAlpha2": "MX",
+    "Pattern": "\\d{5}"
+  },
+  {
+    "CountryAlpha2": "MD",
+    "Pattern": "\\d{4}"
+  },
+  {
+    "CountryAlpha2": "MC",
+    "Pattern": "980\\d{2}"
+  },
+  {
+    "CountryAlpha2": "MA",
+    "Pattern": "\\d{5}"
+  },
+  {
+    "CountryAlpha2": "NP",
+    "Pattern": "\\d{5}"
+  },
+  {
+    "CountryAlpha2": "NZ",
+    "Pattern": "\\d{4}"
+  },
+  {
+    "CountryAlpha2": "NI",
+    "Pattern": "((\\d{4}-)?\\d{3}-\\d{3}(-\\d{1})?)?"
+  },
+  {
+    "CountryAlpha2": "NG",
+    "Pattern": "(\\d{6})?"
+  },
+  {
+    "CountryAlpha2": "OM",
+    "Pattern": "(PC )?\\d{3}"
+  },
+  {
+    "CountryAlpha2": "PK",
+    "Pattern": "\\d{5}"
+  },
+  {
+    "CountryAlpha2": "PY",
+    "Pattern": "\\d{4}"
+  },
+  {
+    "CountryAlpha2": "PH",
+    "Pattern": "\\d{4}"
+  },
+  {
+    "CountryAlpha2": "PL",
+    "Pattern": "\\d{2}-\\d{3}"
+  },
+  {
+    "CountryAlpha2": "PR",
+    "Pattern": "00[679]\\d{2}([ \\-]\\d{4})?"
+  },
+  {
+    "CountryAlpha2": "RO",
+    "Pattern": "\\d{6}"
+  },
+  {
+    "CountryAlpha2": "RU",
+    "Pattern": "\\d{6}"
+  },
+  {
+    "CountryAlpha2": "SM",
+    "Pattern": "4789\\d"
+  },
+  {
+    "CountryAlpha2": "SA",
+    "Pattern": "\\d{5}"
+  },
+  {
+    "CountryAlpha2": "SN",
+    "Pattern": "\\d{5}"
+  },
+  {
+    "CountryAlpha2": "SK",
+    "Pattern": "\\d{3}[ ]?\\d{2}"
+  },
+  {
+    "CountryAlpha2": "SI",
+    "Pattern": "\\d{4}"
+  },
+  {
+    "CountryAlpha2": "ZA",
+    "Pattern": "\\d{4}"
+  },
+  {
+    "CountryAlpha2": "LK",
+    "Pattern": "\\d{5}"
+  },
+  {
+    "CountryAlpha2": "TJ",
+    "Pattern": "\\d{6}"
+  },
+  {
+    "CountryAlpha2": "TH",
+    "Pattern": "\\d{5}"
+  },
+  {
+    "CountryAlpha2": "TN",
+    "Pattern": "\\d{4}"
+  },
+  {
+    "CountryAlpha2": "TR",
+    "Pattern": "\\d{5}"
+  },
+  {
+    "CountryAlpha2": "TM",
+    "Pattern": "\\d{6}"
+  },
+  {
+    "CountryAlpha2": "UA",
+    "Pattern": "\\d{5}"
+  },
+  {
+    "CountryAlpha2": "UY",
+    "Pattern": "\\d{5}"
+  },
+  {
+    "CountryAlpha2": "UZ",
+    "Pattern": "\\d{6}"
+  },
+  {
+    "CountryAlpha2": "VA",
+    "Pattern": "00120"
+  },
+  {
+    "CountryAlpha2": "VE",
+    "Pattern": "\\d{4}"
+  },
+  {
+    "CountryAlpha2": "ZM",
+    "Pattern": "\\d{5}"
+  },
+  {
+    "CountryAlpha2": "AS",
+    "Pattern": "96799"
+  },
+  {
+    "CountryAlpha2": "CK",
+    "Pattern": "\\d{4}"
+  },
+  {
+    "CountryAlpha2": "RS",
+    "Pattern": "\\d{6}"
+  },
+  {
+    "CountryAlpha2": "ME",
+    "Pattern": "8\\d{4}"
+  },
+  {
+    "CountryAlpha2": "ET",
+    "Pattern": "\\d{4}"
+  },
+  {
+    "CountryAlpha2": "FK",
+    "Pattern": "FIQQ 1ZZ"
+  },
+  {
+    "CountryAlpha2": "NF",
+    "Pattern": "2899"
+  },
+  {
+    "CountryAlpha2": "FM",
+    "Pattern": "(9694[1-4])([ \\-]\\d{4})?"
+  },
+  {
+    "CountryAlpha2": "GN",
+    "Pattern": "\\d{3}"
+  },
+  {
+    "CountryAlpha2": "GS",
+    "Pattern": "SIQQ 1ZZ"
+  },
+  {
+    "CountryAlpha2": "GU",
+    "Pattern": "969[123]\\d([ \\-]\\d{4})?"
+  },
+  {
+    "CountryAlpha2": "GW",
+    "Pattern": "\\d{4}"
+  },
+  {
+    "CountryAlpha2": "IQ",
+    "Pattern": "\\d{5}"
+  },
+  {
+    "CountryAlpha2": "KG",
+    "Pattern": "\\d{6}"
+  },
+  {
+    "CountryAlpha2": "LR",
+    "Pattern": "\\d{4}"
+  },
+  {
+    "CountryAlpha2": "LS",
+    "Pattern": "\\d{3}"
+  },
+  {
+    "CountryAlpha2": "MG",
+    "Pattern": "\\d{3}"
+  },
+  {
+    "CountryAlpha2": "MH",
+    "Pattern": "969[67]\\d([ \\-]\\d{4})?"
+  },
+  {
+    "CountryAlpha2": "MN",
+    "Pattern": "\\d{6}"
+  },
+  {
+    "CountryAlpha2": "MP",
+    "Pattern": "9695[012]([ \\-]\\d{4})?"
+  },
+  {
+    "CountryAlpha2": "NC",
+    "Pattern": "988\\d{2}"
+  },
+  {
+    "CountryAlpha2": "NE",
+    "Pattern": "\\d{4}"
+  },
+  {
+    "CountryAlpha2": "VI",
+    "Pattern": "008(([0-4]\\d)|(5[01]))([ \\-]\\d{4})?"
+  },
+  {
+    "CountryAlpha2": "PF",
+    "Pattern": "987\\d{2}"
+  },
+  {
+    "CountryAlpha2": "PG",
+    "Pattern": "\\d{3}"
+  },
+  {
+    "CountryAlpha2": "PM",
+    "Pattern": "9[78]5\\d{2}"
+  },
+  {
+    "CountryAlpha2": "PN",
+    "Pattern": "PCRN 1ZZ"
+  },
+  {
+    "CountryAlpha2": "PW",
+    "Pattern": "96940"
+  },
+  {
+    "CountryAlpha2": "SO",
+    "Pattern": "\\d{5}"
+  },
+  {
+    "CountryAlpha2": "SZ",
+    "Pattern": "[HLMS]\\d{3}"
+  },
+  {
+    "CountryAlpha2": "TC",
+    "Pattern": "TKCA 1ZZ"
+  },
+  {
+    "CountryAlpha2": "WF",
+    "Pattern": "986\\d{2}"
+  }
+]
