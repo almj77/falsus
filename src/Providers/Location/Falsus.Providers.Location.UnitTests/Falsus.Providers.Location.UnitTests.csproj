@@ -9,6 +9,17 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <EmbeddedResource Include="..\Falsus.Providers.Location\Datasets\PostalCodes.json" Link="Datasets\PostalCodes.json" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <EmbeddedResource Include="..\Falsus.Providers.Location\Datasets\Cities.json" Link="Datasets\Cities.json" />
+    <EmbeddedResource Include="..\Falsus.Providers.Location\Datasets\Continents.json" Link="Datasets\Continents.json" />
+    <EmbeddedResource Include="..\Falsus.Providers.Location\Datasets\ContinentToCountry.json" Link="Datasets\ContinentToCountry.json" />
+    <EmbeddedResource Include="..\Falsus.Providers.Location\Datasets\Regions.json" Link="Datasets\Regions.json" />
+  </ItemGroup>
+
+  <ItemGroup>
     <EmbeddedResource Include="..\Falsus.Providers.Location\Datasets\Countries.json" Link="Datasets\Countries.json" />
   </ItemGroup>
 
@@ -23,10 +34,6 @@
     <ProjectReference Include="..\..\..\Engine\Falsus\Falsus.csproj" />
     <ProjectReference Include="..\..\..\Shared\Falsus.Shared\Falsus.Shared.csproj" />
     <ProjectReference Include="..\Falsus.Providers.Location\Falsus.Providers.Location.csproj" />
-  </ItemGroup>
-
-  <ItemGroup>
-    <Folder Include="Datasets\" />
   </ItemGroup>
 
 </Project>
