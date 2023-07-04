@@ -2,9 +2,7 @@
 {
     using System;
     using System.Collections.Generic;
-    using System.Data;
     using System.Linq;
-    using System.Text;
     using Falsus.GeneratorProperties;
     using Falsus.Providers.Text.Models;
     using Falsus.Shared.Helpers;

@@ -38,13 +38,6 @@
             <summary>
             Initializes a new instance of the <see cref="T:Falsus.Providers.Finance.CurrencyProvider"/> class.
             </summary>
-            <remarks>
-            The <paramref name="configuration"/> must not be null and the
-            <see cref="!:CurrencyProviderConfiguration.ConnectionString"/> cannot be empty.
-            </remarks>
-            <exception cref="T:System.ArgumentNullException">
-            Thrown when the <see cref="!:configuration"/> instance is null.
-            </exception>
         </member>
         <member name="M:Falsus.Providers.Finance.CurrencyProvider.GetSupportedArguments">
             <summary>
@@ -157,8 +150,7 @@
         </member>
         <member name="M:Falsus.Providers.Finance.CurrencyProvider.Load(Falsus.GeneratorProperties.DataGeneratorProperty{Falsus.Shared.Models.CurrencyModel},System.Int32)">
             <summary>
-            Instructs the data provider to prepare the data for generation based on the
-            provided <see cref="!:CurrencyProviderConfiguration"/>.
+            Instructs the data provider to prepare the data for generation.
             </summary>
             <param name="property">
             An implementation of the generic <see cref="T:Falsus.GeneratorProperties.DataGeneratorProperty`1"/>

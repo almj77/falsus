@@ -40,13 +40,6 @@
         /// <summary>
         /// Initializes a new instance of the <see cref="CurrencyProvider"/> class.
         /// </summary>
-        /// <remarks>
-        /// The <paramref name="configuration"/> must not be null and the
-        /// <see cref="CurrencyProviderConfiguration.ConnectionString"/> cannot be empty.
-        /// </remarks>
-        /// <exception cref="ArgumentNullException">
-        /// Thrown when the <see cref="configuration"/> instance is null.
-        /// </exception>
         public CurrencyProvider()
             : base()
         {
@@ -268,8 +261,7 @@
         }
 
         /// <summary>
-        /// Instructs the data provider to prepare the data for generation based on the
-        /// provided <see cref="CurrencyProviderConfiguration"/>.
+        /// Instructs the data provider to prepare the data for generation.
         /// </summary>
         /// <param name="property">
         /// An implementation of the generic <see cref="DataGeneratorProperty{CurrencyModel}"/>

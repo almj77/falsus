@@ -1,8 +1,6 @@
 ﻿namespace Falsus.Providers.Location.Models
 {
     using System;
-    using System.Collections.Generic;
-    using System.Text;
 
     /// <summary>
     /// This class represents the association between coordinates and a street name.
