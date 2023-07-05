@@ -348,6 +348,61 @@
             A hash code for the current object.
             </returns>
         </member>
+        <member name="T:Falsus.Shared.Models.NationalityModel">
+            <summary>
+            This class represents a nationality.
+            </summary>
+        </member>
+        <member name="P:Falsus.Shared.Models.NationalityModel.CountryAlpha2">
+            <summary>
+            Gets or sets the Alpha2 ISO Country Code.
+            </summary>
+            <value>
+            A <see cref="T:System.String"/> containing the Alpha2 ISO Country Code.
+            </value>
+        </member>
+        <member name="P:Falsus.Shared.Models.NationalityModel.Demonym">
+            <summary>
+            Gets or sets the nationality demonym.
+            </summary>
+            <value>
+            A <see cref="T:System.String"/> containing the demonym.
+            </value>
+        </member>
+        <member name="M:Falsus.Shared.Models.NationalityModel.CompareTo(Falsus.Shared.Models.NationalityModel)">
+            <summary>
+            Compares this instance with a specified <see cref="T:Falsus.Shared.Models.NationalityModel"/> and
+            returns an integer that indicates whether this instance precedes, follows, or
+            appears in the same position in the sort order as the specified <see cref="T:Falsus.Shared.Models.NationalityModel"/>.
+            </summary>
+            <param name="other">The other <see cref="T:Falsus.Shared.Models.NationalityModel"/> to be compared with this instance.</param>
+            <returns>
+            A 32-bit signed integer that indicates whether this instance precedes, follows, or
+            appears in the same position in the sort order as the value parameter.
+            </returns>
+        </member>
+        <member name="M:Falsus.Shared.Models.NationalityModel.Equals(Falsus.Shared.Models.NationalityModel)">
+            <summary>
+            Indicates whether the current object is equal to another object of the same type.
+            </summary>
+            <param name="other">An object to compare with this object.</param>
+            <returns>True if the current object is equal to the other parameter; otherwise, false.</returns>
+        </member>
+        <member name="M:Falsus.Shared.Models.NationalityModel.Equals(System.Object)">
+            <summary>
+            Indicates whether the current object is equal to another object of the same type.
+            </summary>
+            <param name="obj">An object to compare with this object.</param>
+            <returns>True if the current object is equal to the other parameter; otherwise, false.</returns>
+        </member>
+        <member name="M:Falsus.Shared.Models.NationalityModel.GetHashCode">
+            <summary>
+            Calculates the hash for this instance.
+            </summary>
+            <returns>
+            A hash code for the current object.
+            </returns>
+        </member>
         <member name="T:Falsus.Shared.Models.RegionModel">
             <summary>
             This class represents a geographic region.

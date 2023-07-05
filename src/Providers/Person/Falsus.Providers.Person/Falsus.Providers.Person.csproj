@@ -1,0 +1,29 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netstandard2.0</TargetFramework>
+    <GenerateDocumentationFile>True</GenerateDocumentationFile>
+    <DocumentationFile>$(OutputPath)$(AssemblyName).xml</DocumentationFile>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="Datasets\CountryLanguages.json" />
+    <None Remove="Datasets\GivenNames.json" />
+    <None Remove="Datasets\Nationalities.json" />
+    <None Remove="Datasets\Surnames.json" />
+    <None Remove="Falsus.Providers.Person.xml" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <EmbeddedResource Include="Datasets\CountryLanguages.json" />
+    <EmbeddedResource Include="Datasets\GivenNames.json" />
+    <EmbeddedResource Include="Datasets\Nationalities.json" />
+    <EmbeddedResource Include="Datasets\Surnames.json" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\..\..\Engine\Falsus\Falsus.csproj" />
+    <ProjectReference Include="..\..\..\Shared\Falsus.Shared\Falsus.Shared.csproj" />
+  </ItemGroup>
+
+</Project>
