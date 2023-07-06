@@ -1,0 +1,622 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Falsus.Providers.Person</name>
+    </assembly>
+    <members>
+        <member name="T:Falsus.Providers.Person.FirstNameProvider">
+            <summary>
+            Represents a provider of first/given names.
+            </summary>
+            <seealso cref="T:Falsus.Providers.DataGeneratorProvider`1"/>
+        </member>
+        <member name="F:Falsus.Providers.Person.FirstNameProvider.GenderArgumentName">
+            <summary>
+            The name of the input argument that contains a <see cref="T:System.String"/>
+            value representing the gender (M/F/...) to use on the value generation process.
+            </summary>
+        </member>
+        <member name="F:Falsus.Providers.Person.FirstNameProvider.NationalityArgumentName">
+            <summary>
+            The name of the input argument that contains an instance of
+            <see cref="T:Falsus.Shared.Models.NationalityModel"/> to use on the value generation process.
+            </summary>
+        </member>
+        <member name="F:Falsus.Providers.Person.FirstNameProvider.namesByGender">
+            <summary>
+            A dictionary of <see cref="T:System.String"/> values (first names) indexed by
+            the <see cref="P:Falsus.Providers.Person.Models.FirstNameModel.Gender"/> property.
+            </summary>
+        </member>
+        <member name="F:Falsus.Providers.Person.FirstNameProvider.namesByCountry">
+            <summary>
+            A dictionary of <see cref="T:System.String"/> values (first names) indexed by
+            the <see cref="P:Falsus.Shared.Models.CountryModel.Alpha2"/> property.
+            </summary>
+        </member>
+        <member name="F:Falsus.Providers.Person.FirstNameProvider.namesByGenderAndCountry">
+            <summary>
+            A dictionary matrix index by <see cref="P:Falsus.Providers.Person.Models.FirstNameModel.Gender"/> and
+            <see cref="P:Falsus.Shared.Models.CountryModel.Alpha2"/> properties.
+            </summary>
+        </member>
+        <member name="F:Falsus.Providers.Person.FirstNameProvider.names">
+            <summary>
+            An array of <see cref="T:System.String"/> values containing all available first names.
+            </summary>
+        </member>
+        <member name="M:Falsus.Providers.Person.FirstNameProvider.#ctor">
+            <summary>
+            Initializes a new instance of the <see cref="T:Falsus.Providers.Person.FirstNameProvider"/> class.
+            </summary>
+        </member>
+        <member name="M:Falsus.Providers.Person.FirstNameProvider.GetSupportedArguments">
+            <summary>
+            Gets the definition of the input arguments supported by this provider.
+            </summary>
+            <returns>
+            A <see cref="T:System.Collections.Generic.Dictionary`2"/> containing the name of the
+            argument and the expected type of the argument value.
+            </returns>
+        </member>
+        <member name="M:Falsus.Providers.Person.FirstNameProvider.GetRangedRowValue(System.String,System.String,System.String[])">
+            <summary>
+            Generates a random first/given name
+            that is greater than the value of <paramref name="minValue"/> and lower
+            than the value of <paramref name="maxValue"/>.
+            </summary>
+            <param name="minValue">The exclusive lower bound of the random object returned.</param>
+            <param name="maxValue">The exclusive upper bound of the random object returned.</param>
+            <param name="excludedObjects">
+            An array of <see cref="T:System.String"/> values that cannot be returned
+            by the provider.
+            </param>
+            <returns>
+            A random instance of <see cref="T:System.String"/> greater than <paramref name="minValue"/>
+            and less than <paramref name="maxValue"/>.
+            </returns>
+            <remarks>
+            <paramref name="maxValue"/> must be greater than <paramref name="minValue"/>.
+            </remarks>
+            <exception cref="T:System.NotSupportedException">
+            Thrown because the generation of ranged first names is not supported.
+            </exception>
+        </member>
+        <member name="M:Falsus.Providers.Person.FirstNameProvider.GetRowValue(Falsus.DataGeneratorContext,Falsus.GeneratorProperties.WeightedRange{System.String}[],System.String[])">
+            <summary>
+            Generates a random first/given name
+            based on the context and excluded ranges.
+            </summary>
+            <param name="context">
+            An instance of <see cref="T:Falsus.DataGeneratorContext"/> defining
+            the current generation context.
+            </param>
+            <param name="excludedRanges">
+            An array of <see cref="T:Falsus.GeneratorProperties.WeightedRange`1"/>s defining the ranges
+            that cannot be returned by the provider.
+            </param>
+            <param name="excludedObjects">
+            An array of <see cref="T:System.String"/> values that cannot be returned
+            by the provider.
+            </param>
+            <returns>
+            A random instance of <see cref="T:System.String"/> that is outside of
+            the specified <paramref name="excludedRanges"/>.
+            </returns>
+            <exception cref="T:System.NotSupportedException">
+            Thrown because the generation of ranged first/given names is not supported.
+            </exception>
+        </member>
+        <member name="M:Falsus.Providers.Person.FirstNameProvider.GetRowValue(System.String)">
+            <summary>
+            Gets a <see cref="T:System.String"/> value based on the provided <paramref name="id"/>.
+            </summary>
+            <param name="id">An unique identifier for the object.</param>
+            <returns>
+            A <see cref="T:System.String"/> value with the specified unique identifier.
+            </returns>
+            <remarks>
+            Since both the <paramref name="id"/> and returning type are <see cref="T:System.String"/>
+            this method returns exactly what is passed on the <paramref name="id"/> argument.
+            </remarks>
+        </member>
+        <member name="M:Falsus.Providers.Person.FirstNameProvider.GetRowValue(Falsus.DataGeneratorContext,System.String[])">
+            <summary>
+            Generates a random first name based on the context and excluded objects.
+            </summary>
+            <param name="context">
+            An instance of <see cref="T:Falsus.DataGeneratorContext"/> defining
+            the current generation context.
+            </param>
+            <param name="excludedObjects">
+            An array of <see cref="T:System.String"/> values that cannot be returned
+            by the provider.
+            </param>
+            <returns>
+            A random first name.
+            </returns>
+            <remarks>
+            If the <see cref="F:Falsus.Providers.Person.FirstNameProvider.GenderArgumentName"/> and/or <see cref="F:Falsus.Providers.Person.FirstNameProvider.NationalityArgumentName"/>
+            is provided then this method will return the name of the specified gender and/or
+            nationality argument value.
+            </remarks>
+        </member>
+        <member name="M:Falsus.Providers.Person.FirstNameProvider.GetValueId(System.String)">
+            <summary>
+            Gets a unique identifier for the provided <see cref="T:System.String"/>.
+            </summary>
+            <param name="value">The <see cref="T:System.String"/> value.</param>
+            <returns>
+            A <see cref="T:System.String"/> containing the unique identifier of the provided value.
+            </returns>
+            <remarks>
+            Since both the <paramref name="value"/> and returning type are <see cref="T:System.String"/>
+            this method returns exactly what is passed on the <paramref name="value"/> argument.
+            </remarks>
+        </member>
+        <member name="M:Falsus.Providers.Person.FirstNameProvider.Load(Falsus.GeneratorProperties.DataGeneratorProperty{System.String},System.Int32)">
+            <summary>
+            Instructs the data provider to prepare the data for generation based on the
+            provided <see cref="!:FirstNameProviderConfiguration"/>.
+            </summary>
+            <param name="property">
+            An implementation of the generic <see cref="T:Falsus.GeneratorProperties.DataGeneratorProperty`1"/>
+            defining the property that this provider has been attached to.
+            </param>
+            <param name="rowCount">The desired number of rows to be generated.</param>
+            <remarks>
+            Invoked before any calculation takes place, the goal of this method is
+            usually preparing or caching data for the generation taking place afterwards.
+            </remarks>
+        </member>
+        <member name="M:Falsus.Providers.Person.FirstNameProvider.GetValues(Falsus.DataGeneratorContext,System.String[])">
+            <summary>
+            Gets the list of all possible values based on the context and excluded objects.
+            </summary>
+            <param name="context">
+            An instance of <see cref="T:Falsus.DataGeneratorContext"/> defining
+            the current generation context.
+            </param>
+            <param name="excludedObjects">
+            An array of <see cref="T:System.String"/> values that cannot be returned
+            by the provider.
+            </param>
+            <returns>
+            An array of <see cref="T:System.String"/> values containing all possible values.
+            </returns>
+            <remarks>
+            If the <see cref="F:Falsus.Providers.Person.FirstNameProvider.GenderArgumentName"/> and/or <see cref="F:Falsus.Providers.Person.FirstNameProvider.NationalityArgumentName"/>
+            is provided then this method will return the name of the specified gender and/or
+            nationality argument value.
+            </remarks>
+        </member>
+        <member name="T:Falsus.Providers.Person.GenderProvider">
+            <summary>
+            Represents a provider of genders.
+            </summary>
+            <seealso cref="T:Falsus.Providers.DataGeneratorProvider`1"/>
+        </member>
+        <member name="F:Falsus.Providers.Person.GenderProvider.MaleGenderIdentifier">
+            <summary>
+            Gets the <see cref="T:System.String"/> containing the identifier
+            for the Male gender.
+            </summary>
+        </member>
+        <member name="F:Falsus.Providers.Person.GenderProvider.FemaleGenderIdentifier">
+            <summary>
+            Gets the <see cref="T:System.String"/> containing the identifier
+            for the Female gender.
+            </summary>
+        </member>
+        <member name="F:Falsus.Providers.Person.GenderProvider.values">
+            <summary>
+            An array of <see cref="T:System.String"/> containing all gender values.
+            </summary>
+        </member>
+        <member name="M:Falsus.Providers.Person.GenderProvider.#ctor">
+            <summary>
+            Initializes a new instance of the <see cref="T:Falsus.Providers.Person.GenderProvider"/> class.
+            </summary>
+        </member>
+        <member name="M:Falsus.Providers.Person.GenderProvider.GetRowValue(System.String)">
+            <summary>
+            Gets a <see cref="T:System.String"/> value based on the provided <paramref name="id"/>.
+            </summary>
+            <param name="id">An unique identifier for the object.</param>
+            <returns>
+            A <see cref="T:System.String"/> value with the specified unique identifier.
+            </returns>
+            <remarks>
+            Since both the <paramref name="id"/> and returning type are <see cref="T:System.String"/>
+            this method returns exactly what is passed on the <paramref name="id"/> argument.
+            </remarks>
+        </member>
+        <member name="M:Falsus.Providers.Person.GenderProvider.GetValueId(System.String)">
+            <summary>
+            Gets a unique identifier for the provided <see cref="T:System.String"/>.
+            </summary>
+            <param name="value">The <see cref="T:System.String"/> value.</param>
+            <returns>
+            A <see cref="T:System.String"/> containing the unique identifier of the provided value.
+            </returns>
+            <remarks>
+            Since both the <paramref name="value"/> and returning type are <see cref="T:System.String"/>
+            this method returns exactly what is passed on the <paramref name="value"/> argument.
+            </remarks>
+        </member>
+        <member name="M:Falsus.Providers.Person.GenderProvider.GetValues(Falsus.DataGeneratorContext)">
+            <summary>
+            Gets an array of <see cref="T:System.String"/> genders
+            representing possible values based on the context information.
+            </summary>
+            <param name="context">
+            An instance of <see cref="T:Falsus.DataGeneratorContext"/> defining
+            the current generation context.
+            </param>
+            <returns>
+            An array of <see cref="T:System.String"/> values.
+            </returns>
+        </member>
+        <member name="M:Falsus.Providers.Person.GenderProvider.GetValues">
+            <summary>
+            Gets an array of <see cref="T:System.String"/> genders
+            representing all possible values.
+            </summary>
+            <returns>
+            An array of <see cref="T:System.String"/> values.
+            </returns>
+        </member>
+        <member name="T:Falsus.Providers.Person.LastNameProvider">
+            <summary>
+            Represents a provider of last/family names.
+            </summary>
+            <seealso cref="T:Falsus.Providers.DataGeneratorProvider`1"/>
+        </member>
+        <member name="F:Falsus.Providers.Person.LastNameProvider.NationalityArgumentName">
+            <summary>
+            The name of the input argument that contains an instance of
+            <see cref="T:Falsus.Shared.Models.NationalityModel"/> to use on the value generation process.
+            </summary>
+        </member>
+        <member name="F:Falsus.Providers.Person.LastNameProvider.namesByCountry">
+            <summary>
+            A dictionary of <see cref="T:System.String"/> values (last names) indexed by
+            the <see cref="P:Falsus.Shared.Models.CountryModel.Alpha2"/> property.
+            </summary>
+        </member>
+        <member name="F:Falsus.Providers.Person.LastNameProvider.names">
+            <summary>
+            An array of <see cref="T:System.String"/> values containing all available last names.
+            </summary>
+        </member>
+        <member name="M:Falsus.Providers.Person.LastNameProvider.#ctor">
+            <summary>
+            Initializes a new instance of the <see cref="T:Falsus.Providers.Person.LastNameProvider"/> class.
+            </summary>
+        </member>
+        <member name="M:Falsus.Providers.Person.LastNameProvider.GetSupportedArguments">
+            <summary>
+            Gets the definition of the input arguments supported by this provider.
+            </summary>
+            <returns>
+            A <see cref="T:System.Collections.Generic.Dictionary`2"/> containing the name of the
+            argument and the expected type of the argument value.
+            </returns>
+        </member>
+        <member name="M:Falsus.Providers.Person.LastNameProvider.GetRangedRowValue(System.String,System.String,System.String[])">
+            <summary>
+            Generates a random last/family name
+            that is greater than the value of <paramref name="minValue"/> and lower
+            than the value of <paramref name="maxValue"/>.
+            </summary>
+            <param name="minValue">The exclusive lower bound of the random object returned.</param>
+            <param name="maxValue">The exclusive upper bound of the random object returned.</param>
+            <param name="excludedObjects">
+            An array of <see cref="T:System.String"/> values that cannot be returned
+            by the provider.
+            </param>
+            <returns>
+            A random instance of <see cref="T:System.String"/> greater than <paramref name="minValue"/>
+            and less than <paramref name="maxValue"/>.
+            </returns>
+            <remarks>
+            <paramref name="maxValue"/> must be greater than <paramref name="minValue"/>.
+            </remarks>
+            <exception cref="T:System.NotSupportedException">
+            Thrown because the generation of ranged last names is not supported.
+            </exception>
+        </member>
+        <member name="M:Falsus.Providers.Person.LastNameProvider.GetRowValue(Falsus.DataGeneratorContext,Falsus.GeneratorProperties.WeightedRange{System.String}[],System.String[])">
+            <summary>
+            Generates a random last/family name
+            based on the context and excluded ranges.
+            </summary>
+            <param name="context">
+            An instance of <see cref="T:Falsus.DataGeneratorContext"/> defining
+            the current generation context.
+            </param>
+            <param name="excludedRanges">
+            An array of <see cref="T:Falsus.GeneratorProperties.WeightedRange`1"/>s defining the ranges
+            that cannot be returned by the provider.
+            </param>
+            <param name="excludedObjects">
+            An array of <see cref="T:System.String"/> values that cannot be returned
+            by the provider.
+            </param>
+            <returns>
+            A random instance of <see cref="T:System.String"/> that is outside of
+            the specified <paramref name="excludedRanges"/>.
+            </returns>
+            <exception cref="T:System.NotSupportedException">
+            Thrown because the generation of ranged last/family names is not supported.
+            </exception>
+        </member>
+        <member name="M:Falsus.Providers.Person.LastNameProvider.GetRowValue(System.String)">
+            <summary>
+            Gets a <see cref="T:System.String"/> value based on the provided <paramref name="id"/>.
+            </summary>
+            <param name="id">An unique identifier for the object.</param>
+            <returns>
+            A <see cref="T:System.String"/> value with the specified unique identifier.
+            </returns>
+            <remarks>
+            Since both the <paramref name="id"/> and returning type are <see cref="T:System.String"/>
+            this method returns exactly what is passed on the <paramref name="id"/> argument.
+            </remarks>
+        </member>
+        <member name="M:Falsus.Providers.Person.LastNameProvider.GetRowValue(Falsus.DataGeneratorContext,System.String[])">
+            <summary>
+            Generates a random last name based on the context and excluded objects.
+            </summary>
+            <param name="context">
+            An instance of <see cref="T:Falsus.DataGeneratorContext"/> defining
+            the current generation context.
+            </param>
+            <param name="excludedObjects">
+            An array of <see cref="T:System.String"/> values that cannot be returned
+            by the provider.
+            </param>
+            <returns>
+            A random last name.
+            </returns>
+            <remarks>
+            If the <see cref="F:Falsus.Providers.Person.LastNameProvider.NationalityArgumentName"/> is provided then this method will
+            return the name of the specified <see cref="T:Falsus.Shared.Models.NationalityModel"/> value.
+            </remarks>
+        </member>
+        <member name="M:Falsus.Providers.Person.LastNameProvider.GetValueId(System.String)">
+            <summary>
+            Gets a unique identifier for the provided <see cref="T:System.String"/>.
+            </summary>
+            <param name="value">The <see cref="T:System.String"/> value.</param>
+            <returns>
+            A <see cref="T:System.String"/> containing the unique identifier of the provided value.
+            </returns>
+            <remarks>
+            Since both the <paramref name="value"/> and returning type are <see cref="T:System.String"/>
+            this method returns exactly what is passed on the <paramref name="value"/> argument.
+            </remarks>
+        </member>
+        <member name="M:Falsus.Providers.Person.LastNameProvider.Load(Falsus.GeneratorProperties.DataGeneratorProperty{System.String},System.Int32)">
+            <summary>
+            Instructs the data provider to prepare the data for generation based on the
+            provided <see cref="!:LastNameProviderConfiguration"/>.
+            </summary>
+            <param name="property">
+            An implementation of the generic <see cref="T:Falsus.GeneratorProperties.DataGeneratorProperty`1"/>
+            defining the property that this provider has been attached to.
+            </param>
+            <param name="rowCount">The desired number of rows to be generated.</param>
+            <remarks>
+            Invoked before any calculation takes place, the goal of this method is
+            usually preparing or caching data for the generation taking place afterwards.
+            </remarks>
+        </member>
+        <member name="M:Falsus.Providers.Person.LastNameProvider.GetValues(Falsus.DataGeneratorContext,System.String[])">
+            <summary>
+            Gets the list of all possible values based on the context and excluded objects.
+            </summary>
+            <param name="context">
+            An instance of <see cref="T:Falsus.DataGeneratorContext"/> defining
+            the current generation context.
+            </param>
+            <param name="excludedObjects">
+            An array of <see cref="T:System.String"/> values that cannot be returned
+            by the provider.
+            </param>
+            <returns>
+            An array of <see cref="T:System.String"/> values containing all possible values.
+            </returns>
+            <remarks>
+            If the <see cref="F:Falsus.Providers.Person.LastNameProvider.NationalityArgumentName"/> is provided then this method will
+            return the name of the specified <see cref="T:Falsus.Shared.Models.NationalityModel"/> value.
+            </remarks>
+        </member>
+        <member name="T:Falsus.Providers.Person.Models.FirstNameModel">
+            <summary>
+            This class contains the details for First Name generation.
+            </summary>
+        </member>
+        <member name="P:Falsus.Providers.Person.Models.FirstNameModel.LanguageTwoLetterCode">
+            <summary>
+            Gets or sets the Two letter code of the language to which
+            the <see cref="P:Falsus.Providers.Person.Models.FirstNameModel.GivenName"/> belongs to.
+            </summary>
+            <value>
+            A <see cref="T:System.String"/> containing the two letter language code.
+            </value>
+        </member>
+        <member name="P:Falsus.Providers.Person.Models.FirstNameModel.GivenName">
+            <summary>
+            Gets or sets the given name associated with the specified
+            <see cref="P:Falsus.Providers.Person.Models.FirstNameModel.LanguageTwoLetterCode"/> and <see cref="P:Falsus.Providers.Person.Models.FirstNameModel.Gender"/>.
+            </summary>
+            <value>
+            A <see cref="T:System.String"/> containing the given name.
+            </value>
+        </member>
+        <member name="P:Falsus.Providers.Person.Models.FirstNameModel.Gender">
+            <summary>
+            Gets or sets the gender identifier of the <see cref="P:Falsus.Providers.Person.Models.FirstNameModel.GivenName"/>.
+            </summary>
+            <value>
+            A <see cref="T:System.String"/> containing the gender identifier.
+            </value>
+        </member>
+        <member name="T:Falsus.Providers.Person.Models.LanguageToCountryModel">
+            <summary>
+            This class represents the association between a language and a country.
+            </summary>
+        </member>
+        <member name="P:Falsus.Providers.Person.Models.LanguageToCountryModel.TwoLetterLanguageCode">
+            <summary>
+            Gets or sets the two letter language code.
+            </summary>
+            <value>
+            A <see cref="T:System.String"/> containing the language code.
+            </value>
+        </member>
+        <member name="P:Falsus.Providers.Person.Models.LanguageToCountryModel.Alpha2CountryCode">
+            <summary>
+            Gets or sets the Alpha2 ISO Country Code.
+            </summary>
+            <value>
+            A <see cref="T:System.String"/> containing the Alpha2 ISO Country Code.
+            </value>
+        </member>
+        <member name="P:Falsus.Providers.Person.Models.LanguageToCountryModel.Order">
+            <summary>
+            Gets or sets the order of importance of the language in the
+            specified country.
+            </summary>
+            <value>
+            An <see cref="T:System.Int32"/> value representing the order of importance.
+            Lower values confer an higher importance.
+            </value>
+        </member>
+        <member name="T:Falsus.Providers.Person.Models.LastNameModel">
+            <summary>
+            This class contains the details for Last Name generation.
+            </summary>
+        </member>
+        <member name="P:Falsus.Providers.Person.Models.LastNameModel.LanguageTwoLetterCode">
+            <summary>
+            Gets or sets the Two letter code of the language to which
+            the <see cref="P:Falsus.Providers.Person.Models.LastNameModel.Surname"/> belongs to.
+            </summary>
+            <value>
+            A <see cref="T:System.String"/> containing the two letter language code.
+            </value>
+        </member>
+        <member name="P:Falsus.Providers.Person.Models.LastNameModel.Surname">
+            <summary>
+            Gets or sets the given name associated with the specified
+            <see cref="P:Falsus.Providers.Person.Models.LastNameModel.LanguageTwoLetterCode"/>.
+            </summary>
+            <value>
+            A <see cref="T:System.String"/> containing the given name.
+            </value>
+        </member>
+        <member name="T:Falsus.Providers.Person.NationalityProvider">
+            <summary>
+            Represents a provider of <see cref="T:Falsus.Shared.Models.NationalityModel"/> instances.
+            </summary>
+            <seealso cref="T:Falsus.Providers.GenericArrayProvider`1"/>
+        </member>
+        <member name="F:Falsus.Providers.Person.NationalityProvider.CountryArgumentName">
+            <summary>
+            The name of the input argument that contains an instance of
+            <see cref="T:Falsus.Shared.Models.CountryModel"/> to use on the value generation process.
+            </summary>
+        </member>
+        <member name="F:Falsus.Providers.Person.NationalityProvider.nationalities">
+            <summary>
+            An array of <see cref="T:Falsus.Shared.Models.NationalityModel"/> instances containing
+            all possible values.
+            </summary>
+        </member>
+        <member name="M:Falsus.Providers.Person.NationalityProvider.#ctor">
+            <summary>
+            Initializes a new instance of the <see cref="T:Falsus.Providers.Person.NationalityProvider"/> class.
+            </summary>
+        </member>
+        <member name="M:Falsus.Providers.Person.NationalityProvider.GetSupportedArguments">
+            <summary>
+            Gets the definition of the input arguments supported by this provider.
+            </summary>
+            <returns>
+            A <see cref="T:System.Collections.Generic.Dictionary`2"/> containing the name of the
+            argument and the expected type of the argument value.
+            </returns>
+        </member>
+        <member name="M:Falsus.Providers.Person.NationalityProvider.GetRowValue(System.String)">
+            <summary>
+            Gets an instance of <see cref="T:Falsus.Shared.Models.NationalityModel"/> from the provided <paramref name="id"/>.
+            </summary>
+            <param name="id">An unique identifier for the object.</param>
+            <returns>
+            An instance of the <see cref="T:Falsus.Shared.Models.NationalityModel"/> with the specified unique identifier.
+            </returns>
+            <remarks>
+            The unique identifier of the <see cref="T:Falsus.Shared.Models.NationalityModel"/> instance is
+            defined by the <see cref="P:Falsus.Shared.Models.NationalityModel.Demonym"/> property.
+            The unique id can be fetched by invoking the
+            <see cref="M:Falsus.Providers.Person.NationalityProvider.GetValueId(Falsus.Shared.Models.NationalityModel)"/> method.
+            </remarks>
+        </member>
+        <member name="M:Falsus.Providers.Person.NationalityProvider.GetValueId(Falsus.Shared.Models.NationalityModel)">
+            <summary>
+            Gets a unique identifier for the provided <see cref="T:Falsus.Shared.Models.NationalityModel"/> instance.
+            </summary>
+            <param name="value">An instance of <see cref="T:Falsus.Shared.Models.NationalityModel"/>.</param>
+            <returns>
+            A <see cref="T:System.String"/> containing the unique identifier of the provided <see cref="T:Falsus.Shared.Models.NationalityModel"/>.
+            </returns>
+            <remarks>
+            The unique identifier of the <see cref="T:Falsus.Shared.Models.NationalityModel"/> instance is
+            defined by the <see cref="P:Falsus.Shared.Models.NationalityModel.Demonym"/> property.
+            </remarks>
+        </member>
+        <member name="M:Falsus.Providers.Person.NationalityProvider.Load(Falsus.GeneratorProperties.DataGeneratorProperty{Falsus.Shared.Models.NationalityModel},System.Int32)">
+            <summary>
+            Instructs the data provider to prepare the data for generation.
+            </summary>
+            <param name="property">
+            An implementation of the generic <see cref="T:Falsus.GeneratorProperties.DataGeneratorProperty`1"/>
+            defining the property that this provider has been attached to.
+            </param>
+            <param name="rowCount">The desired number of rows to be generated.</param>
+            <remarks>
+            Invoked before any calculation takes place, the goal of this method is
+            usually preparing or caching data for the generation taking place afterwards.
+            </remarks>
+        </member>
+        <member name="M:Falsus.Providers.Person.NationalityProvider.GetValues(Falsus.DataGeneratorContext)">
+            <summary>
+            Gets an array of <see cref="T:Falsus.Shared.Models.NationalityModel"/> instances
+            representing possible values based on the context information.
+            </summary>
+            <param name="context">
+            An instance of <see cref="T:Falsus.DataGeneratorContext"/> defining
+            the current generation context.
+            </param>
+            <returns>
+            An array of <see cref="T:Falsus.Shared.Models.NationalityModel"/> instances.
+            </returns>
+            <remarks>
+            If the <see cref="F:Falsus.Providers.Person.NationalityProvider.CountryArgumentName"/> is provided then this method will
+            return the value for a <see cref="T:Falsus.Shared.Models.NationalityModel"/> of the specified <see cref="T:Falsus.Shared.Models.CountryModel"/>
+            argument value.
+            </remarks>
+        </member>
+        <member name="M:Falsus.Providers.Person.NationalityProvider.GetValues">
+            <summary>
+            Gets an array of <see cref="T:Falsus.Shared.Models.NationalityModel"/> instances
+            representing all possible values.
+            </summary>
+            <returns>
+            An array of <see cref="T:Falsus.Shared.Models.NationalityModel"/> instances.
+            </returns>
+        </member>
+    </members>
+</doc>

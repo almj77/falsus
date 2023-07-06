@@ -471,7 +471,7 @@
             </returns>
             <remarks>
             If the <see cref="!:NationalityArgumentName"/> is provided then this method will
-            return the value for a <see cref="T:Falsus.Shared.Models.CountryModel"/> of the specified <see cref="!:NationalityModel"/>
+            return the value for a <see cref="T:Falsus.Shared.Models.CountryModel"/> of the specified <see cref="T:Falsus.Shared.Models.NationalityModel"/>
             argument value.
             </remarks>
         </member>

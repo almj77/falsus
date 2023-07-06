@@ -9,7 +9,7 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <None Remove="Datasets\Nationalities.json" />
+    <EmbeddedResource Include="..\..\Providers\Person\Falsus.Providers.Person\Datasets\Nationalities.json" Link="Datasets\Nationalities.json" />
   </ItemGroup>
 
   <ItemGroup>
@@ -28,10 +28,6 @@
   <ItemGroup>
     <ProjectReference Include="..\..\Shared\Falsus.Shared\Falsus.Shared.csproj" />
     <ProjectReference Include="..\Falsus\Falsus.csproj" />
-  </ItemGroup>
-
-  <ItemGroup>
-    <EmbeddedResource Include="Datasets\Nationalities.json" />
   </ItemGroup>
 
 </Project>
