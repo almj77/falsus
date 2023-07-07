@@ -348,6 +348,185 @@
             A hash code for the current object.
             </returns>
         </member>
+        <member name="T:Falsus.Shared.Models.FileTypeModel">
+            <summary>
+            This class contains the details for a type of file.
+            </summary>
+        </member>
+        <member name="P:Falsus.Shared.Models.FileTypeModel.Category">
+            <summary>
+            Gets or sets the category of the file type.
+            </summary>
+            <value>
+            A <see cref="T:System.String"/> containing the category of the file type.
+            </value>
+        </member>
+        <member name="P:Falsus.Shared.Models.FileTypeModel.Extension">
+            <summary>
+            Gets or sets the file extension.
+            </summary>
+            <value>
+            A <see cref="T:System.String"/> containing the file extension.
+            </value>
+        </member>
+        <member name="P:Falsus.Shared.Models.FileTypeModel.Name">
+            <summary>
+            Gets or sets the name of the file type.
+            </summary>
+            <value>
+            A <see cref="T:System.String"/> containing the name of the file type.
+            </value>
+        </member>
+        <member name="P:Falsus.Shared.Models.FileTypeModel.Icon">
+            <summary>
+            Gets or sets the base64 encoded PNG image file representing
+            the icon of the file type.
+            </summary>
+            <value>
+            A <see cref="T:System.String"/> containing base64 encoded PNG image
+            file representing the icon of the file type.
+            </value>
+        </member>
+        <member name="P:Falsus.Shared.Models.FileTypeModel.IsCommon">
+            <summary>
+            Gets or sets a value indicating whether or not this
+            type of file is commonly used.
+            </summary>
+            <value>
+            True if the type of file is commonly used, otherwise false.
+            </value>
+        </member>
+        <member name="M:Falsus.Shared.Models.FileTypeModel.CompareTo(Falsus.Shared.Models.FileTypeModel)">
+            <summary>
+            Compares this instance with a specified <see cref="T:Falsus.Shared.Models.FileTypeModel"/> and
+            returns an integer that indicates whether this instance precedes, follows, or
+            appears in the same position in the sort order as the specified <see cref="T:Falsus.Shared.Models.FileTypeModel"/>.
+            </summary>
+            <param name="other">The other <see cref="T:Falsus.Shared.Models.FileTypeModel"/> to be compared with this instance.</param>
+            <returns>
+            A 32-bit signed integer that indicates whether this instance precedes, follows, or
+            appears in the same position in the sort order as the value parameter.
+            </returns>
+        </member>
+        <member name="M:Falsus.Shared.Models.FileTypeModel.Equals(Falsus.Shared.Models.FileTypeModel)">
+            <summary>
+            Indicates whether the current object is equal to another object of the same type.
+            </summary>
+            <param name="other">An object to compare with this object.</param>
+            <returns>True if the current object is equal to the other parameter; otherwise, false.</returns>
+        </member>
+        <member name="M:Falsus.Shared.Models.FileTypeModel.Equals(System.Object)">
+            <summary>
+            Indicates whether the current object is equal to another object of the same type.
+            </summary>
+            <param name="obj">An object to compare with this object.</param>
+            <returns>True if the current object is equal to the other parameter; otherwise, false.</returns>
+        </member>
+        <member name="M:Falsus.Shared.Models.FileTypeModel.GetHashCode">
+            <summary>
+            Calculates the hash for this instance.
+            </summary>
+            <returns>
+            A hash code for the current object.
+            </returns>
+        </member>
+        <member name="T:Falsus.Shared.Models.MimeTypeModel">
+            <summary>
+            This class represents a MIME type.
+            </summary>
+        </member>
+        <member name="P:Falsus.Shared.Models.MimeTypeModel.MimeType">
+            <summary>
+            Gets or sets the MIME Type.
+            </summary>
+            <value>
+            A <see cref="T:System.String"/> containing the MIME type.
+            </value>
+        </member>
+        <member name="P:Falsus.Shared.Models.MimeTypeModel.Extension">
+            <summary>
+            Gets or sets the extension of the file type used along with
+            this MIME type.
+            </summary>
+            <value>
+            A <see cref="T:System.String"/> representing the file extensions.
+            </value>
+        </member>
+        <member name="P:Falsus.Shared.Models.MimeTypeModel.Name">
+            <summary>
+            Gets or sets the name of the MIME type.
+            </summary>
+            <value>
+            A <see cref="T:System.String"/> containing the name of the MIME type.
+            </value>
+        </member>
+        <member name="P:Falsus.Shared.Models.MimeTypeModel.Category">
+            <summary>
+            Gets or sets the category of the MIME type.
+            </summary>
+            <value>
+            A <see cref="T:System.String"/> containing the category of the MIME type.
+            </value>
+        </member>
+        <member name="P:Falsus.Shared.Models.MimeTypeModel.DeprecatedBy">
+            <summary>
+            Gets or sets the MIME type that replaces the current MIME type.
+            </summary>
+            <value>
+            A <see cref="T:System.String"/> containing the MIME type.
+            </value>
+        </member>
+        <member name="P:Falsus.Shared.Models.MimeTypeModel.Aliases">
+            <summary>
+            Gets or sets an array of MIME Types that are aliases of the current MIME type.
+            </summary>
+            <value>
+            An array of <see cref="T:System.String"/> containing the MIME type aliases for this instance.
+            </value>
+        </member>
+        <member name="P:Falsus.Shared.Models.MimeTypeModel.IsCommon">
+            <summary>
+            Gets or sets a value indicating whether or not this
+            MIME type is commonly used.
+            </summary>
+            <value>
+            True if the MIME type is commonly used, otherwise false.
+            </value>
+        </member>
+        <member name="M:Falsus.Shared.Models.MimeTypeModel.CompareTo(Falsus.Shared.Models.MimeTypeModel)">
+            <summary>
+            Compares this instance with a specified <see cref="T:Falsus.Shared.Models.MimeTypeModel"/> and
+            returns an integer that indicates whether this instance precedes, follows, or
+            appears in the same position in the sort order as the specified <see cref="T:Falsus.Shared.Models.MimeTypeModel"/>.
+            </summary>
+            <param name="other">The other <see cref="T:Falsus.Shared.Models.MimeTypeModel"/> to be compared with this instance.</param>
+            <returns>
+            A 32-bit signed integer that indicates whether this instance precedes, follows, or
+            appears in the same position in the sort order as the value parameter.
+            </returns>
+        </member>
+        <member name="M:Falsus.Shared.Models.MimeTypeModel.Equals(Falsus.Shared.Models.MimeTypeModel)">
+            <summary>
+            Indicates whether the current object is equal to another object of the same type.
+            </summary>
+            <param name="other">An object to compare with this object.</param>
+            <returns>True if the current object is equal to the other parameter; otherwise, false.</returns>
+        </member>
+        <member name="M:Falsus.Shared.Models.MimeTypeModel.Equals(System.Object)">
+            <summary>
+            Indicates whether the current object is equal to another object of the same type.
+            </summary>
+            <param name="obj">An object to compare with this object.</param>
+            <returns>True if the current object is equal to the other parameter; otherwise, false.</returns>
+        </member>
+        <member name="M:Falsus.Shared.Models.MimeTypeModel.GetHashCode">
+            <summary>
+            Calculates the hash for this instance.
+            </summary>
+            <returns>
+            A hash code for the current object.
+            </returns>
+        </member>
         <member name="T:Falsus.Shared.Models.NationalityModel">
             <summary>
             This class represents a nationality.

@@ -1,0 +1,509 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Falsus.Providers.Internet</name>
+    </assembly>
+    <members>
+        <member name="T:Falsus.Providers.Internet.EmailProvider">
+            <summary>
+            Represents a provider of email addresses.
+            </summary>
+            <seealso cref="T:Falsus.Providers.DataGeneratorProvider`1"/>
+        </member>
+        <member name="F:Falsus.Providers.Internet.EmailProvider.TextArgumentsName">
+            <summary>
+            The name of the input argument that contains the
+            text tokens to use on the value generation process.
+            </summary>
+        </member>
+        <member name="F:Falsus.Providers.Internet.EmailProvider.configuration">
+            <summary>
+            The configuration of this provider.
+            </summary>
+        </member>
+        <member name="M:Falsus.Providers.Internet.EmailProvider.#ctor(Falsus.Providers.Internet.EmailProviderConfiguration)">
+            <summary>
+            Initializes a new instance of the <see cref="T:Falsus.Providers.Internet.EmailProvider"/> class.
+            </summary>
+            <param name="configuration">The configuration to use.</param>
+            <remarks>
+            The <paramref name="configuration"/> must not be null and the
+            <see cref="P:Falsus.Providers.Internet.EmailProviderConfiguration.Domains"/> must have
+            at least one entry.
+            </remarks>
+            <exception cref="T:System.ArgumentNullException">
+            Thrown when the <see cref="F:Falsus.Providers.Internet.EmailProvider.configuration"/> instance is null.
+            </exception>
+        </member>
+        <member name="M:Falsus.Providers.Internet.EmailProvider.GetSupportedArguments">
+            <summary>
+            Gets the definition of the input arguments supported by this provider.
+            </summary>
+            <returns>
+            A <see cref="T:System.Collections.Generic.Dictionary`2"/> containing the name of the
+            argument and the expected type of the argument value.
+            </returns>
+        </member>
+        <member name="M:Falsus.Providers.Internet.EmailProvider.GetRangedRowValue(System.String,System.String,System.String[])">
+            <summary>
+            Generates a random email address that is greater than
+            the value of <paramref name="minValue"/> and lower
+            than the value of <paramref name="maxValue"/>.
+            </summary>
+            <param name="minValue">The exclusive lower bound of the random object returned.</param>
+            <param name="maxValue">The exclusive upper bound of the random object returned.</param>
+            <param name="excludedObjects">
+            An array of <see cref="T:System.String"/> values that cannot be returned
+            by the provider.
+            </param>
+            <returns>
+            A random instance of <see cref="T:System.String"/> greater than <paramref name="minValue"/>
+            and less than <paramref name="maxValue"/>.
+            </returns>
+            <remarks>
+            <paramref name="maxValue"/> must be greater than <paramref name="minValue"/>.
+            </remarks>
+            <exception cref="T:System.NotSupportedException">
+            Thrown because the generation of ranged street names is not supported.
+            </exception>
+        </member>
+        <member name="M:Falsus.Providers.Internet.EmailProvider.GetRowValue(Falsus.DataGeneratorContext,Falsus.GeneratorProperties.WeightedRange{System.String}[],System.String[])">
+            <summary>
+            Generates a random email address
+            based on the context and excluded ranges.
+            </summary>
+            <param name="context">
+            An instance of <see cref="T:Falsus.DataGeneratorContext"/> defining
+            the current generation context.
+            </param>
+            <param name="excludedRanges">
+            An array of <see cref="T:Falsus.GeneratorProperties.WeightedRange`1"/>s defining the ranges
+            that cannot be returned by the provider.
+            </param>
+            <param name="excludedObjects">
+            An array of <see cref="T:System.String"/> values that cannot be returned
+            by the provider.
+            </param>
+            <returns>
+            A random instance of <see cref="T:System.String"/> that is outside of
+            the specified <paramref name="excludedRanges"/>.
+            </returns>
+            <exception cref="T:System.NotSupportedException">
+            Thrown because the generation of ranged email addresses is not supported.
+            </exception>
+        </member>
+        <member name="M:Falsus.Providers.Internet.EmailProvider.GetRowValue(System.String)">
+            <summary>
+            Gets a <see cref="T:System.String"/> value based on the provided <paramref name="id"/>.
+            </summary>
+            <param name="id">An unique identifier for the object.</param>
+            <returns>
+            A <see cref="T:System.String"/> value with the specified unique identifier.
+            </returns>
+            <remarks>
+            Since both the <paramref name="id"/> and returning type are <see cref="T:System.String"/>
+            this method returns exactly what is passed on the <paramref name="id"/> argument.
+            </remarks>
+        </member>
+        <member name="M:Falsus.Providers.Internet.EmailProvider.GetRowValue(Falsus.DataGeneratorContext,System.String[])">
+            <summary>
+            Generates a random street name based on the context and excluded objects.
+            </summary>
+            <param name="context">
+            An instance of <see cref="T:Falsus.DataGeneratorContext"/> defining
+            the current generation context.
+            </param>
+            <param name="excludedObjects">
+            An array of <see cref="T:System.String"/> values that cannot be returned
+            by the provider.
+            </param>
+            <returns>
+            A random email.
+            </returns>
+            <remarks>
+            The generated email address will result from the concatenation of
+            the <see cref="F:Falsus.Providers.Internet.EmailProvider.TextArgumentsName"/> argument values (seperated by a dot)
+            along with a randomly chosen domain from the <see cref="P:Falsus.Providers.Internet.EmailProviderConfiguration.Domains"/> list.
+            If nothing is provided as the <see cref="F:Falsus.Providers.Internet.EmailProvider.TextArgumentsName"/> value, a random string will be
+            generated.
+            If the <paramref name="excludedObjects"/> contains the value that was generated
+            then a number will be appended at end (eg. if john.doe@domain.com is present then
+            it will become john.doe2@domain.com).
+            </remarks>
+        </member>
+        <member name="M:Falsus.Providers.Internet.EmailProvider.GetValueId(System.String)">
+            <summary>
+            Gets a unique identifier for the provided <see cref="T:System.String"/>.
+            </summary>
+            <param name="value">The <see cref="T:System.String"/> value.</param>
+            <returns>
+            A <see cref="T:System.String"/> containing the unique identifier of the provided value.
+            </returns>
+            <remarks>
+            Since both the <paramref name="value"/> and returning type are <see cref="T:System.String"/>
+            this method returns exactly what is passed on the <paramref name="value"/> argument.
+            </remarks>
+        </member>
+        <member name="M:Falsus.Providers.Internet.EmailProvider.Load(Falsus.GeneratorProperties.DataGeneratorProperty{System.String},System.Int32)">
+            <summary>
+            Instructs the data provider to prepare the data for generation based on the
+            provided <see cref="T:Falsus.Providers.Internet.EmailProviderConfiguration"/>.
+            </summary>
+            <param name="property">
+            An implementation of the generic <see cref="T:Falsus.GeneratorProperties.DataGeneratorProperty`1"/>
+            defining the property that this provider has been attached to.
+            </param>
+            <param name="rowCount">The desired number of rows to be generated.</param>
+            <remarks>
+            Invoked before any calculation takes place, the goal of this method is
+            usually preparing or caching data for the generation taking place afterwards.
+            </remarks>
+        </member>
+        <member name="M:Falsus.Providers.Internet.EmailProvider.GetDomain">
+            <summary>
+            Gets a random domain from the <see cref="P:Falsus.Providers.Internet.EmailProviderConfiguration.Domains"/>
+            list.
+            </summary>
+            <returns>
+            A string representing the domain.
+            </returns>
+            <remarks>
+            If <see cref="P:Falsus.Providers.Internet.EmailProviderConfiguration.Domains"/> has only one item
+            then this method will always return the same value.
+            </remarks>
+        </member>
+        <member name="M:Falsus.Providers.Internet.EmailProvider.ValidateConfiguration">
+            <summary>
+            Checks if the <see cref="F:Falsus.Providers.Internet.EmailProvider.configuration"/> object is assigned and correct.
+            </summary>
+            <exception cref="T:System.InvalidOperationException">
+            Thrown when the <see cref="P:Falsus.Providers.Internet.EmailProviderConfiguration.Domains"/> doesn't have at
+            least one entry.
+            </exception>
+        </member>
+        <member name="M:Falsus.Providers.Internet.EmailProvider.RemoveAccents(System.String)">
+            <summary>
+            Removes the accents from the input string.
+            </summary>
+            <param name="input">The string to normalize.</param>
+            <returns>
+            The normalized string.
+            </returns>
+            <remarks>
+            When provided with 'José' this method will return 'Jose'.
+            </remarks>
+        </member>
+        <member name="T:Falsus.Providers.Internet.EmailProviderConfiguration">
+            <summary>
+            This class represents the configuration object of the <see cref="T:Falsus.Providers.Internet.EmailProvider"/> data provider.
+            </summary>
+        </member>
+        <member name="P:Falsus.Providers.Internet.EmailProviderConfiguration.Domains">
+            <summary>
+            Gets or sets an array of <see cref="T:System.String"/> values
+            representing the email domains.
+            </summary>
+            <value>
+            An array of <see cref="T:System.String"/> values.
+            </value>
+        </member>
+        <member name="T:Falsus.Providers.Internet.HexColorProvider">
+            <summary>
+            Represents a provider of hexadecimal color values.
+            </summary>
+            <seealso cref="T:Falsus.Providers.DataGeneratorProvider`1"/>
+        </member>
+        <member name="F:Falsus.Providers.Internet.HexColorProvider.MaxAttempts">
+            <summary>
+            The number of attemps to try to generate a unique value
+            before throwing an exception.
+            </summary>
+        </member>
+        <member name="M:Falsus.Providers.Internet.HexColorProvider.#ctor">
+            <summary>
+            Initializes a new instance of the <see cref="T:Falsus.Providers.Internet.HexColorProvider"/> class.
+            </summary>
+        </member>
+        <member name="M:Falsus.Providers.Internet.HexColorProvider.GetRangedRowValue(System.String,System.String,System.String[])">
+            <summary>
+            Generates a random hexadecimal color that is greater than the value
+            of <paramref name="minValue"/> and lower than the value of <paramref name="maxValue"/>.
+            </summary>
+            <param name="minValue">The exclusive lower bound of the random object returned.</param>
+            <param name="maxValue">The exclusive upper bound of the random object returned.</param>
+            <param name="excludedObjects">
+            An array of <see cref="T:System.String"/> values that cannot be returned
+            by the provider.
+            </param>
+            <returns>
+            A random instance of <see cref="T:System.String"/> greater than <paramref name="minValue"/>
+            and less than <paramref name="maxValue"/>.
+            </returns>
+            <remarks>
+            <paramref name="maxValue"/> must be greater than <paramref name="minValue"/>.
+            </remarks>
+            <exception cref="T:System.NotSupportedException">
+            Thrown because the generation of ranged colors is not supported.
+            </exception>
+        </member>
+        <member name="M:Falsus.Providers.Internet.HexColorProvider.GetRowValue(Falsus.DataGeneratorContext,Falsus.GeneratorProperties.WeightedRange{System.String}[],System.String[])">
+            <summary>
+            Generates a random hexadecimal color
+            based on the context and excluded ranges.
+            </summary>
+            <param name="context">
+            An instance of <see cref="T:Falsus.DataGeneratorContext"/> defining
+            the current generation context.
+            </param>
+            <param name="excludedRanges">
+            An array of <see cref="T:Falsus.GeneratorProperties.WeightedRange`1"/>s defining the ranges
+            that cannot be returned by the provider.
+            </param>
+            <param name="excludedObjects">
+            An array of <see cref="T:System.String"/> values that cannot be returned
+            by the provider.
+            </param>
+            <returns>
+            A random instance of <see cref="T:System.String"/> that is outside of
+            the specified <paramref name="excludedRanges"/>.
+            </returns>
+            <exception cref="T:System.NotSupportedException">
+            Thrown because the generation of ranged hexadecimal colors is not supported.
+            </exception>
+        </member>
+        <member name="M:Falsus.Providers.Internet.HexColorProvider.GetRowValue(System.String)">
+            <summary>
+            Gets a <see cref="T:System.String"/> value based on the provided <paramref name="id"/>.
+            </summary>
+            <param name="id">An unique identifier for the object.</param>
+            <returns>
+            A <see cref="T:System.String"/> value with the specified unique identifier.
+            </returns>
+            <remarks>
+            Since both the <paramref name="id"/> and returning type are <see cref="T:System.String"/>
+            this method returns exactly what is passed on the <paramref name="id"/> argument.
+            </remarks>
+        </member>
+        <member name="M:Falsus.Providers.Internet.HexColorProvider.GetRowValue(Falsus.DataGeneratorContext,System.String[])">
+            <summary>
+            Generates a random hexadecimal color based on the context and excluded objects.
+            </summary>
+            <param name="context">
+            An instance of <see cref="T:Falsus.DataGeneratorContext"/> defining
+            the current generation context.
+            </param>
+            <param name="excludedObjects">
+            An array of <see cref="T:System.String"/> values that cannot be returned
+            by the provider.
+            </param>
+            <returns>
+            A random hexadecimal value.
+            </returns>
+        </member>
+        <member name="M:Falsus.Providers.Internet.HexColorProvider.GetValueId(System.String)">
+            <summary>
+            Gets a unique identifier for the provided <see cref="T:System.String"/>.
+            </summary>
+            <param name="value">The <see cref="T:System.String"/> value.</param>
+            <returns>
+            A <see cref="T:System.String"/> containing the unique identifier of the provided value.
+            </returns>
+            <remarks>
+            Since both the <paramref name="value"/> and returning type are <see cref="T:System.String"/>
+            this method returns exactly what is passed on the <paramref name="value"/> argument.
+            </remarks>
+        </member>
+        <member name="T:Falsus.Providers.Internet.MimeTypeProvider">
+            <summary>
+            Represents a provider of MIME types.
+            </summary>
+            <seealso cref="T:Falsus.Providers.DataGeneratorProvider`1"/>
+        </member>
+        <member name="F:Falsus.Providers.Internet.MimeTypeProvider.FileExtensionArgumentName">
+            <summary>
+            The name of the input argument that contains an instance of
+            <see cref="T:Falsus.Shared.Models.FileTypeModel"/> to use on the value generation process.
+            </summary>
+        </member>
+        <member name="F:Falsus.Providers.Internet.MimeTypeProvider.configuration">
+            <summary>
+            The configuration of this provider.
+            </summary>
+        </member>
+        <member name="F:Falsus.Providers.Internet.MimeTypeProvider.mimeTypeByMimeTypeAndExtension">
+            <summary>
+            A dictionary of <see cref="T:Falsus.Shared.Models.MimeTypeModel"/> instances indexed
+            by a <see cref="T:System.Tuple`2"/> containing the <see cref="P:Falsus.Shared.Models.MimeTypeModel.MimeType"/> and
+            <see cref="P:Falsus.Shared.Models.MimeTypeModel.Extension"/> property.
+            </summary>
+        </member>
+        <member name="F:Falsus.Providers.Internet.MimeTypeProvider.mimeTypesByCategoryAndExtension">
+            <summary>
+            A dictionary of <see cref="T:Falsus.Shared.Models.MimeTypeModel"/> instances indexed
+            by a <see cref="T:System.Tuple`2"/> containing the <see cref="P:Falsus.Shared.Models.MimeTypeModel.MimeType"/> and
+            <see cref="P:Falsus.Shared.Models.MimeTypeModel.Category"/> property.
+            </summary>
+        </member>
+        <member name="M:Falsus.Providers.Internet.MimeTypeProvider.#ctor(Falsus.Providers.Internet.MimeTypeProviderConfiguration)">
+            <summary>
+            Initializes a new instance of the <see cref="T:Falsus.Providers.Internet.MimeTypeProvider"/> class.
+            </summary>
+            <param name="configuration">The configuration to use.</param>
+            <remarks>
+            The <paramref name="configuration"/> must not be null and the
+            <see cref="!:MimeTypeProviderConfiguration.ConnectionString"/> cannot be empty.
+            </remarks>
+            <exception cref="T:System.ArgumentNullException">
+            Thrown when the <see cref="F:Falsus.Providers.Internet.MimeTypeProvider.configuration"/> instance is null.
+            </exception>
+        </member>
+        <member name="M:Falsus.Providers.Internet.MimeTypeProvider.GetSupportedArguments">
+            <summary>
+            Gets the definition of the input arguments supported by this provider.
+            </summary>
+            <returns>
+            A <see cref="T:System.Collections.Generic.Dictionary`2"/> containing the name of the
+            argument and the expected type of the argument value.
+            </returns>
+        </member>
+        <member name="M:Falsus.Providers.Internet.MimeTypeProvider.GetRangedRowValue(Falsus.Shared.Models.MimeTypeModel,Falsus.Shared.Models.MimeTypeModel,Falsus.Shared.Models.MimeTypeModel[])">
+            <summary>
+            Generates a random <see cref="T:Falsus.Shared.Models.MimeTypeModel"/> instance.
+            that is greater than the value of <paramref name="minValue"/> and lower
+            than the value of <paramref name="maxValue"/>.
+            </summary>
+            <param name="minValue">The exclusive lower bound of the random object returned.</param>
+            <param name="maxValue">The exclusive upper bound of the random object returned.</param>
+            <param name="excludedObjects">
+            An array of <see cref="T:Falsus.Shared.Models.MimeTypeModel"/> values that cannot be returned
+            by the provider.
+            </param>
+            <returns>
+            A random instance of <see cref="T:Falsus.Shared.Models.MimeTypeModel"/> greater than <paramref name="minValue"/>
+            and less than <paramref name="maxValue"/>.
+            </returns>
+            <remarks>
+            <paramref name="maxValue"/> must be greater than <paramref name="minValue"/>.
+            </remarks>
+            <exception cref="T:System.NotSupportedException">
+            Thrown because the generation of ranged MIME Types is not supported.
+            </exception>
+        </member>
+        <member name="M:Falsus.Providers.Internet.MimeTypeProvider.GetRowValue(Falsus.DataGeneratorContext,Falsus.GeneratorProperties.WeightedRange{Falsus.Shared.Models.MimeTypeModel}[],Falsus.Shared.Models.MimeTypeModel[])">
+            <summary>
+            Generates a random <see cref="T:Falsus.Shared.Models.MimeTypeModel"/> instance
+            based on the context and excluded ranges.
+            </summary>
+            <param name="context">
+            An instance of <see cref="T:Falsus.DataGeneratorContext"/> defining
+            the current generation context.
+            </param>
+            <param name="excludedRanges">
+            An array of <see cref="T:Falsus.GeneratorProperties.WeightedRange`1"/>s defining the ranges
+            that cannot be returned by the provider.
+            </param>
+            <param name="excludedObjects">
+            An array of <see cref="T:Falsus.Shared.Models.MimeTypeModel"/> values that cannot be returned
+            by the provider.
+            </param>
+            <returns>
+            A random instance of <see cref="T:Falsus.Shared.Models.MimeTypeModel"/> that is outside of
+            the specified <paramref name="excludedRanges"/>.
+            </returns>
+            <exception cref="T:System.NotSupportedException">
+            Thrown because the generation of ranged MIME Types is not supported.
+            </exception>
+        </member>
+        <member name="M:Falsus.Providers.Internet.MimeTypeProvider.GetRowValue(System.String)">
+            <summary>
+            Gets a <see cref="T:Falsus.Shared.Models.MimeTypeModel"/> instance based on the provided <paramref name="id"/>.
+            </summary>
+            <param name="id">An unique identifier for the object.</param>
+            <returns>
+            A <see cref="T:Falsus.Shared.Models.MimeTypeModel"/> instance that represents the MIME type with the specified unique identifier.
+            </returns>
+        </member>
+        <member name="M:Falsus.Providers.Internet.MimeTypeProvider.GetRowValue(Falsus.DataGeneratorContext,Falsus.Shared.Models.MimeTypeModel[])">
+            <summary>
+            Generates a random <see cref="T:Falsus.Shared.Models.MimeTypeModel"/> instance based on the context and excluded objects.
+            </summary>
+            <param name="context">
+            An instance of <see cref="T:Falsus.DataGeneratorContext"/> defining
+            the current generation context.
+            </param>
+            <param name="excludedObjects">
+            An array of <see cref="T:Falsus.Shared.Models.MimeTypeModel"/> instances that cannot be returned
+            by the provider.
+            </param>
+            <returns>
+            A random MIME type.
+            </returns>
+            <remarks>
+            If the <see cref="F:Falsus.Providers.Internet.MimeTypeProvider.FileExtensionArgumentName"/> is provided then this method will
+            return the name of the MIME type belonging to the specified <see cref="T:Falsus.Shared.Models.FileTypeModel"/>
+            argument value.
+            </remarks>
+        </member>
+        <member name="M:Falsus.Providers.Internet.MimeTypeProvider.GetValueId(Falsus.Shared.Models.MimeTypeModel)">
+            <summary>
+            Gets a unique identifier for the provided <see cref="T:Falsus.Shared.Models.MimeTypeModel"/>.
+            </summary>
+            <param name="value">The <see cref="T:Falsus.Shared.Models.MimeTypeModel"/> instance.</param>
+            <returns>
+            A <see cref="T:System.String"/> containing the unique identifier of the provided value.
+            </returns>
+        </member>
+        <member name="M:Falsus.Providers.Internet.MimeTypeProvider.Load(Falsus.GeneratorProperties.DataGeneratorProperty{Falsus.Shared.Models.MimeTypeModel},System.Int32)">
+            <summary>
+            Instructs the data provider to prepare the data for generation based on the
+            provided <see cref="T:Falsus.Providers.Internet.MimeTypeProviderConfiguration"/>.
+            </summary>
+            <param name="property">
+            An implementation of the generic <see cref="T:Falsus.GeneratorProperties.DataGeneratorProperty`1"/>
+            defining the property that this provider has been attached to.
+            </param>
+            <param name="rowCount">The desired number of rows to be generated.</param>
+            <remarks>
+            Invoked before any calculation takes place, the goal of this method is
+            usually preparing or caching data for the generation taking place afterwards.
+            </remarks>
+        </member>
+        <member name="T:Falsus.Providers.Internet.MimeTypeProviderConfiguration">
+            <summary>
+            This class represents the configuration object of the <see cref="T:Falsus.Providers.Internet.MimeTypeProvider"/> data provider.
+            </summary>
+        </member>
+        <member name="P:Falsus.Providers.Internet.MimeTypeProviderConfiguration.IncludeDeprecated">
+            <summary>
+            Gets or sets a value indicating whether or not deprecated
+            MIME types should be considered for random value generation.
+            </summary>
+            <value>
+            True if deprecated MIME types should be included, otherwise false.
+            </value>
+        </member>
+        <member name="P:Falsus.Providers.Internet.MimeTypeProviderConfiguration.ExcludeUncommon">
+            <summary>
+            Gets or sets a value indicating whether or not uncommon
+            MIME types should be excluded from the random value generation.
+            </summary>
+            <value>
+            True if uncommon MIME types should be excluded, otherwise false.
+            </value>
+        </member>
+        <member name="P:Falsus.Providers.Internet.MimeTypeProviderConfiguration.TreatAliasesAsUnique">
+            <summary>
+            Gets or sets a value indicating whether or not MIME type aliases
+            should be considered as unique.
+            </summary>
+            <value>
+            True if aliases should be considered unique, otherwise false.
+            </value>
+            <remarks>
+            Settings this value to true will cause, for example,
+            application/javascript and text/javascript to be treated as two
+            different MIME types.
+            </remarks>
+        </member>
+    </members>
+</doc>

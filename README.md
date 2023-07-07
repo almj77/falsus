@@ -34,13 +34,14 @@
 - Regular Expression
 - Word (Dictionary)
 #### Person
-- First Name
-- Last Name
+- First name
+- Last name
 - Nationality
 - Gender
 #### Internet
 - Email address
 - Hexadecimal color
+- MIME type
 
 ## 🕹 Usage
 ### Basic

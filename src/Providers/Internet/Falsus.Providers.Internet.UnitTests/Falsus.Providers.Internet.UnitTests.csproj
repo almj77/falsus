@@ -9,6 +9,10 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <EmbeddedResource Include="..\Falsus.Providers.Internet\Datasets\MimeTypes.json" Link="Datasets\MimeTypes.json" />
+  </ItemGroup>
+
+  <ItemGroup>
     <PackageReference Include="Microsoft.NET.Test.Sdk" Version="17.1.0" />
     <PackageReference Include="MSTest.TestAdapter" Version="2.2.8" />
     <PackageReference Include="MSTest.TestFramework" Version="2.2.8" />
@@ -17,6 +21,10 @@
 
   <ItemGroup>
     <ProjectReference Include="..\Falsus.Providers.Internet\Falsus.Providers.Internet.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="Datasets\" />
   </ItemGroup>
 
 </Project>
