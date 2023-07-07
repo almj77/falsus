@@ -6,7 +6,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="shortcut icon" href="/assets/img/favicon.ico" type="image/x-icon">
         <link rel="icon" href="/assets/img/favicon.ico" type="image/x-icon">
-        <title>Falsus - API - DateProvider Class</title>
+        <title>Falsus - API - HexColorProvider.GetRangedRowValue(string, string, string[]) Method</title>
         <link href="/assets/css/highlight.css" rel="stylesheet">
         <link href="/assets/css/bootstrap/bootstrap.css" rel="stylesheet">
         <link href="/assets/css/adminlte/AdminLTE.css" rel="stylesheet">
@@ -72,9 +72,9 @@
                     	
 	<div id="infobar-headings"><h6>On This Page</h6><p><a href="#Summary">Summary</a></p>
 <p><a href="#Syntax">Syntax</a></p>
-<p><a href="#Constructors">Constructors</a></p>
-<p><a href="#Methods">Methods</a></p>
-<p><a href="#SeeAlso">See Also</a></p>
+<p><a href="#Remarks">Remarks</a></p>
+<p><a href="#Parameters">Parameters</a></p>
+<p><a href="#ReturnValue">Return Value</a></p>
 <hr class="infobar-hidden">
 </div>
 
@@ -134,16 +134,18 @@
                     <ul class="sidebar-menu">
                         
 			<li class="header">Namespace</li>
-		<li><a href="/api/Falsus.Providers.DataTypes">Falsus<wbr>.Providers<wbr>.DataTypes</a></li>
+		<li><a href="/api/Falsus.Providers.Internet">Falsus<wbr>.Providers<wbr>.Internet</a></li>
+		<li class="header">Type</li>
+		<li><a href="/api/Falsus.Providers.Internet/HexColorProvider">HexColorProvider</a></li>
 		<li role="separator" class="divider"></li>
-			<li class="header">Class Types</li>
-				<li><a href="/api/Falsus.Providers.DataTypes/BooleanProvider">BooleanProvider</a></li>
-				<li class="selected"><a href="/api/Falsus.Providers.DataTypes/DateProvider">DateProvider</a></li>
-				<li><a href="/api/Falsus.Providers.DataTypes/DoubleProvider">DoubleProvider</a></li>
-				<li><a href="/api/Falsus.Providers.DataTypes/FloatProvider">FloatProvider</a></li>
-				<li><a href="/api/Falsus.Providers.DataTypes/GuidProvider">GuidProvider</a></li>
-				<li><a href="/api/Falsus.Providers.DataTypes/IntegerProvider">IntegerProvider</a></li>
-				<li><a href="/api/Falsus.Providers.DataTypes/TimeProvider">TimeProvider</a></li>
+			<li class="header">Constructors</li>
+				<li><a href="/api/Falsus.Providers.Internet/HexColorProvider/C3E00744">HexColorProvider<wbr>()<wbr></a></li>
+			<li class="header">Method Members</li>
+				<li class="selected"><a href="/api/Falsus.Providers.Internet/HexColorProvider/B98E8A04">GetRangedRowValue<wbr>(string, <wbr>string, <wbr>string[])<wbr></a></li>
+				<li><a href="/api/Falsus.Providers.Internet/HexColorProvider/170705C3">GetRowValue<wbr>(<wbr>Data<wbr>Generator<wbr>Context, <wbr>WeightedRange<wbr>&lt;string&gt;<wbr>[], <wbr>string[])<wbr></a></li>
+				<li><a href="/api/Falsus.Providers.Internet/HexColorProvider/CB793029">GetRowValue<wbr>(string)<wbr></a></li>
+				<li><a href="/api/Falsus.Providers.Internet/HexColorProvider/2051BF2E">GetRowValue<wbr>(<wbr>Data<wbr>Generator<wbr>Context, <wbr>string[])<wbr></a></li>
+				<li><a href="/api/Falsus.Providers.Internet/HexColorProvider/7166B670">GetValueId<wbr>(string)<wbr></a></li>
 
 
                     </ul>
@@ -158,165 +160,97 @@
 
 
 <section class="content-header">
-	<h1>DateProvider <small>Class</small></h1>
+			<h3><a href="/api/Falsus.Providers.Internet/HexColorProvider">HexColorProvider</a>.</h3>
+	<h1>GetRangedRowValue<wbr>(string, <wbr>string, <wbr>string[])<wbr> <small>Method</small></h1>
 </section>
 <section class="content">
 	
 	
 		<h1 id="Summary">Summary</h1>
 	<div class="lead">
-    Represents a provider of <code class="cs"><a href="/">DateTime</a></code> values.
+    Generates a random hexadecimal color that is greater than the value
+    of <span name="minValue" class="paramref">minValue</span> and lower than the value of <span name="maxValue" class="paramref">maxValue</span>.
     </div>
 
 		<div class="panel panel-default">
-  			<div class="panel-body">
-				<div class="row">
-					<div class="col-md-6">
-						<dl class="dl-horizontal">		
-
-								<dt>Namespace</dt>
-								<dd><a href="/api/Falsus.Providers.DataTypes">Falsus<wbr>.Providers<wbr>.DataTypes</a></dd>
-											
-								<dt>Interfaces</dt>
-								<dd>
-									<ul class="list-unstyled">
-											<li><a href="/api/Falsus.Providers/IDataGeneratorProvider_1">I<wbr>Data<wbr>Generator<wbr>Provider</a><wbr>&lt;DateTime&gt;<wbr></li>								
-											<li><a href="/api/Falsus.Providers/IDataGeneratorProvider">I<wbr>Data<wbr>Generator<wbr>Provider</a></li>								
-									</ul>
-								</dd>
-							
-								<dt>Base Types</dt>
-								<dd>
-									<ul class="list-unstyled">										
-											<li>object</li>								
-											<li><a href="/api/Falsus.Providers/DataGeneratorProvider_1">Data<wbr>Generator<wbr>Provider</a><wbr>&lt;DateTime&gt;<wbr></li>								
-									</ul>
-								</dd>				
-							
-							
-						</dl>
-					</div>		
-					<div class="col-md-6">
-						<div class="mermaid">
-							graph BT
-	Type--&gt;Base0["DataGeneratorProvider&lt;DateTime&gt;"]
-	Base0--&gt;Base1["object"]
-	Type-.-&gt;Interface0["IDataGeneratorProvider&lt;DateTime&gt;"]
-	Type-.-&gt;Interface1["IDataGeneratorProvider"]
-	click Interface1 "/api/Falsus.Providers/IDataGeneratorProvider"
-	Type["DateProvider"]
-class Type type-node
-
-						</div>
-					</div>
-				</div>
+  			<div class="panel-body">	
+				<dl class="dl-horizontal">	
+						
+						<dt>Namespace</dt>
+						<dd><a href="/api/Falsus.Providers.Internet">Falsus<wbr>.Providers<wbr>.Internet</a></dd>
+					
+						<dt>Containing Type</dt>
+						<dd><a href="/api/Falsus.Providers.Internet/HexColorProvider">HexColorProvider</a></dd>		
+					
+				</dl>
   			</div>
 		</div>
 
 	<h1 id="Syntax">Syntax</h1>
-	<pre><code>public class DateProvider : DataGeneratorProvider&lt;DateTime&gt;, IDataGeneratorProvider&lt;DateTime&gt;, 
-    IDataGeneratorProvider</code></pre>
+	<pre><code>public override string GetRangedRowValue(string minValue, string maxValue, string[] excludedObjects)</code></pre>
+
+
+	<h1 id="Remarks">Remarks</h1>
+	<div>
+    <span name="maxValue" class="paramref">maxValue</span> must be greater than <span name="minValue" class="paramref">minValue</span>.
+    </div>
 
 
 
-
-
-
-
-			<h1 id="Constructors">Constructors</h1>
-			<div class="box">
-				<div class="box-body no-padding table-responsive">
-					<table class="table table-striped table-hover two-cols">
-						<thead>
-							<tr>
-								<th>Name</th>
-									<th>Summary</th>
-							</tr>
-						</thead>
-							<tbody><tr>
-								<td><a href="/api/Falsus.Providers.DataTypes/DateProvider/CCEF6FE9">DateProvider<wbr>()<wbr></a></td>
-									<td>
-    Initializes a new instance of the <code class="cs"><a href="/api/Falsus.Providers.DataTypes/DateProvider">DateProvider</a></code> class.
+	<h1 id="Parameters">Parameters</h1>
+	<div class="box">
+		<div class="box-body no-padding table-responsive">
+			<table class="table table-striped table-hover three-cols">
+				<thead>
+					<tr>
+						<th>Name</th>
+						<th>Type</th>
+						<th>Description</th>
+					</tr>
+				</thead>
+					<tbody><tr>
+						<td>minValue</td>
+						<td>string</td>
+						<td>The exclusive lower bound of the random object returned.</td>
+					</tr>
+					<tr>
+						<td>maxValue</td>
+						<td>string</td>
+						<td>The exclusive upper bound of the random object returned.</td>
+					</tr>
+					<tr>
+						<td>excludedObjects</td>
+						<td>string[]</td>
+						<td>
+    An array of <code class="cs"><a href="/">string</a></code> values that cannot be returned
+    by the provider.
     </td>
-							</tr>
-					</tbody></table>
-				</div>
-			</div>
-		
+					</tr>
+			</tbody></table>
+		</div>
+	</div>	
 
+	<h1 id="ReturnValue">Return Value</h1>
+	<div class="box">
+		<div class="box-body no-padding table-responsive">
+			<table class="table table-striped table-hover two-cols">
+				<thead>
+					<tr>
+						<th>Type</th>
+						<th>Description</th>
+					</tr>
+				</thead>
+				<tbody><tr>
+					<td>string</td>
+					<td>
+    A random instance of <code class="cs"><a href="/">string</a></code> greater than <span name="minValue" class="paramref">minValue</span>
+    and less than <span name="maxValue" class="paramref">maxValue</span>.
+    </td>
+				</tr>
+			</tbody></table>
+		</div>
+	</div>	
 
-
-
-			<h1 id="Methods">Methods</h1>
-			<div class="box">
-				<div class="box-body no-padding table-responsive">
-					<table class="table table-striped table-hover three-cols">
-						<thead>
-							<tr>
-								<th>Name</th>
-								<th>Value</th>
-								<th>Summary</th>
-							</tr>
-						</thead>
-							<tbody><tr>
-								<td><a href="/api/Falsus.Providers.DataTypes/DateProvider/2648B0D8">GetRangedRowValue<wbr>(DateTime, <wbr>DateTime, <wbr>DateTime[])<wbr></a></td>
-								<td>DateTime</td>
-								<td>
-									<div>
-    Generates a random <code class="cs"><a href="/">DateTime</a></code> instance
-    that is greater than the value of <span name="minValue" class="paramref">minValue</span> and lower
-    than the value of <span name="maxValue" class="paramref">maxValue</span>.
-    </div>
-								</td>
-							</tr>
-							<tr>
-								<td><a href="/api/Falsus.Providers.DataTypes/DateProvider/46D1CB2E">GetRowValue<wbr>(<wbr>Data<wbr>Generator<wbr>Context, <wbr>DateTime[])<wbr></a></td>
-								<td>DateTime</td>
-								<td>
-									<div>
-    Generates a random <code class="cs"><a href="/">DateTime</a></code> instance
-    based on the context and excluded objects.
-    </div>
-								</td>
-							</tr>
-							<tr>
-								<td><a href="/api/Falsus.Providers.DataTypes/DateProvider/84E0C9B1">GetRowValue<wbr>(<wbr>Data<wbr>Generator<wbr>Context, <wbr>WeightedRange<wbr>&lt;DateTime&gt;<wbr>[], <wbr>DateTime[])<wbr></a></td>
-								<td>DateTime</td>
-								<td>
-									<div>
-    Generates a random <code class="cs"><a href="/">DateTime</a></code> instance
-    based on the context and excluded ranges.
-    </div>
-								</td>
-							</tr>
-							<tr>
-								<td><a href="/api/Falsus.Providers.DataTypes/DateProvider/2790117B">GetRowValue<wbr>(string)<wbr></a></td>
-								<td>DateTime</td>
-								<td>
-									<div>
-    Gets an instance of <code class="cs"><a href="/">DateTime</a></code> from the provided <span name="id" class="paramref">id</span>.
-    </div>
-								</td>
-							</tr>
-							<tr>
-								<td><a href="/api/Falsus.Providers.DataTypes/DateProvider/1971CFB4">GetValueId<wbr>(DateTime)<wbr></a></td>
-								<td>string</td>
-								<td>
-									<div>
-    Gets a unique identifier for the provided <code class="cs">System.DateTime</code> instance.
-    </div>
-								</td>
-							</tr>
-					</tbody></table>
-				</div>
-			</div>
-		
-
-
-	<h1 id="SeeAlso">See Also</h1>
-	<ul class="list-unstyled">
-			<li><code><a href="/api/Falsus.Providers/DataGeneratorProvider_1">DataGeneratorProvider&lt;T&gt;</a></code></li>
-	</ul>
 
 	
 </section>

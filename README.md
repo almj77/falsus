@@ -40,6 +40,7 @@
 - Gender
 #### Internet
 - Email address
+- Hexadecimal color
 
 ## 🕹 Usage
 ### Basic
