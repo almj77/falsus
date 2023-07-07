@@ -26,6 +26,1149 @@
             <param name="path">The root path to retrieve resources from.</param>
             <returns>An array of <see cref="T:System.String"/> with paths to embedded resources.</returns>
         </member>
+        <member name="T:Falsus.Shared.Avatar.AvatarModel">
+            <summary>
+            Describes an Avatar.
+            </summary>
+            <remarks>
+            For more details see Avataar documentation https://getavataaars.com/.
+            </remarks>
+            <seealso cref="T:System.IEquatable`1"/>
+            <seealso cref="T:System.IComparable`1"/>
+        </member>
+        <member name="P:Falsus.Shared.Avatar.AvatarModel.Accessory">
+            <summary>
+            Gets or sets the avatar accessory.
+            </summary>
+            <value>
+            One of the <see cref="T:Falsus.Shared.Avatar.Enums.AvatarAccessory"/> values that indicates the accessory of the avatar.
+            </value>
+        </member>
+        <member name="P:Falsus.Shared.Avatar.AvatarModel.ClotheColor">
+            <summary>
+            Gets or sets the color of the avatar clothes.
+            </summary>
+            <value>
+            One of the <see cref="T:Falsus.Shared.Avatar.Enums.AvatarClotheColor"/> values that indicates the color of the clothes.
+            </value>
+            <remarks>
+            Clothe color is only applied when chosen along with one of the following <see cref="T:Falsus.Shared.Avatar.Enums.AvatarClotheType"/>:
+            <list type="bullet">
+            <item><see cref="F:Falsus.Shared.Avatar.Enums.AvatarClotheType.CollarSweater"/></item>
+            <item><see cref="F:Falsus.Shared.Avatar.Enums.AvatarClotheType.GraphicShirt"/></item>
+            <item><see cref="F:Falsus.Shared.Avatar.Enums.AvatarClotheType.Hoodie"/></item>
+            <item><see cref="F:Falsus.Shared.Avatar.Enums.AvatarClotheType.Overall"/></item>
+            <item><see cref="F:Falsus.Shared.Avatar.Enums.AvatarClotheType.ShirtCrewNeck"/></item>
+            <item><see cref="F:Falsus.Shared.Avatar.Enums.AvatarClotheType.ShirtScoopNeck"/></item>
+            <item><see cref="F:Falsus.Shared.Avatar.Enums.AvatarClotheType.ShirtVNeck"/></item>
+            </list>
+            </remarks>
+        </member>
+        <member name="P:Falsus.Shared.Avatar.AvatarModel.ClotheType">
+            <summary>
+            Gets or sets the type of the avatar clothes.
+            </summary>
+            <value>
+            One of the <see cref="T:Falsus.Shared.Avatar.Enums.AvatarClotheType"/> values that indicates the type of the clothes.
+            </value>
+        </member>
+        <member name="P:Falsus.Shared.Avatar.AvatarModel.ClotheGraphicType">
+            <summary>
+            Gets or sets the graphic of the avatar clothes.
+            </summary>
+            <value>
+            One of the <see cref="T:Falsus.Shared.Avatar.Enums.AvatarClotheGraphicType"/> values that indicates the graphic to draw on the clothes.
+            </value>
+            <remarks>
+            Clothe Graphic is only applied when chosen along with <see cref="F:Falsus.Shared.Avatar.Enums.AvatarClotheType.GraphicShirt"/>.
+            </remarks>
+        </member>
+        <member name="P:Falsus.Shared.Avatar.AvatarModel.EyebrowType">
+            <summary>
+            Gets or sets the type of the avatar eyebrows.
+            </summary>
+            <value>
+            One of the <see cref="T:Falsus.Shared.Avatar.Enums.AvatarEyebrowType"/> values that indicates the type of the eyebrows.
+            </value>
+        </member>
+        <member name="P:Falsus.Shared.Avatar.AvatarModel.EyeType">
+            <summary>
+            Gets or sets the type of the avatar eyes.
+            </summary>
+            <value>
+            One of the <see cref="T:Falsus.Shared.Avatar.Enums.AvatarEyeType"/> values that indicates the type of the eyes.
+            </value>
+        </member>
+        <member name="P:Falsus.Shared.Avatar.AvatarModel.FacialHairColor">
+            <summary>
+            Gets or sets the color of the avatar facial hair.
+            </summary>
+            <value>
+            One of the <see cref="T:Falsus.Shared.Avatar.Enums.AvatarFacialHairColor"/> values that indicates the color of the facial hair.
+            </value>
+            <remarks>
+            Facial hair color is only applied when chosen along any of the possible values of the <see cref="T:Falsus.Shared.Avatar.Enums.AvatarFacialHairType"/>
+            except the <see cref="F:Falsus.Shared.Avatar.Enums.AvatarFacialHairType.Blank"/>.
+            </remarks>
+        </member>
+        <member name="P:Falsus.Shared.Avatar.AvatarModel.FacialHairType">
+            <summary>
+            Gets or sets the type of the avatar facial hair.
+            </summary>
+            <value>
+            One of the <see cref="T:Falsus.Shared.Avatar.Enums.AvatarFacialHairType"/> values that indicates the type of facial hair.
+            </value>
+        </member>
+        <member name="P:Falsus.Shared.Avatar.AvatarModel.HairColor">
+            <summary>
+            Gets or sets the color of the avatar hair.
+            </summary>
+            <value>
+            One of the <see cref="T:Falsus.Shared.Avatar.Enums.AvatarHairColor"/> values that indicates the color of the hair.
+            </value>
+            <remarks>
+            Hair color is only applied when chosen along with one of the following <see cref="T:Falsus.Shared.Avatar.Enums.AvatarTop"/>:
+            <list type="bullet">
+            <item><see cref="F:Falsus.Shared.Avatar.Enums.AvatarTop.LongHairBigHair"/></item>
+            <item><see cref="F:Falsus.Shared.Avatar.Enums.AvatarTop.LongHairBob"/></item>
+            <item><see cref="F:Falsus.Shared.Avatar.Enums.AvatarTop.LongHairBun"/></item>
+            <item><see cref="F:Falsus.Shared.Avatar.Enums.AvatarTop.LongHairCurly"/></item>
+            <item><see cref="F:Falsus.Shared.Avatar.Enums.AvatarTop.LongHairCurvy"/></item>
+            <item><see cref="F:Falsus.Shared.Avatar.Enums.AvatarTop.LongHairDreads"/></item>
+            <item><see cref="F:Falsus.Shared.Avatar.Enums.AvatarTop.LongHairFro"/></item>
+            <item><see cref="F:Falsus.Shared.Avatar.Enums.AvatarTop.LongHairFroBand"/></item>
+            <item><see cref="F:Falsus.Shared.Avatar.Enums.AvatarTop.LongHairMiaWallace"/></item>
+            <item><see cref="F:Falsus.Shared.Avatar.Enums.AvatarTop.LongHairNotTooLong"/></item>
+            <item><see cref="F:Falsus.Shared.Avatar.Enums.AvatarTop.LongHairStraight"/></item>
+            <item><see cref="F:Falsus.Shared.Avatar.Enums.AvatarTop.LongHairStraight2"/></item>
+            <item><see cref="F:Falsus.Shared.Avatar.Enums.AvatarTop.LongHairStraightStrand"/></item>
+            <item><see cref="F:Falsus.Shared.Avatar.Enums.AvatarTop.ShortHairDreads01"/></item>
+            <item><see cref="F:Falsus.Shared.Avatar.Enums.AvatarTop.ShortHairDreads02"/></item>
+            <item><see cref="F:Falsus.Shared.Avatar.Enums.AvatarTop.ShortHairFrizzle"/></item>
+            <item><see cref="F:Falsus.Shared.Avatar.Enums.AvatarTop.ShortHairShaggyMullet"/></item>
+            <item><see cref="F:Falsus.Shared.Avatar.Enums.AvatarTop.ShortHairShortCurly"/></item>
+            <item><see cref="F:Falsus.Shared.Avatar.Enums.AvatarTop.ShortHairShortFlat"/></item>
+            <item><see cref="F:Falsus.Shared.Avatar.Enums.AvatarTop.ShortHairShortRound"/></item>
+            <item><see cref="F:Falsus.Shared.Avatar.Enums.AvatarTop.ShortHairShortWaved"/></item>
+            <item><see cref="F:Falsus.Shared.Avatar.Enums.AvatarTop.ShortHairSides"/></item>
+            <item><see cref="F:Falsus.Shared.Avatar.Enums.AvatarTop.ShortHairTheCaesar"/></item>
+            <item><see cref="F:Falsus.Shared.Avatar.Enums.AvatarTop.ShortHairTheCaesarSidePart"/></item>
+            </list>
+            </remarks>
+        </member>
+        <member name="P:Falsus.Shared.Avatar.AvatarModel.HatColor">
+            <summary>
+            Gets or sets the color of the avatar hat.
+            </summary>
+            <value>
+            One of the <see cref="T:Falsus.Shared.Avatar.Enums.AvatarHatColor"/> values that indicates the color of the hat.
+            </value>
+            <remarks>
+            Hat color is only applied when chosen along with one of the following <see cref="T:Falsus.Shared.Avatar.Enums.AvatarTop"/>:
+            <list type="bullet">
+            <item><see cref="F:Falsus.Shared.Avatar.Enums.AvatarTop.Hijab"/></item>
+            <item><see cref="F:Falsus.Shared.Avatar.Enums.AvatarTop.Turban"/></item>
+            <item><see cref="F:Falsus.Shared.Avatar.Enums.AvatarTop.WinterHat1"/></item>
+            <item><see cref="F:Falsus.Shared.Avatar.Enums.AvatarTop.WinterHat2"/></item>
+            <item><see cref="F:Falsus.Shared.Avatar.Enums.AvatarTop.WinterHat3"/></item>
+            <item><see cref="F:Falsus.Shared.Avatar.Enums.AvatarTop.WinterHat4"/></item>
+            </list>
+            </remarks>
+        </member>
+        <member name="P:Falsus.Shared.Avatar.AvatarModel.MouthType">
+            <summary>
+            Gets or sets the type of the avatar mouth.
+            </summary>
+            <value>
+            One of the <see cref="T:Falsus.Shared.Avatar.Enums.AvatarMouthType"/> values that indicates the type of the mouth.
+            </value>
+        </member>
+        <member name="P:Falsus.Shared.Avatar.AvatarModel.SkinColor">
+            <summary>
+            Gets or sets the avatar skin color.
+            </summary>
+            <value>
+            One of the <see cref="T:Falsus.Shared.Avatar.Enums.AvatarSkinColor"/> values that indicates the color of the skin.
+            </value>
+        </member>
+        <member name="P:Falsus.Shared.Avatar.AvatarModel.Top">
+            <summary>
+            Gets or sets the hair/top accessory of the avatar.
+            </summary>
+            <value>
+            One of the <see cref="T:Falsus.Shared.Avatar.Enums.AvatarTop"/> values that indicates the hair/top of the avatar.
+            </value>
+        </member>
+        <member name="M:Falsus.Shared.Avatar.AvatarModel.CompareTo(Falsus.Shared.Avatar.AvatarModel)">
+            <summary>
+            Compares the current instance with another object of the same type and returns an integer
+            that indicates whether the current instance precedes, follows, or occurs in the same position
+            in the sort order as the other object.
+            </summary>
+            <param name="other">An instance of <see cref="T:Falsus.Shared.Avatar.AvatarModel"/> to compare with this instance.</param>
+            <returns>
+            A value that indicates the relative order of the objects being compared. The return value has these meanings:
+            <list type="table">
+            <listheader>
+            <term>Value</term>
+            <term>Meaning</term>
+            </listheader>
+            <item>
+            <term>Less than zero</term>
+            <term>This instance precedes <paramref name="other"/> in the sort order.</term>
+            </item>
+            <item>
+            <term>Zero</term>
+            <term>This instance occurs in the same position in the sort order as <paramref name="other"/>.</term>
+            </item>
+            <item>
+            <term>Greater than zero</term>
+            <term>This instance follows <paramref name="other"/> in the sort order.</term>
+            </item>
+            </list>
+            </returns>
+        </member>
+        <member name="M:Falsus.Shared.Avatar.AvatarModel.Equals(Falsus.Shared.Avatar.AvatarModel)">
+            <summary>
+            Indicates whether the current <see cref="T:Falsus.Shared.Avatar.AvatarModel"/> is equal to another <see cref="T:Falsus.Shared.Avatar.AvatarModel"/>.
+            </summary>
+            <param name="other">An instance of <see cref="T:Falsus.Shared.Avatar.AvatarModel"/> to compare with this object.</param>
+            <returns>True if the current object is equal to the other parameter; otherwise, false.</returns>
+        </member>
+        <member name="M:Falsus.Shared.Avatar.AvatarModel.Equals(System.Object)">
+            <summary>
+            Indicates whether the current object is equal to another object of the same type.
+            </summary>
+            <param name="obj">An object to compare with this object.</param>
+            <returns>True if the current object is equal to the other parameter; otherwise, false.</returns>
+        </member>
+        <member name="M:Falsus.Shared.Avatar.AvatarModel.GetHashCode">
+            <summary>
+            Calculates the hash for the current instance.
+            </summary>
+            <returns>
+            An hash value based on the hash of a string
+            containing the values of all properties, provided
+            by the default hash function.
+            </returns>
+        </member>
+        <member name="T:Falsus.Shared.Avatar.Enums.AvatarAccessory">
+            <summary>
+            Specifies the Avatar accessory.
+            </summary>
+            <remarks>
+            For more details see Avataar documentation https://getavataaars.com/.
+            </remarks>
+        </member>
+        <member name="F:Falsus.Shared.Avatar.Enums.AvatarAccessory.Blank">
+            <summary>
+            No accessory.
+            </summary>
+        </member>
+        <member name="F:Falsus.Shared.Avatar.Enums.AvatarAccessory.Kurt">
+            <summary>
+            Kurt Cobain sunglasses.
+            </summary>
+        </member>
+        <member name="F:Falsus.Shared.Avatar.Enums.AvatarAccessory.Prescription01">
+            <summary>
+            White prescription glasses.
+            </summary>
+        </member>
+        <member name="F:Falsus.Shared.Avatar.Enums.AvatarAccessory.Prescription02">
+            <summary>
+            Black prescription glasses.
+            </summary>
+        </member>
+        <member name="F:Falsus.Shared.Avatar.Enums.AvatarAccessory.Round">
+            <summary>
+            Round black glasses.
+            </summary>
+        </member>
+        <member name="F:Falsus.Shared.Avatar.Enums.AvatarAccessory.Sunglasses">
+            <summary>
+            Generic sunglasses.
+            </summary>
+        </member>
+        <member name="F:Falsus.Shared.Avatar.Enums.AvatarAccessory.Wayfarers">
+            <summary>
+            Wayfarer sunglasses.
+            </summary>
+        </member>
+        <member name="T:Falsus.Shared.Avatar.Enums.AvatarClotheColor">
+            <summary>
+            Specifies the color of the Avatar clothe.
+            </summary>
+            <remarks>
+            For more details see Avataar documentation https://getavataaars.com/.
+            </remarks>
+        </member>
+        <member name="F:Falsus.Shared.Avatar.Enums.AvatarClotheColor.Black">
+            <summary>
+            Black clothes.
+            </summary>
+        </member>
+        <member name="F:Falsus.Shared.Avatar.Enums.AvatarClotheColor.Blue01">
+            <summary>
+            Light blue clothes.
+            </summary>
+        </member>
+        <member name="F:Falsus.Shared.Avatar.Enums.AvatarClotheColor.Blue02">
+            <summary>
+            Blue clothes.
+            </summary>
+        </member>
+        <member name="F:Falsus.Shared.Avatar.Enums.AvatarClotheColor.Blue03">
+            <summary>
+            Dark blue clothes.
+            </summary>
+        </member>
+        <member name="F:Falsus.Shared.Avatar.Enums.AvatarClotheColor.Gray01">
+            <summary>
+            Light gray clothes.
+            </summary>
+        </member>
+        <member name="F:Falsus.Shared.Avatar.Enums.AvatarClotheColor.Gray02">
+            <summary>
+            Dark gray clothes.
+            </summary>
+        </member>
+        <member name="F:Falsus.Shared.Avatar.Enums.AvatarClotheColor.Heather">
+            <summary>
+            Heather-gray clothes.
+            </summary>
+        </member>
+        <member name="F:Falsus.Shared.Avatar.Enums.AvatarClotheColor.PastelBlue">
+            <summary>
+            Pastel blue clothes.
+            </summary>
+        </member>
+        <member name="F:Falsus.Shared.Avatar.Enums.AvatarClotheColor.PastelGreen">
+            <summary>
+            Pastel green clothes.
+            </summary>
+        </member>
+        <member name="F:Falsus.Shared.Avatar.Enums.AvatarClotheColor.PastelOrange">
+            <summary>
+            Pastel orange clothes.
+            </summary>
+        </member>
+        <member name="F:Falsus.Shared.Avatar.Enums.AvatarClotheColor.PastelRed">
+            <summary>
+            Pastel red clothes.
+            </summary>
+        </member>
+        <member name="F:Falsus.Shared.Avatar.Enums.AvatarClotheColor.PastelYellow">
+            <summary>
+            Pastel yellow clothes.
+            </summary>
+        </member>
+        <member name="F:Falsus.Shared.Avatar.Enums.AvatarClotheColor.Pink">
+            <summary>
+            Pink clothes.
+            </summary>
+        </member>
+        <member name="F:Falsus.Shared.Avatar.Enums.AvatarClotheColor.Red">
+            <summary>
+            Red clothes.
+            </summary>
+        </member>
+        <member name="F:Falsus.Shared.Avatar.Enums.AvatarClotheColor.White">
+            <summary>
+            White clothes.
+            </summary>
+        </member>
+        <member name="T:Falsus.Shared.Avatar.Enums.AvatarClotheGraphicType">
+            <summary>
+            Specifies the graphic to apply on the Avatar clothes.
+            </summary>
+            <remarks>
+            For more details see Avataar documentation https://getavataaars.com/.
+            </remarks>
+        </member>
+        <member name="F:Falsus.Shared.Avatar.Enums.AvatarClotheGraphicType.Bat">
+            <summary>
+            Batman-like bat drawing.
+            </summary>
+        </member>
+        <member name="F:Falsus.Shared.Avatar.Enums.AvatarClotheGraphicType.Cumbia">
+            <summary>
+            "Cumbia!" message.
+            </summary>
+        </member>
+        <member name="F:Falsus.Shared.Avatar.Enums.AvatarClotheGraphicType.Deer">
+            <summary>
+            Deer drawing.
+            </summary>
+        </member>
+        <member name="F:Falsus.Shared.Avatar.Enums.AvatarClotheGraphicType.Diamond">
+            <summary>
+            Shining diamong drawing.
+            </summary>
+        </member>
+        <member name="F:Falsus.Shared.Avatar.Enums.AvatarClotheGraphicType.Hola">
+            <summary>
+            "Hola!" message.
+            </summary>
+        </member>
+        <member name="F:Falsus.Shared.Avatar.Enums.AvatarClotheGraphicType.Pizza">
+            <summary>
+            Pizza slice drawing.
+            </summary>
+        </member>
+        <member name="F:Falsus.Shared.Avatar.Enums.AvatarClotheGraphicType.Resist">
+            <summary>
+            "Resist!" message.
+            </summary>
+        </member>
+        <member name="F:Falsus.Shared.Avatar.Enums.AvatarClotheGraphicType.Selena">
+            <summary>
+            "Selena" logo.
+            </summary>
+        </member>
+        <member name="F:Falsus.Shared.Avatar.Enums.AvatarClotheGraphicType.Bear">
+            <summary>
+            Bear head drawing.
+            </summary>
+        </member>
+        <member name="F:Falsus.Shared.Avatar.Enums.AvatarClotheGraphicType.SkullOutline">
+            <summary>
+            Skull outline drawing.
+            </summary>
+        </member>
+        <member name="F:Falsus.Shared.Avatar.Enums.AvatarClotheGraphicType.Skull">
+            <summary>
+            Skull drawing.
+            </summary>
+        </member>
+        <member name="T:Falsus.Shared.Avatar.Enums.AvatarClotheType">
+            <summary>
+            Specifies type of clothe of the Avatar.
+            </summary>
+            <remarks>
+            For more details see Avataar documentation https://getavataaars.com/.
+            </remarks>
+        </member>
+        <member name="F:Falsus.Shared.Avatar.Enums.AvatarClotheType.BlazerShirt">
+            <summary>
+            Blazer and shirt.
+            </summary>
+        </member>
+        <member name="F:Falsus.Shared.Avatar.Enums.AvatarClotheType.BlazerSweater">
+            <summary>
+            Blazer and sweater.
+            </summary>
+        </member>
+        <member name="F:Falsus.Shared.Avatar.Enums.AvatarClotheType.CollarSweater">
+            <summary>
+            Sweater with collar.
+            </summary>
+        </member>
+        <member name="F:Falsus.Shared.Avatar.Enums.AvatarClotheType.GraphicShirt">
+            <summary>
+            Shirt with graphic.
+            </summary>
+        </member>
+        <member name="F:Falsus.Shared.Avatar.Enums.AvatarClotheType.Hoodie">
+            <summary>
+            Hoodie.
+            </summary>
+        </member>
+        <member name="F:Falsus.Shared.Avatar.Enums.AvatarClotheType.Overall">
+            <summary>
+            Overall.
+            </summary>
+        </member>
+        <member name="F:Falsus.Shared.Avatar.Enums.AvatarClotheType.ShirtCrewNeck">
+            <summary>
+            Crew neck shirt.
+            </summary>
+        </member>
+        <member name="F:Falsus.Shared.Avatar.Enums.AvatarClotheType.ShirtScoopNeck">
+            <summary>
+            Scoop neck shirt.
+            </summary>
+        </member>
+        <member name="F:Falsus.Shared.Avatar.Enums.AvatarClotheType.ShirtVNeck">
+            <summary>
+            V neck shirt.
+            </summary>
+        </member>
+        <member name="T:Falsus.Shared.Avatar.Enums.AvatarEyebrowType">
+            <summary>
+            Specifies the Avatar eyebrow type.
+            </summary>
+            <remarks>
+            For more details see Avataar documentation https://getavataaars.com/.
+            </remarks>
+        </member>
+        <member name="F:Falsus.Shared.Avatar.Enums.AvatarEyebrowType.Angry">
+            <summary>
+            Angry eyebrows.
+            </summary>
+        </member>
+        <member name="F:Falsus.Shared.Avatar.Enums.AvatarEyebrowType.AngryNatural">
+            <summary>
+            Angry (thicker, less raised) eyebrows.
+            </summary>
+        </member>
+        <member name="F:Falsus.Shared.Avatar.Enums.AvatarEyebrowType.Default">
+            <summary>
+            Default eyebrows.
+            </summary>
+        </member>
+        <member name="F:Falsus.Shared.Avatar.Enums.AvatarEyebrowType.DefaultNatural">
+            <summary>
+            Default (thicker, semi-circle like) eyebrows.
+            </summary>
+        </member>
+        <member name="F:Falsus.Shared.Avatar.Enums.AvatarEyebrowType.FlatNatural">
+            <summary>
+            Flat eyebrows.
+            </summary>
+        </member>
+        <member name="F:Falsus.Shared.Avatar.Enums.AvatarEyebrowType.RaisedExcited">
+            <summary>
+            Excited eyebrows.
+            </summary>
+        </member>
+        <member name="F:Falsus.Shared.Avatar.Enums.AvatarEyebrowType.RaisedExcitedNatural">
+            <summary>
+            Excited (thicker, semi-circle like) eyebrows.
+            </summary>
+        </member>
+        <member name="F:Falsus.Shared.Avatar.Enums.AvatarEyebrowType.SadConcerned">
+            <summary>
+            Sad/Concerned eyebrows.
+            </summary>
+        </member>
+        <member name="F:Falsus.Shared.Avatar.Enums.AvatarEyebrowType.SadConcernedNatural">
+            <summary>
+            Sad/Concerned (thicker, semi-circle like) eyebrows.
+            </summary>
+        </member>
+        <member name="F:Falsus.Shared.Avatar.Enums.AvatarEyebrowType.UnibrowNatural">
+            <summary>
+            Unibrows.
+            </summary>
+        </member>
+        <member name="F:Falsus.Shared.Avatar.Enums.AvatarEyebrowType.UpDown">
+            <summary>
+            One raised eyebrow.
+            </summary>
+        </member>
+        <member name="F:Falsus.Shared.Avatar.Enums.AvatarEyebrowType.UpDownNatural">
+            <summary>
+            One raised (thicker, semi-circle like) eyebrow.
+            </summary>
+        </member>
+        <member name="T:Falsus.Shared.Avatar.Enums.AvatarEyeType">
+            <summary>
+            Specifies the type of the Avatar eyes.
+            </summary>
+            <remarks>
+            For more details see Avataar documentation https://getavataaars.com/.
+            </remarks>
+        </member>
+        <member name="F:Falsus.Shared.Avatar.Enums.AvatarEyeType.Close">
+            <summary>
+            Closed eyes.
+            </summary>
+        </member>
+        <member name="F:Falsus.Shared.Avatar.Enums.AvatarEyeType.Cry">
+            <summary>
+            Crying eyes (with tear drop).
+            </summary>
+        </member>
+        <member name="F:Falsus.Shared.Avatar.Enums.AvatarEyeType.Default">
+            <summary>
+            Default eyes.
+            </summary>
+        </member>
+        <member name="F:Falsus.Shared.Avatar.Enums.AvatarEyeType.Dizzy">
+            <summary>
+            Dizzy eyes - (X.X).
+            </summary>
+        </member>
+        <member name="F:Falsus.Shared.Avatar.Enums.AvatarEyeType.EyeRoll">
+            <summary>
+            Eyes rolled-up.
+            </summary>
+        </member>
+        <member name="F:Falsus.Shared.Avatar.Enums.AvatarEyeType.Happy">
+            <summary>
+            Happy eyes - (^.^).
+            </summary>
+        </member>
+        <member name="F:Falsus.Shared.Avatar.Enums.AvatarEyeType.Hearts">
+            <summary>
+            Heart eyes.
+            </summary>
+        </member>
+        <member name="F:Falsus.Shared.Avatar.Enums.AvatarEyeType.Side">
+            <summary>
+            Eyes looking sideways.
+            </summary>
+        </member>
+        <member name="F:Falsus.Shared.Avatar.Enums.AvatarEyeType.Squint">
+            <summary>
+            Squinted eyes.
+            </summary>
+        </member>
+        <member name="F:Falsus.Shared.Avatar.Enums.AvatarEyeType.Surprised">
+            <summary>
+            Surprised eyes.
+            </summary>
+        </member>
+        <member name="F:Falsus.Shared.Avatar.Enums.AvatarEyeType.Wink">
+            <summary>
+            Winking eyes.
+            </summary>
+        </member>
+        <member name="F:Falsus.Shared.Avatar.Enums.AvatarEyeType.WinkWacky">
+            <summary>
+            Waky winked eyes - (-.o).
+            </summary>
+        </member>
+        <member name="T:Falsus.Shared.Avatar.Enums.AvatarFacialHairColor">
+            <summary>
+            Specifies the color of the Avatar's facial hair.
+            </summary>
+            <remarks>
+            For more details see Avataar documentation https://getavataaars.com/.
+            </remarks>
+        </member>
+        <member name="F:Falsus.Shared.Avatar.Enums.AvatarFacialHairColor.Auburn">
+            <summary>
+            Auburn facial hair.
+            </summary>
+        </member>
+        <member name="F:Falsus.Shared.Avatar.Enums.AvatarFacialHairColor.Black">
+            <summary>
+            Black facial hair.
+            </summary>
+        </member>
+        <member name="F:Falsus.Shared.Avatar.Enums.AvatarFacialHairColor.Blonde">
+            <summary>
+            Blonde facial hair.
+            </summary>
+        </member>
+        <member name="F:Falsus.Shared.Avatar.Enums.AvatarFacialHairColor.BlondeGolden">
+            <summary>
+            Golden facial hair.
+            </summary>
+        </member>
+        <member name="F:Falsus.Shared.Avatar.Enums.AvatarFacialHairColor.Brown">
+            <summary>
+            Brown facial hair.
+            </summary>
+        </member>
+        <member name="F:Falsus.Shared.Avatar.Enums.AvatarFacialHairColor.BrownDark">
+            <summary>
+            Dark brown facial hair.
+            </summary>
+        </member>
+        <member name="F:Falsus.Shared.Avatar.Enums.AvatarFacialHairColor.Platinum">
+            <summary>
+            Platinum facial hair.
+            </summary>
+        </member>
+        <member name="F:Falsus.Shared.Avatar.Enums.AvatarFacialHairColor.Red">
+            <summary>
+            Red facial hair.
+            </summary>
+        </member>
+        <member name="T:Falsus.Shared.Avatar.Enums.AvatarFacialHairType">
+            <summary>
+            Specifies the type of the Avatar's facial hair.
+            </summary>
+            <remarks>
+            For more details see Avataar documentation https://getavataaars.com/.
+            </remarks>
+        </member>
+        <member name="F:Falsus.Shared.Avatar.Enums.AvatarFacialHairType.Blank">
+            <summary>
+            No facial hair.
+            </summary>
+        </member>
+        <member name="F:Falsus.Shared.Avatar.Enums.AvatarFacialHairType.BeardMedium">
+            <summary>
+            Medium beard.
+            </summary>
+        </member>
+        <member name="F:Falsus.Shared.Avatar.Enums.AvatarFacialHairType.BeardLight">
+            <summary>
+            Light beard.
+            </summary>
+        </member>
+        <member name="F:Falsus.Shared.Avatar.Enums.AvatarFacialHairType.BeardMajestic">
+            <summary>
+            Majestic beard.
+            </summary>
+        </member>
+        <member name="F:Falsus.Shared.Avatar.Enums.AvatarFacialHairType.MoustacheFancy">
+            <summary>
+            Fancy moustache.
+            </summary>
+        </member>
+        <member name="F:Falsus.Shared.Avatar.Enums.AvatarFacialHairType.MoustacheMagnum">
+            <summary>
+            Magnum moustache.
+            </summary>
+        </member>
+        <member name="T:Falsus.Shared.Avatar.Enums.AvatarHairColor">
+            <summary>
+            Specifies the color of the Avatar's hair.
+            </summary>
+            <remarks>
+            For more details see Avataar documentation https://getavataaars.com/.
+            </remarks>
+        </member>
+        <member name="F:Falsus.Shared.Avatar.Enums.AvatarHairColor.Auburn">
+            <summary>
+            Auburn hair.
+            </summary>
+        </member>
+        <member name="F:Falsus.Shared.Avatar.Enums.AvatarHairColor.Black">
+            <summary>
+            Black hair.
+            </summary>
+        </member>
+        <member name="F:Falsus.Shared.Avatar.Enums.AvatarHairColor.Blonde">
+            <summary>
+            Blond hair.
+            </summary>
+        </member>
+        <member name="F:Falsus.Shared.Avatar.Enums.AvatarHairColor.BlondeGolden">
+            <summary>
+            Golden hair.
+            </summary>
+        </member>
+        <member name="F:Falsus.Shared.Avatar.Enums.AvatarHairColor.Brown">
+            <summary>
+            Brown hair.
+            </summary>
+        </member>
+        <member name="F:Falsus.Shared.Avatar.Enums.AvatarHairColor.BrownDark">
+            <summary>
+            Dark brown hair.
+            </summary>
+        </member>
+        <member name="F:Falsus.Shared.Avatar.Enums.AvatarHairColor.PastelPink">
+            <summary>
+            Pink hair.
+            </summary>
+        </member>
+        <member name="F:Falsus.Shared.Avatar.Enums.AvatarHairColor.Platinum">
+            <summary>
+            Platinum hair.
+            </summary>
+        </member>
+        <member name="F:Falsus.Shared.Avatar.Enums.AvatarHairColor.Red">
+            <summary>
+            Red hair.
+            </summary>
+        </member>
+        <member name="F:Falsus.Shared.Avatar.Enums.AvatarHairColor.SilverGray">
+            <summary>
+            Gray hair.
+            </summary>
+        </member>
+        <member name="T:Falsus.Shared.Avatar.Enums.AvatarHatColor">
+            <summary>
+            Specifies the color of the Avatar's hat.
+            </summary>
+            <remarks>
+            For more details see Avataar documentation https://getavataaars.com/.
+            </remarks>
+        </member>
+        <member name="F:Falsus.Shared.Avatar.Enums.AvatarHatColor.Black">
+            <summary>
+            Black.
+            </summary>
+        </member>
+        <member name="F:Falsus.Shared.Avatar.Enums.AvatarHatColor.Blue01">
+            <summary>
+            Light blue.
+            </summary>
+        </member>
+        <member name="F:Falsus.Shared.Avatar.Enums.AvatarHatColor.Blue02">
+            <summary>
+            Medium blue.
+            </summary>
+        </member>
+        <member name="F:Falsus.Shared.Avatar.Enums.AvatarHatColor.Blue03">
+            <summary>
+            Dark blue.
+            </summary>
+        </member>
+        <member name="F:Falsus.Shared.Avatar.Enums.AvatarHatColor.Gray01">
+            <summary>
+            Light gray.
+            </summary>
+        </member>
+        <member name="F:Falsus.Shared.Avatar.Enums.AvatarHatColor.Gray02">
+            <summary>
+            Medium gray.
+            </summary>
+        </member>
+        <member name="F:Falsus.Shared.Avatar.Enums.AvatarHatColor.Heather">
+            <summary>
+            Heather.
+            </summary>
+        </member>
+        <member name="F:Falsus.Shared.Avatar.Enums.AvatarHatColor.PastelBlue">
+            <summary>
+            Pastel blue.
+            </summary>
+        </member>
+        <member name="F:Falsus.Shared.Avatar.Enums.AvatarHatColor.PastelGreen">
+            <summary>
+            Pastel green.
+            </summary>
+        </member>
+        <member name="F:Falsus.Shared.Avatar.Enums.AvatarHatColor.PastelOrange">
+            <summary>
+            Pastel orange.
+            </summary>
+        </member>
+        <member name="F:Falsus.Shared.Avatar.Enums.AvatarHatColor.PastelRed">
+            <summary>
+            Pastel red.
+            </summary>
+        </member>
+        <member name="F:Falsus.Shared.Avatar.Enums.AvatarHatColor.PastelYellow">
+            <summary>
+            Pastel yellow.
+            </summary>
+        </member>
+        <member name="F:Falsus.Shared.Avatar.Enums.AvatarHatColor.Pink">
+            <summary>
+            Pink.
+            </summary>
+        </member>
+        <member name="F:Falsus.Shared.Avatar.Enums.AvatarHatColor.Red">
+            <summary>
+            Red.
+            </summary>
+        </member>
+        <member name="F:Falsus.Shared.Avatar.Enums.AvatarHatColor.White">
+            <summary>
+            White.
+            </summary>
+        </member>
+        <member name="T:Falsus.Shared.Avatar.Enums.AvatarMouthType">
+            <summary>
+            Specifies the type of the Avatar mouth.
+            </summary>
+            <remarks>
+            For more details see Avataar documentation https://getavataaars.com/.
+            </remarks>
+        </member>
+        <member name="F:Falsus.Shared.Avatar.Enums.AvatarMouthType.Concerned">
+            <summary>
+            Concerned mouth.
+            </summary>
+        </member>
+        <member name="F:Falsus.Shared.Avatar.Enums.AvatarMouthType.Default">
+            <summary>
+            Default (happy) mouth.
+            </summary>
+        </member>
+        <member name="F:Falsus.Shared.Avatar.Enums.AvatarMouthType.Disbelief">
+            <summary>
+            Disbelief mouth.
+            </summary>
+        </member>
+        <member name="F:Falsus.Shared.Avatar.Enums.AvatarMouthType.Eating">
+            <summary>
+            Eating mouth.
+            </summary>
+        </member>
+        <member name="F:Falsus.Shared.Avatar.Enums.AvatarMouthType.Grimace">
+            <summary>
+            Grimace mouth.
+            </summary>
+        </member>
+        <member name="F:Falsus.Shared.Avatar.Enums.AvatarMouthType.Sad">
+            <summary>
+            Sad mouth.
+            </summary>
+        </member>
+        <member name="F:Falsus.Shared.Avatar.Enums.AvatarMouthType.ScreamOpen">
+            <summary>
+            Screaming mouth.
+            </summary>
+        </member>
+        <member name="F:Falsus.Shared.Avatar.Enums.AvatarMouthType.Serious">
+            <summary>
+            Serious mouth.
+            </summary>
+        </member>
+        <member name="F:Falsus.Shared.Avatar.Enums.AvatarMouthType.Smile">
+            <summary>
+            Smiling mouth.
+            </summary>
+        </member>
+        <member name="F:Falsus.Shared.Avatar.Enums.AvatarMouthType.Tongue">
+            <summary>
+            Tongue out.
+            </summary>
+        </member>
+        <member name="F:Falsus.Shared.Avatar.Enums.AvatarMouthType.Twinkle">
+            <summary>
+            Twinkle mouth.
+            </summary>
+        </member>
+        <member name="F:Falsus.Shared.Avatar.Enums.AvatarMouthType.Vomit">
+            <summary>
+            Vomiting.
+            </summary>
+        </member>
+        <member name="T:Falsus.Shared.Avatar.Enums.AvatarSkinColor">
+            <summary>
+            Specifies the color of the Avatar skin.
+            </summary>
+            <remarks>
+            For more details see Avataar documentation https://getavataaars.com/.
+            </remarks>
+        </member>
+        <member name="F:Falsus.Shared.Avatar.Enums.AvatarSkinColor.Tanned">
+            <summary>
+            Tanned skin.
+            </summary>
+        </member>
+        <member name="F:Falsus.Shared.Avatar.Enums.AvatarSkinColor.Yellow">
+            <summary>
+            Yellow skin.
+            </summary>
+        </member>
+        <member name="F:Falsus.Shared.Avatar.Enums.AvatarSkinColor.Pale">
+            <summary>
+            Pale skin.
+            </summary>
+        </member>
+        <member name="F:Falsus.Shared.Avatar.Enums.AvatarSkinColor.Light">
+            <summary>
+            Light skin.
+            </summary>
+        </member>
+        <member name="F:Falsus.Shared.Avatar.Enums.AvatarSkinColor.Brown">
+            <summary>
+            Brown skin.
+            </summary>
+        </member>
+        <member name="F:Falsus.Shared.Avatar.Enums.AvatarSkinColor.DarkBrown">
+            <summary>
+            Dark skin.
+            </summary>
+        </member>
+        <member name="F:Falsus.Shared.Avatar.Enums.AvatarSkinColor.Black">
+            <summary>
+            Black skin.
+            </summary>
+        </member>
+        <member name="T:Falsus.Shared.Avatar.Enums.AvatarStyle">
+            <summary>
+            Specifies the type of the Avatar style.
+            </summary>
+            <remarks>
+            For more details see Avataar documentation https://getavataaars.com/.
+            </remarks>
+        </member>
+        <member name="F:Falsus.Shared.Avatar.Enums.AvatarStyle.Circle">
+            <summary>
+            Draws the avatar cropped by a blue circle.
+            </summary>
+        </member>
+        <member name="F:Falsus.Shared.Avatar.Enums.AvatarStyle.Transparent">
+            <summary>
+            Draws the avatar with transparent background.
+            </summary>
+        </member>
+        <member name="T:Falsus.Shared.Avatar.Enums.AvatarTop">
+            <summary>
+            Specifies the hair/top of the Avatar.
+            </summary>
+            <remarks>
+            For more details see Avataar documentation https://getavataaars.com/.
+            </remarks>
+        </member>
+        <member name="F:Falsus.Shared.Avatar.Enums.AvatarTop.NoHair">
+            <summary>
+            Bald/no hair.
+            </summary>
+        </member>
+        <member name="F:Falsus.Shared.Avatar.Enums.AvatarTop.Eyepatch">
+            <summary>
+            Bald/no hair with an eyepatch.
+            </summary>
+        </member>
+        <member name="F:Falsus.Shared.Avatar.Enums.AvatarTop.Hat">
+            <summary>
+            Hat.
+            </summary>
+        </member>
+        <member name="F:Falsus.Shared.Avatar.Enums.AvatarTop.Hijab">
+            <summary>
+            Hijab.
+            </summary>
+        </member>
+        <member name="F:Falsus.Shared.Avatar.Enums.AvatarTop.Turban">
+            <summary>
+            Turban.
+            </summary>
+        </member>
+        <member name="F:Falsus.Shared.Avatar.Enums.AvatarTop.WinterHat1">
+            <summary>
+            Square winter hat.
+            </summary>
+        </member>
+        <member name="F:Falsus.Shared.Avatar.Enums.AvatarTop.WinterHat2">
+            <summary>
+            Round winter hat.
+            </summary>
+        </member>
+        <member name="F:Falsus.Shared.Avatar.Enums.AvatarTop.WinterHat3">
+            <summary>
+            Christmas winter hat.
+            </summary>
+        </member>
+        <member name="F:Falsus.Shared.Avatar.Enums.AvatarTop.WinterHat4">
+            <summary>
+            Round winter hat with cat ears.
+            </summary>
+        </member>
+        <member name="F:Falsus.Shared.Avatar.Enums.AvatarTop.LongHairBigHair">
+            <summary>
+            Big long hair.
+            </summary>
+        </member>
+        <member name="F:Falsus.Shared.Avatar.Enums.AvatarTop.LongHairBob">
+            <summary>
+            Shoulder hair.
+            </summary>
+        </member>
+        <member name="F:Falsus.Shared.Avatar.Enums.AvatarTop.LongHairBun">
+            <summary>
+            Bun.
+            </summary>
+        </member>
+        <member name="F:Falsus.Shared.Avatar.Enums.AvatarTop.LongHairCurly">
+            <summary>
+            Long curly hair.
+            </summary>
+        </member>
+        <member name="F:Falsus.Shared.Avatar.Enums.AvatarTop.LongHairCurvy">
+            <summary>
+            Long curvy hair.
+            </summary>
+        </member>
+        <member name="F:Falsus.Shared.Avatar.Enums.AvatarTop.LongHairDreads">
+            <summary>
+            Dreads.
+            </summary>
+        </member>
+        <member name="F:Falsus.Shared.Avatar.Enums.AvatarTop.LongHairFrida">
+            <summary>
+            Frida Kahlo hairstyle with accessories.
+            </summary>
+        </member>
+        <member name="F:Falsus.Shared.Avatar.Enums.AvatarTop.LongHairFro">
+            <summary>
+            Afro.
+            </summary>
+        </member>
+        <member name="F:Falsus.Shared.Avatar.Enums.AvatarTop.LongHairFroBand">
+            <summary>
+            Afro hair, with band.
+            </summary>
+        </member>
+        <member name="F:Falsus.Shared.Avatar.Enums.AvatarTop.LongHairNotTooLong">
+            <summary>
+            Shoulder hair.
+            </summary>
+        </member>
+        <member name="F:Falsus.Shared.Avatar.Enums.AvatarTop.LongHairShavedSides">
+            <summary>
+            Long, shaved on the sides.
+            </summary>
+        </member>
+        <member name="F:Falsus.Shared.Avatar.Enums.AvatarTop.LongHairMiaWallace">
+            <summary>
+            Mia Wallace hairstyle.
+            </summary>
+        </member>
+        <member name="F:Falsus.Shared.Avatar.Enums.AvatarTop.LongHairStraight">
+            <summary>
+            Straight long hair.
+            </summary>
+        </member>
+        <member name="F:Falsus.Shared.Avatar.Enums.AvatarTop.LongHairStraight2">
+            <summary>
+            Straight long hair (curved on the bottom).
+            </summary>
+        </member>
+        <member name="F:Falsus.Shared.Avatar.Enums.AvatarTop.LongHairStraightStrand">
+            <summary>
+            Straight long stranded hair.
+            </summary>
+        </member>
+        <member name="F:Falsus.Shared.Avatar.Enums.AvatarTop.ShortHairDreads01">
+            <summary>
+            Short hair with dreads.
+            </summary>
+        </member>
+        <member name="F:Falsus.Shared.Avatar.Enums.AvatarTop.ShortHairDreads02">
+            <summary>
+            Short hair with big dreads.
+            </summary>
+        </member>
+        <member name="F:Falsus.Shared.Avatar.Enums.AvatarTop.ShortHairFrizzle">
+            <summary>
+            Frizzled hair.
+            </summary>
+        </member>
+        <member name="F:Falsus.Shared.Avatar.Enums.AvatarTop.ShortHairShaggyMullet">
+            <summary>
+            Short hair with mullet.
+            </summary>
+        </member>
+        <member name="F:Falsus.Shared.Avatar.Enums.AvatarTop.ShortHairShortCurly">
+            <summary>
+            Short curly hair.
+            </summary>
+        </member>
+        <member name="F:Falsus.Shared.Avatar.Enums.AvatarTop.ShortHairShortFlat">
+            <summary>
+            Short flat hair.
+            </summary>
+        </member>
+        <member name="F:Falsus.Shared.Avatar.Enums.AvatarTop.ShortHairShortRound">
+            <summary>
+            Short round hair.
+            </summary>
+        </member>
+        <member name="F:Falsus.Shared.Avatar.Enums.AvatarTop.ShortHairShortWaved">
+            <summary>
+            Short waved hair.
+            </summary>
+        </member>
+        <member name="F:Falsus.Shared.Avatar.Enums.AvatarTop.ShortHairSides">
+            <summary>
+            Bald on top, hair on the sides.
+            </summary>
+        </member>
+        <member name="F:Falsus.Shared.Avatar.Enums.AvatarTop.ShortHairTheCaesar">
+            <summary>
+            The Caesar hairstyle.
+            </summary>
+        </member>
+        <member name="F:Falsus.Shared.Avatar.Enums.AvatarTop.ShortHairTheCaesarSidePart">
+            <summary>
+            The Caesar hairstyle with side part.
+            </summary>
+        </member>
         <member name="T:Falsus.Shared.Models.CityModel">
             <summary>
             This class represents a geographic city.

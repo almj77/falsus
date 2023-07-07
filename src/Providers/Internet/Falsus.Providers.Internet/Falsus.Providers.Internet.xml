@@ -4,6 +4,1280 @@
         <name>Falsus.Providers.Internet</name>
     </assembly>
     <members>
+        <member name="T:Falsus.Providers.Internet.AvatarProvider">
+            <summary>
+            Represents a provider of <see cref="T:Falsus.Shared.Avatar.AvatarModel"/> values.
+            </summary>
+            <seealso cref="T:Falsus.Providers.DataGeneratorProvider`1"/>
+        </member>
+        <member name="F:Falsus.Providers.Internet.AvatarProvider.configuration">
+            <summary>
+            The configuration of this provider.
+            </summary>
+        </member>
+        <member name="F:Falsus.Providers.Internet.AvatarProvider.accessories">
+            <summary>
+            An array of <see cref="T:Falsus.Shared.Avatar.Enums.AvatarAccessory"/> from which a
+            pseudo-random value will be taken and used to populate the
+            <see cref="T:Falsus.Shared.Avatar.AvatarModel"/> instance.
+            </summary>
+            <remarks>
+            Initially it can contain all possible values for the <see cref="T:Falsus.Shared.Avatar.Enums.AvatarAccessory"/>
+            enum, or the values from the <see cref="P:Falsus.Providers.Internet.AvatarProviderConfiguration.ValidAccessories"/>
+            if any.
+            If the <see cref="P:Falsus.Providers.Internet.AvatarProviderConfiguration.FilterAccessories"/> function is specified
+            it will be invoked during the data generation process in order to filter this collection.
+            </remarks>
+        </member>
+        <member name="F:Falsus.Providers.Internet.AvatarProvider.clotheColors">
+            <summary>
+            An array of <see cref="T:Falsus.Shared.Avatar.Enums.AvatarClotheColor"/> from which a
+            pseudo-random value will be taken and used to populate the
+            <see cref="T:Falsus.Shared.Avatar.AvatarModel"/> instance.
+            </summary>
+            <remarks>
+            Initially it can contain all possible values for the <see cref="T:Falsus.Shared.Avatar.Enums.AvatarClotheColor"/>
+            enum, or the values from the <see cref="P:Falsus.Providers.Internet.AvatarProviderConfiguration.ValidClotheColors"/>
+            if any.
+            If the <see cref="P:Falsus.Providers.Internet.AvatarProviderConfiguration.FilterClotheColors"/> function is specified
+            it will be invoked during the data generation process in order to filter this collection.
+            </remarks>
+        </member>
+        <member name="F:Falsus.Providers.Internet.AvatarProvider.clotheTypes">
+            <summary>
+            An array of <see cref="T:Falsus.Shared.Avatar.Enums.AvatarClotheType"/> from which a
+            pseudo-random value will be taken and used to populate the
+            <see cref="T:Falsus.Shared.Avatar.AvatarModel"/> instance.
+            </summary>
+            <remarks>
+            Initially it can contain all possible values for the <see cref="T:Falsus.Shared.Avatar.Enums.AvatarClotheType"/>
+            enum, or the values from the <see cref="P:Falsus.Providers.Internet.AvatarProviderConfiguration.ValidClotheTypes"/>
+            if any.
+            If the <see cref="P:Falsus.Providers.Internet.AvatarProviderConfiguration.FilterClotheTypes"/> function is specified
+            it will be invoked during the data generation process in order to filter this collection.
+            </remarks>
+        </member>
+        <member name="F:Falsus.Providers.Internet.AvatarProvider.clotheGraphicTypes">
+            <summary>
+            An array of <see cref="T:Falsus.Shared.Avatar.Enums.AvatarClotheGraphicType"/> from which a
+            pseudo-random value will be taken and used to populate the
+            <see cref="T:Falsus.Shared.Avatar.AvatarModel"/> instance.
+            </summary>
+            <remarks>
+            Initially it can contain all possible values for the <see cref="T:Falsus.Shared.Avatar.Enums.AvatarClotheGraphicType"/>
+            enum, or the values from the <see cref="P:Falsus.Providers.Internet.AvatarProviderConfiguration.ValidClotheGraphicTypes"/>
+            if any.
+            If the <see cref="P:Falsus.Providers.Internet.AvatarProviderConfiguration.FilterClotheGraphicTypes"/> function is specified
+            it will be invoked during the data generation process in order to filter this collection.
+            </remarks>
+        </member>
+        <member name="F:Falsus.Providers.Internet.AvatarProvider.eyebrowTypes">
+            <summary>
+            An array of <see cref="T:Falsus.Shared.Avatar.Enums.AvatarEyebrowType"/> from which a
+            pseudo-random value will be taken and used to populate the
+            <see cref="T:Falsus.Shared.Avatar.AvatarModel"/> instance.
+            </summary>
+            <remarks>
+            Initially it can contain all possible values for the <see cref="T:Falsus.Shared.Avatar.Enums.AvatarEyebrowType"/>
+            enum, or the values from the <see cref="P:Falsus.Providers.Internet.AvatarProviderConfiguration.ValidEyebrowTypes"/>
+            if any.
+            If the <see cref="P:Falsus.Providers.Internet.AvatarProviderConfiguration.FilterEyebrowTypes"/> function is specified
+            it will be invoked during the data generation process in order to filter this collection.
+            </remarks>
+        </member>
+        <member name="F:Falsus.Providers.Internet.AvatarProvider.eyeTypes">
+            <summary>
+            An array of <see cref="T:Falsus.Shared.Avatar.Enums.AvatarEyeType"/> from which a
+            pseudo-random value will be taken and used to populate the
+            <see cref="T:Falsus.Shared.Avatar.AvatarModel"/> instance.
+            </summary>
+            <remarks>
+            Initially it can contain all possible values for the <see cref="T:Falsus.Shared.Avatar.Enums.AvatarEyeType"/>
+            enum, or the values from the <see cref="P:Falsus.Providers.Internet.AvatarProviderConfiguration.ValidEyeTypes"/>
+            if any.
+            If the <see cref="P:Falsus.Providers.Internet.AvatarProviderConfiguration.FilterEyeTypes"/> function is specified
+            it will be invoked during the data generation process in order to filter this collection.
+            </remarks>
+        </member>
+        <member name="F:Falsus.Providers.Internet.AvatarProvider.facialHairColors">
+            <summary>
+            An array of <see cref="T:Falsus.Shared.Avatar.Enums.AvatarFacialHairColor"/> from which a
+            pseudo-random value will be taken and used to populate the
+            <see cref="T:Falsus.Shared.Avatar.AvatarModel"/> instance.
+            </summary>
+            <remarks>
+            Initially it can contain all possible values for the <see cref="T:Falsus.Shared.Avatar.Enums.AvatarFacialHairColor"/>
+            enum, or the values from the <see cref="P:Falsus.Providers.Internet.AvatarProviderConfiguration.ValidFacialHairColors"/>
+            if any.
+            If the <see cref="P:Falsus.Providers.Internet.AvatarProviderConfiguration.FilterFacialHairColors"/> function is specified
+            it will be invoked during the data generation process in order to filter this collection.
+            </remarks>
+        </member>
+        <member name="F:Falsus.Providers.Internet.AvatarProvider.facialHairTypes">
+            <summary>
+            An array of <see cref="T:Falsus.Shared.Avatar.Enums.AvatarFacialHairType"/> from which a
+            pseudo-random value will be taken and used to populate the
+            <see cref="T:Falsus.Shared.Avatar.AvatarModel"/> instance.
+            </summary>
+            <remarks>
+            Initially it can contain all possible values for the <see cref="T:Falsus.Shared.Avatar.Enums.AvatarFacialHairType"/>
+            enum, or the values from the <see cref="P:Falsus.Providers.Internet.AvatarProviderConfiguration.ValidFacialHairTypes"/>
+            if any.
+            If the <see cref="P:Falsus.Providers.Internet.AvatarProviderConfiguration.FilterFacialHairTypes"/> function is specified
+            it will be invoked during the data generation process in order to filter this collection.
+            </remarks>
+        </member>
+        <member name="F:Falsus.Providers.Internet.AvatarProvider.hairColors">
+            <summary>
+            An array of <see cref="T:Falsus.Shared.Avatar.Enums.AvatarHairColor"/> from which a
+            pseudo-random value will be taken and used to populate the
+            <see cref="T:Falsus.Shared.Avatar.AvatarModel"/> instance.
+            </summary>
+            <remarks>
+            Initially it can contain all possible values for the <see cref="T:Falsus.Shared.Avatar.Enums.AvatarHairColor"/>
+            enum, or the values from the <see cref="P:Falsus.Providers.Internet.AvatarProviderConfiguration.ValidHairColors"/>
+            if any.
+            If the <see cref="P:Falsus.Providers.Internet.AvatarProviderConfiguration.FilterHairColors"/> function is specified
+            it will be invoked during the data generation process in order to filter this collection.
+            </remarks>
+        </member>
+        <member name="F:Falsus.Providers.Internet.AvatarProvider.hatColors">
+            <summary>
+            An array of <see cref="T:Falsus.Shared.Avatar.Enums.AvatarHatColor"/> from which a
+            pseudo-random value will be taken and used to populate the
+            <see cref="T:Falsus.Shared.Avatar.AvatarModel"/> instance.
+            </summary>
+            <remarks>
+            Initially it can contain all possible values for the <see cref="T:Falsus.Shared.Avatar.Enums.AvatarHatColor"/>
+            enum, or the values from the <see cref="P:Falsus.Providers.Internet.AvatarProviderConfiguration.ValidHatColors"/>
+            if any.
+            If the <see cref="P:Falsus.Providers.Internet.AvatarProviderConfiguration.FilterHatColors"/> function is specified
+            it will be invoked during the data generation process in order to filter this collection.
+            </remarks>
+        </member>
+        <member name="F:Falsus.Providers.Internet.AvatarProvider.mouthTypes">
+            <summary>
+            An array of <see cref="T:Falsus.Shared.Avatar.Enums.AvatarMouthType"/> from which a
+            pseudo-random value will be taken and used to populate the
+            <see cref="T:Falsus.Shared.Avatar.AvatarModel"/> instance.
+            </summary>
+            <remarks>
+            Initially it can contain all possible values for the <see cref="T:Falsus.Shared.Avatar.Enums.AvatarMouthType"/>
+            enum, or the values from the <see cref="P:Falsus.Providers.Internet.AvatarProviderConfiguration.ValidMouthTypes"/>
+            if any.
+            If the <see cref="P:Falsus.Providers.Internet.AvatarProviderConfiguration.FilterMouthTypes"/> function is specified
+            it will be invoked during the data generation process in order to filter this collection.
+            </remarks>
+        </member>
+        <member name="F:Falsus.Providers.Internet.AvatarProvider.skinColors">
+            <summary>
+            An array of <see cref="T:Falsus.Shared.Avatar.Enums.AvatarSkinColor"/> from which a
+            pseudo-random value will be taken and used to populate the
+            <see cref="T:Falsus.Shared.Avatar.AvatarModel"/> instance.
+            </summary>
+            <remarks>
+            Initially it can contain all possible values for the <see cref="T:Falsus.Shared.Avatar.Enums.AvatarSkinColor"/>
+            enum, or the values from the <see cref="P:Falsus.Providers.Internet.AvatarProviderConfiguration.ValidSkinColors"/>
+            if any.
+            If the <see cref="P:Falsus.Providers.Internet.AvatarProviderConfiguration.FilterSkinColors"/> function is specified
+            it will be invoked during the data generation process in order to filter this collection.
+            </remarks>
+        </member>
+        <member name="F:Falsus.Providers.Internet.AvatarProvider.tops">
+            <summary>
+            An array of <see cref="T:Falsus.Shared.Avatar.Enums.AvatarTop"/> from which a
+            pseudo-random value will be taken and used to populate the
+            <see cref="T:Falsus.Shared.Avatar.AvatarModel"/> instance.
+            </summary>
+            <remarks>
+            Initially it can contain all possible values for the <see cref="T:Falsus.Shared.Avatar.Enums.AvatarTop"/>
+            enum, or the values from the <see cref="P:Falsus.Providers.Internet.AvatarProviderConfiguration.ValidTops"/>
+            if any.
+            If the <see cref="P:Falsus.Providers.Internet.AvatarProviderConfiguration.FilterTops"/> function is specified
+            it will be invoked during the data generation process in order to filter this collection.
+            </remarks>
+        </member>
+        <member name="M:Falsus.Providers.Internet.AvatarProvider.#ctor">
+            <summary>
+            Initializes a new instance of the <see cref="T:Falsus.Providers.Internet.AvatarProvider"/> class.
+            </summary>
+        </member>
+        <member name="M:Falsus.Providers.Internet.AvatarProvider.#ctor(Falsus.Providers.Internet.AvatarProviderConfiguration)">
+            <summary>
+            Initializes a new instance of the <see cref="T:Falsus.Providers.Internet.AvatarProvider"/> class.
+            </summary>
+            <param name="configuration">The configuration to use.</param>
+        </member>
+        <member name="M:Falsus.Providers.Internet.AvatarProvider.GetRangedRowValue(Falsus.Shared.Avatar.AvatarModel,Falsus.Shared.Avatar.AvatarModel,Falsus.Shared.Avatar.AvatarModel[])">
+            <summary>
+            Generates a random <see cref="T:Falsus.Shared.Avatar.AvatarModel"/> instance
+            that is greater than the value of <paramref name="minValue"/> and lower
+            than the value of <paramref name="maxValue"/>.
+            </summary>
+            <param name="minValue">The exclusive lower bound of the random object returned.</param>
+            <param name="maxValue">The exclusive upper bound of the random object returned.</param>
+            <param name="excludedObjects">
+            An array of <see cref="T:Falsus.Shared.Avatar.AvatarModel"/> instances that cannot be returned
+            by the provider.
+            </param>
+            <returns>
+            A random instance of <see cref="T:Falsus.Shared.Avatar.AvatarModel"/> greater than <paramref name="minValue"/>
+            and less than <paramref name="maxValue"/>.
+            </returns>
+            <remarks>
+            <paramref name="maxValue"/> must be greater than <paramref name="minValue"/>.
+            </remarks>
+            <exception cref="T:System.NotSupportedException">
+            Thrown because the generation of ranged <see cref="T:Falsus.Shared.Avatar.AvatarModel"/>
+            values is not supported.
+            </exception>
+        </member>
+        <member name="M:Falsus.Providers.Internet.AvatarProvider.GetRowValue(Falsus.DataGeneratorContext,Falsus.GeneratorProperties.WeightedRange{Falsus.Shared.Avatar.AvatarModel}[],Falsus.Shared.Avatar.AvatarModel[])">
+            <summary>
+            Generates a random <see cref="T:Falsus.Shared.Avatar.AvatarModel"/> instance
+            based on the context and excluded ranges.
+            </summary>
+            <param name="context">
+            An instance of <see cref="T:Falsus.DataGeneratorContext"/> defining
+            the current generation context.
+            </param>
+            <param name="excludedRanges">
+            An array of <see cref="T:Falsus.GeneratorProperties.WeightedRange`1"/>s defining the ranges
+            that cannot be returned by the provider.
+            </param>
+            <param name="excludedObjects">
+            An array of <see cref="T:Falsus.Shared.Avatar.AvatarModel"/> instances that cannot be returned
+            by the provider.
+            </param>
+            <returns>
+            A random instance of <see cref="T:Falsus.Shared.Avatar.AvatarModel"/> that is outside of
+            the specified <paramref name="excludedRanges"/>.
+            </returns>
+            <exception cref="T:System.NotSupportedException">
+            Thrown because the generation of ranged <see cref="T:Falsus.Shared.Avatar.AvatarModel"/>
+            values is not supported.
+            </exception>
+        </member>
+        <member name="M:Falsus.Providers.Internet.AvatarProvider.GetRowValue(Falsus.DataGeneratorContext,Falsus.Shared.Avatar.AvatarModel[])">
+            <summary>
+            Generates a random <see cref="T:Falsus.Shared.Avatar.AvatarModel"/> instance
+            based on the context and excluded objects.
+            </summary>
+            <param name="context">
+            An instance of <see cref="T:Falsus.DataGeneratorContext"/> defining
+            the current generation context.
+            </param>
+            <param name="excludedObjects">
+            An array of <see cref="T:Falsus.Shared.Avatar.AvatarModel"/> instances that cannot be returned
+            by the provider.
+            </param>
+            <returns>
+            A random instance of <see cref="T:Falsus.Shared.Avatar.AvatarModel"/>.
+            </returns>
+            <remarks>
+            The <paramref name="excludedObjects"/> are not being taken into account.
+            </remarks>
+        </member>
+        <member name="M:Falsus.Providers.Internet.AvatarProvider.GetRowValue(System.String)">
+            <summary>
+            Gets an instance of <see cref="T:Falsus.Shared.Avatar.AvatarModel"/> from the provided <paramref name="id"/>.
+            </summary>
+            <param name="id">An unique identifier for the object.</param>
+            <returns>
+            An instance of the <see cref="T:Falsus.Shared.Avatar.AvatarModel"/> with the specified unique identifier.
+            </returns>
+            <exception cref="T:System.NotSupportedException">
+            An instance of <see cref="T:Falsus.Shared.Avatar.AvatarModel"/> cannot be represented by a <see cref="T:System.String"/> identifier
+            therefore this method is not supported.
+            </exception>
+        </member>
+        <member name="M:Falsus.Providers.Internet.AvatarProvider.GetValueId(Falsus.Shared.Avatar.AvatarModel)">
+            <summary>
+            Gets a unique identifier for the provided <see cref="T:Falsus.Shared.Avatar.AvatarModel"/> instance.
+            </summary>
+            <param name="value">An instance of <see cref="T:Falsus.Shared.Avatar.AvatarModel"/>.</param>
+            <returns>
+            A <see cref="T:System.String"/> containing the unique identifier of the provided <see cref="T:Falsus.Shared.Avatar.AvatarModel"/>.
+            </returns>
+            <exception cref="T:System.NotSupportedException">
+            An instance of <see cref="T:Falsus.Shared.Avatar.AvatarModel"/> cannot be represented by a <see cref="T:System.String"/> identifier
+            therefore this method is not supported.
+            </exception>
+        </member>
+        <member name="M:Falsus.Providers.Internet.AvatarProvider.Load(Falsus.GeneratorProperties.DataGeneratorProperty{Falsus.Shared.Avatar.AvatarModel},System.Int32)">
+            <summary>
+            Instructs the data provider to prepare the data for generation based on the
+            provided <see cref="T:Falsus.Providers.Internet.AvatarProviderConfiguration"/>.
+            </summary>
+            <param name="property">
+            An implementation of the generic <see cref="T:Falsus.GeneratorProperties.DataGeneratorProperty`1"/>
+            defining the property that this provider has been attached to.
+            </param>
+            <param name="rowCount">The desired number of rows to be generated.</param>
+            <remarks>
+            Invoked before any calculation takes place, the goal of this method is
+            usually preparing or caching data for the generation taking place afterwards.
+            </remarks>
+        </member>
+        <member name="T:Falsus.Providers.Internet.AvatarProviderConfiguration">
+            <summary>
+            This class represents the configuration object of the <see cref="T:Falsus.Providers.Internet.AvatarProvider"/> data provider.
+            </summary>
+        </member>
+        <member name="M:Falsus.Providers.Internet.AvatarProviderConfiguration.#ctor">
+            <summary>
+            Initializes a new instance of the <see cref="T:Falsus.Providers.Internet.AvatarProviderConfiguration"/> class.
+            </summary>
+        </member>
+        <member name="P:Falsus.Providers.Internet.AvatarProviderConfiguration.Style">
+            <summary>
+            Gets or sets the type of avatar style.
+            </summary>
+            <value>
+            One of the values specified by the <see cref="T:Falsus.Shared.Avatar.Enums.AvatarStyle"/> enum.
+            </value>
+        </member>
+        <member name="P:Falsus.Providers.Internet.AvatarProviderConfiguration.ValidAccessories">
+            <summary>
+            Gets or sets the array containing the <see cref="T:Falsus.Shared.Avatar.Enums.AvatarAccessory"/> values
+            to use during the data generation process.
+            </summary>
+            <value>
+            An array of <see cref="T:Falsus.Shared.Avatar.Enums.AvatarAccessory"/> values.
+            </value>
+            <remarks>
+            If null or empty, all values from the <see cref="T:Falsus.Shared.Avatar.Enums.AvatarAccessory"/> enum will be used.
+            </remarks>
+        </member>
+        <member name="P:Falsus.Providers.Internet.AvatarProviderConfiguration.ValidClotheColors">
+            <summary>
+            Gets or sets the array containing the <see cref="T:Falsus.Shared.Avatar.Enums.AvatarClotheColor"/> values
+            to use during the data generation process.
+            </summary>
+            <value>
+            An array of <see cref="T:Falsus.Shared.Avatar.Enums.AvatarClotheColor"/> values.
+            </value>
+            <remarks>
+            If null or empty, all values from the <see cref="T:Falsus.Shared.Avatar.Enums.AvatarClotheColor"/> enum will be used.
+            </remarks>
+        </member>
+        <member name="P:Falsus.Providers.Internet.AvatarProviderConfiguration.ValidClotheTypes">
+            <summary>
+            Gets or sets the array containing the <see cref="T:Falsus.Shared.Avatar.Enums.AvatarClotheType"/> values
+            to use during the data generation process.
+            </summary>
+            <value>
+            An array of <see cref="T:Falsus.Shared.Avatar.Enums.AvatarClotheType"/> values.
+            </value>
+            <remarks>
+            If null or empty, all values from the <see cref="T:Falsus.Shared.Avatar.Enums.AvatarClotheType"/> enum will be used.
+            </remarks>
+        </member>
+        <member name="P:Falsus.Providers.Internet.AvatarProviderConfiguration.ValidClotheGraphicTypes">
+            <summary>
+            Gets or sets the array containing the <see cref="T:Falsus.Shared.Avatar.Enums.AvatarClotheGraphicType"/> values
+            to use during the data generation process.
+            </summary>
+            <value>
+            An array of <see cref="T:Falsus.Shared.Avatar.Enums.AvatarClotheGraphicType"/> values.
+            </value>
+            <remarks>
+            If null or empty, all values from the <see cref="T:Falsus.Shared.Avatar.Enums.AvatarClotheGraphicType"/> enum will be used.
+            </remarks>
+        </member>
+        <member name="P:Falsus.Providers.Internet.AvatarProviderConfiguration.ValidEyebrowTypes">
+            <summary>
+            Gets or sets the array containing the <see cref="T:Falsus.Shared.Avatar.Enums.AvatarEyebrowType"/> values
+            to use during the data generation process.
+            </summary>
+            <value>
+            An array of <see cref="T:Falsus.Shared.Avatar.Enums.AvatarEyebrowType"/> values.
+            </value>
+            <remarks>
+            If null or empty, all values from the <see cref="T:Falsus.Shared.Avatar.Enums.AvatarEyebrowType"/> enum will be used.
+            </remarks>
+        </member>
+        <member name="P:Falsus.Providers.Internet.AvatarProviderConfiguration.ValidEyeTypes">
+            <summary>
+            Gets or sets the array containing the <see cref="T:Falsus.Shared.Avatar.Enums.AvatarEyeType"/> values
+            to use during the data generation process.
+            </summary>
+            <value>
+            An array of <see cref="T:Falsus.Shared.Avatar.Enums.AvatarEyeType"/> values.
+            </value>
+            <remarks>
+            If null or empty, all values from the <see cref="T:Falsus.Shared.Avatar.Enums.AvatarEyeType"/> enum will be used.
+            </remarks>
+        </member>
+        <member name="P:Falsus.Providers.Internet.AvatarProviderConfiguration.ValidFacialHairColors">
+            <summary>
+            Gets or sets the array containing the <see cref="T:Falsus.Shared.Avatar.Enums.AvatarFacialHairColor"/> values
+            to use during the data generation process.
+            </summary>
+            <value>
+            An array of <see cref="T:Falsus.Shared.Avatar.Enums.AvatarFacialHairColor"/> values.
+            </value>
+            <remarks>
+            If null or empty, all values from the <see cref="T:Falsus.Shared.Avatar.Enums.AvatarFacialHairColor"/> enum will be used.
+            </remarks>
+        </member>
+        <member name="P:Falsus.Providers.Internet.AvatarProviderConfiguration.ValidFacialHairTypes">
+            <summary>
+            Gets or sets the array containing the <see cref="T:Falsus.Shared.Avatar.Enums.AvatarFacialHairType"/> values
+            to use during the data generation process.
+            </summary>
+            <value>
+            An array of <see cref="T:Falsus.Shared.Avatar.Enums.AvatarFacialHairType"/> values.
+            </value>
+            <remarks>
+            If null or empty, all values from the <see cref="T:Falsus.Shared.Avatar.Enums.AvatarFacialHairType"/> enum will be used.
+            </remarks>
+        </member>
+        <member name="P:Falsus.Providers.Internet.AvatarProviderConfiguration.ValidHairColors">
+            <summary>
+            Gets or sets the array containing the <see cref="T:Falsus.Shared.Avatar.Enums.AvatarHairColor"/> values
+            to use during the data generation process.
+            </summary>
+            <value>
+            An array of <see cref="T:Falsus.Shared.Avatar.Enums.AvatarHairColor"/> values.
+            </value>
+            <remarks>
+            If null or empty, all values from the <see cref="T:Falsus.Shared.Avatar.Enums.AvatarHairColor"/> enum will be used.
+            </remarks>
+        </member>
+        <member name="P:Falsus.Providers.Internet.AvatarProviderConfiguration.ValidHatColors">
+            <summary>
+            Gets or sets the array containing the <see cref="T:Falsus.Shared.Avatar.Enums.AvatarHatColor"/> values
+            to use during the data generation process.
+            </summary>
+            <value>
+            An array of <see cref="T:Falsus.Shared.Avatar.Enums.AvatarHatColor"/> values.
+            </value>
+            <remarks>
+            If null or empty, all values from the <see cref="T:Falsus.Shared.Avatar.Enums.AvatarHatColor"/> enum will be used.
+            </remarks>
+        </member>
+        <member name="P:Falsus.Providers.Internet.AvatarProviderConfiguration.ValidMouthTypes">
+            <summary>
+            Gets or sets the array containing the <see cref="T:Falsus.Shared.Avatar.Enums.AvatarMouthType"/> values
+            to use during the data generation process.
+            </summary>
+            <value>
+            An array of <see cref="T:Falsus.Shared.Avatar.Enums.AvatarMouthType"/> values.
+            </value>
+            <remarks>
+            If null or empty, all values from the <see cref="T:Falsus.Shared.Avatar.Enums.AvatarMouthType"/> enum will be used.
+            </remarks>
+        </member>
+        <member name="P:Falsus.Providers.Internet.AvatarProviderConfiguration.ValidSkinColors">
+            <summary>
+            Gets or sets the array containing the <see cref="T:Falsus.Shared.Avatar.Enums.AvatarSkinColor"/> values
+            to use during the data generation process.
+            </summary>
+            <value>
+            An array of <see cref="T:Falsus.Shared.Avatar.Enums.AvatarSkinColor"/> values.
+            </value>
+            <remarks>
+            If null or empty, all values from the <see cref="T:Falsus.Shared.Avatar.Enums.AvatarSkinColor"/> enum will be used.
+            </remarks>
+        </member>
+        <member name="P:Falsus.Providers.Internet.AvatarProviderConfiguration.ValidTops">
+            <summary>
+            Gets or sets the array containing the <see cref="T:Falsus.Shared.Avatar.Enums.AvatarTop"/> values
+            to use during the data generation process.
+            </summary>
+            <value>
+            An array of <see cref="T:Falsus.Shared.Avatar.Enums.AvatarTop"/> values.
+            </value>
+            <remarks>
+            If null or empty, all values from the <see cref="T:Falsus.Shared.Avatar.Enums.AvatarTop"/> enum will be used.
+            </remarks>
+        </member>
+        <member name="P:Falsus.Providers.Internet.AvatarProviderConfiguration.FilterAccessories">
+            <summary>
+            Gets or sets a function used to filter the collection of <see cref="T:Falsus.Shared.Avatar.Enums.AvatarAccessory"/> values
+            based on the <see cref="T:Falsus.DataGeneratorContext"/> during the data generation process.
+            </summary>
+            <value>
+            A function that returns an array of <see cref="T:Falsus.Shared.Avatar.Enums.AvatarAccessory"/> and receives the <see cref="T:Falsus.DataGeneratorContext"/>
+            and the current array of <see cref="T:Falsus.Shared.Avatar.Enums.AvatarAccessory"/> values.
+            </value>
+            <remarks>
+            This function can be used to apply custom logic to filter tha <see cref="T:Falsus.Shared.Avatar.Enums.AvatarAccessory"/> values
+            based on the <see cref="T:Falsus.DataGeneratorContext"/> for the current tow.
+            </remarks>
+        </member>
+        <member name="P:Falsus.Providers.Internet.AvatarProviderConfiguration.FilterClotheColors">
+            <summary>
+            Gets or sets a function used to filter the collection of <see cref="T:Falsus.Shared.Avatar.Enums.AvatarClotheColor"/> values
+            based on the <see cref="T:Falsus.DataGeneratorContext"/> during the data generation process.
+            </summary>
+            <value>
+            A function that returns an array of <see cref="T:Falsus.Shared.Avatar.Enums.AvatarClotheColor"/> and receives the <see cref="T:Falsus.DataGeneratorContext"/>
+            and the current array of <see cref="T:Falsus.Shared.Avatar.Enums.AvatarClotheColor"/> values.
+            </value>
+            <remarks>
+            This function can be used to apply custom logic to filter tha <see cref="T:Falsus.Shared.Avatar.Enums.AvatarClotheColor"/> values
+            based on the <see cref="T:Falsus.DataGeneratorContext"/> for the current tow.
+            </remarks>
+        </member>
+        <member name="P:Falsus.Providers.Internet.AvatarProviderConfiguration.FilterClotheTypes">
+            <summary>
+            Gets or sets a function used to filter the collection of <see cref="T:Falsus.Shared.Avatar.Enums.AvatarClotheType"/> values
+            based on the <see cref="T:Falsus.DataGeneratorContext"/> during the data generation process.
+            </summary>
+            <value>
+            A function that returns an array of <see cref="T:Falsus.Shared.Avatar.Enums.AvatarClotheType"/> and receives the <see cref="T:Falsus.DataGeneratorContext"/>
+            and the current array of <see cref="T:Falsus.Shared.Avatar.Enums.AvatarClotheType"/> values.
+            </value>
+            <remarks>
+            This function can be used to apply custom logic to filter tha <see cref="T:Falsus.Shared.Avatar.Enums.AvatarClotheType"/> values
+            based on the <see cref="T:Falsus.DataGeneratorContext"/> for the current tow.
+            </remarks>
+        </member>
+        <member name="P:Falsus.Providers.Internet.AvatarProviderConfiguration.FilterClotheGraphicTypes">
+            <summary>
+            Gets or sets a function used to filter the collection of <see cref="T:Falsus.Shared.Avatar.Enums.AvatarClotheGraphicType"/> values
+            based on the <see cref="T:Falsus.DataGeneratorContext"/> during the data generation process.
+            </summary>
+            <value>
+            A function that returns an array of <see cref="T:Falsus.Shared.Avatar.Enums.AvatarClotheGraphicType"/> and receives the <see cref="T:Falsus.DataGeneratorContext"/>
+            and the current array of <see cref="T:Falsus.Shared.Avatar.Enums.AvatarClotheGraphicType"/> values.
+            </value>
+            <remarks>
+            This function can be used to apply custom logic to filter tha <see cref="T:Falsus.Shared.Avatar.Enums.AvatarClotheGraphicType"/> values
+            based on the <see cref="T:Falsus.DataGeneratorContext"/> for the current tow.
+            </remarks>
+        </member>
+        <member name="P:Falsus.Providers.Internet.AvatarProviderConfiguration.FilterEyebrowTypes">
+            <summary>
+            Gets or sets a function used to filter the collection of <see cref="T:Falsus.Shared.Avatar.Enums.AvatarEyebrowType"/> values
+            based on the <see cref="T:Falsus.DataGeneratorContext"/> during the data generation process.
+            </summary>
+            <value>
+            A function that returns an array of <see cref="T:Falsus.Shared.Avatar.Enums.AvatarEyebrowType"/> and receives the <see cref="T:Falsus.DataGeneratorContext"/>
+            and the current array of <see cref="T:Falsus.Shared.Avatar.Enums.AvatarEyebrowType"/> values.
+            </value>
+            <remarks>
+            This function can be used to apply custom logic to filter tha <see cref="T:Falsus.Shared.Avatar.Enums.AvatarEyebrowType"/> values
+            based on the <see cref="T:Falsus.DataGeneratorContext"/> for the current tow.
+            </remarks>
+        </member>
+        <member name="P:Falsus.Providers.Internet.AvatarProviderConfiguration.FilterEyeTypes">
+            <summary>
+            Gets or sets a function used to filter the collection of <see cref="T:Falsus.Shared.Avatar.Enums.AvatarEyeType"/> values
+            based on the <see cref="T:Falsus.DataGeneratorContext"/> during the data generation process.
+            </summary>
+            <value>
+            A function that returns an array of <see cref="T:Falsus.Shared.Avatar.Enums.AvatarEyeType"/> and receives the <see cref="T:Falsus.DataGeneratorContext"/>
+            and the current array of <see cref="T:Falsus.Shared.Avatar.Enums.AvatarEyeType"/> values.
+            </value>
+            <remarks>
+            This function can be used to apply custom logic to filter tha <see cref="T:Falsus.Shared.Avatar.Enums.AvatarEyeType"/> values
+            based on the <see cref="T:Falsus.DataGeneratorContext"/> for the current tow.
+            </remarks>
+        </member>
+        <member name="P:Falsus.Providers.Internet.AvatarProviderConfiguration.FilterFacialHairColors">
+            <summary>
+            Gets or sets a function used to filter the collection of <see cref="T:Falsus.Shared.Avatar.Enums.AvatarFacialHairColor"/> values
+            based on the <see cref="T:Falsus.DataGeneratorContext"/> during the data generation process.
+            </summary>
+            <value>
+            A function that returns an array of <see cref="T:Falsus.Shared.Avatar.Enums.AvatarFacialHairColor"/> and receives the <see cref="T:Falsus.DataGeneratorContext"/>
+            and the current array of <see cref="T:Falsus.Shared.Avatar.Enums.AvatarFacialHairColor"/> values.
+            </value>
+            <remarks>
+            This function can be used to apply custom logic to filter tha <see cref="T:Falsus.Shared.Avatar.Enums.AvatarFacialHairColor"/> values
+            based on the <see cref="T:Falsus.DataGeneratorContext"/> for the current tow.
+            </remarks>
+        </member>
+        <member name="P:Falsus.Providers.Internet.AvatarProviderConfiguration.FilterFacialHairTypes">
+            <summary>
+            Gets or sets a function used to filter the collection of <see cref="T:Falsus.Shared.Avatar.Enums.AvatarFacialHairType"/> values
+            based on the <see cref="T:Falsus.DataGeneratorContext"/> during the data generation process.
+            </summary>
+            <value>
+            A function that returns an array of <see cref="T:Falsus.Shared.Avatar.Enums.AvatarFacialHairType"/> and receives the <see cref="T:Falsus.DataGeneratorContext"/>
+            and the current array of <see cref="T:Falsus.Shared.Avatar.Enums.AvatarFacialHairType"/> values.
+            </value>
+            <remarks>
+            This function can be used to apply custom logic to filter tha <see cref="T:Falsus.Shared.Avatar.Enums.AvatarFacialHairType"/> values
+            based on the <see cref="T:Falsus.DataGeneratorContext"/> for the current tow.
+            </remarks>
+        </member>
+        <member name="P:Falsus.Providers.Internet.AvatarProviderConfiguration.FilterHairColors">
+            <summary>
+            Gets or sets a function used to filter the collection of <see cref="T:Falsus.Shared.Avatar.Enums.AvatarHairColor"/> values
+            based on the <see cref="T:Falsus.DataGeneratorContext"/> during the data generation process.
+            </summary>
+            <value>
+            A function that returns an array of <see cref="T:Falsus.Shared.Avatar.Enums.AvatarHairColor"/> and receives the <see cref="T:Falsus.DataGeneratorContext"/>
+            and the current array of <see cref="T:Falsus.Shared.Avatar.Enums.AvatarHairColor"/> values.
+            </value>
+            <remarks>
+            This function can be used to apply custom logic to filter tha <see cref="T:Falsus.Shared.Avatar.Enums.AvatarHairColor"/> values
+            based on the <see cref="T:Falsus.DataGeneratorContext"/> for the current tow.
+            </remarks>
+        </member>
+        <member name="P:Falsus.Providers.Internet.AvatarProviderConfiguration.FilterHatColors">
+            <summary>
+            Gets or sets a function used to filter the collection of <see cref="T:Falsus.Shared.Avatar.Enums.AvatarHatColor"/> values
+            based on the <see cref="T:Falsus.DataGeneratorContext"/> during the data generation process.
+            </summary>
+            <value>
+            A function that returns an array of <see cref="T:Falsus.Shared.Avatar.Enums.AvatarHatColor"/> and receives the <see cref="T:Falsus.DataGeneratorContext"/>
+            and the current array of <see cref="T:Falsus.Shared.Avatar.Enums.AvatarHatColor"/> values.
+            </value>
+            <remarks>
+            This function can be used to apply custom logic to filter tha <see cref="T:Falsus.Shared.Avatar.Enums.AvatarHatColor"/> values
+            based on the <see cref="T:Falsus.DataGeneratorContext"/> for the current tow.
+            </remarks>
+        </member>
+        <member name="P:Falsus.Providers.Internet.AvatarProviderConfiguration.FilterMouthTypes">
+            <summary>
+            Gets or sets a function used to filter the collection of <see cref="T:Falsus.Shared.Avatar.Enums.AvatarMouthType"/> values
+            based on the <see cref="T:Falsus.DataGeneratorContext"/> during the data generation process.
+            </summary>
+            <value>
+            A function that returns an array of <see cref="T:Falsus.Shared.Avatar.Enums.AvatarMouthType"/> and receives the <see cref="T:Falsus.DataGeneratorContext"/>
+            and the current array of <see cref="T:Falsus.Shared.Avatar.Enums.AvatarMouthType"/> values.
+            </value>
+            <remarks>
+            This function can be used to apply custom logic to filter tha <see cref="T:Falsus.Shared.Avatar.Enums.AvatarMouthType"/> values
+            based on the <see cref="T:Falsus.DataGeneratorContext"/> for the current tow.
+            </remarks>
+        </member>
+        <member name="P:Falsus.Providers.Internet.AvatarProviderConfiguration.FilterSkinColors">
+            <summary>
+            Gets or sets a function used to filter the collection of <see cref="T:Falsus.Shared.Avatar.Enums.AvatarSkinColor"/> values
+            based on the <see cref="T:Falsus.DataGeneratorContext"/> during the data generation process.
+            </summary>
+            <value>
+            A function that returns an array of <see cref="T:Falsus.Shared.Avatar.Enums.AvatarSkinColor"/> and receives the <see cref="T:Falsus.DataGeneratorContext"/>
+            and the current array of <see cref="T:Falsus.Shared.Avatar.Enums.AvatarSkinColor"/> values.
+            </value>
+            <remarks>
+            This function can be used to apply custom logic to filter tha <see cref="T:Falsus.Shared.Avatar.Enums.AvatarSkinColor"/> values
+            based on the <see cref="T:Falsus.DataGeneratorContext"/> for the current tow.
+            </remarks>
+        </member>
+        <member name="P:Falsus.Providers.Internet.AvatarProviderConfiguration.FilterTops">
+            <summary>
+            Gets or sets a function used to filter the collection of <see cref="T:Falsus.Shared.Avatar.Enums.AvatarTop"/> values
+            based on the <see cref="T:Falsus.DataGeneratorContext"/> during the data generation process.
+            </summary>
+            <value>
+            A function that returns an array of <see cref="T:Falsus.Shared.Avatar.Enums.AvatarTop"/> and receives the <see cref="T:Falsus.DataGeneratorContext"/>
+            and the current array of <see cref="T:Falsus.Shared.Avatar.Enums.AvatarTop"/> values.
+            </value>
+            <remarks>
+            This function can be used to apply custom logic to filter tha <see cref="T:Falsus.Shared.Avatar.Enums.AvatarTop"/> values
+            based on the <see cref="T:Falsus.DataGeneratorContext"/> for the current tow.
+            </remarks>
+        </member>
+        <member name="T:Falsus.Providers.Internet.AvatarSvgProvider">
+            <summary>
+            Represents a provider of <see cref="T:System.String"/> values
+            containing and SVG representation of an <see cref="T:Falsus.Shared.Avatar.AvatarModel"/> instance.
+            </summary>
+            <remarks>
+            This provider works as a proxy for the <see cref="T:Falsus.Providers.Internet.AvatarProvider"/>
+            converting the <see cref="T:Falsus.Shared.Avatar.AvatarModel"/> instance to an SVG string.
+            </remarks>
+            <seealso cref="T:Falsus.Providers.DataGeneratorProvider`1"/>
+        </member>
+        <member name="F:Falsus.Providers.Internet.AvatarSvgProvider.AvatarCirclePlaceholder">
+            <summary>
+            A string containing the placeholder for the avatar circle
+            when the <see cref="F:Falsus.Shared.Avatar.Enums.AvatarStyle.Circle"/> value is specified.
+            When the <see cref="F:Falsus.Shared.Avatar.Enums.AvatarStyle.Transparent"/> value is specified
+            then the placeholder will be replaced by an empty string.
+            </summary>
+        </member>
+        <member name="F:Falsus.Providers.Internet.AvatarSvgProvider.AvatarMouthPlaceholder">
+            <summary>
+            A string containing the placeholder for the avatar mouth.
+            </summary>
+            <remarks>
+            The placeholder will be replaced by the SVG representation
+            of the selected <see cref="T:Falsus.Shared.Avatar.Enums.AvatarMouthType"/> value.
+            </remarks>
+        </member>
+        <member name="F:Falsus.Providers.Internet.AvatarSvgProvider.AvatarNosePlaceholder">
+            <summary>
+            A string containing the placeholder for the avatar nose.
+            </summary>
+            <remarks>
+            The placeholder will be replaced by the SVG representation
+            of default avatar nose.
+            </remarks>
+        </member>
+        <member name="F:Falsus.Providers.Internet.AvatarSvgProvider.AvatarEyesPlaceholder">
+            <summary>
+            A string containing the placeholder for the avatar eyes.
+            </summary>
+            <remarks>
+            The placeholder will be replaced by the SVG representation
+            of the selected <see cref="T:Falsus.Shared.Avatar.Enums.AvatarEyeType"/> value.
+            </remarks>
+        </member>
+        <member name="F:Falsus.Providers.Internet.AvatarSvgProvider.AvatarEyebrowPlaceholder">
+            <summary>
+            A string containing the placeholder for the avatar eyebrows.
+            </summary>
+            <remarks>
+            The placeholder will be replaced by the SVG representation
+            of the selected <see cref="T:Falsus.Shared.Avatar.Enums.AvatarEyebrowType"/> value.
+            </remarks>
+        </member>
+        <member name="F:Falsus.Providers.Internet.AvatarSvgProvider.HairColorPlaceholder">
+            <summary>
+            A string containing the placehodler for the avatar hair color.
+            </summary>
+            <remarks>
+            If present, the placeholder will be replaced by the SVG representation
+            of the selected <see cref="T:Falsus.Shared.Avatar.Enums.AvatarHairColor"/> value.
+            </remarks>
+        </member>
+        <member name="F:Falsus.Providers.Internet.AvatarSvgProvider.FacialHairPlaceholder">
+            <summary>
+            A string containing the placeholder for the avatar facial hair type.
+            </summary>
+            <remarks>
+            The placeholder will be replaced by the SVG representation
+            of the selected <see cref="T:Falsus.Shared.Avatar.Enums.AvatarFacialHairType"/> value.
+            </remarks>
+        </member>
+        <member name="F:Falsus.Providers.Internet.AvatarSvgProvider.FacialHairColorPlaceholder">
+            <summary>
+            A string containing the placeholder for the avatar facial hair color.
+            </summary>
+            <remarks>
+            If present, the placeholder will be replaced by the SVG representation
+            of the selected <see cref="T:Falsus.Shared.Avatar.Enums.AvatarFacialHairColor"/> value.
+            </remarks>
+        </member>
+        <member name="F:Falsus.Providers.Internet.AvatarSvgProvider.AccessoriesPlaceholder">
+            <summary>
+            A string containing the placeholder for the avatar accessory.
+            </summary>
+            <remarks>
+            The placeholder will be replaced by the SVG representation
+            of the selected <see cref="T:Falsus.Shared.Avatar.Enums.AvatarAccessory"/> value.
+            </remarks>
+        </member>
+        <member name="F:Falsus.Providers.Internet.AvatarSvgProvider.HatColorPlaceholder">
+            <summary>
+            A string containing the placeholder for the hat color.
+            </summary>
+            <remarks>
+            If present, the placeholder will be replaced by the SVG representation
+            of the selected <see cref="T:Falsus.Shared.Avatar.Enums.AvatarHatColor"/> value.
+            </remarks>
+        </member>
+        <member name="F:Falsus.Providers.Internet.AvatarSvgProvider.TopPlaceholder">
+            <summary>
+            A string containing the placeholder for the avatar top.
+            </summary>
+            <remarks>
+            The placeholder will be replaced by the SVG representation
+            of the selected <see cref="T:Falsus.Shared.Avatar.Enums.AvatarTop"/> value.
+            </remarks>
+        </member>
+        <member name="F:Falsus.Providers.Internet.AvatarSvgProvider.ClothingColorPlaceholder">
+            <summary>
+            A string containing the placeholder for the avatar clothe color.
+            </summary>
+            <remarks>
+            The placeholder will be replaced by the SVG representation
+            of the selected <see cref="T:Falsus.Shared.Avatar.Enums.AvatarClotheColor"/> value.
+            </remarks>
+        </member>
+        <member name="F:Falsus.Providers.Internet.AvatarSvgProvider.ClothingGraphicPlaceholder">
+            <summary>
+            A string containing the placeholder for the avatar clothe graphic.
+            </summary>
+            <remarks>
+            If present, the placeholder will be replaced by the SVG representation
+            of the selected <see cref="T:Falsus.Shared.Avatar.Enums.AvatarClotheGraphicType"/> value.
+            </remarks>
+        </member>
+        <member name="F:Falsus.Providers.Internet.AvatarSvgProvider.ClothePlaceholder">
+            <summary>
+            A string containing the placeholder for the avatar clothe type.
+            </summary>
+            <remarks>
+            The placeholder will be replaced by the SVG representation
+            of the selected <see cref="T:Falsus.Shared.Avatar.Enums.AvatarClotheType"/> value.
+            </remarks>
+        </member>
+        <member name="F:Falsus.Providers.Internet.AvatarSvgProvider.SkinColorPlaceholder">
+            <summary>
+            A string containing the placeholder for the avatar skin color.
+            </summary>
+            <remarks>
+            The placeholder will be replaced by the SVG representation
+            of the selected <see cref="T:Falsus.Shared.Avatar.Enums.AvatarSkinColor"/> value.
+            </remarks>
+        </member>
+        <member name="F:Falsus.Providers.Internet.AvatarSvgProvider.configuration">
+            <summary>
+            The configuration of this provider.
+            </summary>
+        </member>
+        <member name="F:Falsus.Providers.Internet.AvatarSvgProvider.provider">
+            <summary>
+            The provider of <see cref="T:Falsus.Shared.Avatar.AvatarModel"/> instances.
+            </summary>
+        </member>
+        <member name="M:Falsus.Providers.Internet.AvatarSvgProvider.#ctor">
+            <summary>
+            Initializes a new instance of the <see cref="T:Falsus.Providers.Internet.AvatarSvgProvider"/> class.
+            </summary>
+        </member>
+        <member name="M:Falsus.Providers.Internet.AvatarSvgProvider.#ctor(Falsus.Providers.Internet.AvatarSvgProviderConfiguration)">
+            <summary>
+            Initializes a new instance of the <see cref="T:Falsus.Providers.Internet.AvatarSvgProvider"/> class.
+            </summary>
+            <param name="configuration">The configuration to use.</param>
+        </member>
+        <member name="M:Falsus.Providers.Internet.AvatarSvgProvider.GetRangedRowValue(System.String,System.String,System.String[])">
+            <summary>
+            Generates a random <see cref="T:System.String"/> containing an SVG representation
+            of an <see cref="T:Falsus.Shared.Avatar.AvatarModel"/> instance
+            that is greater than the value of <paramref name="minValue"/> and lower
+            than the value of <paramref name="maxValue"/>.
+            </summary>
+            <param name="minValue">The exclusive lower bound of the random object returned.</param>
+            <param name="maxValue">The exclusive upper bound of the random object returned.</param>
+            <param name="excludedObjects">
+            An array of <see cref="T:System.String"/> values that cannot be returned
+            by the provider.
+            </param>
+            <returns>
+            A random instance of <see cref="T:Falsus.Shared.Avatar.AvatarModel"/> greater than <paramref name="minValue"/>
+            and less than <paramref name="maxValue"/>, converted to an SVG representation.
+            </returns>
+            <remarks>
+            <paramref name="maxValue"/> must be greater than <paramref name="minValue"/>.
+            </remarks>
+            <exception cref="T:System.NotSupportedException">
+            Thrown because the generation of ranged <see cref="T:Falsus.Shared.Avatar.AvatarModel"/>
+            values is not supported.
+            </exception>
+        </member>
+        <member name="M:Falsus.Providers.Internet.AvatarSvgProvider.GetRowValue(Falsus.DataGeneratorContext,Falsus.GeneratorProperties.WeightedRange{System.String}[],System.String[])">
+            <summary>
+            Generates a random <see cref="T:System.String"/> containing an SVG representation
+            of an <see cref="T:Falsus.Shared.Avatar.AvatarModel"/> instance
+            based on the context and excluded ranges.
+            </summary>
+            <param name="context">
+            An instance of <see cref="T:Falsus.DataGeneratorContext"/> defining
+            the current generation context.
+            </param>
+            <param name="excludedRanges">
+            An array of <see cref="T:Falsus.GeneratorProperties.WeightedRange`1"/>s defining the ranges
+            that cannot be returned by the provider.
+            </param>
+            <param name="excludedObjects">
+            An array of <see cref="T:System.String"/> values that cannot be returned
+            by the provider.
+            </param>
+            <returns>
+            A random <see cref="T:System.String"/> containing an SVG representation
+            of an <see cref="T:Falsus.Shared.Avatar.AvatarModel"/> instance that is outside of
+            the specified <paramref name="excludedRanges"/>.
+            </returns>
+            <exception cref="T:System.NotSupportedException">
+            Thrown because the generation of ranged <see cref="T:Falsus.Shared.Avatar.AvatarModel"/>
+            values is not supported.
+            </exception>
+        </member>
+        <member name="M:Falsus.Providers.Internet.AvatarSvgProvider.GetRowValue(Falsus.DataGeneratorContext,System.String[])">
+            <summary>
+            Generates a random <see cref="T:System.String"/> containing an SVG representation
+            of an <see cref="T:Falsus.Shared.Avatar.AvatarModel"/> instance based on the context
+            and excluded objects.
+            </summary>
+            <param name="context">
+            An instance of <see cref="T:Falsus.DataGeneratorContext"/> defining
+            the current generation context.
+            </param>
+            <param name="excludedObjects">
+            An array of <see cref="T:System.String"/> values that cannot be returned
+            by the provider.
+            </param>
+            <returns>
+            A <see cref="T:System.String"/> containing an SVG representation of a random instance of <see cref="T:Falsus.Shared.Avatar.AvatarModel"/>.
+            </returns>
+            <remarks>
+            The <paramref name="excludedObjects"/> are not being taken into account.
+            </remarks>
+        </member>
+        <member name="M:Falsus.Providers.Internet.AvatarSvgProvider.GetRowValue(System.String)">
+            <summary>
+            Gets an instance of <see cref="T:System.String"/> from the provided <paramref name="id"/>.
+            </summary>
+            <param name="id">An unique identifier for the object.</param>
+            <returns>
+            A <see cref="T:System.String"/> with the specified unique identifier.
+            </returns>
+            <remarks>
+            Since both the <paramref name="id"/> and returning type are <see cref="T:System.String"/>
+            this method returns exactly what is passed on the <paramref name="id"/> argument.
+            </remarks>
+        </member>
+        <member name="M:Falsus.Providers.Internet.AvatarSvgProvider.GetValueId(System.String)">
+            <summary>
+            Gets a unique identifier for the provided <see cref="T:System.String"/> value.
+            </summary>
+            <param name="value">The <see cref="T:System.String"/>value.</param>
+            <returns>
+            A <see cref="T:System.String"/> containing the unique identifier of the provided <see cref="T:System.String"/>.
+            </returns>
+            <remarks>
+            Since both the <paramref name="value"/> and returning type are <see cref="T:System.String"/>
+            this method returns exactly what is passed on the <paramref name="value"/> argument.
+            </remarks>
+        </member>
+        <member name="M:Falsus.Providers.Internet.AvatarSvgProvider.Load(Falsus.GeneratorProperties.DataGeneratorProperty{System.String},System.Int32)">
+            <summary>
+            Instructs the data provider to prepare the data for generation based on the
+            provided <see cref="T:Falsus.Providers.Internet.AvatarSvgProviderConfiguration"/>.
+            </summary>
+            <param name="property">
+            An implementation of the generic <see cref="T:Falsus.GeneratorProperties.DataGeneratorProperty`1"/>
+            defining the property that this provider has been attached to.
+            </param>
+            <param name="rowCount">The desired number of rows to be generated.</param>
+            <remarks>
+            Invoked before any calculation takes place, the goal of this method is
+            usually preparing or caching data for the generation taking place afterwards.
+            </remarks>
+        </member>
+        <member name="M:Falsus.Providers.Internet.AvatarSvgProvider.OnInitializeRandomizer(System.Nullable{System.Int32})">
+            <summary>
+            Method invoked after the Random instance has been initialized.
+            </summary>
+            <param name="seed">
+            A number used to calculate a starting value for the pseudo-random number sequence.
+            </param>
+        </member>
+        <member name="M:Falsus.Providers.Internet.AvatarSvgProvider.ConvertColor(Falsus.Shared.Avatar.Enums.AvatarHairColor)">
+            <summary>
+            Converts a value of <see cref="T:Falsus.Shared.Avatar.Enums.AvatarHairColor"/> into an
+            hexadecimal representation of the color.
+            </summary>
+            <param name="color">The <see cref="T:Falsus.Shared.Avatar.Enums.AvatarHairColor"/> value.</param>
+            <returns>
+            A string representing the hexadecimal value for the <paramref name="color"/> value.
+            </returns>
+        </member>
+        <member name="M:Falsus.Providers.Internet.AvatarSvgProvider.ConvertColor(Falsus.Shared.Avatar.Enums.AvatarFacialHairColor)">
+            <summary>
+            Converts a value of <see cref="T:Falsus.Shared.Avatar.Enums.AvatarFacialHairColor"/> into an
+            hexadecimal representation of the color.
+            </summary>
+            <param name="color">The <see cref="T:Falsus.Shared.Avatar.Enums.AvatarFacialHairColor"/> value.</param>
+            <returns>
+            A string representing the hexadecimal value for the <paramref name="color"/> value.
+            </returns>
+        </member>
+        <member name="M:Falsus.Providers.Internet.AvatarSvgProvider.ConvertColor(Falsus.Shared.Avatar.Enums.AvatarClotheColor)">
+            <summary>
+            Converts a value of <see cref="T:Falsus.Shared.Avatar.Enums.AvatarClotheColor"/> into an
+            hexadecimal representation of the color.
+            </summary>
+            <param name="color">The <see cref="T:Falsus.Shared.Avatar.Enums.AvatarClotheColor"/> value.</param>
+            <returns>
+            A string representing the hexadecimal value for the <paramref name="color"/> value.
+            </returns>
+        </member>
+        <member name="M:Falsus.Providers.Internet.AvatarSvgProvider.ConvertColor(Falsus.Shared.Avatar.Enums.AvatarHatColor)">
+            <summary>
+            Converts a value of <see cref="T:Falsus.Shared.Avatar.Enums.AvatarHatColor"/> into an
+            hexadecimal representation of the color.
+            </summary>
+            <param name="color">The <see cref="T:Falsus.Shared.Avatar.Enums.AvatarHatColor"/> value.</param>
+            <returns>
+            A string representing the hexadecimal value for the <paramref name="color"/> value.
+            </returns>
+        </member>
+        <member name="M:Falsus.Providers.Internet.AvatarSvgProvider.ConvertColor(Falsus.Shared.Avatar.Enums.AvatarSkinColor)">
+            <summary>
+            Converts a value of <see cref="T:Falsus.Shared.Avatar.Enums.AvatarSkinColor"/> into an
+            hexadecimal representation of the color.
+            </summary>
+            <param name="color">The <see cref="T:Falsus.Shared.Avatar.Enums.AvatarSkinColor"/> value.</param>
+            <returns>
+            A string representing the hexadecimal value for the <paramref name="color"/> value.
+            </returns>
+        </member>
+        <member name="M:Falsus.Providers.Internet.AvatarSvgProvider.ReadManifestData(System.Reflection.Assembly,System.String)">
+            <summary>
+            Reads the contents of a file embedded in the DLL.
+            </summary>
+            <param name="assembly">The assembly to read the file from.</param>
+            <param name="embeddedFileName">The name of the file to read.</param>
+            <returns>A <see cref="T:System.String"/> containing the contents of the file.</returns>
+            <remarks>
+            This method will read the contents of the first file whose name ends with <paramref name="embeddedFileName"/> value.
+            </remarks>
+            <exception cref="T:System.InvalidOperationException">Thrown when the manifest resource stream is null.</exception>
+        </member>
+        <member name="T:Falsus.Providers.Internet.AvatarSvgProviderConfiguration">
+            <summary>
+            This class represents the configuration object of the <see cref="T:Falsus.Providers.Internet.AvatarSvgProvider"/> data provider.
+            </summary>
+            <seealso cref="T:Falsus.Providers.Internet.AvatarProviderConfiguration"/>
+        </member>
+        <member name="M:Falsus.Providers.Internet.AvatarSvgProviderConfiguration.#ctor">
+            <summary>
+            Initializes a new instance of the <see cref="T:Falsus.Providers.Internet.AvatarSvgProviderConfiguration"/> class.
+            </summary>
+        </member>
+        <member name="T:Falsus.Providers.Internet.AvatarUrlProvider">
+            <summary>
+            Represents a provider of <see cref="T:System.String"/> values
+            containing and URI representation of an <see cref="T:Falsus.Shared.Avatar.AvatarModel"/> instance.
+            </summary>
+            <remarks>
+            This provider works as a proxy for the <see cref="T:Falsus.Providers.Internet.AvatarProvider"/>
+            converting the <see cref="T:Falsus.Shared.Avatar.AvatarModel"/> instance to an SVG string.
+            </remarks>
+            <seealso cref="T:Falsus.Providers.DataGeneratorProvider`1"/>
+        </member>
+        <member name="F:Falsus.Providers.Internet.AvatarUrlProvider.StyleUrlParameter">
+            <summary>
+            A string containing the query string parameter name for the <see cref="T:Falsus.Shared.Avatar.Enums.AvatarStyle"/> value.
+            </summary>
+        </member>
+        <member name="F:Falsus.Providers.Internet.AvatarUrlProvider.TopTypeUrlParameter">
+            <summary>
+            A string containing the query string parameter name for the <see cref="T:Falsus.Shared.Avatar.Enums.AvatarTop"/> value.
+            </summary>
+        </member>
+        <member name="F:Falsus.Providers.Internet.AvatarUrlProvider.AccessoriesTypeUrlParameter">
+            <summary>
+            A string containing the query string parameter name for the <see cref="T:Falsus.Shared.Avatar.Enums.AvatarAccessory"/> value.
+            </summary>
+        </member>
+        <member name="F:Falsus.Providers.Internet.AvatarUrlProvider.HairColorUrlParameter">
+            <summary>
+            A string containing the query string parameter name for the <see cref="T:Falsus.Shared.Avatar.Enums.AvatarHairColor"/> value.
+            </summary>
+        </member>
+        <member name="F:Falsus.Providers.Internet.AvatarUrlProvider.HatColorUrlParameter">
+            <summary>
+            A string containing the query string parameter name for the <see cref="T:Falsus.Shared.Avatar.Enums.AvatarHatColor"/> value.
+            </summary>
+        </member>
+        <member name="F:Falsus.Providers.Internet.AvatarUrlProvider.FacialHairTypeUrlParameter">
+            <summary>
+            A string containing the query string parameter name for the <see cref="T:Falsus.Shared.Avatar.Enums.AvatarFacialHairType"/> value.
+            </summary>
+        </member>
+        <member name="F:Falsus.Providers.Internet.AvatarUrlProvider.FacialHairColorUrlParameter">
+            <summary>
+            A string containing the query string parameter name for the <see cref="T:Falsus.Shared.Avatar.Enums.AvatarFacialHairColor"/> value.
+            </summary>
+        </member>
+        <member name="F:Falsus.Providers.Internet.AvatarUrlProvider.ClotheTypeUrlParameter">
+            <summary>
+            A string containing the query string parameter name for the <see cref="T:Falsus.Shared.Avatar.Enums.AvatarClotheType"/> value.
+            </summary>
+        </member>
+        <member name="F:Falsus.Providers.Internet.AvatarUrlProvider.ClotheColorUrlParameter">
+            <summary>
+            A string containing the query string parameter name for the <see cref="T:Falsus.Shared.Avatar.Enums.AvatarClotheColor"/> value.
+            </summary>
+        </member>
+        <member name="F:Falsus.Providers.Internet.AvatarUrlProvider.ClotheGraphicTypeUrlParameter">
+            <summary>
+            A string containing the query string parameter name for the <see cref="T:Falsus.Shared.Avatar.Enums.AvatarClotheGraphicType"/> value.
+            </summary>
+        </member>
+        <member name="F:Falsus.Providers.Internet.AvatarUrlProvider.EyeTypeUrlParameter">
+            <summary>
+            A string containing the query string parameter name for the <see cref="T:Falsus.Shared.Avatar.Enums.AvatarEyeType"/> value.
+            </summary>
+        </member>
+        <member name="F:Falsus.Providers.Internet.AvatarUrlProvider.EyebrowTypeUrlParameter">
+            <summary>
+            A string containing the query string parameter name for the <see cref="T:Falsus.Shared.Avatar.Enums.AvatarEyebrowType"/> value.
+            </summary>
+        </member>
+        <member name="F:Falsus.Providers.Internet.AvatarUrlProvider.MouthTypeUrlParameter">
+            <summary>
+            A string containing the query string parameter name for the <see cref="T:Falsus.Shared.Avatar.Enums.AvatarMouthType"/> value.
+            </summary>
+        </member>
+        <member name="F:Falsus.Providers.Internet.AvatarUrlProvider.SkinColorUrlParameter">
+            <summary>
+            A string containing the query string parameter name for the <see cref="T:Falsus.Shared.Avatar.Enums.AvatarSkinColor"/> value.
+            </summary>
+        </member>
+        <member name="F:Falsus.Providers.Internet.AvatarUrlProvider.BaseUrl">
+            <summary>
+            A string containing the base for the avatar URI.
+            </summary>
+        </member>
+        <member name="F:Falsus.Providers.Internet.AvatarUrlProvider.configuration">
+            <summary>
+            The configuration of this provider.
+            </summary>
+        </member>
+        <member name="F:Falsus.Providers.Internet.AvatarUrlProvider.provider">
+            <summary>
+            The provider of <see cref="T:Falsus.Shared.Avatar.AvatarModel"/> instances.
+            </summary>
+        </member>
+        <member name="M:Falsus.Providers.Internet.AvatarUrlProvider.#ctor">
+            <summary>
+            Initializes a new instance of the <see cref="T:Falsus.Providers.Internet.AvatarUrlProvider"/> class.
+            </summary>
+        </member>
+        <member name="M:Falsus.Providers.Internet.AvatarUrlProvider.#ctor(Falsus.Providers.Internet.AvatarUrlProviderConfiguration)">
+            <summary>
+            Initializes a new instance of the <see cref="T:Falsus.Providers.Internet.AvatarUrlProvider"/> class.
+            </summary>
+            <param name="configuration">The configuration to use.</param>
+        </member>
+        <member name="M:Falsus.Providers.Internet.AvatarUrlProvider.GetRangedRowValue(System.String,System.String,System.String[])">
+            <summary>
+            Generates a random <see cref="T:System.String"/> containing an URI representation
+            of an <see cref="T:Falsus.Shared.Avatar.AvatarModel"/> instance
+            that is greater than the value of <paramref name="minValue"/> and lower
+            than the value of <paramref name="maxValue"/>.
+            </summary>
+            <param name="minValue">The exclusive lower bound of the random object returned.</param>
+            <param name="maxValue">The exclusive upper bound of the random object returned.</param>
+            <param name="excludedObjects">
+            An array of <see cref="T:System.String"/> values that cannot be returned
+            by the provider.
+            </param>
+            <returns>
+            A random instance of <see cref="T:Falsus.Shared.Avatar.AvatarModel"/> greater than <paramref name="minValue"/>
+            and less than <paramref name="maxValue"/>, converted to an URI representation.
+            </returns>
+            <remarks>
+            <paramref name="maxValue"/> must be greater than <paramref name="minValue"/>.
+            </remarks>
+            <exception cref="T:System.NotSupportedException">
+            Thrown because the generation of ranged <see cref="T:Falsus.Shared.Avatar.AvatarModel"/>
+            values is not supported.
+            </exception>
+        </member>
+        <member name="M:Falsus.Providers.Internet.AvatarUrlProvider.GetRowValue(Falsus.DataGeneratorContext,Falsus.GeneratorProperties.WeightedRange{System.String}[],System.String[])">
+            <summary>
+            Generates a random <see cref="T:System.String"/> containing an URI representation
+            of an <see cref="T:Falsus.Shared.Avatar.AvatarModel"/> instance
+            based on the context and excluded ranges.
+            </summary>
+            <param name="context">
+            An instance of <see cref="T:Falsus.DataGeneratorContext"/> defining
+            the current generation context.
+            </param>
+            <param name="excludedRanges">
+            An array of <see cref="T:Falsus.GeneratorProperties.WeightedRange`1"/>s defining the ranges
+            that cannot be returned by the provider.
+            </param>
+            <param name="excludedObjects">
+            An array of <see cref="T:System.String"/> values that cannot be returned
+            by the provider.
+            </param>
+            <returns>
+            A random <see cref="T:System.String"/> containing an URI representation
+            of an <see cref="T:Falsus.Shared.Avatar.AvatarModel"/> instance that is outside of
+            the specified <paramref name="excludedRanges"/>.
+            </returns>
+            <exception cref="T:System.NotSupportedException">
+            Thrown because the generation of ranged <see cref="T:Falsus.Shared.Avatar.AvatarModel"/>
+            values is not supported.
+            </exception>
+        </member>
+        <member name="M:Falsus.Providers.Internet.AvatarUrlProvider.GetRowValue(Falsus.DataGeneratorContext,System.String[])">
+            <summary>
+            Generates a random <see cref="T:System.String"/> containing an URI representation
+            of an <see cref="T:Falsus.Shared.Avatar.AvatarModel"/> instance based on the context
+            and excluded objects.
+            </summary>
+            <param name="context">
+            An instance of <see cref="T:Falsus.DataGeneratorContext"/> defining
+            the current generation context.
+            </param>
+            <param name="excludedObjects">
+            An array of <see cref="T:System.String"/> values that cannot be returned
+            by the provider.
+            </param>
+            <returns>
+            A <see cref="T:System.String"/> containing an URI representation of a random instance of <see cref="T:Falsus.Shared.Avatar.AvatarModel"/>.
+            </returns>
+            <remarks>
+            The <paramref name="excludedObjects"/> are not being taken into account.
+            </remarks>
+        </member>
+        <member name="M:Falsus.Providers.Internet.AvatarUrlProvider.GetRowValue(System.String)">
+            <summary>
+            Gets an instance of <see cref="T:System.String"/> from the provided <paramref name="id"/>.
+            </summary>
+            <param name="id">An unique identifier for the object.</param>
+            <returns>
+            A <see cref="T:System.String"/> with the specified unique identifier.
+            </returns>
+            <remarks>
+            Since both the <paramref name="id"/> and returning type are <see cref="T:System.String"/>
+            this method returns exactly what is passed on the <paramref name="id"/> argument.
+            </remarks>
+        </member>
+        <member name="M:Falsus.Providers.Internet.AvatarUrlProvider.GetValueId(System.String)">
+            <summary>
+            Gets a unique identifier for the provided <see cref="T:System.String"/> value.
+            </summary>
+            <param name="value">The <see cref="T:System.String"/>value.</param>
+            <returns>
+            A <see cref="T:System.String"/> containing the unique identifier of the provided <see cref="T:System.String"/>.
+            </returns>
+            <remarks>
+            Since both the <paramref name="value"/> and returning type are <see cref="T:System.String"/>
+            this method returns exactly what is passed on the <paramref name="value"/> argument.
+            </remarks>
+        </member>
+        <member name="M:Falsus.Providers.Internet.AvatarUrlProvider.Load(Falsus.GeneratorProperties.DataGeneratorProperty{System.String},System.Int32)">
+            <summary>
+            Instructs the data provider to prepare the data for generation based on the
+            provided <see cref="T:Falsus.Providers.Internet.AvatarUrlProviderConfiguration"/>.
+            </summary>
+            <param name="property">
+            An implementation of the generic <see cref="T:Falsus.GeneratorProperties.DataGeneratorProperty`1"/>
+            defining the property that this provider has been attached to.
+            </param>
+            <param name="rowCount">The desired number of rows to be generated.</param>
+            <remarks>
+            Invoked before any calculation takes place, the goal of this method is
+            usually preparing or caching data for the generation taking place afterwards.
+            </remarks>
+        </member>
+        <member name="M:Falsus.Providers.Internet.AvatarUrlProvider.OnInitializeRandomizer(System.Nullable{System.Int32})">
+            <summary>
+            Method invoked after the Random instance has been initialized.
+            </summary>
+            <param name="seed">
+            A number used to calculate a starting value for the pseudo-random number sequence.
+            </param>
+        </member>
+        <member name="T:Falsus.Providers.Internet.AvatarUrlProviderConfiguration">
+            <summary>
+            This class represents the configuration object of the <see cref="T:Falsus.Providers.Internet.AvatarUrlProvider"/> data provider.
+            </summary>
+            <seealso cref="T:Falsus.Providers.Internet.AvatarProviderConfiguration"/>
+        </member>
+        <member name="M:Falsus.Providers.Internet.AvatarUrlProviderConfiguration.#ctor">
+            <summary>
+            Initializes a new instance of the <see cref="T:Falsus.Providers.Internet.AvatarUrlProviderConfiguration"/> class.
+            </summary>
+        </member>
         <member name="T:Falsus.Providers.Internet.EmailProvider">
             <summary>
             Represents a provider of email addresses.

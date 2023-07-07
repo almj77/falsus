@@ -42,6 +42,7 @@
 - Email address
 - Hexadecimal color
 - MIME type
+- Avatar
 
 ## 🕹 Usage
 ### Basic
