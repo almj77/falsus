@@ -225,8 +225,7 @@
         }
 
         /// <summary>
-        /// Instructs the data provider to prepare the data for generation based on the
-        /// provided <see cref="CityProviderConfiguration"/>.
+        /// Instructs the data provider to prepare the data for generation.
         /// </summary>
         /// <param name="property">
         /// An implementation of the generic <see cref="DataGeneratorProperty{CityModel}"/>

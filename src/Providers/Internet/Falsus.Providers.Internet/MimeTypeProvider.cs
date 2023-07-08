@@ -3,7 +3,6 @@
     using System;
     using System.Collections.Generic;
     using System.Linq;
-    using System.Text;
     using Falsus.GeneratorProperties;
     using Falsus.Shared.Helpers;
     using Falsus.Shared.Models;
@@ -43,10 +42,6 @@
         /// Initializes a new instance of the <see cref="MimeTypeProvider"/> class.
         /// </summary>
         /// <param name="configuration">The configuration to use.</param>
-        /// <remarks>
-        /// The <paramref name="configuration"/> must not be null and the
-        /// <see cref="MimeTypeProviderConfiguration.ConnectionString"/> cannot be empty.
-        /// </remarks>
         /// <exception cref="ArgumentNullException">
         /// Thrown when the <see cref="configuration"/> instance is null.
         /// </exception>

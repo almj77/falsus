@@ -205,8 +205,7 @@
         }
 
         /// <summary>
-        /// Instructs the data provider to prepare the data for generation based on the
-        /// provided <see cref="FirstNameProviderConfiguration"/>.
+        /// Instructs the data provider to prepare the data for generation.
         /// </summary>
         /// <param name="property">
         /// An implementation of the generic <see cref="DataGeneratorProperty{T}"/>
@@ -221,10 +220,10 @@
         {
             base.Load(property, rowCount);
 
-            FirstNameModel[] firstNameValues = 
+            FirstNameModel[] firstNameValues =
                 ResourceReader.ReadContentsFromFile<FirstNameModel[]>("Falsus.Providers.Person.Datasets.GivenNames.json");
 
-            LanguageToCountryModel[] languageToCountryValues = 
+            LanguageToCountryModel[] languageToCountryValues =
                 ResourceReader.ReadContentsFromFile<LanguageToCountryModel[]>("Falsus.Providers.Person.Datasets.CountryLanguages.json");
 
             if (property.Arguments.ContainsKey(GenderArgumentName) && property.Arguments.ContainsKey(NationalityArgumentName))

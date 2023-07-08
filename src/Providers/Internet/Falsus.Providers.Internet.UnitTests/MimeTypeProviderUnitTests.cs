@@ -399,49 +399,49 @@
 
             return models.ToArray();
         }
-    private ProviderResult CreateProvider(
-        int rowCount = 1,
-        int? seed = default,
-        bool excludeUncommon = false,
-        bool includeDeprecated = false,
-        bool treatAliasesAsUnique = false)
-    {
-        MimeTypeProvider provider = new MimeTypeProvider(new MimeTypeProviderConfiguration()
+        private ProviderResult CreateProvider(
+            int rowCount = 1,
+            int? seed = default,
+            bool excludeUncommon = false,
+            bool includeDeprecated = false,
+            bool treatAliasesAsUnique = false)
         {
-            ExcludeUncommon = excludeUncommon,
-            IncludeDeprecated = includeDeprecated,
-            TreatAliasesAsUnique = treatAliasesAsUnique
-        });
+            MimeTypeProvider provider = new MimeTypeProvider(new MimeTypeProviderConfiguration()
+            {
+                ExcludeUncommon = excludeUncommon,
+                IncludeDeprecated = includeDeprecated,
+                TreatAliasesAsUnique = treatAliasesAsUnique
+            });
 
-        if (seed.HasValue)
-        {
-            provider.InitializeRandomizer(seed.Value);
+            if (seed.HasValue)
+            {
+                provider.InitializeRandomizer(seed.Value);
+            }
+            else
+            {
+                provider.InitializeRandomizer();
+            }
+
+            DataGeneratorProperty<MimeTypeModel> property = new DataGeneratorProperty<MimeTypeModel>("MimeType")
+                .FromProvider(provider);
+
+            provider.Load(property, rowCount);
+
+            DataGeneratorContext context = new DataGeneratorContext(new Dictionary<string, object>(), 0, 1, property, property.Arguments);
+
+            return new ProviderResult()
+            {
+                Provider = provider,
+                Property = property,
+                Context = context
+            };
         }
-        else
+
+        private struct ProviderResult
         {
-            provider.InitializeRandomizer();
+            public MimeTypeProvider Provider;
+            public DataGeneratorProperty<MimeTypeModel> Property;
+            public DataGeneratorContext Context;
         }
-
-        DataGeneratorProperty<MimeTypeModel> property = new DataGeneratorProperty<MimeTypeModel>("MimeType")
-            .FromProvider(provider);
-
-        provider.Load(property, rowCount);
-
-        DataGeneratorContext context = new DataGeneratorContext(new Dictionary<string, object>(), 0, 1, property, property.Arguments);
-
-        return new ProviderResult()
-        {
-            Provider = provider,
-            Property = property,
-            Context = context
-        };
     }
-
-    private struct ProviderResult
-    {
-        public MimeTypeProvider Provider;
-        public DataGeneratorProperty<MimeTypeModel> Property;
-        public DataGeneratorContext Context;
-    }
-}
 }
