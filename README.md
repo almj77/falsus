@@ -43,6 +43,7 @@
 - Hexadecimal color
 - MIME type
 - Avatar
+- Password
 
 ## 🕹 Usage
 ### Basic
