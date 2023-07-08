@@ -39,118 +39,62 @@ var searchModule = function() {
     a(
         {
             id:0,
-            title:"WeightedRange",
-            content:"WeightedRange",
+            title:"RandomExtensions",
+            content:"RandomExtensions",
             description:'',
             tags:''
         },
         {
-            url:'/api/Falsus.GeneratorProperties/WeightedRange',
-            title:"WeightedRange",
+            url:'/api/Falsus.Extensions/RandomExtensions',
+            title:"RandomExtensions",
             description:""
         }
     );
     a(
         {
             id:1,
-            title:"FileTypeModel",
-            content:"FileTypeModel",
+            title:"HexColorProvider",
+            content:"HexColorProvider",
             description:'',
             tags:''
         },
         {
-            url:'/api/Falsus.Shared.Models/FileTypeModel',
-            title:"FileTypeModel",
+            url:'/api/Falsus.Providers.Internet/HexColorProvider',
+            title:"HexColorProvider",
             description:""
         }
     );
     a(
         {
             id:2,
-            title:"ContinentModel",
-            content:"ContinentModel",
+            title:"DataGenerator",
+            content:"DataGenerator",
             description:'',
             tags:''
         },
         {
-            url:'/api/Falsus.Shared.Models/ContinentModel',
-            title:"ContinentModel",
+            url:'/api/Falsus/DataGenerator',
+            title:"DataGenerator",
             description:""
         }
     );
     a(
         {
             id:3,
-            title:"AvatarTop",
-            content:"AvatarTop",
+            title:"LastNameProvider",
+            content:"LastNameProvider",
             description:'',
             tags:''
         },
         {
-            url:'/api/Falsus.Shared.Avatar.Enums/AvatarTop',
-            title:"AvatarTop",
+            url:'/api/Falsus.Providers.Person/LastNameProvider',
+            title:"LastNameProvider",
             description:""
         }
     );
     a(
         {
             id:4,
-            title:"RegionModel",
-            content:"RegionModel",
-            description:'',
-            tags:''
-        },
-        {
-            url:'/api/Falsus.Shared.Models/RegionModel',
-            title:"RegionModel",
-            description:""
-        }
-    );
-    a(
-        {
-            id:5,
-            title:"RegexProviderConfiguration",
-            content:"RegexProviderConfiguration",
-            description:'',
-            tags:''
-        },
-        {
-            url:'/api/Falsus.Providers.Text/RegexProviderConfiguration',
-            title:"RegexProviderConfiguration",
-            description:""
-        }
-    );
-    a(
-        {
-            id:6,
-            title:"AvatarHatColor",
-            content:"AvatarHatColor",
-            description:'',
-            tags:''
-        },
-        {
-            url:'/api/Falsus.Shared.Avatar.Enums/AvatarHatColor',
-            title:"AvatarHatColor",
-            description:""
-        }
-    );
-    a(
-        {
-            id:7,
-            title:"DataGeneratorProvider",
-            content:"DataGeneratorProvider",
-            description:'',
-            tags:''
-        },
-        {
-            url:'/api/Falsus.Providers/DataGeneratorProvider_1',
-            title:"DataGeneratorProvider<T>",
-            description:""
-        }
-    );
-    a(
-        {
-            id:8,
             title:"AvatarSvgProvider",
             content:"AvatarSvgProvider",
             description:'',
@@ -164,77 +108,49 @@ var searchModule = function() {
     );
     a(
         {
-            id:9,
-            title:"AvatarClotheColor",
-            content:"AvatarClotheColor",
+            id:5,
+            title:"DataGeneratorProviderArgument",
+            content:"DataGeneratorProviderArgument",
             description:'',
             tags:''
         },
         {
-            url:'/api/Falsus.Shared.Avatar.Enums/AvatarClotheColor',
-            title:"AvatarClotheColor",
+            url:'/api/Falsus.Providers/DataGeneratorProviderArgument',
+            title:"DataGeneratorProviderArgument",
             description:""
         }
     );
     a(
         {
-            id:10,
-            title:"AvatarStyle",
-            content:"AvatarStyle",
+            id:6,
+            title:"CountryModel",
+            content:"CountryModel",
             description:'',
             tags:''
         },
         {
-            url:'/api/Falsus.Shared.Avatar.Enums/AvatarStyle',
-            title:"AvatarStyle",
+            url:'/api/Falsus.Shared.Models/CountryModel',
+            title:"CountryModel",
             description:""
         }
     );
     a(
         {
-            id:11,
-            title:"AvatarSkinColor",
-            content:"AvatarSkinColor",
+            id:7,
+            title:"FloatProvider",
+            content:"FloatProvider",
             description:'',
             tags:''
         },
         {
-            url:'/api/Falsus.Shared.Avatar.Enums/AvatarSkinColor',
-            title:"AvatarSkinColor",
+            url:'/api/Falsus.Providers.DataTypes/FloatProvider',
+            title:"FloatProvider",
             description:""
         }
     );
     a(
         {
-            id:12,
-            title:"DoubleProvider",
-            content:"DoubleProvider",
-            description:'',
-            tags:''
-        },
-        {
-            url:'/api/Falsus.Providers.DataTypes/DoubleProvider',
-            title:"DoubleProvider",
-            description:""
-        }
-    );
-    a(
-        {
-            id:13,
-            title:"AvatarProviderConfiguration",
-            content:"AvatarProviderConfiguration",
-            description:'',
-            tags:''
-        },
-        {
-            url:'/api/Falsus.Providers.Internet/AvatarProviderConfiguration',
-            title:"AvatarProviderConfiguration",
-            description:""
-        }
-    );
-    a(
-        {
-            id:14,
+            id:8,
             title:"LoremIpsumProviderConfiguration",
             content:"LoremIpsumProviderConfiguration",
             description:'',
@@ -248,35 +164,77 @@ var searchModule = function() {
     );
     a(
         {
-            id:15,
-            title:"CountryProvider",
-            content:"CountryProvider",
+            id:9,
+            title:"MimeTypeProviderConfiguration",
+            content:"MimeTypeProviderConfiguration",
             description:'',
             tags:''
         },
         {
-            url:'/api/Falsus.Providers.Location/CountryProvider',
-            title:"CountryProvider",
+            url:'/api/Falsus.Providers.Internet/MimeTypeProviderConfiguration',
+            title:"MimeTypeProviderConfiguration",
             description:""
         }
     );
     a(
         {
-            id:16,
-            title:"CurrencyModel",
-            content:"CurrencyModel",
+            id:10,
+            title:"AvatarUrlProviderConfiguration",
+            content:"AvatarUrlProviderConfiguration",
             description:'',
             tags:''
         },
         {
-            url:'/api/Falsus.Shared.Models/CurrencyModel',
-            title:"CurrencyModel",
+            url:'/api/Falsus.Providers.Internet/AvatarUrlProviderConfiguration',
+            title:"AvatarUrlProviderConfiguration",
             description:""
         }
     );
     a(
         {
-            id:17,
+            id:11,
+            title:"LoremIpsumFragmentType",
+            content:"LoremIpsumFragmentType",
+            description:'',
+            tags:''
+        },
+        {
+            url:'/api/Falsus.Providers.Text/LoremIpsumFragmentType',
+            title:"LoremIpsumFragmentType",
+            description:""
+        }
+    );
+    a(
+        {
+            id:12,
+            title:"CoordinatesModel",
+            content:"CoordinatesModel",
+            description:'',
+            tags:''
+        },
+        {
+            url:'/api/Falsus.Shared.Models/CoordinatesModel',
+            title:"CoordinatesModel",
+            description:""
+        }
+    );
+    a(
+        {
+            id:13,
+            title:"WordType",
+            content:"WordType",
+            description:'',
+            tags:''
+        },
+        {
+            url:'/api/Falsus.Providers.Text/WordType',
+            title:"WordType",
+            description:""
+        }
+    );
+    a(
+        {
+            id:14,
             title:"WeightedRange",
             content:"WeightedRange",
             description:'',
@@ -290,15 +248,57 @@ var searchModule = function() {
     );
     a(
         {
-            id:18,
-            title:"DataGeneratorConfigurationProperty",
-            content:"DataGeneratorConfigurationProperty",
+            id:15,
+            title:"WeightedRange",
+            content:"WeightedRange",
             description:'',
             tags:''
         },
         {
-            url:'/api/Falsus.Configuration/DataGeneratorConfigurationProperty',
-            title:"DataGeneratorConfigurationProperty",
+            url:'/api/Falsus.GeneratorProperties/WeightedRange',
+            title:"WeightedRange",
+            description:""
+        }
+    );
+    a(
+        {
+            id:16,
+            title:"RegexProviderConfiguration",
+            content:"RegexProviderConfiguration",
+            description:'',
+            tags:''
+        },
+        {
+            url:'/api/Falsus.Providers.Text/RegexProviderConfiguration',
+            title:"RegexProviderConfiguration",
+            description:""
+        }
+    );
+    a(
+        {
+            id:17,
+            title:"AvatarEyebrowType",
+            content:"AvatarEyebrowType",
+            description:'',
+            tags:''
+        },
+        {
+            url:'/api/Falsus.Shared.Avatar.Enums/AvatarEyebrowType',
+            title:"AvatarEyebrowType",
+            description:""
+        }
+    );
+    a(
+        {
+            id:18,
+            title:"AvatarStyle",
+            content:"AvatarStyle",
+            description:'',
+            tags:''
+        },
+        {
+            url:'/api/Falsus.Shared.Avatar.Enums/AvatarStyle',
+            title:"AvatarStyle",
             description:""
         }
     );
@@ -319,202 +319,76 @@ var searchModule = function() {
     a(
         {
             id:20,
-            title:"CityModel",
-            content:"CityModel",
+            title:"AvatarEyeType",
+            content:"AvatarEyeType",
             description:'',
             tags:''
         },
         {
-            url:'/api/Falsus.Shared.Models/CityModel',
-            title:"CityModel",
+            url:'/api/Falsus.Shared.Avatar.Enums/AvatarEyeType',
+            title:"AvatarEyeType",
             description:""
         }
     );
     a(
         {
             id:21,
-            title:"ContinentProvider",
-            content:"ContinentProvider",
+            title:"AvatarMouthType",
+            content:"AvatarMouthType",
             description:'',
             tags:''
         },
         {
-            url:'/api/Falsus.Providers.Location/ContinentProvider',
-            title:"ContinentProvider",
+            url:'/api/Falsus.Shared.Avatar.Enums/AvatarMouthType',
+            title:"AvatarMouthType",
             description:""
         }
     );
     a(
         {
             id:22,
-            title:"LoremIpsumProvider",
-            content:"LoremIpsumProvider",
+            title:"AvatarModel",
+            content:"AvatarModel",
             description:'',
             tags:''
         },
         {
-            url:'/api/Falsus.Providers.Text/LoremIpsumProvider',
-            title:"LoremIpsumProvider",
+            url:'/api/Falsus.Shared.Avatar/AvatarModel',
+            title:"AvatarModel",
             description:""
         }
     );
     a(
         {
             id:23,
-            title:"AvatarClotheType",
-            content:"AvatarClotheType",
+            title:"RegionProvider",
+            content:"RegionProvider",
             description:'',
             tags:''
         },
         {
-            url:'/api/Falsus.Shared.Avatar.Enums/AvatarClotheType',
-            title:"AvatarClotheType",
+            url:'/api/Falsus.Providers.Location/RegionProvider',
+            title:"RegionProvider",
             description:""
         }
     );
     a(
         {
             id:24,
-            title:"AvatarFacialHairType",
-            content:"AvatarFacialHairType",
+            title:"ContinentModel",
+            content:"ContinentModel",
             description:'',
             tags:''
         },
         {
-            url:'/api/Falsus.Shared.Avatar.Enums/AvatarFacialHairType',
-            title:"AvatarFacialHairType",
+            url:'/api/Falsus.Shared.Models/ContinentModel',
+            title:"ContinentModel",
             description:""
         }
     );
     a(
         {
             id:25,
-            title:"RandomExtensions",
-            content:"RandomExtensions",
-            description:'',
-            tags:''
-        },
-        {
-            url:'/api/Falsus.Extensions/RandomExtensions',
-            title:"RandomExtensions",
-            description:""
-        }
-    );
-    a(
-        {
-            id:26,
-            title:"AvatarProvider",
-            content:"AvatarProvider",
-            description:'',
-            tags:''
-        },
-        {
-            url:'/api/Falsus.Providers.Internet/AvatarProvider',
-            title:"AvatarProvider",
-            description:""
-        }
-    );
-    a(
-        {
-            id:27,
-            title:"FirstNameProvider",
-            content:"FirstNameProvider",
-            description:'',
-            tags:''
-        },
-        {
-            url:'/api/Falsus.Providers.Person/FirstNameProvider',
-            title:"FirstNameProvider",
-            description:""
-        }
-    );
-    a(
-        {
-            id:28,
-            title:"CoordinatesProvider",
-            content:"CoordinatesProvider",
-            description:'',
-            tags:''
-        },
-        {
-            url:'/api/Falsus.Providers.Location/CoordinatesProvider',
-            title:"CoordinatesProvider",
-            description:""
-        }
-    );
-    a(
-        {
-            id:29,
-            title:"DateProvider",
-            content:"DateProvider",
-            description:'',
-            tags:''
-        },
-        {
-            url:'/api/Falsus.Providers.DataTypes/DateProvider',
-            title:"DateProvider",
-            description:""
-        }
-    );
-    a(
-        {
-            id:30,
-            title:"RangedDataGeneratorProperty",
-            content:"RangedDataGeneratorProperty",
-            description:'',
-            tags:''
-        },
-        {
-            url:'/api/Falsus.GeneratorProperties/RangedDataGeneratorProperty_1',
-            title:"RangedDataGeneratorProperty<T>",
-            description:""
-        }
-    );
-    a(
-        {
-            id:31,
-            title:"IDataGeneratorProperty",
-            content:"IDataGeneratorProperty",
-            description:'',
-            tags:''
-        },
-        {
-            url:'/api/Falsus.GeneratorProperties/IDataGeneratorProperty',
-            title:"IDataGeneratorProperty",
-            description:""
-        }
-    );
-    a(
-        {
-            id:32,
-            title:"DataGeneratorProperty",
-            content:"DataGeneratorProperty",
-            description:'',
-            tags:''
-        },
-        {
-            url:'/api/Falsus.GeneratorProperties/DataGeneratorProperty_1',
-            title:"DataGeneratorProperty<T>",
-            description:""
-        }
-    );
-    a(
-        {
-            id:33,
-            title:"LoremIpsumFragmentType",
-            content:"LoremIpsumFragmentType",
-            description:'',
-            tags:''
-        },
-        {
-            url:'/api/Falsus.Providers.Text/LoremIpsumFragmentType',
-            title:"LoremIpsumFragmentType",
-            description:""
-        }
-    );
-    a(
-        {
-            id:34,
             title:"TimeProvider",
             content:"TimeProvider",
             description:'',
@@ -528,43 +402,169 @@ var searchModule = function() {
     );
     a(
         {
-            id:35,
-            title:"AvatarSvgProviderConfiguration",
-            content:"AvatarSvgProviderConfiguration",
+            id:26,
+            title:"DataGeneratorConfigurationProperty",
+            content:"DataGeneratorConfigurationProperty",
             description:'',
             tags:''
         },
         {
-            url:'/api/Falsus.Providers.Internet/AvatarSvgProviderConfiguration',
-            title:"AvatarSvgProviderConfiguration",
+            url:'/api/Falsus.Configuration/DataGeneratorConfigurationProperty',
+            title:"DataGeneratorConfigurationProperty",
+            description:""
+        }
+    );
+    a(
+        {
+            id:27,
+            title:"FileTypeModel",
+            content:"FileTypeModel",
+            description:'',
+            tags:''
+        },
+        {
+            url:'/api/Falsus.Shared.Models/FileTypeModel',
+            title:"FileTypeModel",
+            description:""
+        }
+    );
+    a(
+        {
+            id:28,
+            title:"BooleanProvider",
+            content:"BooleanProvider",
+            description:'',
+            tags:''
+        },
+        {
+            url:'/api/Falsus.Providers.DataTypes/BooleanProvider',
+            title:"BooleanProvider",
+            description:""
+        }
+    );
+    a(
+        {
+            id:29,
+            title:"AvatarClotheColor",
+            content:"AvatarClotheColor",
+            description:'',
+            tags:''
+        },
+        {
+            url:'/api/Falsus.Shared.Avatar.Enums/AvatarClotheColor',
+            title:"AvatarClotheColor",
+            description:""
+        }
+    );
+    a(
+        {
+            id:30,
+            title:"DoubleProvider",
+            content:"DoubleProvider",
+            description:'',
+            tags:''
+        },
+        {
+            url:'/api/Falsus.Providers.DataTypes/DoubleProvider',
+            title:"DoubleProvider",
+            description:""
+        }
+    );
+    a(
+        {
+            id:31,
+            title:"IntegerProvider",
+            content:"IntegerProvider",
+            description:'',
+            tags:''
+        },
+        {
+            url:'/api/Falsus.Providers.DataTypes/IntegerProvider',
+            title:"IntegerProvider",
+            description:""
+        }
+    );
+    a(
+        {
+            id:32,
+            title:"FirstNameProvider",
+            content:"FirstNameProvider",
+            description:'',
+            tags:''
+        },
+        {
+            url:'/api/Falsus.Providers.Person/FirstNameProvider',
+            title:"FirstNameProvider",
+            description:""
+        }
+    );
+    a(
+        {
+            id:33,
+            title:"StreetNameProvider",
+            content:"StreetNameProvider",
+            description:'',
+            tags:''
+        },
+        {
+            url:'/api/Falsus.Providers.Location/StreetNameProvider',
+            title:"StreetNameProvider",
+            description:""
+        }
+    );
+    a(
+        {
+            id:34,
+            title:"DataGeneratorConfiguration",
+            content:"DataGeneratorConfiguration",
+            description:'',
+            tags:''
+        },
+        {
+            url:'/api/Falsus.Configuration/DataGeneratorConfiguration',
+            title:"DataGeneratorConfiguration",
+            description:""
+        }
+    );
+    a(
+        {
+            id:35,
+            title:"GenderProvider",
+            content:"GenderProvider",
+            description:'',
+            tags:''
+        },
+        {
+            url:'/api/Falsus.Providers.Person/GenderProvider',
+            title:"GenderProvider",
             description:""
         }
     );
     a(
         {
             id:36,
-            title:"WordProvider",
-            content:"WordProvider",
+            title:"DateProvider",
+            content:"DateProvider",
             description:'',
             tags:''
         },
         {
-            url:'/api/Falsus.Providers.Text/WordProvider',
-            title:"WordProvider",
+            url:'/api/Falsus.Providers.DataTypes/DateProvider',
+            title:"DateProvider",
             description:""
         }
     );
     a(
         {
             id:37,
-            title:"GenericArrayProvider",
-            content:"GenericArrayProvider",
+            title:"RegionModel",
+            content:"RegionModel",
             description:'',
             tags:''
         },
         {
-            url:'/api/Falsus.Providers/GenericArrayProvider_1',
-            title:"GenericArrayProvider<T>",
+            url:'/api/Falsus.Shared.Models/RegionModel',
+            title:"RegionModel",
             description:""
         }
     );
@@ -585,258 +585,6 @@ var searchModule = function() {
     a(
         {
             id:39,
-            title:"LastNameProvider",
-            content:"LastNameProvider",
-            description:'',
-            tags:''
-        },
-        {
-            url:'/api/Falsus.Providers.Person/LastNameProvider',
-            title:"LastNameProvider",
-            description:""
-        }
-    );
-    a(
-        {
-            id:40,
-            title:"AvatarHairColor",
-            content:"AvatarHairColor",
-            description:'',
-            tags:''
-        },
-        {
-            url:'/api/Falsus.Shared.Avatar.Enums/AvatarHairColor',
-            title:"AvatarHairColor",
-            description:""
-        }
-    );
-    a(
-        {
-            id:41,
-            title:"RegionProvider",
-            content:"RegionProvider",
-            description:'',
-            tags:''
-        },
-        {
-            url:'/api/Falsus.Providers.Location/RegionProvider',
-            title:"RegionProvider",
-            description:""
-        }
-    );
-    a(
-        {
-            id:42,
-            title:"DataGeneratorConfiguration",
-            content:"DataGeneratorConfiguration",
-            description:'',
-            tags:''
-        },
-        {
-            url:'/api/Falsus.Configuration/DataGeneratorConfiguration',
-            title:"DataGeneratorConfiguration",
-            description:""
-        }
-    );
-    a(
-        {
-            id:43,
-            title:"AvatarEyeType",
-            content:"AvatarEyeType",
-            description:'',
-            tags:''
-        },
-        {
-            url:'/api/Falsus.Shared.Avatar.Enums/AvatarEyeType',
-            title:"AvatarEyeType",
-            description:""
-        }
-    );
-    a(
-        {
-            id:44,
-            title:"NationalityModel",
-            content:"NationalityModel",
-            description:'',
-            tags:''
-        },
-        {
-            url:'/api/Falsus.Shared.Models/NationalityModel',
-            title:"NationalityModel",
-            description:""
-        }
-    );
-    a(
-        {
-            id:45,
-            title:"MimeTypeProvider",
-            content:"MimeTypeProvider",
-            description:'',
-            tags:''
-        },
-        {
-            url:'/api/Falsus.Providers.Internet/MimeTypeProvider',
-            title:"MimeTypeProvider",
-            description:""
-        }
-    );
-    a(
-        {
-            id:46,
-            title:"MimeTypeProviderConfiguration",
-            content:"MimeTypeProviderConfiguration",
-            description:'',
-            tags:''
-        },
-        {
-            url:'/api/Falsus.Providers.Internet/MimeTypeProviderConfiguration',
-            title:"MimeTypeProviderConfiguration",
-            description:""
-        }
-    );
-    a(
-        {
-            id:47,
-            title:"PostalCodeProvider",
-            content:"PostalCodeProvider",
-            description:'',
-            tags:''
-        },
-        {
-            url:'/api/Falsus.Providers.Location/PostalCodeProvider',
-            title:"PostalCodeProvider",
-            description:""
-        }
-    );
-    a(
-        {
-            id:48,
-            title:"IDataGeneratorProvider",
-            content:"IDataGeneratorProvider",
-            description:'',
-            tags:''
-        },
-        {
-            url:'/api/Falsus.Providers/IDataGeneratorProvider_1',
-            title:"IDataGeneratorProvider<T>",
-            description:""
-        }
-    );
-    a(
-        {
-            id:49,
-            title:"AvatarAccessory",
-            content:"AvatarAccessory",
-            description:'',
-            tags:''
-        },
-        {
-            url:'/api/Falsus.Shared.Avatar.Enums/AvatarAccessory',
-            title:"AvatarAccessory",
-            description:""
-        }
-    );
-    a(
-        {
-            id:50,
-            title:"AvatarUrlProvider",
-            content:"AvatarUrlProvider",
-            description:'',
-            tags:''
-        },
-        {
-            url:'/api/Falsus.Providers.Internet/AvatarUrlProvider',
-            title:"AvatarUrlProvider",
-            description:""
-        }
-    );
-    a(
-        {
-            id:51,
-            title:"DataGenerator",
-            content:"DataGenerator",
-            description:'',
-            tags:''
-        },
-        {
-            url:'/api/Falsus/DataGenerator',
-            title:"DataGenerator",
-            description:""
-        }
-    );
-    a(
-        {
-            id:52,
-            title:"AvatarEyebrowType",
-            content:"AvatarEyebrowType",
-            description:'',
-            tags:''
-        },
-        {
-            url:'/api/Falsus.Shared.Avatar.Enums/AvatarEyebrowType',
-            title:"AvatarEyebrowType",
-            description:""
-        }
-    );
-    a(
-        {
-            id:53,
-            title:"AvatarModel",
-            content:"AvatarModel",
-            description:'',
-            tags:''
-        },
-        {
-            url:'/api/Falsus.Shared.Avatar/AvatarModel',
-            title:"AvatarModel",
-            description:""
-        }
-    );
-    a(
-        {
-            id:54,
-            title:"WeightedDataGeneratorProperty",
-            content:"WeightedDataGeneratorProperty",
-            description:'',
-            tags:''
-        },
-        {
-            url:'/api/Falsus.GeneratorProperties/WeightedDataGeneratorProperty_1',
-            title:"WeightedDataGeneratorProperty<T>",
-            description:""
-        }
-    );
-    a(
-        {
-            id:55,
-            title:"CoordinatesModel",
-            content:"CoordinatesModel",
-            description:'',
-            tags:''
-        },
-        {
-            url:'/api/Falsus.Shared.Models/CoordinatesModel',
-            title:"CoordinatesModel",
-            description:""
-        }
-    );
-    a(
-        {
-            id:56,
-            title:"BooleanProvider",
-            content:"BooleanProvider",
-            description:'',
-            tags:''
-        },
-        {
-            url:'/api/Falsus.Providers.DataTypes/BooleanProvider',
-            title:"BooleanProvider",
-            description:""
-        }
-    );
-    a(
-        {
-            id:57,
             title:"AvatarClotheGraphicType",
             content:"AvatarClotheGraphicType",
             description:'',
@@ -850,273 +598,21 @@ var searchModule = function() {
     );
     a(
         {
-            id:58,
-            title:"RegexProvider",
-            content:"RegexProvider",
+            id:40,
+            title:"PasswordProviderConfiguration",
+            content:"PasswordProviderConfiguration",
             description:'',
             tags:''
         },
         {
-            url:'/api/Falsus.Providers.Text/RegexProvider',
-            title:"RegexProvider",
+            url:'/api/Falsus.Providers.Internet/PasswordProviderConfiguration',
+            title:"PasswordProviderConfiguration",
             description:""
         }
     );
     a(
         {
-            id:59,
-            title:"FloatProvider",
-            content:"FloatProvider",
-            description:'',
-            tags:''
-        },
-        {
-            url:'/api/Falsus.Providers.DataTypes/FloatProvider',
-            title:"FloatProvider",
-            description:""
-        }
-    );
-    a(
-        {
-            id:60,
-            title:"EmailProvider",
-            content:"EmailProvider",
-            description:'',
-            tags:''
-        },
-        {
-            url:'/api/Falsus.Providers.Internet/EmailProvider',
-            title:"EmailProvider",
-            description:""
-        }
-    );
-    a(
-        {
-            id:61,
-            title:"HexColorProvider",
-            content:"HexColorProvider",
-            description:'',
-            tags:''
-        },
-        {
-            url:'/api/Falsus.Providers.Internet/HexColorProvider',
-            title:"HexColorProvider",
-            description:""
-        }
-    );
-    a(
-        {
-            id:62,
-            title:"CurrencyProvider",
-            content:"CurrencyProvider",
-            description:'',
-            tags:''
-        },
-        {
-            url:'/api/Falsus.Providers.Finance/CurrencyProvider',
-            title:"CurrencyProvider",
-            description:""
-        }
-    );
-    a(
-        {
-            id:63,
-            title:"ResourceReader",
-            content:"ResourceReader",
-            description:'',
-            tags:''
-        },
-        {
-            url:'/api/Falsus.Shared.Helpers/ResourceReader',
-            title:"ResourceReader",
-            description:""
-        }
-    );
-    a(
-        {
-            id:64,
-            title:"IntegerProvider",
-            content:"IntegerProvider",
-            description:'',
-            tags:''
-        },
-        {
-            url:'/api/Falsus.Providers.DataTypes/IntegerProvider',
-            title:"IntegerProvider",
-            description:""
-        }
-    );
-    a(
-        {
-            id:65,
-            title:"EmailProviderConfiguration",
-            content:"EmailProviderConfiguration",
-            description:'',
-            tags:''
-        },
-        {
-            url:'/api/Falsus.Providers.Internet/EmailProviderConfiguration',
-            title:"EmailProviderConfiguration",
-            description:""
-        }
-    );
-    a(
-        {
-            id:66,
-            title:"StreetNameProvider",
-            content:"StreetNameProvider",
-            description:'',
-            tags:''
-        },
-        {
-            url:'/api/Falsus.Providers.Location/StreetNameProvider',
-            title:"StreetNameProvider",
-            description:""
-        }
-    );
-    a(
-        {
-            id:67,
-            title:"AvatarMouthType",
-            content:"AvatarMouthType",
-            description:'',
-            tags:''
-        },
-        {
-            url:'/api/Falsus.Shared.Avatar.Enums/AvatarMouthType',
-            title:"AvatarMouthType",
-            description:""
-        }
-    );
-    a(
-        {
-            id:68,
-            title:"GuidProvider",
-            content:"GuidProvider",
-            description:'',
-            tags:''
-        },
-        {
-            url:'/api/Falsus.Providers.DataTypes/GuidProvider',
-            title:"GuidProvider",
-            description:""
-        }
-    );
-    a(
-        {
-            id:69,
-            title:"AvatarUrlProviderConfiguration",
-            content:"AvatarUrlProviderConfiguration",
-            description:'',
-            tags:''
-        },
-        {
-            url:'/api/Falsus.Providers.Internet/AvatarUrlProviderConfiguration',
-            title:"AvatarUrlProviderConfiguration",
-            description:""
-        }
-    );
-    a(
-        {
-            id:70,
-            title:"CountryModel",
-            content:"CountryModel",
-            description:'',
-            tags:''
-        },
-        {
-            url:'/api/Falsus.Shared.Models/CountryModel',
-            title:"CountryModel",
-            description:""
-        }
-    );
-    a(
-        {
-            id:71,
-            title:"NationalityProvider",
-            content:"NationalityProvider",
-            description:'',
-            tags:''
-        },
-        {
-            url:'/api/Falsus.Providers.Person/NationalityProvider',
-            title:"NationalityProvider",
-            description:""
-        }
-    );
-    a(
-        {
-            id:72,
-            title:"CityProvider",
-            content:"CityProvider",
-            description:'',
-            tags:''
-        },
-        {
-            url:'/api/Falsus.Providers.Location/CityProvider',
-            title:"CityProvider",
-            description:""
-        }
-    );
-    a(
-        {
-            id:73,
-            title:"WordType",
-            content:"WordType",
-            description:'',
-            tags:''
-        },
-        {
-            url:'/api/Falsus.Providers.Text/WordType',
-            title:"WordType",
-            description:""
-        }
-    );
-    a(
-        {
-            id:74,
-            title:"GenderProvider",
-            content:"GenderProvider",
-            description:'',
-            tags:''
-        },
-        {
-            url:'/api/Falsus.Providers.Person/GenderProvider',
-            title:"GenderProvider",
-            description:""
-        }
-    );
-    a(
-        {
-            id:75,
-            title:"DataGeneratorProviderArgument",
-            content:"DataGeneratorProviderArgument",
-            description:'',
-            tags:''
-        },
-        {
-            url:'/api/Falsus.Providers/DataGeneratorProviderArgument',
-            title:"DataGeneratorProviderArgument",
-            description:""
-        }
-    );
-    a(
-        {
-            id:76,
-            title:"AvatarFacialHairColor",
-            content:"AvatarFacialHairColor",
-            description:'',
-            tags:''
-        },
-        {
-            url:'/api/Falsus.Shared.Avatar.Enums/AvatarFacialHairColor',
-            title:"AvatarFacialHairColor",
-            description:""
-        }
-    );
-    a(
-        {
-            id:77,
+            id:41,
             title:"IDataGeneratorProvider",
             content:"IDataGeneratorProvider",
             description:'',
@@ -1130,7 +626,203 @@ var searchModule = function() {
     );
     a(
         {
-            id:78,
+            id:42,
+            title:"AvatarAccessory",
+            content:"AvatarAccessory",
+            description:'',
+            tags:''
+        },
+        {
+            url:'/api/Falsus.Shared.Avatar.Enums/AvatarAccessory',
+            title:"AvatarAccessory",
+            description:""
+        }
+    );
+    a(
+        {
+            id:43,
+            title:"LoremIpsumProvider",
+            content:"LoremIpsumProvider",
+            description:'',
+            tags:''
+        },
+        {
+            url:'/api/Falsus.Providers.Text/LoremIpsumProvider',
+            title:"LoremIpsumProvider",
+            description:""
+        }
+    );
+    a(
+        {
+            id:44,
+            title:"AvatarTop",
+            content:"AvatarTop",
+            description:'',
+            tags:''
+        },
+        {
+            url:'/api/Falsus.Shared.Avatar.Enums/AvatarTop',
+            title:"AvatarTop",
+            description:""
+        }
+    );
+    a(
+        {
+            id:45,
+            title:"AvatarHatColor",
+            content:"AvatarHatColor",
+            description:'',
+            tags:''
+        },
+        {
+            url:'/api/Falsus.Shared.Avatar.Enums/AvatarHatColor',
+            title:"AvatarHatColor",
+            description:""
+        }
+    );
+    a(
+        {
+            id:46,
+            title:"AvatarHairColor",
+            content:"AvatarHairColor",
+            description:'',
+            tags:''
+        },
+        {
+            url:'/api/Falsus.Shared.Avatar.Enums/AvatarHairColor',
+            title:"AvatarHairColor",
+            description:""
+        }
+    );
+    a(
+        {
+            id:47,
+            title:"IDataGeneratorProvider",
+            content:"IDataGeneratorProvider",
+            description:'',
+            tags:''
+        },
+        {
+            url:'/api/Falsus.Providers/IDataGeneratorProvider_1',
+            title:"IDataGeneratorProvider<T>",
+            description:""
+        }
+    );
+    a(
+        {
+            id:48,
+            title:"RegexProvider",
+            content:"RegexProvider",
+            description:'',
+            tags:''
+        },
+        {
+            url:'/api/Falsus.Providers.Text/RegexProvider',
+            title:"RegexProvider",
+            description:""
+        }
+    );
+    a(
+        {
+            id:49,
+            title:"MimeTypeProvider",
+            content:"MimeTypeProvider",
+            description:'',
+            tags:''
+        },
+        {
+            url:'/api/Falsus.Providers.Internet/MimeTypeProvider',
+            title:"MimeTypeProvider",
+            description:""
+        }
+    );
+    a(
+        {
+            id:50,
+            title:"CityModel",
+            content:"CityModel",
+            description:'',
+            tags:''
+        },
+        {
+            url:'/api/Falsus.Shared.Models/CityModel',
+            title:"CityModel",
+            description:""
+        }
+    );
+    a(
+        {
+            id:51,
+            title:"GuidProvider",
+            content:"GuidProvider",
+            description:'',
+            tags:''
+        },
+        {
+            url:'/api/Falsus.Providers.DataTypes/GuidProvider',
+            title:"GuidProvider",
+            description:""
+        }
+    );
+    a(
+        {
+            id:52,
+            title:"EmailProvider",
+            content:"EmailProvider",
+            description:'',
+            tags:''
+        },
+        {
+            url:'/api/Falsus.Providers.Internet/EmailProvider',
+            title:"EmailProvider",
+            description:""
+        }
+    );
+    a(
+        {
+            id:53,
+            title:"CountryProvider",
+            content:"CountryProvider",
+            description:'',
+            tags:''
+        },
+        {
+            url:'/api/Falsus.Providers.Location/CountryProvider',
+            title:"CountryProvider",
+            description:""
+        }
+    );
+    a(
+        {
+            id:54,
+            title:"ContinentProvider",
+            content:"ContinentProvider",
+            description:'',
+            tags:''
+        },
+        {
+            url:'/api/Falsus.Providers.Location/ContinentProvider',
+            title:"ContinentProvider",
+            description:""
+        }
+    );
+    a(
+        {
+            id:55,
+            title:"AvatarClotheType",
+            content:"AvatarClotheType",
+            description:'',
+            tags:''
+        },
+        {
+            url:'/api/Falsus.Shared.Avatar.Enums/AvatarClotheType',
+            title:"AvatarClotheType",
+            description:""
+        }
+    );
+    a(
+        {
+            id:56,
             title:"DataGeneratorContext",
             content:"DataGeneratorContext",
             description:'',
@@ -1139,6 +831,342 @@ var searchModule = function() {
         {
             url:'/api/Falsus/DataGeneratorContext',
             title:"DataGeneratorContext",
+            description:""
+        }
+    );
+    a(
+        {
+            id:57,
+            title:"ResourceReader",
+            content:"ResourceReader",
+            description:'',
+            tags:''
+        },
+        {
+            url:'/api/Falsus.Shared.Helpers/ResourceReader',
+            title:"ResourceReader",
+            description:""
+        }
+    );
+    a(
+        {
+            id:58,
+            title:"NationalityProvider",
+            content:"NationalityProvider",
+            description:'',
+            tags:''
+        },
+        {
+            url:'/api/Falsus.Providers.Person/NationalityProvider',
+            title:"NationalityProvider",
+            description:""
+        }
+    );
+    a(
+        {
+            id:59,
+            title:"AvatarFacialHairColor",
+            content:"AvatarFacialHairColor",
+            description:'',
+            tags:''
+        },
+        {
+            url:'/api/Falsus.Shared.Avatar.Enums/AvatarFacialHairColor',
+            title:"AvatarFacialHairColor",
+            description:""
+        }
+    );
+    a(
+        {
+            id:60,
+            title:"PostalCodeProvider",
+            content:"PostalCodeProvider",
+            description:'',
+            tags:''
+        },
+        {
+            url:'/api/Falsus.Providers.Location/PostalCodeProvider',
+            title:"PostalCodeProvider",
+            description:""
+        }
+    );
+    a(
+        {
+            id:61,
+            title:"AvatarProviderConfiguration",
+            content:"AvatarProviderConfiguration",
+            description:'',
+            tags:''
+        },
+        {
+            url:'/api/Falsus.Providers.Internet/AvatarProviderConfiguration',
+            title:"AvatarProviderConfiguration",
+            description:""
+        }
+    );
+    a(
+        {
+            id:62,
+            title:"AvatarUrlProvider",
+            content:"AvatarUrlProvider",
+            description:'',
+            tags:''
+        },
+        {
+            url:'/api/Falsus.Providers.Internet/AvatarUrlProvider',
+            title:"AvatarUrlProvider",
+            description:""
+        }
+    );
+    a(
+        {
+            id:63,
+            title:"DataGeneratorProperty",
+            content:"DataGeneratorProperty",
+            description:'',
+            tags:''
+        },
+        {
+            url:'/api/Falsus.GeneratorProperties/DataGeneratorProperty_1',
+            title:"DataGeneratorProperty<T>",
+            description:""
+        }
+    );
+    a(
+        {
+            id:64,
+            title:"AvatarSkinColor",
+            content:"AvatarSkinColor",
+            description:'',
+            tags:''
+        },
+        {
+            url:'/api/Falsus.Shared.Avatar.Enums/AvatarSkinColor',
+            title:"AvatarSkinColor",
+            description:""
+        }
+    );
+    a(
+        {
+            id:65,
+            title:"CityProvider",
+            content:"CityProvider",
+            description:'',
+            tags:''
+        },
+        {
+            url:'/api/Falsus.Providers.Location/CityProvider',
+            title:"CityProvider",
+            description:""
+        }
+    );
+    a(
+        {
+            id:66,
+            title:"AvatarProvider",
+            content:"AvatarProvider",
+            description:'',
+            tags:''
+        },
+        {
+            url:'/api/Falsus.Providers.Internet/AvatarProvider',
+            title:"AvatarProvider",
+            description:""
+        }
+    );
+    a(
+        {
+            id:67,
+            title:"PasswordProvider",
+            content:"PasswordProvider",
+            description:'',
+            tags:''
+        },
+        {
+            url:'/api/Falsus.Providers.Internet/PasswordProvider',
+            title:"PasswordProvider",
+            description:""
+        }
+    );
+    a(
+        {
+            id:68,
+            title:"DataGeneratorProvider",
+            content:"DataGeneratorProvider",
+            description:'',
+            tags:''
+        },
+        {
+            url:'/api/Falsus.Providers/DataGeneratorProvider_1',
+            title:"DataGeneratorProvider<T>",
+            description:""
+        }
+    );
+    a(
+        {
+            id:69,
+            title:"RangedDataGeneratorProperty",
+            content:"RangedDataGeneratorProperty",
+            description:'',
+            tags:''
+        },
+        {
+            url:'/api/Falsus.GeneratorProperties/RangedDataGeneratorProperty_1',
+            title:"RangedDataGeneratorProperty<T>",
+            description:""
+        }
+    );
+    a(
+        {
+            id:70,
+            title:"CurrencyModel",
+            content:"CurrencyModel",
+            description:'',
+            tags:''
+        },
+        {
+            url:'/api/Falsus.Shared.Models/CurrencyModel',
+            title:"CurrencyModel",
+            description:""
+        }
+    );
+    a(
+        {
+            id:71,
+            title:"CoordinatesProvider",
+            content:"CoordinatesProvider",
+            description:'',
+            tags:''
+        },
+        {
+            url:'/api/Falsus.Providers.Location/CoordinatesProvider',
+            title:"CoordinatesProvider",
+            description:""
+        }
+    );
+    a(
+        {
+            id:72,
+            title:"WeightedDataGeneratorProperty",
+            content:"WeightedDataGeneratorProperty",
+            description:'',
+            tags:''
+        },
+        {
+            url:'/api/Falsus.GeneratorProperties/WeightedDataGeneratorProperty_1',
+            title:"WeightedDataGeneratorProperty<T>",
+            description:""
+        }
+    );
+    a(
+        {
+            id:73,
+            title:"CurrencyProvider",
+            content:"CurrencyProvider",
+            description:'',
+            tags:''
+        },
+        {
+            url:'/api/Falsus.Providers.Finance/CurrencyProvider',
+            title:"CurrencyProvider",
+            description:""
+        }
+    );
+    a(
+        {
+            id:74,
+            title:"GenericArrayProvider",
+            content:"GenericArrayProvider",
+            description:'',
+            tags:''
+        },
+        {
+            url:'/api/Falsus.Providers/GenericArrayProvider_1',
+            title:"GenericArrayProvider<T>",
+            description:""
+        }
+    );
+    a(
+        {
+            id:75,
+            title:"AvatarFacialHairType",
+            content:"AvatarFacialHairType",
+            description:'',
+            tags:''
+        },
+        {
+            url:'/api/Falsus.Shared.Avatar.Enums/AvatarFacialHairType',
+            title:"AvatarFacialHairType",
+            description:""
+        }
+    );
+    a(
+        {
+            id:76,
+            title:"WordProvider",
+            content:"WordProvider",
+            description:'',
+            tags:''
+        },
+        {
+            url:'/api/Falsus.Providers.Text/WordProvider',
+            title:"WordProvider",
+            description:""
+        }
+    );
+    a(
+        {
+            id:77,
+            title:"EmailProviderConfiguration",
+            content:"EmailProviderConfiguration",
+            description:'',
+            tags:''
+        },
+        {
+            url:'/api/Falsus.Providers.Internet/EmailProviderConfiguration',
+            title:"EmailProviderConfiguration",
+            description:""
+        }
+    );
+    a(
+        {
+            id:78,
+            title:"NationalityModel",
+            content:"NationalityModel",
+            description:'',
+            tags:''
+        },
+        {
+            url:'/api/Falsus.Shared.Models/NationalityModel',
+            title:"NationalityModel",
+            description:""
+        }
+    );
+    a(
+        {
+            id:79,
+            title:"IDataGeneratorProperty",
+            content:"IDataGeneratorProperty",
+            description:'',
+            tags:''
+        },
+        {
+            url:'/api/Falsus.GeneratorProperties/IDataGeneratorProperty',
+            title:"IDataGeneratorProperty",
+            description:""
+        }
+    );
+    a(
+        {
+            id:80,
+            title:"AvatarSvgProviderConfiguration",
+            content:"AvatarSvgProviderConfiguration",
+            description:'',
+            tags:''
+        },
+        {
+            url:'/api/Falsus.Providers.Internet/AvatarSvgProviderConfiguration',
+            title:"AvatarSvgProviderConfiguration",
             description:""
         }
     );

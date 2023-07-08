@@ -1623,10 +1623,6 @@
             Initializes a new instance of the <see cref="T:Falsus.Providers.Internet.MimeTypeProvider"/> class.
             </summary>
             <param name="configuration">The configuration to use.</param>
-            <remarks>
-            The <paramref name="configuration"/> must not be null and the
-            <see cref="!:MimeTypeProviderConfiguration.ConnectionString"/> cannot be empty.
-            </remarks>
             <exception cref="T:System.ArgumentNullException">
             Thrown when the <see cref="F:Falsus.Providers.Internet.MimeTypeProvider.configuration"/> instance is null.
             </exception>
@@ -1778,6 +1774,197 @@
             application/javascript and text/javascript to be treated as two
             different MIME types.
             </remarks>
+        </member>
+        <member name="T:Falsus.Providers.Internet.PasswordProvider">
+            <summary>
+            Represents a provider of passwords.
+            </summary>
+            <seealso cref="T:Falsus.Providers.DataGeneratorProvider`1"/>
+        </member>
+        <member name="F:Falsus.Providers.Internet.PasswordProvider.DefaultRandomStringLength">
+            <summary>
+            The default length for the random passwords.
+            </summary>
+        </member>
+        <member name="F:Falsus.Providers.Internet.PasswordProvider.configuration">
+            <summary>
+            The configuration of this provider.
+            </summary>
+        </member>
+        <member name="M:Falsus.Providers.Internet.PasswordProvider.#ctor">
+            <summary>
+            Initializes a new instance of the <see cref="T:Falsus.Providers.Internet.PasswordProvider"/> class.
+            </summary>
+        </member>
+        <member name="M:Falsus.Providers.Internet.PasswordProvider.#ctor(Falsus.Providers.Internet.PasswordProviderConfiguration)">
+            <summary>
+            Initializes a new instance of the <see cref="T:Falsus.Providers.Internet.PasswordProvider"/> class.
+            </summary>
+            <param name="configuration">The configuration to use.</param>
+        </member>
+        <member name="M:Falsus.Providers.Internet.PasswordProvider.GetRangedRowValue(System.String,System.String,System.String[])">
+            <summary>
+            Generates a random password that is greater than the
+            value of <paramref name="minValue"/> and lower
+            than the value of <paramref name="maxValue"/>.
+            </summary>
+            <param name="minValue">The exclusive lower bound of the random object returned.</param>
+            <param name="maxValue">The exclusive upper bound of the random object returned.</param>
+            <param name="excludedObjects">
+            An array of <see cref="T:System.String"/> values that cannot be returned
+            by the provider.
+            </param>
+            <returns>
+            A random instance of <see cref="T:System.String"/> greater than <paramref name="minValue"/>
+            and less than <paramref name="maxValue"/>.
+            </returns>
+            <remarks>
+            <paramref name="maxValue"/> must be greater than <paramref name="minValue"/>.
+            </remarks>
+            <exception cref="T:System.NotSupportedException">
+            Thrown because the generation of ranged street names is not supported.
+            </exception>
+        </member>
+        <member name="M:Falsus.Providers.Internet.PasswordProvider.GetRowValue(Falsus.DataGeneratorContext,Falsus.GeneratorProperties.WeightedRange{System.String}[],System.String[])">
+            <summary>
+            Generates a random password
+            based on the context and excluded ranges.
+            </summary>
+            <param name="context">
+            An instance of <see cref="T:Falsus.DataGeneratorContext"/> defining
+            the current generation context.
+            </param>
+            <param name="excludedRanges">
+            An array of <see cref="T:Falsus.GeneratorProperties.WeightedRange`1"/>s defining the ranges
+            that cannot be returned by the provider.
+            </param>
+            <param name="excludedObjects">
+            An array of <see cref="T:System.String"/> values that cannot be returned
+            by the provider.
+            </param>
+            <returns>
+            A random instance of <see cref="T:System.String"/> that is outside of
+            the specified <paramref name="excludedRanges"/>.
+            </returns>
+            <exception cref="T:System.NotSupportedException">
+            Thrown because the generation of ranged passwords is not supported.
+            </exception>
+        </member>
+        <member name="M:Falsus.Providers.Internet.PasswordProvider.GetRowValue(System.String)">
+            <summary>
+            Gets a <see cref="T:System.String"/> value based on the provided <paramref name="id"/>.
+            </summary>
+            <param name="id">An unique identifier for the object.</param>
+            <returns>
+            A <see cref="T:System.String"/> value with the specified unique identifier.
+            </returns>
+            <remarks>
+            Since both the <paramref name="id"/> and returning type are <see cref="T:System.String"/>
+            this method returns exactly what is passed on the <paramref name="id"/> argument.
+            </remarks>
+        </member>
+        <member name="M:Falsus.Providers.Internet.PasswordProvider.GetRowValue(Falsus.DataGeneratorContext,System.String[])">
+            <summary>
+            Generates a random password based on the context and excluded objects.
+            </summary>
+            <param name="context">
+            An instance of <see cref="T:Falsus.DataGeneratorContext"/> defining
+            the current generation context.
+            </param>
+            <param name="excludedObjects">
+            An array of <see cref="T:System.String"/> values that cannot be returned
+            by the provider.
+            </param>
+            <returns>
+            A random password.
+            </returns>
+        </member>
+        <member name="M:Falsus.Providers.Internet.PasswordProvider.GetValueId(System.String)">
+            <summary>
+            Gets a unique identifier for the provided <see cref="T:System.String"/>.
+            </summary>
+            <param name="value">The <see cref="T:System.String"/> value.</param>
+            <returns>
+            A <see cref="T:System.String"/> containing the unique identifier of the provided value.
+            </returns>
+            <remarks>
+            Since both the <paramref name="value"/> and returning type are <see cref="T:System.String"/>
+            this method returns exactly what is passed on the <paramref name="value"/> argument.
+            </remarks>
+        </member>
+        <member name="M:Falsus.Providers.Internet.PasswordProvider.Load(Falsus.GeneratorProperties.DataGeneratorProperty{System.String},System.Int32)">
+            <summary>
+            Instructs the data provider to prepare the data for generation based on the
+            provided <see cref="T:Falsus.Providers.Internet.PasswordProviderConfiguration"/>.
+            </summary>
+            <param name="property">
+            An implementation of the generic <see cref="T:Falsus.GeneratorProperties.DataGeneratorProperty`1"/>
+            defining the property that this provider has been attached to.
+            </param>
+            <param name="rowCount">The desired number of rows to be generated.</param>
+            <remarks>
+            Invoked before any calculation takes place, the goal of this method is
+            usually preparing or caching data for the generation taking place afterwards.
+            </remarks>
+        </member>
+        <member name="M:Falsus.Providers.Internet.PasswordProvider.ValidateConfiguration">
+            <summary>
+            Checks if the <see cref="F:Falsus.Providers.Internet.PasswordProvider.configuration"/> object is assigned and correct.
+            </summary>
+            <exception cref="T:System.InvalidOperationException">
+            Thrown when:
+            <list type="bullet">
+            <item>The <see cref="F:Falsus.Providers.Internet.PasswordProvider.configuration"/> instance is null</item>
+            <item>
+            The <see cref="P:Falsus.Providers.Internet.PasswordProviderConfiguration.Length"/> or <see cref="P:Falsus.Providers.Internet.PasswordProviderConfiguration.MinLength"/>
+            or <see cref="P:Falsus.Providers.Internet.PasswordProviderConfiguration.MaxLength"/> have values lower than 0.
+            </item>
+            <item>
+            The value of <see cref="P:Falsus.Providers.Internet.PasswordProviderConfiguration.MinLength"/> is greater than the
+            value of <see cref="P:Falsus.Providers.Internet.PasswordProviderConfiguration.MaxLength"/>.
+            </item>
+            </list>
+            </exception>
+        </member>
+        <member name="T:Falsus.Providers.Internet.PasswordProviderConfiguration">
+            <summary>
+            This class represents the configuration object of the <see cref="T:Falsus.Providers.Internet.PasswordProvider"/> data provider.
+            </summary>
+        </member>
+        <member name="P:Falsus.Providers.Internet.PasswordProviderConfiguration.Length">
+            <summary>
+            Gets or sets the length for the password strings.
+            </summary>
+            <value>
+            A nullable <see cref="T:System.Int32"/> representing the length of the password.
+            </value>
+        </member>
+        <member name="P:Falsus.Providers.Internet.PasswordProviderConfiguration.MinLength">
+            <summary>
+            Gets or sets the minimum inclusive length for the password strings.
+            </summary>
+            <value>
+            A nullable <see cref="T:System.Int32"/> representing the minimum
+            length of the password.
+            </value>
+        </member>
+        <member name="P:Falsus.Providers.Internet.PasswordProviderConfiguration.MaxLength">
+            <summary>
+            Gets or sets the maximum non-inclusive length for the password strings.
+            </summary>
+            <value>
+            A nullable <see cref="T:System.Int32"/> representing the maximum
+            length of the password.
+            </value>
+        </member>
+        <member name="P:Falsus.Providers.Internet.PasswordProviderConfiguration.IncludeSpecialChars">
+            <summary>
+            Gets or sets a value indicating whether or not special characters
+            can be used to generate the password.
+            </summary>
+            <value>
+            True if special characters can be used, otherwise false.
+            </value>
         </member>
     </members>
 </doc>

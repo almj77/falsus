@@ -6,7 +6,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="shortcut icon" href="/assets/img/favicon.ico" type="image/x-icon">
         <link rel="icon" href="/assets/img/favicon.ico" type="image/x-icon">
-        <title>Falsus - API - MimeTypeProviderConfiguration Class</title>
+        <title>Falsus - API - PasswordProviderConfiguration Class</title>
         <link href="/assets/css/highlight.css" rel="stylesheet">
         <link href="/assets/css/bootstrap/bootstrap.css" rel="stylesheet">
         <link href="/assets/css/adminlte/AdminLTE.css" rel="stylesheet">
@@ -145,9 +145,9 @@
 				<li><a href="/api/Falsus.Providers.Internet/EmailProviderConfiguration">Email<wbr>Provider<wbr>Configuration</a></li>
 				<li><a href="/api/Falsus.Providers.Internet/HexColorProvider">HexColorProvider</a></li>
 				<li><a href="/api/Falsus.Providers.Internet/MimeTypeProvider">MimeTypeProvider</a></li>
-				<li class="selected"><a href="/api/Falsus.Providers.Internet/MimeTypeProviderConfiguration">Mime<wbr>Type<wbr>Provider<wbr>Configuration</a></li>
+				<li><a href="/api/Falsus.Providers.Internet/MimeTypeProviderConfiguration">Mime<wbr>Type<wbr>Provider<wbr>Configuration</a></li>
 				<li><a href="/api/Falsus.Providers.Internet/PasswordProvider">PasswordProvider</a></li>
-				<li><a href="/api/Falsus.Providers.Internet/PasswordProviderConfiguration">Password<wbr>Provider<wbr>Configuration</a></li>
+				<li class="selected"><a href="/api/Falsus.Providers.Internet/PasswordProviderConfiguration">Password<wbr>Provider<wbr>Configuration</a></li>
 
 
                     </ul>
@@ -162,14 +162,14 @@
 
 
 <section class="content-header">
-	<h1>Mime<wbr>Type<wbr>Provider<wbr>Configuration <small>Class</small></h1>
+	<h1>Password<wbr>Provider<wbr>Configuration <small>Class</small></h1>
 </section>
 <section class="content">
 	
 	
 		<h1 id="Summary">Summary</h1>
 	<div class="lead">
-    This class represents the configuration object of the <code class="cs"><a href="/api/Falsus.Providers.Internet/MimeTypeProvider">MimeTypeProvider</a></code> data provider.
+    This class represents the configuration object of the <code class="cs"><a href="/api/Falsus.Providers.Internet/PasswordProvider">PasswordProvider</a></code> data provider.
     </div>
 
 		<div class="panel panel-default">
@@ -196,7 +196,7 @@
 						<div class="mermaid">
 							graph BT
 	Type--&gt;Base0["object"]
-	Type["MimeTypeProviderConfiguration"]
+	Type["PasswordProviderConfiguration"]
 class Type type-node
 
 						</div>
@@ -206,7 +206,7 @@ class Type type-node
 		</div>
 
 	<h1 id="Syntax">Syntax</h1>
-	<pre><code>public class MimeTypeProviderConfiguration</code></pre>
+	<pre><code>public class PasswordProviderConfiguration</code></pre>
 
 
 
@@ -229,32 +229,39 @@ class Type type-node
 							</tr>
 						</thead>
 							<tbody><tr>
-								<td><a href="/api/Falsus.Providers.Internet/MimeTypeProviderConfiguration/ECBCC410">ExcludeUncommon</a></td>
+								<td><a href="/api/Falsus.Providers.Internet/PasswordProviderConfiguration/819DF4DE">IncludeSpecialChars</a></td>
 								<td>bool</td>
 								<td>
 									<div>
-    Gets or sets a value indicating whether or not uncommon
-    MIME types should be excluded from the random value generation.
+    Gets or sets a value indicating whether or not special characters
+    can be used to generate the password.
     </div>
 								</td>
 							</tr>
 							<tr>
-								<td><a href="/api/Falsus.Providers.Internet/MimeTypeProviderConfiguration/A096371F">IncludeDeprecated</a></td>
-								<td>bool</td>
+								<td><a href="/api/Falsus.Providers.Internet/PasswordProviderConfiguration/DF93835E">Length</a></td>
+								<td>int?</td>
 								<td>
 									<div>
-    Gets or sets a value indicating whether or not deprecated
-    MIME types should be considered for random value generation.
+    Gets or sets the length for the password strings.
     </div>
 								</td>
 							</tr>
 							<tr>
-								<td><a href="/api/Falsus.Providers.Internet/MimeTypeProviderConfiguration/4761D8F7">TreatAliasesAsUnique</a></td>
-								<td>bool</td>
+								<td><a href="/api/Falsus.Providers.Internet/PasswordProviderConfiguration/698F5490">MaxLength</a></td>
+								<td>int?</td>
 								<td>
 									<div>
-    Gets or sets a value indicating whether or not MIME type aliases
-    should be considered as unique.
+    Gets or sets the maximum non-inclusive length for the password strings.
+    </div>
+								</td>
+							</tr>
+							<tr>
+								<td><a href="/api/Falsus.Providers.Internet/PasswordProviderConfiguration/283DBF47">MinLength</a></td>
+								<td>int?</td>
+								<td>
+									<div>
+    Gets or sets the minimum inclusive length for the password strings.
     </div>
 								</td>
 							</tr>
