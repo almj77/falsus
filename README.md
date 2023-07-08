@@ -33,6 +33,17 @@
 - Lorem Ipsum
 - Regular Expression
 - Word (Dictionary)
+#### Person
+- First name
+- Last name
+- Nationality
+- Gender
+#### Internet
+- Email address
+- Hexadecimal color
+- MIME type
+- Avatar
+- Password
 
 ## 🕹 Usage
 ### Basic

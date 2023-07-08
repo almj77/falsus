@@ -156,8 +156,7 @@
         </member>
         <member name="M:Falsus.Providers.Person.FirstNameProvider.Load(Falsus.GeneratorProperties.DataGeneratorProperty{System.String},System.Int32)">
             <summary>
-            Instructs the data provider to prepare the data for generation based on the
-            provided <see cref="!:FirstNameProviderConfiguration"/>.
+            Instructs the data provider to prepare the data for generation.
             </summary>
             <param name="property">
             An implementation of the generic <see cref="T:Falsus.GeneratorProperties.DataGeneratorProperty`1"/>
@@ -399,8 +398,7 @@
         </member>
         <member name="M:Falsus.Providers.Person.LastNameProvider.Load(Falsus.GeneratorProperties.DataGeneratorProperty{System.String},System.Int32)">
             <summary>
-            Instructs the data provider to prepare the data for generation based on the
-            provided <see cref="!:LastNameProviderConfiguration"/>.
+            Instructs the data provider to prepare the data for generation.
             </summary>
             <param name="property">
             An implementation of the generic <see cref="T:Falsus.GeneratorProperties.DataGeneratorProperty`1"/>

@@ -1,0 +1,6240 @@
+﻿[
+  {
+    "MimeType": "application/andrew-inset",
+    "Extension": "ez",
+    "Name": "Multimedia Applications Development with the Andrew Toolkit",
+    "Category": "Application",
+    "IsCommon": false
+  },
+  {
+    "MimeType": "application/applixware",
+    "Extension": "aw",
+    "Name": "Answer Wizard File",
+    "Category": "Application",
+    "IsCommon": false
+  },
+  {
+    "MimeType": "application/atom+xml",
+    "Extension": "atom",
+    "Name": "Atom Syndication Format",
+    "Category": "Application",
+    "IsCommon": false
+  },
+  {
+    "MimeType": "application/atomcat+xml",
+    "Extension": "atomcat",
+    "Name": null,
+    "Category": "Application",
+    "IsCommon": false
+  },
+  {
+    "MimeType": "application/atomsvc+xml",
+    "Extension": "atomsvc",
+    "Name": "Atom Service Document",
+    "Category": "Application",
+    "IsCommon": false
+  },
+  {
+    "MimeType": "application/ccxml+xml",
+    "Extension": "ccxml",
+    "Name": "Call Control eXtensible Markup Language File",
+    "Category": "Application",
+    "IsCommon": false
+  },
+  {
+    "MimeType": "application/cu-seeme",
+    "Extension": "cu",
+    "Name": "CU-SeeMe Data",
+    "Category": "Application",
+    "IsCommon": false
+  },
+  {
+    "MimeType": "application/davmount+xml",
+    "Extension": "davmount",
+    "Name": null,
+    "Category": "Application",
+    "IsCommon": false
+  },
+  {
+    "MimeType": "application/ecmascript",
+    "Extension": "js",
+    "Name": "JavaScript",
+    "Category": "Application",
+    "DeprecatedBy": "text/javascript",
+    "Aliases": [ "application/javascript", "application/x-ecmascript", "application/x-javascript", "text/ecmascript", "text/javascript1.0", "text/javascript1.1", "text/javascript1.2", "text/javascript1.3", "text/javascript1.4", "text/javascript1.5", "text/jscript", "text/livescript", "text/x-ecmascript", "text/x-javascript" ],
+    "IsCommon": true
+  },
+  {
+    "MimeType": "application/emma+xml",
+    "Extension": "emma",
+    "Name": "Extensible MultiModal Annotation Markup Language File",
+    "Category": "Application",
+    "IsCommon": false
+  },
+  {
+    "MimeType": "application/epub+zip",
+    "Extension": "epub",
+    "Name": "Open eBook File",
+    "Category": "Application",
+    "IsCommon": true
+  },
+  {
+    "MimeType": "application/font-tdpfr",
+    "Extension": "pfr",
+    "Name": "Portable Font Resource File",
+    "Category": "Application",
+    "IsCommon": false
+  },
+  {
+    "MimeType": "application/gzip",
+    "Extension": "tgz",
+    "Name": "Gzipped Tar File",
+    "Category": "Application",
+    "Aliases": [ "application/x-gzip" ],
+    "IsCommon": true
+  },
+  {
+    "MimeType": "application/gzip",
+    "Extension": "gz",
+    "Name": "Gnu Zipped Archive",
+    "Category": "Application",
+    "Aliases": [ "application/x-gzip" ],
+    "IsCommon": true
+  },
+  {
+    "MimeType": "application/hyperstudio",
+    "Extension": "stk",
+    "Name": "Hyperstudio Stack Data",
+    "Category": "Application",
+    "IsCommon": false
+  },
+  {
+    "MimeType": "application/java-archive",
+    "Extension": "jar",
+    "Name": "Java Archive",
+    "Category": "Application",
+    "IsCommon": true
+  },
+  {
+    "MimeType": "application/java-serialized-object",
+    "Extension": "ser",
+    "Name": "Java Serialized Object File",
+    "Category": "Application",
+    "IsCommon": false
+  },
+  {
+    "MimeType": "application/java-vm",
+    "Extension": "class",
+    "Name": "Java Class File",
+    "Category": "Application",
+    "IsCommon": false
+  },
+  {
+    "MimeType": "application/json",
+    "Extension": "json",
+    "Name": "JavaScript Object Notation File",
+    "Category": "Application",
+    "Aliases": [ "text/json" ],
+    "IsCommon": true
+  },
+  {
+    "MimeType": "application/lost+xml",
+    "Extension": "lostxml",
+    "Name": null,
+    "Category": "Application",
+    "IsCommon": false
+  },
+  {
+    "MimeType": "application/mac-binhex40",
+    "Extension": "hqx",
+    "Name": "BinHex 4.0 Encoded File",
+    "Category": "Application",
+    "IsCommon": false
+  },
+  {
+    "MimeType": "application/mac-compactpro",
+    "Extension": "cpt",
+    "Name": "Compact Pro Archive",
+    "Category": "Application",
+    "IsCommon": false
+  },
+  {
+    "MimeType": "application/marc",
+    "Extension": "mrc",
+    "Name": "Machine-Readable Cataloging records",
+    "Category": "Application",
+    "IsCommon": false
+  },
+  {
+    "MimeType": "application/mathematica",
+    "Extension": "ma",
+    "Name": "Mathematica ASCII data",
+    "Category": "Application",
+    "IsCommon": false
+  },
+  {
+    "MimeType": "application/mathematica",
+    "Extension": "mb",
+    "Name": "Mathematica binary data",
+    "Category": "Application",
+    "IsCommon": false
+  },
+  {
+    "MimeType": "application/mathematica",
+    "Extension": "nb",
+    "Name": null,
+    "Category": "Application",
+    "IsCommon": false
+  },
+  {
+    "MimeType": "application/mathml+xml",
+    "Extension": "mathml",
+    "Name": "Mathematical Markup Language File",
+    "Category": "Application",
+    "Aliases": [ "text/mathml" ],
+    "IsCommon": false
+  },
+  {
+    "MimeType": "application/mathml+xml",
+    "Extension": "mml",
+    "Name": "Mathematical Markup Language File",
+    "Category": "Application",
+    "Aliases": [ "text/mathml" ],
+    "IsCommon": false
+  },
+  {
+    "MimeType": "application/mbox",
+    "Extension": "mbox",
+    "Name": "Email Mailbox",
+    "Category": "Application",
+    "IsCommon": false
+  },
+  {
+    "MimeType": "application/mediaservercontrol+xml",
+    "Extension": "mscml",
+    "Name": "Media Server Control Markup Language File",
+    "Category": "Application",
+    "IsCommon": false
+  },
+  {
+    "MimeType": "application/msword",
+    "Extension": "doc",
+    "Name": "Microsoft Word Document (Legacy)",
+    "Category": "Application",
+    "IsCommon": true
+  },
+  {
+    "MimeType": "application/msword",
+    "Extension": "wiz",
+    "Name": "Microsoft Wizard File",
+    "Category": "Application",
+    "IsCommon": false
+  },
+  {
+    "MimeType": "application/msword",
+    "Extension": "dot",
+    "Name": "Microsoft Word Document Template (Legacy)",
+    "Category": "Application",
+    "IsCommon": false
+  },
+  {
+    "MimeType": "application/mxf",
+    "Extension": "mxf",
+    "Name": "Material Exchange Format",
+    "Category": "Application",
+    "IsCommon": false
+  },
+  {
+    "MimeType": "application/octet-stream",
+    "Extension": "a",
+    "Name": "Binary Data File",
+    "Category": "Application",
+    "IsCommon": false
+  },
+  {
+    "MimeType": "application/octet-stream",
+    "Extension": "bin",
+    "Name": "Generic Binary File",
+    "Category": "Application",
+    "IsCommon": true
+  },
+  {
+    "MimeType": "application/octet-stream",
+    "Extension": "bpk",
+    "Name": "Binary Data File",
+    "Category": "Application",
+    "IsCommon": false
+  },
+  {
+    "MimeType": "application/octet-stream",
+    "Extension": "deploy",
+    "Name": "Binary Data File",
+    "Category": "Application",
+    "IsCommon": false
+  },
+  {
+    "MimeType": "application/octet-stream",
+    "Extension": "dist",
+    "Name": "Binary Data File",
+    "Category": "Application",
+    "IsCommon": false
+  },
+  {
+    "MimeType": "application/octet-stream",
+    "Extension": "distz",
+    "Name": "Binary Data File",
+    "Category": "Application",
+    "IsCommon": false
+  },
+  {
+    "MimeType": "application/octet-stream",
+    "Extension": "iso",
+    "Name": "Disc Image File",
+    "Category": "Application",
+    "IsCommon": true
+  },
+  {
+    "MimeType": "application/octet-stream",
+    "Extension": "dms",
+    "Name": "Binary Data File",
+    "Category": "Application",
+    "IsCommon": false
+  },
+  {
+    "MimeType": "application/octet-stream",
+    "Extension": "dump",
+    "Name": "Binary Data File",
+    "Category": "Application",
+    "IsCommon": false
+  },
+  {
+    "MimeType": "application/octet-stream",
+    "Extension": "elc",
+    "Name": "Binary Data File",
+    "Category": "Application",
+    "IsCommon": false
+  },
+  {
+    "MimeType": "application/octet-stream",
+    "Extension": "pkg",
+    "Name": "macOS Installer Package",
+    "Category": "Application",
+    "IsCommon": true
+  },
+  {
+    "MimeType": "application/octet-stream",
+    "Extension": "dmg",
+    "Name": "Apple Disk Image",
+    "Category": "Application",
+    "IsCommon": true
+  },
+  {
+    "MimeType": "application/octet-stream",
+    "Extension": "lrf",
+    "Name": "Binary Data File",
+    "Category": "Application",
+    "IsCommon": false
+  },
+  {
+    "MimeType": "application/octet-stream",
+    "Extension": "lha",
+    "Name": "LHARC Compressed Archive",
+    "Category": "Application",
+    "IsCommon": false
+  },
+  {
+    "MimeType": "application/octet-stream",
+    "Extension": "o",
+    "Name": "Compiled C Object File",
+    "Category": "Application",
+    "IsCommon": false
+  },
+  {
+    "MimeType": "application/octet-stream",
+    "Extension": "obj",
+    "Name": "Binary Data File",
+    "Category": "Application",
+    "IsCommon": false
+  },
+  {
+    "MimeType": "application/octet-stream",
+    "Extension": "lzh",
+    "Name": "LZH Compressed File",
+    "Category": "Application",
+    "IsCommon": false
+  },
+  {
+    "MimeType": "application/octet-stream",
+    "Extension": "so",
+    "Name": "Shared Library",
+    "Category": "Application",
+    "IsCommon": false
+  },
+  {
+    "MimeType": "application/oda",
+    "Extension": "oda",
+    "Name": null,
+    "Category": "Application",
+    "IsCommon": false
+  },
+  {
+    "MimeType": "application/oebps-package+xml",
+    "Extension": "opf",
+    "Name": "Open Packaging Format File",
+    "Category": "Application",
+    "IsCommon": false
+  },
+  {
+    "MimeType": "application/ogg",
+    "Extension": "ogx",
+    "Name": "Ogg Vorbis Multiplexed Media File",
+    "Category": "Application",
+    "IsCommon": false
+  },
+  {
+    "MimeType": "application/onenote",
+    "Extension": "onepkg",
+    "Name": "Microsoft OneNote Package File",
+    "Category": "Application",
+    "IsCommon": false
+  },
+  {
+    "MimeType": "application/onenote",
+    "Extension": "onetmp",
+    "Name": null,
+    "Category": "Application",
+    "IsCommon": false
+  },
+  {
+    "MimeType": "application/onenote",
+    "Extension": "onetoc",
+    "Name": "Microsoft OneNote Table of Contents File",
+    "Category": "Application",
+    "IsCommon": false
+  },
+  {
+    "MimeType": "application/onenote",
+    "Extension": "onetoc2",
+    "Name": "Microsoft OneNote Table of Contents File",
+    "Category": "Application",
+    "IsCommon": false
+  },
+  {
+    "MimeType": "application/patch-ops-error+xml",
+    "Extension": "xer",
+    "Name": null,
+    "Category": "Application",
+    "IsCommon": false
+  },
+  {
+    "MimeType": "application/pdf",
+    "Extension": "pdf",
+    "Name": "Portable Document Format File",
+    "Category": "Application",
+    "Aliases": [ "application/x-pdf" ],
+    "IsCommon": true
+  },
+  {
+    "MimeType": "application/pgp-encrypted",
+    "Extension": "pgp",
+    "Name": "PGP Security Key",
+    "Category": "Application",
+    "IsCommon": false
+  },
+  {
+    "MimeType": "application/pgp-signature",
+    "Extension": "asc",
+    "Name": "PGP ASCII Armored File",
+    "Category": "Application",
+    "IsCommon": false
+  },
+  {
+    "MimeType": "application/pgp-signature",
+    "Extension": "sig",
+    "Name": "PGP Signature File",
+    "Category": "Application",
+    "IsCommon": false
+  },
+  {
+    "MimeType": "application/pics-rules",
+    "Extension": "prf",
+    "Name": "PICS Rules File",
+    "Category": "Application",
+    "IsCommon": false
+  },
+  {
+    "MimeType": "application/pkcs10",
+    "Extension": "p10",
+    "Name": "Certificate Request File",
+    "Category": "Application",
+    "IsCommon": false
+  },
+  {
+    "MimeType": "application/pkcs7-mime",
+    "Extension": "p7c",
+    "Name": "PKCS #7 Certificate File",
+    "Category": "Application",
+    "Aliases": [ "application/x-pkcs7-certreqresp", "application/x-pkcs7-certificates" ],
+    "IsCommon": false
+  },
+  {
+    "MimeType": "application/pkcs7-mime",
+    "Extension": "p7m",
+    "Name": "PKCS #7 Certificate File",
+    "Category": "Application",
+    "Aliases": [ "application/x-pkcs7-certreqresp", "application/x-pkcs7-certificates" ],
+    "IsCommon": false
+  },
+  {
+    "MimeType": "application/pkcs7-signature",
+    "Extension": "p7s",
+    "Name": "Digitally Signed Email Message",
+    "Category": "Application",
+    "IsCommon": false
+  },
+  {
+    "MimeType": "application/pkix-cert",
+    "Extension": "cer",
+    "Name": "Internet Security Certificate",
+    "Category": "Application",
+    "IsCommon": true
+  },
+  {
+    "MimeType": "application/pkix-crl",
+    "Extension": "crl",
+    "Name": "Certificate Revocation List File",
+    "Category": "Application",
+    "IsCommon": false
+  },
+  {
+    "MimeType": "application/pkix-pkipath",
+    "Extension": "pkipath",
+    "Name": null,
+    "Category": "Application",
+    "IsCommon": false
+  },
+  {
+    "MimeType": "application/pkixcmp",
+    "Extension": "pki",
+    "Name": null,
+    "Category": "Application",
+    "IsCommon": false
+  },
+  {
+    "MimeType": "application/pls+xml",
+    "Extension": "pls",
+    "Name": null,
+    "Category": "Application",
+    "IsCommon": false
+  },
+  {
+    "MimeType": "application/postscript",
+    "Extension": "ps",
+    "Name": "PostScript File",
+    "Category": "Application",
+    "IsCommon": false
+  },
+  {
+    "MimeType": "application/postscript",
+    "Extension": "eps",
+    "Name": "Encapsulated PostScript File",
+    "Category": "Application",
+    "IsCommon": true
+  },
+  {
+    "MimeType": "application/postscript",
+    "Extension": "ai",
+    "Name": "Adobe Illustrator Artwork",
+    "Category": "Application",
+    "IsCommon": true
+  },
+  {
+    "MimeType": "application/prs.cww",
+    "Extension": "cww",
+    "Name": null,
+    "Category": "Application",
+    "IsCommon": false
+  },
+  {
+    "MimeType": "application/rdf+xml",
+    "Extension": "rdf",
+    "Name": null,
+    "Category": "Application",
+    "IsCommon": false
+  },
+  {
+    "MimeType": "application/reginfo+xml",
+    "Extension": "rif",
+    "Name": null,
+    "Category": "Application",
+    "IsCommon": false
+  },
+  {
+    "MimeType": "application/relax-ng-compact-syntax",
+    "Extension": "rnc",
+    "Name": null,
+    "Category": "Application",
+    "IsCommon": false
+  },
+  {
+    "MimeType": "application/resource-lists+xml",
+    "Extension": "rl",
+    "Name": null,
+    "Category": "Application",
+    "IsCommon": false
+  },
+  {
+    "MimeType": "application/resource-lists-diff+xml",
+    "Extension": "rld",
+    "Name": null,
+    "Category": "Application",
+    "IsCommon": false
+  },
+  {
+    "MimeType": "application/rls-services+xml",
+    "Extension": "rs",
+    "Name": null,
+    "Category": "Application",
+    "IsCommon": false
+  },
+  {
+    "MimeType": "application/rsd+xml",
+    "Extension": "rsd",
+    "Name": null,
+    "Category": "Application",
+    "IsCommon": false
+  },
+  {
+    "MimeType": "application/rss+xml",
+    "Extension": "rss",
+    "Name": "Rich Site Summary",
+    "Category": "Application",
+    "IsCommon": true
+  },
+  {
+    "MimeType": "application/rtf",
+    "Extension": "rtf",
+    "Name": "Rich Text Format File",
+    "Category": "Application",
+    "IsCommon": true
+  },
+  {
+    "MimeType": "application/sbml+xml",
+    "Extension": "sbml",
+    "Name": null,
+    "Category": "Application",
+    "IsCommon": false
+  },
+  {
+    "MimeType": "application/scvp-cv-request",
+    "Extension": "scq",
+    "Name": null,
+    "Category": "Application",
+    "IsCommon": false
+  },
+  {
+    "MimeType": "application/scvp-cv-response",
+    "Extension": "scs",
+    "Name": null,
+    "Category": "Application",
+    "IsCommon": false
+  },
+  {
+    "MimeType": "application/scvp-vp-request",
+    "Extension": "spq",
+    "Name": null,
+    "Category": "Application",
+    "IsCommon": false
+  },
+  {
+    "MimeType": "application/scvp-vp-response",
+    "Extension": "spp",
+    "Name": null,
+    "Category": "Application",
+    "IsCommon": false
+  },
+  {
+    "MimeType": "application/sdp",
+    "Extension": "sdp",
+    "Name": null,
+    "Category": "Application",
+    "IsCommon": false
+  },
+  {
+    "MimeType": "application/set-payment-initiation",
+    "Extension": "setpay",
+    "Name": null,
+    "Category": "Application",
+    "IsCommon": false
+  },
+  {
+    "MimeType": "application/set-registration-initiation",
+    "Extension": "setreg",
+    "Name": null,
+    "Category": "Application",
+    "IsCommon": false
+  },
+  {
+    "MimeType": "application/shf+xml",
+    "Extension": "shf",
+    "Name": null,
+    "Category": "Application",
+    "IsCommon": false
+  },
+  {
+    "MimeType": "application/smil+xml",
+    "Extension": "smi",
+    "Name": null,
+    "Category": "Application",
+    "IsCommon": false
+  },
+  {
+    "MimeType": "application/smil+xml",
+    "Extension": "smil",
+    "Name": null,
+    "Category": "Application",
+    "IsCommon": false
+  },
+  {
+    "MimeType": "application/sparql-query",
+    "Extension": "rq",
+    "Name": null,
+    "Category": "Application",
+    "IsCommon": false
+  },
+  {
+    "MimeType": "application/sparql-results+xml",
+    "Extension": "srx",
+    "Name": null,
+    "Category": "Application",
+    "IsCommon": false
+  },
+  {
+    "MimeType": "application/srgs",
+    "Extension": "gram",
+    "Name": null,
+    "Category": "Application",
+    "IsCommon": false
+  },
+  {
+    "MimeType": "application/srgs+xml",
+    "Extension": "grxml",
+    "Name": null,
+    "Category": "Application",
+    "IsCommon": false
+  },
+  {
+    "MimeType": "application/ssml+xml",
+    "Extension": "ssml",
+    "Name": null,
+    "Category": "Application",
+    "IsCommon": false
+  },
+  {
+    "MimeType": "application/vnd.3gpp.pic-bw-large",
+    "Extension": "plb",
+    "Name": null,
+    "Category": "Application",
+    "IsCommon": false
+  },
+  {
+    "MimeType": "application/vnd.3gpp.pic-bw-small",
+    "Extension": "psb",
+    "Name": null,
+    "Category": "Application",
+    "IsCommon": false
+  },
+  {
+    "MimeType": "application/vnd.3gpp.pic-bw-var",
+    "Extension": "pvb",
+    "Name": null,
+    "Category": "Application",
+    "IsCommon": false
+  },
+  {
+    "MimeType": "application/vnd.3gpp2.tcap",
+    "Extension": "tcap",
+    "Name": null,
+    "Category": "Application",
+    "IsCommon": false
+  },
+  {
+    "MimeType": "application/vnd.3m.post-it-notes",
+    "Extension": "pwn",
+    "Name": null,
+    "Category": "Application",
+    "IsCommon": false
+  },
+  {
+    "MimeType": "application/vnd.accpac.simply.aso",
+    "Extension": "aso",
+    "Name": null,
+    "Category": "Application",
+    "IsCommon": false
+  },
+  {
+    "MimeType": "application/vnd.accpac.simply.imp",
+    "Extension": "imp",
+    "Name": null,
+    "Category": "Application",
+    "IsCommon": false
+  },
+  {
+    "MimeType": "application/vnd.acucobol",
+    "Extension": "acu",
+    "Name": null,
+    "Category": "Application",
+    "IsCommon": false
+  },
+  {
+    "MimeType": "application/vnd.acucorp",
+    "Extension": "acutc",
+    "Name": null,
+    "Category": "Application",
+    "IsCommon": false
+  },
+  {
+    "MimeType": "application/vnd.acucorp",
+    "Extension": "atc",
+    "Name": null,
+    "Category": "Application",
+    "IsCommon": false
+  },
+  {
+    "MimeType": "application/vnd.adobe.air-application-installer-package+zip",
+    "Extension": "air",
+    "Name": "Adobe AIR Installation Package",
+    "Category": "Application",
+    "IsCommon": false
+  },
+  {
+    "MimeType": "application/vnd.adobe.xdp+xml",
+    "Extension": "xdp",
+    "Name": "XML Data Package",
+    "Category": "Application",
+    "IsCommon": false
+  },
+  {
+    "MimeType": "application/vnd.adobe.xfdf",
+    "Extension": "xfdf",
+    "Name": "Adobe Acrobat XFDF File",
+    "Category": "Application",
+    "IsCommon": false
+  },
+  {
+    "MimeType": "application/vnd.airzip.filesecure.azf",
+    "Extension": "azf",
+    "Name": "AirZip FileSECURE File",
+    "Category": "Application",
+    "IsCommon": false
+  },
+  {
+    "MimeType": "application/vnd.airzip.filesecure.azs",
+    "Extension": "azs",
+    "Name": "AirZip FileSECURE File",
+    "Category": "Application",
+    "IsCommon": false
+  },
+  {
+    "MimeType": "application/vnd.amazon.ebook",
+    "Extension": "azw",
+    "Name": "Amazon Kindle eBook File",
+    "Category": "Application",
+    "IsCommon": false
+  },
+  {
+    "MimeType": "application/vnd.americandynamics.acc",
+    "Extension": "acc",
+    "Name": null,
+    "Category": "Application",
+    "IsCommon": false
+  },
+  {
+    "MimeType": "application/vnd.amiga.ami",
+    "Extension": "ami",
+    "Name": null,
+    "Category": "Application",
+    "IsCommon": false
+  },
+  {
+    "MimeType": "application/vnd.android.package-archive",
+    "Extension": "apk",
+    "Name": "Android Package File",
+    "Category": "Application",
+    "IsCommon": true
+  },
+  {
+    "MimeType": "application/vnd.anser-web-certificate-issue-initiation",
+    "Extension": "cii",
+    "Name": null,
+    "Category": "Application",
+    "IsCommon": false
+  },
+  {
+    "MimeType": "application/vnd.anser-web-funds-transfer-initiation",
+    "Extension": "fti",
+    "Name": null,
+    "Category": "Application",
+    "IsCommon": false
+  },
+  {
+    "MimeType": "application/vnd.antix.game-component",
+    "Extension": "atx",
+    "Name": null,
+    "Category": "Application",
+    "IsCommon": false
+  },
+  {
+    "MimeType": "application/vnd.apple.installer+xml",
+    "Extension": "mpkg",
+    "Name": "Meta Package File",
+    "Category": "Application",
+    "IsCommon": false
+  },
+  {
+    "MimeType": "application/vnd.arastra.swi",
+    "Extension": "swi",
+    "Name": null,
+    "Category": "Application",
+    "IsCommon": false
+  },
+  {
+    "MimeType": "application/vnd.audiograph",
+    "Extension": "aep",
+    "Name": null,
+    "Category": "Application",
+    "IsCommon": false
+  },
+  {
+    "MimeType": "application/vnd.blueice.multipass",
+    "Extension": "mpm",
+    "Name": null,
+    "Category": "Application",
+    "IsCommon": false
+  },
+  {
+    "MimeType": "application/vnd.bmi",
+    "Extension": "bmi",
+    "Name": null,
+    "Category": "Application",
+    "IsCommon": false
+  },
+  {
+    "MimeType": "application/vnd.businessobjects",
+    "Extension": "rep",
+    "Name": null,
+    "Category": "Application",
+    "IsCommon": false
+  },
+  {
+    "MimeType": "application/vnd.chemdraw+xml",
+    "Extension": "cdxml",
+    "Name": "ChemDraw XML File",
+    "Category": "Application",
+    "IsCommon": false
+  },
+  {
+    "MimeType": "application/vnd.chipnuts.karaoke-mmd",
+    "Extension": "mmd",
+    "Name": null,
+    "Category": "Application",
+    "IsCommon": false
+  },
+  {
+    "MimeType": "application/vnd.cinderella",
+    "Extension": "cdy",
+    "Name": null,
+    "Category": "Application",
+    "IsCommon": false
+  },
+  {
+    "MimeType": "application/vnd.claymore",
+    "Extension": "cla",
+    "Name": null,
+    "Category": "Application",
+    "IsCommon": false
+  },
+  {
+    "MimeType": "application/vnd.clonk.c4group",
+    "Extension": "c4d",
+    "Name": null,
+    "Category": "Application",
+    "IsCommon": false
+  },
+  {
+    "MimeType": "application/vnd.clonk.c4group",
+    "Extension": "c4f",
+    "Name": null,
+    "Category": "Application",
+    "IsCommon": false
+  },
+  {
+    "MimeType": "application/vnd.clonk.c4group",
+    "Extension": "c4g",
+    "Name": null,
+    "Category": "Application",
+    "IsCommon": false
+  },
+  {
+    "MimeType": "application/vnd.clonk.c4group",
+    "Extension": "c4p",
+    "Name": null,
+    "Category": "Application",
+    "IsCommon": false
+  },
+  {
+    "MimeType": "application/vnd.clonk.c4group",
+    "Extension": "c4u",
+    "Name": null,
+    "Category": "Application",
+    "IsCommon": false
+  },
+  {
+    "MimeType": "application/vnd.commonspace",
+    "Extension": "csp",
+    "Name": null,
+    "Category": "Application",
+    "IsCommon": false
+  },
+  {
+    "MimeType": "application/vnd.contact.cmsg",
+    "Extension": "cdbcmsg",
+    "Name": null,
+    "Category": "Application",
+    "IsCommon": false
+  },
+  {
+    "MimeType": "application/vnd.cosmocaller",
+    "Extension": "cmc",
+    "Name": null,
+    "Category": "Application",
+    "IsCommon": false
+  },
+  {
+    "MimeType": "application/vnd.crick.clicker",
+    "Extension": "clkx",
+    "Name": "Clicker Grid Set",
+    "Category": "Application",
+    "IsCommon": false
+  },
+  {
+    "MimeType": "application/vnd.crick.clicker.keyboard",
+    "Extension": "clkk",
+    "Name": "Clicker Keyboard",
+    "Category": "Application",
+    "IsCommon": false
+  },
+  {
+    "MimeType": "application/vnd.crick.clicker.palette",
+    "Extension": "clkp",
+    "Name": "Clicker Object Palette File",
+    "Category": "Application",
+    "IsCommon": false
+  },
+  {
+    "MimeType": "application/vnd.crick.clicker.template",
+    "Extension": "clkt",
+    "Name": "Clicker Grid Set Template",
+    "Category": "Application",
+    "IsCommon": false
+  },
+  {
+    "MimeType": "application/vnd.crick.clicker.wordbank",
+    "Extension": "clkw",
+    "Name": "Clicker Word Bank",
+    "Category": "Application",
+    "IsCommon": false
+  },
+  {
+    "MimeType": "application/vnd.criticaltools.wbs+xml",
+    "Extension": "wbs",
+    "Name": null,
+    "Category": "Application",
+    "IsCommon": false
+  },
+  {
+    "MimeType": "application/vnd.ctc-posml",
+    "Extension": "pml",
+    "Name": null,
+    "Category": "Application",
+    "IsCommon": false
+  },
+  {
+    "MimeType": "application/vnd.cups-ppd",
+    "Extension": "ppd",
+    "Name": null,
+    "Category": "Application",
+    "IsCommon": false
+  },
+  {
+    "MimeType": "application/vnd.curl.car",
+    "Extension": "car",
+    "Name": null,
+    "Category": "Application",
+    "IsCommon": false
+  },
+  {
+    "MimeType": "application/vnd.curl.pcurl",
+    "Extension": "pcurl",
+    "Name": null,
+    "Category": "Application",
+    "IsCommon": false
+  },
+  {
+    "MimeType": "application/vnd.data-vision.rdz",
+    "Extension": "rdz",
+    "Name": null,
+    "Category": "Application",
+    "IsCommon": false
+  },
+  {
+    "MimeType": "application/vnd.debian.binary-package",
+    "Extension": "deb",
+    "Name": "Debian Software Package",
+    "Category": "Application",
+    "IsCommon": false
+  },
+  {
+    "MimeType": "application/vnd.debian.binary-package",
+    "Extension": "udeb",
+    "Name": "Debian Package File",
+    "Category": "Application",
+    "IsCommon": false
+  },
+  {
+    "MimeType": "application/vnd.denovo.fcselayout-link",
+    "Extension": "fe_launch",
+    "Name": "FCS Express Launch File",
+    "Category": "Application",
+    "IsCommon": false
+  },
+  {
+    "MimeType": "application/vnd.dna",
+    "Extension": "dna",
+    "Name": null,
+    "Category": "Application",
+    "IsCommon": false
+  },
+  {
+    "MimeType": "application/vnd.dolby.mlp",
+    "Extension": "mlp",
+    "Name": null,
+    "Category": "Application",
+    "IsCommon": false
+  },
+  {
+    "MimeType": "application/vnd.dpgraph",
+    "Extension": "dpg",
+    "Name": null,
+    "Category": "Application",
+    "IsCommon": false
+  },
+  {
+    "MimeType": "application/vnd.dreamfactory",
+    "Extension": "dfac",
+    "Name": null,
+    "Category": "Application",
+    "IsCommon": false
+  },
+  {
+    "MimeType": "application/vnd.dynageo",
+    "Extension": "geo",
+    "Name": null,
+    "Category": "Application",
+    "IsCommon": false
+  },
+  {
+    "MimeType": "application/vnd.ecowin.chart",
+    "Extension": "mag",
+    "Name": null,
+    "Category": "Application",
+    "IsCommon": false
+  },
+  {
+    "MimeType": "application/vnd.enliven",
+    "Extension": "nml",
+    "Name": null,
+    "Category": "Application",
+    "IsCommon": false
+  },
+  {
+    "MimeType": "application/vnd.epson.esf",
+    "Extension": "esf",
+    "Name": null,
+    "Category": "Application",
+    "IsCommon": false
+  },
+  {
+    "MimeType": "application/vnd.epson.msf",
+    "Extension": "msf",
+    "Name": null,
+    "Category": "Application",
+    "IsCommon": false
+  },
+  {
+    "MimeType": "application/vnd.epson.quickanime",
+    "Extension": "qam",
+    "Name": null,
+    "Category": "Application",
+    "IsCommon": false
+  },
+  {
+    "MimeType": "application/vnd.epson.salt",
+    "Extension": "slt",
+    "Name": null,
+    "Category": "Application",
+    "IsCommon": false
+  },
+  {
+    "MimeType": "application/vnd.epson.ssf",
+    "Extension": "ssf",
+    "Name": null,
+    "Category": "Application",
+    "IsCommon": false
+  },
+  {
+    "MimeType": "application/vnd.eszigno3+xml",
+    "Extension": "es3",
+    "Name": null,
+    "Category": "Application",
+    "IsCommon": false
+  },
+  {
+    "MimeType": "application/vnd.eszigno3+xml",
+    "Extension": "et3",
+    "Name": null,
+    "Category": "Application",
+    "IsCommon": false
+  },
+  {
+    "MimeType": "application/vnd.ezpix-album",
+    "Extension": "ez2",
+    "Name": null,
+    "Category": "Application",
+    "IsCommon": false
+  },
+  {
+    "MimeType": "application/vnd.ezpix-package",
+    "Extension": "ez3",
+    "Name": null,
+    "Category": "Application",
+    "IsCommon": false
+  },
+  {
+    "MimeType": "application/vnd.fdf",
+    "Extension": "fdf",
+    "Name": null,
+    "Category": "Application",
+    "IsCommon": false
+  },
+  {
+    "MimeType": "application/vnd.fdsn.mseed",
+    "Extension": "mseed",
+    "Name": null,
+    "Category": "Application",
+    "IsCommon": false
+  },
+  {
+    "MimeType": "application/vnd.fdsn.seed",
+    "Extension": "dataless",
+    "Name": null,
+    "Category": "Application",
+    "IsCommon": false
+  },
+  {
+    "MimeType": "application/vnd.fdsn.seed",
+    "Extension": "seed",
+    "Name": null,
+    "Category": "Application",
+    "IsCommon": false
+  },
+  {
+    "MimeType": "application/vnd.flographit",
+    "Extension": "gph",
+    "Name": null,
+    "Category": "Application",
+    "IsCommon": false
+  },
+  {
+    "MimeType": "application/vnd.fluxtime.clip",
+    "Extension": "ftc",
+    "Name": "FluxTime Clip File",
+    "Category": "Application",
+    "IsCommon": false
+  },
+  {
+    "MimeType": "application/vnd.framemaker",
+    "Extension": "maker",
+    "Name": "Adobe Character Animator Puppet Maker Template",
+    "Category": "Application",
+    "IsCommon": false
+  },
+  {
+    "MimeType": "application/vnd.framemaker",
+    "Extension": "fm",
+    "Name": "FrameMaker Document",
+    "Category": "Application",
+    "IsCommon": false
+  },
+  {
+    "MimeType": "application/vnd.framemaker",
+    "Extension": "frame",
+    "Name": null,
+    "Category": "Application",
+    "IsCommon": false
+  },
+  {
+    "MimeType": "application/vnd.framemaker",
+    "Extension": "book",
+    "Name": "FrameMaker Book File",
+    "Category": "Application",
+    "IsCommon": false
+  },
+  {
+    "MimeType": "application/vnd.frogans.fnc",
+    "Extension": "fnc",
+    "Name": "Frogans Player Network Certificate",
+    "Category": "Application",
+    "IsCommon": false
+  },
+  {
+    "MimeType": "application/vnd.frogans.ltf",
+    "Extension": "ltf",
+    "Name": "Frogans Shortcut File",
+    "Category": "Application",
+    "IsCommon": false
+  },
+  {
+    "MimeType": "application/vnd.fsc.weblaunch",
+    "Extension": "fsc",
+    "Name": null,
+    "Category": "Application",
+    "IsCommon": false
+  },
+  {
+    "MimeType": "application/vnd.fujitsu.oasys",
+    "Extension": "oas",
+    "Name": null,
+    "Category": "Application",
+    "IsCommon": false
+  },
+  {
+    "MimeType": "application/vnd.fujitsu.oasys2",
+    "Extension": "oa2",
+    "Name": "Fujitsu OASYS 2 document",
+    "Category": "Application",
+    "IsCommon": false
+  },
+  {
+    "MimeType": "application/vnd.fujitsu.oasys3",
+    "Extension": "oa3",
+    "Name": "Fujitsu OASYS 3 document",
+    "Category": "Application",
+    "IsCommon": false
+  },
+  {
+    "MimeType": "application/vnd.fujitsu.oasysgp",
+    "Extension": "fg5",
+    "Name": "OASYS GraphPro data",
+    "Category": "Application",
+    "IsCommon": false
+  },
+  {
+    "MimeType": "application/vnd.fujitsu.oasysprs",
+    "Extension": "bh2",
+    "Name": null,
+    "Category": "Application",
+    "IsCommon": false
+  },
+  {
+    "MimeType": "application/vnd.fujixerox.ddd",
+    "Extension": "ddd",
+    "Name": "Fuji Xerox 2D CAD data",
+    "Category": "Application",
+    "IsCommon": false
+  },
+  {
+    "MimeType": "application/vnd.fujixerox.docuworks",
+    "Extension": "xdw",
+    "Name": "Fuji Xerox DocuWorks File",
+    "Category": "Application",
+    "IsCommon": false
+  },
+  {
+    "MimeType": "application/vnd.fujixerox.docuworks.binder",
+    "Extension": "xbd",
+    "Name": "Fuji Xerox DocuWorks Binder File",
+    "Category": "Application",
+    "IsCommon": false
+  },
+  {
+    "MimeType": "application/vnd.fuzzysheet",
+    "Extension": "fzs",
+    "Name": null,
+    "Category": "Application",
+    "IsCommon": false
+  },
+  {
+    "MimeType": "application/vnd.genomatix.tuxedo",
+    "Extension": "txd",
+    "Name": null,
+    "Category": "Application",
+    "IsCommon": false
+  },
+  {
+    "MimeType": "application/vnd.geogebra.file",
+    "Extension": "ggb",
+    "Name": "GeoGebra Worksheet",
+    "Category": "Application",
+    "IsCommon": false
+  },
+  {
+    "MimeType": "application/vnd.geogebra.tool",
+    "Extension": "ggt",
+    "Name": "GeoGebra user-defined tool",
+    "Category": "Application",
+    "IsCommon": false
+  },
+  {
+    "MimeType": "application/vnd.geometry-explorer",
+    "Extension": "gex",
+    "Name": null,
+    "Category": "Application",
+    "IsCommon": false
+  },
+  {
+    "MimeType": "application/vnd.geometry-explorer",
+    "Extension": "gre",
+    "Name": null,
+    "Category": "Application",
+    "IsCommon": false
+  },
+  {
+    "MimeType": "application/vnd.gmx",
+    "Extension": "gmx",
+    "Name": "GroupMail message file",
+    "Category": "Application",
+    "IsCommon": false
+  },
+  {
+    "MimeType": "application/vnd.google-earth.kml+xml",
+    "Extension": "kml",
+    "Name": "Keyhole Markup Language File",
+    "Category": "Application",
+    "IsCommon": false
+  },
+  {
+    "MimeType": "application/vnd.google-earth.kmz",
+    "Extension": "kmz",
+    "Name": "Google Earth Placemark File",
+    "Category": "Application",
+    "IsCommon": false
+  },
+  {
+    "MimeType": "application/vnd.grafeq",
+    "Extension": "gqf",
+    "Name": "GrafEq data",
+    "Category": "Application",
+    "IsCommon": false
+  },
+  {
+    "MimeType": "application/vnd.grafeq",
+    "Extension": "gqs",
+    "Name": "GrafEq data",
+    "Category": "Application",
+    "IsCommon": false
+  },
+  {
+    "MimeType": "application/vnd.groove-account",
+    "Extension": "gac",
+    "Name": "Microsoft Groove data",
+    "Category": "Application",
+    "IsCommon": false
+  },
+  {
+    "MimeType": "application/vnd.groove-help",
+    "Extension": "ghf",
+    "Name": "Microsoft Grood Help File",
+    "Category": "Application",
+    "IsCommon": false
+  },
+  {
+    "MimeType": "application/vnd.groove-identity-message",
+    "Extension": "gim",
+    "Name": "Microsoft Groove Identity Message",
+    "Category": "Application",
+    "IsCommon": false
+  },
+  {
+    "MimeType": "application/vnd.groove-injector",
+    "Extension": "grv",
+    "Name": "Microsoft Groove Injector File",
+    "Category": "Application",
+    "IsCommon": false
+  },
+  {
+    "MimeType": "application/vnd.groove-tool-message",
+    "Extension": "gtm",
+    "Name": "Microsoft Groove Tool Message File",
+    "Category": "Application",
+    "IsCommon": false
+  },
+  {
+    "MimeType": "application/vnd.groove-tool-template",
+    "Extension": "tpl",
+    "Name": "Microsoft Groove Tool Template File",
+    "Category": "Application",
+    "IsCommon": false
+  },
+  {
+    "MimeType": "application/vnd.groove-vcard",
+    "Extension": "vcg",
+    "Name": "Microsoft Groove vCard File",
+    "Category": "Application",
+    "IsCommon": false
+  },
+  {
+    "MimeType": "application/vnd.handheld-entertainment+xml",
+    "Extension": "zmm",
+    "Name": null,
+    "Category": "Application",
+    "IsCommon": false
+  },
+  {
+    "MimeType": "application/vnd.hbci",
+    "Extension": "hbci",
+    "Name": null,
+    "Category": "Application",
+    "IsCommon": false
+  },
+  {
+    "MimeType": "application/vnd.hhe.lesson-player",
+    "Extension": "les",
+    "Name": null,
+    "Category": "Application",
+    "IsCommon": false
+  },
+  {
+    "MimeType": "application/vnd.hp-hpgl",
+    "Extension": "hpgl",
+    "Name": "HP Graphics Language Plotter File",
+    "Category": "Application",
+    "IsCommon": false
+  },
+  {
+    "MimeType": "application/vnd.hp-hpid",
+    "Extension": "hpid",
+    "Name": "HP Instant Delivery software file",
+    "Category": "Application",
+    "IsCommon": false
+  },
+  {
+    "MimeType": "application/vnd.hp-hps",
+    "Extension": "hps",
+    "Name": "HP Digital Sender Metadata File",
+    "Category": "Application",
+    "IsCommon": false
+  },
+  {
+    "MimeType": "application/vnd.hp-jlyt",
+    "Extension": "jlt",
+    "Name": "HP SmartStream print data",
+    "Category": "Application",
+    "IsCommon": false
+  },
+  {
+    "MimeType": "application/vnd.hp-pcl",
+    "Extension": "pcl",
+    "Name": "Printer Command Language Document",
+    "Category": "Application",
+    "IsCommon": false
+  },
+  {
+    "MimeType": "application/vnd.hp-pclxl",
+    "Extension": "pclxl",
+    "Name": null,
+    "Category": "Application",
+    "IsCommon": false
+  },
+  {
+    "MimeType": "application/vnd.hydrostatix.sof-data",
+    "Extension": "sfd-hdstx",
+    "Name": null,
+    "Category": "Application",
+    "IsCommon": false
+  },
+  {
+    "MimeType": "application/vnd.hzn-3d-crossword",
+    "Extension": "x3d",
+    "Name": null,
+    "Category": "Application",
+    "IsCommon": false
+  },
+  {
+    "MimeType": "application/vnd.ibm.minipay",
+    "Extension": "mpy",
+    "Name": null,
+    "Category": "Application",
+    "IsCommon": false
+  },
+  {
+    "MimeType": "application/vnd.ibm.modcap",
+    "Extension": "afp",
+    "Name": null,
+    "Category": "Application",
+    "IsCommon": false
+  },
+  {
+    "MimeType": "application/vnd.ibm.modcap",
+    "Extension": "list3820",
+    "Name": null,
+    "Category": "Application",
+    "IsCommon": false
+  },
+  {
+    "MimeType": "application/vnd.ibm.modcap",
+    "Extension": "listafp",
+    "Name": null,
+    "Category": "Application",
+    "IsCommon": false
+  },
+  {
+    "MimeType": "application/vnd.ibm.rights-management",
+    "Extension": "irm",
+    "Name": null,
+    "Category": "Application",
+    "IsCommon": false
+  },
+  {
+    "MimeType": "application/vnd.ibm.secure-container",
+    "Extension": "sc",
+    "Name": null,
+    "Category": "Application",
+    "IsCommon": false
+  },
+  {
+    "MimeType": "application/vnd.iccprofile",
+    "Extension": "icc",
+    "Name": "ICC Profile",
+    "Category": "Application",
+    "IsCommon": false
+  },
+  {
+    "MimeType": "application/vnd.iccprofile",
+    "Extension": "icm",
+    "Name": "Image Color Matching Profile",
+    "Category": "Application",
+    "IsCommon": false
+  },
+  {
+    "MimeType": "application/vnd.igloader",
+    "Extension": "igl",
+    "Name": null,
+    "Category": "Application",
+    "IsCommon": false
+  },
+  {
+    "MimeType": "application/vnd.immervision-ivp",
+    "Extension": "ivp",
+    "Name": null,
+    "Category": "Application",
+    "IsCommon": false
+  },
+  {
+    "MimeType": "application/vnd.immervision-ivu",
+    "Extension": "ivu",
+    "Name": null,
+    "Category": "Application",
+    "IsCommon": false
+  },
+  {
+    "MimeType": "application/vnd.intercon.formnet",
+    "Extension": "xpw",
+    "Name": "Intercon FormNet data",
+    "Category": "Application",
+    "IsCommon": false
+  },
+  {
+    "MimeType": "application/vnd.intercon.formnet",
+    "Extension": "xpx",
+    "Name": "Intercon FormNet data",
+    "Category": "Application",
+    "IsCommon": false
+  },
+  {
+    "MimeType": "application/vnd.intu.qbo",
+    "Extension": "qbo",
+    "Name": "QuickBooks Online Bank Statement File",
+    "Category": "Application",
+    "IsCommon": false
+  },
+  {
+    "MimeType": "application/vnd.intu.qfx",
+    "Extension": "qfx",
+    "Name": "Quicken Financial Exchange File",
+    "Category": "Application",
+    "IsCommon": false
+  },
+  {
+    "MimeType": "application/vnd.ipunplugged.rcprofile",
+    "Extension": "rcprofile",
+    "Name": null,
+    "Category": "Application",
+    "IsCommon": false
+  },
+  {
+    "MimeType": "application/vnd.irepository.package+xml",
+    "Extension": "irp",
+    "Name": null,
+    "Category": "Application",
+    "IsCommon": false
+  },
+  {
+    "MimeType": "application/vnd.is-xpr",
+    "Extension": "xpr",
+    "Name": null,
+    "Category": "Application",
+    "IsCommon": false
+  },
+  {
+    "MimeType": "application/vnd.jam",
+    "Extension": "jam",
+    "Name": null,
+    "Category": "Application",
+    "IsCommon": false
+  },
+  {
+    "MimeType": "application/vnd.jcp.javame.midlet-rms",
+    "Extension": "rms",
+    "Name": "Java Application Settings File",
+    "Category": "Application",
+    "IsCommon": false
+  },
+  {
+    "MimeType": "application/vnd.jisp",
+    "Extension": "jisp",
+    "Name": null,
+    "Category": "Application",
+    "IsCommon": false
+  },
+  {
+    "MimeType": "application/vnd.joost.joda-archive",
+    "Extension": "joda",
+    "Name": null,
+    "Category": "Application",
+    "IsCommon": false
+  },
+  {
+    "MimeType": "application/vnd.kahootz",
+    "Extension": "ktr",
+    "Name": null,
+    "Category": "Application",
+    "IsCommon": false
+  },
+  {
+    "MimeType": "application/vnd.kahootz",
+    "Extension": "ktz",
+    "Name": null,
+    "Category": "Application",
+    "IsCommon": false
+  },
+  {
+    "MimeType": "application/vnd.kde.karbon",
+    "Extension": "karbon",
+    "Name": null,
+    "Category": "Application",
+    "IsCommon": false
+  },
+  {
+    "MimeType": "application/vnd.kde.kchart",
+    "Extension": "chrt",
+    "Name": null,
+    "Category": "Application",
+    "IsCommon": false
+  },
+  {
+    "MimeType": "application/vnd.kde.kformula",
+    "Extension": "kfo",
+    "Name": null,
+    "Category": "Application",
+    "IsCommon": false
+  },
+  {
+    "MimeType": "application/vnd.kde.kivio",
+    "Extension": "flw",
+    "Name": null,
+    "Category": "Application",
+    "IsCommon": false
+  },
+  {
+    "MimeType": "application/vnd.kde.kontour",
+    "Extension": "kon",
+    "Name": null,
+    "Category": "Application",
+    "IsCommon": false
+  },
+  {
+    "MimeType": "application/vnd.kde.kpresenter",
+    "Extension": "kpr",
+    "Name": null,
+    "Category": "Application",
+    "IsCommon": false
+  },
+  {
+    "MimeType": "application/vnd.kde.kpresenter",
+    "Extension": "kpt",
+    "Name": null,
+    "Category": "Application",
+    "IsCommon": false
+  },
+  {
+    "MimeType": "application/vnd.kde.kspread",
+    "Extension": "ksp",
+    "Name": null,
+    "Category": "Application",
+    "IsCommon": false
+  },
+  {
+    "MimeType": "application/vnd.kde.kword",
+    "Extension": "kwd",
+    "Name": null,
+    "Category": "Application",
+    "IsCommon": false
+  },
+  {
+    "MimeType": "application/vnd.kde.kword",
+    "Extension": "kwt",
+    "Name": null,
+    "Category": "Application",
+    "IsCommon": false
+  },
+  {
+    "MimeType": "application/vnd.kenameaapp",
+    "Extension": "htke",
+    "Name": null,
+    "Category": "Application",
+    "IsCommon": false
+  },
+  {
+    "MimeType": "application/vnd.kidspiration",
+    "Extension": "kia",
+    "Name": null,
+    "Category": "Application",
+    "IsCommon": false
+  },
+  {
+    "MimeType": "application/vnd.kinar",
+    "Extension": "kne",
+    "Name": null,
+    "Category": "Application",
+    "IsCommon": false
+  },
+  {
+    "MimeType": "application/vnd.kinar",
+    "Extension": "knp",
+    "Name": null,
+    "Category": "Application",
+    "IsCommon": false
+  },
+  {
+    "MimeType": "application/vnd.koan",
+    "Extension": "skd",
+    "Name": null,
+    "Category": "Application",
+    "IsCommon": false
+  },
+  {
+    "MimeType": "application/vnd.koan",
+    "Extension": "skm",
+    "Name": null,
+    "Category": "Application",
+    "IsCommon": false
+  },
+  {
+    "MimeType": "application/vnd.koan",
+    "Extension": "skp",
+    "Name": null,
+    "Category": "Application",
+    "IsCommon": false
+  },
+  {
+    "MimeType": "application/vnd.koan",
+    "Extension": "skt",
+    "Name": null,
+    "Category": "Application",
+    "IsCommon": false
+  },
+  {
+    "MimeType": "application/vnd.kodak-descriptor",
+    "Extension": "sse",
+    "Name": null,
+    "Category": "Application",
+    "IsCommon": false
+  },
+  {
+    "MimeType": "application/vnd.llamagraphics.life-balance.desktop",
+    "Extension": "lbd",
+    "Name": null,
+    "Category": "Application",
+    "IsCommon": false
+  },
+  {
+    "MimeType": "application/vnd.llamagraphics.life-balance.exchange+xml",
+    "Extension": "lbe",
+    "Name": null,
+    "Category": "Application",
+    "IsCommon": false
+  },
+  {
+    "MimeType": "application/vnd.lotus-1-2-3",
+    "Extension": "123",
+    "Name": "Lotus 1-2-3 Spreadsheet",
+    "Category": "Application",
+    "IsCommon": false
+  },
+  {
+    "MimeType": "application/vnd.lotus-approach",
+    "Extension": "apr",
+    "Name": null,
+    "Category": "Application",
+    "IsCommon": false
+  },
+  {
+    "MimeType": "application/vnd.lotus-freelance",
+    "Extension": "pre",
+    "Name": "Lotus Freelance Graphics File",
+    "Category": "Application",
+    "IsCommon": false
+  },
+  {
+    "MimeType": "application/vnd.lotus-notes",
+    "Extension": "nsf",
+    "Name": "Lotus Notes Database",
+    "Category": "Application",
+    "IsCommon": false
+  },
+  {
+    "MimeType": "application/vnd.lotus-organizer",
+    "Extension": "org",
+    "Name": "Lotus Organizer File",
+    "Category": "Application",
+    "IsCommon": false
+  },
+  {
+    "MimeType": "application/vnd.lotus-screencam",
+    "Extension": "scm",
+    "Name": null,
+    "Category": "Application",
+    "IsCommon": false
+  },
+  {
+    "MimeType": "application/vnd.lotus-wordpro",
+    "Extension": "lwp",
+    "Name": "Lotus Word Pro Document",
+    "Category": "Application",
+    "IsCommon": false
+  },
+  {
+    "MimeType": "application/vnd.macports.portpkg",
+    "Extension": "portpkg",
+    "Name": null,
+    "Category": "Application",
+    "IsCommon": false
+  },
+  {
+    "MimeType": "application/vnd.mcd",
+    "Extension": "mcd",
+    "Name": null,
+    "Category": "Application",
+    "IsCommon": false
+  },
+  {
+    "MimeType": "application/vnd.medcalcdata",
+    "Extension": "mc1",
+    "Name": "MedCalc Data File",
+    "Category": "Application",
+    "IsCommon": false
+  },
+  {
+    "MimeType": "application/vnd.mediastation.cdkey",
+    "Extension": "cdkey",
+    "Name": null,
+    "Category": "Application",
+    "IsCommon": false
+  },
+  {
+    "MimeType": "application/vnd.mfer",
+    "Extension": "mwf",
+    "Name": null,
+    "Category": "Application",
+    "IsCommon": false
+  },
+  {
+    "MimeType": "application/vnd.mfmp",
+    "Extension": "mfm",
+    "Name": null,
+    "Category": "Application",
+    "IsCommon": false
+  },
+  {
+    "MimeType": "application/vnd.micrografx.flo",
+    "Extension": "flo",
+    "Name": "Micrografx FlowCharter flowchart data",
+    "Category": "Application",
+    "IsCommon": false
+  },
+  {
+    "MimeType": "application/vnd.micrografx.igx",
+    "Extension": "igx",
+    "Name": "iGrafX FlowCharter flow chart or process model",
+    "Category": "Application",
+    "IsCommon": false
+  },
+  {
+    "MimeType": "application/vnd.mif",
+    "Extension": "mif",
+    "Name": null,
+    "Category": "Application",
+    "IsCommon": false
+  },
+  {
+    "MimeType": "application/vnd.mobius.daf",
+    "Extension": "daf",
+    "Name": null,
+    "Category": "Application",
+    "IsCommon": false
+  },
+  {
+    "MimeType": "application/vnd.mobius.dis",
+    "Extension": "dis",
+    "Name": null,
+    "Category": "Application",
+    "IsCommon": false
+  },
+  {
+    "MimeType": "application/vnd.mobius.mbk",
+    "Extension": "mbk",
+    "Name": null,
+    "Category": "Application",
+    "IsCommon": false
+  },
+  {
+    "MimeType": "application/vnd.mobius.mqy",
+    "Extension": "mqy",
+    "Name": null,
+    "Category": "Application",
+    "IsCommon": false
+  },
+  {
+    "MimeType": "application/vnd.mobius.msl",
+    "Extension": "msl",
+    "Name": null,
+    "Category": "Application",
+    "IsCommon": false
+  },
+  {
+    "MimeType": "application/vnd.mobius.plc",
+    "Extension": "plc",
+    "Name": null,
+    "Category": "Application",
+    "IsCommon": false
+  },
+  {
+    "MimeType": "application/vnd.mobius.txf",
+    "Extension": "txf",
+    "Name": null,
+    "Category": "Application",
+    "IsCommon": false
+  },
+  {
+    "MimeType": "application/vnd.mophun.application",
+    "Extension": "mpn",
+    "Name": "Mophun Video Game",
+    "Category": "Application",
+    "IsCommon": false
+  },
+  {
+    "MimeType": "application/vnd.mophun.certificate",
+    "Extension": "mpc",
+    "Name": null,
+    "Category": "Application",
+    "IsCommon": false
+  },
+  {
+    "MimeType": "application/vnd.mozilla.xul+xml",
+    "Extension": "xul",
+    "Name": "XML User Interface Language File",
+    "Category": "Application",
+    "IsCommon": false
+  },
+  {
+    "MimeType": "application/vnd.ms-artgalry",
+    "Extension": "cil",
+    "Name": "Clip Gallery Packaged File",
+    "Category": "Application",
+    "IsCommon": false
+  },
+  {
+    "MimeType": "application/vnd.ms-cab-compressed",
+    "Extension": "cab",
+    "Name": "Windows Cabinet File",
+    "Category": "Application",
+    "IsCommon": false
+  },
+  {
+    "MimeType": "application/vnd.ms-excel",
+    "Extension": "xla",
+    "Name": "Microsoft Excel Add-In File",
+    "Category": "Application",
+    "IsCommon": false
+  },
+  {
+    "MimeType": "application/vnd.ms-excel",
+    "Extension": "xlb",
+    "Name": "Microsoft Excel Toolbar Settings File",
+    "Category": "Application",
+    "IsCommon": false
+  },
+  {
+    "MimeType": "application/vnd.ms-excel",
+    "Extension": "xlc",
+    "Name": "Microsoft Excel Chart",
+    "Category": "Application",
+    "IsCommon": false
+  },
+  {
+    "MimeType": "application/vnd.ms-excel",
+    "Extension": "xlm",
+    "Name": "Microsoft Excel Macro",
+    "Category": "Application",
+    "IsCommon": false
+  },
+  {
+    "MimeType": "application/vnd.ms-excel",
+    "Extension": "xls",
+    "Name": "Microsoft Excel Spreadsheet (Legacy)",
+    "Category": "Application",
+    "IsCommon": true
+  },
+  {
+    "MimeType": "application/vnd.ms-excel",
+    "Extension": "xlt",
+    "Name": "Microsoft Excel Spreadsheet Template (Legacy)",
+    "Category": "Application",
+    "IsCommon": false
+  },
+  {
+    "MimeType": "application/vnd.ms-excel",
+    "Extension": "xlw",
+    "Name": "Microsoft Excel Workspace",
+    "Category": "Application",
+    "IsCommon": false
+  },
+  {
+    "MimeType": "application/vnd.ms-excel.addin.macroenabled.12",
+    "Extension": "xlam",
+    "Name": "Microsoft Excel Macro-Enabled Add-In",
+    "Category": "Application",
+    "IsCommon": false
+  },
+  {
+    "MimeType": "application/vnd.ms-excel.sheet.binary.macroenabled.12",
+    "Extension": "xlsb",
+    "Name": "Microsoft Excel Binary Spreadsheet",
+    "Category": "Application",
+    "IsCommon": false
+  },
+  {
+    "MimeType": "application/vnd.ms-excel.sheet.macroenabled.12",
+    "Extension": "xlsm",
+    "Name": "Microsoft Excel Macro-Enabled Spreadsheet",
+    "Category": "Application",
+    "IsCommon": true
+  },
+  {
+    "MimeType": "application/vnd.ms-excel.template.macroenabled.12",
+    "Extension": "xltm",
+    "Name": "Microsoft Excel Macro-Enabled Spreadsheet Template",
+    "Category": "Application",
+    "IsCommon": false
+  },
+  {
+    "MimeType": "application/vnd.ms-fontobject",
+    "Extension": "eot",
+    "Name": "Embedded OpenType Font",
+    "Category": "Application",
+    "IsCommon": false
+  },
+  {
+    "MimeType": "application/vnd.ms-htmlhelp",
+    "Extension": "chm",
+    "Name": "Compiled HTML Help File",
+    "Category": "Application",
+    "IsCommon": false
+  },
+  {
+    "MimeType": "application/vnd.ms-ims",
+    "Extension": "ims",
+    "Name": null,
+    "Category": "Application",
+    "IsCommon": false
+  },
+  {
+    "MimeType": "application/vnd.ms-lrm",
+    "Extension": "lrm",
+    "Name": "Encarta Class Server Learning Resource File",
+    "Category": "Application",
+    "IsCommon": false
+  },
+  {
+    "MimeType": "application/vnd.ms-pki.seccat",
+    "Extension": "cat",
+    "Name": "Windows Catalog File",
+    "Category": "Application",
+    "IsCommon": false
+  },
+  {
+    "MimeType": "application/vnd.ms-pki.stl",
+    "Extension": "stl",
+    "Name": "Certificate Trust List",
+    "Category": "Application",
+    "IsCommon": false
+  },
+  {
+    "MimeType": "application/vnd.ms-powerpoint",
+    "Extension": "pot",
+    "Name": "Microsoft PowerPoint Template (Legacy)",
+    "Category": "Application",
+    "IsCommon": false
+  },
+  {
+    "MimeType": "application/vnd.ms-powerpoint",
+    "Extension": "ppa",
+    "Name": "Microsoft PowerPoint Add-in",
+    "Category": "Application",
+    "IsCommon": false
+  },
+  {
+    "MimeType": "application/vnd.ms-powerpoint",
+    "Extension": "pps",
+    "Name": "Microsoft PowerPoint Slide Show (Legacy)",
+    "Category": "Application",
+    "IsCommon": false
+  },
+  {
+    "MimeType": "application/vnd.ms-powerpoint",
+    "Extension": "ppt",
+    "Name": "Microsoft PowerPoint Presentation (Legacy)",
+    "Category": "Application",
+    "IsCommon": false
+  },
+  {
+    "MimeType": "application/vnd.ms-powerpoint",
+    "Extension": "pwz",
+    "Name": "Microsoft PowerPoint wizard file",
+    "Category": "Application",
+    "IsCommon": false
+  },
+  {
+    "MimeType": "application/vnd.ms-powerpoint.addin.macroenabled.12",
+    "Extension": "ppam",
+    "Name": "Microsoft PowerPoint 2007 Add-In",
+    "Category": "Application",
+    "IsCommon": false
+  },
+  {
+    "MimeType": "application/vnd.ms-powerpoint.presentation.macroenabled.12",
+    "Extension": "pptm",
+    "Name": "Microsoft PowerPoint Macro-Enabled Presentation",
+    "Category": "Application",
+    "IsCommon": true
+  },
+  {
+    "MimeType": "application/vnd.ms-powerpoint.slide.macroenabled.12",
+    "Extension": "sldm",
+    "Name": "Microsoft PowerPoint macro-enabled Open XML slide",
+    "Category": "Application",
+    "IsCommon": false
+  },
+  {
+    "MimeType": "application/vnd.ms-powerpoint.slideshow.macroenabled.12",
+    "Extension": "ppsm",
+    "Name": "Microsoft PowerPoint Macro-Enabled Show",
+    "Category": "Application",
+    "IsCommon": false
+  },
+  {
+    "MimeType": "application/vnd.ms-powerpoint.template.macroenabled.12",
+    "Extension": "potm",
+    "Name": "Microsoft PowerPoint Macro-Enabled Template",
+    "Category": "Application",
+    "IsCommon": false
+  },
+  {
+    "MimeType": "application/vnd.ms-project",
+    "Extension": "mpp",
+    "Name": "Microsoft Project File",
+    "Category": "Application",
+    "IsCommon": true
+  },
+  {
+    "MimeType": "application/vnd.ms-project",
+    "Extension": "mpt",
+    "Name": "Microsoft Project Template",
+    "Category": "Application",
+    "IsCommon": false
+  },
+  {
+    "MimeType": "application/vnd.ms-word.document.macroenabled.12",
+    "Extension": "docm",
+    "Name": "Microsoft Word Macro-enabled Document",
+    "Category": "Application",
+    "IsCommon": true
+  },
+  {
+    "MimeType": "application/vnd.ms-word.template.macroenabled.12",
+    "Extension": "dotm",
+    "Name": "Microsoft Word Macro-Enabled Document Template",
+    "Category": "Application",
+    "IsCommon": false
+  },
+  {
+    "MimeType": "application/vnd.ms-works",
+    "Extension": "wcm",
+    "Name": "Microsoft Works Communications Script",
+    "Category": "Application",
+    "IsCommon": false
+  },
+  {
+    "MimeType": "application/vnd.ms-works",
+    "Extension": "wdb",
+    "Name": "Microsoft Works Database",
+    "Category": "Application",
+    "IsCommon": false
+  },
+  {
+    "MimeType": "application/vnd.ms-works",
+    "Extension": "wks",
+    "Name": "Works Spreadsheet",
+    "Category": "Application",
+    "IsCommon": false
+  },
+  {
+    "MimeType": "application/vnd.ms-works",
+    "Extension": "wps",
+    "Name": "Microsoft Works Word Processor Document",
+    "Category": "Application",
+    "IsCommon": false
+  },
+  {
+    "MimeType": "application/vnd.ms-wpl",
+    "Extension": "wpl",
+    "Name": "Windows Media Player Playlist",
+    "Category": "Application",
+    "IsCommon": false
+  },
+  {
+    "MimeType": "application/vnd.ms-xpsdocument",
+    "Extension": "xps",
+    "Name": "XML Paper Specification File",
+    "Category": "Application",
+    "IsCommon": true
+  },
+  {
+    "MimeType": "application/vnd.mseq",
+    "Extension": "mseq",
+    "Name": null,
+    "Category": "Application",
+    "IsCommon": false
+  },
+  {
+    "MimeType": "application/vnd.musician",
+    "Extension": "mus",
+    "Name": null,
+    "Category": "Application",
+    "IsCommon": false
+  },
+  {
+    "MimeType": "application/vnd.muvee.style",
+    "Extension": "msty",
+    "Name": null,
+    "Category": "Application",
+    "IsCommon": false
+  },
+  {
+    "MimeType": "application/vnd.neurolanguage.nlu",
+    "Extension": "nlu",
+    "Name": null,
+    "Category": "Application",
+    "IsCommon": false
+  },
+  {
+    "MimeType": "application/vnd.noblenet-directory",
+    "Extension": "nnd",
+    "Name": null,
+    "Category": "Application",
+    "IsCommon": false
+  },
+  {
+    "MimeType": "application/vnd.noblenet-sealer",
+    "Extension": "nns",
+    "Name": null,
+    "Category": "Application",
+    "IsCommon": false
+  },
+  {
+    "MimeType": "application/vnd.noblenet-web",
+    "Extension": "nnw",
+    "Name": null,
+    "Category": "Application",
+    "IsCommon": false
+  },
+  {
+    "MimeType": "application/vnd.nokia.n-gage.data",
+    "Extension": "ngdat",
+    "Name": null,
+    "Category": "Application",
+    "IsCommon": false
+  },
+  {
+    "MimeType": "application/vnd.nokia.n-gage.symbian.install",
+    "Extension": "n-gage",
+    "Name": null,
+    "Category": "Application",
+    "IsCommon": false
+  },
+  {
+    "MimeType": "application/vnd.nokia.radio-preset",
+    "Extension": "rpst",
+    "Name": null,
+    "Category": "Application",
+    "IsCommon": false
+  },
+  {
+    "MimeType": "application/vnd.nokia.radio-presets",
+    "Extension": "rpss",
+    "Name": null,
+    "Category": "Application",
+    "IsCommon": false
+  },
+  {
+    "MimeType": "application/vnd.novadigm.edm",
+    "Extension": "edm",
+    "Name": null,
+    "Category": "Application",
+    "IsCommon": false
+  },
+  {
+    "MimeType": "application/vnd.novadigm.edx",
+    "Extension": "edx",
+    "Name": null,
+    "Category": "Application",
+    "IsCommon": false
+  },
+  {
+    "MimeType": "application/vnd.novadigm.ext",
+    "Extension": "ext",
+    "Name": null,
+    "Category": "Application",
+    "IsCommon": false
+  },
+  {
+    "MimeType": "application/vnd.oasis.opendocument.chart",
+    "Extension": "odc",
+    "Name": "OpenDocument Chart File",
+    "Category": "Application",
+    "IsCommon": false
+  },
+  {
+    "MimeType": "application/vnd.oasis.opendocument.chart-template",
+    "Extension": "otc",
+    "Name": "OpenDocument Chart Template",
+    "Category": "Application",
+    "IsCommon": false
+  },
+  {
+    "MimeType": "application/vnd.oasis.opendocument.database",
+    "Extension": "odb",
+    "Name": "OpenDocument Database",
+    "Category": "Application",
+    "IsCommon": false
+  },
+  {
+    "MimeType": "application/vnd.oasis.opendocument.formula",
+    "Extension": "odf",
+    "Name": "OpenDocument Formula",
+    "Category": "Application",
+    "IsCommon": false
+  },
+  {
+    "MimeType": "application/vnd.oasis.opendocument.formula-template",
+    "Extension": "odft",
+    "Name": "OpenDocument Formula Template",
+    "Category": "Application",
+    "IsCommon": false
+  },
+  {
+    "MimeType": "application/vnd.oasis.opendocument.graphics",
+    "Extension": "odg",
+    "Name": "OpenDocument Graphic File",
+    "Category": "Application",
+    "IsCommon": false
+  },
+  {
+    "MimeType": "application/vnd.oasis.opendocument.graphics-template",
+    "Extension": "otg",
+    "Name": "OpenDocument Graphic Template",
+    "Category": "Application",
+    "IsCommon": false
+  },
+  {
+    "MimeType": "application/vnd.oasis.opendocument.image",
+    "Extension": "odi",
+    "Name": "OpenDocument Image",
+    "Category": "Application",
+    "IsCommon": false
+  },
+  {
+    "MimeType": "application/vnd.oasis.opendocument.image-template",
+    "Extension": "oti",
+    "Name": "OpenDocument Image Template",
+    "Category": "Application",
+    "IsCommon": false
+  },
+  {
+    "MimeType": "application/vnd.oasis.opendocument.presentation",
+    "Extension": "odp",
+    "Name": "OpenDocument Presentation",
+    "Category": "Application",
+    "IsCommon": false
+  },
+  {
+    "MimeType": "application/vnd.oasis.opendocument.presentation-template",
+    "Extension": "otp",
+    "Name": "OpenDocument Presentation Template",
+    "Category": "Application",
+    "IsCommon": false
+  },
+  {
+    "MimeType": "application/vnd.oasis.opendocument.spreadsheet",
+    "Extension": "ods",
+    "Name": "OpenDocument Spreadsheet",
+    "Category": "Application",
+    "IsCommon": false
+  },
+  {
+    "MimeType": "application/vnd.oasis.opendocument.spreadsheet-template",
+    "Extension": "ots",
+    "Name": "OpenDocument Spreadsheet Template",
+    "Category": "Application",
+    "IsCommon": false
+  },
+  {
+    "MimeType": "application/vnd.oasis.opendocument.text",
+    "Extension": "odt",
+    "Name": "OpenDocument Text Document",
+    "Category": "Application",
+    "IsCommon": false
+  },
+  {
+    "MimeType": "application/vnd.oasis.opendocument.text-master",
+    "Extension": "otm",
+    "Name": "OpenDocument Text Master",
+    "Category": "Application",
+    "IsCommon": false
+  },
+  {
+    "MimeType": "application/vnd.oasis.opendocument.text-template",
+    "Extension": "ott",
+    "Name": "Open Document Text Template",
+    "Category": "Application",
+    "IsCommon": false
+  },
+  {
+    "MimeType": "application/vnd.oasis.opendocument.text-web",
+    "Extension": "oth",
+    "Name": "OpenDocument HTML Template",
+    "Category": "Application",
+    "IsCommon": false
+  },
+  {
+    "MimeType": "application/vnd.olpc-sugar",
+    "Extension": "xo",
+    "Name": null,
+    "Category": "Application",
+    "IsCommon": false
+  },
+  {
+    "MimeType": "application/vnd.oma.dd2+xml",
+    "Extension": "dd2",
+    "Name": null,
+    "Category": "Application",
+    "IsCommon": false
+  },
+  {
+    "MimeType": "application/vnd.openofficeorg.extension",
+    "Extension": "oxt",
+    "Name": "Apache OpenOffice Extension",
+    "Category": "Application",
+    "IsCommon": false
+  },
+  {
+    "MimeType": "application/vnd.openxmlformats-officedocument.presentationml.presentation",
+    "Extension": "pptx",
+    "Name": "Microsoft PowerPoint Presentation",
+    "Category": "Application",
+    "IsCommon": true
+  },
+  {
+    "MimeType": "application/vnd.openxmlformats-officedocument.presentationml.slide",
+    "Extension": "sldx",
+    "Name": "Microsoft PowerPoint Open XML slide file",
+    "Category": "Application",
+    "IsCommon": false
+  },
+  {
+    "MimeType": "application/vnd.openxmlformats-officedocument.presentationml.slideshow",
+    "Extension": "ppsx",
+    "Name": "Microsoft PowerPoint Slide Show",
+    "Category": "Application",
+    "IsCommon": false
+  },
+  {
+    "MimeType": "application/vnd.openxmlformats-officedocument.presentationml.template",
+    "Extension": "potx",
+    "Name": "Microsoft PowerPoint Presentation Template",
+    "Category": "Application",
+    "IsCommon": false
+  },
+  {
+    "MimeType": "application/vnd.openxmlformats-officedocument.spreadsheetml.sheet",
+    "Extension": "xlsx",
+    "Name": "Microsoft Excel Spreadsheet",
+    "Category": "Application",
+    "IsCommon": true
+  },
+  {
+    "MimeType": "application/vnd.openxmlformats-officedocument.spreadsheetml.template",
+    "Extension": "xltx",
+    "Name": "Microsoft Excel Spreadsheet Template",
+    "Category": "Application",
+    "IsCommon": false
+  },
+  {
+    "MimeType": "application/vnd.openxmlformats-officedocument.wordprocessingml.document",
+    "Extension": "docx",
+    "Name": "Microsoft Word Document",
+    "Category": "Application",
+    "IsCommon": true
+  },
+  {
+    "MimeType": "application/vnd.openxmlformats-officedocument.wordprocessingml.template",
+    "Extension": "dotx",
+    "Name": "Microsoft Word Template",
+    "Category": "Application",
+    "IsCommon": false
+  },
+  {
+    "MimeType": "application/vnd.osgi.dp",
+    "Extension": "dp",
+    "Name": null,
+    "Category": "Application",
+    "IsCommon": false
+  },
+  {
+    "MimeType": "application/vnd.palm",
+    "Extension": "oprc",
+    "Name": null,
+    "Category": "Application",
+    "IsCommon": false
+  },
+  {
+    "MimeType": "application/vnd.palm",
+    "Extension": "pdb",
+    "Name": null,
+    "Category": "Application",
+    "IsCommon": false
+  },
+  {
+    "MimeType": "application/vnd.palm",
+    "Extension": "pqa",
+    "Name": null,
+    "Category": "Application",
+    "IsCommon": false
+  },
+  {
+    "MimeType": "application/vnd.pg.format",
+    "Extension": "str",
+    "Name": null,
+    "Category": "Application",
+    "IsCommon": false
+  },
+  {
+    "MimeType": "application/vnd.pg.osasli",
+    "Extension": "ei6",
+    "Name": null,
+    "Category": "Application",
+    "IsCommon": false
+  },
+  {
+    "MimeType": "application/vnd.picsel",
+    "Extension": "efif",
+    "Name": null,
+    "Category": "Application",
+    "IsCommon": false
+  },
+  {
+    "MimeType": "application/vnd.pocketlearn",
+    "Extension": "plf",
+    "Name": null,
+    "Category": "Application",
+    "IsCommon": false
+  },
+  {
+    "MimeType": "application/vnd.powerbuilder6",
+    "Extension": "pbd",
+    "Name": "PowerBuilder dynamic link library",
+    "Category": "Application",
+    "IsCommon": false
+  },
+  {
+    "MimeType": "application/vnd.previewsystems.box",
+    "Extension": "box",
+    "Name": null,
+    "Category": "Application",
+    "IsCommon": false
+  },
+  {
+    "MimeType": "application/vnd.proteus.magazine",
+    "Extension": "mgz",
+    "Name": null,
+    "Category": "Application",
+    "IsCommon": false
+  },
+  {
+    "MimeType": "application/vnd.publishare-delta-tree",
+    "Extension": "qps",
+    "Name": null,
+    "Category": "Application",
+    "IsCommon": false
+  },
+  {
+    "MimeType": "application/vnd.pvi.ptid1",
+    "Extension": "ptid",
+    "Name": null,
+    "Category": "Application",
+    "IsCommon": false
+  },
+  {
+    "MimeType": "application/vnd.quark.quarkxpress",
+    "Extension": "qwd",
+    "Name": "QuarkXpress web document",
+    "Category": "Application",
+    "IsCommon": false
+  },
+  {
+    "MimeType": "application/vnd.quark.quarkxpress",
+    "Extension": "qwt",
+    "Name": "QuarkXpress web document template",
+    "Category": "Application",
+    "IsCommon": false
+  },
+  {
+    "MimeType": "application/vnd.quark.quarkxpress",
+    "Extension": "qxb",
+    "Name": "QuarkXpress multiple document publication book file format",
+    "Category": "Application",
+    "IsCommon": false
+  },
+  {
+    "MimeType": "application/vnd.quark.quarkxpress",
+    "Extension": "qxd",
+    "Name": "QuarkXPress document",
+    "Category": "Application",
+    "IsCommon": false
+  },
+  {
+    "MimeType": "application/vnd.quark.quarkxpress",
+    "Extension": "qxl",
+    "Name": "QuarkXPress element library",
+    "Category": "Application",
+    "IsCommon": false
+  },
+  {
+    "MimeType": "application/vnd.quark.quarkxpress",
+    "Extension": "qxt",
+    "Name": "QuarkXPress template",
+    "Category": "Application",
+    "IsCommon": false
+  },
+  {
+    "MimeType": "application/vnd.recordare.musicxml",
+    "Extension": "mxl",
+    "Name": "Compressed MusicXML music notation file",
+    "Category": "Application",
+    "IsCommon": false
+  },
+  {
+    "MimeType": "application/vnd.recordare.musicxml+xml",
+    "Extension": "musicxml",
+    "Name": "Compressed MusicXML music notation file",
+    "Category": "Application",
+    "IsCommon": false
+  },
+  {
+    "MimeType": "application/vnd.rim.cod",
+    "Extension": "cod",
+    "Name": null,
+    "Category": "Application",
+    "IsCommon": false
+  },
+  {
+    "MimeType": "application/vnd.rn-realmedia",
+    "Extension": "rm",
+    "Name": null,
+    "Category": "Application",
+    "IsCommon": false
+  },
+  {
+    "MimeType": "application/vnd.route66.link66+xml",
+    "Extension": "link66",
+    "Name": null,
+    "Category": "Application",
+    "IsCommon": false
+  },
+  {
+    "MimeType": "application/vnd.seemail",
+    "Extension": "see",
+    "Name": null,
+    "Category": "Application",
+    "IsCommon": false
+  },
+  {
+    "MimeType": "application/vnd.sema",
+    "Extension": "sema",
+    "Name": null,
+    "Category": "Application",
+    "IsCommon": false
+  },
+  {
+    "MimeType": "application/vnd.semd",
+    "Extension": "semd",
+    "Name": null,
+    "Category": "Application",
+    "IsCommon": false
+  },
+  {
+    "MimeType": "application/vnd.semf",
+    "Extension": "semf",
+    "Name": null,
+    "Category": "Application",
+    "IsCommon": false
+  },
+  {
+    "MimeType": "application/vnd.shana.informed.formdata",
+    "Extension": "ifm",
+    "Name": "Informed Form Data Document",
+    "Category": "Application",
+    "IsCommon": false
+  },
+  {
+    "MimeType": "application/vnd.shana.informed.formtemplate",
+    "Extension": "itp",
+    "Name": "Informed Form Template Document",
+    "Category": "Application",
+    "IsCommon": false
+  },
+  {
+    "MimeType": "application/vnd.shana.informed.interchange",
+    "Extension": "iif",
+    "Name": "Shana Informed Interchange package",
+    "Category": "Application",
+    "IsCommon": false
+  },
+  {
+    "MimeType": "application/vnd.shana.informed.package",
+    "Extension": "ipk",
+    "Name": "Shana Informed Filler data",
+    "Category": "Application",
+    "IsCommon": false
+  },
+  {
+    "MimeType": "application/vnd.simtech-mindmapper",
+    "Extension": "twd",
+    "Name": "MindMapper brainstorm and visual map",
+    "Category": "Application",
+    "IsCommon": false
+  },
+  {
+    "MimeType": "application/vnd.simtech-mindmapper",
+    "Extension": "twds",
+    "Name": "MindMapper brainstorm and visual map",
+    "Category": "Application",
+    "IsCommon": false
+  },
+  {
+    "MimeType": "application/vnd.smaf",
+    "Extension": "mmf",
+    "Name": null,
+    "Category": "Application",
+    "IsCommon": false
+  },
+  {
+    "MimeType": "application/vnd.smart.teacher",
+    "Extension": "teacher",
+    "Name": "SMART Response Teacher Database File",
+    "Category": "Application",
+    "IsCommon": false
+  },
+  {
+    "MimeType": "application/vnd.solent.sdkm+xml",
+    "Extension": "sdkd",
+    "Name": null,
+    "Category": "Application",
+    "IsCommon": false
+  },
+  {
+    "MimeType": "application/vnd.solent.sdkm+xml",
+    "Extension": "sdkm",
+    "Name": null,
+    "Category": "Application",
+    "IsCommon": false
+  },
+  {
+    "MimeType": "application/vnd.spotfire.dxp",
+    "Extension": "dxp",
+    "Name": null,
+    "Category": "Application",
+    "IsCommon": false
+  },
+  {
+    "MimeType": "application/vnd.spotfire.sfs",
+    "Extension": "sfs",
+    "Name": null,
+    "Category": "Application",
+    "IsCommon": false
+  },
+  {
+    "MimeType": "application/vnd.sqlite3",
+    "Extension": "db",
+    "Name": "SQLite Database File",
+    "Category": "Application",
+    "Aliases": [ "application/x-sqlite3" ],
+    "IsCommon": true
+  },
+  {
+    "MimeType": "application/vnd.sqlite3",
+    "Extension": "sqlite",
+    "Name": "SQLite Database File",
+    "Category": "Application",
+    "Aliases": [ "application/x-sqlite3" ],
+    "IsCommon": false
+  },
+  {
+    "MimeType": "application/vnd.sqlite3",
+    "Extension": "sqlite3",
+    "Name": "SQLite Database File",
+    "Category": "Application",
+    "Aliases": [ "application/x-sqlite3" ],
+    "IsCommon": false
+  },
+  {
+    "MimeType": "application/vnd.sqlite3",
+    "Extension": "db-wal",
+    "Name": "SQLite Database Write-Ahead Log File",
+    "Category": "Application",
+    "Aliases": [ "application/x-sqlite3" ],
+    "IsCommon": false
+  },
+  {
+    "MimeType": "application/vnd.sqlite3",
+    "Extension": "sqlite-wal",
+    "Name": "SQLite Database Write-Ahead Log File",
+    "Category": "Application",
+    "Aliases": [ "application/x-sqlite3" ],
+    "IsCommon": false
+  },
+  {
+    "MimeType": "application/vnd.sqlite3",
+    "Extension": "db-shm",
+    "Name": "SQLite Database Shared Memory File",
+    "Category": "Application",
+    "Aliases": [ "application/x-sqlite3" ],
+    "IsCommon": false
+  },
+  {
+    "MimeType": "application/vnd.sqlite3",
+    "Extension": "sqlite-shm",
+    "Name": "SQLite Database Shared Memory File",
+    "Category": "Application",
+    "Aliases": [ "application/x-sqlite3" ],
+    "IsCommon": false
+  },
+  {
+    "MimeType": "application/vnd.stardivision.calc",
+    "Extension": "sdc",
+    "Name": "StarOffice Calc",
+    "Category": "Application",
+    "IsCommon": false
+  },
+  {
+    "MimeType": "application/vnd.stardivision.draw",
+    "Extension": "sda",
+    "Name": "StarOffice Drawing",
+    "Category": "Application",
+    "IsCommon": false
+  },
+  {
+    "MimeType": "application/vnd.stardivision.impress",
+    "Extension": "sdd",
+    "Name": "StarOffice Presentation",
+    "Category": "Application",
+    "IsCommon": false
+  },
+  {
+    "MimeType": "application/vnd.stardivision.math",
+    "Extension": "smf",
+    "Name": "StarMath Formula File",
+    "Category": "Application",
+    "IsCommon": false
+  },
+  {
+    "MimeType": "application/vnd.stardivision.writer",
+    "Extension": "sdw",
+    "Name": "StarOffice Writer Text Document",
+    "Category": "Application",
+    "IsCommon": false
+  },
+  {
+    "MimeType": "application/vnd.stardivision.writer",
+    "Extension": "vor",
+    "Name": "StarOffice Template",
+    "Category": "Application",
+    "IsCommon": false
+  },
+  {
+    "MimeType": "application/vnd.stardivision.writer-global",
+    "Extension": "sgl",
+    "Name": "StarOffice master document",
+    "Category": "Application",
+    "IsCommon": false
+  },
+  {
+    "MimeType": "application/vnd.sun.xml.calc",
+    "Extension": "sxc",
+    "Name": "StarOffice Calc Spreadsheet",
+    "Category": "Application",
+    "IsCommon": false
+  },
+  {
+    "MimeType": "application/vnd.sun.xml.calc.template",
+    "Extension": "stc",
+    "Name": "StarOffice Calc Spreadsheet Template",
+    "Category": "Application",
+    "IsCommon": false
+  },
+  {
+    "MimeType": "application/vnd.sun.xml.draw",
+    "Extension": "sxd",
+    "Name": "StarOffice Drawing",
+    "Category": "Application",
+    "IsCommon": false
+  },
+  {
+    "MimeType": "application/vnd.sun.xml.draw.template",
+    "Extension": "std",
+    "Name": "StarOffice Drawing Template",
+    "Category": "Application",
+    "IsCommon": false
+  },
+  {
+    "MimeType": "application/vnd.sun.xml.impress",
+    "Extension": "sxi",
+    "Name": "StarOffice Impress Presentation",
+    "Category": "Application",
+    "IsCommon": false
+  },
+  {
+    "MimeType": "application/vnd.sun.xml.impress.template",
+    "Extension": "sti",
+    "Name": "StarOffice Presentation Template",
+    "Category": "Application",
+    "IsCommon": false
+  },
+  {
+    "MimeType": "application/vnd.sun.xml.math",
+    "Extension": "sxm",
+    "Name": "StarMath Formula",
+    "Category": "Application",
+    "IsCommon": false
+  },
+  {
+    "MimeType": "application/vnd.sun.xml.writer",
+    "Extension": "sxw",
+    "Name": "StarOffice Writer Document",
+    "Category": "Application",
+    "IsCommon": false
+  },
+  {
+    "MimeType": "application/vnd.sun.xml.writer.global",
+    "Extension": "sxg",
+    "Name": "Apache OpenOffice Master Document",
+    "Category": "Application",
+    "IsCommon": false
+  },
+  {
+    "MimeType": "application/vnd.sun.xml.writer.template",
+    "Extension": "stw",
+    "Name": "StarOffice Document Template",
+    "Category": "Application",
+    "IsCommon": false
+  },
+  {
+    "MimeType": "application/vnd.sus-calendar",
+    "Extension": "sus",
+    "Name": null,
+    "Category": "Application",
+    "IsCommon": false
+  },
+  {
+    "MimeType": "application/vnd.sus-calendar",
+    "Extension": "susp",
+    "Name": null,
+    "Category": "Application",
+    "IsCommon": false
+  },
+  {
+    "MimeType": "application/vnd.svd",
+    "Extension": "svd",
+    "Name": null,
+    "Category": "Application",
+    "IsCommon": false
+  },
+  {
+    "MimeType": "application/vnd.symbian.install",
+    "Extension": "sis",
+    "Name": "Symbian Installation File",
+    "Category": "Application",
+    "IsCommon": false
+  },
+  {
+    "MimeType": "application/vnd.symbian.install",
+    "Extension": "sisx",
+    "Name": "Symbian Installation File",
+    "Category": "Application",
+    "IsCommon": false
+  },
+  {
+    "MimeType": "application/vnd.syncml+xml",
+    "Extension": "xsm",
+    "Name": null,
+    "Category": "Application",
+    "IsCommon": false
+  },
+  {
+    "MimeType": "application/vnd.syncml.dm+wbxml",
+    "Extension": "bdm",
+    "Name": null,
+    "Category": "Application",
+    "IsCommon": false
+  },
+  {
+    "MimeType": "application/vnd.syncml.dm+xml",
+    "Extension": "xdm",
+    "Name": null,
+    "Category": "Application",
+    "IsCommon": false
+  },
+  {
+    "MimeType": "application/vnd.tao.intent-module-archive",
+    "Extension": "tao",
+    "Name": null,
+    "Category": "Application",
+    "IsCommon": false
+  },
+  {
+    "MimeType": "application/vnd.tmobile-livetv",
+    "Extension": "tmo",
+    "Name": null,
+    "Category": "Application",
+    "IsCommon": false
+  },
+  {
+    "MimeType": "application/vnd.trid.tpt",
+    "Extension": "tpt",
+    "Name": null,
+    "Category": "Application",
+    "IsCommon": false
+  },
+  {
+    "MimeType": "application/vnd.triscape.mxs",
+    "Extension": "mxs",
+    "Name": null,
+    "Category": "Application",
+    "IsCommon": false
+  },
+  {
+    "MimeType": "application/vnd.trueapp",
+    "Extension": "tra",
+    "Name": null,
+    "Category": "Application",
+    "IsCommon": false
+  },
+  {
+    "MimeType": "application/vnd.ufdl",
+    "Extension": "ufd",
+    "Name": null,
+    "Category": "Application",
+    "IsCommon": false
+  },
+  {
+    "MimeType": "application/vnd.ufdl",
+    "Extension": "ufdl",
+    "Name": null,
+    "Category": "Application",
+    "IsCommon": false
+  },
+  {
+    "MimeType": "application/vnd.uiq.theme",
+    "Extension": "utz",
+    "Name": null,
+    "Category": "Application",
+    "IsCommon": false
+  },
+  {
+    "MimeType": "application/vnd.umajin",
+    "Extension": "umj",
+    "Name": null,
+    "Category": "Application",
+    "IsCommon": false
+  },
+  {
+    "MimeType": "application/vnd.unity",
+    "Extension": "unityweb",
+    "Name": null,
+    "Category": "Application",
+    "IsCommon": false
+  },
+  {
+    "MimeType": "application/vnd.uoml+xml",
+    "Extension": "uoml",
+    "Name": null,
+    "Category": "Application",
+    "IsCommon": false
+  },
+  {
+    "MimeType": "application/vnd.vcx",
+    "Extension": "vcx",
+    "Name": null,
+    "Category": "Application",
+    "IsCommon": false
+  },
+  {
+    "MimeType": "application/vnd.visio",
+    "Extension": "vsd",
+    "Name": "Microsoft Visio Drawing (Legacy)",
+    "Category": "Application",
+    "IsCommon": true
+  },
+  {
+    "MimeType": "application/vnd.visio",
+    "Extension": "vss",
+    "Name": "Visio Stencil File",
+    "Category": "Application",
+    "IsCommon": false
+  },
+  {
+    "MimeType": "application/vnd.visio",
+    "Extension": "vst",
+    "Name": "Microsoft Visio Drawing Template (Legacy)",
+    "Category": "Application",
+    "IsCommon": false
+  },
+  {
+    "MimeType": "application/vnd.visio",
+    "Extension": "vsw",
+    "Name": "Visio Workspace File",
+    "Category": "Application",
+    "IsCommon": false
+  },
+  {
+    "MimeType": "application/vnd.visionary",
+    "Extension": "vis",
+    "Name": null,
+    "Category": "Application",
+    "IsCommon": false
+  },
+  {
+    "MimeType": "application/vnd.vsf",
+    "Extension": "vsf",
+    "Name": null,
+    "Category": "Application",
+    "IsCommon": false
+  },
+  {
+    "MimeType": "application/vnd.wap.sic",
+    "Extension": "sic",
+    "Name": null,
+    "Category": "Application",
+    "IsCommon": false
+  },
+  {
+    "MimeType": "application/vnd.wap.slc",
+    "Extension": "slc",
+    "Name": null,
+    "Category": "Application",
+    "IsCommon": false
+  },
+  {
+    "MimeType": "application/vnd.wap.wbxml",
+    "Extension": "wbxml",
+    "Name": null,
+    "Category": "Application",
+    "IsCommon": false
+  },
+  {
+    "MimeType": "application/vnd.wap.wmlc",
+    "Extension": "wmlc",
+    "Name": null,
+    "Category": "Application",
+    "IsCommon": false
+  },
+  {
+    "MimeType": "application/vnd.wap.wmlscriptc",
+    "Extension": "wmlsc",
+    "Name": null,
+    "Category": "Application",
+    "IsCommon": false
+  },
+  {
+    "MimeType": "application/vnd.webturbo",
+    "Extension": "wtb",
+    "Name": null,
+    "Category": "Application",
+    "IsCommon": false
+  },
+  {
+    "MimeType": "application/vnd.wordperfect",
+    "Extension": "wpd",
+    "Name": "WordPerfect Document",
+    "Category": "Application",
+    "IsCommon": false
+  },
+  {
+    "MimeType": "application/vnd.wqd",
+    "Extension": "wqd",
+    "Name": null,
+    "Category": "Application",
+    "IsCommon": false
+  },
+  {
+    "MimeType": "application/vnd.wt.stf",
+    "Extension": "stf",
+    "Name": null,
+    "Category": "Application",
+    "IsCommon": false
+  },
+  {
+    "MimeType": "application/vnd.xara",
+    "Extension": "xar",
+    "Name": null,
+    "Category": "Application",
+    "IsCommon": false
+  },
+  {
+    "MimeType": "application/vnd.xfdl",
+    "Extension": "xfdl",
+    "Name": null,
+    "Category": "Application",
+    "IsCommon": false
+  },
+  {
+    "MimeType": "application/vnd.yamaha.hv-dic",
+    "Extension": "hvd",
+    "Name": null,
+    "Category": "Application",
+    "IsCommon": false
+  },
+  {
+    "MimeType": "application/vnd.yamaha.hv-script",
+    "Extension": "hvs",
+    "Name": null,
+    "Category": "Application",
+    "IsCommon": false
+  },
+  {
+    "MimeType": "application/vnd.yamaha.hv-voice",
+    "Extension": "hvp",
+    "Name": null,
+    "Category": "Application",
+    "IsCommon": false
+  },
+  {
+    "MimeType": "application/vnd.yamaha.openscoreformat",
+    "Extension": "osf",
+    "Name": null,
+    "Category": "Application",
+    "IsCommon": false
+  },
+  {
+    "MimeType": "application/vnd.yamaha.openscoreformat.osfpvg+xml",
+    "Extension": "osfpvg",
+    "Name": null,
+    "Category": "Application",
+    "IsCommon": false
+  },
+  {
+    "MimeType": "application/vnd.yamaha.smaf-audio",
+    "Extension": "saf",
+    "Name": null,
+    "Category": "Application",
+    "IsCommon": false
+  },
+  {
+    "MimeType": "application/vnd.yamaha.smaf-phrase",
+    "Extension": "spf",
+    "Name": null,
+    "Category": "Application",
+    "IsCommon": false
+  },
+  {
+    "MimeType": "application/vnd.yellowriver-custom-menu",
+    "Extension": "cmp",
+    "Name": null,
+    "Category": "Application",
+    "IsCommon": false
+  },
+  {
+    "MimeType": "application/vnd.zul",
+    "Extension": "zir",
+    "Name": null,
+    "Category": "Application",
+    "IsCommon": false
+  },
+  {
+    "MimeType": "application/vnd.zul",
+    "Extension": "zirz",
+    "Name": null,
+    "Category": "Application",
+    "IsCommon": false
+  },
+  {
+    "MimeType": "application/vnd.zzazz.deck+xml",
+    "Extension": "zaz",
+    "Name": null,
+    "Category": "Application",
+    "IsCommon": false
+  },
+  {
+    "MimeType": "application/voicexml+xml",
+    "Extension": "vxml",
+    "Name": "VoiceXML File",
+    "Category": "Application",
+    "IsCommon": false
+  },
+  {
+    "MimeType": "application/winhlp",
+    "Extension": "hlp",
+    "Name": "Windows Help File",
+    "Category": "Application",
+    "IsCommon": false
+  },
+  {
+    "MimeType": "application/wsdl+xml",
+    "Extension": "wsdl",
+    "Name": "Web Services Description Language File",
+    "Category": "Application",
+    "IsCommon": true
+  },
+  {
+    "MimeType": "application/wspolicy+xml",
+    "Extension": "wspolicy",
+    "Name": null,
+    "Category": "Application",
+    "IsCommon": false
+  },
+  {
+    "MimeType": "application/x-7z-compressed",
+    "Extension": "7z",
+    "Name": "7-Zip Compressed File",
+    "Category": "Application",
+    "IsCommon": true
+  },
+  {
+    "MimeType": "application/x-abiword",
+    "Extension": "abw",
+    "Name": "AbiWord Document",
+    "Category": "Application",
+    "IsCommon": false
+  },
+  {
+    "MimeType": "application/x-ace-compressed",
+    "Extension": "ace",
+    "Name": "WinAce Compressed File",
+    "Category": "Application",
+    "IsCommon": false
+  },
+  {
+    "MimeType": "application/x-authorware-bin",
+    "Extension": "aab",
+    "Name": null,
+    "Category": "Application",
+    "IsCommon": false
+  },
+  {
+    "MimeType": "application/x-authorware-bin",
+    "Extension": "u32",
+    "Name": null,
+    "Category": "Application",
+    "IsCommon": false
+  },
+  {
+    "MimeType": "application/x-authorware-bin",
+    "Extension": "vox",
+    "Name": null,
+    "Category": "Application",
+    "IsCommon": false
+  },
+  {
+    "MimeType": "application/x-authorware-bin",
+    "Extension": "x32",
+    "Name": null,
+    "Category": "Application",
+    "IsCommon": false
+  },
+  {
+    "MimeType": "application/x-authorware-map",
+    "Extension": "aam",
+    "Name": null,
+    "Category": "Application",
+    "IsCommon": false
+  },
+  {
+    "MimeType": "application/x-authorware-seg",
+    "Extension": "aas",
+    "Name": null,
+    "Category": "Application",
+    "IsCommon": false
+  },
+  {
+    "MimeType": "application/x-bcpio",
+    "Extension": "bcpio",
+    "Name": null,
+    "Category": "Application",
+    "IsCommon": false
+  },
+  {
+    "MimeType": "application/x-bittorrent",
+    "Extension": "torrent",
+    "Name": "BitTorrent File",
+    "Category": "Application",
+    "IsCommon": true
+  },
+  {
+    "MimeType": "application/x-bzip",
+    "Extension": "bz",
+    "Name": "Bzip Compressed File",
+    "Category": "Application",
+    "IsCommon": true
+  },
+  {
+    "MimeType": "application/x-bzip2",
+    "Extension": "boz",
+    "Name": "BZIP compressed archive",
+    "Category": "Application",
+    "IsCommon": false
+  },
+  {
+    "MimeType": "application/x-bzip2",
+    "Extension": "bz2",
+    "Name": "Bzip2 Compressed File",
+    "Category": "Application",
+    "IsCommon": true
+  },
+  {
+    "MimeType": "application/x-cdlink",
+    "Extension": "vcd",
+    "Name": null,
+    "Category": "Application",
+    "IsCommon": false
+  },
+  {
+    "MimeType": "application/x-chat",
+    "Extension": "chat",
+    "Name": null,
+    "Category": "Application",
+    "IsCommon": false
+  },
+  {
+    "MimeType": "application/x-chess-pgn",
+    "Extension": "pgn",
+    "Name": null,
+    "Category": "Application",
+    "IsCommon": false
+  },
+  {
+    "MimeType": "application/x-cpio",
+    "Extension": "cpio",
+    "Name": null,
+    "Category": "Application",
+    "IsCommon": false
+  },
+  {
+    "MimeType": "application/x-csh",
+    "Extension": "csh",
+    "Name": null,
+    "Category": "Application",
+    "IsCommon": false
+  },
+  {
+    "MimeType": "application/x-debian-package",
+    "Extension": "deb",
+    "Name": "Debian Software Package",
+    "Category": "Application",
+    "IsCommon": false
+  },
+  {
+    "MimeType": "application/x-debian-package",
+    "Extension": "udeb",
+    "Name": "Debian Software Package",
+    "Category": "Application",
+    "IsCommon": false
+  },
+  {
+    "MimeType": "application/x-director",
+    "Extension": "cct",
+    "Name": "Director Protected Cast Resource",
+    "Category": "Application",
+    "IsCommon": false
+  },
+  {
+    "MimeType": "application/x-director",
+    "Extension": "cst",
+    "Name": "Director External Cast File",
+    "Category": "Application",
+    "IsCommon": false
+  },
+  {
+    "MimeType": "application/x-director",
+    "Extension": "cxt",
+    "Name": "Director Protected Cast File",
+    "Category": "Application",
+    "IsCommon": false
+  },
+  {
+    "MimeType": "application/x-director",
+    "Extension": "dcr",
+    "Name": "Shockwave Media File",
+    "Category": "Application",
+    "IsCommon": false
+  },
+  {
+    "MimeType": "application/x-director",
+    "Extension": "dir",
+    "Name": "Adobe Director Movie",
+    "Category": "Application",
+    "IsCommon": false
+  },
+  {
+    "MimeType": "application/x-director",
+    "Extension": "dxr",
+    "Name": "Protected Macromedia Director Movie",
+    "Category": "Application",
+    "IsCommon": false
+  },
+  {
+    "MimeType": "application/x-director",
+    "Extension": "fgd",
+    "Name": null,
+    "Category": "Application",
+    "IsCommon": false
+  },
+  {
+    "MimeType": "application/x-director",
+    "Extension": "swa",
+    "Name": "Shockwave Audio",
+    "Category": "Application",
+    "IsCommon": false
+  },
+  {
+    "MimeType": "application/x-director",
+    "Extension": "w3d",
+    "Name": "Adobe Shockwave 3D File",
+    "Category": "Application",
+    "IsCommon": false
+  },
+  {
+    "MimeType": "application/x-dtbncx+xml",
+    "Extension": "ncx",
+    "Name": null,
+    "Category": "Application",
+    "IsCommon": false
+  },
+  {
+    "MimeType": "application/x-dtbook+xml",
+    "Extension": "dtb",
+    "Name": null,
+    "Category": "Application",
+    "IsCommon": false
+  },
+  {
+    "MimeType": "application/x-dtbresource+xml",
+    "Extension": "res",
+    "Name": null,
+    "Category": "Application",
+    "IsCommon": false
+  },
+  {
+    "MimeType": "application/x-dvi",
+    "Extension": "dvi",
+    "Name": null,
+    "Category": "Application",
+    "IsCommon": false
+  },
+  {
+    "MimeType": "application/x-font-bdf",
+    "Extension": "bdf",
+    "Name": "UNIX font",
+    "Category": "Application",
+    "IsCommon": false
+  },
+  {
+    "MimeType": "application/x-font-ghostscript",
+    "Extension": "gsf",
+    "Name": "Ghostscript font",
+    "Category": "Application",
+    "IsCommon": false
+  },
+  {
+    "MimeType": "application/x-font-linux-psf",
+    "Extension": "psf",
+    "Name": "UNIX Font",
+    "Category": "Application",
+    "IsCommon": false
+  },
+  {
+    "MimeType": "application/x-font-otf",
+    "Extension": "otf",
+    "Name": "OpenType Font",
+    "Category": "Application",
+    "DeprecatedBy": "font/otf",
+    "IsCommon": true
+  },
+  {
+    "MimeType": "application/x-font-pcf",
+    "Extension": "pcf",
+    "Name": "UNIX Font",
+    "Category": "Application",
+    "IsCommon": false
+  },
+  {
+    "MimeType": "application/x-font-snf",
+    "Extension": "snf",
+    "Name": "UNIX Font",
+    "Category": "Application",
+    "IsCommon": false
+  },
+  {
+    "MimeType": "application/x-font-ttf",
+    "Extension": "ttc",
+    "Name": "TrueType Font Collection",
+    "Category": "Application",
+    "IsCommon": false
+  },
+  {
+    "MimeType": "application/x-font-ttf",
+    "Extension": "ttf",
+    "Name": "TrueType Font",
+    "Category": "Application",
+    "IsCommon": true
+  },
+  {
+    "MimeType": "application/x-font-type1",
+    "Extension": "afm",
+    "Name": "UNIX Font",
+    "Category": "Application",
+    "IsCommon": false
+  },
+  {
+    "MimeType": "application/x-font-type1",
+    "Extension": "pfa",
+    "Name": "Printer Font ASCII File",
+    "Category": "Application",
+    "IsCommon": false
+  },
+  {
+    "MimeType": "application/x-font-type1",
+    "Extension": "pfb",
+    "Name": "Printer Font Binary File",
+    "Category": "Application",
+    "IsCommon": false
+  },
+  {
+    "MimeType": "application/x-font-type1",
+    "Extension": "pfm",
+    "Name": "Printer Font Metrics File",
+    "Category": "Application",
+    "IsCommon": false
+  },
+  {
+    "MimeType": "application/x-futuresplash",
+    "Extension": "spl",
+    "Name": "FutureSplash Animation",
+    "Category": "Application",
+    "IsCommon": false
+  },
+  {
+    "MimeType": "application/x-gnumeric",
+    "Extension": "gnumeric",
+    "Name": "Gnumeric Spreadsheet",
+    "Category": "Application",
+    "IsCommon": false
+  },
+  {
+    "MimeType": "application/x-gtar",
+    "Extension": "gtar",
+    "Name": "GNU Tar Archive",
+    "Category": "Application",
+    "IsCommon": false
+  },
+  {
+    "MimeType": "application/x-gzip",
+    "Extension": "gz",
+    "Name": "Gnu Zipped Archive",
+    "Category": "Application",
+    "DeprecatedBy": "application/gzip",
+    "IsCommon": true
+  },
+  {
+    "MimeType": "application/x-gzip",
+    "Extension": "tgz",
+    "Name": "Gzipped Tar File",
+    "Category": "Application",
+    "DeprecatedBy": "application/gzip",
+    "IsCommon": true
+  },
+  {
+    "MimeType": "application/x-hdf",
+    "Extension": "hdf",
+    "Name": "Hierarchical Data Format File",
+    "Category": "Application",
+    "IsCommon": false
+  },
+  {
+    "MimeType": "application/xhtml+xml",
+    "Extension": "xht",
+    "Name": "XHTML File",
+    "Category": "Application",
+    "IsCommon": false
+  },
+  {
+    "MimeType": "application/x-killustrator",
+    "Extension": "kil",
+    "Name": null,
+    "Category": "Application",
+    "IsCommon": false
+  },
+  {
+    "MimeType": "application/xhtml+xml",
+    "Extension": "xhtml",
+    "Name": "Extensible Hypertext Markup Language File",
+    "Category": "Application",
+    "IsCommon": true
+  },
+  {
+    "MimeType": "application/x-java-jnlp-file",
+    "Extension": "jnlp",
+    "Name": "Java Web Start File",
+    "Category": "Application",
+    "IsCommon": false
+  },
+  {
+    "MimeType": "application/x-latex",
+    "Extension": "latex",
+    "Name": "LaTeX Document",
+    "Category": "Application",
+    "IsCommon": true
+  },
+  {
+    "MimeType": "application/x-krita",
+    "Extension": "kra",
+    "Name": "Krita Image Document",
+    "Category": "Application",
+    "IsCommon": false
+  },
+  {
+    "MimeType": "application/x-krita",
+    "Extension": "krz",
+    "Name": "Krita Image Document",
+    "Category": "Application",
+    "IsCommon": false
+  },
+  {
+    "MimeType": "application/x-ms-application",
+    "Extension": "application",
+    "Name": "ClickOnce Deployment Manifest File",
+    "Category": "Application",
+    "IsCommon": false
+  },
+  {
+    "MimeType": "application/xml",
+    "Extension": "xml",
+    "Name": "XML File",
+    "Category": "Application",
+    "IsCommon": true
+  },
+  {
+    "MimeType": "application/xml",
+    "Extension": "xsl",
+    "Name": "XML Style Sheet",
+    "Category": "Application",
+    "IsCommon": true
+  },
+  {
+    "MimeType": "application/xml-dtd",
+    "Extension": "dtd",
+    "Name": "Document Type Definition File",
+    "Category": "Application",
+    "IsCommon": false
+  },
+  {
+    "MimeType": "application/x-mobipocket-ebook",
+    "Extension": "mobi",
+    "Name": "Mobipocket eBook",
+    "Category": "Application",
+    "IsCommon": false
+  },
+  {
+    "MimeType": "application/x-msbinder",
+    "Extension": "obd",
+    "Name": "Office Binder Document",
+    "Category": "Application",
+    "IsCommon": false
+  },
+  {
+    "MimeType": "application/x-mobipocket-ebook",
+    "Extension": "prc",
+    "Name": "Mobipocket eBook",
+    "Category": "Application",
+    "IsCommon": false
+  },
+  {
+    "MimeType": "application/x-msclip",
+    "Extension": "clp",
+    "Name": "Windows Clipboard File",
+    "Category": "Application",
+    "IsCommon": false
+  },
+  {
+    "MimeType": "application/x-msaccess",
+    "Extension": "mdb",
+    "Name": "Microsoft Access Database",
+    "Category": "Application",
+    "IsCommon": false
+  },
+  {
+    "MimeType": "application/x-mscardfile",
+    "Extension": "crd",
+    "Name": "Windows CardSpace File",
+    "Category": "Application",
+    "IsCommon": false
+  },
+  {
+    "MimeType": "application/x-msdownload",
+    "Extension": "bat",
+    "Name": "DOS Batch File",
+    "Category": "Application",
+    "IsCommon": true
+  },
+  {
+    "MimeType": "application/x-msdownload",
+    "Extension": "com",
+    "Name": "DOS Command File",
+    "Category": "Application",
+    "IsCommon": false
+  },
+  {
+    "MimeType": "application/x-msdownload",
+    "Extension": "msi",
+    "Name": "Windows Installer Package",
+    "Category": "Application",
+    "IsCommon": true
+  },
+  {
+    "MimeType": "application/x-msmediaview",
+    "Extension": "m13",
+    "Name": "Microsoft Media Viewer data",
+    "Category": "Application",
+    "IsCommon": false
+  },
+  {
+    "MimeType": "application/x-msmediaview",
+    "Extension": "m14",
+    "Name": "Microsoft Media Viewer data",
+    "Category": "Application",
+    "IsCommon": false
+  },
+  {
+    "MimeType": "application/x-msmediaview",
+    "Extension": "mvb",
+    "Name": "Microsoft Media Viewer data",
+    "Category": "Application",
+    "IsCommon": false
+  },
+  {
+    "MimeType": "application/x-msdownload",
+    "Extension": "dll",
+    "Name": "Dynamic Link Library",
+    "Category": "Application",
+    "IsCommon": false
+  },
+  {
+    "MimeType": "application/x-msmoney",
+    "Extension": "mny",
+    "Name": "Microsoft Money File",
+    "Category": "Application",
+    "IsCommon": false
+  },
+  {
+    "MimeType": "application/x-msdownload",
+    "Extension": "exe",
+    "Name": "Windows Executable File",
+    "Category": "Application",
+    "IsCommon": true
+  },
+  {
+    "MimeType": "application/x-msschedule",
+    "Extension": "scd",
+    "Name": "Microsoft Schedule+ Schedule",
+    "Category": "Application",
+    "IsCommon": false
+  },
+  {
+    "MimeType": "application/x-msterminal",
+    "Extension": "trm",
+    "Name": "Terminal settings",
+    "Category": "Application",
+    "IsCommon": false
+  },
+  {
+    "MimeType": "application/x-mswrite",
+    "Extension": "wri",
+    "Name": "Microsoft Write Document",
+    "Category": "Application",
+    "IsCommon": false
+  },
+  {
+    "MimeType": "application/x-netcdf",
+    "Extension": "cdf",
+    "Name": "Unidata Network Common Data form",
+    "Category": "Application",
+    "IsCommon": false
+  },
+  {
+    "MimeType": "application/x-netcdf",
+    "Extension": "nc",
+    "Name": "Unidata Network Common Data form",
+    "Category": "Application",
+    "IsCommon": false
+  },
+  {
+    "MimeType": "application/x-msmetafile",
+    "Extension": "wmf",
+    "Name": "Windows Metafile",
+    "Category": "Application",
+    "IsCommon": false
+  },
+  {
+    "MimeType": "application/x-mspublisher",
+    "Extension": "pub",
+    "Name": "Publisher Document",
+    "Category": "Application",
+    "IsCommon": false
+  },
+  {
+    "MimeType": "application/x-ms-wmd",
+    "Extension": "wmd",
+    "Name": "Windows Media Download Package",
+    "Category": "Application",
+    "IsCommon": false
+  },
+  {
+    "MimeType": "application/x-ms-wmz",
+    "Extension": "wmz",
+    "Name": "Windows Media Player Skin Package",
+    "Category": "Application",
+    "IsCommon": false
+  },
+  {
+    "MimeType": "application/x-ms-xbap",
+    "Extension": "xbap",
+    "Name": "XAML Browser Application File",
+    "Category": "Application",
+    "IsCommon": false
+  },
+  {
+    "MimeType": "application/x-pkcs7-certificates",
+    "Extension": "p7m",
+    "Name": "S/MIME digital signature",
+    "Category": "Application",
+    "DeprecatedBy": "application/pkcs7-mime",
+    "Aliases": [ "application/x-pkcs7-certreqresp" ],
+    "IsCommon": false
+  },
+  {
+    "MimeType": "application/x-perl",
+    "Extension": "pm",
+    "Name": "Perl Module",
+    "Category": "Application",
+    "IsCommon": false
+  },
+  {
+    "MimeType": "application/x-perl",
+    "Extension": "pl",
+    "Name": "Perl Script",
+    "Category": "Application",
+    "IsCommon": false
+  },
+  {
+    "MimeType": "application/x-redhat-package-manager",
+    "Extension": "rpa",
+    "Name": null,
+    "Category": "Application",
+    "IsCommon": false
+  },
+  {
+    "MimeType": "application/x-pkcs12",
+    "Extension": "p12",
+    "Name": "Personal Information Exchange File",
+    "Category": "Application",
+    "IsCommon": true
+  },
+  {
+    "MimeType": "application/x-pkcs12",
+    "Extension": "pfx",
+    "Name": "PKCS #12 Certificate File",
+    "Category": "Application",
+    "IsCommon": true
+  },
+  {
+    "MimeType": "application/x-shar",
+    "Extension": "shar",
+    "Name": "Unix Shar Archive",
+    "Category": "Application",
+    "IsCommon": false
+  },
+  {
+    "MimeType": "application/x-pkcs7-certificates",
+    "Extension": "p7c",
+    "Name": "PKCS #7 Certificate File",
+    "Category": "Application",
+    "DeprecatedBy": "application/pkcs7-mime",
+    "Aliases": [ "application/x-pkcs7-certreqresp" ],
+    "IsCommon": false
+  },
+  {
+    "MimeType": "application/x-python-code",
+    "Extension": "pyc",
+    "Name": "Python Compiled File",
+    "Category": "Application",
+    "IsCommon": false
+  },
+  {
+    "MimeType": "application/x-silverlight-app",
+    "Extension": "xap",
+    "Name": "Silverlight Application Package",
+    "Category": "Application",
+    "IsCommon": false
+  },
+  {
+    "MimeType": "application/x-python-code",
+    "Extension": "pyo",
+    "Name": "Python Optimized Code",
+    "Category": "Application",
+    "IsCommon": false
+  },
+  {
+    "MimeType": "application/x-rpm",
+    "Extension": "rpm",
+    "Name": "Red Hat Package Manager File",
+    "Category": "Application",
+    "IsCommon": false
+  },
+  {
+    "MimeType": "application/x-sv4cpio",
+    "Extension": "sv4cpio",
+    "Name": null,
+    "Category": "Application",
+    "IsCommon": false
+  },
+  {
+    "MimeType": "application/x-sv4crc",
+    "Extension": "sv4crc",
+    "Name": null,
+    "Category": "Application",
+    "IsCommon": false
+  },
+  {
+    "MimeType": "application/x-sh",
+    "Extension": "sh",
+    "Name": "Bash Shell Script",
+    "Category": "Application",
+    "IsCommon": false
+  },
+  {
+    "MimeType": "application/x-shellscript",
+    "Extension": "sh",
+    "Name": "Bash Shell Script",
+    "Category": "Application",
+    "IsCommon": false
+  },
+  {
+    "MimeType": "application/x-shockwave-flash",
+    "Extension": "swf",
+    "Name": "Shockwave Flash Movie",
+    "Category": "Application",
+    "IsCommon": true
+  },
+  {
+    "MimeType": "application/x-tex-tfm",
+    "Extension": "tfm",
+    "Name": "TeX Font Metric File",
+    "Category": "Application",
+    "IsCommon": false
+  },
+  {
+    "MimeType": "application/x-texinfo",
+    "Extension": "texi",
+    "Name": "TEXinfo file format",
+    "Category": "Application",
+    "IsCommon": false
+  },
+  {
+    "MimeType": "application/x-texinfo",
+    "Extension": "texinfo",
+    "Name": "TEXinfo file format",
+    "Category": "Application",
+    "IsCommon": false
+  },
+  {
+    "MimeType": "application/xslt+xml",
+    "Extension": "xslt",
+    "Name": "XSL Transformation File",
+    "Category": "Application",
+    "IsCommon": true
+  },
+  {
+    "MimeType": "application/x-wais-source",
+    "Extension": "src",
+    "Name": "Source Code",
+    "Category": "Application",
+    "IsCommon": false
+  },
+  {
+    "MimeType": "application/x-x509-ca-cert",
+    "Extension": "crt",
+    "Name": "Security Certificate",
+    "Category": "Application",
+    "IsCommon": true
+  },
+  {
+    "MimeType": "application/x-x509-ca-cert",
+    "Extension": "der",
+    "Name": "DER Digital Certificate",
+    "Category": "Application",
+    "IsCommon": true
+  },
+  {
+    "MimeType": "application/xspf+xml",
+    "Extension": "xspf",
+    "Name": "XML Shareable Playlist File",
+    "Category": "Application",
+    "IsCommon": false
+  },
+  {
+    "MimeType": "application/x-stuffit",
+    "Extension": "sit",
+    "Name": "StuffIt Archive",
+    "Category": "Application",
+    "IsCommon": false
+  },
+  {
+    "MimeType": "application/xenc+xml",
+    "Extension": "xenc",
+    "Name": null,
+    "Category": "Application",
+    "IsCommon": false
+  },
+  {
+    "MimeType": "application/x-stuffitx",
+    "Extension": "sitx",
+    "Name": "StuffIt X Archive",
+    "Category": "Application",
+    "IsCommon": false
+  },
+  {
+    "MimeType": "application/x-tar",
+    "Extension": "tar",
+    "Name": "Consolidated Unix File Archive",
+    "Category": "Application",
+    "IsCommon": false
+  },
+  {
+    "MimeType": "application/x-tcl",
+    "Extension": "tcl",
+    "Name": "Tcl Script",
+    "Category": "Application",
+    "IsCommon": false
+  },
+  {
+    "MimeType": "application/xml",
+    "Extension": "xpdl",
+    "Name": "XPDL Module",
+    "Category": "Application",
+    "IsCommon": false
+  },
+  {
+    "MimeType": "application/x-tex",
+    "Extension": "tex",
+    "Name": "LaTeX Source Document",
+    "Category": "Application",
+    "IsCommon": true
+  },
+  {
+    "MimeType": "application/x-ustar",
+    "Extension": "ustar",
+    "Name": "Uniform Standard Tape Archive Format File",
+    "Category": "Application",
+    "IsCommon": false
+  },
+  {
+    "MimeType": "application/xop+xml",
+    "Extension": "xop",
+    "Name": null,
+    "Category": "Application",
+    "IsCommon": false
+  },
+  {
+    "MimeType": "application/xv+xml",
+    "Extension": "mxml",
+    "Name": "Flex MXML Component",
+    "Category": "Application",
+    "IsCommon": false
+  },
+  {
+    "MimeType": "application/x-xfig",
+    "Extension": "fig",
+    "Name": "MATLAB Figure File",
+    "Category": "Application",
+    "IsCommon": false
+  },
+  {
+    "MimeType": "application/x-xpinstall",
+    "Extension": "xpi",
+    "Name": "Cross-platform Installer Package",
+    "Category": "Application",
+    "IsCommon": false
+  },
+  {
+    "MimeType": "application/xv+xml",
+    "Extension": "xhvml",
+    "Name": null,
+    "Category": "Application",
+    "IsCommon": false
+  },
+  {
+    "MimeType": "application/xv+xml",
+    "Extension": "xvm",
+    "Name": "VMware Console Configuration File",
+    "Category": "Application",
+    "IsCommon": false
+  },
+  {
+    "MimeType": "application/xv+xml",
+    "Extension": "xvml",
+    "Name": null,
+    "Category": "Application",
+    "IsCommon": false
+  },
+  {
+    "MimeType": "application/zip",
+    "Extension": "zip",
+    "Name": "ZIP Compressed Archive",
+    "Category": "Application",
+    "Aliases": [ "application/x-zip-compressed", "application/zip-compressed" ],
+    "IsCommon": true
+  },
+  {
+    "MimeType": "audio/3gpp",
+    "Extension": "3gp",
+    "Name": "3GPP Multimedia File",
+    "Category": "Audio",
+    "Aliases": [ "video/3gpp" ],
+    "IsCommon": true
+  },
+  {
+    "MimeType": "audio/3gpp2",
+    "Extension": "3g2",
+    "Name": "3GPP2 Multimedia File",
+    "Category": "Audio",
+    "Aliases": [ "video/3gpp2" ],
+    "IsCommon": true
+  },
+  {
+    "MimeType": "audio/adpcm",
+    "Extension": "adp",
+    "Name": null,
+    "Category": "Audio",
+    "IsCommon": false
+  },
+  {
+    "MimeType": "audio/aiff",
+    "Extension": "aiff",
+    "Name": "Audio Interchange File Format",
+    "Category": "Audio",
+    "Aliases": [ "audio/x-aiff" ],
+    "IsCommon": true
+  },
+  {
+    "MimeType": "audio/aiff",
+    "Extension": "aif",
+    "Name": "Audio Interchange File Format",
+    "Category": "Audio",
+    "Aliases": [ "audio/x-aiff" ],
+    "IsCommon": true
+  },
+  {
+    "MimeType": "audio/aiff",
+    "Extension": "aff",
+    "Name": "Audio Interchange File Format",
+    "Category": "Audio",
+    "Aliases": [ "audio/x-aiff" ],
+    "IsCommon": false
+  },
+  {
+    "MimeType": "audio/basic",
+    "Extension": "au",
+    "Name": "Audacity Audio File",
+    "Category": "Audio",
+    "IsCommon": false
+  },
+  {
+    "MimeType": "audio/basic",
+    "Extension": "snd",
+    "Name": "Sound File",
+    "Category": "Audio",
+    "IsCommon": false
+  },
+  {
+    "MimeType": "audio/flac",
+    "Extension": "flac",
+    "Name": "Free Lossless Audio Codec File",
+    "Category": "Audio",
+    "Aliases": [ "audio/x-flac" ],
+    "IsCommon": true
+  },
+  {
+    "MimeType": "audio/midi",
+    "Extension": "kar",
+    "Name": "Karaoke MIDI File",
+    "Category": "Audio",
+    "IsCommon": false
+  },
+  {
+    "MimeType": "audio/midi",
+    "Extension": "rmi",
+    "Name": "RMID MIDI File",
+    "Category": "Audio",
+    "IsCommon": false
+  },
+  {
+    "MimeType": "audio/midi",
+    "Extension": "mid",
+    "Name": "MIDI File",
+    "Category": "Audio",
+    "IsCommon": false
+  },
+  {
+    "MimeType": "audio/midi",
+    "Extension": "midi",
+    "Name": "MIDI File",
+    "Category": "Audio",
+    "IsCommon": true
+  },
+  {
+    "MimeType": "audio/mp4",
+    "Extension": "mp4a",
+    "Name": "MPEG-4 Audio",
+    "Category": "Audio",
+    "Aliases": [ "audio/mp3", "audio/mpeg3", "audio/x-mpeg-3" ],
+    "IsCommon": false
+  },
+  {
+    "MimeType": "audio/mpeg",
+    "Extension": "m2a",
+    "Name": "MPEG-1 Layer 2 Audio File",
+    "Category": "Audio",
+    "Aliases": [ "audio/mp3", "audio/mpeg3", "audio/x-mpeg-3" ],
+    "IsCommon": false
+  },
+  {
+    "MimeType": "audio/mpeg",
+    "Extension": "m3a",
+    "Name": "MPEG-3 Audio",
+    "Category": "Audio",
+    "Aliases": [ "audio/mp3", "audio/mpeg3", "audio/x-mpeg-3" ],
+    "IsCommon": false
+  },
+  {
+    "MimeType": "audio/mpeg",
+    "Extension": "mp2",
+    "Name": "MPEG Layer II Compressed Audio File",
+    "Category": "Audio",
+    "Aliases": [ "audio/mp3", "audio/mpeg3", "audio/x-mpeg-3" ],
+    "IsCommon": false
+  },
+  {
+    "MimeType": "audio/mpeg",
+    "Extension": "mp2a",
+    "Name": "MPEG-2 Audio",
+    "Category": "Audio",
+    "Aliases": [ "audio/mp3", "audio/mpeg3", "audio/x-mpeg-3" ],
+    "IsCommon": false
+  },
+  {
+    "MimeType": "audio/mpeg",
+    "Extension": "mp3",
+    "Name": "MP3 Audio File",
+    "Category": "Audio",
+    "Aliases": [ "audio/mp3", "audio/mpeg3", "audio/x-mpeg-3" ],
+    "IsCommon": true
+  },
+  {
+    "MimeType": "audio/mpeg",
+    "Extension": "mpga",
+    "Name": "MPEG-1 Layer 3 Audio File",
+    "Category": "Audio",
+    "Aliases": [ "audio/mp3", "audio/mpeg3", "audio/x-mpeg-3" ],
+    "IsCommon": false
+  },
+  {
+    "MimeType": "audio/ogg",
+    "Extension": "spx",
+    "Name": "Ogg Vorbis Speex File",
+    "Category": "Audio",
+    "IsCommon": false
+  },
+  {
+    "MimeType": "audio/ogg",
+    "Extension": "oga",
+    "Name": "Ogg Vorbis Audio File",
+    "Category": "Audio",
+    "IsCommon": false
+  },
+  {
+    "MimeType": "audio/ogg",
+    "Extension": "ogg",
+    "Name": "Ogg Vorbis Audio File",
+    "Category": "Audio",
+    "IsCommon": true
+  },
+  {
+    "MimeType": "audio/opus",
+    "Extension": "opus",
+    "Name": "Opus Audio File",
+    "Category": "Audio",
+    "IsCommon": false
+  },
+  {
+    "MimeType": "audio/vnd.digital-winds",
+    "Extension": "eol",
+    "Name": "Digital Winds audio",
+    "Category": "Audio",
+    "IsCommon": false
+  },
+  {
+    "MimeType": "audio/vnd.dts",
+    "Extension": "dts",
+    "Name": "DTS Encoded Audio File",
+    "Category": "Audio",
+    "IsCommon": false
+  },
+  {
+    "MimeType": "audio/vnd.dts.hd",
+    "Extension": "dtshd",
+    "Name": "DTS-HD Master Audio File",
+    "Category": "Audio",
+    "IsCommon": false
+  },
+  {
+    "MimeType": "audio/vnd.lucent.voice",
+    "Extension": "lvp",
+    "Name": "Avaya Voice Player compressed voice audio",
+    "Category": "Audio",
+    "IsCommon": false
+  },
+  {
+    "MimeType": "audio/vnd.ms-playready.media.pya",
+    "Extension": "pya",
+    "Name": " Microsoft PlayReady DRM audio data",
+    "Category": "Audio",
+    "IsCommon": false
+  },
+  {
+    "MimeType": "audio/vnd.nuera.ecelp4800",
+    "Extension": "ecelp4800",
+    "Name": "Nuera audio file",
+    "Category": "Audio",
+    "IsCommon": false
+  },
+  {
+    "MimeType": "audio/vnd.nuera.ecelp7470",
+    "Extension": "ecelp7470",
+    "Name": "Nuera audio file",
+    "Category": "Audio",
+    "IsCommon": false
+  },
+  {
+    "MimeType": "audio/vnd.nuera.ecelp9600",
+    "Extension": "ecelp9600",
+    "Name": "Nuera audio file",
+    "Category": "Audio",
+    "IsCommon": false
+  },
+  {
+    "MimeType": "audio/wav",
+    "Extension": "wav",
+    "Name": "WAVE Audio File",
+    "Category": "Audio",
+    "Aliases": [ "audio/x-wav" ],
+    "IsCommon": true
+  },
+  {
+    "MimeType": "audio/webm",
+    "Extension": "weba",
+    "Name": "WebM Audio File",
+    "Category": "Audio",
+    "IsCommon": false
+  },
+  {
+    "MimeType": "audio/x-aac",
+    "Extension": "aac",
+    "Name": "Advanced Audio Coding File",
+    "Category": "Audio",
+    "IsCommon": true
+  },
+  {
+    "MimeType": "audio/x-aiff",
+    "Extension": "aiff",
+    "Name": "Audio Interchange File Format",
+    "Category": "Audio",
+    "DeprecatedBy": "audio/aiff",
+    "IsCommon": true
+  },
+  {
+    "MimeType": "audio/x-aiff",
+    "Extension": "aif",
+    "Name": "Audio Interchange File Format",
+    "Category": "Audio",
+    "DeprecatedBy": "audio/aiff",
+    "IsCommon": true
+  },
+  {
+    "MimeType": "audio/x-aiff",
+    "Extension": "aff",
+    "Name": "Audio Interchange File Format",
+    "Category": "Audio",
+    "DeprecatedBy": "audio/aiff",
+    "IsCommon": false
+  },
+  {
+    "MimeType": "audio/x-matroska",
+    "Extension": "mka",
+    "Name": "Matroska Audio File",
+    "Category": "Audio",
+    "IsCommon": false
+  },
+  {
+    "MimeType": "audio/x-mpegurl",
+    "Extension": "m3u",
+    "Name": "M3U Media Playlist",
+    "Category": "Audio",
+    "IsCommon": false
+  },
+  {
+    "MimeType": "audio/x-ms-wax",
+    "Extension": "wax",
+    "Name": "Windows Media Audio Redirect",
+    "Category": "Audio",
+    "IsCommon": false
+  },
+  {
+    "MimeType": "audio/x-ms-wma",
+    "Extension": "wma",
+    "Name": "Windows Media Audio File",
+    "Category": "Audio",
+    "IsCommon": true
+  },
+  {
+    "MimeType": "audio/x-pn-realaudio",
+    "Extension": "ra",
+    "Name": "RealAudio File",
+    "Category": "Audio",
+    "IsCommon": false
+  },
+  {
+    "MimeType": "audio/x-pn-realaudio",
+    "Extension": "ram",
+    "Name": "Real Audio Metadata File",
+    "Category": "Audio",
+    "IsCommon": false
+  },
+  {
+    "MimeType": "audio/x-pn-realaudio-plugin",
+    "Extension": "rmp",
+    "Name": "RealPlayer Metadata Package File",
+    "Category": "Audio",
+    "IsCommon": false
+  },
+  {
+    "MimeType": "chemical/x-cdx",
+    "Extension": "cdx",
+    "Name": "ChemDraw chemical structure exchange data",
+    "Category": "Chemical",
+    "IsCommon": false
+  },
+  {
+    "MimeType": "chemical/x-cif",
+    "Extension": "cif",
+    "Name": "ChemDraw File",
+    "Category": "Chemical",
+    "IsCommon": false
+  },
+  {
+    "MimeType": "chemical/x-cmdf",
+    "Extension": "cmdf",
+    "Name": "ChemDraw File",
+    "Category": "Chemical",
+    "IsCommon": false
+  },
+  {
+    "MimeType": "chemical/x-cml",
+    "Extension": "cml",
+    "Name": "Chemical Markup Language document",
+    "Category": "Chemical",
+    "IsCommon": false
+  },
+  {
+    "MimeType": "chemical/x-csml",
+    "Extension": "csml",
+    "Name": "Chemical Style Markup Language",
+    "Category": "Chemical",
+    "IsCommon": false
+  },
+  {
+    "MimeType": "chemical/x-xyz",
+    "Extension": "xyz",
+    "Name": "XYZ cartesian chemical modeller input",
+    "Category": "Chemical",
+    "IsCommon": false
+  },
+  {
+    "MimeType": "font/otf",
+    "Extension": "otf",
+    "Name": "OpenType Font",
+    "Category": "Font",
+    "Aliases": [ "application/x-font-otf" ],
+    "IsCommon": true
+  },
+  {
+    "MimeType": "font/woff",
+    "Extension": "woff",
+    "Name": "Web Open Font Format File",
+    "Category": "Font",
+    "IsCommon": true
+  },
+  {
+    "MimeType": "font/woff2",
+    "Extension": "woff2",
+    "Name": "Web Open Font Format 2.0 File",
+    "Category": "Font",
+    "IsCommon": true
+  },
+  {
+    "MimeType": "image/avif",
+    "Extension": "avif",
+    "Name": "AVIF Image",
+    "Category": "Image",
+    "IsCommon": false
+  },
+  {
+    "MimeType": "image/avif",
+    "Extension": "avifs",
+    "Name": "AVIF Image Sequence",
+    "Category": "Image",
+    "Aliases": [ "image/avif-sequence" ],
+    "IsCommon": false
+  },
+  {
+    "MimeType": "image/bmp",
+    "Extension": "bmp",
+    "Name": "Bitmap Image",
+    "Category": "Image",
+    "IsCommon": true
+  },
+  {
+    "MimeType": "image/cgm",
+    "Extension": "cgm",
+    "Name": "Computer Graphics Metafile",
+    "Category": "Image",
+    "IsCommon": false
+  },
+  {
+    "MimeType": "image/g3fax",
+    "Extension": "g3",
+    "Name": "CCITT Group 3 Fax Image",
+    "Category": "Image",
+    "IsCommon": false
+  },
+  {
+    "MimeType": "image/gif",
+    "Extension": "gif",
+    "Name": "Graphical Interchange Format File",
+    "Category": "Image",
+    "IsCommon": true
+  },
+  {
+    "MimeType": "image/heic",
+    "Extension": "heic",
+    "Name": "High Efficiency Image Format",
+    "Category": "Image",
+    "Aliases": [ "image/heif" ],
+    "IsCommon": true
+  },
+  {
+    "MimeType": "image/heic",
+    "Extension": "heif",
+    "Name": "High Efficiency Image Format",
+    "Category": "Image",
+    "Aliases": [ "image/heif" ],
+    "IsCommon": true
+  },
+  {
+    "MimeType": "image/ief",
+    "Extension": "ief",
+    "Name": "Bitmap Image Exchange file",
+    "Category": "Image",
+    "IsCommon": false
+  },
+  {
+    "MimeType": "image/jpeg",
+    "Extension": "jpe",
+    "Name": "JPEG Image",
+    "Category": "Image",
+    "IsCommon": false
+  },
+  {
+    "MimeType": "image/jpeg",
+    "Extension": "jpeg",
+    "Name": "JPEG Image",
+    "Category": "Image",
+    "IsCommon": true
+  },
+  {
+    "MimeType": "image/jpeg",
+    "Extension": "jpg",
+    "Name": "JPEG Image",
+    "Category": "Image",
+    "IsCommon": true
+  },
+  {
+    "MimeType": "image/jpeg",
+    "Extension": "pjpg",
+    "Name": "Progressive JPEG Image",
+    "Category": "Image",
+    "IsCommon": false
+  },
+  {
+    "MimeType": "image/jpeg",
+    "Extension": "jfif",
+    "Name": "JPEG File Interchange Format",
+    "Category": "Image",
+    "IsCommon": false
+  },
+  {
+    "MimeType": "image/jpeg",
+    "Extension": "jfif-tbnl",
+    "Name": "JPEG Image",
+    "Category": "Image",
+    "IsCommon": false
+  },
+  {
+    "MimeType": "image/jpeg",
+    "Extension": "jif",
+    "Name": "JPEG Interchange Format Image",
+    "Category": "Image",
+    "IsCommon": false
+  },
+  {
+    "MimeType": "image/pjpeg",
+    "Extension": "jpe",
+    "Name": "JPEG Image",
+    "Category": "Image",
+    "IsCommon": false
+  },
+  {
+    "MimeType": "image/pjpeg",
+    "Extension": "jpeg",
+    "Name": "JPEG Image",
+    "Category": "Image",
+    "IsCommon": true
+  },
+  {
+    "MimeType": "image/pjpeg",
+    "Extension": "jpg",
+    "Name": "JPEG Image",
+    "Category": "Image",
+    "IsCommon": true
+  },
+  {
+    "MimeType": "image/pjpeg",
+    "Extension": "pjpg",
+    "Name": "Progressive JPEG Image",
+    "Category": "Image",
+    "IsCommon": false
+  },
+  {
+    "MimeType": "image/pjpeg",
+    "Extension": "jfi",
+    "Name": "JPEG File Interchange Image",
+    "Category": "Image",
+    "IsCommon": false
+  },
+  {
+    "MimeType": "image/pjpeg",
+    "Extension": "jfif",
+    "Name": "JPEG File Interchange Format",
+    "Category": "Image",
+    "IsCommon": false
+  },
+  {
+    "MimeType": "image/pjpeg",
+    "Extension": "jfif-tbnl",
+    "Name": "Progressive JPEG Image",
+    "Category": "Image",
+    "IsCommon": false
+  },
+  {
+    "MimeType": "image/pjpeg",
+    "Extension": "jif",
+    "Name": "JPEG Interchange Format Image",
+    "Category": "Image",
+    "IsCommon": false
+  },
+  {
+    "MimeType": "image/png",
+    "Extension": "png",
+    "Name": "Portable Network Graphic",
+    "Category": "Image",
+    "Aliases": [ "image/x-png", "image/vnd.mozilla.apng" ],
+    "IsCommon": true
+  },
+  {
+    "MimeType": "image/prs.btif",
+    "Extension": "btif",
+    "Name": "Bank image TIFF data",
+    "Category": "Image",
+    "IsCommon": false
+  },
+  {
+    "MimeType": "image/svg+xml",
+    "Extension": "svg",
+    "Name": "Scalable Vector Graphic",
+    "Category": "Image",
+    "IsCommon": true
+  },
+  {
+    "MimeType": "image/svg+xml",
+    "Extension": "svgz",
+    "Name": "Compressed SVG File",
+    "Category": "Image",
+    "IsCommon": false
+  },
+  {
+    "MimeType": "image/tiff",
+    "Extension": "tif",
+    "Name": "Tagged Image File",
+    "Category": "Image",
+    "IsCommon": false
+  },
+  {
+    "MimeType": "image/tiff",
+    "Extension": "tiff",
+    "Name": "Tagged Image File Format",
+    "Category": "Image",
+    "IsCommon": false
+  },
+  {
+    "MimeType": "image/vnd.adobe.photoshop",
+    "Extension": "psd",
+    "Name": "Adobe Photoshop Document",
+    "Category": "Image",
+    "IsCommon": false
+  },
+  {
+    "MimeType": "image/vnd.djvu",
+    "Extension": "djv",
+    "Name": "DjVu Image",
+    "Category": "Image",
+    "IsCommon": false
+  },
+  {
+    "MimeType": "image/vnd.djvu",
+    "Extension": "djvu",
+    "Name": "DjVu Image",
+    "Category": "Image",
+    "IsCommon": false
+  },
+  {
+    "MimeType": "image/vnd.dwg",
+    "Extension": "dwg",
+    "Name": "AutoCAD Drawing",
+    "Category": "Image",
+    "IsCommon": false
+  },
+  {
+    "MimeType": "image/vnd.dxf",
+    "Extension": "dxf",
+    "Name": "Drawing Exchange Format File",
+    "Category": "Image",
+    "IsCommon": false
+  },
+  {
+    "MimeType": "image/vnd.fastbidsheet",
+    "Extension": "fbs",
+    "Name": null,
+    "Category": "Image",
+    "IsCommon": false
+  },
+  {
+    "MimeType": "image/vnd.fpx",
+    "Extension": "fpx",
+    "Name": "FlashPix Bitmap Image File",
+    "Category": "Image",
+    "IsCommon": false
+  },
+  {
+    "MimeType": "image/vnd.fst",
+    "Extension": "fst",
+    "Name": null,
+    "Category": "Image",
+    "IsCommon": false
+  },
+  {
+    "MimeType": "image/vnd.fujixerox.edmics-mmr",
+    "Extension": "mmr",
+    "Name": "Fuji Xerox fax image",
+    "Category": "Image",
+    "IsCommon": false
+  },
+  {
+    "MimeType": "image/vnd.fujixerox.edmics-rlc",
+    "Extension": "rlc",
+    "Name": null,
+    "Category": "Image",
+    "IsCommon": false
+  },
+  {
+    "MimeType": "image/vnd.ms-modi",
+    "Extension": "mdi",
+    "Name": "Microsoft Document Imaging File",
+    "Category": "Image",
+    "IsCommon": false
+  },
+  {
+    "MimeType": "image/vnd.net-fpx",
+    "Extension": "npx",
+    "Name": null,
+    "Category": "Image",
+    "IsCommon": false
+  },
+  {
+    "MimeType": "image/vnd.wap.wbmp",
+    "Extension": "wbmp",
+    "Name": "Wireless Bitmap Image",
+    "Category": "Image",
+    "IsCommon": false
+  },
+  {
+    "MimeType": "image/vnd.xiff",
+    "Extension": "xif",
+    "Name": "ScanSoft Pagis File",
+    "Category": "Image",
+    "IsCommon": false
+  },
+  {
+    "MimeType": "image/webp",
+    "Extension": "webp",
+    "Name": "WebP Image",
+    "Category": "Image",
+    "IsCommon": true
+  },
+  {
+    "MimeType": "image/x-adobe-dng",
+    "Extension": "dng",
+    "Name": "Digital Raw Image Format",
+    "Category": "Image",
+    "IsCommon": false
+  },
+  {
+    "MimeType": "image/x-canon-cr2",
+    "Extension": "cr2",
+    "Name": "Canon Raw 2 Image",
+    "Category": "Image",
+    "IsCommon": false
+  },
+  {
+    "MimeType": "image/x-canon-crw",
+    "Extension": "crw",
+    "Name": "Canon Raw CIFF Image File",
+    "Category": "Image",
+    "IsCommon": false
+  },
+  {
+    "MimeType": "image/x-cmu-raster",
+    "Extension": "ras",
+    "Name": "Sun Raster Graphic",
+    "Category": "Image",
+    "IsCommon": false
+  },
+  {
+    "MimeType": "image/x-cmx",
+    "Extension": "cmx",
+    "Name": "Corel Presentation Exchange Image",
+    "Category": "Image",
+    "IsCommon": false
+  },
+  {
+    "MimeType": "image/x-epson-erf",
+    "Extension": "erf",
+    "Name": "Epson RAW File",
+    "Category": "Image",
+    "IsCommon": false
+  },
+  {
+    "MimeType": "image/x-freehand",
+    "Extension": "fh",
+    "Name": "FreeHand image",
+    "Category": "Image",
+    "IsCommon": false
+  },
+  {
+    "MimeType": "image/x-freehand",
+    "Extension": "fh4",
+    "Name": "FreeHand 4 Drawing File",
+    "Category": "Image",
+    "IsCommon": false
+  },
+  {
+    "MimeType": "image/x-freehand",
+    "Extension": "fh5",
+    "Name": "FreeHand 5 Drawing File",
+    "Category": "Image",
+    "IsCommon": false
+  },
+  {
+    "MimeType": "image/x-freehand",
+    "Extension": "fh7",
+    "Name": "FreeHand 7 Drawing File",
+    "Category": "Image",
+    "IsCommon": false
+  },
+  {
+    "MimeType": "image/x-freehand",
+    "Extension": "fhc",
+    "Name": "FreeHand image",
+    "Category": "Image",
+    "IsCommon": false
+  },
+  {
+    "MimeType": "image/x-fuji-raf",
+    "Extension": "raf",
+    "Name": "Fujifilm RAW Image",
+    "Category": "Image",
+    "IsCommon": false
+  },
+  {
+    "MimeType": "image/x-icon",
+    "Extension": "ico",
+    "Name": "Icon File",
+    "Category": "Image",
+    "IsCommon": true
+  },
+  {
+    "MimeType": "image/x-kodak-dcr",
+    "Extension": "dcr",
+    "Name": "Kodak Digital Camera RAW Image",
+    "Category": "Image",
+    "IsCommon": false
+  },
+  {
+    "MimeType": "image/x-kodak-k25",
+    "Extension": "k25",
+    "Name": "Kodak K25 Image",
+    "Category": "Image",
+    "IsCommon": false
+  },
+  {
+    "MimeType": "image/x-kodak-kdc",
+    "Extension": "kdc",
+    "Name": "Kodak Photo-Enhancer File",
+    "Category": "Image",
+    "IsCommon": false
+  },
+  {
+    "MimeType": "image/x-minolta-mrw",
+    "Extension": "mrw",
+    "Name": "Minolta Raw Image",
+    "Category": "Image",
+    "IsCommon": false
+  },
+  {
+    "MimeType": "image/x-nikon-nef",
+    "Extension": "nef",
+    "Name": "Nikon Electronic Format RAW Image",
+    "Category": "Image",
+    "IsCommon": false
+  },
+  {
+    "MimeType": "image/x-olympus-orf",
+    "Extension": "orf",
+    "Name": "Olympus RAW File",
+    "Category": "Image",
+    "IsCommon": false
+  },
+  {
+    "MimeType": "image/x-panasonic-raw",
+    "Extension": "rwl",
+    "Name": "Leica RAW Image",
+    "Category": "Image",
+    "IsCommon": false
+  },
+  {
+    "MimeType": "image/x-panasonic-raw",
+    "Extension": "raw",
+    "Name": "Panasonic RAW Image",
+    "Category": "Image",
+    "IsCommon": true
+  },
+  {
+    "MimeType": "image/x-panasonic-raw",
+    "Extension": "rw2",
+    "Name": "Panasonic RAW Image",
+    "Category": "Image",
+    "IsCommon": true
+  },
+  {
+    "MimeType": "image/x-pcx",
+    "Extension": "pcx",
+    "Name": "Paintbrush Bitmap Image File",
+    "Category": "Image",
+    "IsCommon": false
+  },
+  {
+    "MimeType": "image/x-pentax-pef",
+    "Extension": "pef",
+    "Name": "Pentax Electronic File",
+    "Category": "Image",
+    "IsCommon": false
+  },
+  {
+    "MimeType": "image/x-pentax-pef",
+    "Extension": "ptx",
+    "Name": "Pentax RAW Image File",
+    "Category": "Image",
+    "IsCommon": false
+  },
+  {
+    "MimeType": "image/x-pict",
+    "Extension": "pct",
+    "Name": "Picture File",
+    "Category": "Image",
+    "IsCommon": false
+  },
+  {
+    "MimeType": "image/x-pict",
+    "Extension": "pic",
+    "Name": "Generic Picture File",
+    "Category": "Image",
+    "IsCommon": false
+  },
+  {
+    "MimeType": "image/x-portable-anymap",
+    "Extension": "pnm",
+    "Name": "Portable Any Map Image",
+    "Category": "Image",
+    "IsCommon": false
+  },
+  {
+    "MimeType": "image/x-portable-bitmap",
+    "Extension": "pbm",
+    "Name": "Portable Bitmap Image",
+    "Category": "Image",
+    "IsCommon": false
+  },
+  {
+    "MimeType": "image/x-portable-graymap",
+    "Extension": "pgm",
+    "Name": "Portable Gray Map Image",
+    "Category": "Image",
+    "IsCommon": false
+  },
+  {
+    "MimeType": "image/x-portable-pixmap",
+    "Extension": "ppm",
+    "Name": "Portable Pixmap Image",
+    "Category": "Image",
+    "IsCommon": false
+  },
+  {
+    "MimeType": "image/x-rgb",
+    "Extension": "rgb",
+    "Name": "RGB Bitmap",
+    "Category": "Image",
+    "IsCommon": false
+  },
+  {
+    "MimeType": "image/x-sigma-x3f",
+    "Extension": "x3f",
+    "Name": "SIGMA X3F Camera RAW File",
+    "Category": "Image",
+    "IsCommon": false
+  },
+  {
+    "MimeType": "image/x-sony-arw",
+    "Extension": "arw",
+    "Name": "Sony Alpha Raw Digital Camera Image",
+    "Category": "Image",
+    "IsCommon": false
+  },
+  {
+    "MimeType": "image/x-sony-sr2",
+    "Extension": "sr2",
+    "Name": "Sony RAW Image",
+    "Category": "Image",
+    "IsCommon": false
+  },
+  {
+    "MimeType": "image/x-sony-srf",
+    "Extension": "srf",
+    "Name": "Sony RAW Image",
+    "Category": "Image",
+    "IsCommon": false
+  },
+  {
+    "MimeType": "image/x-xbitmap",
+    "Extension": "xbm",
+    "Name": "X BitMap Graphic",
+    "Category": "Image",
+    "IsCommon": false
+  },
+  {
+    "MimeType": "image/x-xpixmap",
+    "Extension": "xpm",
+    "Name": "X11 Pixmap Graphic",
+    "Category": "Image",
+    "IsCommon": false
+  },
+  {
+    "MimeType": "model/iges",
+    "Extension": "iges",
+    "Name": "IGES Drawing",
+    "Category": "Model",
+    "IsCommon": false
+  },
+  {
+    "MimeType": "model/iges",
+    "Extension": "igs",
+    "Name": "IGES Drawing",
+    "Category": "Model",
+    "IsCommon": false
+  },
+  {
+    "MimeType": "model/mesh",
+    "Extension": "mesh",
+    "Name": "3D Mesh Model",
+    "Category": "Model",
+    "IsCommon": false
+  },
+  {
+    "MimeType": "model/mesh",
+    "Extension": "msh",
+    "Name": "3D Mesh Model",
+    "Category": "Model",
+    "IsCommon": false
+  },
+  {
+    "MimeType": "model/mesh",
+    "Extension": "silo",
+    "Name": "3D Mesh Model",
+    "Category": "Model",
+    "IsCommon": false
+  },
+  {
+    "MimeType": "model/vnd.dwf",
+    "Extension": "dwf",
+    "Name": "Design Web Format File",
+    "Category": "Model",
+    "IsCommon": false
+  },
+  {
+    "MimeType": "model/vnd.gdl",
+    "Extension": "gdl",
+    "Name": "ArchiCAD Geometric Description Language data",
+    "Category": "Model",
+    "IsCommon": false
+  },
+  {
+    "MimeType": "model/vnd.gtw",
+    "Extension": "gtw",
+    "Name": "Gen-Trix graphic data",
+    "Category": "Model",
+    "IsCommon": false
+  },
+  {
+    "MimeType": "model/vnd.mts",
+    "Extension": "mts",
+    "Name": "MetaCreations Streaming 3D Viewer file",
+    "Category": "Model",
+    "IsCommon": false
+  },
+  {
+    "MimeType": "model/vnd.vtu",
+    "Extension": "vtu",
+    "Name": "Visualization Toolkit unstructured points data",
+    "Category": "Model",
+    "IsCommon": false
+  },
+  {
+    "MimeType": "model/vrml",
+    "Extension": "vrml",
+    "Name": "VRML File",
+    "Category": "Model",
+    "IsCommon": false
+  },
+  {
+    "MimeType": "model/vrml",
+    "Extension": "wrl",
+    "Name": "VRML World",
+    "Category": "Model",
+    "IsCommon": false
+  },
+  {
+    "MimeType": "text/mathml",
+    "Extension": "mathml",
+    "Name": "Mathematical Markup Language document",
+    "Category": "Text",
+    "Aliases": [ "application/mathml+xml" ],
+    "IsCommon": false
+  },
+  {
+    "MimeType": "text/calendar",
+    "Extension": "ics",
+    "Name": "Calendar File",
+    "Category": "Text",
+    "IsCommon": true
+  },
+  {
+    "MimeType": "text/plain",
+    "Extension": "conf",
+    "Name": "Generic Configuration File",
+    "Category": "Text",
+    "Aliases": [ "text/x-log" ],
+    "IsCommon": true
+  },
+  {
+    "MimeType": "text/plain",
+    "Extension": "def",
+    "Name": "Definition File",
+    "Category": "Text",
+    "Aliases": [ "text/x-log" ],
+    "IsCommon": false
+  },
+  {
+    "MimeType": "text/plain",
+    "Extension": "diff",
+    "Name": "Diff source data",
+    "Category": "Text",
+    "Aliases": [ "text/x-log" ],
+    "IsCommon": false
+  },
+  {
+    "MimeType": "text/plain",
+    "Extension": "in",
+    "Name": "Input File",
+    "Category": "Text",
+    "Aliases": [ "text/x-log" ],
+    "IsCommon": false
+  },
+  {
+    "MimeType": "text/plain",
+    "Extension": "ksh",
+    "Name": "Unix shell script",
+    "Category": "Text",
+    "Aliases": [ "text/x-log" ],
+    "IsCommon": false
+  },
+  {
+    "MimeType": "text/plain",
+    "Extension": "list",
+    "Name": null,
+    "Category": "Text",
+    "Aliases": [ "text/x-log" ],
+    "IsCommon": false
+  },
+  {
+    "MimeType": "text/plain",
+    "Extension": "log",
+    "Name": "Log File",
+    "Category": "Text",
+    "Aliases": [ "text/x-log" ],
+    "IsCommon": false
+  },
+  {
+    "MimeType": "text/css",
+    "Extension": "css",
+    "Name": "Cascading Style Sheet",
+    "Category": "Text",
+    "IsCommon": false
+  },
+  {
+    "MimeType": "text/csv",
+    "Extension": "csv",
+    "Name": "Comma-Separated Values File",
+    "Category": "Text",
+    "IsCommon": false
+  },
+  {
+    "MimeType": "text/html",
+    "Extension": "htm",
+    "Name": "Hypertext Markup Language File",
+    "Category": "Text",
+    "IsCommon": true
+  },
+  {
+    "MimeType": "text/prs.lines.tag",
+    "Extension": "dsc",
+    "Name": "Text Description File",
+    "Category": "Text",
+    "IsCommon": false
+  },
+  {
+    "MimeType": "text/richtext",
+    "Extension": "rtx",
+    "Name": "Rich Text Document",
+    "Category": "Text",
+    "IsCommon": false
+  },
+  {
+    "MimeType": "text/sgml",
+    "Extension": "sgm",
+    "Name": "SGML File",
+    "Category": "Text",
+    "IsCommon": false
+  },
+  {
+    "MimeType": "text/sgml",
+    "Extension": "sgml",
+    "Name": "SGML File",
+    "Category": "Text",
+    "IsCommon": false
+  },
+  {
+    "MimeType": "text/tab-separated-values",
+    "Extension": "tsv",
+    "Name": "Tab-Separated Values File",
+    "Category": "Text",
+    "IsCommon": false
+  },
+  {
+    "MimeType": "text/troff",
+    "Extension": "man",
+    "Name": "Unix text manual",
+    "Category": "Text",
+    "IsCommon": false
+  },
+  {
+    "MimeType": "text/troff",
+    "Extension": "me",
+    "Name": "TROFF document",
+    "Category": "Text",
+    "IsCommon": false
+  },
+  {
+    "MimeType": "text/troff",
+    "Extension": "ms",
+    "Name": "TROFF formatted manual page",
+    "Category": "Text",
+    "IsCommon": false
+  },
+  {
+    "MimeType": "text/troff",
+    "Extension": "roff",
+    "Name": "Unformatted manual page (Roff/nroff/troff/groff)",
+    "Category": "Text",
+    "IsCommon": false
+  },
+  {
+    "MimeType": "text/troff",
+    "Extension": "t",
+    "Name": "Roff/Troff unformatted manual page",
+    "Category": "Text",
+    "IsCommon": false
+  },
+  {
+    "MimeType": "text/troff",
+    "Extension": "tr",
+    "Name": "Unformatted manual page file (roff/nroff/troff/groff)",
+    "Category": "Text",
+    "IsCommon": false
+  },
+  {
+    "MimeType": "text/uri-list",
+    "Extension": "uri",
+    "Name": "List of Uniform resource identifiers",
+    "Category": "Text",
+    "IsCommon": false
+  },
+  {
+    "MimeType": "text/uri-list",
+    "Extension": "uris",
+    "Name": "List of Uniform resource identifiers",
+    "Category": "Text",
+    "IsCommon": false
+  },
+  {
+    "MimeType": "text/uri-list",
+    "Extension": "urls",
+    "Name": "List of Uniform resource identifiers",
+    "Category": "Text",
+    "IsCommon": false
+  },
+  {
+    "MimeType": "text/vnd.curl",
+    "Extension": "curl",
+    "Name": null,
+    "Category": "Text",
+    "IsCommon": false
+  },
+  {
+    "MimeType": "text/vnd.curl.dcurl",
+    "Extension": "dcurl",
+    "Name": null,
+    "Category": "Text",
+    "IsCommon": false
+  },
+  {
+    "MimeType": "text/vnd.curl.mcurl",
+    "Extension": "mcurl",
+    "Name": null,
+    "Category": "Text",
+    "IsCommon": false
+  },
+  {
+    "MimeType": "text/vnd.curl.scurl",
+    "Extension": "scurl",
+    "Name": null,
+    "Category": "Text",
+    "IsCommon": false
+  },
+  {
+    "MimeType": "text/vnd.fly",
+    "Extension": "fly",
+    "Name": "Digiflyer e-mail document",
+    "Category": "Text",
+    "IsCommon": false
+  },
+  {
+    "MimeType": "text/vnd.fmi.flexstor",
+    "Extension": "flx",
+    "Name": null,
+    "Category": "Text",
+    "IsCommon": false
+  },
+  {
+    "MimeType": "text/vnd.graphviz",
+    "Extension": "gv",
+    "Name": null,
+    "Category": "Text",
+    "IsCommon": false
+  },
+  {
+    "MimeType": "text/vnd.in3d.3dml",
+    "Extension": "3dml",
+    "Name": "3DML data file",
+    "Category": "Text",
+    "IsCommon": false
+  },
+  {
+    "MimeType": "text/vnd.in3d.spot",
+    "Extension": "spot",
+    "Name": null,
+    "Category": "Text",
+    "IsCommon": false
+  },
+  {
+    "MimeType": "text/vnd.sun.j2me.app-descriptor",
+    "Extension": "jad",
+    "Name": null,
+    "Category": "Text",
+    "IsCommon": false
+  },
+  {
+    "MimeType": "text/vnd.wap.si",
+    "Extension": "si",
+    "Name": null,
+    "Category": "Text",
+    "IsCommon": false
+  },
+  {
+    "MimeType": "text/vnd.wap.sl",
+    "Extension": "sl",
+    "Name": null,
+    "Category": "Text",
+    "IsCommon": false
+  },
+  {
+    "MimeType": "text/vnd.wap.wml",
+    "Extension": "wml",
+    "Name": null,
+    "Category": "Text",
+    "IsCommon": false
+  },
+  {
+    "MimeType": "text/vnd.wap.wmlscript",
+    "Extension": "wmls",
+    "Name": null,
+    "Category": "Text",
+    "IsCommon": false
+  },
+  {
+    "MimeType": "text/html",
+    "Extension": "html",
+    "Name": "Hypertext Markup Language File",
+    "Category": "Text",
+    "IsCommon": true
+  },
+  {
+    "MimeType": "text/x-asm",
+    "Extension": "s",
+    "Name": "Source Code File",
+    "Category": "Text",
+    "IsCommon": false
+  },
+  {
+    "MimeType": "text/x-c",
+    "Extension": "c",
+    "Name": "C/C++ Source Code File",
+    "Category": "Text",
+    "IsCommon": false
+  },
+  {
+    "MimeType": "text/javascript",
+    "Extension": "js",
+    "Name": "JavaScript File",
+    "Category": "Text",
+    "Aliases": [ "application/ecmascript", "application/javascript", "application/x-ecmascript", "application/x-javascript", "text/ecmascript", "text/javascript1.0", "text/javascript1.1", "text/javascript1.2", "text/javascript1.3", "text/javascript1.4", "text/javascript1.5", "text/jscript", "text/livescript", "text/x-ecmascript", "text/x-javascript" ],
+    "IsCommon": true
+  },
+  {
+    "MimeType": "text/markdown",
+    "Extension": "md",
+    "Name": "Markdown Documentation File",
+    "Category": "Text",
+    "Aliases": [ "text/x-markdown" ],
+    "IsCommon": true
+  },
+  {
+    "MimeType": "text/markdown",
+    "Extension": "markdown",
+    "Name": "Markdown Documentation File",
+    "Category": "Text",
+    "Aliases": [ "text/x-markdown" ],
+    "IsCommon": false
+  },
+  {
+    "MimeType": "text/x-c",
+    "Extension": "dic",
+    "Name": "C/C++ Source Code File",
+    "Category": "Text",
+    "IsCommon": false
+  },
+  {
+    "MimeType": "text/markdown",
+    "Extension": "mdown",
+    "Name": "Markdown Documentation File",
+    "Category": "Text",
+    "Aliases": [ "text/x-markdown" ],
+    "IsCommon": false
+  },
+  {
+    "MimeType": "text/x-c",
+    "Extension": "hh",
+    "Name": "C++ Header File",
+    "Category": "Text",
+    "IsCommon": false
+  },
+  {
+    "MimeType": "text/markdown",
+    "Extension": "markdn",
+    "Name": "Markdown Documentation File",
+    "Category": "Text",
+    "Aliases": [ "text/x-markdown" ],
+    "IsCommon": false
+  },
+  {
+    "MimeType": "text/x-fortran",
+    "Extension": "f77",
+    "Name": "Fortran 77 Source Code File",
+    "Category": "Text",
+    "IsCommon": false
+  },
+  {
+    "MimeType": "text/mathml",
+    "Extension": "mml",
+    "Name": "Mathematical Markup Language File",
+    "Category": "Text",
+    "Aliases": [ "application/mathml+xml" ],
+    "IsCommon": false
+  },
+  {
+    "MimeType": "text/plain",
+    "Extension": "text",
+    "Name": "Plain Text File",
+    "Category": "Text",
+    "Aliases": [ "text/x-log" ],
+    "IsCommon": false
+  },
+  {
+    "MimeType": "text/plain",
+    "Extension": "txt",
+    "Name": "Plain Text File",
+    "Category": "Text",
+    "Aliases": [ "text/x-log" ],
+    "IsCommon": true
+  },
+  {
+    "MimeType": "text/plain",
+    "Extension": "pl",
+    "Name": "Perl Script",
+    "Category": "Text",
+    "Aliases": [ "text/x-log" ],
+    "IsCommon": false
+  },
+  {
+    "MimeType": "text/x-asm",
+    "Extension": "asm",
+    "Name": "Assembly Language Source Code File",
+    "Category": "Text",
+    "IsCommon": false
+  },
+  {
+    "MimeType": "text/x-pascal",
+    "Extension": "pp",
+    "Name": "Pascal Source Code",
+    "Category": "Text",
+    "IsCommon": false
+  },
+  {
+    "MimeType": "text/x-pascal",
+    "Extension": "inc",
+    "Name": "Pascal Source Code",
+    "Category": "Text",
+    "IsCommon": false
+  },
+  {
+    "MimeType": "text/x-c",
+    "Extension": "h",
+    "Name": "C/C++/Objective-C Header File",
+    "Category": "Text",
+    "IsCommon": false
+  },
+  {
+    "MimeType": "text/x-setext",
+    "Extension": "etx",
+    "Name": "Structure Enhanced Text (Setext) File",
+    "Category": "Text",
+    "IsCommon": false
+  },
+  {
+    "MimeType": "text/x-c",
+    "Extension": "cc",
+    "Name": "C++ Source Code File",
+    "Category": "Text",
+    "IsCommon": false
+  },
+  {
+    "MimeType": "text/x-c",
+    "Extension": "cpp",
+    "Name": "C++ Source Code File",
+    "Category": "Text",
+    "IsCommon": false
+  },
+  {
+    "MimeType": "text/x-c",
+    "Extension": "cxx",
+    "Name": "C++ Source Code File",
+    "Category": "Text",
+    "IsCommon": false
+  },
+  {
+    "MimeType": "text/x-fortran",
+    "Extension": "f90",
+    "Name": "Fortran 90 Source Code File",
+    "Category": "Text",
+    "IsCommon": false
+  },
+  {
+    "MimeType": "text/calendar",
+    "Extension": "ifb",
+    "Name": null,
+    "Category": "Text",
+    "IsCommon": false
+  },
+  {
+    "MimeType": "text/x-fortran",
+    "Extension": "f",
+    "Name": "Fortran Source Code",
+    "Category": "Text",
+    "IsCommon": false
+  },
+  {
+    "MimeType": "text/x-fortran",
+    "Extension": "for",
+    "Name": "Fortran 77 Source Code File",
+    "Category": "Text",
+    "IsCommon": false
+  },
+  {
+    "MimeType": "text/x-java-source",
+    "Extension": "java",
+    "Name": "Java Source Code File",
+    "Category": "Text",
+    "IsCommon": true
+  },
+  {
+    "MimeType": "text/x-pascal",
+    "Extension": "p",
+    "Name": "Pascal Source Code",
+    "Category": "Text",
+    "IsCommon": false
+  },
+  {
+    "MimeType": "text/x-pascal",
+    "Extension": "pas",
+    "Name": "Pascal Source File",
+    "Category": "Text",
+    "IsCommon": false
+  },
+  {
+    "MimeType": "text/x-python",
+    "Extension": "py",
+    "Name": "Python Script",
+    "Category": "Text",
+    "IsCommon": false
+  },
+  {
+    "MimeType": "text/x-uuencode",
+    "Extension": "uu",
+    "Name": "Uuencoded File",
+    "Category": "Text",
+    "IsCommon": false
+  },
+  {
+    "MimeType": "text/x-vcalendar",
+    "Extension": "vcs",
+    "Name": "vCalendar Event",
+    "Category": "Text",
+    "IsCommon": false
+  },
+  {
+    "MimeType": "text/x-vcard",
+    "Extension": "vcf",
+    "Name": "vCard File",
+    "Category": "Text",
+    "IsCommon": false
+  },
+  {
+    "MimeType": "video/h261",
+    "Extension": "h261",
+    "Name": "H.261 Video",
+    "Category": "Video",
+    "IsCommon": false
+  },
+  {
+    "MimeType": "video/h263",
+    "Extension": "h263",
+    "Name": "H.263 Video",
+    "Category": "Video",
+    "IsCommon": false
+  },
+  {
+    "MimeType": "video/h264",
+    "Extension": "h264",
+    "Name": "H.264 Encoded Video File",
+    "Category": "Video",
+    "IsCommon": true
+  },
+  {
+    "MimeType": "video/jpeg",
+    "Extension": "jpgv",
+    "Name": null,
+    "Category": "Video",
+    "IsCommon": false
+  },
+  {
+    "MimeType": "video/jpm",
+    "Extension": "jpgm",
+    "Name": null,
+    "Category": "Video",
+    "IsCommon": false
+  },
+  {
+    "MimeType": "video/jpm",
+    "Extension": "jpm",
+    "Name": null,
+    "Category": "Video",
+    "IsCommon": false
+  },
+  {
+    "MimeType": "video/mj2",
+    "Extension": "mj2",
+    "Name": "Motion JPEG 2000 Video",
+    "Category": "Video",
+    "IsCommon": false
+  },
+  {
+    "MimeType": "video/mj2",
+    "Extension": "mjp2",
+    "Name": null,
+    "Category": "Video",
+    "IsCommon": false
+  },
+  {
+    "MimeType": "video/mp4",
+    "Extension": "mp4",
+    "Name": "MPEG-4 Video",
+    "Category": "Video",
+    "IsCommon": true
+  },
+  {
+    "MimeType": "video/mp4",
+    "Extension": "mp4v",
+    "Name": "MPEG-4 Video",
+    "Category": "Video",
+    "IsCommon": false
+  },
+  {
+    "MimeType": "video/mp4",
+    "Extension": "mpg4",
+    "Name": "MPEG-4 Video",
+    "Category": "Video",
+    "IsCommon": false
+  },
+  {
+    "MimeType": "video/mpeg",
+    "Extension": "m1v",
+    "Name": "MPEG-1 Video File",
+    "Category": "Video",
+    "IsCommon": false
+  },
+  {
+    "MimeType": "video/mpeg",
+    "Extension": "m2v",
+    "Name": "MPEG-2 Video File",
+    "Category": "Video",
+    "IsCommon": false
+  },
+  {
+    "MimeType": "video/mpeg",
+    "Extension": "mpa",
+    "Name": "MPEG-2 Audio File",
+    "Category": "Video",
+    "IsCommon": false
+  },
+  {
+    "MimeType": "video/mpeg",
+    "Extension": "mpe",
+    "Name": "MPEG Video File",
+    "Category": "Video",
+    "IsCommon": false
+  },
+  {
+    "MimeType": "video/mpeg",
+    "Extension": "mpeg",
+    "Name": "MPEG Video File",
+    "Category": "Video",
+    "IsCommon": true
+  },
+  {
+    "MimeType": "video/mpeg",
+    "Extension": "mpg",
+    "Name": "MPEG Video File",
+    "Category": "Video",
+    "IsCommon": true
+  },
+  {
+    "MimeType": "video/ogg",
+    "Extension": "ogv",
+    "Name": "Ogg Video File",
+    "Category": "Video",
+    "IsCommon": true
+  },
+  {
+    "MimeType": "video/quicktime",
+    "Extension": "mov",
+    "Name": "Apple QuickTime Movie",
+    "Category": "Video",
+    "IsCommon": true
+  },
+  {
+    "MimeType": "video/quicktime",
+    "Extension": "qt",
+    "Name": "Apple QuickTime Movie",
+    "Category": "Video",
+    "IsCommon": false
+  },
+  {
+    "MimeType": "video/vnd.fvt",
+    "Extension": "fvt",
+    "Name": null,
+    "Category": "Video",
+    "IsCommon": false
+  },
+  {
+    "MimeType": "video/vnd.mpegurl",
+    "Extension": "m4u",
+    "Name": "MPEG-4 Playlist",
+    "Category": "Video",
+    "IsCommon": false
+  },
+  {
+    "MimeType": "video/vnd.mpegurl",
+    "Extension": "mxu",
+    "Name": null,
+    "Category": "Video",
+    "IsCommon": false
+  },
+  {
+    "MimeType": "video/vnd.ms-playready.media.pyv",
+    "Extension": "pyv",
+    "Name": null,
+    "Category": "Video",
+    "IsCommon": false
+  },
+  {
+    "MimeType": "video/vnd.vivo",
+    "Extension": "viv",
+    "Name": null,
+    "Category": "Video",
+    "IsCommon": false
+  },
+  {
+    "MimeType": "video/webm",
+    "Extension": "webm",
+    "Name": "WebM Video",
+    "Category": "Video",
+    "IsCommon": true
+  },
+  {
+    "MimeType": "video/x-f4v",
+    "Extension": "f4v",
+    "Name": "Flash MP4 Video File",
+    "Category": "Video",
+    "IsCommon": true
+  },
+  {
+    "MimeType": "video/x-fli",
+    "Extension": "fli",
+    "Name": "FLIC Animation",
+    "Category": "Video",
+    "IsCommon": false
+  },
+  {
+    "MimeType": "video/x-flv",
+    "Extension": "flv",
+    "Name": "Flash Video",
+    "Category": "Video",
+    "IsCommon": true
+  },
+  {
+    "MimeType": "video/x-m4v",
+    "Extension": "m4v",
+    "Name": "MPEG-4 Video",
+    "Category": "Video",
+    "IsCommon": true
+  },
+  {
+    "MimeType": "video/x-matroska",
+    "Extension": "mkv",
+    "Name": "Matroska Video",
+    "Category": "Video",
+    "IsCommon": true
+  },
+  {
+    "MimeType": "video/x-ms-asf",
+    "Extension": "asf",
+    "Name": "Advanced Systems Format File",
+    "Category": "Video",
+    "IsCommon": false
+  },
+  {
+    "MimeType": "video/x-ms-asf",
+    "Extension": "asx",
+    "Name": "Microsoft ASF Redirector File",
+    "Category": "Video",
+    "IsCommon": false
+  },
+  {
+    "MimeType": "video/x-ms-wm",
+    "Extension": "wm",
+    "Name": "Windows Media File",
+    "Category": "Video",
+    "IsCommon": false
+  },
+  {
+    "MimeType": "video/x-msvideo",
+    "Extension": "avi",
+    "Name": "Audio Video Interleave File",
+    "Category": "Video",
+    "IsCommon": true
+  },
+  {
+    "MimeType": "video/x-ms-wmv",
+    "Extension": "wmv",
+    "Name": "Windows Media Video",
+    "Category": "Video",
+    "IsCommon": true
+  },
+  {
+    "MimeType": "video/x-ms-wmx",
+    "Extension": "wmx",
+    "Name": "Windows Media Redirector File",
+    "Category": "Video",
+    "IsCommon": false
+  },
+  {
+    "MimeType": "video/x-ms-wvx",
+    "Extension": "wvx",
+    "Name": "Windows Media Video Redirector",
+    "Category": "Video",
+    "IsCommon": false
+  },
+  {
+    "MimeType": "video/x-sgi-movie",
+    "Extension": "movie",
+    "Name": "SGI Movie File",
+    "Category": "Video",
+    "IsCommon": false
+  }
+]

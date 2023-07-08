@@ -2,7 +2,6 @@
 {
     using System;
     using System.Collections.Generic;
-    using System.Data;
     using System.Linq;
     using Falsus.GeneratorProperties;
     using Falsus.Providers.Person.Models;
@@ -184,8 +183,7 @@
         }
 
         /// <summary>
-        /// Instructs the data provider to prepare the data for generation based on the
-        /// provided <see cref="LastNameProviderConfiguration"/>.
+        /// Instructs the data provider to prepare the data for generation.
         /// </summary>
         /// <param name="property">
         /// An implementation of the generic <see cref="DataGeneratorProperty{T}"/>
