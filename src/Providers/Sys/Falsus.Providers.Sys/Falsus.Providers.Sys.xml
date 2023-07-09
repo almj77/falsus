@@ -144,5 +144,278 @@
             usually preparing or caching data for the generation taking place afterwards.
             </remarks>
         </member>
+        <member name="T:Falsus.Providers.Sys.SemanticVersionProvider">
+            <summary>
+            Represents a provider of Semantic Versions.
+            </summary>
+            <seealso cref="T:Falsus.Providers.DataGeneratorProvider`1"/>
+        </member>
+        <member name="F:Falsus.Providers.Sys.SemanticVersionProvider.MaxAttempts">
+            <summary>
+            The number of attemps to try to generate a unique value
+            before throwing an exception.
+            </summary>
+        </member>
+        <member name="F:Falsus.Providers.Sys.SemanticVersionProvider.configuration">
+            <summary>
+            The configuration of this provider.
+            </summary>
+        </member>
+        <member name="M:Falsus.Providers.Sys.SemanticVersionProvider.#ctor">
+            <summary>
+            Initializes a new instance of the <see cref="T:Falsus.Providers.Sys.SemanticVersionProvider"/> class.
+            </summary>
+        </member>
+        <member name="M:Falsus.Providers.Sys.SemanticVersionProvider.#ctor(Falsus.Providers.Sys.SemanticVersionProviderConfiguration)">
+            <summary>
+            Initializes a new instance of the <see cref="T:Falsus.Providers.Sys.SemanticVersionProvider"/> class.
+            </summary>
+            <param name="configuration">The configuration to use.</param>
+        </member>
+        <member name="M:Falsus.Providers.Sys.SemanticVersionProvider.GetRangedRowValue(Falsus.Shared.Models.SemanticVersionModel,Falsus.Shared.Models.SemanticVersionModel,Falsus.Shared.Models.SemanticVersionModel[])">
+            <summary>
+            Generates a random semantic version that is greater than the
+            value of <paramref name="minValue"/> and lower
+            than the value of <paramref name="maxValue"/>.
+            </summary>
+            <param name="minValue">The exclusive lower bound of the random object returned.</param>
+            <param name="maxValue">The exclusive upper bound of the random object returned.</param>
+            <param name="excludedObjects">
+            An array of <see cref="T:Falsus.Shared.Models.SemanticVersionModel"/> values that cannot be returned
+            by the provider.
+            </param>
+            <returns>
+            A random instance of <see cref="T:Falsus.Shared.Models.SemanticVersionModel"/> greater than <paramref name="minValue"/>
+            and less than <paramref name="maxValue"/>.
+            </returns>
+            <remarks>
+            <paramref name="maxValue"/> must be greater than <paramref name="minValue"/>.
+            </remarks>
+        </member>
+        <member name="M:Falsus.Providers.Sys.SemanticVersionProvider.GetRowValue(Falsus.DataGeneratorContext,Falsus.GeneratorProperties.WeightedRange{Falsus.Shared.Models.SemanticVersionModel}[],Falsus.Shared.Models.SemanticVersionModel[])">
+            <summary>
+            Generates a random semantic version based on the context and excluded ranges.
+            </summary>
+            <param name="context">
+            An instance of <see cref="T:Falsus.DataGeneratorContext"/> defining
+            the current generation context.
+            </param>
+            <param name="excludedRanges">
+            An array of <see cref="T:Falsus.GeneratorProperties.WeightedRange`1"/>s defining the ranges
+            that cannot be returned by the provider.
+            </param>
+            <param name="excludedObjects">
+            An array of <see cref="T:Falsus.Shared.Models.SemanticVersionModel"/> values that cannot be returned
+            by the provider.
+            </param>
+            <returns>
+            A random instance of <see cref="T:Falsus.Shared.Models.SemanticVersionModel"/> that is outside of
+            the specified <paramref name="excludedRanges"/>.
+            </returns>
+        </member>
+        <member name="M:Falsus.Providers.Sys.SemanticVersionProvider.GetRowValue(System.String)">
+            <summary>
+            Gets a <see cref="T:Falsus.Shared.Models.SemanticVersionModel"/> value based on the provided <paramref name="id"/>.
+            </summary>
+            <param name="id">An unique identifier for the object.</param>
+            <returns>
+            A <see cref="T:Falsus.Shared.Models.SemanticVersionModel"/> value with the specified unique identifier.
+            </returns>
+            <remarks>
+            The unique identifier of the <see cref="T:Falsus.Shared.Models.SemanticVersionModel"/> instance is
+            defined by the concatenation of all version numbers.
+            The unique id can be fetched by invoking the
+            <see cref="M:Falsus.Providers.Sys.SemanticVersionProvider.GetValueId(Falsus.Shared.Models.SemanticVersionModel)"/>
+            or the <see cref="M:Falsus.Shared.Models.SemanticVersionModel.ToString"/> methods.
+            </remarks>
+        </member>
+        <member name="M:Falsus.Providers.Sys.SemanticVersionProvider.GetRowValue(Falsus.DataGeneratorContext,Falsus.Shared.Models.SemanticVersionModel[])">
+            <summary>
+            Generates a random semantic version based on the context and excluded objects.
+            </summary>
+            <param name="context">
+            An instance of <see cref="T:Falsus.DataGeneratorContext"/> defining
+            the current generation context.
+            </param>
+            <param name="excludedObjects">
+            An array of <see cref="T:System.String"/> values that cannot be returned
+            by the provider.
+            </param>
+            <returns>
+            A random semantic version.
+            </returns>
+        </member>
+        <member name="M:Falsus.Providers.Sys.SemanticVersionProvider.GetValueId(Falsus.Shared.Models.SemanticVersionModel)">
+            <summary>
+            Gets a unique identifier for the provided <see cref="T:Falsus.Shared.Models.SemanticVersionModel"/>.
+            </summary>
+            <param name="value">The <see cref="T:Falsus.Shared.Models.SemanticVersionModel"/> value.</param>
+            <returns>
+            A <see cref="T:System.String"/> containing the unique identifier of the provided value.
+            </returns>
+            <remarks>
+            The unique identifier of the <see cref="T:Falsus.Shared.Models.SemanticVersionModel"/> instance is
+            defined by the concatenation of all version numbers.
+            The unique id can be fetched by invoking the
+            <see cref="M:Falsus.Shared.Models.SemanticVersionModel.ToString"/> method.
+            </remarks>
+        </member>
+        <member name="M:Falsus.Providers.Sys.SemanticVersionProvider.Load(Falsus.GeneratorProperties.DataGeneratorProperty{Falsus.Shared.Models.SemanticVersionModel},System.Int32)">
+            <summary>
+            Instructs the data provider to prepare the data for generation based on the
+            provided <see cref="T:Falsus.Providers.Sys.SemanticVersionProviderConfiguration"/>.
+            </summary>
+            <param name="property">
+            An implementation of the generic <see cref="T:Falsus.GeneratorProperties.DataGeneratorProperty`1"/>
+            defining the property that this provider has been attached to.
+            </param>
+            <param name="rowCount">The desired number of rows to be generated.</param>
+            <remarks>
+            Invoked before any calculation takes place, the goal of this method is
+            usually preparing or caching data for the generation taking place afterwards.
+            </remarks>
+        </member>
+        <member name="M:Falsus.Providers.Sys.SemanticVersionProvider.ValidateConfiguration">
+            <summary>
+            Checks if the <see cref="F:Falsus.Providers.Sys.SemanticVersionProvider.configuration"/> object is assigned and correct.
+            </summary>
+            <exception cref="T:System.InvalidOperationException">
+            Thrown when:
+            <list type="bullet">
+            <item>
+            The <see cref="P:Falsus.Providers.Sys.SemanticVersionProviderConfiguration.MinMajorVersion"/> or <see cref="P:Falsus.Providers.Sys.SemanticVersionProviderConfiguration.MaxMajorVersion"/>
+            or <see cref="P:Falsus.Providers.Sys.SemanticVersionProviderConfiguration.MinMinorVersion"/> or <see cref="P:Falsus.Providers.Sys.SemanticVersionProviderConfiguration.MaxMinorVersion"/>
+            or <see cref="P:Falsus.Providers.Sys.SemanticVersionProviderConfiguration.MinPatchVersion"/> or <see cref="P:Falsus.Providers.Sys.SemanticVersionProviderConfiguration.MaxPatchVersion"/>
+            or <see cref="P:Falsus.Providers.Sys.SemanticVersionProviderConfiguration.MinStageVersion"/> or <see cref="P:Falsus.Providers.Sys.SemanticVersionProviderConfiguration.MaxStageVersion"/>
+            have values lower than 0.
+            </item>
+            <item>
+            The value of <see cref="P:Falsus.Providers.Sys.SemanticVersionProviderConfiguration.MinMajorVersion"/> is greater than the
+            value of <see cref="P:Falsus.Providers.Sys.SemanticVersionProviderConfiguration.MaxMajorVersion"/>.
+            </item>
+            <item>
+            The value of <see cref="P:Falsus.Providers.Sys.SemanticVersionProviderConfiguration.MinMinorVersion"/> is greater than the
+            value of <see cref="P:Falsus.Providers.Sys.SemanticVersionProviderConfiguration.MaxMinorVersion"/>.
+            </item>
+            <item>
+            The value of <see cref="P:Falsus.Providers.Sys.SemanticVersionProviderConfiguration.MinPatchVersion"/> is greater than the
+            value of <see cref="P:Falsus.Providers.Sys.SemanticVersionProviderConfiguration.MaxPatchVersion"/>.
+            </item>
+            <item>
+            The value of <see cref="P:Falsus.Providers.Sys.SemanticVersionProviderConfiguration.MinStageVersion"/> is greater than the
+            value of <see cref="P:Falsus.Providers.Sys.SemanticVersionProviderConfiguration.MaxStageVersion"/>.
+            </item>
+            </list>
+            </exception>
+        </member>
+        <member name="T:Falsus.Providers.Sys.SemanticVersionProviderConfiguration">
+            <summary>
+            This class represents the configuration object of the <see cref="T:Falsus.Providers.Sys.SemanticVersionProvider"/> data provider.
+            </summary>
+        </member>
+        <member name="P:Falsus.Providers.Sys.SemanticVersionProviderConfiguration.IncludeAlphaStage">
+            <summary>
+            Gets or sets a value indicating whether or not the "Alpha" release stage
+            can be used to generate the semantic version.
+            </summary>
+            <value>
+            True if the "Alpha" release stage can be used, otherwise false.
+            </value>
+        </member>
+        <member name="P:Falsus.Providers.Sys.SemanticVersionProviderConfiguration.IncludeBetaStage">
+            <summary>
+            Gets or sets a value indicating whether or not the "Beta" release stage
+            can be used to generate the semantic version.
+            </summary>
+            <value>
+            True if the "Beta" release stage can be used, otherwise false.
+            </value>
+        </member>
+        <member name="P:Falsus.Providers.Sys.SemanticVersionProviderConfiguration.IncludeReleaseCandidateStage">
+            <summary>
+            Gets or sets a value indicating whether or not the "Release candidate" release stage
+            can be used to generate the semantic version.
+            </summary>
+            <value>
+            True if the "Release candidate" release stage can be used, otherwise false.
+            </value>
+        </member>
+        <member name="P:Falsus.Providers.Sys.SemanticVersionProviderConfiguration.UseNumStatusFormat">
+            <summary>
+            Gets or sets a value indicating whether or not the numeric status format
+            should be used to generate the semantic relase stage component of the semantic version.
+            </summary>
+            <value>
+            True if the numeric status format should be used, otherwise false.
+            </value>
+            <remarks>
+            When set to true, instead of generating semantic versions such as "X.X.X-a.X", "X.X.X-b.X" or "X.X.X-rc.X"
+            it will generate semantic versions as follows "X.X.0.X", "X.X.1.X" or "X.X.2.X".
+            </remarks>
+        </member>
+        <member name="P:Falsus.Providers.Sys.SemanticVersionProviderConfiguration.MinMajorVersion">
+            <summary>
+            Gets or sets the minimum inclusive value for the Major component of the version.
+            </summary>
+            <value>
+            A nullable <see cref="T:System.Int32"/> representing the minimum Major version.
+            </value>
+        </member>
+        <member name="P:Falsus.Providers.Sys.SemanticVersionProviderConfiguration.MaxMajorVersion">
+            <summary>
+            Gets or sets the maximum value for the Major component of the version.
+            </summary>
+            <value>
+            A nullable <see cref="T:System.Int32"/> representing the maximum Major version.
+            </value>
+        </member>
+        <member name="P:Falsus.Providers.Sys.SemanticVersionProviderConfiguration.MinMinorVersion">
+            <summary>
+            Gets or sets the minimum inclusive value for the Minor component of the version.
+            </summary>
+            <value>
+            A nullable <see cref="T:System.Int32"/> representing the minimum Minor version.
+            </value>
+        </member>
+        <member name="P:Falsus.Providers.Sys.SemanticVersionProviderConfiguration.MaxMinorVersion">
+            <summary>
+            Gets or sets the maximum value for the Minor component of the version.
+            </summary>
+            <value>
+            A nullable <see cref="T:System.Int32"/> representing the maximum Minor version.
+            </value>
+        </member>
+        <member name="P:Falsus.Providers.Sys.SemanticVersionProviderConfiguration.MinPatchVersion">
+            <summary>
+            Gets or sets the minimum inclusive value for the Patch component of the version.
+            </summary>
+            <value>
+            A nullable <see cref="T:System.Int32"/> representing the minimum Patch version.
+            </value>
+        </member>
+        <member name="P:Falsus.Providers.Sys.SemanticVersionProviderConfiguration.MaxPatchVersion">
+            <summary>
+            Gets or sets the maximum value for the Patch component of the version.
+            </summary>
+            <value>
+            A nullable <see cref="T:System.Int32"/> representing the maximum Patch version.
+            </value>
+        </member>
+        <member name="P:Falsus.Providers.Sys.SemanticVersionProviderConfiguration.MinStageVersion">
+            <summary>
+            Gets or sets the minimum inclusive value for the release stage component of the version.
+            </summary>
+            <value>
+            A nullable <see cref="T:System.Int32"/> representing the minimum release stage version.
+            </value>
+        </member>
+        <member name="P:Falsus.Providers.Sys.SemanticVersionProviderConfiguration.MaxStageVersion">
+            <summary>
+            Gets or sets the maximum inclusive value for the release stage component of the version.
+            </summary>
+            <value>
+            A nullable <see cref="T:System.Int32"/> representing the maximum release stage version.
+            </value>
+        </member>
     </members>
 </doc>

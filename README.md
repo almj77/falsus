@@ -46,6 +46,7 @@
 - Password
 #### System
 - File type
+- Semantic Version
 
 ## 🕹 Usage
 ### Basic
