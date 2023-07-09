@@ -21,6 +21,7 @@
   <ItemGroup>
     <ProjectReference Include="..\..\..\Engine\Falsus\Falsus.csproj" />
     <ProjectReference Include="..\..\..\Shared\Falsus.Shared\Falsus.Shared.csproj" />
+    <ProjectReference Include="..\..\Text\Falsus.Providers.Text\Falsus.Providers.Text.csproj" />
   </ItemGroup>
 
 </Project>

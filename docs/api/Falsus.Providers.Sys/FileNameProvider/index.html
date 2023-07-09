@@ -6,7 +6,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="shortcut icon" href="/assets/img/favicon.ico" type="image/x-icon">
         <link rel="icon" href="/assets/img/favicon.ico" type="image/x-icon">
-        <title>Falsus - API - FileTypeProvider Class</title>
+        <title>Falsus - API - FileNameProvider Class</title>
         <link href="/assets/css/highlight.css" rel="stylesheet">
         <link href="/assets/css/bootstrap/bootstrap.css" rel="stylesheet">
         <link href="/assets/css/adminlte/AdminLTE.css" rel="stylesheet">
@@ -138,9 +138,9 @@
 		<li><a href="/api/Falsus.Providers.Sys">Falsus<wbr>.Providers<wbr>.Sys</a></li>
 		<li role="separator" class="divider"></li>
 			<li class="header">Class Types</li>
-				<li><a href="/api/Falsus.Providers.Sys/FileNameProvider">FileNameProvider</a></li>
+				<li class="selected"><a href="/api/Falsus.Providers.Sys/FileNameProvider">FileNameProvider</a></li>
 				<li><a href="/api/Falsus.Providers.Sys/FileNameProviderConfiguration">File<wbr>Name<wbr>Provider<wbr>Configuration</a></li>
-				<li class="selected"><a href="/api/Falsus.Providers.Sys/FileTypeProvider">FileTypeProvider</a></li>
+				<li><a href="/api/Falsus.Providers.Sys/FileTypeProvider">FileTypeProvider</a></li>
 				<li><a href="/api/Falsus.Providers.Sys/SemanticVersionProvider">Semantic<wbr>Version<wbr>Provider</a></li>
 				<li><a href="/api/Falsus.Providers.Sys/SemanticVersionProviderConfiguration">Semantic<wbr>Version<wbr>Provider<wbr>Configuration</a></li>
 
@@ -157,14 +157,14 @@
 
 
 <section class="content-header">
-	<h1>FileTypeProvider <small>Class</small></h1>
+	<h1>FileNameProvider <small>Class</small></h1>
 </section>
 <section class="content">
 	
 	
 		<h1 id="Summary">Summary</h1>
 	<div class="lead">
-    Represents a provider of <code class="cs"><a href="/api/Falsus.Shared.Models/FileTypeModel">FileTypeModel</a></code> values.
+    Represents a provider of <code class="cs"><a href="/">string</a></code> values representing file names.
     </div>
 
 		<div class="panel panel-default">
@@ -179,7 +179,7 @@
 								<dt>Interfaces</dt>
 								<dd>
 									<ul class="list-unstyled">
-											<li><a href="/api/Falsus.Providers/IDataGeneratorProvider_1">I<wbr>Data<wbr>Generator<wbr>Provider</a><wbr>&lt;<a href="/api/Falsus.Shared.Models/FileTypeModel">FileTypeModel</a>&gt;<wbr></li>								
+											<li><a href="/api/Falsus.Providers/IDataGeneratorProvider_1">I<wbr>Data<wbr>Generator<wbr>Provider</a><wbr>&lt;string&gt;<wbr></li>								
 											<li><a href="/api/Falsus.Providers/IDataGeneratorProvider">I<wbr>Data<wbr>Generator<wbr>Provider</a></li>								
 									</ul>
 								</dd>
@@ -188,7 +188,7 @@
 								<dd>
 									<ul class="list-unstyled">										
 											<li>object</li>								
-											<li><a href="/api/Falsus.Providers/DataGeneratorProvider_1">Data<wbr>Generator<wbr>Provider</a><wbr>&lt;<a href="/api/Falsus.Shared.Models/FileTypeModel">FileTypeModel</a>&gt;<wbr></li>								
+											<li><a href="/api/Falsus.Providers/DataGeneratorProvider_1">Data<wbr>Generator<wbr>Provider</a><wbr>&lt;string&gt;<wbr></li>								
 									</ul>
 								</dd>				
 							
@@ -198,12 +198,12 @@
 					<div class="col-md-6">
 						<div class="mermaid">
 							graph BT
-	Type--&gt;Base0["DataGeneratorProvider&lt;FileTypeModel&gt;"]
+	Type--&gt;Base0["DataGeneratorProvider&lt;string&gt;"]
 	Base0--&gt;Base1["object"]
-	Type-.-&gt;Interface0["IDataGeneratorProvider&lt;FileTypeModel&gt;"]
+	Type-.-&gt;Interface0["IDataGeneratorProvider&lt;string&gt;"]
 	Type-.-&gt;Interface1["IDataGeneratorProvider"]
 	click Interface1 "/api/Falsus.Providers/IDataGeneratorProvider"
-	Type["FileTypeProvider"]
+	Type["FileNameProvider"]
 class Type type-node
 
 						</div>
@@ -213,8 +213,8 @@ class Type type-node
 		</div>
 
 	<h1 id="Syntax">Syntax</h1>
-	<pre><code>public class FileTypeProvider : DataGeneratorProvider&lt;FileTypeModel&gt;, 
-    IDataGeneratorProvider&lt;FileTypeModel&gt;, IDataGeneratorProvider</code></pre>
+	<pre><code>public class FileNameProvider : DataGeneratorProvider&lt;string&gt;, IDataGeneratorProvider&lt;string&gt;, 
+    IDataGeneratorProvider</code></pre>
 
 
 
@@ -233,9 +233,9 @@ class Type type-node
 							</tr>
 						</thead>
 							<tbody><tr>
-								<td><a href="/api/Falsus.Providers.Sys/FileTypeProvider/7473B369">FileTypeProvider<wbr>()<wbr></a></td>
+								<td><a href="/api/Falsus.Providers.Sys/FileNameProvider/4074579C">FileNameProvider<wbr>(<wbr>File<wbr>Name<wbr>Provider<wbr>Configuration)<wbr></a></td>
 									<td>
-    Initializes a new instance of the <code class="cs"><a href="/api/Falsus.Providers.Sys/FileTypeProvider">FileTypeProvider</a></code> class.
+    Initializes a new instance of the <code class="cs"><a href="/api/Falsus.Providers.Sys/FileNameProvider">FileNameProvider</a></code> class.
     </td>
 							</tr>
 					</tbody></table>
@@ -256,12 +256,23 @@ class Type type-node
 							</tr>
 						</thead>
 							<tbody><tr>
-								<td><a href="/api/Falsus.Providers.Sys/FileTypeProvider/D361BB93">MimeTypeArgumentName</a></td>
-								<td>mimetype</td>
+								<td><a href="/api/Falsus.Providers.Sys/FileNameProvider/26B39E67">Extension<wbr>Argument<wbr>Name</a></td>
+								<td>extension</td>
 								<td>
 									<div>
-    The name of the input argument that contains an instance of
-    <code class="cs"><a href="/api/Falsus.Shared.Models/MimeTypeModel">MimeTypeModel</a></code> to use on the value generation process.
+    The name of the input argument that contains the
+    <code class="cs"><a href="/">string</a></code> to be used as the extension.
+    </div>
+											<div><small><em>static</em></small></div>
+								</td>
+							</tr>
+							<tr>
+								<td><a href="/api/Falsus.Providers.Sys/FileNameProvider/3AAE138C">FileNameArgumentName</a></td>
+								<td>filename</td>
+								<td>
+									<div>
+    The name of the input argument that contains the
+    <code class="cs"><a href="/">string</a></code> to be used as the file name.
     </div>
 											<div><small><em>static</em></small></div>
 								</td>
@@ -284,38 +295,38 @@ class Type type-node
 							</tr>
 						</thead>
 							<tbody><tr>
-								<td><a href="/api/Falsus.Providers.Sys/FileTypeProvider/B245718D">GetRangedRowValue<wbr>(FileTypeModel, <wbr>FileTypeModel, <wbr>FileTypeModel[])<wbr></a></td>
-								<td><a href="/api/Falsus.Shared.Models/FileTypeModel">FileTypeModel</a></td>
+								<td><a href="/api/Falsus.Providers.Sys/FileNameProvider/4ED57AAB">GetRangedRowValue<wbr>(string, <wbr>string, <wbr>string[])<wbr></a></td>
+								<td>string</td>
 								<td>
 									<div>
-    Generates a random file type
+    Generates a random file name
     that is greater than the value of <span name="minValue" class="paramref">minValue</span> and lower
     than the value of <span name="maxValue" class="paramref">maxValue</span>.
     </div>
 								</td>
 							</tr>
 							<tr>
-								<td><a href="/api/Falsus.Providers.Sys/FileTypeProvider/99851D9A">GetRowValue<wbr>(<wbr>Data<wbr>Generator<wbr>Context, <wbr>FileTypeModel[])<wbr></a></td>
-								<td><a href="/api/Falsus.Shared.Models/FileTypeModel">FileTypeModel</a></td>
+								<td><a href="/api/Falsus.Providers.Sys/FileNameProvider/1692BC98">GetRowValue<wbr>(<wbr>Data<wbr>Generator<wbr>Context, <wbr>string[])<wbr></a></td>
+								<td>string</td>
 								<td>
 									<div>
-    Generates a random <code class="cs"><a href="/api/Falsus.Shared.Models/FileTypeModel">FileTypeModel</a></code> instance based on the context and excluded objects.
+    Generates a random <code class="cs"><a href="/">string</a></code> instance based on the context and excluded objects.
     </div>
 								</td>
 							</tr>
 							<tr>
-								<td><a href="/api/Falsus.Providers.Sys/FileTypeProvider/506F2BF7">GetRowValue<wbr>(<wbr>Data<wbr>Generator<wbr>Context, <wbr>WeightedRange<wbr>&lt;<wbr>File<wbr>Type<wbr>Model&gt;<wbr>[], <wbr>FileTypeModel[])<wbr></a></td>
-								<td><a href="/api/Falsus.Shared.Models/FileTypeModel">FileTypeModel</a></td>
+								<td><a href="/api/Falsus.Providers.Sys/FileNameProvider/43E90D55">GetRowValue<wbr>(<wbr>Data<wbr>Generator<wbr>Context, <wbr>WeightedRange<wbr>&lt;string&gt;<wbr>[], <wbr>string[])<wbr></a></td>
+								<td>string</td>
 								<td>
 									<div>
-    Generates a random file type
+    Generates a random file name
     based on the context and excluded ranges.
     </div>
 								</td>
 							</tr>
 							<tr>
-								<td><a href="/api/Falsus.Providers.Sys/FileTypeProvider/B01C8462">GetRowValue<wbr>(string)<wbr></a></td>
-								<td><a href="/api/Falsus.Shared.Models/FileTypeModel">FileTypeModel</a></td>
+								<td><a href="/api/Falsus.Providers.Sys/FileNameProvider/E74A1187">GetRowValue<wbr>(string)<wbr></a></td>
+								<td>string</td>
 								<td>
 									<div>
     Gets a <code class="cs"><a href="/">string</a></code> value based on the provided <span name="id" class="paramref">id</span>.
@@ -323,7 +334,7 @@ class Type type-node
 								</td>
 							</tr>
 							<tr>
-								<td><a href="/api/Falsus.Providers.Sys/FileTypeProvider/7654240F">Get<wbr>Supported<wbr>Arguments<wbr>()<wbr></a></td>
+								<td><a href="/api/Falsus.Providers.Sys/FileNameProvider/1EA7C657">Get<wbr>Supported<wbr>Arguments<wbr>()<wbr></a></td>
 								<td>Dictionary<wbr>&lt;string, <wbr>Type&gt;<wbr></td>
 								<td>
 									<div>
@@ -332,20 +343,30 @@ class Type type-node
 								</td>
 							</tr>
 							<tr>
-								<td><a href="/api/Falsus.Providers.Sys/FileTypeProvider/3490F6BA">GetValueId<wbr>(FileTypeModel)<wbr></a></td>
+								<td><a href="/api/Falsus.Providers.Sys/FileNameProvider/9900EF80">GetValueId<wbr>(string)<wbr></a></td>
 								<td>string</td>
 								<td>
 									<div>
-    Gets a unique identifier for the provided <code class="cs"><a href="/api/Falsus.Shared.Models/FileTypeModel">FileTypeModel</a></code>.
+    Gets a unique identifier for the provided <code class="cs"><a href="/">string</a></code>.
     </div>
 								</td>
 							</tr>
 							<tr>
-								<td><a href="/api/Falsus.Providers.Sys/FileTypeProvider/DF6C0955">Load<wbr>(<wbr>Data<wbr>Generator<wbr>Property<wbr>&lt;<wbr>File<wbr>Type<wbr>Model&gt;<wbr>, <wbr>int)<wbr></a></td>
+								<td><a href="/api/Falsus.Providers.Sys/FileNameProvider/3BAF00D4">Load<wbr>(<wbr>Data<wbr>Generator<wbr>Property<wbr>&lt;string&gt;<wbr>, <wbr>int)<wbr></a></td>
 								<td>void</td>
 								<td>
 									<div>
-    Instructs the data provider to prepare the data for generation&gt;.
+    Instructs the data provider to prepare the data for generation based on the
+    provided <code class="cs"><a href="/api/Falsus.Providers.Sys/FileNameProviderConfiguration">FileNameProviderConfiguration</a></code>.
+    </div>
+								</td>
+							</tr>
+							<tr>
+								<td><a href="/api/Falsus.Providers.Sys/FileNameProvider/3FFE2FBC">On<wbr>Initialize<wbr>Randomizer<wbr>(int?)<wbr></a></td>
+								<td>void</td>
+								<td>
+									<div>
+    Method invoked after the Random instance has been initialized.
     </div>
 								</td>
 							</tr>
@@ -357,7 +378,7 @@ class Type type-node
 
 	<h1 id="SeeAlso">See Also</h1>
 	<ul class="list-unstyled">
-			<li><code><a href="/api/Falsus.Providers/DataGeneratorProvider_1">DataGeneratorProvider&lt;T&gt;</a></code></li>
+			<li><code><a href="/api/Falsus.Providers/GenericArrayProvider_1">GenericArrayProvider&lt;T&gt;</a></code></li>
 	</ul>
 
 	

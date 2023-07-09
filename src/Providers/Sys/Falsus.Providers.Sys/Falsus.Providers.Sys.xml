@@ -4,6 +4,253 @@
         <name>Falsus.Providers.Sys</name>
     </assembly>
     <members>
+        <member name="T:Falsus.Providers.Sys.FileNameProvider">
+            <summary>
+            Represents a provider of <see cref="T:System.String"/> values representing file names.
+            </summary>
+            <seealso cref="T:Falsus.Providers.GenericArrayProvider`1"/>
+        </member>
+        <member name="F:Falsus.Providers.Sys.FileNameProvider.FileNameArgumentName">
+            <summary>
+            The name of the input argument that contains the
+            <see cref="T:System.String"/> to be used as the file name.
+            </summary>
+        </member>
+        <member name="F:Falsus.Providers.Sys.FileNameProvider.ExtensionArgumentName">
+            <summary>
+            The name of the input argument that contains the
+            <see cref="T:System.String"/> to be used as the extension.
+            </summary>
+        </member>
+        <member name="F:Falsus.Providers.Sys.FileNameProvider.MaxAttempts">
+            <summary>
+            The number of attemps to try to generate a unique value
+            before throwing an exception.
+            </summary>
+        </member>
+        <member name="F:Falsus.Providers.Sys.FileNameProvider.configuration">
+            <summary>
+            The configuration of this provider.
+            </summary>
+        </member>
+        <member name="F:Falsus.Providers.Sys.FileNameProvider.fileTypeProvider">
+            <summary>
+            The provider of <see cref="T:Falsus.Shared.Models.FileTypeModel"/> instances.
+            </summary>
+        </member>
+        <member name="F:Falsus.Providers.Sys.FileNameProvider.wordProvider">
+            <summary>
+            The provider of <see cref="T:System.String"/> representing words.
+            </summary>
+        </member>
+        <member name="M:Falsus.Providers.Sys.FileNameProvider.#ctor(Falsus.Providers.Sys.FileNameProviderConfiguration)">
+            <summary>
+            Initializes a new instance of the <see cref="T:Falsus.Providers.Sys.FileNameProvider"/> class.
+            </summary>
+            <param name="configuration">The configuration to use.</param>
+            <remarks>
+            The <paramref name="configuration"/> must not be null and the
+            <see cref="!:FileNameProviderConfiguration.ConnectionString"/> cannot be empty.
+            </remarks>
+            <exception cref="T:System.ArgumentNullException">
+            Thrown when the <see cref="F:Falsus.Providers.Sys.FileNameProvider.configuration"/> instance is null.
+            </exception>
+        </member>
+        <member name="M:Falsus.Providers.Sys.FileNameProvider.GetSupportedArguments">
+            <summary>
+            Gets the definition of the input arguments supported by this provider.
+            </summary>
+            <returns>
+            A <see cref="T:System.Collections.Generic.Dictionary`2"/> containing the name of the
+            argument and the expected type of the argument value.
+            </returns>
+        </member>
+        <member name="M:Falsus.Providers.Sys.FileNameProvider.GetRangedRowValue(System.String,System.String,System.String[])">
+            <summary>
+            Generates a random file name
+            that is greater than the value of <paramref name="minValue"/> and lower
+            than the value of <paramref name="maxValue"/>.
+            </summary>
+            <param name="minValue">The exclusive lower bound of the random object returned.</param>
+            <param name="maxValue">The exclusive upper bound of the random object returned.</param>
+            <param name="excludedObjects">
+            An array of <see cref="T:System.String"/> values that cannot be returned
+            by the provider.
+            </param>
+            <returns>
+            A random file name greater than <paramref name="minValue"/>
+            and less than <paramref name="maxValue"/>.
+            </returns>
+            <remarks>
+            <paramref name="maxValue"/> must be greater than <paramref name="minValue"/>.
+            </remarks>
+            <exception cref="T:System.NotSupportedException">
+            Thrown because the generation of ranged file names is not supported.
+            </exception>
+        </member>
+        <member name="M:Falsus.Providers.Sys.FileNameProvider.GetRowValue(Falsus.DataGeneratorContext,Falsus.GeneratorProperties.WeightedRange{System.String}[],System.String[])">
+            <summary>
+            Generates a random file name
+            based on the context and excluded ranges.
+            </summary>
+            <param name="context">
+            An instance of <see cref="T:Falsus.DataGeneratorContext"/> defining
+            the current generation context.
+            </param>
+            <param name="excludedRanges">
+            An array of <see cref="T:Falsus.GeneratorProperties.WeightedRange`1"/>s defining the ranges
+            that cannot be returned by the provider.
+            </param>
+            <param name="excludedObjects">
+            An array of <see cref="T:System.String"/> values that cannot be returned
+            by the provider.
+            </param>
+            <returns>
+            A random instance of <see cref="T:System.String"/> that is outside of
+            the specified <paramref name="excludedRanges"/>.
+            </returns>
+            <exception cref="T:System.NotSupportedException">
+            Thrown because the generation of ranged file names is not supported.
+            </exception>
+        </member>
+        <member name="M:Falsus.Providers.Sys.FileNameProvider.GetRowValue(System.String)">
+            <summary>
+            Gets a <see cref="T:System.String"/> value based on the provided <paramref name="id"/>.
+            </summary>
+            <param name="id">An unique identifier for the object.</param>
+            <returns>
+            A <see cref="T:System.String"/> value with the specified unique identifier.
+            </returns>
+            <remarks>
+            Since both the <paramref name="id"/> and returning type are <see cref="T:System.String"/>
+            this method returns exactly what is passed on the <paramref name="id"/> argument.
+            </remarks>
+        </member>
+        <member name="M:Falsus.Providers.Sys.FileNameProvider.GetRowValue(Falsus.DataGeneratorContext,System.String[])">
+            <summary>
+            Generates a random <see cref="T:System.String"/> instance based on the context and excluded objects.
+            </summary>
+            <param name="context">
+            An instance of <see cref="T:Falsus.DataGeneratorContext"/> defining
+            the current generation context.
+            </param>
+            <param name="excludedObjects">
+            An array of <see cref="T:System.String"/> instances that cannot be returned
+            by the provider.
+            </param>
+            <returns>
+            A random city name.
+            </returns>
+            <remarks>
+            If the <see cref="T:System.String"/> is provided then this method will
+            return the name of the file name belonging to the specified <see cref="T:System.String"/>
+            argument value.
+            </remarks>
+        </member>
+        <member name="M:Falsus.Providers.Sys.FileNameProvider.GetValueId(System.String)">
+            <summary>
+            Gets a unique identifier for the provided <see cref="T:System.String"/>.
+            </summary>
+            <param name="value">The <see cref="T:System.String"/> value.</param>
+            <returns>
+            A <see cref="T:System.String"/> containing the unique identifier of the provided value.
+            </returns>
+            /// <remarks>
+            Since both the <paramref name="value"/> and returning type are <see cref="T:System.String"/>
+            this method returns exactly what is passed on the <paramref name="value"/> argument.
+            </remarks>
+        </member>
+        <member name="M:Falsus.Providers.Sys.FileNameProvider.Load(Falsus.GeneratorProperties.DataGeneratorProperty{System.String},System.Int32)">
+            <summary>
+            Instructs the data provider to prepare the data for generation based on the
+            provided <see cref="T:Falsus.Providers.Sys.FileNameProviderConfiguration"/>.
+            </summary>
+            <param name="property">
+            An implementation of the generic <see cref="T:Falsus.GeneratorProperties.DataGeneratorProperty`1"/>
+            defining the property that this provider has been attached to.
+            </param>
+            <param name="rowCount">The desired number of rows to be generated.</param>
+            <remarks>
+            Invoked before any calculation takes place, the goal of this method is
+            usually preparing or caching data for the generation taking place afterwards.
+            </remarks>
+        </member>
+        <member name="M:Falsus.Providers.Sys.FileNameProvider.OnInitializeRandomizer(System.Nullable{System.Int32})">
+            <summary>
+            Method invoked after the Random instance has been initialized.
+            </summary>
+            <param name="seed">
+            A number used to calculate a starting value for the pseudo-random number sequence.
+            </param>
+        </member>
+        <member name="M:Falsus.Providers.Sys.FileNameProvider.ValidateConfiguration">
+            <summary>
+            Checks if the <see cref="F:Falsus.Providers.Sys.FileNameProvider.configuration"/> object is assigned and correct.
+            </summary>
+            <exception cref="T:System.InvalidOperationException">
+            Thrown when the <see cref="P:Falsus.Providers.Sys.FileNameProviderConfiguration.MinWordCount"/> is greater than the <see cref="P:Falsus.Providers.Sys.FileNameProviderConfiguration.MaxWordCount"/>
+            or when the <see cref="P:Falsus.Providers.Sys.FileNameProviderConfiguration.MinExtensionCount"/> is greater than the <see cref="P:Falsus.Providers.Sys.FileNameProviderConfiguration.MaxExtensionCount"/>
+            or when the <see cref="P:Falsus.Providers.Sys.FileNameProviderConfiguration.MinWordCount"/> is less than or equal to zero.
+            </exception>
+        </member>
+        <member name="T:Falsus.Providers.Sys.FileNameProviderConfiguration">
+            <summary>
+            This class represents the configuration object of the <see cref="T:Falsus.Providers.Sys.FileNameProvider"/> data provider.
+            </summary>
+        </member>
+        <member name="M:Falsus.Providers.Sys.FileNameProviderConfiguration.#ctor">
+            <summary>
+            Initializes a new instance of the <see cref="T:Falsus.Providers.Sys.FileNameProviderConfiguration"/> class.
+            </summary>
+        </member>
+        <member name="P:Falsus.Providers.Sys.FileNameProviderConfiguration.MinWordCount">
+            <summary>
+            Gets or sets the minimum number of words that should
+            compose the file name.
+            </summary>
+            <value>
+            An integer representing the min. amount of words.
+            </value>
+            <remarks>
+            Default value is 1.
+            </remarks>
+        </member>
+        <member name="P:Falsus.Providers.Sys.FileNameProviderConfiguration.MaxWordCount">
+            <summary>
+            Gets or sets the maximum number of words that should
+            composite the file name.
+            </summary>
+            <value>
+            An integer representing the max. amount of words.
+            </value>
+            <remarks>
+            Default value is 3.
+            </remarks>
+        </member>
+        <member name="P:Falsus.Providers.Sys.FileNameProviderConfiguration.MinExtensionCount">
+            <summary>
+            Gets or sets the maximum number of extensions that should
+            compose the file name.
+            </summary>
+            <value>
+            An integer representing the min. amount of extensions.
+            </value>
+            <remarks>
+            Default value is 1.
+            </remarks>
+        </member>
+        <member name="P:Falsus.Providers.Sys.FileNameProviderConfiguration.MaxExtensionCount">
+            <summary>
+            Gets or sets the maximum number of extensions that should
+            compose the file name.
+            </summary>
+            <value>
+            An integer representing the max. amount of extensions.
+            </value>
+            <remarks>
+            Default value is 1.
+            </remarks>
+        </member>
         <member name="T:Falsus.Providers.Sys.FileTypeProvider">
             <summary>
             Represents a provider of <see cref="T:Falsus.Shared.Models.FileTypeModel"/> values.
