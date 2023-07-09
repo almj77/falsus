@@ -44,6 +44,8 @@
 - MIME type
 - Avatar
 - Password
+#### System
+- File type
 
 ## 🕹 Usage
 ### Basic
