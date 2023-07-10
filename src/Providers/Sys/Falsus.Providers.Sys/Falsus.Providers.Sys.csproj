@@ -1,0 +1,27 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netstandard2.0</TargetFramework>
+    <GenerateDocumentationFile>True</GenerateDocumentationFile>
+    <DocumentationFile>$(OutputPath)$(AssemblyName).xml</DocumentationFile>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="Datasets\FileTypes.json" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <EmbeddedResource Include="..\..\Internet\Falsus.Providers.Internet\Datasets\MimeTypes.json" Link="Datasets\MimeTypes.json" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <EmbeddedResource Include="Datasets\FileTypes.json" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\..\..\Engine\Falsus\Falsus.csproj" />
+    <ProjectReference Include="..\..\..\Shared\Falsus.Shared\Falsus.Shared.csproj" />
+    <ProjectReference Include="..\..\Text\Falsus.Providers.Text\Falsus.Providers.Text.csproj" />
+  </ItemGroup>
+
+</Project>
