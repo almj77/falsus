@@ -1573,6 +1573,69 @@
             A hash code for the current object.
             </returns>
         </member>
+        <member name="T:Falsus.Shared.Models.JobModel">
+            <summary>
+            This class represents a Job/Profession.
+            </summary>
+        </member>
+        <member name="P:Falsus.Shared.Models.JobModel.Id">
+            <summary>
+            Gets or sets the unique identifier of the job.
+            </summary>
+            <value>
+            A <see cref="T:System.String"/> containing the job unique identifier.
+            </value>
+        </member>
+        <member name="P:Falsus.Shared.Models.JobModel.Title">
+            <summary>
+            Gets or sets the title of the job.
+            </summary>
+            <value>
+            A <see cref="T:System.String"/> containing the job title.
+            </value>
+        </member>
+        <member name="P:Falsus.Shared.Models.JobModel.ParentJobId">
+            <summary>
+            Gets or sets the unique identifier of the parent job.
+            </summary>
+            <value>
+            A <see cref="T:System.String"/> containing the parent job identifier.
+            </value>
+        </member>
+        <member name="M:Falsus.Shared.Models.JobModel.CompareTo(Falsus.Shared.Models.JobModel)">
+            <summary>
+            Compares this instance with a specified <see cref="T:Falsus.Shared.Models.JobModel"/> and
+            returns an integer that indicates whether this instance precedes, follows, or
+            appears in the same position in the sort order as the specified <see cref="T:Falsus.Shared.Models.JobModel"/>.
+            </summary>
+            <param name="other">The other <see cref="T:Falsus.Shared.Models.JobModel"/> to be compared with this instance.</param>
+            <returns>
+            A 32-bit signed integer that indicates whether this instance precedes, follows, or
+            appears in the same position in the sort order as the value parameter.
+            </returns>
+        </member>
+        <member name="M:Falsus.Shared.Models.JobModel.Equals(Falsus.Shared.Models.JobModel)">
+            <summary>
+            Indicates whether the current object is equal to another object of the same type.
+            </summary>
+            <param name="other">An object to compare with this object.</param>
+            <returns>True if the current object is equal to the other parameter; otherwise, false.</returns>
+        </member>
+        <member name="M:Falsus.Shared.Models.JobModel.Equals(System.Object)">
+            <summary>
+            Indicates whether the current object is equal to another object of the same type.
+            </summary>
+            <param name="obj">An object to compare with this object.</param>
+            <returns>True if the current object is equal to the other parameter; otherwise, false.</returns>
+        </member>
+        <member name="M:Falsus.Shared.Models.JobModel.GetHashCode">
+            <summary>
+            Calculates the hash for this instance.
+            </summary>
+            <returns>
+            A hash code for the current object.
+            </returns>
+        </member>
         <member name="T:Falsus.Shared.Models.MimeTypeModel">
             <summary>
             This class represents a MIME type.
