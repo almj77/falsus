@@ -1,4 +1,4 @@
-<Project Sdk="Microsoft.NET.Sdk">
+﻿<Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
     <TargetFramework>net6.0</TargetFramework>
@@ -7,6 +7,107 @@
 
     <IsPackable>false</IsPackable>
   </PropertyGroup>
+
+  <ItemGroup>
+    <EmbeddedResource Include="..\Falsus.Providers.Person\Datasets\JobSkills\JobSkills_01.json" Link="Datasets\JobSkills\JobSkills_01.json" />
+    <EmbeddedResource Include="..\Falsus.Providers.Person\Datasets\JobSkills\JobSkills_02.json" Link="Datasets\JobSkills\JobSkills_02.json" />
+    <EmbeddedResource Include="..\Falsus.Providers.Person\Datasets\JobSkills\JobSkills_03.json" Link="Datasets\JobSkills\JobSkills_03.json" />
+    <EmbeddedResource Include="..\Falsus.Providers.Person\Datasets\JobSkills\JobSkills_04.json" Link="Datasets\JobSkills\JobSkills_04.json" />
+    <EmbeddedResource Include="..\Falsus.Providers.Person\Datasets\JobSkills\JobSkills_05.json" Link="Datasets\JobSkills\JobSkills_05.json" />
+    <EmbeddedResource Include="..\Falsus.Providers.Person\Datasets\JobSkills\JobSkills_06.json" Link="Datasets\JobSkills\JobSkills_06.json" />
+    <EmbeddedResource Include="..\Falsus.Providers.Person\Datasets\JobSkills\JobSkills_07.json" Link="Datasets\JobSkills\JobSkills_07.json" />
+    <EmbeddedResource Include="..\Falsus.Providers.Person\Datasets\JobSkills\JobSkills_08.json" Link="Datasets\JobSkills\JobSkills_08.json" />
+    <EmbeddedResource Include="..\Falsus.Providers.Person\Datasets\JobSkills\JobSkills_09.json" Link="Datasets\JobSkills\JobSkills_09.json" />
+    <EmbeddedResource Include="..\Falsus.Providers.Person\Datasets\JobSkills\JobSkills_10.json" Link="Datasets\JobSkills\JobSkills_10.json" />
+    <EmbeddedResource Include="..\Falsus.Providers.Person\Datasets\JobSkills\JobSkills_11.json" Link="Datasets\JobSkills\JobSkills_11.json" />
+    <EmbeddedResource Include="..\Falsus.Providers.Person\Datasets\JobSkills\JobSkills_12.json" Link="Datasets\JobSkills\JobSkills_12.json" />
+    <EmbeddedResource Include="..\Falsus.Providers.Person\Datasets\JobSkills\JobSkills_13.json" Link="Datasets\JobSkills\JobSkills_13.json" />
+    <EmbeddedResource Include="..\Falsus.Providers.Person\Datasets\JobSkills\JobSkills_14.json" Link="Datasets\JobSkills\JobSkills_14.json" />
+    <EmbeddedResource Include="..\Falsus.Providers.Person\Datasets\JobSkills\JobSkills_15.json" Link="Datasets\JobSkills\JobSkills_15.json" />
+    <EmbeddedResource Include="..\Falsus.Providers.Person\Datasets\JobSkills\JobSkills_16.json" Link="Datasets\JobSkills\JobSkills_16.json" />
+    <EmbeddedResource Include="..\Falsus.Providers.Person\Datasets\JobSkills\JobSkills_17.json" Link="Datasets\JobSkills\JobSkills_17.json" />
+    <EmbeddedResource Include="..\Falsus.Providers.Person\Datasets\JobSkills\JobSkills_18.json" Link="Datasets\JobSkills\JobSkills_18.json" />
+    <EmbeddedResource Include="..\Falsus.Providers.Person\Datasets\JobSkills\JobSkills_19.json" Link="Datasets\JobSkills\JobSkills_19.json" />
+    <EmbeddedResource Include="..\Falsus.Providers.Person\Datasets\JobSkills\JobSkills_20.json" Link="Datasets\JobSkills\JobSkills_20.json" />
+    <EmbeddedResource Include="..\Falsus.Providers.Person\Datasets\JobSkills\JobSkills_21.json" Link="Datasets\JobSkills\JobSkills_21.json" />
+    <EmbeddedResource Include="..\Falsus.Providers.Person\Datasets\JobSkills\JobSkills_22.json" Link="Datasets\JobSkills\JobSkills_22.json" />
+    <EmbeddedResource Include="..\Falsus.Providers.Person\Datasets\JobSkills\JobSkills_23.json" Link="Datasets\JobSkills\JobSkills_23.json" />
+    <EmbeddedResource Include="..\Falsus.Providers.Person\Datasets\JobSkills\JobSkills_24.json" Link="Datasets\JobSkills\JobSkills_24.json" />
+    <EmbeddedResource Include="..\Falsus.Providers.Person\Datasets\JobSkills\JobSkills_25.json" Link="Datasets\JobSkills\JobSkills_25.json" />
+    <EmbeddedResource Include="..\Falsus.Providers.Person\Datasets\JobSkills\JobSkills_26.json" Link="Datasets\JobSkills\JobSkills_26.json" />
+    <EmbeddedResource Include="..\Falsus.Providers.Person\Datasets\JobSkills\JobSkills_27.json" Link="Datasets\JobSkills\JobSkills_27.json" />
+    <EmbeddedResource Include="..\Falsus.Providers.Person\Datasets\JobSkills\JobSkills_28.json" Link="Datasets\JobSkills\JobSkills_28.json" />
+    <EmbeddedResource Include="..\Falsus.Providers.Person\Datasets\JobSkills\JobSkills_29.json" Link="Datasets\JobSkills\JobSkills_29.json" />
+    <EmbeddedResource Include="..\Falsus.Providers.Person\Datasets\JobSkills\JobSkills_30.json" Link="Datasets\JobSkills\JobSkills_30.json" />
+    <EmbeddedResource Include="..\Falsus.Providers.Person\Datasets\JobSkills\JobSkills_31.json" Link="Datasets\JobSkills\JobSkills_31.json" />
+    <EmbeddedResource Include="..\Falsus.Providers.Person\Datasets\JobSkills\JobSkills_32.json" Link="Datasets\JobSkills\JobSkills_32.json" />
+    <EmbeddedResource Include="..\Falsus.Providers.Person\Datasets\JobSkills\JobSkills_33.json" Link="Datasets\JobSkills\JobSkills_33.json" />
+    <EmbeddedResource Include="..\Falsus.Providers.Person\Datasets\JobSkills\JobSkills_34.json" Link="Datasets\JobSkills\JobSkills_34.json" />
+    <EmbeddedResource Include="..\Falsus.Providers.Person\Datasets\JobSkills\JobSkills_35.json" Link="Datasets\JobSkills\JobSkills_35.json" />
+    <EmbeddedResource Include="..\Falsus.Providers.Person\Datasets\JobSkills\JobSkills_36.json" Link="Datasets\JobSkills\JobSkills_36.json" />
+    <EmbeddedResource Include="..\Falsus.Providers.Person\Datasets\JobSkills\JobSkills_37.json" Link="Datasets\JobSkills\JobSkills_37.json" />
+    <EmbeddedResource Include="..\Falsus.Providers.Person\Datasets\JobSkills\JobSkills_38.json" Link="Datasets\JobSkills\JobSkills_38.json" />
+    <EmbeddedResource Include="..\Falsus.Providers.Person\Datasets\JobSkills\JobSkills_39.json" Link="Datasets\JobSkills\JobSkills_39.json" />
+    <EmbeddedResource Include="..\Falsus.Providers.Person\Datasets\JobSkills\JobSkills_40.json" Link="Datasets\JobSkills\JobSkills_40.json" />
+    <EmbeddedResource Include="..\Falsus.Providers.Person\Datasets\JobSkills\JobSkills_41.json" Link="Datasets\JobSkills\JobSkills_41.json" />
+    <EmbeddedResource Include="..\Falsus.Providers.Person\Datasets\JobSkills\JobSkills_42.json" Link="Datasets\JobSkills\JobSkills_42.json" />
+    <EmbeddedResource Include="..\Falsus.Providers.Person\Datasets\JobSkills\JobSkills_43.json" Link="Datasets\JobSkills\JobSkills_43.json" />
+    <EmbeddedResource Include="..\Falsus.Providers.Person\Datasets\JobSkills\JobSkills_44.json" Link="Datasets\JobSkills\JobSkills_44.json" />
+    <EmbeddedResource Include="..\Falsus.Providers.Person\Datasets\JobSkills\JobSkills_45.json" Link="Datasets\JobSkills\JobSkills_45.json" />
+    <EmbeddedResource Include="..\Falsus.Providers.Person\Datasets\JobSkills\JobSkills_46.json" Link="Datasets\JobSkills\JobSkills_46.json" />
+    <EmbeddedResource Include="..\Falsus.Providers.Person\Datasets\JobSkills\JobSkills_47.json" Link="Datasets\JobSkills\JobSkills_47.json" />
+    <EmbeddedResource Include="..\Falsus.Providers.Person\Datasets\JobSkills\JobSkills_48.json" Link="Datasets\JobSkills\JobSkills_48.json" />
+    <EmbeddedResource Include="..\Falsus.Providers.Person\Datasets\JobSkills\JobSkills_49.json" Link="Datasets\JobSkills\JobSkills_49.json" />
+    <EmbeddedResource Include="..\Falsus.Providers.Person\Datasets\JobSkills\JobSkills_50.json" Link="Datasets\JobSkills\JobSkills_50.json" />
+    <EmbeddedResource Include="..\Falsus.Providers.Person\Datasets\JobSkills\JobSkills_51.json" Link="Datasets\JobSkills\JobSkills_51.json" />
+    <EmbeddedResource Include="..\Falsus.Providers.Person\Datasets\JobSkills\JobSkills_52.json" Link="Datasets\JobSkills\JobSkills_52.json" />
+    <EmbeddedResource Include="..\Falsus.Providers.Person\Datasets\JobSkills\JobSkills_53.json" Link="Datasets\JobSkills\JobSkills_53.json" />
+    <EmbeddedResource Include="..\Falsus.Providers.Person\Datasets\JobSkills\JobSkills_54.json" Link="Datasets\JobSkills\JobSkills_54.json" />
+    <EmbeddedResource Include="..\Falsus.Providers.Person\Datasets\JobSkills\JobSkills_55.json" Link="Datasets\JobSkills\JobSkills_55.json" />
+    <EmbeddedResource Include="..\Falsus.Providers.Person\Datasets\JobSkills\JobSkills_56.json" Link="Datasets\JobSkills\JobSkills_56.json" />
+    <EmbeddedResource Include="..\Falsus.Providers.Person\Datasets\JobSkills\JobSkills_57.json" Link="Datasets\JobSkills\JobSkills_57.json" />
+    <EmbeddedResource Include="..\Falsus.Providers.Person\Datasets\JobSkills\JobSkills_58.json" Link="Datasets\JobSkills\JobSkills_58.json" />
+    <EmbeddedResource Include="..\Falsus.Providers.Person\Datasets\JobSkills\JobSkills_59.json" Link="Datasets\JobSkills\JobSkills_59.json" />
+    <EmbeddedResource Include="..\Falsus.Providers.Person\Datasets\JobSkills\JobSkills_60.json" Link="Datasets\JobSkills\JobSkills_60.json" />
+    <EmbeddedResource Include="..\Falsus.Providers.Person\Datasets\JobSkills\JobSkills_61.json" Link="Datasets\JobSkills\JobSkills_61.json" />
+    <EmbeddedResource Include="..\Falsus.Providers.Person\Datasets\JobSkills\JobSkills_62.json" Link="Datasets\JobSkills\JobSkills_62.json" />
+    <EmbeddedResource Include="..\Falsus.Providers.Person\Datasets\JobSkills\JobSkills_63.json" Link="Datasets\JobSkills\JobSkills_63.json" />
+    <EmbeddedResource Include="..\Falsus.Providers.Person\Datasets\JobSkills\JobSkills_64.json" Link="Datasets\JobSkills\JobSkills_64.json" />
+    <EmbeddedResource Include="..\Falsus.Providers.Person\Datasets\JobSkills\JobSkills_65.json" Link="Datasets\JobSkills\JobSkills_65.json" />
+    <EmbeddedResource Include="..\Falsus.Providers.Person\Datasets\JobSkills\JobSkills_66.json" Link="Datasets\JobSkills\JobSkills_66.json" />
+    <EmbeddedResource Include="..\Falsus.Providers.Person\Datasets\JobSkills\JobSkills_67.json" Link="Datasets\JobSkills\JobSkills_67.json" />
+    <EmbeddedResource Include="..\Falsus.Providers.Person\Datasets\JobSkills\JobSkills_68.json" Link="Datasets\JobSkills\JobSkills_68.json" />
+    <EmbeddedResource Include="..\Falsus.Providers.Person\Datasets\JobSkills\JobSkills_69.json" Link="Datasets\JobSkills\JobSkills_69.json" />
+    <EmbeddedResource Include="..\Falsus.Providers.Person\Datasets\JobSkills\JobSkills_70.json" Link="Datasets\JobSkills\JobSkills_70.json" />
+    <EmbeddedResource Include="..\Falsus.Providers.Person\Datasets\JobSkills\JobSkills_71.json" Link="Datasets\JobSkills\JobSkills_71.json" />
+    <EmbeddedResource Include="..\Falsus.Providers.Person\Datasets\JobSkills\JobSkills_72.json" Link="Datasets\JobSkills\JobSkills_72.json" />
+    <EmbeddedResource Include="..\Falsus.Providers.Person\Datasets\JobSkills\JobSkills_73.json" Link="Datasets\JobSkills\JobSkills_73.json" />
+    <EmbeddedResource Include="..\Falsus.Providers.Person\Datasets\JobSkills\JobSkills_74.json" Link="Datasets\JobSkills\JobSkills_74.json" />
+    <EmbeddedResource Include="..\Falsus.Providers.Person\Datasets\JobSkills\JobSkills_75.json" Link="Datasets\JobSkills\JobSkills_75.json" />
+    <EmbeddedResource Include="..\Falsus.Providers.Person\Datasets\JobSkills\JobSkills_76.json" Link="Datasets\JobSkills\JobSkills_76.json" />
+    <EmbeddedResource Include="..\Falsus.Providers.Person\Datasets\JobSkills\JobSkills_77.json" Link="Datasets\JobSkills\JobSkills_77.json" />
+    <EmbeddedResource Include="..\Falsus.Providers.Person\Datasets\JobSkills\JobSkills_78.json" Link="Datasets\JobSkills\JobSkills_78.json" />
+    <EmbeddedResource Include="..\Falsus.Providers.Person\Datasets\JobSkills\JobSkills_79.json" Link="Datasets\JobSkills\JobSkills_79.json" />
+    <EmbeddedResource Include="..\Falsus.Providers.Person\Datasets\JobSkills\JobSkills_80.json" Link="Datasets\JobSkills\JobSkills_80.json" />
+    <EmbeddedResource Include="..\Falsus.Providers.Person\Datasets\JobSkills\JobSkills_81.json" Link="Datasets\JobSkills\JobSkills_81.json" />
+    <EmbeddedResource Include="..\Falsus.Providers.Person\Datasets\JobSkills\JobSkills_82.json" Link="Datasets\JobSkills\JobSkills_82.json" />
+    <EmbeddedResource Include="..\Falsus.Providers.Person\Datasets\JobSkills\JobSkills_83.json" Link="Datasets\JobSkills\JobSkills_83.json" />
+    <EmbeddedResource Include="..\Falsus.Providers.Person\Datasets\JobSkills\JobSkills_84.json" Link="Datasets\JobSkills\JobSkills_84.json" />
+    <EmbeddedResource Include="..\Falsus.Providers.Person\Datasets\JobSkills\JobSkills_85.json" Link="Datasets\JobSkills\JobSkills_85.json" />
+    <EmbeddedResource Include="..\Falsus.Providers.Person\Datasets\JobSkills\JobSkills_86.json" Link="Datasets\JobSkills\JobSkills_86.json" />
+    <EmbeddedResource Include="..\Falsus.Providers.Person\Datasets\JobSkills\JobSkills_87.json" Link="Datasets\JobSkills\JobSkills_87.json" />
+    <EmbeddedResource Include="..\Falsus.Providers.Person\Datasets\JobSkills\JobSkills_88.json" Link="Datasets\JobSkills\JobSkills_88.json" />
+    <EmbeddedResource Include="..\Falsus.Providers.Person\Datasets\JobSkills\JobSkills_89.json" Link="Datasets\JobSkills\JobSkills_89.json" />
+    <EmbeddedResource Include="..\Falsus.Providers.Person\Datasets\JobSkills\JobSkills_90.json" Link="Datasets\JobSkills\JobSkills_90.json" />
+    <EmbeddedResource Include="..\Falsus.Providers.Person\Datasets\JobSkills\JobSkills_91.json" Link="Datasets\JobSkills\JobSkills_91.json" />
+    <EmbeddedResource Include="..\Falsus.Providers.Person\Datasets\JobSkills\JobSkills_92.json" Link="Datasets\JobSkills\JobSkills_92.json" />
+    <EmbeddedResource Include="..\Falsus.Providers.Person\Datasets\JobSkills\JobSkills_93.json" Link="Datasets\JobSkills\JobSkills_93.json" />
+    <EmbeddedResource Include="..\Falsus.Providers.Person\Datasets\JobSkills\JobSkills_94.json" Link="Datasets\JobSkills\JobSkills_94.json" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <EmbeddedResource Include="..\Falsus.Providers.Person\Datasets\Jobs.json" Link="Datasets\Jobs.json" />
+  </ItemGroup>
 
   <ItemGroup>
     <EmbeddedResource Include="..\..\Location\Falsus.Providers.Location\Datasets\Countries.json" Link="Datasets\Countries.json" />
@@ -28,7 +129,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <Folder Include="Datasets\" />
+    <Folder Include="Datasets\JobSkills\" />
   </ItemGroup>
 
 </Project>
