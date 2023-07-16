@@ -5,7 +5,11 @@ on:
   push:
     paths:
     - src/**
-
+    
+permissions:
+  checks: write
+  pull-requests: write
+  
 jobs:
 
   build:
@@ -39,4 +43,13 @@ jobs:
       
     # Execute all unit tests for Falsus Engine
     - name: Execute unit tests
-      run: dotnet test src/Falsus.sln --no-restore --verbosity normal
+      run: dotnet test src/Falsus.sln --no-restore --verbosity normal --logger trx
+
+    # Publish unit tests results      
+    - name: Publish Test Results
+      uses: EnricoMi/publish-unit-test-result-action@v2
+      with:
+        files: |
+          src/**/TestResults/**/*.xml
+          src/**/TestResults/**/*.trx
+          src/**/TestResults/**/*.json
