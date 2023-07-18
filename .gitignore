@@ -72,3 +72,4 @@ config.wyam.packages.xml
 
 # Test Results & Code Coverage
 src/TestResults/*
+*.trx
