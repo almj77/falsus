@@ -1,12 +1,12 @@
-name: Falsus Quality Gate
+name: Falsus Finance CI
 
 on:
   workflow_dispatch:
-  pull_request:
-    branches:
+  push:
+    branches-ignore:
     - main
     paths:
-    - src/**
+    - src/Providers/Finance/**
     
 permissions:
   checks: write
@@ -37,21 +37,12 @@ jobs:
     
     # Install dependencies
     - name: Install dependencies
-      run: dotnet restore src/Falsus.sln
+      run: dotnet restore src/Providers/Finance/Falsus.Providers.Finance/Falsus.Providers.Finance.csproj
 
-    # Build the Falsus Engine
+    # Build the Falsus Finance Provider
     - name: Build
-      run: dotnet build src/Falsus.sln --configuration ${{ matrix.configuration }} --no-restore
+      run: dotnet build src/Providers/Finance/Falsus.Providers.Finance/Falsus.Providers.Finance.csproj --configuration ${{ matrix.configuration }} --no-restore
       
-    # Execute all unit tests for Falsus Engine
+    # Execute all unit tests for Falsus Finance Provider
     - name: Execute unit tests
-      run: dotnet test src/Falsus.sln --no-restore --verbosity normal --logger trx
-
-    # Publish unit tests results      
-    - name: Publish Test Results
-      uses: EnricoMi/publish-unit-test-result-action@v2
-      with:
-        files: |
-          src/**/TestResults/**/*.xml
-          src/**/TestResults/**/*.trx
-          src/**/TestResults/**/*.json
+      run: dotnet test src/Providers/Finance/Falsus.Providers.Finance.UnitTests/Falsus.Providers.Finance.UnitTests.csproj --no-restore --verbosity normal

@@ -1,12 +1,13 @@
-name: Falsus Quality Gate
+name: Falsus CI
 
 on:
   workflow_dispatch:
-  pull_request:
-    branches:
+  push:
+    branches-ignore:
     - main
     paths:
-    - src/**
+    - src/Engine/**
+    - src/Shared/**
     
 permissions:
   checks: write

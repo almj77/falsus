@@ -1,12 +1,12 @@
-name: Falsus Quality Gate
+name: Falsus Location CI
 
 on:
   workflow_dispatch:
-  pull_request:
-    branches:
+  push:
+    branches-ignore:
     - main
     paths:
-    - src/**
+    - src/Providers/Location/**
     
 permissions:
   checks: write
@@ -37,21 +37,12 @@ jobs:
     
     # Install dependencies
     - name: Install dependencies
-      run: dotnet restore src/Falsus.sln
+      run: dotnet restore src/Providers/Location/Falsus.Providers.Location/Falsus.Providers.Location.csproj
 
-    # Build the Falsus Engine
+    # Build the Falsus Location Provider
     - name: Build
-      run: dotnet build src/Falsus.sln --configuration ${{ matrix.configuration }} --no-restore
+      run: dotnet build src/Providers/Location/Falsus.Providers.Location/Falsus.Providers.Location.csproj --configuration ${{ matrix.configuration }} --no-restore
       
-    # Execute all unit tests for Falsus Engine
+    # Execute all unit tests for Falsus Location Provider
     - name: Execute unit tests
-      run: dotnet test src/Falsus.sln --no-restore --verbosity normal --logger trx
-
-    # Publish unit tests results      
-    - name: Publish Test Results
-      uses: EnricoMi/publish-unit-test-result-action@v2
-      with:
-        files: |
-          src/**/TestResults/**/*.xml
-          src/**/TestResults/**/*.trx
-          src/**/TestResults/**/*.json
+      run: dotnet test src/Providers/Location/Falsus.Providers.Location.UnitTests/Falsus.Providers.Location.UnitTests.csproj --no-restore --verbosity normal
