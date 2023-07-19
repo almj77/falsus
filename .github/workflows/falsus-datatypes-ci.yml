@@ -39,9 +39,17 @@ jobs:
     - name: Install dependencies
       run: dotnet restore src/Providers/DataTypes/Falsus.Providers.DataTypes/Falsus.Providers.DataTypes.csproj
 
+    # Install dependencies for unit tests
+    - name: Install dependencies
+      run: dotnet restore src/Providers/DataTypes/Falsus.Providers.DataTypes.UnitTests/Falsus.Providers.DataTypes.UnitTests.csproj
+
     # Build the Falsus Data Types Provider
     - name: Build
       run: dotnet build src/Providers/DataTypes/Falsus.Providers.DataTypes/Falsus.Providers.DataTypes.csproj --configuration ${{ matrix.configuration }} --no-restore
+
+    # Build the Falsus Data Types Provider Unit Tests
+    - name: Build
+      run: dotnet build src/Providers/DataTypes/Falsus.Providers.DataTypes.UnitTests/Falsus.Providers.DataTypes.UnitTests.csproj --configuration ${{ matrix.configuration }} --no-restore
       
     # Execute all unit tests for Falsus Data Types Provider
     - name: Execute unit tests
