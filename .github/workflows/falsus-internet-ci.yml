@@ -34,15 +34,23 @@ jobs:
       uses: actions/setup-dotnet@v3
       with:
         dotnet-version: ${{ matrix.dotnet-version }}
-    
+
     # Install dependencies
     - name: Install dependencies
       run: dotnet restore src/Providers/Internet/Falsus.Providers.Internet/Falsus.Providers.Internet.csproj
 
+    # Install dependencies for unit tests
+    - name: Install dependencies
+      run: dotnet restore src/Providers/Internet/Falsus.Providers.Internet.UnitTests/Falsus.Providers.Internet.UnitTests.csproj
+
     # Build the Falsus Internet Provider
     - name: Build
       run: dotnet build src/Providers/Internet/Falsus.Providers.Internet/Falsus.Providers.Internet.csproj --configuration ${{ matrix.configuration }} --no-restore
-      
+
+    # Build the Falsus Internet Provider Unit Tests
+    - name: Build
+      run: dotnet build src/Providers/Internet/Falsus.Providers.Internet.UnitTests/Falsus.Providers.Internet.UnitTests.csproj --configuration ${{ matrix.configuration }} --no-restore
+
     # Execute all unit tests for Falsus Internet Provider
     - name: Execute unit tests
       run: dotnet test src/Providers/Internet/Falsus.Providers.Internet.UnitTests/Falsus.Providers.Internet.UnitTests.csproj --no-restore --verbosity normal

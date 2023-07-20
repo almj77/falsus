@@ -35,7 +35,7 @@ jobs:
       uses: actions/setup-dotnet@v3
       with:
         dotnet-version: ${{ matrix.dotnet-version }}
-    
+
     # Install dependencies
     - name: Install dependencies
       run: dotnet restore src/Falsus.sln
@@ -43,7 +43,7 @@ jobs:
     # Build the Falsus Engine
     - name: Build
       run: dotnet build src/Falsus.sln --configuration ${{ matrix.configuration }} --no-restore
-      
+
     # Execute all unit tests for Falsus Engine
     - name: Execute unit tests
       run: dotnet test src/Falsus.sln --no-restore --verbosity normal --logger trx

@@ -34,15 +34,23 @@ jobs:
       uses: actions/setup-dotnet@v3
       with:
         dotnet-version: ${{ matrix.dotnet-version }}
-    
+
     # Install dependencies
     - name: Install dependencies
       run: dotnet restore src/Providers/Finance/Falsus.Providers.Finance/Falsus.Providers.Finance.csproj
 
+    # Install dependencies for unit tests
+    - name: Install dependencies
+      run: dotnet restore src/Providers/Finance/Falsus.Providers.Finance.UnitTests/Falsus.Providers.Finance.UnitTests.csproj
+
     # Build the Falsus Finance Provider
     - name: Build
       run: dotnet build src/Providers/Finance/Falsus.Providers.Finance/Falsus.Providers.Finance.csproj --configuration ${{ matrix.configuration }} --no-restore
-      
+
+    # Build the Falsus Finance Provider unit tests
+    - name: Build
+      run: dotnet build src/Providers/Finance/Falsus.Providers.Finance.UnitTests/Falsus.Providers.Finance.UnitTests.csproj --configuration ${{ matrix.configuration }} --no-restore
+
     # Execute all unit tests for Falsus Finance Provider
     - name: Execute unit tests
       run: dotnet test src/Providers/Finance/Falsus.Providers.Finance.UnitTests/Falsus.Providers.Finance.UnitTests.csproj --no-restore --verbosity normal

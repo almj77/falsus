@@ -34,15 +34,23 @@ jobs:
       uses: actions/setup-dotnet@v3
       with:
         dotnet-version: ${{ matrix.dotnet-version }}
-    
+
     # Install dependencies
     - name: Install dependencies
       run: dotnet restore src/Providers/Sys/Falsus.Providers.Sys/Falsus.Providers.Sys.csproj
 
+    # Install dependencies for unit tests
+    - name: Install dependencies
+      run: dotnet restore src/Providers/Sys/Falsus.Providers.Sys.UnitTests/Falsus.Providers.Sys.UnitTests.csproj
+
     # Build the Falsus System Provider
     - name: Build
       run: dotnet build src/Providers/Sys/Falsus.Providers.Sys/Falsus.Providers.Sys.csproj --configuration ${{ matrix.configuration }} --no-restore
-      
+
+    # Build the Falsus System Provider Unit Tests
+    - name: Build
+      run: dotnet build src/Providers/Sys/Falsus.Providers.Sys.UnitTests/Falsus.Providers.Sys.UnitTests.csproj --configuration ${{ matrix.configuration }} --no-restore
+
     # Execute all unit tests for Falsus System Provider
     - name: Execute unit tests
       run: dotnet test src/Providers/Sys/Falsus.Providers.Sys.UnitTests/Falsus.Providers.Sys.UnitTests.csproj --no-restore --verbosity normal
