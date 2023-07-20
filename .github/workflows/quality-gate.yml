@@ -3,12 +3,9 @@ name: Falsus Quality Gate
 on:
   workflow_dispatch:
   pull_request:
-    types:
-    - opened
-    branches:
-    - main
-    paths:
-    - src/**
+    types: [opened, edited]
+    branches: main
+    paths: src/**
     
 permissions:
   checks: write
