@@ -47,7 +47,7 @@ jobs:
 
     # Execute all unit tests for Falsus Engine
     - name: Execute unit tests
-      run: dotnet test src/Falsus.sln --no-restore --verbosity normal --logger trx
+      run: dotnet test src/Falsus.sln --no-restore --verbosity normal --logger trx --collect:"XPlat Code Coverage" --results-directory ./coverage
 
     # Publish unit tests results      
     - name: Publish Test Results
@@ -57,3 +57,25 @@ jobs:
           src/**/TestResults/**/*.xml
           src/**/TestResults/**/*.trx
           src/**/TestResults/**/*.json
+
+    # Run Code Coverage
+    - name: Code Coverage Report
+      uses: irongut/CodeCoverageSummary@v1.3.0
+      with:
+        filename: coverage/**/coverage.cobertura.xml
+        badge: true
+        fail_below_min: true
+        format: markdown
+        hide_branch_rate: false
+        hide_complexity: true
+        indicators: true
+        output: both
+        thresholds: '60 80'
+
+    # Publish Code Coverage 
+    - name: Add Coverage PR Comment
+      uses: marocchino/sticky-pull-request-comment@v2
+      if: github.event_name == 'pull_request'
+      with:
+        recreate: true
+        path: code-coverage-results.md
