@@ -50,10 +50,7 @@ jobs:
     - name: Publish Test Results
       uses: EnricoMi/publish-unit-test-result-action@v2
       with:
-        files: |
-          src/**/TestResults/**/*.xml
-          src/**/TestResults/**/*.trx
-          src/**/TestResults/**/*.json
+        files: src/**/*.trx
 
     # Run Code Coverage
     - name: Code Coverage Report
