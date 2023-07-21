@@ -453,6 +453,12 @@
         public static bool TryParse(string value, out SemanticVersionModel model)
         {
             model = default;
+
+            if (string.IsNullOrEmpty(value))
+            {
+                return false;
+            }
+
             int? majorVersion = default;
             int? minorVersion = default;
             int? patchVersion = default;

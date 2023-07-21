@@ -22,7 +22,7 @@
         /// The number of attemps to try to generate a unique value
         /// before throwing an exception.
         /// </summary>
-        private const int MaxAttempts = 10;
+        private const int MaxAttempts = 100;
 
         /// <summary>
         /// The configuration of this provider.
@@ -73,11 +73,6 @@
         /// </remarks>
         public override SemanticVersionModel GetRangedRowValue(SemanticVersionModel minValue, SemanticVersionModel maxValue, SemanticVersionModel[] excludedObjects)
         {
-            if (minValue == null && maxValue == null)
-            {
-                throw new InvalidOperationException($"{nameof(SemanticVersionProvider)} cannot generate ranged value with both min. and max. value set to null.");
-            }
-
             SemanticVersionModel value = this.GetRangedRowValueInternal(minValue, maxValue);
             int attempts = 0;
             while (excludedObjects.Contains(value) && attempts <= MaxAttempts)
@@ -256,16 +251,37 @@
                 throw new InvalidOperationException($"{nameof(SemanticVersionProvider)} cannot generate ranged value with both min. and max. value set to null.");
             }
 
-            SemanticVersionModel internalMinValue = new SemanticVersionModel(
-                minValue.Major ?? this.configuration.MinMajorVersion ?? 0,
-                minValue.Minor ?? this.configuration.MinMinorVersion ?? 0,
-                minValue.Patch ?? this.configuration.MinPatchVersion ?? 0,
-                minValue.StageNumber ?? this.configuration.MinStageVersion ?? 0);
-            SemanticVersionModel internalMaxValue = new SemanticVersionModel(
-                maxValue.Major ?? this.configuration.MaxMajorVersion ?? int.MaxValue,
-                maxValue.Minor ?? this.configuration.MaxMinorVersion ?? int.MaxValue,
-                maxValue.Patch ?? this.configuration.MaxPatchVersion ?? int.MaxValue,
-                maxValue.StageNumber ?? this.configuration.MaxStageVersion ?? int.MaxValue);
+            SemanticVersionModel internalMinValue = null;
+            SemanticVersionModel internalMaxValue = null;
+
+            if (!this.configuration.UseNumStatusFormat)
+            {
+                internalMinValue = new SemanticVersionModel(
+                    minValue.Major ?? this.configuration.MinMajorVersion ?? 0,
+                    minValue.Minor ?? this.configuration.MinMinorVersion ?? 0,
+                    minValue.Patch ?? this.configuration.MinPatchVersion ?? 0,
+                    minValue.Stage ?? this.configuration.MinStageVersion ?? AlphaStageIdentifier,
+                    minValue.StageNumber ?? this.configuration.MinStageNumber ?? 0);
+                internalMaxValue = new SemanticVersionModel(
+                    maxValue.Major ?? this.configuration.MaxMajorVersion ?? int.MaxValue,
+                    maxValue.Minor ?? this.configuration.MaxMinorVersion ?? int.MaxValue,
+                    maxValue.Patch ?? this.configuration.MaxPatchVersion ?? int.MaxValue,
+                    maxValue.Stage ?? this.configuration.MaxStageVersion ?? ReleaseCandidateIdentifier,
+                    maxValue.StageNumber ?? this.configuration.MaxStageNumber ?? int.MaxValue);
+            }
+            else
+            {
+                internalMinValue = new SemanticVersionModel(
+                    minValue.Major ?? this.configuration.MinMajorVersion ?? 0,
+                    minValue.Minor ?? this.configuration.MinMinorVersion ?? 0,
+                    minValue.Patch ?? this.configuration.MinPatchVersion ?? 0,
+                    minValue.StageNumber ?? this.configuration.MinStageNumber ?? 0);
+                internalMaxValue = new SemanticVersionModel(
+                    maxValue.Major ?? this.configuration.MaxMajorVersion ?? int.MaxValue,
+                    maxValue.Minor ?? this.configuration.MaxMinorVersion ?? int.MaxValue,
+                    maxValue.Patch ?? this.configuration.MaxPatchVersion ?? int.MaxValue,
+                    maxValue.StageNumber ?? this.configuration.MaxStageNumber ?? int.MaxValue);
+            }
 
             int? majorVersion = default;
             int? minorVersion = default;
@@ -284,7 +300,11 @@
             }
 
             // Minor Version
-            if (internalMinValue.Minor.Value <= internalMaxValue.Minor.Value)
+            if (majorVersion < internalMaxValue.Major.Value)
+            {
+                minorVersion = this.Randomizer.Next(internalMinValue.Minor.Value, this.configuration.MaxMinorVersion ?? int.MaxValue);
+            }
+            else if (internalMinValue.Minor.Value <= internalMaxValue.Minor.Value)
             {
                 minorVersion = this.Randomizer.Next(internalMinValue.Minor.Value, internalMaxValue.Minor.Value);
             }
@@ -294,7 +314,11 @@
             }
 
             // Patch Version
-            if (internalMinValue.Patch.Value <= internalMaxValue.Patch.Value)
+            if (majorVersion < internalMaxValue.Major.Value || minorVersion < internalMaxValue.Minor.Value)
+            {
+                patchVersion = this.Randomizer.Next(internalMinValue.Patch.Value, this.configuration.MaxPatchVersion ?? int.MaxValue);
+            }
+            else if (internalMinValue.Patch.Value <= internalMaxValue.Patch.Value)
             {
                 patchVersion = this.Randomizer.Next(internalMinValue.Patch.Value, internalMaxValue.Patch.Value);
             }
@@ -311,11 +335,11 @@
                 if (majorVersion == internalMinValue.Major && minorVersion == internalMinValue.Minor && patchVersion == internalMinValue.Patch &&
                     majorVersion == internalMaxValue.Major && minorVersion == internalMaxValue.Minor && patchVersion == internalMaxValue.Patch)
                 {
-                    if (internalMinValue.Stage.CompareTo(AlphaStageIdentifier) >= 0 && internalMaxValue.Stage.CompareTo(BetaStageIdentifier) < 0)
+                    if (internalMinValue.Stage.CompareTo(AlphaStageIdentifier) >= 0 && internalMaxValue.Stage.CompareTo(BetaStageIdentifier) <= 0)
                     {
                         stages.Add(AlphaStageIdentifier);
                     }
-                    else if (internalMinValue.Stage.CompareTo(BetaStageIdentifier) >= 0 && internalMaxValue.Stage.CompareTo(ReleaseCandidateIdentifier) < 0)
+                    else if (internalMinValue.Stage.CompareTo(BetaStageIdentifier) >= 0 && internalMaxValue.Stage.CompareTo(ReleaseCandidateIdentifier) <= 0)
                     {
                         stages.Add(BetaStageIdentifier);
                     }
@@ -351,60 +375,6 @@
                     }
                 }
             }
-            else if (!string.IsNullOrEmpty(internalMinValue.Stage))
-            {
-                if (majorVersion == internalMinValue.Major && minorVersion == internalMinValue.Minor && patchVersion == internalMinValue.Patch)
-                {
-                    if (internalMinValue.Stage.CompareTo(AlphaStageIdentifier) >= 0)
-                    {
-                        stages.Add(AlphaStageIdentifier);
-                        stages.Add(BetaStageIdentifier);
-                        stages.Add(ReleaseCandidateIdentifier);
-                    }
-                    else if (internalMinValue.Stage.CompareTo(BetaStageIdentifier) >= 0)
-                    {
-                        stages.Add(BetaStageIdentifier);
-                        stages.Add(ReleaseCandidateIdentifier);
-                    }
-                    else if (internalMinValue.Stage.CompareTo(ReleaseCandidateIdentifier) >= 0)
-                    {
-                        stages.Add(ReleaseCandidateIdentifier);
-                    }
-                }
-                else
-                {
-                    stages.Add(AlphaStageIdentifier);
-                    stages.Add(BetaStageIdentifier);
-                    stages.Add(ReleaseCandidateIdentifier);
-                }
-            }
-            else if (!string.IsNullOrEmpty(internalMaxValue.Stage))
-            {
-                if (majorVersion == internalMinValue.Major && minorVersion == internalMinValue.Minor && patchVersion == internalMinValue.Patch)
-                {
-                    if (internalMinValue.Stage.CompareTo(AlphaStageIdentifier) >= 0)
-                    {
-                        stages.Add(AlphaStageIdentifier);
-                        stages.Add(BetaStageIdentifier);
-                        stages.Add(ReleaseCandidateIdentifier);
-                    }
-                    else if (internalMinValue.Stage.CompareTo(BetaStageIdentifier) >= 0)
-                    {
-                        stages.Add(BetaStageIdentifier);
-                        stages.Add(ReleaseCandidateIdentifier);
-                    }
-                    else if (internalMinValue.Stage.CompareTo(ReleaseCandidateIdentifier) >= 0)
-                    {
-                        stages.Add(ReleaseCandidateIdentifier);
-                    }
-                }
-                else
-                {
-                    stages.Add(AlphaStageIdentifier);
-                    stages.Add(BetaStageIdentifier);
-                    stages.Add(ReleaseCandidateIdentifier);
-                }
-            }
 
             if (stages.Count > 0)
             {
@@ -412,15 +382,22 @@
             }
 
             // Stage Number
-            if (internalMinValue.StageNumber.HasValue && internalMaxValue.StageNumber.HasValue)
+            if (configuration.UseNumStatusFormat || configuration.IncludeAlphaStage || configuration.IncludeBetaStage || configuration.IncludeReleaseCandidateStage)
             {
-                if (internalMinValue.StageNumber.Value <= internalMaxValue.StageNumber.Value)
+                if (internalMinValue.StageNumber.HasValue && internalMaxValue.StageNumber.HasValue)
                 {
-                    stageNumber = this.Randomizer.Next(internalMinValue.StageNumber.Value, internalMaxValue.StageNumber.Value);
-                }
-                else
-                {
-                    throw new InvalidOperationException($"{nameof(SemanticVersionProvider)} cannot generate ranged value because min version '{minValue}' is higher than max version '{maxValue}'.");
+                    if (majorVersion <= internalMaxValue.Major || minorVersion <= internalMaxValue.Minor || patchVersion <= internalMaxValue.Patch)
+                    {
+                        stageNumber = this.Randomizer.Next(internalMinValue.StageNumber.Value, 3);
+                    }
+                    else if (internalMinValue.StageNumber.Value <= internalMaxValue.StageNumber.Value)
+                    {
+                        stageNumber = this.Randomizer.Next(internalMinValue.StageNumber.Value, internalMaxValue.StageNumber.Value);
+                    }
+                    else
+                    {
+                        throw new InvalidOperationException($"{nameof(SemanticVersionProvider)} cannot generate ranged value because min version '{minValue}' is higher than max version '{maxValue}'.");
+                    }
                 }
             }
 
@@ -583,13 +560,13 @@
                 {
                     if (this.configuration.MinPatchVersion.HasValue)
                     {
-                        if (this.configuration.MinStageVersion.HasValue)
+                        if (this.configuration.MinStageNumber.HasValue)
                         {
                             return new SemanticVersionModel(
                                 this.configuration.MinMajorVersion.Value,
                                 this.configuration.MinMinorVersion.Value,
                                 this.configuration.MinPatchVersion.Value,
-                                this.configuration.MinStageVersion.Value);
+                                this.configuration.MinStageNumber.Value);
                         }
 
                         return new SemanticVersionModel(
@@ -611,36 +588,38 @@
 
         private SemanticVersionModel GetMaxValue()
         {
-            if (this.configuration.MaxMajorVersion.HasValue)
+            int maxMajorVersion = this.configuration.MaxMajorVersion ?? int.MaxValue;
+            int maxMinorVersion = this.configuration.MaxMinorVersion ?? int.MaxValue;
+            int? maxPatchVersion = this.configuration.MaxPatchVersion;
+            int? maxStageVersion = this.configuration.MaxStageNumber;
+
+            if (!maxStageVersion.HasValue && (
+                this.configuration.UseNumStatusFormat || this.configuration.IncludeAlphaStage
+                || this.configuration.IncludeBetaStage || this.configuration.IncludeReleaseCandidateStage))
             {
-                if (this.configuration.MaxMinorVersion.HasValue)
-                {
-                    if (this.configuration.MaxPatchVersion.HasValue)
-                    {
-                        if (this.configuration.MaxStageVersion.HasValue)
-                        {
-                            return new SemanticVersionModel(
-                                this.configuration.MaxMajorVersion.Value,
-                                this.configuration.MaxMinorVersion.Value,
-                                this.configuration.MaxPatchVersion.Value,
-                                this.configuration.MaxStageVersion.Value);
-                        }
-
-                        return new SemanticVersionModel(
-                            this.configuration.MaxMajorVersion.Value,
-                            this.configuration.MaxMinorVersion.Value,
-                            this.configuration.MaxPatchVersion.Value);
-                    }
-
-                    return new SemanticVersionModel(
-                        this.configuration.MaxMajorVersion.Value,
-                        this.configuration.MaxMinorVersion.Value);
-                }
-
-                return new SemanticVersionModel(this.configuration.MaxMajorVersion.Value);
+                maxStageVersion = 3;
             }
 
-            return new SemanticVersionModel(int.MaxValue);
+            if (maxPatchVersion.HasValue)
+            {
+                if (maxStageVersion.HasValue)
+                {
+                    return new SemanticVersionModel(
+                        maxMajorVersion,
+                        maxMinorVersion,
+                        maxPatchVersion.Value,
+                        maxStageVersion.Value);
+                }
+
+                return new SemanticVersionModel(
+                    maxMajorVersion,
+                    maxMinorVersion,
+                    maxPatchVersion.Value);
+            }
+
+            return new SemanticVersionModel(
+                maxMajorVersion,
+                maxMinorVersion);
         }
 
         /// <summary>
@@ -653,7 +632,7 @@
         /// The <see cref="SemanticVersionProviderConfiguration.MinMajorVersion"/> or <see cref="SemanticVersionProviderConfiguration.MaxMajorVersion"/>
         /// or <see cref="SemanticVersionProviderConfiguration.MinMinorVersion"/> or <see cref="SemanticVersionProviderConfiguration.MaxMinorVersion"/>
         /// or <see cref="SemanticVersionProviderConfiguration.MinPatchVersion"/> or <see cref="SemanticVersionProviderConfiguration.MaxPatchVersion"/>
-        /// or <see cref="SemanticVersionProviderConfiguration.MinStageVersion"/> or <see cref="SemanticVersionProviderConfiguration.MaxStageVersion"/>
+        /// or <see cref="SemanticVersionProviderConfiguration.MinStageNumber"/> or <see cref="SemanticVersionProviderConfiguration.MaxStageNumber"/>
         /// have values lower than 0.
         /// </item>
         /// <item>
@@ -669,8 +648,8 @@
         /// value of <see cref="SemanticVersionProviderConfiguration.MaxPatchVersion"/>.
         /// </item>
         /// <item>
-        /// The value of <see cref="SemanticVersionProviderConfiguration.MinStageVersion"/> is greater than the
-        /// value of <see cref="SemanticVersionProviderConfiguration.MaxStageVersion"/>.
+        /// The value of <see cref="SemanticVersionProviderConfiguration.MinStageNumber"/> is greater than the
+        /// value of <see cref="SemanticVersionProviderConfiguration.MaxStageNumber"/>.
         /// </item>
         /// </list>
         /// </exception>
@@ -707,6 +686,28 @@
                 this.configuration.MinPatchVersion.Value > this.configuration.MaxPatchVersion.Value)
             {
                 throw new InvalidOperationException($"{nameof(SemanticVersionProvider)} Min. patch version cannot be higher than Max. patch version.");
+            }
+
+            if (!string.IsNullOrEmpty(this.configuration.MinStageVersion)
+                && this.configuration.MinStageVersion != SemanticVersionModel.Alpha 
+                && this.configuration.MinStageVersion != SemanticVersionModel.Beta
+                && this.configuration.MinStageVersion != SemanticVersionModel.ReleaseCandidate)
+            {
+                throw new InvalidOperationException($"{nameof(SemanticVersionProvider)} Min. stage version must be one of the following values: \"{SemanticVersionModel.Alpha}\", \"{SemanticVersionModel.Beta}\" or \"{SemanticVersionModel.ReleaseCandidate}\".");
+            }
+
+            if (!string.IsNullOrEmpty(this.configuration.MaxStageVersion)
+                && this.configuration.MaxStageVersion != SemanticVersionModel.Alpha
+                && this.configuration.MaxStageVersion != SemanticVersionModel.Beta
+                && this.configuration.MaxStageVersion != SemanticVersionModel.ReleaseCandidate)
+            {
+                throw new InvalidOperationException($"{nameof(SemanticVersionProvider)} Max. stage version must be one of the following values: \"{SemanticVersionModel.Alpha}\", \"{SemanticVersionModel.Beta}\" or \"{SemanticVersionModel.ReleaseCandidate}\".");
+            }
+
+            if (!string.IsNullOrEmpty(this.configuration.MinStageVersion) && !string.IsNullOrEmpty(this.configuration.MaxStageVersion) &&
+                this.configuration.MinStageVersion.CompareTo(this.configuration.MaxStageVersion) > 0)
+            {
+                throw new InvalidOperationException($"{nameof(SemanticVersionProvider)} Min. stage version cannot be higher than Max. stage version.");
             }
         }
     }

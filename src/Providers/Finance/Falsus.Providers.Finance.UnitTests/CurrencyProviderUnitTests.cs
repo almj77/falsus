@@ -152,6 +152,76 @@
         }
 
         [TestMethod]
+        [ExpectedException(typeof(InvalidOperationException))]
+        public void GetRowValueWithCountryAndAllExcludedThrowsException()
+        {
+            // Arrange
+            DataGeneratorProperty<CountryModel> countryProperty = new DataGeneratorProperty<CountryModel>("Country");
+            DataGeneratorProperty<CurrencyModel> property = new DataGeneratorProperty<CurrencyModel>("Currency")
+                .WithArgument(CurrencyProvider.CountryArgumentName, countryProperty);
+
+            CurrencyProvider provider = new CurrencyProvider();
+            provider.InitializeRandomizer();
+            provider.Load(property, 1);
+
+            Dictionary<string, object> row = new Dictionary<string, object>();
+            row.Add("Country", new CountryModel() { Alpha2 = "PT" });
+            DataGeneratorContext context = new DataGeneratorContext(row, 0, 1, property, property.Arguments);
+
+            CurrencyModel[] excludedObjects = GetAllCurrencies();
+
+            // Act
+            provider.GetRowValue(context, excludedObjects.ToArray());
+        }
+
+        [TestMethod]
+        public void GetRowValueWithCountryAndOneExcludedReturnsExpectedValue()
+        {
+            // Arrange
+            CurrencyModel expectedTyped = new CurrencyModel()
+            {
+                CountryAlpha2 = "BT",
+                CurrencyName = "Indian Rupee",
+                Id = "INR",
+                Symbol = "₹"
+            };
+
+            var expected = new
+            {
+                expectedTyped.CountryAlpha2,
+                expectedTyped.CurrencyName,
+                expectedTyped.Id,
+                expectedTyped.Symbol
+            };
+
+            DataGeneratorProperty<CountryModel> countryProperty = new DataGeneratorProperty<CountryModel>("Country");
+            DataGeneratorProperty<CurrencyModel> property = new DataGeneratorProperty<CurrencyModel>("Currency")
+                .WithArgument(CurrencyProvider.CountryArgumentName, countryProperty);
+
+            CurrencyProvider provider = new CurrencyProvider();
+            provider.InitializeRandomizer();
+            provider.Load(property, 1);
+
+            Dictionary<string, object> row = new Dictionary<string, object>();
+            row.Add("Country", new CountryModel() { Alpha2 = "BT" });
+            DataGeneratorContext context = new DataGeneratorContext(row, 0, 1, property, property.Arguments);
+
+            CurrencyModel[] excludedObjects = GetAllCurrencies().Where(u => u.Id != "BTN").ToArray();
+
+            // Act
+            CurrencyModel actualTyped = provider.GetRowValue(context, excludedObjects.ToArray());
+            var actual = new
+            {
+                expectedTyped.CountryAlpha2,
+                expectedTyped.CurrencyName,
+                expectedTyped.Id,
+                expectedTyped.Symbol
+            };
+
+            Assert.AreEqual(expected, actual);
+        }
+
+        [TestMethod]
         public void GetRowValueCanGenerateForAllCountries()
         {
             // Arrange
