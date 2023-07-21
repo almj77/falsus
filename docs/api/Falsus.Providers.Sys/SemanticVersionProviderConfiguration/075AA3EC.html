@@ -143,10 +143,12 @@
 				<li><a href="/api/Falsus.Providers.Sys/SemanticVersionProviderConfiguration/B16D6DE3">MaxMajorVersion</a></li>
 				<li><a href="/api/Falsus.Providers.Sys/SemanticVersionProviderConfiguration/8E2C4550">MaxMinorVersion</a></li>
 				<li><a href="/api/Falsus.Providers.Sys/SemanticVersionProviderConfiguration/0FEEF243">MaxPatchVersion</a></li>
+				<li><a href="/api/Falsus.Providers.Sys/SemanticVersionProviderConfiguration/A6EB8A9A">MaxStageNumber</a></li>
 				<li class="selected"><a href="/api/Falsus.Providers.Sys/SemanticVersionProviderConfiguration/075AA3EC">MaxStageVersion</a></li>
 				<li><a href="/api/Falsus.Providers.Sys/SemanticVersionProviderConfiguration/800AD6C4">MinMajorVersion</a></li>
 				<li><a href="/api/Falsus.Providers.Sys/SemanticVersionProviderConfiguration/BF4BFE77">MinMinorVersion</a></li>
 				<li><a href="/api/Falsus.Providers.Sys/SemanticVersionProviderConfiguration/3E894964">MinPatchVersion</a></li>
+				<li><a href="/api/Falsus.Providers.Sys/SemanticVersionProviderConfiguration/D770AC23">MinStageNumber</a></li>
 				<li><a href="/api/Falsus.Providers.Sys/SemanticVersionProviderConfiguration/363D18CB">MinStageVersion</a></li>
 				<li><a href="/api/Falsus.Providers.Sys/SemanticVersionProviderConfiguration/3E821C9B">UseNumStatusFormat</a></li>
 
@@ -189,7 +191,7 @@
 		</div>
 
 	<h1 id="Syntax">Syntax</h1>
-	<pre><code>public int? MaxStageVersion { get; set; }</code></pre>
+	<pre><code>public string MaxStageVersion { get; set; }</code></pre>
 
 
 
@@ -206,7 +208,7 @@
 					</tr>
 				</thead>
 				<tbody><tr>
-					<td>int?</td>
+					<td>string</td>
 					<td>
     A nullable <code class="cs"><a href="/">int</a></code> representing the maximum release stage version.
     </td>
