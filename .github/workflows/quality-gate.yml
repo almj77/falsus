@@ -13,11 +13,11 @@ on:
     - main
     paths:
     - src/**
-    
+
 permissions:
   checks: write
   pull-requests: write
-  
+
 jobs:
 
   build:
@@ -45,37 +45,37 @@ jobs:
 
     - name: Build
       run: dotnet build src/Falsus.sln --configuration ${{ matrix.configuration }} --no-restore
-	  
+
     - name: Remove engine test results
       uses: JesseTG/rm@v1.0.3
       with:
         path: src/Engine/TestResults
-		
+
     - name: Remove data types test results
       uses: JesseTG/rm@v1.0.3
       with:
         path: src/Providers/DataTypes/TestResults
-		
+
     - name: Remove finance provider test results
       uses: JesseTG/rm@v1.0.3
       with:
         path: src/Providers/Finance/TestResults
-		
+
     - name: Remove internet provider test results
       uses: JesseTG/rm@v1.0.3
       with:
         path: src/Providers/Internet/TestResults
-		
+
     - name: Remove location provider test results
       uses: JesseTG/rm@v1.0.3
       with:
         path: src/Providers/Location/TestResults
-		
+
     - name: Remove person provider test results
       uses: JesseTG/rm@v1.0.3
       with:
         path: src/Providers/Person/TestResults
-		
+
     - name: Remove system provider test results
       uses: JesseTG/rm@v1.0.3
       with:
@@ -85,7 +85,7 @@ jobs:
       uses: JesseTG/rm@v1.0.3
       with:
         path: src/Providers/Text/TestResults
-		
+
     - name: Execute Falsus unit tests
       run: dotnet test src/Engine/Falsus.UnitTests/Falsus.UnitTests.csproj --no-restore --verbosity normal --logger trx --collect:"XPlat Code Coverage" --results-directory "src/Engine/TestResults"
 
@@ -109,7 +109,7 @@ jobs:
 
     - name: Execute Text provider unit tests
       run: dotnet test src/Providers/Text/Falsus.Providers.Text.UnitTests/Falsus.Providers.Text.UnitTests.csproj --no-restore --verbosity normal --logger trx --collect:"XPlat Code Coverage" --results-directory "src/Providers/Text/TestResults" --settings cli/runsettings.xml
-   
+
     - name: Publish Test Results
       uses: EnricoMi/publish-unit-test-result-action@v2
       with:
