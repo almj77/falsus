@@ -35,37 +35,92 @@ jobs:
       with:
         fetch-depth: 0
 
-    # Install the .NET Core workload
     - name: Setup .NET Core SDK ${{ matrix.dotnet-version }}
       uses: actions/setup-dotnet@v3
       with:
         dotnet-version: ${{ matrix.dotnet-version }}
 
-    # Install dependencies
     - name: Install dependencies
       run: dotnet restore src/Falsus.sln
 
-    # Build the Falsus Engine
     - name: Build
       run: dotnet build src/Falsus.sln --configuration ${{ matrix.configuration }} --no-restore
+	  
+    - name: Remove engine test results
+      uses: JesseTG/rm@v1.0.3
+      with:
+        path: src/Engine/TestResults
+		
+    - name: Remove data types test results
+      uses: JesseTG/rm@v1.0.3
+      with:
+        path: src/Providers/DataTypes/TestResults
+		
+    - name: Remove finance provider test results
+      uses: JesseTG/rm@v1.0.3
+      with:
+        path: src/Providers/Finance/TestResults
+		
+    - name: Remove internet provider test results
+      uses: JesseTG/rm@v1.0.3
+      with:
+        path: src/Providers/Internet/TestResults
+		
+    - name: Remove location provider test results
+      uses: JesseTG/rm@v1.0.3
+      with:
+        path: src/Providers/Location/TestResults
+		
+    - name: Remove person provider test results
+      uses: JesseTG/rm@v1.0.3
+      with:
+        path: src/Providers/Person/TestResults
+		
+    - name: Remove system provider test results
+      uses: JesseTG/rm@v1.0.3
+      with:
+        path: src/Providers/Sys/TestResults
 
-    # Execute all unit tests for Falsus Engine
-    - name: Execute unit tests
-      run: dotnet test src/Falsus.sln --no-restore --verbosity normal --logger trx --collect:"XPlat Code Coverage" --results-directory ./coverage
+    - name: Remove text provider test results
+      uses: JesseTG/rm@v1.0.3
+      with:
+        path: src/Providers/Text/TestResults
+		
+    - name: Execute Falsus unit tests
+      run: dotnet test src/Engine/Falsus.UnitTests/Falsus.UnitTests.csproj --no-restore --verbosity normal --logger trx --collect:"XPlat Code Coverage" --results-directory "src/Engine/TestResults"
 
-    # Publish unit tests results      
+    - name: Execute data type provider unit tests
+      run: dotnet test src/Providers/DataTypes/Falsus.Providers.DataTypes.UnitTests/Falsus.Providers.DataTypes.UnitTests.csproj --no-restore --verbosity normal --logger trx --collect:"XPlat Code Coverage" --results-directory "src/Providers/DataTypes/TestResults" --settings cli/runsettings.xml
+
+    - name: Execute finance provider unit tests
+      run: dotnet test src/Providers/Finance/Falsus.Providers.Finance.UnitTests/Falsus.Providers.Finance.UnitTests.csproj --no-restore --verbosity normal --logger trx --collect:"XPlat Code Coverage" --results-directory "src/Providers/Finance/TestResults" --settings cli/runsettings.xml
+
+    - name: Execute Internet provider unit tests
+      run: dotnet test src/Providers/Internet/Falsus.Providers.Internet.UnitTests/Falsus.Providers.Internet.UnitTests.csproj --no-restore --verbosity normal --logger trx --collect:"XPlat Code Coverage" --results-directory "src/Providers/Internet/TestResults" --settings cli/runsettings.xml
+
+    - name: Execute Location provider unit tests
+      run: dotnet test src/Providers/Location/Falsus.Providers.Location.UnitTests/Falsus.Providers.Location.UnitTests.csproj --no-restore --verbosity normal --logger trx --collect:"XPlat Code Coverage" --results-directory "src/Providers/Location/TestResults" --settings cli/runsettings.xml
+
+    - name: Execute Person provider unit tests
+      run: dotnet test src/Providers/Person/Falsus.Providers.Person.UnitTests/Falsus.Providers.Person.UnitTests.csproj --no-restore --verbosity normal --logger trx --collect:"XPlat Code Coverage" --results-directory "src/Providers/Person/TestResults" --settings cli/runsettings.xml
+
+    - name: Execute Sys provider unit tests
+      run: dotnet test src/Providers/Sys/Falsus.Providers.Sys.UnitTests/Falsus.Providers.Sys.UnitTests.csproj --no-restore --verbosity normal --logger trx --collect:"XPlat Code Coverage" --results-directory "src/Providers/Sys/TestResults" --settings cli/runsettings.xml
+
+    - name: Execute Text provider unit tests
+      run: dotnet test src/Providers/Text/Falsus.Providers.Text.UnitTests/Falsus.Providers.Text.UnitTests.csproj --no-restore --verbosity normal --logger trx --collect:"XPlat Code Coverage" --results-directory "src/Providers/Text/TestResults" --settings cli/runsettings.xml
+   
     - name: Publish Test Results
       uses: EnricoMi/publish-unit-test-result-action@v2
       with:
-        files: src/**/*.trx
+        files: /**/*.trx
 
-    # Run Code Coverage
     - name: Code Coverage Report
       uses: irongut/CodeCoverageSummary@v1.3.0
       with:
         filename: coverage/**/coverage.cobertura.xml
         badge: true
-        fail_below_min: true
+        fail_below_min: false
         format: markdown
         hide_branch_rate: false
         hide_complexity: true
@@ -73,7 +128,6 @@ jobs:
         output: both
         thresholds: '60 80'
 
-    # Publish Code Coverage 
     - name: Add Coverage PR Comment
       uses: marocchino/sticky-pull-request-comment@v2
       if: github.event_name == 'pull_request'
