@@ -107,8 +107,8 @@
         public AvatarUrlProvider()
             : base()
         {
-            this.provider = new AvatarProvider();
             this.configuration = new AvatarUrlProviderConfiguration();
+            this.provider = new AvatarProvider(this.configuration);
         }
 
         /// <summary>
@@ -116,9 +116,15 @@
         /// </summary>
         /// <param name="configuration">The configuration to use.</param>
         public AvatarUrlProvider(AvatarUrlProviderConfiguration configuration)
-            : this()
+            : base()
         {
+            if (configuration == null)
+            {
+                throw new ArgumentNullException(nameof(configuration));
+            }
+
             this.configuration = configuration;
+            this.provider = new AvatarProvider(this.configuration);
         }
 
         /// <summary>
@@ -134,15 +140,15 @@
         /// by the provider.
         /// </param>
         /// <returns>
-        /// A random instance of <see cref="AvatarModel"/> greater than <paramref name="minValue"/>
-        /// and less than <paramref name="maxValue"/>, converted to an URI representation.
+        /// A random <see cref="string"/> containing an URI representation
+        /// an <see cref="AvatarModel"/> greater than <paramref name="minValue"/>
+        /// and less than <paramref name="maxValue"/>.
         /// </returns>
         /// <remarks>
         /// <paramref name="maxValue"/> must be greater than <paramref name="minValue"/>.
         /// </remarks>
         /// <exception cref="NotSupportedException">
-        /// Thrown because the generation of ranged <see cref="AvatarModel"/>
-        /// values is not supported.
+        /// Thrown because the generation of ranged Avatar URI values is not supported.
         /// </exception>
         public override string GetRangedRowValue(string minValue, string maxValue, string[] excludedObjects)
         {
@@ -172,8 +178,7 @@
         /// the specified <paramref name="excludedRanges"/>.
         /// </returns>
         /// <exception cref="NotSupportedException">
-        /// Thrown because the generation of ranged <see cref="AvatarModel"/>
-        /// values is not supported.
+        /// Thrown because the generation of ranged Avatar URI values is not supported.
         /// </exception>
         public override string GetRowValue(DataGeneratorContext context, WeightedRange<string>[] excludedRanges, string[] excludedObjects)
         {
@@ -219,7 +224,7 @@
             urlParams.Add(string.Concat(SkinColorUrlParameter, "=", model.SkinColor.ToString()));
             urlParams.Add(string.Concat(TopTypeUrlParameter, "=", model.Top.ToString()));
 
-            return string.Concat(BaseUrl, string.Join("&", urlParams));
+            return string.Concat(BaseUrl, "?", string.Join("&", urlParams));
         }
 
         /// <summary>

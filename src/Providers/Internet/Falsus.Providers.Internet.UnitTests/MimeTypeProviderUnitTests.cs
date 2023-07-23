@@ -12,31 +12,11 @@
     [TestClass]
     public class MimeTypeProviderUnitTests
     {
-        private const string ConnectionString = @"Data Source=.\Datasets\dataset.db";
-
         [TestMethod]
         [ExpectedException(typeof(ArgumentNullException))]
         public void ConstructorWithNoParametersThrowsException()
         {
             new MimeTypeProvider(null);
-        }
-
-        [TestMethod]
-        [ExpectedException(typeof(InvalidOperationException))]
-        public void ConstructorWithEmptyConnectionStringThrowsException()
-        {
-            // Arrange
-            DataGeneratorProperty<FileTypeModel> fileTypeProperty = new DataGeneratorProperty<FileTypeModel>("FileType");
-            DataGeneratorProperty<MimeTypeModel> property = new DataGeneratorProperty<MimeTypeModel>("MimeType")
-                .WithArgument(MimeTypeProvider.FileExtensionArgumentName, fileTypeProperty);
-
-            MimeTypeProvider provider = new MimeTypeProvider(new MimeTypeProviderConfiguration());
-            provider.InitializeRandomizer();
-            provider.Load(property, 1);
-            DataGeneratorContext context = new DataGeneratorContext(new Dictionary<string, object>(), 0, 1, property, property.Arguments);
-
-            // Act
-            provider.GetRowValue(context, Array.Empty<MimeTypeModel>());
         }
 
         [TestMethod]
@@ -89,6 +69,62 @@
 
             // Act
             provider.GetRowValue(context, Array.Empty<WeightedRange<MimeTypeModel>>(), Array.Empty<MimeTypeModel>());
+        }
+
+        [TestMethod]
+        public void GetRowValueWithNullReturnsNull()
+        {
+            // Arrange
+            ProviderResult providerResult = CreateProvider(1, includeDeprecated: true);
+            MimeTypeProvider provider = providerResult.Provider;
+
+            // Act
+            MimeTypeModel actual = provider.GetRowValue(null);
+
+            // Assert
+            Assert.IsNull(actual);
+        }
+
+        [TestMethod]
+        public void GetRowValueWithEmptyReturnsNull()
+        {
+            // Arrange
+            ProviderResult providerResult = CreateProvider(1, includeDeprecated: true);
+            MimeTypeProvider provider = providerResult.Provider;
+
+            // Act
+            MimeTypeModel actual = provider.GetRowValue(string.Empty);
+
+            // Assert
+            Assert.IsNull(actual);
+        }
+
+        [TestMethod]
+        public void GetRowValueWithInvalidTokensReturnsNull()
+        {
+            // Arrange
+            ProviderResult providerResult = CreateProvider(1, includeDeprecated: true);
+            MimeTypeProvider provider = providerResult.Provider;
+
+            // Act
+            MimeTypeModel actual = provider.GetRowValue("a|b|c");
+
+            // Assert
+            Assert.IsNull(actual);
+        }
+
+        [TestMethod]
+        public void GetRowValueWithInvalidKeyReturnsNull()
+        {
+            // Arrange
+            ProviderResult providerResult = CreateProvider(1, includeDeprecated: true);
+            MimeTypeProvider provider = providerResult.Provider;
+
+            // Act
+            MimeTypeModel actual = provider.GetRowValue("a|b");
+
+            // Assert
+            Assert.IsNull(actual);
         }
 
         [TestMethod]
@@ -321,7 +357,7 @@
         }
 
         [TestMethod]
-        public void GetRowValueGeneratesOneMillionValuesWitDeprecated()
+        public void GetRowValueGeneratesOneMillionValuesWithDeprecated()
         {
             // Arrange
             int expectedRowCount = 1000000;
@@ -329,6 +365,30 @@
             // Act
             List<MimeTypeModel> generatedValues = new List<MimeTypeModel>();
             ProviderResult providerResult = CreateProvider(expectedRowCount, includeDeprecated: true);
+            MimeTypeProvider provider = providerResult.Provider;
+            DataGeneratorProperty<MimeTypeModel> property = providerResult.Property;
+
+            for (int i = 0; i < expectedRowCount; i++)
+            {
+                DataGeneratorContext context = new DataGeneratorContext(new Dictionary<string, object>(), i, expectedRowCount, property, property.Arguments);
+                generatedValues.Add(provider.GetRowValue(context, Array.Empty<MimeTypeModel>()));
+            }
+
+            int actualRowCount = generatedValues.Count(u => u != null);
+
+            // Assert
+            Assert.AreEqual(expectedRowCount, actualRowCount);
+        }
+
+        [TestMethod]
+        public void GetRowValueGeneratesOneMillionValuesWithUniqueAliases()
+        {
+            // Arrange
+            int expectedRowCount = 1000000;
+
+            // Act
+            List<MimeTypeModel> generatedValues = new List<MimeTypeModel>();
+            ProviderResult providerResult = CreateProvider(expectedRowCount, treatAliasesAsUnique: true);
             MimeTypeProvider provider = providerResult.Provider;
             DataGeneratorProperty<MimeTypeModel> property = providerResult.Property;
 
