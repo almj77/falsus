@@ -178,7 +178,7 @@
         public void GetRowValueWithOneValidAccessoryReturnsExpectedValue()
         {
             // Arrange
-            string expected = "Prescription-01";
+            string expected = "top-resource-prescription01-filter-1";
 
             AvatarSvgProviderConfiguration configuration = new AvatarSvgProviderConfiguration()
             {
