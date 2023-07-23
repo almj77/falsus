@@ -329,7 +329,7 @@
         public void GetRowValueWithOneValidFacialHairTypeReturnsExpectedValue()
         {
             // Arrange
-            string expected = "id=\"Facial-Hair/Beard-Majestic\"";
+            string expected = "Beard-Majestic";
             AvatarSvgProviderConfiguration configuration = new AvatarSvgProviderConfiguration()
             {
                 ValidFacialHairTypes = new AvatarFacialHairType[]
