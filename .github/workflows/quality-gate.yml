@@ -114,14 +114,14 @@ jobs:
       uses: EnricoMi/publish-unit-test-result-action@v2
       with:
         files: |
-          src/Engine/TestResults/**/*.trx
-          src/Providers/DataTypes/TestResults/**/*.trx
-          src/Providers/Finance/TestResults/**/*.trx
-          src/Providers/Internet/TestResults/**/*.trx
-          src/Providers/Location/TestResults/**/*.trx
-          src/Providers/Person/TestResults/**/*.trx
-          src/Providers/Sys/TestResults/**/*.trx
-          src/Providers/Text/TestResults/**/*.trx
+          src/Engine/TestResults/*.trx
+          src/Providers/DataTypes/TestResults/*.trx
+          src/Providers/Finance/TestResults/*.trx
+          src/Providers/Internet/TestResults/*.trx
+          src/Providers/Location/TestResults/*.trx
+          src/Providers/Person/TestResults/*.trx
+          src/Providers/Sys/TestResults/*.trx
+          src/Providers/Text/TestResults/*.trx
 
     - name: Code Coverage Report
       uses: irongut/CodeCoverageSummary@v1.3.0
