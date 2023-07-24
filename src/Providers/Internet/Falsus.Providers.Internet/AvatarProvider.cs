@@ -215,6 +215,11 @@
         public AvatarProvider(AvatarProviderConfiguration configuration)
             : base()
         {
+            if (configuration == null)
+            {
+                throw new ArgumentNullException(nameof(configuration));
+            }
+
             this.configuration = configuration;
         }
 

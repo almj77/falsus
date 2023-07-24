@@ -1158,15 +1158,15 @@
             by the provider.
             </param>
             <returns>
-            A random instance of <see cref="T:Falsus.Shared.Avatar.AvatarModel"/> greater than <paramref name="minValue"/>
-            and less than <paramref name="maxValue"/>, converted to an URI representation.
+            A random <see cref="T:System.String"/> containing an URI representation
+            an <see cref="T:Falsus.Shared.Avatar.AvatarModel"/> greater than <paramref name="minValue"/>
+            and less than <paramref name="maxValue"/>.
             </returns>
             <remarks>
             <paramref name="maxValue"/> must be greater than <paramref name="minValue"/>.
             </remarks>
             <exception cref="T:System.NotSupportedException">
-            Thrown because the generation of ranged <see cref="T:Falsus.Shared.Avatar.AvatarModel"/>
-            values is not supported.
+            Thrown because the generation of ranged Avatar URI values is not supported.
             </exception>
         </member>
         <member name="M:Falsus.Providers.Internet.AvatarUrlProvider.GetRowValue(Falsus.DataGeneratorContext,Falsus.GeneratorProperties.WeightedRange{System.String}[],System.String[])">
@@ -1193,8 +1193,7 @@
             the specified <paramref name="excludedRanges"/>.
             </returns>
             <exception cref="T:System.NotSupportedException">
-            Thrown because the generation of ranged <see cref="T:Falsus.Shared.Avatar.AvatarModel"/>
-            values is not supported.
+            Thrown because the generation of ranged Avatar URI values is not supported.
             </exception>
         </member>
         <member name="M:Falsus.Providers.Internet.AvatarUrlProvider.GetRowValue(Falsus.DataGeneratorContext,System.String[])">

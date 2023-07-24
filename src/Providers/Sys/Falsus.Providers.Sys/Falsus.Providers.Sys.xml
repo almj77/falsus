@@ -533,7 +533,7 @@
             The <see cref="P:Falsus.Providers.Sys.SemanticVersionProviderConfiguration.MinMajorVersion"/> or <see cref="P:Falsus.Providers.Sys.SemanticVersionProviderConfiguration.MaxMajorVersion"/>
             or <see cref="P:Falsus.Providers.Sys.SemanticVersionProviderConfiguration.MinMinorVersion"/> or <see cref="P:Falsus.Providers.Sys.SemanticVersionProviderConfiguration.MaxMinorVersion"/>
             or <see cref="P:Falsus.Providers.Sys.SemanticVersionProviderConfiguration.MinPatchVersion"/> or <see cref="P:Falsus.Providers.Sys.SemanticVersionProviderConfiguration.MaxPatchVersion"/>
-            or <see cref="P:Falsus.Providers.Sys.SemanticVersionProviderConfiguration.MinStageVersion"/> or <see cref="P:Falsus.Providers.Sys.SemanticVersionProviderConfiguration.MaxStageVersion"/>
+            or <see cref="P:Falsus.Providers.Sys.SemanticVersionProviderConfiguration.MinStageNumber"/> or <see cref="P:Falsus.Providers.Sys.SemanticVersionProviderConfiguration.MaxStageNumber"/>
             have values lower than 0.
             </item>
             <item>
@@ -549,8 +549,8 @@
             value of <see cref="P:Falsus.Providers.Sys.SemanticVersionProviderConfiguration.MaxPatchVersion"/>.
             </item>
             <item>
-            The value of <see cref="P:Falsus.Providers.Sys.SemanticVersionProviderConfiguration.MinStageVersion"/> is greater than the
-            value of <see cref="P:Falsus.Providers.Sys.SemanticVersionProviderConfiguration.MaxStageVersion"/>.
+            The value of <see cref="P:Falsus.Providers.Sys.SemanticVersionProviderConfiguration.MinStageNumber"/> is greater than the
+            value of <see cref="P:Falsus.Providers.Sys.SemanticVersionProviderConfiguration.MaxStageNumber"/>.
             </item>
             </list>
             </exception>
@@ -662,6 +662,22 @@
             </summary>
             <value>
             A nullable <see cref="T:System.Int32"/> representing the maximum release stage version.
+            </value>
+        </member>
+        <member name="P:Falsus.Providers.Sys.SemanticVersionProviderConfiguration.MinStageNumber">
+            <summary>
+            Gets or sets the minimum inclusive value for the stage number component of the version.
+            </summary>
+            <value>
+            A nullable <see cref="T:System.Int32"/> representing the minimum stage number.
+            </value>
+        </member>
+        <member name="P:Falsus.Providers.Sys.SemanticVersionProviderConfiguration.MaxStageNumber">
+            <summary>
+            Gets or sets the maximum inclusive value for the stage number component of the version.
+            </summary>
+            <value>
+            A nullable <see cref="T:System.Int32"/> representing the maximum stage number.
             </value>
         </member>
     </members>

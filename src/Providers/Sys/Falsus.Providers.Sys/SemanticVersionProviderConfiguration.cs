@@ -99,7 +99,7 @@
         /// <value>
         /// A nullable <see cref="int"/> representing the minimum release stage version.
         /// </value>
-        public int? MinStageVersion { get; set; }
+        public string MinStageVersion { get; set; }
 
         /// <summary>
         /// Gets or sets the maximum inclusive value for the release stage component of the version.
@@ -107,6 +107,22 @@
         /// <value>
         /// A nullable <see cref="int"/> representing the maximum release stage version.
         /// </value>
-        public int? MaxStageVersion { get; set; }
+        public string MaxStageVersion { get; set; }
+
+        /// <summary>
+        /// Gets or sets the minimum inclusive value for the stage number component of the version.
+        /// </summary>
+        /// <value>
+        /// A nullable <see cref="int"/> representing the minimum stage number.
+        /// </value>
+        public int? MinStageNumber { get; set; }
+
+        /// <summary>
+        /// Gets or sets the maximum inclusive value for the stage number component of the version.
+        /// </summary>
+        /// <value>
+        /// A nullable <see cref="int"/> representing the maximum stage number.
+        /// </value>
+        public int? MaxStageNumber { get; set; }
     }
 }

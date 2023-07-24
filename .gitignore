@@ -71,5 +71,5 @@ config.wyam.hash
 config.wyam.packages.xml
 
 # Test Results & Code Coverage
-src/TestResults/*
+src/**/TestResults/*
 *.trx

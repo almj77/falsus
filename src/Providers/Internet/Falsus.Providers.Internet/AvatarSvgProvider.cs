@@ -169,8 +169,8 @@
         public AvatarSvgProvider()
             : base()
         {
-            this.provider = new AvatarProvider();
             this.configuration = new AvatarSvgProviderConfiguration();
+            this.provider = new AvatarProvider(this.configuration);
         }
 
         /// <summary>
@@ -178,9 +178,15 @@
         /// </summary>
         /// <param name="configuration">The configuration to use.</param>
         public AvatarSvgProvider(AvatarSvgProviderConfiguration configuration)
-            : this()
+            : base()
         {
+            if (configuration == null)
+            {
+                throw new ArgumentNullException(nameof(configuration));
+            }
+
             this.configuration = configuration;
+            this.provider = new AvatarProvider(this.configuration);
         }
 
         /// <summary>

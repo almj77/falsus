@@ -11,20 +11,402 @@
     public class SemanticVersionProviderUnitTests
     {
         [TestMethod]
+        [ExpectedException(typeof(ArgumentNullException))]
+        public void ConstructorWithNoParametersThrowsException()
+        {
+            new SemanticVersionProvider(null);
+        }
+
+        [TestMethod]
+        [ExpectedException(typeof(InvalidOperationException))]
+        public void ConstructorWithInvalidMinMajorVersionThrowsException()
+        {
+            // Arrange
+            SemanticVersionProviderConfiguration configuration = new SemanticVersionProviderConfiguration()
+            {
+                MinMajorVersion = -1
+            };
+
+            ProviderResult providerResult = CreateProvider(configuration: configuration);
+            SemanticVersionProvider provider = providerResult.Provider;
+
+            // Act
+            provider.GetRowValue(providerResult.Context, Array.Empty<SemanticVersionModel>());
+        }
+
+        [TestMethod]
+        [ExpectedException(typeof(InvalidOperationException))]
+        public void ConstructorWithInvalidMinMinorVersionThrowsException()
+        {
+            // Arrange
+            SemanticVersionProviderConfiguration configuration = new SemanticVersionProviderConfiguration()
+            {
+                MinMinorVersion = -1
+            };
+
+            ProviderResult providerResult = CreateProvider(configuration: configuration);
+            SemanticVersionProvider provider = providerResult.Provider;
+
+            // Act
+            provider.GetRowValue(providerResult.Context, Array.Empty<SemanticVersionModel>());
+        }
+
+        [TestMethod]
+        [ExpectedException(typeof(InvalidOperationException))]
+        public void ConstructorWithInvalidMinPatchVersionThrowsException()
+        {
+            // Arrange
+            SemanticVersionProviderConfiguration configuration = new SemanticVersionProviderConfiguration()
+            {
+                MinPatchVersion = -1
+            };
+
+            ProviderResult providerResult = CreateProvider(configuration: configuration);
+            SemanticVersionProvider provider = providerResult.Provider;
+
+            // Act
+            provider.GetRowValue(providerResult.Context, Array.Empty<SemanticVersionModel>());
+        }
+
+        [TestMethod]
+        [ExpectedException(typeof(InvalidOperationException))]
+        public void ConstructorWithInvalidMinStageThrowsException()
+        {
+            // Arrange
+            SemanticVersionProviderConfiguration configuration = new SemanticVersionProviderConfiguration()
+            {
+                MinStageVersion = "xpto"
+            };
+
+            ProviderResult providerResult = CreateProvider(configuration: configuration);
+            SemanticVersionProvider provider = providerResult.Provider;
+
+            // Act
+            provider.GetRowValue(providerResult.Context, Array.Empty<SemanticVersionModel>());
+        }
+
+        [TestMethod]
+        [ExpectedException(typeof(InvalidOperationException))]
+        public void ConstructorWithInvalidMaxStageThrowsException()
+        {
+            // Arrange
+            SemanticVersionProviderConfiguration configuration = new SemanticVersionProviderConfiguration()
+            {
+                MaxStageVersion = "xpto"
+            };
+
+            ProviderResult providerResult = CreateProvider(configuration: configuration);
+            SemanticVersionProvider provider = providerResult.Provider;
+
+            // Act
+            provider.GetRowValue(providerResult.Context, Array.Empty<SemanticVersionModel>());
+        }
+
+        [TestMethod]
+        [ExpectedException(typeof(InvalidOperationException))]
+        public void ConstructorWithInvalidStageThrowsException()
+        {
+            // Arrange
+            SemanticVersionProviderConfiguration configuration = new SemanticVersionProviderConfiguration()
+            {
+                MinStageVersion = SemanticVersionModel.ReleaseCandidate,
+                MaxStageVersion = SemanticVersionModel.Alpha
+            };
+
+            ProviderResult providerResult = CreateProvider(configuration: configuration);
+            SemanticVersionProvider provider = providerResult.Provider;
+
+            // Act
+            provider.GetRowValue(providerResult.Context, Array.Empty<SemanticVersionModel>());
+        }
+
+        [TestMethod]
+        [ExpectedException(typeof(InvalidOperationException))]
+        public void GetRangedRowValueWithNullRangeThrowsException()
+        {
+            // Arrange
+            ProviderResult providerResult = CreateProvider();
+            SemanticVersionProvider provider = providerResult.Provider;
+
+            // Act
+            provider.GetRangedRowValue(null, null, Array.Empty<SemanticVersionModel>());
+        }
+
+        [TestMethod]
+        [ExpectedException(typeof(InvalidOperationException))]
+        public void GetRangedRowValueWithAllExcludedThrowsException()
+        {
+            // Arrange
+            SemanticVersionModel minValue = new SemanticVersionModel(1, 1, 0);
+            SemanticVersionModel maxValue = new SemanticVersionModel(1, 1, 3);
+
+            SemanticVersionModel[] excludedObjects = new SemanticVersionModel[]
+            {
+                minValue,
+                new SemanticVersionModel(1,1,1),
+                new SemanticVersionModel(1,1,2),
+                maxValue
+            };
+
+            SemanticVersionProviderConfiguration config = new SemanticVersionProviderConfiguration()
+            {
+                IncludeAlphaStage = false,
+                IncludeBetaStage = false,
+                IncludeReleaseCandidateStage = false,
+                MinMajorVersion = 1,
+                MaxMajorVersion = 1,
+                MinMinorVersion = 1,
+                MaxMinorVersion = 1,
+                MinPatchVersion = 1,
+                MaxPatchVersion = 3,
+                MaxStageNumber = 0,
+                MinStageNumber = 0,
+                UseNumStatusFormat = false
+            };
+
+            ProviderResult providerResult = CreateProvider(configuration: config);
+            SemanticVersionProvider provider = providerResult.Provider;
+
+            // Act
+            var actual = provider.GetRangedRowValue(minValue, maxValue, excludedObjects);
+        }
+
+        [TestMethod]
+        public void GetRangedRowValueWithSomeExcludedReturnsExpectedValue()
+        {
+            // Arrange
+            SemanticVersionModel minValue = new SemanticVersionModel(1, 1, 0);
+            SemanticVersionModel maxValue = new SemanticVersionModel(1, 1, 3);
+
+            SemanticVersionModel[] excludedObjects = new SemanticVersionModel[]
+            {
+                minValue,
+                new SemanticVersionModel(1,1,2),
+                maxValue
+            };
+
+            SemanticVersionProviderConfiguration config = new SemanticVersionProviderConfiguration()
+            {
+                IncludeAlphaStage = false,
+                IncludeBetaStage = false,
+                IncludeReleaseCandidateStage = false,
+                MinMajorVersion = 1,
+                MaxMajorVersion = 1,
+                MinMinorVersion = 1,
+                MaxMinorVersion = 1,
+                MinPatchVersion = 1,
+                MaxPatchVersion = 3,
+                MaxStageNumber = 0,
+                MinStageNumber = 0,
+                UseNumStatusFormat = false
+            };
+
+            ProviderResult providerResult = CreateProvider(configuration: config);
+            SemanticVersionProvider provider = providerResult.Provider;
+
+            // Act
+            var actual = provider.GetRangedRowValue(minValue, maxValue, excludedObjects);
+        }
+
+        [TestMethod]
+        [ExpectedException(typeof(InvalidOperationException))]
+        public void GetRangedRowValueWitInvalidMajorVersionConfigurationThrowsException()
+        {
+            // Arrange
+            SemanticVersionModel minValue = new SemanticVersionModel(1, 1, 1);
+            SemanticVersionModel maxValue = new SemanticVersionModel(2, 2, 2);
+
+            SemanticVersionProviderConfiguration config = new SemanticVersionProviderConfiguration()
+            {
+                IncludeAlphaStage = false,
+                IncludeBetaStage = false,
+                IncludeReleaseCandidateStage = false,
+                MinMajorVersion = 3,
+                MaxMajorVersion = 2,
+                MinMinorVersion = 1,
+                MaxMinorVersion = 2,
+                MinPatchVersion = 1,
+                MaxPatchVersion = 3,
+                MaxStageNumber = 0,
+                MinStageNumber = 0,
+                UseNumStatusFormat = false
+            };
+
+            ProviderResult providerResult = CreateProvider(configuration: config);
+            SemanticVersionProvider provider = providerResult.Provider;
+
+            // Act
+            provider.GetRangedRowValue(minValue, maxValue, Array.Empty<SemanticVersionModel>());
+        }
+
+        [TestMethod]
+        [ExpectedException(typeof(InvalidOperationException))]
+        public void GetRangedRowValueWitInvalidMajorVersionThrowsException()
+        {
+            // Arrange
+            SemanticVersionModel minValue = new SemanticVersionModel(2, 1, 1);
+            SemanticVersionModel maxValue = new SemanticVersionModel(1, 1, 1);
+
+            ProviderResult providerResult = CreateProvider();
+            SemanticVersionProvider provider = providerResult.Provider;
+
+            // Act
+            provider.GetRangedRowValue(minValue, maxValue, Array.Empty<SemanticVersionModel>());
+        }
+
+        [TestMethod]
+        [ExpectedException(typeof(InvalidOperationException))]
+        public void GetRangedRowValueWitInvalidMinorVersionConfigurationThrowsException()
+        {
+            // Arrange
+            SemanticVersionModel minValue = new SemanticVersionModel(1, 1, 1);
+            SemanticVersionModel maxValue = new SemanticVersionModel(2, 2, 2);
+
+            SemanticVersionProviderConfiguration config = new SemanticVersionProviderConfiguration()
+            {
+                IncludeAlphaStage = false,
+                IncludeBetaStage = false,
+                IncludeReleaseCandidateStage = false,
+                MinMajorVersion = 1,
+                MaxMajorVersion = 2,
+                MinMinorVersion = 3,
+                MaxMinorVersion = 2,
+                MinPatchVersion = 1,
+                MaxPatchVersion = 3,
+                MaxStageNumber = 0,
+                MinStageNumber = 0,
+                UseNumStatusFormat = false
+            };
+
+            ProviderResult providerResult = CreateProvider(configuration: config);
+            SemanticVersionProvider provider = providerResult.Provider;
+
+            // Act
+            provider.GetRangedRowValue(minValue, maxValue, Array.Empty<SemanticVersionModel>());
+        }
+
+        [TestMethod]
+        [ExpectedException(typeof(InvalidOperationException))]
+        public void GetRangedRowValueWitInvalidMinorVersionThrowsException()
+        {
+            // Arrange
+            SemanticVersionModel minValue = new SemanticVersionModel(1, 2, 1);
+            SemanticVersionModel maxValue = new SemanticVersionModel(1, 1, 2);
+
+            ProviderResult providerResult = CreateProvider();
+            SemanticVersionProvider provider = providerResult.Provider;
+
+            // Act
+            provider.GetRangedRowValue(minValue, maxValue, Array.Empty<SemanticVersionModel>());
+        }
+
+        [TestMethod]
+        [ExpectedException(typeof(InvalidOperationException))]
+        public void GetRangedRowValueWitInvalidPatchVersionConfigurationThrowsException()
+        {
+            // Arrange
+            SemanticVersionModel minValue = new SemanticVersionModel(1, 1, 1);
+            SemanticVersionModel maxValue = new SemanticVersionModel(2, 2, 2);
+
+            SemanticVersionProviderConfiguration config = new SemanticVersionProviderConfiguration()
+            {
+                IncludeAlphaStage = false,
+                IncludeBetaStage = false,
+                IncludeReleaseCandidateStage = false,
+                MinMajorVersion = 1,
+                MaxMajorVersion = 2,
+                MinMinorVersion = 1,
+                MaxMinorVersion = 2,
+                MinPatchVersion = 5,
+                MaxPatchVersion = 3,
+                MaxStageNumber = 0,
+                MinStageNumber = 0,
+                UseNumStatusFormat = false
+            };
+
+            ProviderResult providerResult = CreateProvider(configuration: config);
+            SemanticVersionProvider provider = providerResult.Provider;
+
+            // Act
+            provider.GetRangedRowValue(minValue, maxValue, Array.Empty<SemanticVersionModel>());
+        }
+
+        [TestMethod]
+        [ExpectedException(typeof(InvalidOperationException))]
+        public void GetRangedRowValueWitInvalidPatchVersionThrowsException()
+        {
+            // Arrange
+            SemanticVersionModel minValue = new SemanticVersionModel(1, 1, 2);
+            SemanticVersionModel maxValue = new SemanticVersionModel(1, 1, 1);
+
+            ProviderResult providerResult = CreateProvider();
+            SemanticVersionProvider provider = providerResult.Provider;
+
+            // Act
+            provider.GetRangedRowValue(minValue, maxValue, Array.Empty<SemanticVersionModel>());
+        }
+
+        [TestMethod]
         public void GetRangedRowValueReturnsExpectedValue()
         {
             // Arrange
             SemanticVersionModel minValue = new SemanticVersionModel(1, 1, 0);
             SemanticVersionModel maxValue = new SemanticVersionModel(1, 2, 0);
 
-            ProviderResult providerResult = CreateProvider();
+            SemanticVersionProviderConfiguration configuration = new SemanticVersionProviderConfiguration()
+            {
+                MinMajorVersion = 1,
+                MaxMajorVersion = 1,
+                MinMinorVersion = 1,
+                MaxMinorVersion = 2,
+                MinPatchVersion = 0,
+                MaxPatchVersion = 99
+            };
+
+            ProviderResult providerResult = CreateProvider(configuration: configuration);
             SemanticVersionProvider provider = providerResult.Provider;
 
             // Act
             SemanticVersionModel value = provider.GetRangedRowValue(minValue, maxValue, Array.Empty<SemanticVersionModel>());
 
             // Assert
-            Assert.IsTrue(value > minValue && value < maxValue);
+            Assert.IsTrue(value >= minValue && value < maxValue);
+        }
+
+        [TestMethod]
+        public void GetRowValueWithInvalidStringReturnsNull()
+        {
+            ProviderResult providerResult = CreateProvider();
+            SemanticVersionProvider provider = providerResult.Provider;
+
+            // Act
+            SemanticVersionModel actual = provider.GetRowValue("invalid");
+
+            Assert.IsNull(actual);
+        }
+
+        [TestMethod]
+        public void GetRowValueWithEmptyStringReturnsNull()
+        {
+            ProviderResult providerResult = CreateProvider();
+            SemanticVersionProvider provider = providerResult.Provider;
+
+            // Act
+            SemanticVersionModel actual = provider.GetRowValue(string.Empty);
+
+            Assert.IsNull(actual);
+        }
+
+        [TestMethod]
+        public void GetRowValueWithNullReturnsNull()
+        {
+            ProviderResult providerResult = CreateProvider();
+            SemanticVersionProvider provider = providerResult.Provider;
+
+            // Act
+            SemanticVersionModel actual = provider.GetRowValue(null);
+
+            Assert.IsNull(actual);
         }
 
         [TestMethod]
@@ -96,6 +478,195 @@
 
             // Assert
             Assert.IsTrue(value != null);
+        }
+
+        [TestMethod]
+        public void GetRangedRowValueWithNumericStageReturnsExpectedValues()
+        {
+            // Arrange
+            var expected = new
+            {
+                Major = 1,
+                Minor = 0,
+                Patch = 0,
+                StageGtZero = true,
+                StageLteThree = true
+            };
+
+            SemanticVersionProviderConfiguration configuration = new SemanticVersionProviderConfiguration()
+            {
+                IncludeAlphaStage = true,
+                IncludeBetaStage = true,
+                IncludeReleaseCandidateStage = true,
+                UseNumStatusFormat = true
+            };
+
+            SemanticVersionModel minVersion = new SemanticVersionModel(1, 0, 0, 0);
+            SemanticVersionModel maxVersion = new SemanticVersionModel(1, 0, 1, 0);
+
+            SemanticVersionModel[] excludedObjects = new SemanticVersionModel[] { minVersion, maxVersion };
+
+            ProviderResult providerResult = CreateProvider(configuration: configuration);
+            SemanticVersionProvider provider = providerResult.Provider;
+
+            // Act
+            SemanticVersionModel value = provider.GetRangedRowValue(minVersion, maxVersion, excludedObjects);
+
+            var actual = new
+            {
+                Major = value.Major.Value,
+                Minor = value.Minor.Value,
+                Patch = value.Patch.Value,
+                StageGtZero = value.StageNumber > 0,
+                StageLteThree = value.StageNumber <= 3
+            };
+
+            // Assert
+            Assert.AreEqual(expected, actual);
+        }
+
+        [TestMethod]
+        public void GetRangedRowValueWithAlphaStageReturnsExpectedValues()
+        {
+            // Arrange
+            var expected = new
+            {
+                Major = 1,
+                Minor = 0,
+                Patch = 0,
+                Stage = SemanticVersionModel.Alpha,
+                StageGtZero = true,
+                StageLteNinetyNine = true
+            };
+
+            SemanticVersionProviderConfiguration configuration = new SemanticVersionProviderConfiguration()
+            {
+                IncludeAlphaStage = true,
+                IncludeBetaStage = true,
+                IncludeReleaseCandidateStage = true,
+                MaxStageNumber = 99
+            };
+
+            SemanticVersionModel minVersion = new SemanticVersionModel(1, 0, 0, SemanticVersionModel.Alpha, 0);
+            SemanticVersionModel maxVersion = new SemanticVersionModel(1, 0, 0, SemanticVersionModel.Beta, 0);
+
+            SemanticVersionModel[] excludedObjects = new SemanticVersionModel[] { minVersion, maxVersion };
+
+            ProviderResult providerResult = CreateProvider(configuration: configuration);
+            SemanticVersionProvider provider = providerResult.Provider;
+
+            // Act
+            SemanticVersionModel value = provider.GetRangedRowValue(minVersion, maxVersion, excludedObjects);
+
+            var actual = new
+            {
+                Major = value.Major.Value,
+                Minor = value.Minor.Value,
+                Patch = value.Patch.Value,
+                value.Stage,
+                StageGtZero = value.StageNumber > 0,
+                StageLteNinetyNine = value.StageNumber < 99
+            };
+
+            // Assert
+            Assert.AreEqual(expected, actual);
+        }
+
+        [TestMethod]
+        public void GetRangedRowValueWithBetaStageReturnsExpectedValues()
+        {
+            // Arrange
+            var expected = new
+            {
+                Major = 1,
+                Minor = 0,
+                Patch = 0,
+                Stage = SemanticVersionModel.Beta,
+                StageGtZero = true,
+                StageLteNinetyNine = true
+            };
+
+            SemanticVersionProviderConfiguration configuration = new SemanticVersionProviderConfiguration()
+            {
+                IncludeAlphaStage = true,
+                IncludeBetaStage = true,
+                IncludeReleaseCandidateStage = true,
+                MaxStageNumber = 99
+            };
+
+            SemanticVersionModel minVersion = new SemanticVersionModel(1, 0, 0, SemanticVersionModel.Beta, 0);
+            SemanticVersionModel maxVersion = new SemanticVersionModel(1, 0, 0, SemanticVersionModel.ReleaseCandidate, 0);
+
+            SemanticVersionModel[] excludedObjects = new SemanticVersionModel[] { minVersion, maxVersion };
+
+            ProviderResult providerResult = CreateProvider(configuration: configuration);
+            SemanticVersionProvider provider = providerResult.Provider;
+
+            // Act
+            SemanticVersionModel value = provider.GetRangedRowValue(minVersion, maxVersion, excludedObjects);
+
+            var actual = new
+            {
+                Major = value.Major.Value,
+                Minor = value.Minor.Value,
+                Patch = value.Patch.Value,
+                value.Stage,
+                StageGtZero = value.StageNumber > 0,
+                StageLteNinetyNine = value.StageNumber < 99
+            };
+
+            // Assert
+            Assert.AreEqual(expected, actual);
+        }
+
+        [TestMethod]
+        public void GetRangedRowValueWithMinVersionBetaStageReturnsExpectedValues()
+        {
+            // Arrange
+            var expected = new
+            {
+                Major = 1,
+                Minor = 0,
+                PatchGtZero = true,
+                PatchLteTen = true,
+                StageValid = true,
+                StageGteZero = true,
+                StageLteNinetyNine = true
+            };
+
+            SemanticVersionProviderConfiguration configuration = new SemanticVersionProviderConfiguration()
+            {
+                IncludeAlphaStage = true,
+                IncludeBetaStage = true,
+                IncludeReleaseCandidateStage = true,
+                MaxPatchVersion = 10,
+                MaxStageNumber = 99
+            };
+
+            SemanticVersionModel minVersion = new SemanticVersionModel(1, 0, 0, SemanticVersionModel.Beta, 0);
+            SemanticVersionModel maxVersion = new SemanticVersionModel(1, 1, 0);
+
+            SemanticVersionModel[] excludedObjects = new SemanticVersionModel[] { minVersion, maxVersion };
+
+            ProviderResult providerResult = CreateProvider(configuration: configuration);
+            SemanticVersionProvider provider = providerResult.Provider;
+
+            // Act
+            SemanticVersionModel value = provider.GetRangedRowValue(minVersion, maxVersion, excludedObjects);
+
+            var actual = new
+            {
+                Major = value.Major.Value,
+                Minor = value.Minor.Value,
+                PatchGtZero = value.Patch.Value > 0,
+                PatchLteTen = value.Patch.Value <= 10,
+                StageValid = value.Stage == SemanticVersionModel.Beta || (value.Patch > 0),
+                StageGteZero = value.StageNumber >= 0,
+                StageLteNinetyNine = value.StageNumber < 99
+            };
+
+            // Assert
+            Assert.AreEqual(expected, actual);
         }
 
         [TestMethod]
@@ -183,7 +754,7 @@
             {
                 RowCount = generatedValues.Count(u => u != null),
                 UniquevalueCount = generatedValues.Distinct().Count(),
-                ValuesWithinExpectedRange = generatedValues.All(u => u != null && (u <= minValue || u > maxValue))
+                ValuesWithinExpectedRange = generatedValues.All(u => u != null && (u < minValue || u >= maxValue))
             };
 
             // Assert
@@ -295,6 +866,41 @@
                 DataGeneratorContext context = new DataGeneratorContext(new Dictionary<string, object>(), i, expectedRowCount, property, property.Arguments);
                 generatedValues.Add(provider.GetRowValue(context, excludedRanges, generatedValues.ToArray()));
             }
+        }
+
+        [TestMethod]
+        [ExpectedException(typeof(InvalidOperationException))]
+        public void GetRowValueWithAllExcludedThrowsException()
+        {
+            // Arrange
+            SemanticVersionModel[] excludedObjects = new SemanticVersionModel[] {
+                new SemanticVersionModel(1, 1, 0),
+                new SemanticVersionModel(1, 1, 1),
+                new SemanticVersionModel(1, 1, 2),
+                new SemanticVersionModel(1, 1, 3)
+            };
+
+            SemanticVersionProviderConfiguration config = new SemanticVersionProviderConfiguration()
+            {
+                IncludeAlphaStage = false,
+                IncludeBetaStage = false,
+                IncludeReleaseCandidateStage = false,
+                MinMajorVersion = 1,
+                MaxMajorVersion = 1,
+                MinMinorVersion = 1,
+                MaxMinorVersion = 1,
+                MinPatchVersion = 1,
+                MaxPatchVersion = 3,
+                MaxStageNumber = 0,
+                MinStageNumber = 0,
+                UseNumStatusFormat = false
+            };
+
+            ProviderResult providerResult = CreateProvider(configuration: config);
+            SemanticVersionProvider provider = providerResult.Provider;
+
+            // Act
+            provider.GetRowValue(providerResult.Context, excludedObjects);
         }
 
 

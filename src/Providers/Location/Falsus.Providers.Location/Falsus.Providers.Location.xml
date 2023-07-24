@@ -476,69 +476,6 @@
             An array of <see cref="T:Falsus.Shared.Models.CountryModel"/> instances.
             </returns>
         </member>
-        <member name="T:Falsus.Providers.Location.Models.CoordinateToStreetModel">
-            <summary>
-            This class represents the association between coordinates and a street name.
-            </summary>
-        </member>
-        <member name="P:Falsus.Providers.Location.Models.CoordinateToStreetModel.Latitude">
-            <summary>
-            Gets the latitude of the point represented by this instance.
-            </summary>
-            <value>
-            A <see cref="T:System.String"/> containing the latitude value.
-            </value>
-        </member>
-        <member name="P:Falsus.Providers.Location.Models.CoordinateToStreetModel.Longitude">
-            <summary>
-            Gets the longitude of the point represented by this instance.
-            </summary>
-            <value>
-            A <see cref="T:System.String"/> containing the longitude value.
-            </value>
-        </member>
-        <member name="P:Falsus.Providers.Location.Models.CoordinateToStreetModel.Name">
-            <summary>
-            Gets or sets the name of the street.
-            </summary>
-            <value>
-            A <see cref="T:System.String"/> containing the name of the street.
-            </value>
-        </member>
-        <member name="M:Falsus.Providers.Location.Models.CoordinateToStreetModel.CompareTo(Falsus.Providers.Location.Models.CoordinateToStreetModel)">
-            <summary>
-            Compares this instance with a specified <see cref="T:Falsus.Providers.Location.Models.CoordinateToStreetModel"/> and
-            returns an integer that indicates whether this instance precedes, follows, or
-            appears in the same position in the sort order as the specified <see cref="T:Falsus.Providers.Location.Models.CoordinateToStreetModel"/>.
-            </summary>
-            <param name="other">The other <see cref="T:Falsus.Providers.Location.Models.CoordinateToStreetModel"/> to be compared with this instance.</param>
-            <returns>
-            A 32-bit signed integer that indicates whether this instance precedes, follows, or
-            appears in the same position in the sort order as the value parameter.
-            </returns>
-        </member>
-        <member name="M:Falsus.Providers.Location.Models.CoordinateToStreetModel.Equals(Falsus.Providers.Location.Models.CoordinateToStreetModel)">
-            <summary>
-            Indicates whether the current object is equal to another object of the same type.
-            </summary>
-            <param name="other">An object to compare with this object.</param>
-            <returns>True if the current object is equal to the other parameter; otherwise, false.</returns>
-        </member>
-        <member name="M:Falsus.Providers.Location.Models.CoordinateToStreetModel.Equals(System.Object)">
-            <summary>
-            Indicates whether the current object is equal to another object of the same type.
-            </summary>
-            <param name="obj">An object to compare with this object.</param>
-            <returns>True if the current object is equal to the other parameter; otherwise, false.</returns>
-        </member>
-        <member name="M:Falsus.Providers.Location.Models.CoordinateToStreetModel.GetHashCode">
-            <summary>
-            Calculates the hash for this instance.
-            </summary>
-            <returns>
-            A hash code for the current object.
-            </returns>
-        </member>
         <member name="T:Falsus.Providers.Location.Models.CountryToContinentModel">
             <summary>
             This class represents the association between a geographic Country and a geographic Continent.
@@ -559,40 +496,6 @@
             <value>
             A string containing the ISO Alpha2 Continent Code.
             </value>
-        </member>
-        <member name="M:Falsus.Providers.Location.Models.CountryToContinentModel.CompareTo(Falsus.Providers.Location.Models.CountryToContinentModel)">
-            <summary>
-            Compares this instance with a specified <see cref="T:Falsus.Providers.Location.Models.CountryToContinentModel"/> and
-            returns an integer that indicates whether this instance precedes, follows, or
-            appears in the same position in the sort order as the specified <see cref="T:Falsus.Providers.Location.Models.CountryToContinentModel"/>.
-            </summary>
-            <param name="other">The other <see cref="T:Falsus.Providers.Location.Models.CountryToContinentModel"/> to be compared with this instance.</param>
-            <returns>
-            A 32-bit signed integer that indicates whether this instance precedes, follows, or
-            appears in the same position in the sort order as the value parameter.
-            </returns>
-        </member>
-        <member name="M:Falsus.Providers.Location.Models.CountryToContinentModel.Equals(Falsus.Providers.Location.Models.CountryToContinentModel)">
-            <summary>
-            Indicates whether the current object is equal to another object of the same type.
-            </summary>
-            <param name="other">An object to compare with this object.</param>
-            <returns>True if the current object is equal to the other parameter; otherwise, false.</returns>
-        </member>
-        <member name="M:Falsus.Providers.Location.Models.CountryToContinentModel.Equals(System.Object)">
-            <summary>
-            Indicates whether the current object is equal to another object of the same type.
-            </summary>
-            <param name="obj">An object to compare with this object.</param>
-            <returns>True if the current object is equal to the other parameter; otherwise, false.</returns>
-        </member>
-        <member name="M:Falsus.Providers.Location.Models.CountryToContinentModel.GetHashCode">
-            <summary>
-            Calculates the hash for this instance.
-            </summary>
-            <returns>
-            A hash code for the current object.
-            </returns>
         </member>
         <member name="T:Falsus.Providers.Location.Models.PostalCodePatternModel">
             <summary>
@@ -615,40 +518,6 @@
             <value>
             A <see cref="T:System.String"/> containing a Regular Expression.
             </value>
-        </member>
-        <member name="M:Falsus.Providers.Location.Models.PostalCodePatternModel.CompareTo(Falsus.Providers.Location.Models.PostalCodePatternModel)">
-            <summary>
-            Compares this instance with a specified <see cref="T:Falsus.Providers.Location.Models.PostalCodePatternModel"/> and
-            returns an integer that indicates whether this instance precedes, follows, or
-            appears in the same position in the sort order as the specified <see cref="T:Falsus.Providers.Location.Models.PostalCodePatternModel"/>.
-            </summary>
-            <param name="other">The other <see cref="T:Falsus.Providers.Location.Models.PostalCodePatternModel"/> to be compared with this instance.</param>
-            <returns>
-            A 32-bit signed integer that indicates whether this instance precedes, follows, or
-            appears in the same position in the sort order as the value parameter.
-            </returns>
-        </member>
-        <member name="M:Falsus.Providers.Location.Models.PostalCodePatternModel.Equals(Falsus.Providers.Location.Models.PostalCodePatternModel)">
-            <summary>
-            Indicates whether the current object is equal to another object of the same type.
-            </summary>
-            <param name="other">An object to compare with this object.</param>
-            <returns>True if the current object is equal to the other parameter; otherwise, false.</returns>
-        </member>
-        <member name="M:Falsus.Providers.Location.Models.PostalCodePatternModel.Equals(System.Object)">
-            <summary>
-            Indicates whether the current object is equal to another object of the same type.
-            </summary>
-            <param name="obj">An object to compare with this object.</param>
-            <returns>True if the current object is equal to the other parameter; otherwise, false.</returns>
-        </member>
-        <member name="M:Falsus.Providers.Location.Models.PostalCodePatternModel.GetHashCode">
-            <summary>
-            Calculates the hash for this instance.
-            </summary>
-            <returns>
-            A hash code for the current object.
-            </returns>
         </member>
         <member name="T:Falsus.Providers.Location.PostalCodeProvider">
             <summary>
