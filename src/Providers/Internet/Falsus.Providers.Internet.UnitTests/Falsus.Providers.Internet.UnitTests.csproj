@@ -9,6 +9,10 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <None Remove="Datasets\.gitkeep" />
+  </ItemGroup>
+
+  <ItemGroup>
     <EmbeddedResource Include="..\Falsus.Providers.Internet\Datasets\MimeTypes.json" Link="Datasets\MimeTypes.json" />
   </ItemGroup>
 

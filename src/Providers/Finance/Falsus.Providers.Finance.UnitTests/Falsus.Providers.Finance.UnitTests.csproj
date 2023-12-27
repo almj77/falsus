@@ -9,6 +9,10 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <None Remove="Datasets\.gitkeep" />
+  </ItemGroup>
+
+  <ItemGroup>
     <EmbeddedResource Include="..\..\Location\Falsus.Providers.Location\Datasets\Countries.json" Link="Datasets\Countries.json" />
     <EmbeddedResource Include="..\Falsus.Providers.Finance\Datasets\Currencies.json" Link="Datasets\Currencies.json" />
   </ItemGroup>
