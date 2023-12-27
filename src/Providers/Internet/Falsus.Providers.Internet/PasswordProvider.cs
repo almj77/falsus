@@ -186,7 +186,6 @@
         /// <exception cref="InvalidOperationException">
         /// Thrown when:
         /// <list type="bullet">
-        /// <item>The <see cref="configuration"/> instance is null</item>
         /// <item>
         /// The <see cref="PasswordProviderConfiguration.Length"/> or <see cref="PasswordProviderConfiguration.MinLength"/>
         /// or <see cref="PasswordProviderConfiguration.MaxLength"/> have values lower than 0.

@@ -1913,7 +1913,6 @@
             <exception cref="T:System.InvalidOperationException">
             Thrown when:
             <list type="bullet">
-            <item>The <see cref="F:Falsus.Providers.Internet.PasswordProvider.configuration"/> instance is null</item>
             <item>
             The <see cref="P:Falsus.Providers.Internet.PasswordProviderConfiguration.Length"/> or <see cref="P:Falsus.Providers.Internet.PasswordProviderConfiguration.MinLength"/>
             or <see cref="P:Falsus.Providers.Internet.PasswordProviderConfiguration.MaxLength"/> have values lower than 0.
