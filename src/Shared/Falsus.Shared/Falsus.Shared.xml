@@ -1636,6 +1636,77 @@
             A hash code for the current object.
             </returns>
         </member>
+        <member name="T:Falsus.Shared.Models.LegalEntityTypeModel">
+            <summary>
+            This class represents a type of legal entity.
+            </summary>
+        </member>
+        <member name="P:Falsus.Shared.Models.LegalEntityTypeModel.CountryAlpha2">
+            <summary>
+            Gets or sets the Alpha2 ISO Country Code.
+            </summary>
+            <value>
+            A <see cref="T:System.String"/> containing the Alpha2 ISO Country Code.
+            </value>
+        </member>
+        <member name="P:Falsus.Shared.Models.LegalEntityTypeModel.TwoLetterLanguageCode">
+            <summary>
+            Gets or sets the two letter language code.
+            </summary>
+            <value>
+            A <see cref="T:System.String"/> containing the language code.
+            </value>
+        </member>
+        <member name="P:Falsus.Shared.Models.LegalEntityTypeModel.Abbreviation">
+            <summary>
+            Gets or sets the legal entity type abbreviation.
+            </summary>
+            <value>
+            A <see cref="T:System.String"/> containing the legal entity type abbreviation.
+            </value>
+        </member>
+        <member name="P:Falsus.Shared.Models.LegalEntityTypeModel.Name">
+            <summary>
+            Gets or sets the name of the legal entity type.
+            </summary>
+            <value>
+            A <see cref="T:System.String"/> containing the legal entity type name.
+            </value>
+        </member>
+        <member name="M:Falsus.Shared.Models.LegalEntityTypeModel.CompareTo(Falsus.Shared.Models.LegalEntityTypeModel)">
+            <summary>
+            Compares this instance with a specified <see cref="T:Falsus.Shared.Models.LegalEntityTypeModel"/> and
+            returns an integer that indicates whether this instance precedes, follows, or
+            appears in the same position in the sort order as the specified <see cref="T:Falsus.Shared.Models.LegalEntityTypeModel"/>.
+            </summary>
+            <param name="other">The other <see cref="T:Falsus.Shared.Models.LegalEntityTypeModel"/> to be compared with this instance.</param>
+            <returns>
+            A 32-bit signed integer that indicates whether this instance precedes, follows, or
+            appears in the same position in the sort order as the value parameter.
+            </returns>
+        </member>
+        <member name="M:Falsus.Shared.Models.LegalEntityTypeModel.Equals(Falsus.Shared.Models.LegalEntityTypeModel)">
+            <summary>
+            Indicates whether the current object is equal to another object of the same type.
+            </summary>
+            <param name="other">An object to compare with this object.</param>
+            <returns>True if the current object is equal to the other parameter; otherwise, false.</returns>
+        </member>
+        <member name="M:Falsus.Shared.Models.LegalEntityTypeModel.Equals(System.Object)">
+            <summary>
+            Indicates whether the current object is equal to another object of the same type.
+            </summary>
+            <param name="obj">An object to compare with this object.</param>
+            <returns>True if the current object is equal to the other parameter; otherwise, false.</returns>
+        </member>
+        <member name="M:Falsus.Shared.Models.LegalEntityTypeModel.GetHashCode">
+            <summary>
+            Calculates the hash for this instance.
+            </summary>
+            <returns>
+            A hash code for the current object.
+            </returns>
+        </member>
         <member name="T:Falsus.Shared.Models.MimeTypeModel">
             <summary>
             This class represents a MIME type.

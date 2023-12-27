@@ -1,0 +1,33 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net6.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+
+    <IsPackable>false</IsPackable>
+    <IsTestProject>true</IsTestProject>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <EmbeddedResource Include="..\..\Location\Falsus.Providers.Location\Datasets\Countries.json" Link="Datasets\Countries.json" />
+    <EmbeddedResource Include="..\Falsus.Providers.Company\Datasets\CountryLanguages.json" Link="Datasets\CountryLanguages.json" />
+    <EmbeddedResource Include="..\Falsus.Providers.Company\Datasets\LegalEntityTypes.json" Link="Datasets\LegalEntityTypes.json" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.NET.Test.Sdk" Version="17.5.0" />
+    <PackageReference Include="MSTest.TestAdapter" Version="2.2.10" />
+    <PackageReference Include="MSTest.TestFramework" Version="2.2.10" />
+    <PackageReference Include="coverlet.collector" Version="3.2.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Falsus.Providers.Company\Falsus.Providers.Company.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="Datasets\" />
+  </ItemGroup>
+
+</Project>

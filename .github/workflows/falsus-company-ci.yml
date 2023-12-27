@@ -1,0 +1,56 @@
+name: Falsus Company CI
+
+on:
+  workflow_dispatch:
+  push:
+    branches-ignore:
+    - main
+    paths:
+    - src/Providers/Company/**
+    
+permissions:
+  checks: write
+  pull-requests: write
+  
+jobs:
+
+  build:
+
+    strategy:
+      matrix:
+        configuration: [Release]
+        dotnet-version: ['6.0.x']
+
+    runs-on: ubuntu-latest   # For a list of available runner types, refer to
+                             # https://help.github.com/en/actions/reference/workflow-syntax-for-github-actions#jobsjob_idruns-on
+    steps:
+    - name: Checkout
+      uses: actions/checkout@v3
+      with:
+        fetch-depth: 0
+
+    # Install the .NET Core workload
+    - name: Setup .NET Core SDK ${{ matrix.dotnet-version }}
+      uses: actions/setup-dotnet@v3
+      with:
+        dotnet-version: ${{ matrix.dotnet-version }}
+
+    # Install dependencies
+    - name: Install dependencies
+      run: dotnet restore src/Providers/Company/Falsus.Providers.Company/Falsus.Providers.Company.csproj
+
+    # Install dependencies for unit tests
+    - name: Install dependencies
+      run: dotnet restore src/Providers/Company/Falsus.Providers.Company.UnitTests/Falsus.Providers.Company.UnitTests.csproj
+
+    # Build the Falsus Company Provider
+    - name: Build
+      run: dotnet build src/Providers/Company/Falsus.Providers.Company/Falsus.Providers.Company.csproj --configuration ${{ matrix.configuration }} --no-restore
+
+    # Build the Falsus Company Provider Unit Tests
+    - name: Build
+      run: dotnet build src/Providers/Company/Falsus.Providers.Company.UnitTests/Falsus.Providers.Company.UnitTests.csproj --configuration ${{ matrix.configuration }} --no-restore
+
+    # Execute all unit tests for Falsus Company Provider
+    - name: Execute unit tests
+      run: dotnet test src/Providers/Company/Falsus.Providers.Company.UnitTests/Falsus.Providers.Company.UnitTests.csproj --no-restore --verbosity normal
