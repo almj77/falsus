@@ -11,6 +11,8 @@
 - Seamlessly establish dependencies between fields, enabling logical connections (e.g., when a continent is already generated, generate a country that perfectly aligns with its continent).
 
 ### Data Generators
+#### Company
+- Legal Entity Type
 #### Data Types
 - Boolean
 - Date
@@ -21,6 +23,12 @@
 - Time
 #### Finance
 - Currency
+#### Internet
+- Email address
+- Hexadecimal color
+- MIME type
+- Avatar
+- Password
 #### Location
 - Continent
 - Country
@@ -29,25 +37,19 @@
 - Street
 - Postal Code
 - Coordinates
-#### Text
-- Lorem Ipsum
-- Regular Expression
-- Word (Dictionary)
 #### Person
 - First name
 - Last name
 - Nationality
 - Gender
-#### Internet
-- Email address
-- Hexadecimal color
-- MIME type
-- Avatar
-- Password
 #### System
 - File type
 - File name
 - Semantic Version
+#### Text
+- Lorem Ipsum
+- Regular Expression
+- Word (Dictionary)
 
 ## 🕹 Usage
 ### Basic

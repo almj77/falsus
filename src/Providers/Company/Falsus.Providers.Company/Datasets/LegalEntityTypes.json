@@ -1,0 +1,2428 @@
+﻿[
+  {
+    "CountryAlpha2": "AL",
+    "Abbreviation": "Sh.p.k.",
+    "Name": "Shoqëri me përgjegjësi të kufizuar"
+  },
+  {
+    "CountryAlpha2": "AL",
+    "Abbreviation": "Sh.A.",
+    "Name": "Shoqëri Aksionere"
+  },
+  {
+    "CountryAlpha2": "AL",
+    "Abbreviation": "Sh.K.",
+    "Name": "Shoqëri komandite"
+  },
+  {
+    "CountryAlpha2": "AR",
+    "Abbreviation": "S.A.",
+    "Name": "Sociedad Anónima"
+  },
+  {
+    "CountryAlpha2": "AR",
+    "Abbreviation": "S.R.L.",
+    "Name": "Sociedad de Responsabilidad Limitada"
+  },
+  {
+    "CountryAlpha2": "AR",
+    "Abbreviation": "S.C.S.",
+    "Name": "Sociedad en Comandita Simple"
+  },
+  {
+    "CountryAlpha2": "AR",
+    "Abbreviation": "S.C.p.A.",
+    "Name": "Sociedad en Comandita por Acciones"
+  },
+  {
+    "CountryAlpha2": "AR",
+    "Abbreviation": "Soc.Col.",
+    "Name": "Sociedad Colectiva"
+  },
+  {
+    "CountryAlpha2": "AR",
+    "Abbreviation": "S.C.e I.",
+    "Name": "Sociedad de Capital e Industria"
+  },
+  {
+    "CountryAlpha2": "AR",
+    "Abbreviation": "S.E.",
+    "Name": "Sociedad del Estado"
+  },
+  {
+    "CountryAlpha2": "AR",
+    "Abbreviation": "S.G.R.",
+    "Name": "Sociedad de Garantía Reciproca"
+  },
+  {
+    "CountryAlpha2": "AR",
+    "Abbreviation": "S.A.S.",
+    "Name": "Sociedad por Acciones Simplificada"
+  },
+  {
+    "CountryAlpha2": "AR",
+    "Abbreviation": "S.A.U.",
+    "Name": "Sociedad Anónima Unipersonal"
+  },
+  {
+    "CountryAlpha2": "AU",
+    "Abbreviation": "LLP",
+    "Name": "Limited liability partnership"
+  },
+  {
+    "CountryAlpha2": "AU",
+    "Abbreviation": "ILP",
+    "Name": "Incorporated limited partnership"
+  },
+  {
+    "CountryAlpha2": "AU",
+    "Abbreviation": "Inc.",
+    "Name": "Incorporated"
+  },
+  {
+    "CountryAlpha2": "AU",
+    "Abbreviation": "Ltd.",
+    "Name": "Limited"
+  },
+  {
+    "CountryAlpha2": "AU",
+    "Abbreviation": "NL",
+    "Name": "No liability"
+  },
+  {
+    "CountryAlpha2": "AU",
+    "Abbreviation": "Pty. Ltd.",
+    "Name": "Proprietary Limited Company"
+  },
+  {
+    "CountryAlpha2": "AU",
+    "Abbreviation": "Pty.",
+    "Name": "Unlimited Proprietary"
+  },
+  {
+    "CountryAlpha2": "AU",
+    "Abbreviation": "Trust",
+    "Name": ""
+  },
+  {
+    "CountryAlpha2": "BA",
+    "Abbreviation": "d.d.",
+    "Name": "dioničko društvo"
+  },
+  {
+    "CountryAlpha2": "BA",
+    "Abbreviation": "a.d.",
+    "Name": "akcionarsko društvo"
+  },
+  {
+    "CountryAlpha2": "BA",
+    "Abbreviation": "d.n.o.",
+    "Name": "društvo s neograničenom solidarnom odgovornošću"
+  },
+  {
+    "CountryAlpha2": "BA",
+    "Abbreviation": "d.o.o.",
+    "Name": "društvo s ograničenom odgovornošću"
+  },
+  {
+    "CountryAlpha2": "BA",
+    "Abbreviation": "k.d.",
+    "Name": "komanditno društvo"
+  },
+  {
+    "CountryAlpha2": "BA",
+    "Abbreviation": "s.p.",
+    "Name": "samostalni preduzetnik"
+  },
+  {
+    "CountryAlpha2": "BR",
+    "Abbreviation": "Ltda.",
+    "Name": "Sociedade limitada"
+  },
+  {
+    "CountryAlpha2": "BR",
+    "Abbreviation": "S.A. ",
+    "Name": "Sociedade anônima"
+  },
+  {
+    "CountryAlpha2": "BR",
+    "Abbreviation": "Sociedade simples",
+    "Name": ""
+  },
+  {
+    "CountryAlpha2": "BR",
+    "Abbreviation": "Sociedade em comandita simples",
+    "Name": ""
+  },
+  {
+    "CountryAlpha2": "BR",
+    "Abbreviation": "Sociedade em nome coletivo",
+    "Name": ""
+  },
+  {
+    "CountryAlpha2": "BR",
+    "Abbreviation": "Sociedade em conta de participação",
+    "Name": ""
+  },
+  {
+    "CountryAlpha2": "BR",
+    "Abbreviation": "Sociedade em comum",
+    "Name": ""
+  },
+  {
+    "CountryAlpha2": "BR",
+    "Abbreviation": "firma individual",
+    "Name": "Empresa individual"
+  },
+  {
+    "CountryAlpha2": "BR",
+    "Abbreviation": "EIRELI",
+    "Name": "Empresa Individual de Responsabilidade Limitada"
+  },
+  {
+    "CountryAlpha2": "BN",
+    "Abbreviation": "Sdn. Bhd.",
+    "Name": "Sendirian Berhad"
+  },
+  {
+    "CountryAlpha2": "BN",
+    "Abbreviation": "Bhd.",
+    "Name": "Berhad"
+  },
+  {
+    "CountryAlpha2": "KH",
+    "Abbreviation": "SP",
+    "Name": "Sole Proprietorship"
+  },
+  {
+    "CountryAlpha2": "KH",
+    "Abbreviation": "GP",
+    "Name": "General Partnership"
+  },
+  {
+    "CountryAlpha2": "KH",
+    "Abbreviation": "LP",
+    "Name": "Limited Partnership"
+  },
+  {
+    "CountryAlpha2": "KH",
+    "Abbreviation": "SM Pte Ltd.",
+    "Name": "Single Member Private Limited Company"
+  },
+  {
+    "CountryAlpha2": "KH",
+    "Abbreviation": "Pte Ltd.",
+    "Name": "Private Limited Company"
+  },
+  {
+    "CountryAlpha2": "KH",
+    "Abbreviation": "Plc Ltd.",
+    "Name": "Public Limited Company"
+  },
+  {
+    "CountryAlpha2": "KH",
+    "Abbreviation": "PEEC",
+    "Name": "Public Establishment with Economic characteristics"
+  },
+  {
+    "CountryAlpha2": "CA",
+    "TwoLetterLanguageCode": "en",
+    "Abbreviation": "Ltd.",
+    "Name": "Limited"
+  },
+  {
+    "CountryAlpha2": "CA",
+    "TwoLetterLanguageCode": "en",
+    "Abbreviation": "Inc.",
+    "Name": "Incorporated"
+  },
+  {
+    "CountryAlpha2": "CA",
+    "TwoLetterLanguageCode": "en",
+    "Abbreviation": "Corp.",
+    "Name": "Corporation"
+  },
+  {
+    "CountryAlpha2": "CA",
+    "TwoLetterLanguageCode": "fr",
+    "Abbreviation": "Ltée",
+    "Name": "Limitée"
+  },
+  {
+    "CountryAlpha2": "CA",
+    "TwoLetterLanguageCode": "fr",
+    "Abbreviation": "Inc.",
+    "Name": "Incorporée"
+  },
+  {
+    "CountryAlpha2": "CA",
+    "TwoLetterLanguageCode": "fr",
+    "Abbreviation": "S.A.R.F.",
+    "Name": "Société par actions de régime fédéral"
+  },
+  {
+    "CountryAlpha2": "CL",
+    "Abbreviation": "SpA",
+    "Name": "Sociedad por acciones"
+  },
+  {
+    "CountryAlpha2": "CL",
+    "Abbreviation": "SRL",
+    "Name": "Sociedad de Responsabilidad Limitdada"
+  },
+  {
+    "CountryAlpha2": "CL",
+    "Abbreviation": "EIRL",
+    "Name": "Empresa Individual de Responsabilidad Limitada"
+  },
+  {
+    "CountryAlpha2": "CL",
+    "Abbreviation": "S.A.",
+    "Name": "Sociedad Anónima"
+  },
+  {
+    "CountryAlpha2": "CL",
+    "Abbreviation": "S.G.R.",
+    "Name": "Sociedad de Garantia Reciproca"
+  },
+  {
+    "CountryAlpha2": "CL",
+    "Abbreviation": "Ltda.",
+    "Name": "Sociedad de responsabilidad limitada"
+  },
+  {
+    "CountryAlpha2": "CO",
+    "Abbreviation": "S.A.",
+    "Name": "Sociedad Anónima"
+  },
+  {
+    "CountryAlpha2": "CO",
+    "Abbreviation": "S.A.S.",
+    "Name": "Sociedades por Acciones Simplificada"
+  },
+  {
+    "CountryAlpha2": "CO",
+    "Abbreviation": "Ltda.",
+    "Name": "Sociedad de Responsabilidad Limitada"
+  },
+  {
+    "CountryAlpha2": "CO",
+    "Abbreviation": "S.C.",
+    "Name": "Sociedad Colectiva"
+  },
+  {
+    "CountryAlpha2": "CO",
+    "Abbreviation": "S. en C.",
+    "Name": "Comandita Simple"
+  },
+  {
+    "CountryAlpha2": "CO",
+    "Abbreviation": "S.C.A.",
+    "Name": "Comandita por Acciones"
+  },
+  {
+    "CountryAlpha2": "CO",
+    "Abbreviation": "E.U.",
+    "Name": "Empresa Unipersonal"
+  },
+  {
+    "CountryAlpha2": "CR",
+    "Abbreviation": "S.A.",
+    "Name": "Sociedad Anónima"
+  },
+  {
+    "CountryAlpha2": "CR",
+    "Abbreviation": "S.R.L.",
+    "Name": "Sociedad de Responsabilidad Limitada"
+  },
+  {
+    "CountryAlpha2": "CR",
+    "Abbreviation": "Ltda.",
+    "Name": "Sociedad de Responsabilidad Limitada"
+  },
+  {
+    "CountryAlpha2": "DO",
+    "Abbreviation": "C. por A.",
+    "Name": "Compañía por Acciones"
+  },
+  {
+    "CountryAlpha2": "DO",
+    "Abbreviation": "S.A.",
+    "Name": "Sociedad Anónima"
+  },
+  {
+    "CountryAlpha2": "DO",
+    "Abbreviation": "S.A.S",
+    "Name": "Sociedad Anónima Simplificada"
+  },
+  {
+    "CountryAlpha2": "DO",
+    "Abbreviation": "SRL.",
+    "Name": "Sociedad de Resposabilidad Limitada"
+  },
+  {
+    "CountryAlpha2": "DO",
+    "Abbreviation": "EIRL.",
+    "Name": "Empresa Individual de Responsabilidad Limitada"
+  },
+  {
+    "CountryAlpha2": "EC",
+    "Abbreviation": "S.A.",
+    "Name": "Sociedad Anónima"
+  },
+  {
+    "CountryAlpha2": "EC",
+    "Abbreviation": "C.A.",
+    "Name": "Sociedad Anónima"
+  },
+  {
+    "CountryAlpha2": "EC",
+    "Abbreviation": "S.A.S.",
+    "Name": "Sociedad por Acciones Simplificada"
+  },
+  {
+    "CountryAlpha2": "EC",
+    "Abbreviation": "Cía. Ltda.",
+    "Name": "Compañía Limitada"
+  },
+  {
+    "CountryAlpha2": "EC",
+    "Abbreviation": "EP",
+    "Name": "Empresa Pública"
+  },
+  {
+    "CountryAlpha2": "AT",
+    "Abbreviation": "Gen",
+    "Name": "Genossenschaft"
+  },
+  {
+    "CountryAlpha2": "AT",
+    "Abbreviation": "Privatstiftung",
+    "Name": ""
+  },
+  {
+    "CountryAlpha2": "AT",
+    "Abbreviation": "Verein",
+    "Name": ""
+  },
+  {
+    "CountryAlpha2": "AT",
+    "Abbreviation": "e.U.",
+    "Name": "eingetragenes Einzelunternehmen"
+  },
+  {
+    "CountryAlpha2": "AT",
+    "Abbreviation": "AG",
+    "Name": "Aktiengesellschaft"
+  },
+  {
+    "CountryAlpha2": "AT",
+    "Abbreviation": "GmbH",
+    "Name": "Gesellschaft mit beschränkter Haftung"
+  },
+  {
+    "CountryAlpha2": "AT",
+    "Abbreviation": "stG",
+    "Name": "stille Gesellschaft"
+  },
+  {
+    "CountryAlpha2": "AT",
+    "Abbreviation": "GesbR",
+    "Name": "Gesellschaft des bürgerlichen Rechts"
+  },
+  {
+    "CountryAlpha2": "AT",
+    "Abbreviation": "OG",
+    "Name": "offene Gesellschaft"
+  },
+  {
+    "CountryAlpha2": "AT",
+    "Abbreviation": "KG",
+    "Name": "Kommanditgesellschaft"
+  },
+  {
+    "CountryAlpha2": "BG",
+    "TwoLetterLanguageCode": "bg",
+    "Abbreviation": "АД",
+    "Name": "акционерно дружество"
+  },
+  {
+    "CountryAlpha2": "BG",
+    "TwoLetterLanguageCode": "bg",
+    "Abbreviation": "ЕАД",
+    "Name": "еднолично акционерно дружество"
+  },
+  {
+    "CountryAlpha2": "BG",
+    "TwoLetterLanguageCode": "bg",
+    "Abbreviation": "ЕООД",
+    "Name": "еднолично дружество с ограничена отговорност"
+  },
+  {
+    "CountryAlpha2": "BG",
+    "TwoLetterLanguageCode": "bg",
+    "Abbreviation": "ЕТ",
+    "Name": "едноличен търговец"
+  },
+  {
+    "CountryAlpha2": "BG",
+    "TwoLetterLanguageCode": "bg",
+    "Abbreviation": "ООД",
+    "Name": "дружество с ограничена отговорност"
+  },
+  {
+    "CountryAlpha2": "BG",
+    "TwoLetterLanguageCode": "bg",
+    "Abbreviation": "КД",
+    "Name": "командитно дружество"
+  },
+  {
+    "CountryAlpha2": "BG",
+    "TwoLetterLanguageCode": "bg",
+    "Abbreviation": "КДА",
+    "Name": "командитно дружество с акции"
+  },
+  {
+    "CountryAlpha2": "BG",
+    "TwoLetterLanguageCode": "bg",
+    "Abbreviation": "СД",
+    "Name": "събирателно дружество"
+  },
+  {
+    "CountryAlpha2": "BG",
+    "Abbreviation": "AD",
+    "Name": "aktsionerno druzhestvo"
+  },
+  {
+    "CountryAlpha2": "BG",
+    "Abbreviation": "EAD",
+    "Name": "ednolichno aktsionerno druzhestvo "
+  },
+  {
+    "CountryAlpha2": "BG",
+    "Abbreviation": "EOOD",
+    "Name": "ednolichno druzhestvo s ogranichena otgovornost"
+  },
+  {
+    "CountryAlpha2": "BG",
+    "Abbreviation": "ET",
+    "Name": "ednolichen turgovetz"
+  },
+  {
+    "CountryAlpha2": "BG",
+    "Abbreviation": "OOD",
+    "Name": "druzhestvo s ogranichena otgovornost"
+  },
+  {
+    "CountryAlpha2": "BG",
+    "Abbreviation": "KD",
+    "Name": "komanditno druzhestvo"
+  },
+  {
+    "CountryAlpha2": "BG",
+    "Abbreviation": "KDA",
+    "Name": "komanditno druzhestvo s aktzii"
+  },
+  {
+    "CountryAlpha2": "BG",
+    "Abbreviation": "SD",
+    "Name": "subiratelno druzhestvo"
+  },
+  {
+    "CountryAlpha2": "HR",
+    "Abbreviation": "d.d.",
+    "Name": "dioničko društvo"
+  },
+  {
+    "CountryAlpha2": "HR",
+    "Abbreviation": "d.o.o.",
+    "Name": "društvo s ograničenom odgovornošću"
+  },
+  {
+    "CountryAlpha2": "HR",
+    "Abbreviation": "j.d.o.o.",
+    "Name": "jednostavno društvo s ograničenom odgovornošću"
+  },
+  {
+    "CountryAlpha2": "HR",
+    "Abbreviation": "j.t.d.",
+    "Name": "javno trgovačko društvo"
+  },
+  {
+    "CountryAlpha2": "HR",
+    "Abbreviation": "k.d.",
+    "Name": "komanditno društvo"
+  },
+  {
+    "CountryAlpha2": "CZ",
+    "Abbreviation": "a.s.",
+    "Name": "Akciová společnost"
+  },
+  {
+    "CountryAlpha2": "CZ",
+    "Abbreviation": "akc. spol.",
+    "Name": "Akciová společnost"
+  },
+  {
+    "CountryAlpha2": "CZ",
+    "Abbreviation": "s.r.o.",
+    "Name": "Společnost s ručením omezeným"
+  },
+  {
+    "CountryAlpha2": "CZ",
+    "Abbreviation": "spol. s r.o.",
+    "Name": "Společnost s ručením omezeným"
+  },
+  {
+    "CountryAlpha2": "CZ",
+    "Abbreviation": "v.o.s.",
+    "Name": "veřejná obchodní společnost"
+  },
+  {
+    "CountryAlpha2": "CZ",
+    "Abbreviation": "veř. obch. spol.",
+    "Name": "veřejná obchodní společnost"
+  },
+  {
+    "CountryAlpha2": "CZ",
+    "Abbreviation": "a. spol.",
+    "Name": "veřejná obchodní společnost"
+  },
+  {
+    "CountryAlpha2": "CZ",
+    "Abbreviation": "k.s.",
+    "Name": "komanditní společnost"
+  },
+  {
+    "CountryAlpha2": "CZ",
+    "Abbreviation": "kom. spol.",
+    "Name": "komanditní společnost"
+  },
+  {
+    "CountryAlpha2": "CZ",
+    "Abbreviation": "s.p.",
+    "Name": "státní podnik"
+  },
+  {
+    "CountryAlpha2": "DK",
+    "Abbreviation": "Enkeltmandsvirksomhed",
+    "Name": ""
+  },
+  {
+    "CountryAlpha2": "DK",
+    "Abbreviation": "Forening",
+    "Name": ""
+  },
+  {
+    "CountryAlpha2": "DK",
+    "Abbreviation": "I/S",
+    "Name": "Interessentskab"
+  },
+  {
+    "CountryAlpha2": "DK",
+    "Abbreviation": "IVS",
+    "Name": "Iværksætterselskab"
+  },
+  {
+    "CountryAlpha2": "DK",
+    "Abbreviation": "ApS",
+    "Name": "Anpartsselskab"
+  },
+  {
+    "CountryAlpha2": "DK",
+    "Abbreviation": "A/S",
+    "Name": "Aktieselskab"
+  },
+  {
+    "CountryAlpha2": "DK",
+    "Abbreviation": "K/S",
+    "Name": "Kommanditselskab"
+  },
+  {
+    "CountryAlpha2": "DK",
+    "Abbreviation": "P/S",
+    "Name": "Partnerselskab"
+  },
+  {
+    "CountryAlpha2": "DK",
+    "Abbreviation": "A.M.B.A.",
+    "Name": "Andelsselskab med begrænset ansvar"
+  },
+  {
+    "CountryAlpha2": "DK",
+    "Abbreviation": "F.M.B.A.",
+    "Name": "Forening med begrænset ansvar"
+  },
+  {
+    "CountryAlpha2": "DK",
+    "Abbreviation": "S.M.B.A.",
+    "Name": "Selskab med begrænset ansvar"
+  },
+  {
+    "CountryAlpha2": "DK",
+    "Abbreviation": "G/S",
+    "Name": "Gensidigt selskab"
+  },
+  {
+    "CountryAlpha2": "EE",
+    "Abbreviation": "FIE",
+    "Name": "Füüsilisest isikust ettevõtja"
+  },
+  {
+    "CountryAlpha2": "EE",
+    "Abbreviation": "UÜ",
+    "Name": "Usaldusühing"
+  },
+  {
+    "CountryAlpha2": "EE",
+    "Abbreviation": "TÜ",
+    "Name": "Täisühing"
+  },
+  {
+    "CountryAlpha2": "EE",
+    "Abbreviation": "OÜ",
+    "Name": "Osaühing"
+  },
+  {
+    "CountryAlpha2": "EE",
+    "Abbreviation": "AS",
+    "Name": "Aktsiaselts"
+  },
+  {
+    "CountryAlpha2": "FI",
+    "TwoLetterLanguageCode": "fi",
+    "Abbreviation": "Ay",
+    "Name": "avoin yhtiö"
+  },
+  {
+    "CountryAlpha2": "FI",
+    "TwoLetterLanguageCode": "fi",
+    "Abbreviation": "Ky",
+    "Name": "kommandiittiyhtiö"
+  },
+  {
+    "CountryAlpha2": "FI",
+    "TwoLetterLanguageCode": "fi",
+    "Abbreviation": "Oy",
+    "Name": "osakeyhtiö"
+  },
+  {
+    "CountryAlpha2": "FI",
+    "TwoLetterLanguageCode": "fi",
+    "Abbreviation": "Oyj",
+    "Name": "julkinen osakeyhtiö"
+  },
+  {
+    "CountryAlpha2": "FI",
+    "TwoLetterLanguageCode": "fi",
+    "Abbreviation": "osk",
+    "Name": "osuuskunta"
+  },
+  {
+    "CountryAlpha2": "FI",
+    "TwoLetterLanguageCode": "sv",
+    "Abbreviation": "Ay",
+    "Name": "öppet bolag"
+  },
+  {
+    "CountryAlpha2": "FI",
+    "TwoLetterLanguageCode": "sv",
+    "Abbreviation": "Kb",
+    "Name": "kommanditbolag"
+  },
+  {
+    "CountryAlpha2": "FI",
+    "TwoLetterLanguageCode": "sv",
+    "Abbreviation": "Ab",
+    "Name": "aktiebolag"
+  },
+  {
+    "CountryAlpha2": "FI",
+    "TwoLetterLanguageCode": "sv",
+    "Abbreviation": "Abp",
+    "Name": "publikt aktiebolag"
+  },
+  {
+    "CountryAlpha2": "FI",
+    "TwoLetterLanguageCode": "sv",
+    "Abbreviation": "Anl.",
+    "Name": "andelslag"
+  },
+  {
+    "CountryAlpha2": "FR",
+    "Abbreviation": "EI",
+    "Name": "Entreprise individuelle"
+  },
+  {
+    "CountryAlpha2": "FR",
+    "Abbreviation": "SEP",
+    "Name": "Société en participation"
+  },
+  {
+    "CountryAlpha2": "FR",
+    "Abbreviation": "SPPL",
+    "Name": "Société en participation de professions libérales"
+  },
+  {
+    "CountryAlpha2": "FR",
+    "Abbreviation": "SNC",
+    "Name": "Société en nom collectif"
+  },
+  {
+    "CountryAlpha2": "FR",
+    "Abbreviation": "SCS",
+    "Name": "Société en commandite simple"
+  },
+  {
+    "CountryAlpha2": "FR",
+    "Abbreviation": "SCA",
+    "Name": "Société en commandite par actions"
+  },
+  {
+    "CountryAlpha2": "FR",
+    "Abbreviation": "SCI",
+    "Name": "Société Civile Immobilière"
+  },
+  {
+    "CountryAlpha2": "FR",
+    "Abbreviation": "SARL",
+    "Name": "Société à responsabilité limitée"
+  },
+  {
+    "CountryAlpha2": "FR",
+    "Abbreviation": "SàRL",
+    "Name": "Société à responsabilité limitée"
+  },
+  {
+    "CountryAlpha2": "FR",
+    "Abbreviation": "EURL",
+    "Name": "Entreprise unipersonnelle à responsabilité limitée"
+  },
+  {
+    "CountryAlpha2": "FR",
+    "Abbreviation": "SA",
+    "Name": "Société anonyme"
+  },
+  {
+    "CountryAlpha2": "FR",
+    "Abbreviation": "SCOP",
+    "Name": "Société coopérative de production"
+  },
+  {
+    "CountryAlpha2": "FR",
+    "Abbreviation": "SEM",
+    "Name": "Société d'économie mixte"
+  },
+  {
+    "CountryAlpha2": "FR",
+    "Abbreviation": "SAS",
+    "Name": "Société par actions simplifiée"
+  },
+  {
+    "CountryAlpha2": "DE",
+    "Abbreviation": "OHG",
+    "Name": " Offene Handelsgesellschaft"
+  },
+  {
+    "CountryAlpha2": "DE",
+    "Abbreviation": "KG",
+    "Name": "Kommanditgesellschaft"
+  },
+  {
+    "CountryAlpha2": "DE",
+    "Abbreviation": "e.V.",
+    "Name": "eingetragener Verein"
+  },
+  {
+    "CountryAlpha2": "DE",
+    "Abbreviation": "KGaA",
+    "Name": "Kommanditgesellschaft auf Aktien"
+  },
+  {
+    "CountryAlpha2": "DE",
+    "Abbreviation": "AG",
+    "Name": "Aktiengesellschaft"
+  },
+  {
+    "CountryAlpha2": "DE",
+    "Abbreviation": "UG",
+    "Name": "Unternehmergesellschaft (haftungsbeschränkt"
+  },
+  {
+    "CountryAlpha2": "DE",
+    "Abbreviation": "GmbH & Co. KG",
+    "Name": ""
+  },
+  {
+    "CountryAlpha2": "DE",
+    "Abbreviation": "GmbH",
+    "Name": "Gesellschaft mit beschränkter Haftung"
+  },
+  {
+    "CountryAlpha2": "GR",
+    "TwoLetterLanguageCode": "el",
+    "Abbreviation": "Α.E.",
+    "Name": "Ανώνυμη Εταιρεία"
+  },
+  {
+    "CountryAlpha2": "GR",
+    "TwoLetterLanguageCode": "el",
+    "Abbreviation": "Α.Β.Ε.Ε.",
+    "Name": "Ανώνυμη Βιομηχανική Εμπορική Εταιρεία"
+  },
+  {
+    "CountryAlpha2": "GR",
+    "TwoLetterLanguageCode": "el",
+    "Abbreviation": "Ε.Ε.",
+    "Name": "Ετερόρρυθμη Εταιρία"
+  },
+  {
+    "CountryAlpha2": "GR",
+    "TwoLetterLanguageCode": "el",
+    "Abbreviation": "Ε.Π.Ε.",
+    "Name": "Εταιρεία Περιορισμένης Ευθύνης"
+  },
+  {
+    "CountryAlpha2": "GR",
+    "TwoLetterLanguageCode": "el",
+    "Abbreviation": "Μ.Ε.Π.Ε.",
+    "Name": "Μονοπρόσωπη Ε.Π.Ε."
+  },
+  {
+    "CountryAlpha2": "GR",
+    "TwoLetterLanguageCode": "el",
+    "Abbreviation": "Ο.Ε.",
+    "Name": "Ομόρρυθμη Εταιρεία"
+  },
+  {
+    "CountryAlpha2": "GR",
+    "TwoLetterLanguageCode": "el",
+    "Abbreviation": "Ο.Β.Ε.Ε.",
+    "Name": "Ομόρρυθμη Βιομηχανική Εμπορική Εταιρεία"
+  },
+  {
+    "CountryAlpha2": "GR",
+    "TwoLetterLanguageCode": "el",
+    "Abbreviation": "I.K.E.",
+    "Name": "Ιδιωτική Κεφαλαιουχική Εταιρεία"
+  },
+  {
+    "CountryAlpha2": "GR",
+    "Abbreviation": "A.E.",
+    "Name": "Anónimi Etaireía"
+  },
+  {
+    "CountryAlpha2": "GR",
+    "Abbreviation": "A.V.E.E.",
+    "Name": "Anónimi Viomichanikí Emborikí Etaireía"
+  },
+  {
+    "CountryAlpha2": "GR",
+    "Abbreviation": "E.E.",
+    "Name": "Eterórrithmi Etaireía"
+  },
+  {
+    "CountryAlpha2": "GR",
+    "Abbreviation": "E.P.E.",
+    "Name": "Etaireía Periorisménis Efthínis"
+  },
+  {
+    "CountryAlpha2": "GR",
+    "Abbreviation": "M.E.P.E.",
+    "Name": "Monoprósopi Etaireía Periorisménis Efthínis"
+  },
+  {
+    "CountryAlpha2": "GR",
+    "Abbreviation": "O.E.",
+    "Name": "Omórrithmi Etaireía"
+  },
+  {
+    "CountryAlpha2": "GR",
+    "Abbreviation": "O.V.E.E.",
+    "Name": "Omórrithmi Viomichanikí Emborikí Etaireía"
+  },
+  {
+    "CountryAlpha2": "GR",
+    "Abbreviation": "I.K.E.",
+    "Name": "Idiotiki Kefalaiouchiki Etaireía"
+  },
+  {
+    "CountryAlpha2": "IT",
+    "Abbreviation": "S.s.",
+    "Name": "Società semplice"
+  },
+  {
+    "CountryAlpha2": "IT",
+    "Abbreviation": "S.n.c.",
+    "Name": "Società in nome collettivo"
+  },
+  {
+    "CountryAlpha2": "IT",
+    "Abbreviation": "S.a.s.",
+    "Name": "Società in accomandita semplice"
+  },
+  {
+    "CountryAlpha2": "IT",
+    "Abbreviation": "S.p.a.",
+    "Name": "Società per azioni"
+  },
+  {
+    "CountryAlpha2": "IT",
+    "Abbreviation": "S.a.p.a.",
+    "Name": "Società in accomandita per azioni"
+  },
+  {
+    "CountryAlpha2": "IT",
+    "Abbreviation": "S.c.p.a.",
+    "Name": "Società consortile per azioni"
+  },
+  {
+    "CountryAlpha2": "IT",
+    "Abbreviation": "S.c.a.r.l.",
+    "Name": "Società consortile a responsabilità limitata"
+  },
+  {
+    "CountryAlpha2": "IT",
+    "Abbreviation": "S.r.l.",
+    "Name": "Società a responsabilità limitata"
+  },
+  {
+    "CountryAlpha2": "IT",
+    "Abbreviation": "S.r.l.s.",
+    "Name": "Società a responsabilità limitata semplificata"
+  },
+  {
+    "CountryAlpha2": "LV",
+    "Abbreviation": "SIA",
+    "Name": "Sabiedrība ar ierobežotu atbildību"
+  },
+  {
+    "CountryAlpha2": "LV",
+    "Abbreviation": "AS",
+    "Name": "Akciju sabiedrība"
+  },
+  {
+    "CountryAlpha2": "LV",
+    "Abbreviation": "IK",
+    "Name": "Individuālais komersants"
+  },
+  {
+    "CountryAlpha2": "LV",
+    "Abbreviation": "PS",
+    "Name": "Pilnsabiedrība"
+  },
+  {
+    "CountryAlpha2": "LV",
+    "Abbreviation": "KS",
+    "Name": "Komandītsabiedrība"
+  },
+  {
+    "CountryAlpha2": "LV",
+    "Abbreviation": "ĀKF",
+    "Name": "Ārzemju komersanta filiāle"
+  },
+  {
+    "CountryAlpha2": "LV",
+    "Abbreviation": "BO",
+    "Name": "Bezpeļņas organizācija"
+  },
+  {
+    "CountryAlpha2": "LV",
+    "Abbreviation": "VSIA",
+    "Name": "Valsts sabiedrība ar ierobežotu atbildību"
+  },
+  {
+    "CountryAlpha2": "LI",
+    "Abbreviation": "AG",
+    "Name": "Aktiengesellschaft"
+  },
+  {
+    "CountryAlpha2": "LI",
+    "Abbreviation": "GmbH",
+    "Name": "Gesellschaft mit beschränkter Haftung"
+  },
+  {
+    "CountryAlpha2": "LT",
+    "Abbreviation": "UAB",
+    "Name": "Uždaroji akcinė bendrovė"
+  },
+  {
+    "CountryAlpha2": "LT",
+    "Abbreviation": "AB",
+    "Name": "Akcinė bendrovė"
+  },
+  {
+    "CountryAlpha2": "LT",
+    "Abbreviation": "VšĮ",
+    "Name": "Viešoji įstaiga"
+  },
+  {
+    "CountryAlpha2": "LT",
+    "Abbreviation": "IĮ",
+    "Name": "Individuali įmonė"
+  },
+  {
+    "CountryAlpha2": "LT",
+    "Abbreviation": "TŪB",
+    "Name": "Tikroji ūkinė bendrija"
+  },
+  {
+    "CountryAlpha2": "LT",
+    "Abbreviation": "KŪB",
+    "Name": "Komanditinė ūkinė bendrija"
+  },
+  {
+    "CountryAlpha2": "LT",
+    "Abbreviation": "MB",
+    "Name": "Mažoji bendrija"
+  },
+  {
+    "CountryAlpha2": "LU",
+    "Abbreviation": "S.A.",
+    "Name": "Société anonyme"
+  },
+  {
+    "CountryAlpha2": "LU",
+    "Abbreviation": "S.A R.L.",
+    "Name": "Société à responsabilité limitée"
+  },
+  {
+    "CountryAlpha2": "LU",
+    "Abbreviation": "SARL-S",
+    "Name": "Société à responsabilité limitée simplifiée"
+  },
+  {
+    "CountryAlpha2": "LU",
+    "Abbreviation": "SCS",
+    "Name": "Société en commandite simple"
+  },
+  {
+    "CountryAlpha2": "LU",
+    "Abbreviation": "SCSp",
+    "Name": "Société en Commandite Spéciale"
+  },
+  {
+    "CountryAlpha2": "LU",
+    "Abbreviation": "SCA",
+    "Name": "Société en commandite par actions"
+  },
+  {
+    "CountryAlpha2": "MT",
+    "Abbreviation": "Ltd",
+    "Name": "Limited liability company"
+  },
+  {
+    "CountryAlpha2": "MT",
+    "Abbreviation": "Plc",
+    "Name": "Public limited liability company"
+  },
+  {
+    "CountryAlpha2": "NL",
+    "Abbreviation": "vof",
+    "Name": "vennootschap onder firma"
+  },
+  {
+    "CountryAlpha2": "NL",
+    "Abbreviation": "cv",
+    "Name": "commanditaire vennootschap"
+  },
+  {
+    "CountryAlpha2": "NL",
+    "Abbreviation": "bv",
+    "Name": "besloten vennootschap"
+  },
+  {
+    "CountryAlpha2": "NL",
+    "Abbreviation": "nv",
+    "Name": "naamloze vennootschap"
+  },
+  {
+    "CountryAlpha2": "NO",
+    "Abbreviation": "ASA",
+    "Name": "Allmennaksjeselskap"
+  },
+  {
+    "CountryAlpha2": "NO",
+    "Abbreviation": "AS",
+    "Name": "Aksjeselskap"
+  },
+  {
+    "CountryAlpha2": "NO",
+    "Abbreviation": "ANS",
+    "Name": "Ansvarlig selskap"
+  },
+  {
+    "CountryAlpha2": "NO",
+    "Abbreviation": "DA",
+    "Name": "Selskap med delt ansvar"
+  },
+  {
+    "CountryAlpha2": "NO",
+    "Abbreviation": "IKS",
+    "Name": "Interkommunalt selskap"
+  },
+  {
+    "CountryAlpha2": "NO",
+    "Abbreviation": "KF",
+    "Name": "Kommunalt foretak"
+  },
+  {
+    "CountryAlpha2": "NO",
+    "Abbreviation": "KS",
+    "Name": "Kommandittselskap"
+  },
+  {
+    "CountryAlpha2": "NO",
+    "Abbreviation": "SF",
+    "Name": "Statsforetak"
+  },
+  {
+    "CountryAlpha2": "PT",
+    "Abbreviation": "CRL",
+    "Name": "Cooperativa de Responsabilidade Limitada"
+  },
+  {
+    "CountryAlpha2": "PT",
+    "Abbreviation": "S.A.",
+    "Name": "Sociedade Anónima"
+  },
+  {
+    "CountryAlpha2": "PT",
+    "Abbreviation": "S.A.",
+    "Name": "Sociedade Aberta"
+  },
+  {
+    "CountryAlpha2": "PT",
+    "Abbreviation": "S.F.",
+    "Name": "Sociedade Fechada"
+  },
+  {
+    "CountryAlpha2": "PT",
+    "Abbreviation": "Lda.",
+    "Name": "Limitada"
+  },
+  {
+    "CountryAlpha2": "PT",
+    "Abbreviation": "Unipessoal Lda.",
+    "Name": "Unipessoal Lda."
+  },
+  {
+    "CountryAlpha2": "PT",
+    "Abbreviation": "SGPS",
+    "Name": "Sociedade Gestora de Participações Sociais"
+  },
+  {
+    "CountryAlpha2": "PT",
+    "Abbreviation": "SUA",
+    "Name": "Sociedade Unipessoal Anónima)"
+  },
+  {
+    "CountryAlpha2": "RO",
+    "Abbreviation": "SNC",
+    "Name": "Societatea în nume colectiv"
+  },
+  {
+    "CountryAlpha2": "RO",
+    "Abbreviation": "SCS",
+    "Name": "Societatea în comandită simplă"
+  },
+  {
+    "CountryAlpha2": "RO",
+    "Abbreviation": "SCA",
+    "Name": "Societatea în comandită pe acțiuni"
+  },
+  {
+    "CountryAlpha2": "RO",
+    "Abbreviation": "SA",
+    "Name": "Societatea pe acțiuni"
+  },
+  {
+    "CountryAlpha2": "RO",
+    "Abbreviation": "SRL",
+    "Name": "Societate cu răspundere limitată"
+  },
+  {
+    "CountryAlpha2": "RO",
+    "Abbreviation": "S.A.",
+    "Name": "Societate pe Acţiuni"
+  },
+  {
+    "CountryAlpha2": "RO",
+    "Abbreviation": "S.C.A.",
+    "Name": "societate în comandită pe acţiuni"
+  },
+  {
+    "CountryAlpha2": "RO",
+    "Abbreviation": "S.C.S.",
+    "Name": "societate în comandită simplă"
+  },
+  {
+    "CountryAlpha2": "RO",
+    "Abbreviation": "S.N.C.",
+    "Name": "societate în nume colectiv"
+  },
+  {
+    "CountryAlpha2": "RO",
+    "Abbreviation": "S.R.L.",
+    "Name": "societate cu răspundere limitată"
+  },
+  {
+    "CountryAlpha2": "SK",
+    "Abbreviation": "a.s.",
+    "Name": "Akciová spoločnosť"
+  },
+  {
+    "CountryAlpha2": "SK",
+    "Abbreviation": "s.r.o.",
+    "Name": "Spoločnosť s ručením obmedzeným"
+  },
+  {
+    "CountryAlpha2": "SK",
+    "Abbreviation": "spol. s r.o.",
+    "Name": "Spoločnosť s ručením obmedzeným"
+  },
+  {
+    "CountryAlpha2": "SK",
+    "Abbreviation": "k.s.",
+    "Name": "Komanditná spoločnosť"
+  },
+  {
+    "CountryAlpha2": "SK",
+    "Abbreviation": "v.o.s.",
+    "Name": "Verejná obchodná spoločnosť"
+  },
+  {
+    "CountryAlpha2": "SI",
+    "Abbreviation": "d.d.",
+    "Name": "Delniška družba"
+  },
+  {
+    "CountryAlpha2": "SI",
+    "Abbreviation": "d.o.o.",
+    "Name": "Družba z omejeno odgovornostjo"
+  },
+  {
+    "CountryAlpha2": "SI",
+    "Abbreviation": "d.n.o.",
+    "Name": "Družba z neomejeno odgovornostjo"
+  },
+  {
+    "CountryAlpha2": "SI",
+    "Abbreviation": "k.d.",
+    "Name": "Komanditna družba"
+  },
+  {
+    "CountryAlpha2": "SI",
+    "Abbreviation": "s.p.",
+    "Name": "Samostojni podjetnik"
+  },
+  {
+    "CountryAlpha2": "ES",
+    "Abbreviation": "C.B.",
+    "Name": "Comunidad de Bienes"
+  },
+  {
+    "CountryAlpha2": "ES",
+    "Abbreviation": "S.A.",
+    "Name": "Sociedad Anónima"
+  },
+  {
+    "CountryAlpha2": "ES",
+    "Abbreviation": "S.L.",
+    "Name": "Sociedad Limitada"
+  },
+  {
+    "CountryAlpha2": "ES",
+    "Abbreviation": "S.L.N.E.",
+    "Name": "Sociedad Limitada Nueva Empresa"
+  },
+  {
+    "CountryAlpha2": "ES",
+    "Abbreviation": "S.A.D.",
+    "Name": "Sociedad Anónima Deportiva"
+  },
+  {
+    "CountryAlpha2": "ES",
+    "Abbreviation": "S.L.L.",
+    "Name": "Sociedad Limitada Laboral"
+  },
+  {
+    "CountryAlpha2": "ES",
+    "Abbreviation": "S.C.",
+    "Name": "Sociedad Colectiva"
+  },
+  {
+    "CountryAlpha2": "ES",
+    "Abbreviation": "S.Coop.",
+    "Name": "Sociedad Cooperativa"
+  },
+  {
+    "CountryAlpha2": "SE",
+    "Abbreviation": "AB",
+    "Name": "Aktiebolag"
+  },
+  {
+    "CountryAlpha2": "SE",
+    "Abbreviation": "AB (publ)",
+    "Name": "Publikt aktiebolag"
+  },
+  {
+    "CountryAlpha2": "SE",
+    "Abbreviation": "KB",
+    "Name": "Kommanditbolag"
+  },
+  {
+    "CountryAlpha2": "HT",
+    "Abbreviation": "SA",
+    "Name": "Sociedad Anónima"
+  },
+  {
+    "CountryAlpha2": "ID",
+    "Abbreviation": "UD",
+    "Name": "Usaha Dagang"
+  },
+  {
+    "CountryAlpha2": "ID",
+    "Abbreviation": "mts",
+    "Name": "maatschap"
+  },
+  {
+    "CountryAlpha2": "ID",
+    "Abbreviation": "PT",
+    "Name": "Perseroan Terbatas"
+  },
+  {
+    "CountryAlpha2": "ID",
+    "Abbreviation": "PT Tbk",
+    "Name": "Perseroan Terbatas Terbuka"
+  },
+  {
+    "CountryAlpha2": "XK",
+    "Abbreviation": "B.I.",
+    "Name": "Individual Business"
+  },
+  {
+    "CountryAlpha2": "XK",
+    "Abbreviation": "O.P.",
+    "Name": "General Partnership"
+  },
+  {
+    "CountryAlpha2": "XK",
+    "Abbreviation": "SH.K.M.",
+    "Name": "Partnership"
+  },
+  {
+    "CountryAlpha2": "XK",
+    "Abbreviation": "SH.P.K.",
+    "Name": "Limited Liability"
+  },
+  {
+    "CountryAlpha2": "LB",
+    "Abbreviation": "s.a.l.",
+    "Name": "Societe Anonyme Libanaise"
+  },
+  {
+    "CountryAlpha2": "LB",
+    "Abbreviation": "S.A.R.L.",
+    "Name": "Société à responsabilité limitée"
+  },
+  {
+    "CountryAlpha2": "LB",
+    "Abbreviation": "S.N.C.",
+    "Name": "Société en Nom Collectif"
+  },
+  {
+    "CountryAlpha2": "LB",
+    "Abbreviation": "S.C.S.",
+    "Name": "Société en Commandite Simple"
+  },
+  {
+    "CountryAlpha2": "MY",
+    "Abbreviation": "PLT",
+    "Name": "Perkongsian Liabiliti Terhad"
+  },
+  {
+    "CountryAlpha2": "MY",
+    "Abbreviation": "Bhd.",
+    "Name": "Berhad"
+  },
+  {
+    "CountryAlpha2": "MY",
+    "Abbreviation": "Sdn. Bhd.",
+    "Name": "Sendirian Berhad"
+  },
+  {
+    "CountryAlpha2": "MX",
+    "Abbreviation": "S.A.",
+    "Name": "Sociedad Anónima"
+  },
+  {
+    "CountryAlpha2": "MX",
+    "Abbreviation": "S. de R.L.",
+    "Name": "Sociedad de Responsabilidad Limitada"
+  },
+  {
+    "CountryAlpha2": "MX",
+    "Abbreviation": "S. en C.",
+    "Name": "Sociedad en Comandita Simple"
+  },
+  {
+    "CountryAlpha2": "MX",
+    "Abbreviation": "S. en C. por A.",
+    "Name": "Sociedad en Comandita por Acciones"
+  },
+  {
+    "CountryAlpha2": "MC",
+    "Abbreviation": "SAM",
+    "Name": "Société Anonyme Monégasque"
+  },
+  {
+    "CountryAlpha2": "MC",
+    "Abbreviation": "SARL",
+    "Name": "Société à Responsabilité Limitée"
+  },
+  {
+    "CountryAlpha2": "MC",
+    "Abbreviation": "SNC",
+    "Name": "Societe en Nom Collectif"
+  },
+  {
+    "CountryAlpha2": "MC",
+    "Abbreviation": "SCS",
+    "Name": "Societe En Commandite Simple"
+  },
+  {
+    "CountryAlpha2": "MC",
+    "Abbreviation": "SCA",
+    "Name": "Société en Commandite par Actions"
+  },
+  {
+    "CountryAlpha2": "ME",
+    "Abbreviation": "O.D.",
+    "Name": "Ortačko Društvo"
+  },
+  {
+    "CountryAlpha2": "ME",
+    "Abbreviation": "K.D.",
+    "Name": "Komanditno Društvo"
+  },
+  {
+    "CountryAlpha2": "ME",
+    "Abbreviation": "A.D.",
+    "Name": "Akcionarsko Društvo"
+  },
+  {
+    "CountryAlpha2": "ME",
+    "Abbreviation": "D.O.O.",
+    "Name": "Društvo sa Ograničenom Odgovornošću"
+  },
+  {
+    "CountryAlpha2": "MA",
+    "Abbreviation": "S.A",
+    "Name": "Société Anonyme"
+  },
+  {
+    "CountryAlpha2": "MA",
+    "Abbreviation": "S.A.S",
+    "Name": "Société Anonyme Simplifiée"
+  },
+  {
+    "CountryAlpha2": "MA",
+    "Abbreviation": "S.A.R.L",
+    "Name": "Société à Responsabilité Limitée"
+  },
+  {
+    "CountryAlpha2": "MA",
+    "Abbreviation": "S.N.C",
+    "Name": "Société en Nom Collectif"
+  },
+  {
+    "CountryAlpha2": "MA",
+    "Abbreviation": "S.C.S",
+    "Name": "Société en Commandite Simple"
+  },
+  {
+    "CountryAlpha2": "MA",
+    "Abbreviation": "S.C.A",
+    "Name": "Société en Commandite par Actions"
+  },
+  {
+    "CountryAlpha2": "NZ",
+    "Abbreviation": "Ltd",
+    "Name": "Limited"
+  },
+  {
+    "CountryAlpha2": "NI",
+    "Abbreviation": "S.A.",
+    "Name": "Sociedad Anónima"
+  },
+  {
+    "CountryAlpha2": "NI",
+    "Abbreviation": "Cia.",
+    "Name": "Sociedad en Nombre Colectivo"
+  },
+  {
+    "CountryAlpha2": "NI",
+    "Abbreviation": "Cia. Ltda.",
+    "Name": "Sociedad en Nombre Colectivo de Responsabilidad Limitada"
+  },
+  {
+    "CountryAlpha2": "NI",
+    "Abbreviation": "S.C.S.",
+    "Name": "Sociedad en Comandita Simple"
+  },
+  {
+    "CountryAlpha2": "NI",
+    "Abbreviation": "S.C.A.",
+    "Name": "Sociedad en Comandita por Acciones"
+  },
+  {
+    "CountryAlpha2": "NG",
+    "Abbreviation": "Ltd.",
+    "Name": "Private Limited Company"
+  },
+  {
+    "CountryAlpha2": "NG",
+    "Abbreviation": "PLC",
+    "Name": "Public Limited Company"
+  },
+  {
+    "CountryAlpha2": "NG",
+    "Abbreviation": "ULtd.",
+    "Name": "Unlimited"
+  },
+  {
+    "CountryAlpha2": "NG",
+    "Abbreviation": "LLP",
+    "Name": "Limited Liability Partnership"
+  },
+  {
+    "CountryAlpha2": "OM",
+    "Abbreviation": "SAOG",
+    "Name": "Société Anonyme Omanaise Générale"
+  },
+  {
+    "CountryAlpha2": "OM",
+    "Abbreviation": "SAOC",
+    "Name": "Société Anonyme Omanaise Close"
+  },
+  {
+    "CountryAlpha2": "PE",
+    "Abbreviation": "S.A.",
+    "Name": "Sociedad Anónima"
+  },
+  {
+    "CountryAlpha2": "PE",
+    "Abbreviation": "S.A.A.",
+    "Name": "Sociedad Anónima Abierta"
+  },
+  {
+    "CountryAlpha2": "PE",
+    "Abbreviation": "S.A.C.",
+    "Name": "Sociedad Anónima Cerrada"
+  },
+  {
+    "CountryAlpha2": "PH",
+    "Abbreviation": "Corp.",
+    "Name": "Corporation"
+  },
+  {
+    "CountryAlpha2": "PH",
+    "Abbreviation": "Inc.",
+    "Name": "Incorporated"
+  },
+  {
+    "CountryAlpha2": "PH",
+    "Abbreviation": "Co.",
+    "Name": "Company"
+  },
+  {
+    "CountryAlpha2": "PH",
+    "Abbreviation": "Ltd.",
+    "Name": "Limited Company"
+  },
+  {
+    "CountryAlpha2": "PH",
+    "Abbreviation": "Ltd. Co.",
+    "Name": "Limited Company"
+  },
+  {
+    "CountryAlpha2": "PH",
+    "Abbreviation": "LP",
+    "Name": "Limited (Liability) Partnership"
+  },
+  {
+    "CountryAlpha2": "PH",
+    "Abbreviation": "LLP",
+    "Name": "Limited (Liability) Partnership"
+  },
+  {
+    "CountryAlpha2": "TR",
+    "Abbreviation": "Koll. Şti.",
+    "Name": "kolektif şirket"
+  },
+  {
+    "CountryAlpha2": "TR",
+    "Abbreviation": "Kom. Şti",
+    "Name": "komandit şirket"
+  },
+  {
+    "CountryAlpha2": "TR",
+    "Abbreviation": "A.Ş.",
+    "Name": "Anonim Şirket"
+  },
+  {
+    "CountryAlpha2": "TR",
+    "Abbreviation": "A.O.",
+    "Name": "Anonim Ortaklık"
+  },
+  {
+    "CountryAlpha2": "TR",
+    "Abbreviation": "Ltd. Şti.",
+    "Name": "Limited şirket"
+  },
+  {
+    "CountryAlpha2": "TR",
+    "Abbreviation": "L.Ş.",
+    "Name": "Limited şirket"
+  },
+  {
+    "CountryAlpha2": "TR",
+    "Abbreviation": "L.O.",
+    "Name": "Limited ortaklık"
+  },
+  {
+    "CountryAlpha2": "TR",
+    "Abbreviation": "Koop.",
+    "Name": "kooperatif şirket"
+  },
+  {
+    "CountryAlpha2": "UA",
+    "Abbreviation": "DAT",
+    "Name": "Derzhavne aktsionerne tovarystvo"
+  },
+  {
+    "CountryAlpha2": "UA",
+    "Abbreviation": "FOP",
+    "Name": "Fizychna osoba pidpryyemets"
+  },
+  {
+    "CountryAlpha2": "UA",
+    "Abbreviation": "KT",
+    "Name": "Komandytne tovarystvo"
+  },
+  {
+    "CountryAlpha2": "UA",
+    "Abbreviation": "PT",
+    "Name": "Povne tovarystvo"
+  },
+  {
+    "CountryAlpha2": "UA",
+    "Abbreviation": "TDV",
+    "Name": "Tovarystvo z dodatkvoiu vidpovidalnistiu"
+  },
+  {
+    "CountryAlpha2": "UA",
+    "Abbreviation": "TOV",
+    "Name": "Tovarystvo z obmezhenoiu vidpovidalnistiu"
+  },
+  {
+    "CountryAlpha2": "UA",
+    "Abbreviation": "PP",
+    "Name": "Pryvatne pidpryyemstvo"
+  },
+  {
+    "CountryAlpha2": "UA",
+    "Abbreviation": "PAT",
+    "Name": "Publichne aktsionerne tovarystvo"
+  },
+  {
+    "CountryAlpha2": "UA",
+    "Abbreviation": "PrAT",
+    "Name": "Prytvatne aktsionerne tovarystvo"
+  },
+  {
+    "CountryAlpha2": "UA",
+    "Abbreviation": "AT",
+    "Name": "Aktsionerne tovarystvo"
+  },
+  {
+    "CountryAlpha2": "UA",
+    "Abbreviation": "ДАТ",
+    "Name": "Державне акціонерне товариство"
+  },
+  {
+    "CountryAlpha2": "UA",
+    "Abbreviation": "ФОП",
+    "Name": "Фізична особа підприємець"
+  },
+  {
+    "CountryAlpha2": "UA",
+    "Abbreviation": "КТ",
+    "Name": "Командитне товариство"
+  },
+  {
+    "CountryAlpha2": "UA",
+    "Abbreviation": "ПT",
+    "Name": "Повне товариство"
+  },
+  {
+    "CountryAlpha2": "UA",
+    "Abbreviation": "ТДВ",
+    "Name": "Товариство з додатковою відповідальністю"
+  },
+  {
+    "CountryAlpha2": "UA",
+    "Abbreviation": "TOB",
+    "Name": "Товариство з обмеженою відповідальністю"
+  },
+  {
+    "CountryAlpha2": "UA",
+    "Abbreviation": "ПП",
+    "Name": "Приватне підприємство"
+  },
+  {
+    "CountryAlpha2": "UA",
+    "Abbreviation": "ПАТ",
+    "Name": "Публічне акціонерне товариство"
+  },
+  {
+    "CountryAlpha2": "UA",
+    "Abbreviation": "ПрАТ",
+    "Name": "Приватне акціонерне товариство"
+  },
+  {
+    "CountryAlpha2": "UA",
+    "Abbreviation": "АТ",
+    "Name": "Акціонерне товариство"
+  },
+  {
+    "CountryAlpha2": "GB",
+    "Abbreviation": "LLP",
+    "Name": "Limited liability partnership"
+  },
+  {
+    "CountryAlpha2": "GB",
+    "Abbreviation": "LP",
+    "Name": "Limited partnership"
+  },
+  {
+    "CountryAlpha2": "GB",
+    "Abbreviation": "Ltd",
+    "Name": "Private Limited"
+  },
+  {
+    "CountryAlpha2": "GB",
+    "Abbreviation": "Limited",
+    "Name": "Private Limited"
+  },
+  {
+    "CountryAlpha2": "GB",
+    "Abbreviation": "PLC",
+    "Name": "Public Limited Company"
+  },
+  {
+    "CountryAlpha2": "UY",
+    "Abbreviation": "S.A.",
+    "Name": "Sociedad Anónima"
+  },
+  {
+    "CountryAlpha2": "UY",
+    "Abbreviation": "S.A.S.",
+    "Name": "Sociedad por Acciones Simplificada"
+  },
+  {
+    "CountryAlpha2": "UY",
+    "Abbreviation": "S.R.L.",
+    "Name": "Sociedad de Responsabilidad Limitada"
+  },
+  {
+    "CountryAlpha2": "UY",
+    "Abbreviation": "S.C.I.",
+    "Name": "Sociedad de Capital e Industria"
+  },
+  {
+    "CountryAlpha2": "UY",
+    "Abbreviation": "S.C.",
+    "Name": "Sociedad Colectiva"
+  },
+  {
+    "CountryAlpha2": "UZ",
+    "Abbreviation": "MChJ",
+    "Name": "Mas'uliyati Cheklangan Jamiyat"
+  },
+  {
+    "CountryAlpha2": "UZ",
+    "Abbreviation": "QMJ",
+    "Name": "Qo'shimcha ma'suliyatli jamiyat"
+  },
+  {
+    "CountryAlpha2": "UZ",
+    "Abbreviation": "XK",
+    "Name": "Xususiy korxona"
+  },
+  {
+    "CountryAlpha2": "VE",
+    "Abbreviation": "S.A.",
+    "Name": "Sociedad Anónima"
+  },
+  {
+    "CountryAlpha2": "VE",
+    "Abbreviation": "S.R.L.",
+    "Name": "Sociedad de Responsabilidad Limitada"
+  },
+  {
+    "CountryAlpha2": "VE",
+    "Abbreviation": "S.C.S.",
+    "Name": "Sociedad en Comandita Simple"
+  },
+  {
+    "CountryAlpha2": "VE",
+    "Abbreviation": "Soc.Col.",
+    "Name": "Sociedad Colectiva"
+  },
+  {
+    "CountryAlpha2": "VN",
+    "Abbreviation": "Cty TNHH",
+    "Name": "Công ty trách nhiệm hữu hạn"
+  },
+  {
+    "CountryAlpha2": "VN",
+    "Abbreviation": "Cty TNHH MTV",
+    "Name": "Công ty trách nhiệm hữu hạn một thành viên"
+  },
+  {
+    "CountryAlpha2": "VN",
+    "Abbreviation": "DNTN",
+    "Name": "Doanh nghiệp tư nhân"
+  },
+  {
+    "CountryAlpha2": "VN",
+    "Abbreviation": "HTX",
+    "Name": "Hợp tác xã"
+  },
+  {
+    "CountryAlpha2": "BY",
+    "Abbreviation": "ААТ",
+    "Name": "Адкрытае акцыянернае таварыства"
+  },
+  {
+    "CountryAlpha2": "BY",
+    "Abbreviation": "ЗАТ",
+    "Name": "Закрытае акцыянернае таварыства"
+  },
+  {
+    "CountryAlpha2": "BY",
+    "Abbreviation": "ТАА",
+    "Name": "Таварыства з абмежаванай адказнасцю"
+  },
+  {
+    "CountryAlpha2": "BE",
+    "TwoLetterLanguageCode": "nl",
+    "Abbreviation": "VOF",
+    "Name": "vennootschap onder firma"
+  },
+  {
+    "CountryAlpha2": "BE",
+    "TwoLetterLanguageCode": "nl",
+    "Abbreviation": "Comm. V",
+    "Name": "gewone commanditaire vennootschap"
+  },
+  {
+    "CountryAlpha2": "BE",
+    "TwoLetterLanguageCode": "nl",
+    "Abbreviation": "Comm. VA",
+    "Name": "commanditaire vennootschap op aandelen"
+  },
+  {
+    "CountryAlpha2": "BE",
+    "TwoLetterLanguageCode": "nl",
+    "Abbreviation": "BVBA",
+    "Name": "besloten vennootschap met beperkte aansprakelijkheid"
+  },
+  {
+    "CountryAlpha2": "BE",
+    "TwoLetterLanguageCode": "nl",
+    "Abbreviation": "BV",
+    "Name": "besloten vennootschap"
+  },
+  {
+    "CountryAlpha2": "BE",
+    "TwoLetterLanguageCode": "nl",
+    "Abbreviation": "EBVBA",
+    "Name": "eenpersoons besloten vennootschap met beperkte aansprakelijkheid"
+  },
+  {
+    "CountryAlpha2": "BE",
+    "TwoLetterLanguageCode": "nl",
+    "Abbreviation": "NV",
+    "Name": "naamloze vennootschap"
+  },
+  {
+    "CountryAlpha2": "BE",
+    "TwoLetterLanguageCode": "nl",
+    "Abbreviation": "CVBA",
+    "Name": "coöperatieve vennootschap met beperkte aansprakelijkheid"
+  },
+  {
+    "CountryAlpha2": "BE",
+    "TwoLetterLanguageCode": "nl",
+    "Abbreviation": "CVOA",
+    "Name": "coöperatieve vennootschap met onbeperkte aansprakelijkheid"
+  },
+  {
+    "CountryAlpha2": "BE",
+    "TwoLetterLanguageCode": "fr",
+    "Abbreviation": "SNC",
+    "Name": "société en nom collectif"
+  },
+  {
+    "CountryAlpha2": "BE",
+    "TwoLetterLanguageCode": "fr",
+    "Abbreviation": "SCS",
+    "Name": "société en commandite simple"
+  },
+  {
+    "CountryAlpha2": "BE",
+    "TwoLetterLanguageCode": "fr",
+    "Abbreviation": "SCA",
+    "Name": "société en commandite par actions"
+  },
+  {
+    "CountryAlpha2": "BE",
+    "TwoLetterLanguageCode": "fr",
+    "Abbreviation": "SPRL",
+    "Name": "société privée à responsabilité limitée"
+  },
+  {
+    "CountryAlpha2": "BE",
+    "TwoLetterLanguageCode": "fr",
+    "Abbreviation": "SRL",
+    "Name": "société responsabilité limitée"
+  },
+  {
+    "CountryAlpha2": "BE",
+    "TwoLetterLanguageCode": "fr",
+    "Abbreviation": "SPRLU",
+    "Name": "société privée à responsabilité limitée unipersonnelle"
+  },
+  {
+    "CountryAlpha2": "BE",
+    "TwoLetterLanguageCode": "fr",
+    "Abbreviation": "SA",
+    "Name": "societé anonyme"
+  },
+  {
+    "CountryAlpha2": "BE",
+    "TwoLetterLanguageCode": "fr",
+    "Abbreviation": "SCRL",
+    "Name": "société coopérative à responsabilité limitée"
+  },
+  {
+    "CountryAlpha2": "BE",
+    "TwoLetterLanguageCode": "fr",
+    "Abbreviation": "SCRI",
+    "Name": "société coopérative à responsabilité illimitée"
+  },
+  {
+    "CountryAlpha2": "HU",
+    "Abbreviation": "bt.",
+    "Name": "betéti társaság"
+  },
+  {
+    "CountryAlpha2": "HU",
+    "Abbreviation": "kkt.",
+    "Name": "közkereseti társaság"
+  },
+  {
+    "CountryAlpha2": "HU",
+    "Abbreviation": "kft.",
+    "Name": "korlátolt felelősségű társaság"
+  },
+  {
+    "CountryAlpha2": "HU",
+    "Abbreviation": "Nyrt.",
+    "Name": "(nyilvánosan működő részvénytársaság"
+  },
+  {
+    "CountryAlpha2": "HU",
+    "Abbreviation": "Zrt.",
+    "Name": "zártkörűen működő részvénytársaság"
+  },
+  {
+    "CountryAlpha2": "HU",
+    "Abbreviation": "szöv.",
+    "Name": "szövetkezet"
+  },
+  {
+    "CountryAlpha2": "IS",
+    "Abbreviation": "ehf.",
+    "Name": "einkahlutafélag"
+  },
+  {
+    "CountryAlpha2": "IS",
+    "Abbreviation": "hf.",
+    "Name": "hlutafélag"
+  },
+  {
+    "CountryAlpha2": "IS",
+    "Abbreviation": "slf.",
+    "Name": "samlagsfélag"
+  },
+  {
+    "CountryAlpha2": "IS",
+    "Abbreviation": "svf.",
+    "Name": "samvinnufélag"
+  },
+  {
+    "CountryAlpha2": "IS",
+    "Abbreviation": "sf.",
+    "Name": "sameignarfélag"
+  },
+  {
+    "CountryAlpha2": "GT",
+    "Abbreviation": "y Cía. S. C.",
+    "Name": "Sociedad Colectiva"
+  },
+  {
+    "CountryAlpha2": "GT",
+    "Abbreviation": "y Cía. S. en C.",
+    "Name": "Sociedad en Comandita Simple"
+  },
+  {
+    "CountryAlpha2": "GT",
+    "Abbreviation": "Cía. Ltda.",
+    "Name": "Sociedad de Responsabilidad Limitada"
+  },
+  {
+    "CountryAlpha2": "GT",
+    "Abbreviation": "S. A.",
+    "Name": "Sociedad Anónima"
+  },
+  {
+    "CountryAlpha2": "GT",
+    "Abbreviation": "Cía. S. C. A",
+    "Name": "Sociedad en Comandita por Acciones"
+  },
+  {
+    "CountryAlpha2": "CH",
+    "TwoLetterLanguageCode": "de",
+    "Abbreviation": "AG",
+    "Name": "Aktiengesellschaft"
+  },
+  {
+    "CountryAlpha2": "CH",
+    "TwoLetterLanguageCode": "de",
+    "Abbreviation": "GmbH",
+    "Name": "Gesellschaft mit beschränkter Haftung"
+  },
+  {
+    "CountryAlpha2": "CH",
+    "TwoLetterLanguageCode": "fr",
+    "Abbreviation": "SA",
+    "Name": "Société anonyme"
+  },
+  {
+    "CountryAlpha2": "CH",
+    "TwoLetterLanguageCode": "fr",
+    "Abbreviation": "Sàrl",
+    "Name": "Société à responsabilité limitée"
+  },
+  {
+    "CountryAlpha2": "CH",
+    "TwoLetterLanguageCode": "fr",
+    "Abbreviation": "SA",
+    "Name": "Società anonima"
+  },
+  {
+    "CountryAlpha2": "CH",
+    "TwoLetterLanguageCode": "fr",
+    "Abbreviation": "Sagl",
+    "Name": "Società a garanzia limitata"
+  },
+  {
+    "CountryAlpha2": "ZA",
+    "Abbreviation": "Pty Ltd",
+    "Name": "Private Limited Company"
+  },
+  {
+    "CountryAlpha2": "ZA",
+    "Abbreviation": "Ltd",
+    "Name": "Public Company"
+  },
+  {
+    "CountryAlpha2": "ZA",
+    "Abbreviation": "CC",
+    "Name": "Close Corporation"
+  },
+  {
+    "CountryAlpha2": "ET",
+    "Abbreviation": "PLC",
+    "Name": "Private limited company"
+  },
+  {
+    "CountryAlpha2": "ET",
+    "Abbreviation": "SC",
+    "Name": "Share company"
+  },
+  {
+    "CountryAlpha2": "ET",
+    "Abbreviation": "CS",
+    "Name": "Cooperative societies"
+  },
+  {
+    "CountryAlpha2": "ET",
+    "Abbreviation": "PE",
+    "Name": "public enterprises"
+  },
+  {
+    "CountryAlpha2": "ET",
+    "Abbreviation": "PC",
+    "Name": "public corporations"
+  },
+  {
+    "CountryAlpha2": "CY",
+    "Abbreviation": "LTD",
+    "Name": "Ιδιωτική Εταιρεία"
+  },
+  {
+    "CountryAlpha2": "CY",
+    "Abbreviation": "PLC",
+    "Name": "Δημόσια Εταιρεία"
+  },
+  {
+    "CountryAlpha2": "CY",
+    "Abbreviation": "COOP",
+    "Name": "Συνεργατικά Πιστωτικά Ιδρύματα"
+  },
+  {
+    "CountryAlpha2": "CY",
+    "Abbreviation": "SP",
+    "Name": "Αυτοτελώς εργαζόμενος"
+  },
+  {
+    "CountryAlpha2": "CY",
+    "Abbreviation": "SF",
+    "Name": "Σωματεία και Ιδρυμάτα"
+  },
+  {
+    "CountryAlpha2": "PL",
+    "Abbreviation": "sp.j.",
+    "Name": "spółka jawna"
+  },
+  {
+    "CountryAlpha2": "PL",
+    "Abbreviation": "sp.p.",
+    "Name": "spółka partnerska"
+  },
+  {
+    "CountryAlpha2": "PL",
+    "Abbreviation": "sp.k.",
+    "Name": "spółka komandytowa"
+  },
+  {
+    "CountryAlpha2": "PL",
+    "Abbreviation": "S.A.",
+    "Name": "spółka akcyjna"
+  },
+  {
+    "CountryAlpha2": "PL",
+    "Abbreviation": "P.S.A.",
+    "Name": "prosta spółka akcyjna"
+  },
+  {
+    "CountryAlpha2": "PL",
+    "Abbreviation": "Sp. z o.o.",
+    "Name": "spółka z ograniczoną odpowiedzialnością"
+  },
+  {
+    "CountryAlpha2": "GE",
+    "Abbreviation": "ჯგუფი",
+    "Name": ""
+  },
+  {
+    "CountryAlpha2": "GE",
+    "Abbreviation": "და კომპანია",
+    "Name": ""
+  },
+  {
+    "CountryAlpha2": "GE",
+    "Abbreviation": "სტუდია",
+    "Name": ""
+  },
+  {
+    "CountryAlpha2": "GE",
+    "Abbreviation": "გრუპი",
+    "Name": ""
+  },
+  {
+    "CountryAlpha2": "KP",
+    "Abbreviation": "연구소",
+    "Name": ""
+  },
+  {
+    "CountryAlpha2": "KP",
+    "Abbreviation": "게임즈",
+    "Name": ""
+  },
+  {
+    "CountryAlpha2": "KP",
+    "Abbreviation": "그룹",
+    "Name": ""
+  },
+  {
+    "CountryAlpha2": "KP",
+    "Abbreviation": "전자",
+    "Name": ""
+  },
+  {
+    "CountryAlpha2": "KP",
+    "Abbreviation": "물산",
+    "Name": ""
+  },
+  {
+    "CountryAlpha2": "KP",
+    "Abbreviation": "코리아",
+    "Name": ""
+  },
+  {
+    "CountryAlpha2": "KP",
+    "Abbreviation": "공사",
+    "Name": ""
+  },
+  {
+    "CountryAlpha2": "KP",
+    "Abbreviation": "증권",
+    "Name": ""
+  },
+  {
+    "CountryAlpha2": "KP",
+    "Abbreviation": "은행",
+    "Name": ""
+  },
+  {
+    "CountryAlpha2": "KP",
+    "Abbreviation": "중공업",
+    "Name": ""
+  },
+  {
+    "CountryAlpha2": "KR",
+    "Abbreviation": "연구소",
+    "Name": ""
+  },
+  {
+    "CountryAlpha2": "KR",
+    "Abbreviation": "게임즈",
+    "Name": ""
+  },
+  {
+    "CountryAlpha2": "KR",
+    "Abbreviation": "그룹",
+    "Name": ""
+  },
+  {
+    "CountryAlpha2": "KR",
+    "Abbreviation": "전자",
+    "Name": ""
+  },
+  {
+    "CountryAlpha2": "KR",
+    "Abbreviation": "물산",
+    "Name": ""
+  },
+  {
+    "CountryAlpha2": "KR",
+    "Abbreviation": "코리아",
+    "Name": ""
+  },
+  {
+    "CountryAlpha2": "KR",
+    "Abbreviation": "공사",
+    "Name": ""
+  },
+  {
+    "CountryAlpha2": "KR",
+    "Abbreviation": "증권",
+    "Name": ""
+  },
+  {
+    "CountryAlpha2": "KR",
+    "Abbreviation": "은행",
+    "Name": ""
+  },
+  {
+    "CountryAlpha2": "KR",
+    "Abbreviation": "중공업",
+    "Name": ""
+  },
+  {
+    "CountryAlpha2": "MK",
+    "Abbreviation": "ДОО",
+    "Name": ""
+  },
+  {
+    "CountryAlpha2": "MK",
+    "Abbreviation": "ДООЕЛ",
+    "Name": ""
+  },
+  {
+    "CountryAlpha2": "MK",
+    "Abbreviation": "АД",
+    "Name": ""
+  },
+  {
+    "CountryAlpha2": "MK",
+    "Abbreviation": "ТП",
+    "Name": ""
+  },
+  {
+    "CountryAlpha2": "RU",
+    "Abbreviation": "Групп",
+    "Name": ""
+  },
+  {
+    "CountryAlpha2": "RU",
+    "Abbreviation": "Инкорпорэйтед",
+    "Name": ""
+  },
+  {
+    "CountryAlpha2": "RU",
+    "Abbreviation": "Лимитед",
+    "Name": ""
+  },
+  {
+    "CountryAlpha2": "RU",
+    "Abbreviation": "Пром",
+    "Name": ""
+  },
+  {
+    "CountryAlpha2": "RU",
+    "Abbreviation": "Рус",
+    "Name": ""
+  },
+  {
+    "CountryAlpha2": "RU",
+    "Abbreviation": "Системс",
+    "Name": ""
+  },
+  {
+    "CountryAlpha2": "RU",
+    "Abbreviation": "Сбыт",
+    "Name": ""
+  },
+  {
+    "CountryAlpha2": "RU",
+    "Abbreviation": "Снаб",
+    "Name": ""
+  },
+  {
+    "CountryAlpha2": "RU",
+    "Abbreviation": "Торг",
+    "Name": ""
+  },
+  {
+    "CountryAlpha2": "RU",
+    "Abbreviation": "Трейд",
+    "Name": ""
+  }
+]

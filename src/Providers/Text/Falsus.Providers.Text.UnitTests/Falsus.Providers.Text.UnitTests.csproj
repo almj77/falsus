@@ -9,6 +9,11 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <None Remove="Datasets\.gitkeep" />
+    <None Remove="Models\.gitkeep" />
+  </ItemGroup>
+
+  <ItemGroup>
     <Compile Include="..\Falsus.Providers.Text\Models\WordModel.cs" Link="Models\WordModel.cs" />
   </ItemGroup>
 
