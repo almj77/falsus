@@ -5,18 +5,40 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <None Remove="Datasets\Adjectives.json" />
+    <None Remove="Datasets\BuzzAdjectives.json" />
+    <None Remove="Datasets\BuzzNouns.json" />
+    <None Remove="Datasets\BuzzVerbs.json" />
+    <None Remove="Datasets\Categories.json" />
     <None Remove="Datasets\CountryLanguages.json" />
+    <None Remove="Datasets\Descriptors.json" />
     <None Remove="Datasets\LegalEntityTypes.json" />
+    <None Remove="Datasets\NamePatterns.json" />
+    <None Remove="Datasets\Nouns.json" />
+    <None Remove="Datasets\Preffixes.json" />
+    <None Remove="Datasets\Types.json" />
   </ItemGroup>
 
   <ItemGroup>
+    <EmbeddedResource Include="Datasets\Adjectives.json" />
+    <EmbeddedResource Include="Datasets\BuzzAdjectives.json" />
+    <EmbeddedResource Include="Datasets\BuzzNouns.json" />
+    <EmbeddedResource Include="Datasets\BuzzVerbs.json" />
+    <EmbeddedResource Include="Datasets\Categories.json" />
+    <EmbeddedResource Include="Datasets\Descriptors.json" />
+    <EmbeddedResource Include="Datasets\NamePatterns.json" />
+    <EmbeddedResource Include="Datasets\Nouns.json" />
+    <EmbeddedResource Include="Datasets\Preffixes.json" />
     <EmbeddedResource Include="Datasets\CountryLanguages.json" />
     <EmbeddedResource Include="Datasets\LegalEntityTypes.json" />
+    <EmbeddedResource Include="Datasets\Types.json" />
   </ItemGroup>
 
   <ItemGroup>
     <ProjectReference Include="..\..\..\Engine\Falsus\Falsus.csproj" />
     <ProjectReference Include="..\..\..\Shared\Falsus.Shared\Falsus.Shared.csproj" />
+    <ProjectReference Include="..\..\Location\Falsus.Providers.Location\Falsus.Providers.Location.csproj" />
+    <ProjectReference Include="..\..\Person\Falsus.Providers.Person\Falsus.Providers.Person.csproj" />
   </ItemGroup>
 
 </Project>

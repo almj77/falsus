@@ -1,0 +1,882 @@
+﻿[
+  {
+    "TwoLetterLanguageCode": "da",
+    "BuzzNoun": "applikationer"
+  },
+  {
+    "TwoLetterLanguageCode": "da",
+    "BuzzNoun": "arkitektur"
+  },
+  {
+    "TwoLetterLanguageCode": "da",
+    "BuzzNoun": "blockchains"
+  },
+  {
+    "TwoLetterLanguageCode": "da",
+    "BuzzNoun": "brugere"
+  },
+  {
+    "TwoLetterLanguageCode": "da",
+    "BuzzNoun": "båndbredde"
+  },
+  {
+    "TwoLetterLanguageCode": "da",
+    "BuzzNoun": "e-commerce"
+  },
+  {
+    "TwoLetterLanguageCode": "da",
+    "BuzzNoun": "e-markeder"
+  },
+  {
+    "TwoLetterLanguageCode": "da",
+    "BuzzNoun": "forsyningskæder"
+  },
+  {
+    "TwoLetterLanguageCode": "da",
+    "BuzzNoun": "funktionaliteter"
+  },
+  {
+    "TwoLetterLanguageCode": "da",
+    "BuzzNoun": "fællesskaber"
+  },
+  {
+    "TwoLetterLanguageCode": "da",
+    "BuzzNoun": "grænseflader"
+  },
+  {
+    "TwoLetterLanguageCode": "da",
+    "BuzzNoun": "handlingspunkter"
+  },
+  {
+    "TwoLetterLanguageCode": "da",
+    "BuzzNoun": "indhold"
+  },
+  {
+    "TwoLetterLanguageCode": "da",
+    "BuzzNoun": "infrastrukturer"
+  },
+  {
+    "TwoLetterLanguageCode": "da",
+    "BuzzNoun": "initiativer"
+  },
+  {
+    "TwoLetterLanguageCode": "da",
+    "BuzzNoun": "kanaler"
+  },
+  {
+    "TwoLetterLanguageCode": "da",
+    "BuzzNoun": "konvergens"
+  },
+  {
+    "TwoLetterLanguageCode": "da",
+    "BuzzNoun": "leverancer"
+  },
+  {
+    "TwoLetterLanguageCode": "da",
+    "BuzzNoun": "livstidsværdier"
+  },
+  {
+    "TwoLetterLanguageCode": "da",
+    "BuzzNoun": "løsninger"
+  },
+  {
+    "TwoLetterLanguageCode": "da",
+    "BuzzNoun": "markeder"
+  },
+  {
+    "TwoLetterLanguageCode": "da",
+    "BuzzNoun": "metodologier"
+  },
+  {
+    "TwoLetterLanguageCode": "da",
+    "BuzzNoun": "modeller"
+  },
+  {
+    "TwoLetterLanguageCode": "da",
+    "BuzzNoun": "målinger"
+  },
+  {
+    "TwoLetterLanguageCode": "da",
+    "BuzzNoun": "netværk"
+  },
+  {
+    "TwoLetterLanguageCode": "da",
+    "BuzzNoun": "nicher"
+  },
+  {
+    "TwoLetterLanguageCode": "da",
+    "BuzzNoun": "oplevelser"
+  },
+  {
+    "TwoLetterLanguageCode": "da",
+    "BuzzNoun": "paradigmer"
+  },
+  {
+    "TwoLetterLanguageCode": "da",
+    "BuzzNoun": "partnerskaber"
+  },
+  {
+    "TwoLetterLanguageCode": "da",
+    "BuzzNoun": "platforme"
+  },
+  {
+    "TwoLetterLanguageCode": "da",
+    "BuzzNoun": "portaler"
+  },
+  {
+    "TwoLetterLanguageCode": "da",
+    "BuzzNoun": "relationer"
+  },
+  {
+    "TwoLetterLanguageCode": "da",
+    "BuzzNoun": "ROI"
+  },
+  {
+    "TwoLetterLanguageCode": "da",
+    "BuzzNoun": "skemaer"
+  },
+  {
+    "TwoLetterLanguageCode": "da",
+    "BuzzNoun": "synergier"
+  },
+  {
+    "TwoLetterLanguageCode": "da",
+    "BuzzNoun": "systemer"
+  },
+  {
+    "TwoLetterLanguageCode": "da",
+    "BuzzNoun": "teknologier"
+  },
+  {
+    "TwoLetterLanguageCode": "da",
+    "BuzzNoun": "webtjenester"
+  },
+  {
+    "TwoLetterLanguageCode": "el",
+    "BuzzNoun": "συνέργειες"
+  },
+  {
+    "TwoLetterLanguageCode": "el",
+    "BuzzNoun": "παραδείγματα"
+  },
+  {
+    "TwoLetterLanguageCode": "el",
+    "BuzzNoun": "αγορές"
+  },
+  {
+    "TwoLetterLanguageCode": "el",
+    "BuzzNoun": "συνεργασίες"
+  },
+  {
+    "TwoLetterLanguageCode": "el",
+    "BuzzNoun": "υποδομές"
+  },
+  {
+    "TwoLetterLanguageCode": "el",
+    "BuzzNoun": "πλατφόρμες"
+  },
+  {
+    "TwoLetterLanguageCode": "el",
+    "BuzzNoun": "πρωτοβουλίες"
+  },
+  {
+    "TwoLetterLanguageCode": "el",
+    "BuzzNoun": "κανάλια"
+  },
+  {
+    "TwoLetterLanguageCode": "el",
+    "BuzzNoun": "μάτια"
+  },
+  {
+    "TwoLetterLanguageCode": "el",
+    "BuzzNoun": "κοινότητες"
+  },
+  {
+    "TwoLetterLanguageCode": "el",
+    "BuzzNoun": "λύσεις"
+  },
+  {
+    "TwoLetterLanguageCode": "el",
+    "BuzzNoun": "δράση-αντικείμενα"
+  },
+  {
+    "TwoLetterLanguageCode": "el",
+    "BuzzNoun": "πύλες"
+  },
+  {
+    "TwoLetterLanguageCode": "el",
+    "BuzzNoun": "θέσεις"
+  },
+  {
+    "TwoLetterLanguageCode": "el",
+    "BuzzNoun": "τεχνολογίες"
+  },
+  {
+    "TwoLetterLanguageCode": "el",
+    "BuzzNoun": "περιεχόμενο"
+  },
+  {
+    "TwoLetterLanguageCode": "el",
+    "BuzzNoun": "αλυσίδες προμηθειών"
+  },
+  {
+    "TwoLetterLanguageCode": "el",
+    "BuzzNoun": "σύγκλιση"
+  },
+  {
+    "TwoLetterLanguageCode": "el",
+    "BuzzNoun": "σχέσεις"
+  },
+  {
+    "TwoLetterLanguageCode": "el",
+    "BuzzNoun": "αρχιτεκτονικές"
+  },
+  {
+    "TwoLetterLanguageCode": "el",
+    "BuzzNoun": "διασυνδέσεις"
+  },
+  {
+    "TwoLetterLanguageCode": "el",
+    "BuzzNoun": "e-αγορές"
+  },
+  {
+    "TwoLetterLanguageCode": "el",
+    "BuzzNoun": "ηλεκτρονικό εμπόριο"
+  },
+  {
+    "TwoLetterLanguageCode": "el",
+    "BuzzNoun": "συστήματα"
+  },
+  {
+    "TwoLetterLanguageCode": "el",
+    "BuzzNoun": "μοντέλα"
+  },
+  {
+    "TwoLetterLanguageCode": "el",
+    "BuzzNoun": "παραδοτέα"
+  },
+  {
+    "TwoLetterLanguageCode": "el",
+    "BuzzNoun": "χρήστες"
+  },
+  {
+    "TwoLetterLanguageCode": "el",
+    "BuzzNoun": "σχήματα"
+  },
+  {
+    "TwoLetterLanguageCode": "el",
+    "BuzzNoun": "δίκτυα"
+  },
+  {
+    "TwoLetterLanguageCode": "el",
+    "BuzzNoun": "εφαρμογές"
+  },
+  {
+    "TwoLetterLanguageCode": "el",
+    "BuzzNoun": "μετρήσεις"
+  },
+  {
+    "TwoLetterLanguageCode": "el",
+    "BuzzNoun": "e-business"
+  },
+  {
+    "TwoLetterLanguageCode": "el",
+    "BuzzNoun": "λειτουργίες"
+  },
+  {
+    "TwoLetterLanguageCode": "el",
+    "BuzzNoun": "εμπειρίες"
+  },
+  {
+    "TwoLetterLanguageCode": "el",
+    "BuzzNoun": "διαδικτυακές υπηρεσίες"
+  },
+  {
+    "TwoLetterLanguageCode": "el",
+    "BuzzNoun": "μεθοδολογίες"
+  },
+  {
+    "TwoLetterLanguageCode": "en",
+    "BuzzNoun": "synergies"
+  },
+  {
+    "TwoLetterLanguageCode": "en",
+    "BuzzNoun": "paradigms"
+  },
+  {
+    "TwoLetterLanguageCode": "en",
+    "BuzzNoun": "markets"
+  },
+  {
+    "TwoLetterLanguageCode": "en",
+    "BuzzNoun": "partnerships"
+  },
+  {
+    "TwoLetterLanguageCode": "en",
+    "BuzzNoun": "infrastructures"
+  },
+  {
+    "TwoLetterLanguageCode": "en",
+    "BuzzNoun": "platforms"
+  },
+  {
+    "TwoLetterLanguageCode": "en",
+    "BuzzNoun": "initiatives"
+  },
+  {
+    "TwoLetterLanguageCode": "en",
+    "BuzzNoun": "channels"
+  },
+  {
+    "TwoLetterLanguageCode": "en",
+    "BuzzNoun": "eyeballs"
+  },
+  {
+    "TwoLetterLanguageCode": "en",
+    "BuzzNoun": "communities"
+  },
+  {
+    "TwoLetterLanguageCode": "en",
+    "BuzzNoun": "ROI"
+  },
+  {
+    "TwoLetterLanguageCode": "en",
+    "BuzzNoun": "solutions"
+  },
+  {
+    "TwoLetterLanguageCode": "en",
+    "BuzzNoun": "action-items"
+  },
+  {
+    "TwoLetterLanguageCode": "en",
+    "BuzzNoun": "portals"
+  },
+  {
+    "TwoLetterLanguageCode": "en",
+    "BuzzNoun": "niches"
+  },
+  {
+    "TwoLetterLanguageCode": "en",
+    "BuzzNoun": "technologies"
+  },
+  {
+    "TwoLetterLanguageCode": "en",
+    "BuzzNoun": "content"
+  },
+  {
+    "TwoLetterLanguageCode": "en",
+    "BuzzNoun": "supply-chains"
+  },
+  {
+    "TwoLetterLanguageCode": "en",
+    "BuzzNoun": "convergence"
+  },
+  {
+    "TwoLetterLanguageCode": "en",
+    "BuzzNoun": "relationships"
+  },
+  {
+    "TwoLetterLanguageCode": "en",
+    "BuzzNoun": "architectures"
+  },
+  {
+    "TwoLetterLanguageCode": "en",
+    "BuzzNoun": "interfaces"
+  },
+  {
+    "TwoLetterLanguageCode": "en",
+    "BuzzNoun": "e-markets"
+  },
+  {
+    "TwoLetterLanguageCode": "en",
+    "BuzzNoun": "e-commerce"
+  },
+  {
+    "TwoLetterLanguageCode": "en",
+    "BuzzNoun": "systems"
+  },
+  {
+    "TwoLetterLanguageCode": "en",
+    "BuzzNoun": "bandwidth"
+  },
+  {
+    "TwoLetterLanguageCode": "en",
+    "BuzzNoun": "models"
+  },
+  {
+    "TwoLetterLanguageCode": "en",
+    "BuzzNoun": "mindshare"
+  },
+  {
+    "TwoLetterLanguageCode": "en",
+    "BuzzNoun": "deliverables"
+  },
+  {
+    "TwoLetterLanguageCode": "en",
+    "BuzzNoun": "users"
+  },
+  {
+    "TwoLetterLanguageCode": "en",
+    "BuzzNoun": "schemas"
+  },
+  {
+    "TwoLetterLanguageCode": "en",
+    "BuzzNoun": "networks"
+  },
+  {
+    "TwoLetterLanguageCode": "en",
+    "BuzzNoun": "applications"
+  },
+  {
+    "TwoLetterLanguageCode": "en",
+    "BuzzNoun": "metrics"
+  },
+  {
+    "TwoLetterLanguageCode": "en",
+    "BuzzNoun": "e-business"
+  },
+  {
+    "TwoLetterLanguageCode": "en",
+    "BuzzNoun": "functionalities"
+  },
+  {
+    "TwoLetterLanguageCode": "en",
+    "BuzzNoun": "experiences"
+  },
+  {
+    "TwoLetterLanguageCode": "en",
+    "BuzzNoun": "web services"
+  },
+  {
+    "TwoLetterLanguageCode": "en",
+    "BuzzNoun": "methodologies"
+  },
+  {
+    "TwoLetterLanguageCode": "en",
+    "BuzzNoun": "blockchains"
+  },
+  {
+    "TwoLetterLanguageCode": "en",
+    "BuzzNoun": "lifetime value"
+  },
+  {
+    "TwoLetterLanguageCode": "es",
+    "BuzzNoun": "sinergias"
+  },
+  {
+    "TwoLetterLanguageCode": "es",
+    "BuzzNoun": "web-readiness"
+  },
+  {
+    "TwoLetterLanguageCode": "es",
+    "BuzzNoun": "paradigmas"
+  },
+  {
+    "TwoLetterLanguageCode": "es",
+    "BuzzNoun": "mercados"
+  },
+  {
+    "TwoLetterLanguageCode": "es",
+    "BuzzNoun": "asociaciones"
+  },
+  {
+    "TwoLetterLanguageCode": "es",
+    "BuzzNoun": "infraestructuras"
+  },
+  {
+    "TwoLetterLanguageCode": "es",
+    "BuzzNoun": "plataformas"
+  },
+  {
+    "TwoLetterLanguageCode": "es",
+    "BuzzNoun": "iniciativas"
+  },
+  {
+    "TwoLetterLanguageCode": "es",
+    "BuzzNoun": "canales"
+  },
+  {
+    "TwoLetterLanguageCode": "es",
+    "BuzzNoun": "ojos"
+  },
+  {
+    "TwoLetterLanguageCode": "es",
+    "BuzzNoun": "comunidades"
+  },
+  {
+    "TwoLetterLanguageCode": "es",
+    "BuzzNoun": "ROI"
+  },
+  {
+    "TwoLetterLanguageCode": "es",
+    "BuzzNoun": "soluciones"
+  },
+  {
+    "TwoLetterLanguageCode": "es",
+    "BuzzNoun": "minoristas electrónicos"
+  },
+  {
+    "TwoLetterLanguageCode": "es",
+    "BuzzNoun": "e-servicios"
+  },
+  {
+    "TwoLetterLanguageCode": "es",
+    "BuzzNoun": "elementos de acción"
+  },
+  {
+    "TwoLetterLanguageCode": "es",
+    "BuzzNoun": "portales"
+  },
+  {
+    "TwoLetterLanguageCode": "es",
+    "BuzzNoun": "nichos"
+  },
+  {
+    "TwoLetterLanguageCode": "es",
+    "BuzzNoun": "tecnologías"
+  },
+  {
+    "TwoLetterLanguageCode": "es",
+    "BuzzNoun": "contenido"
+  },
+  {
+    "TwoLetterLanguageCode": "es",
+    "BuzzNoun": "vortales"
+  },
+  {
+    "TwoLetterLanguageCode": "es",
+    "BuzzNoun": "cadenas de suministro"
+  },
+  {
+    "TwoLetterLanguageCode": "es",
+    "BuzzNoun": "convergencia"
+  },
+  {
+    "TwoLetterLanguageCode": "es",
+    "BuzzNoun": "relaciones"
+  },
+  {
+    "TwoLetterLanguageCode": "es",
+    "BuzzNoun": "arquitecturas"
+  },
+  {
+    "TwoLetterLanguageCode": "es",
+    "BuzzNoun": "interfaces"
+  },
+  {
+    "TwoLetterLanguageCode": "es",
+    "BuzzNoun": "mercados electrónicos"
+  },
+  {
+    "TwoLetterLanguageCode": "es",
+    "BuzzNoun": "e-commerce"
+  },
+  {
+    "TwoLetterLanguageCode": "es",
+    "BuzzNoun": "sistemas"
+  },
+  {
+    "TwoLetterLanguageCode": "es",
+    "BuzzNoun": "ancho de banda"
+  },
+  {
+    "TwoLetterLanguageCode": "es",
+    "BuzzNoun": "infomediarios"
+  },
+  {
+    "TwoLetterLanguageCode": "es",
+    "BuzzNoun": "modelos"
+  },
+  {
+    "TwoLetterLanguageCode": "es",
+    "BuzzNoun": "Mindshare"
+  },
+  {
+    "TwoLetterLanguageCode": "es",
+    "BuzzNoun": "entregables"
+  },
+  {
+    "TwoLetterLanguageCode": "es",
+    "BuzzNoun": "usuarios"
+  },
+  {
+    "TwoLetterLanguageCode": "es",
+    "BuzzNoun": "esquemas"
+  },
+  {
+    "TwoLetterLanguageCode": "es",
+    "BuzzNoun": "redes"
+  },
+  {
+    "TwoLetterLanguageCode": "es",
+    "BuzzNoun": "aplicaciones"
+  },
+  {
+    "TwoLetterLanguageCode": "es",
+    "BuzzNoun": "métricas"
+  },
+  {
+    "TwoLetterLanguageCode": "es",
+    "BuzzNoun": "e-business"
+  },
+  {
+    "TwoLetterLanguageCode": "es",
+    "BuzzNoun": "funcionalidades"
+  },
+  {
+    "TwoLetterLanguageCode": "es",
+    "BuzzNoun": "experiencias"
+  },
+  {
+    "TwoLetterLanguageCode": "es",
+    "BuzzNoun": "servicios web"
+  },
+  {
+    "TwoLetterLanguageCode": "es",
+    "BuzzNoun": "metodologías"
+  },
+  {
+    "TwoLetterLanguageCode": "fa",
+    "BuzzNoun": "هم افزایی"
+  },
+  {
+    "TwoLetterLanguageCode": "fa",
+    "BuzzNoun": "بازارها"
+  },
+  {
+    "TwoLetterLanguageCode": "fa",
+    "BuzzNoun": "شراکت"
+  },
+  {
+    "TwoLetterLanguageCode": "fa",
+    "BuzzNoun": "زیرساخت ها"
+  },
+  {
+    "TwoLetterLanguageCode": "fa",
+    "BuzzNoun": "پلتفرم"
+  },
+  {
+    "TwoLetterLanguageCode": "fa",
+    "BuzzNoun": "ابتکار عمل"
+  },
+  {
+    "TwoLetterLanguageCode": "fa",
+    "BuzzNoun": "کانال ها"
+  },
+  {
+    "TwoLetterLanguageCode": "fa",
+    "BuzzNoun": "اجتماعات"
+  },
+  {
+    "TwoLetterLanguageCode": "fa",
+    "BuzzNoun": "راه حل ها"
+  },
+  {
+    "TwoLetterLanguageCode": "fa",
+    "BuzzNoun": "خدمات الکترونیکی"
+  },
+  {
+    "TwoLetterLanguageCode": "fa",
+    "BuzzNoun": "موارد عملی"
+  },
+  {
+    "TwoLetterLanguageCode": "fa",
+    "BuzzNoun": "پورتال ها"
+  },
+  {
+    "TwoLetterLanguageCode": "fa",
+    "BuzzNoun": "سوله"
+  },
+  {
+    "TwoLetterLanguageCode": "fa",
+    "BuzzNoun": "فن آوری ها"
+  },
+  {
+    "TwoLetterLanguageCode": "fa",
+    "BuzzNoun": "محتوا"
+  },
+  {
+    "TwoLetterLanguageCode": "fa",
+    "BuzzNoun": "زنجیره تامین"
+  },
+  {
+    "TwoLetterLanguageCode": "fa",
+    "BuzzNoun": "همگرایی"
+  },
+  {
+    "TwoLetterLanguageCode": "fa",
+    "BuzzNoun": "روابط"
+  },
+  {
+    "TwoLetterLanguageCode": "fa",
+    "BuzzNoun": "معماری"
+  },
+  {
+    "TwoLetterLanguageCode": "fa",
+    "BuzzNoun": "رابط ها"
+  },
+  {
+    "TwoLetterLanguageCode": "fa",
+    "BuzzNoun": "بازارهای الکترونیکی"
+  },
+  {
+    "TwoLetterLanguageCode": "fa",
+    "BuzzNoun": "تجارت الکترونیک"
+  },
+  {
+    "TwoLetterLanguageCode": "fa",
+    "BuzzNoun": "سیستم ها"
+  },
+  {
+    "TwoLetterLanguageCode": "fa",
+    "BuzzNoun": "پهنای باند"
+  },
+  {
+    "TwoLetterLanguageCode": "fa",
+    "BuzzNoun": "مدل ها"
+  },
+  {
+    "TwoLetterLanguageCode": "fa",
+    "BuzzNoun": "ذهنیت"
+  },
+  {
+    "TwoLetterLanguageCode": "fa",
+    "BuzzNoun": "تحویل دادنی ها"
+  },
+  {
+    "TwoLetterLanguageCode": "fa",
+    "BuzzNoun": "کاربران"
+  },
+  {
+    "TwoLetterLanguageCode": "fa",
+    "BuzzNoun": "شبکه ها"
+  },
+  {
+    "TwoLetterLanguageCode": "fa",
+    "BuzzNoun": "برنامه های کاربردی"
+  },
+  {
+    "TwoLetterLanguageCode": "fa",
+    "BuzzNoun": "تجارت الکترونیکی"
+  },
+  {
+    "TwoLetterLanguageCode": "fa",
+    "BuzzNoun": "ویژگی ها"
+  },
+  {
+    "TwoLetterLanguageCode": "fa",
+    "BuzzNoun": "تجربیات"
+  },
+  {
+    "TwoLetterLanguageCode": "fa",
+    "BuzzNoun": "روش شناسی"
+  },
+  {
+    "TwoLetterLanguageCode": "fa",
+    "BuzzNoun": "بلاکچین"
+  },
+  {
+    "TwoLetterLanguageCode": "it",
+    "BuzzNoun": "partnerships"
+  },
+  {
+    "TwoLetterLanguageCode": "it",
+    "BuzzNoun": "comunità"
+  },
+  {
+    "TwoLetterLanguageCode": "it",
+    "BuzzNoun": "ROI"
+  },
+  {
+    "TwoLetterLanguageCode": "it",
+    "BuzzNoun": "soluzioni"
+  },
+  {
+    "TwoLetterLanguageCode": "it",
+    "BuzzNoun": "e-services"
+  },
+  {
+    "TwoLetterLanguageCode": "it",
+    "BuzzNoun": "nicchie"
+  },
+  {
+    "TwoLetterLanguageCode": "it",
+    "BuzzNoun": "tecnologie"
+  },
+  {
+    "TwoLetterLanguageCode": "it",
+    "BuzzNoun": "contenuti"
+  },
+  {
+    "TwoLetterLanguageCode": "it",
+    "BuzzNoun": "supply-chains"
+  },
+  {
+    "TwoLetterLanguageCode": "it",
+    "BuzzNoun": "convergenze"
+  },
+  {
+    "TwoLetterLanguageCode": "it",
+    "BuzzNoun": "relazioni"
+  },
+  {
+    "TwoLetterLanguageCode": "it",
+    "BuzzNoun": "architetture"
+  },
+  {
+    "TwoLetterLanguageCode": "it",
+    "BuzzNoun": "interfacce"
+  },
+  {
+    "TwoLetterLanguageCode": "it",
+    "BuzzNoun": "mercati"
+  },
+  {
+    "TwoLetterLanguageCode": "it",
+    "BuzzNoun": "e-commerce"
+  },
+  {
+    "TwoLetterLanguageCode": "it",
+    "BuzzNoun": "sistemi"
+  },
+  {
+    "TwoLetterLanguageCode": "it",
+    "BuzzNoun": "modelli"
+  },
+  {
+    "TwoLetterLanguageCode": "it",
+    "BuzzNoun": "schemi"
+  },
+  {
+    "TwoLetterLanguageCode": "it",
+    "BuzzNoun": "reti"
+  },
+  {
+    "TwoLetterLanguageCode": "it",
+    "BuzzNoun": "applicazioni"
+  },
+  {
+    "TwoLetterLanguageCode": "it",
+    "BuzzNoun": "metriche"
+  },
+  {
+    "TwoLetterLanguageCode": "it",
+    "BuzzNoun": "e-business"
+  },
+  {
+    "TwoLetterLanguageCode": "it",
+    "BuzzNoun": "funzionalità"
+  },
+  {
+    "TwoLetterLanguageCode": "it",
+    "BuzzNoun": "esperienze"
+  },
+  {
+    "TwoLetterLanguageCode": "it",
+    "BuzzNoun": "webservices"
+  },
+  {
+    "TwoLetterLanguageCode": "it",
+    "BuzzNoun": "metodologie"
+  }
+]

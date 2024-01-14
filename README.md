@@ -12,6 +12,7 @@
 
 ### Data Generators
 #### Company
+- Company Name
 - Legal Entity Type
 #### Data Types
 - Boolean

@@ -1,0 +1,2046 @@
+﻿[
+  {
+    "TwoLetterLanguageCode": "da",
+    "Noun": "adapter"
+  },
+  {
+    "TwoLetterLanguageCode": "da",
+    "Noun": "adgang"
+  },
+  {
+    "TwoLetterLanguageCode": "da",
+    "Noun": "algoritme"
+  },
+  {
+    "TwoLetterLanguageCode": "da",
+    "Noun": "alliance"
+  },
+  {
+    "TwoLetterLanguageCode": "da",
+    "Noun": "analysator"
+  },
+  {
+    "TwoLetterLanguageCode": "da",
+    "Noun": "applikation"
+  },
+  {
+    "TwoLetterLanguageCode": "da",
+    "Noun": "arkitektur"
+  },
+  {
+    "TwoLetterLanguageCode": "da",
+    "Noun": "arkiv"
+  },
+  {
+    "TwoLetterLanguageCode": "da",
+    "Noun": "benchmark"
+  },
+  {
+    "TwoLetterLanguageCode": "da",
+    "Noun": "budgetstyring"
+  },
+  {
+    "TwoLetterLanguageCode": "da",
+    "Noun": "data-lager"
+  },
+  {
+    "TwoLetterLanguageCode": "da",
+    "Noun": "database"
+  },
+  {
+    "TwoLetterLanguageCode": "da",
+    "Noun": "definition"
+  },
+  {
+    "TwoLetterLanguageCode": "da",
+    "Noun": "ekstranet"
+  },
+  {
+    "TwoLetterLanguageCode": "da",
+    "Noun": "emulering"
+  },
+  {
+    "TwoLetterLanguageCode": "da",
+    "Noun": "evne"
+  },
+  {
+    "TwoLetterLanguageCode": "da",
+    "Noun": "firmware"
+  },
+  {
+    "TwoLetterLanguageCode": "da",
+    "Noun": "fleksibilitet"
+  },
+  {
+    "TwoLetterLanguageCode": "da",
+    "Noun": "fokusgruppe"
+  },
+  {
+    "TwoLetterLanguageCode": "da",
+    "Noun": "framework"
+  },
+  {
+    "TwoLetterLanguageCode": "da",
+    "Noun": "funktion"
+  },
+  {
+    "TwoLetterLanguageCode": "da",
+    "Noun": "gennemstrømning"
+  },
+  {
+    "TwoLetterLanguageCode": "da",
+    "Noun": "grafisk brugergrænseflade"
+  },
+  {
+    "TwoLetterLanguageCode": "da",
+    "Noun": "groupware"
+  },
+  {
+    "TwoLetterLanguageCode": "da",
+    "Noun": "grænseflade"
+  },
+  {
+    "TwoLetterLanguageCode": "da",
+    "Noun": "hardware"
+  },
+  {
+    "TwoLetterLanguageCode": "da",
+    "Noun": "helpdesk"
+  },
+  {
+    "TwoLetterLanguageCode": "da",
+    "Noun": "hierarki"
+  },
+  {
+    "TwoLetterLanguageCode": "da",
+    "Noun": "hub"
+  },
+  {
+    "TwoLetterLanguageCode": "da",
+    "Noun": "implementering"
+  },
+  {
+    "TwoLetterLanguageCode": "da",
+    "Noun": "infrastruktur"
+  },
+  {
+    "TwoLetterLanguageCode": "da",
+    "Noun": "initiativ"
+  },
+  {
+    "TwoLetterLanguageCode": "da",
+    "Noun": "installation"
+  },
+  {
+    "TwoLetterLanguageCode": "da",
+    "Noun": "instruktionssæt"
+  },
+  {
+    "TwoLetterLanguageCode": "da",
+    "Noun": "internetløsning"
+  },
+  {
+    "TwoLetterLanguageCode": "da",
+    "Noun": "intranet"
+  },
+  {
+    "TwoLetterLanguageCode": "da",
+    "Noun": "kapacitet"
+  },
+  {
+    "TwoLetterLanguageCode": "da",
+    "Noun": "kerne"
+  },
+  {
+    "TwoLetterLanguageCode": "da",
+    "Noun": "kodning"
+  },
+  {
+    "TwoLetterLanguageCode": "da",
+    "Noun": "kompleksitet"
+  },
+  {
+    "TwoLetterLanguageCode": "da",
+    "Noun": "koncept"
+  },
+  {
+    "TwoLetterLanguageCode": "da",
+    "Noun": "konglomerat"
+  },
+  {
+    "TwoLetterLanguageCode": "da",
+    "Noun": "kontingens"
+  },
+  {
+    "TwoLetterLanguageCode": "da",
+    "Noun": "kredsløb"
+  },
+  {
+    "TwoLetterLanguageCode": "da",
+    "Noun": "kryptering"
+  },
+  {
+    "TwoLetterLanguageCode": "da",
+    "Noun": "kundeloyalitet"
+  },
+  {
+    "TwoLetterLanguageCode": "da",
+    "Noun": "kunstig intelligens"
+  },
+  {
+    "TwoLetterLanguageCode": "da",
+    "Noun": "lokalt netværk"
+  },
+  {
+    "TwoLetterLanguageCode": "da",
+    "Noun": "løsning"
+  },
+  {
+    "TwoLetterLanguageCode": "da",
+    "Noun": "matrix"
+  },
+  {
+    "TwoLetterLanguageCode": "da",
+    "Noun": "metodologi"
+  },
+  {
+    "TwoLetterLanguageCode": "da",
+    "Noun": "middleware"
+  },
+  {
+    "TwoLetterLanguageCode": "da",
+    "Noun": "migration"
+  },
+  {
+    "TwoLetterLanguageCode": "da",
+    "Noun": "model"
+  },
+  {
+    "TwoLetterLanguageCode": "da",
+    "Noun": "moderator"
+  },
+  {
+    "TwoLetterLanguageCode": "da",
+    "Noun": "moratorium"
+  },
+  {
+    "TwoLetterLanguageCode": "da",
+    "Noun": "neural-netværk"
+  },
+  {
+    "TwoLetterLanguageCode": "da",
+    "Noun": "orkestrering"
+  },
+  {
+    "TwoLetterLanguageCode": "da",
+    "Noun": "overvågning"
+  },
+  {
+    "TwoLetterLanguageCode": "da",
+    "Noun": "paradigme"
+  },
+  {
+    "TwoLetterLanguageCode": "da",
+    "Noun": "parallelitet"
+  },
+  {
+    "TwoLetterLanguageCode": "da",
+    "Noun": "politik"
+  },
+  {
+    "TwoLetterLanguageCode": "da",
+    "Noun": "portal"
+  },
+  {
+    "TwoLetterLanguageCode": "da",
+    "Noun": "prisstruktur"
+  },
+  {
+    "TwoLetterLanguageCode": "da",
+    "Noun": "procesforbedring"
+  },
+  {
+    "TwoLetterLanguageCode": "da",
+    "Noun": "produkt"
+  },
+  {
+    "TwoLetterLanguageCode": "da",
+    "Noun": "produktivitet"
+  },
+  {
+    "TwoLetterLanguageCode": "da",
+    "Noun": "prognose"
+  },
+  {
+    "TwoLetterLanguageCode": "da",
+    "Noun": "projekt"
+  },
+  {
+    "TwoLetterLanguageCode": "da",
+    "Noun": "projektion"
+  },
+  {
+    "TwoLetterLanguageCode": "da",
+    "Noun": "protokol"
+  },
+  {
+    "TwoLetterLanguageCode": "da",
+    "Noun": "samarbejde"
+  },
+  {
+    "TwoLetterLanguageCode": "da",
+    "Noun": "service-desk"
+  },
+  {
+    "TwoLetterLanguageCode": "da",
+    "Noun": "sikker linje"
+  },
+  {
+    "TwoLetterLanguageCode": "da",
+    "Noun": "software"
+  },
+  {
+    "TwoLetterLanguageCode": "da",
+    "Noun": "standardisering"
+  },
+  {
+    "TwoLetterLanguageCode": "da",
+    "Noun": "strategi"
+  },
+  {
+    "TwoLetterLanguageCode": "da",
+    "Noun": "struktur"
+  },
+  {
+    "TwoLetterLanguageCode": "da",
+    "Noun": "succes"
+  },
+  {
+    "TwoLetterLanguageCode": "da",
+    "Noun": "superstruktur"
+  },
+  {
+    "TwoLetterLanguageCode": "da",
+    "Noun": "support"
+  },
+  {
+    "TwoLetterLanguageCode": "da",
+    "Noun": "synergi"
+  },
+  {
+    "TwoLetterLanguageCode": "da",
+    "Noun": "systemmotor"
+  },
+  {
+    "TwoLetterLanguageCode": "da",
+    "Noun": "task-force"
+  },
+  {
+    "TwoLetterLanguageCode": "da",
+    "Noun": "tidsramme"
+  },
+  {
+    "TwoLetterLanguageCode": "da",
+    "Noun": "tilgang"
+  },
+  {
+    "TwoLetterLanguageCode": "da",
+    "Noun": "udfordring"
+  },
+  {
+    "TwoLetterLanguageCode": "da",
+    "Noun": "udnyttelse"
+  },
+  {
+    "TwoLetterLanguageCode": "da",
+    "Noun": "vidensbase"
+  },
+  {
+    "TwoLetterLanguageCode": "da",
+    "Noun": "vidensbruger"
+  },
+  {
+    "TwoLetterLanguageCode": "da",
+    "Noun": "værktøjssæt"
+  },
+  {
+    "TwoLetterLanguageCode": "da",
+    "Noun": "websted"
+  },
+  {
+    "TwoLetterLanguageCode": "da",
+    "Noun": "åben arkitektur"
+  },
+  {
+    "TwoLetterLanguageCode": "da",
+    "Noun": "åbent system"
+  },
+  {
+    "TwoLetterLanguageCode": "dv",
+    "Noun": "ވަޑައިންގެ"
+  },
+  {
+    "TwoLetterLanguageCode": "dv",
+    "Noun": "ހަރުގެ"
+  },
+  {
+    "TwoLetterLanguageCode": "dv",
+    "Noun": "ގުދަން"
+  },
+  {
+    "TwoLetterLanguageCode": "dv",
+    "Noun": "ގަރާޖު"
+  },
+  {
+    "TwoLetterLanguageCode": "dv",
+    "Noun": "ކޮންޓެއިނަރު"
+  },
+  {
+    "TwoLetterLanguageCode": "dv",
+    "Noun": "ބޮއްކުރާ"
+  },
+  {
+    "TwoLetterLanguageCode": "dv",
+    "Noun": "ދޯނި"
+  },
+  {
+    "TwoLetterLanguageCode": "dv",
+    "Noun": "ބައްރެލި"
+  },
+  {
+    "TwoLetterLanguageCode": "dv",
+    "Noun": "މަނަވަރު"
+  },
+  {
+    "TwoLetterLanguageCode": "dv",
+    "Noun": "މަތިންދާބޯޓު"
+  },
+  {
+    "TwoLetterLanguageCode": "dv",
+    "Noun": "ހެލިކޮޕްޓަރު"
+  },
+  {
+    "TwoLetterLanguageCode": "dv",
+    "Noun": "ރޮކެޓު"
+  },
+  {
+    "TwoLetterLanguageCode": "dv",
+    "Noun": "ކަރުދާސް"
+  },
+  {
+    "TwoLetterLanguageCode": "dv",
+    "Noun": "ފުޅި"
+  },
+  {
+    "TwoLetterLanguageCode": "dv",
+    "Noun": "ބިއްލޫރި"
+  },
+  {
+    "TwoLetterLanguageCode": "dv",
+    "Noun": "ހޮޅުއަށި"
+  },
+  {
+    "TwoLetterLanguageCode": "dv",
+    "Noun": "ޕުލާސްޓިކު"
+  },
+  {
+    "TwoLetterLanguageCode": "dv",
+    "Noun": "ފޮތި"
+  },
+  {
+    "TwoLetterLanguageCode": "dv",
+    "Noun": "ދަގަނޑު"
+  },
+  {
+    "TwoLetterLanguageCode": "dv",
+    "Noun": "ލަކުޑި"
+  },
+  {
+    "TwoLetterLanguageCode": "dv",
+    "Noun": "ގޮނޑު"
+  },
+  {
+    "TwoLetterLanguageCode": "dv",
+    "Noun": "ގޮނޑުދޮށް"
+  },
+  {
+    "TwoLetterLanguageCode": "dv",
+    "Noun": "ރުއް"
+  },
+  {
+    "TwoLetterLanguageCode": "dv",
+    "Noun": "ގަސް"
+  },
+  {
+    "TwoLetterLanguageCode": "dv",
+    "Noun": "މޫ"
+  },
+  {
+    "TwoLetterLanguageCode": "dv",
+    "Noun": "ބުޅާ"
+  },
+  {
+    "TwoLetterLanguageCode": "dv",
+    "Noun": "ކަނބިލި"
+  },
+  {
+    "TwoLetterLanguageCode": "dv",
+    "Noun": "މާކަނާ"
+  },
+  {
+    "TwoLetterLanguageCode": "dv",
+    "Noun": "އިރުވާހުދު"
+  },
+  {
+    "TwoLetterLanguageCode": "dv",
+    "Noun": "ރަތަފަ"
+  },
+  {
+    "TwoLetterLanguageCode": "dv",
+    "Noun": "މާރަނގަ"
+  },
+  {
+    "TwoLetterLanguageCode": "dv",
+    "Noun": "ހަރުފަ"
+  },
+  {
+    "TwoLetterLanguageCode": "dv",
+    "Noun": "މަކުނު"
+  },
+  {
+    "TwoLetterLanguageCode": "dv",
+    "Noun": "ކާޅު"
+  },
+  {
+    "TwoLetterLanguageCode": "dv",
+    "Noun": "ކުކުޅު"
+  },
+  {
+    "TwoLetterLanguageCode": "dv",
+    "Noun": "މަސް"
+  },
+  {
+    "TwoLetterLanguageCode": "dv",
+    "Noun": "ގެރި"
+  },
+  {
+    "TwoLetterLanguageCode": "dv",
+    "Noun": "ބަކަރި"
+  },
+  {
+    "TwoLetterLanguageCode": "dv",
+    "Noun": "ފަރުމަސް"
+  },
+  {
+    "TwoLetterLanguageCode": "dv",
+    "Noun": "ކަނޑުމަސް"
+  },
+  {
+    "TwoLetterLanguageCode": "dv",
+    "Noun": "ބޮޑުމަސް"
+  },
+  {
+    "TwoLetterLanguageCode": "dv",
+    "Noun": "ކުޑަމަސް"
+  },
+  {
+    "TwoLetterLanguageCode": "dv",
+    "Noun": "ގޯތި"
+  },
+  {
+    "TwoLetterLanguageCode": "dv",
+    "Noun": "މޫދު"
+  },
+  {
+    "TwoLetterLanguageCode": "dv",
+    "Noun": "ކަނޑު"
+  },
+  {
+    "TwoLetterLanguageCode": "dv",
+    "Noun": "ވިލު"
+  },
+  {
+    "TwoLetterLanguageCode": "dv",
+    "Noun": "ފަޅު"
+  },
+  {
+    "TwoLetterLanguageCode": "dv",
+    "Noun": "ގިރި"
+  },
+  {
+    "TwoLetterLanguageCode": "dv",
+    "Noun": "ފެން"
+  },
+  {
+    "TwoLetterLanguageCode": "dv",
+    "Noun": "ގަނޑުފެން"
+  },
+  {
+    "TwoLetterLanguageCode": "dv",
+    "Noun": "މުރަނގަ"
+  },
+  {
+    "TwoLetterLanguageCode": "dv",
+    "Noun": "ހިރުނދު"
+  },
+  {
+    "TwoLetterLanguageCode": "dv",
+    "Noun": "ދިއްގާ"
+  },
+  {
+    "TwoLetterLanguageCode": "dv",
+    "Noun": "ނިކަ"
+  },
+  {
+    "TwoLetterLanguageCode": "dv",
+    "Noun": "މަގޫ"
+  },
+  {
+    "TwoLetterLanguageCode": "dv",
+    "Noun": "އަތަ"
+  },
+  {
+    "TwoLetterLanguageCode": "dv",
+    "Noun": "މޭވާ"
+  },
+  {
+    "TwoLetterLanguageCode": "dv",
+    "Noun": "ތަރުކާރި"
+  },
+  {
+    "TwoLetterLanguageCode": "el",
+    "Noun": "ικανότητα"
+  },
+  {
+    "TwoLetterLanguageCode": "el",
+    "Noun": "πρόσβαση"
+  },
+  {
+    "TwoLetterLanguageCode": "el",
+    "Noun": "αλγόριθμος"
+  },
+  {
+    "TwoLetterLanguageCode": "el",
+    "Noun": "αναλυτής"
+  },
+  {
+    "TwoLetterLanguageCode": "el",
+    "Noun": "εφαρμογή"
+  },
+  {
+    "TwoLetterLanguageCode": "el",
+    "Noun": "προσέγγιση"
+  },
+  {
+    "TwoLetterLanguageCode": "el",
+    "Noun": "αρχιτεκτονική"
+  },
+  {
+    "TwoLetterLanguageCode": "el",
+    "Noun": "αρχείο"
+  },
+  {
+    "TwoLetterLanguageCode": "el",
+    "Noun": "τεχνητή νοημοσύνη"
+  },
+  {
+    "TwoLetterLanguageCode": "el",
+    "Noun": "χωρητικότητα"
+  },
+  {
+    "TwoLetterLanguageCode": "el",
+    "Noun": "πρόκληση"
+  },
+  {
+    "TwoLetterLanguageCode": "el",
+    "Noun": "συνεργασία"
+  },
+  {
+    "TwoLetterLanguageCode": "el",
+    "Noun": "περιπλοκότητα"
+  },
+  {
+    "TwoLetterLanguageCode": "el",
+    "Noun": "πυρήνας"
+  },
+  {
+    "TwoLetterLanguageCode": "el",
+    "Noun": "βάση δεδομένων"
+  },
+  {
+    "TwoLetterLanguageCode": "el",
+    "Noun": "ορισμός"
+  },
+  {
+    "TwoLetterLanguageCode": "el",
+    "Noun": "συνάρτηση"
+  },
+  {
+    "TwoLetterLanguageCode": "el",
+    "Noun": "Διεπαφή Χρήστη"
+  },
+  {
+    "TwoLetterLanguageCode": "el",
+    "Noun": "υλικό"
+  },
+  {
+    "TwoLetterLanguageCode": "el",
+    "Noun": "υλοποίηση"
+  },
+  {
+    "TwoLetterLanguageCode": "el",
+    "Noun": "εγκατάσταση"
+  },
+  {
+    "TwoLetterLanguageCode": "el",
+    "Noun": "εγχειρίδιο χρήστη"
+  },
+  {
+    "TwoLetterLanguageCode": "el",
+    "Noun": "διεπαφή"
+  },
+  {
+    "TwoLetterLanguageCode": "el",
+    "Noun": "υπηρεσίες internet"
+  },
+  {
+    "TwoLetterLanguageCode": "el",
+    "Noun": "γνωσιακή βάση"
+  },
+  {
+    "TwoLetterLanguageCode": "el",
+    "Noun": "τοπικό δίκτυο"
+  },
+  {
+    "TwoLetterLanguageCode": "el",
+    "Noun": "μετρικές"
+  },
+  {
+    "TwoLetterLanguageCode": "el",
+    "Noun": "μεθοδολογία"
+  },
+  {
+    "TwoLetterLanguageCode": "el",
+    "Noun": "μοντέλο"
+  },
+  {
+    "TwoLetterLanguageCode": "el",
+    "Noun": "ανοιχτή αρχιτεκτονική"
+  },
+  {
+    "TwoLetterLanguageCode": "el",
+    "Noun": "ενορχήστρωση"
+  },
+  {
+    "TwoLetterLanguageCode": "el",
+    "Noun": "προϊόν"
+  },
+  {
+    "TwoLetterLanguageCode": "el",
+    "Noun": "παραγωγικότητα"
+  },
+  {
+    "TwoLetterLanguageCode": "el",
+    "Noun": "πρωτόκολο"
+  },
+  {
+    "TwoLetterLanguageCode": "el",
+    "Noun": "ασφαλής γραμμή"
+  },
+  {
+    "TwoLetterLanguageCode": "el",
+    "Noun": "λογισμικό"
+  },
+  {
+    "TwoLetterLanguageCode": "el",
+    "Noun": "στρατηγική"
+  },
+  {
+    "TwoLetterLanguageCode": "el",
+    "Noun": "επιτυχία"
+  },
+  {
+    "TwoLetterLanguageCode": "el",
+    "Noun": "υποστήρυξη"
+  },
+  {
+    "TwoLetterLanguageCode": "en",
+    "Noun": "ability"
+  },
+  {
+    "TwoLetterLanguageCode": "en",
+    "Noun": "access"
+  },
+  {
+    "TwoLetterLanguageCode": "en",
+    "Noun": "adapter"
+  },
+  {
+    "TwoLetterLanguageCode": "en",
+    "Noun": "algorithm"
+  },
+  {
+    "TwoLetterLanguageCode": "en",
+    "Noun": "alliance"
+  },
+  {
+    "TwoLetterLanguageCode": "en",
+    "Noun": "analyzer"
+  },
+  {
+    "TwoLetterLanguageCode": "en",
+    "Noun": "application"
+  },
+  {
+    "TwoLetterLanguageCode": "en",
+    "Noun": "approach"
+  },
+  {
+    "TwoLetterLanguageCode": "en",
+    "Noun": "architecture"
+  },
+  {
+    "TwoLetterLanguageCode": "en",
+    "Noun": "archive"
+  },
+  {
+    "TwoLetterLanguageCode": "en",
+    "Noun": "artificial intelligence"
+  },
+  {
+    "TwoLetterLanguageCode": "en",
+    "Noun": "array"
+  },
+  {
+    "TwoLetterLanguageCode": "en",
+    "Noun": "attitude"
+  },
+  {
+    "TwoLetterLanguageCode": "en",
+    "Noun": "benchmark"
+  },
+  {
+    "TwoLetterLanguageCode": "en",
+    "Noun": "budgetary management"
+  },
+  {
+    "TwoLetterLanguageCode": "en",
+    "Noun": "capability"
+  },
+  {
+    "TwoLetterLanguageCode": "en",
+    "Noun": "capacity"
+  },
+  {
+    "TwoLetterLanguageCode": "en",
+    "Noun": "challenge"
+  },
+  {
+    "TwoLetterLanguageCode": "en",
+    "Noun": "circuit"
+  },
+  {
+    "TwoLetterLanguageCode": "en",
+    "Noun": "collaboration"
+  },
+  {
+    "TwoLetterLanguageCode": "en",
+    "Noun": "complexity"
+  },
+  {
+    "TwoLetterLanguageCode": "en",
+    "Noun": "concept"
+  },
+  {
+    "TwoLetterLanguageCode": "en",
+    "Noun": "conglomeration"
+  },
+  {
+    "TwoLetterLanguageCode": "en",
+    "Noun": "contingency"
+  },
+  {
+    "TwoLetterLanguageCode": "en",
+    "Noun": "core"
+  },
+  {
+    "TwoLetterLanguageCode": "en",
+    "Noun": "customer loyalty"
+  },
+  {
+    "TwoLetterLanguageCode": "en",
+    "Noun": "database"
+  },
+  {
+    "TwoLetterLanguageCode": "en",
+    "Noun": "data-warehouse"
+  },
+  {
+    "TwoLetterLanguageCode": "en",
+    "Noun": "definition"
+  },
+  {
+    "TwoLetterLanguageCode": "en",
+    "Noun": "emulation"
+  },
+  {
+    "TwoLetterLanguageCode": "en",
+    "Noun": "encoding"
+  },
+  {
+    "TwoLetterLanguageCode": "en",
+    "Noun": "encryption"
+  },
+  {
+    "TwoLetterLanguageCode": "en",
+    "Noun": "extranet"
+  },
+  {
+    "TwoLetterLanguageCode": "en",
+    "Noun": "firmware"
+  },
+  {
+    "TwoLetterLanguageCode": "en",
+    "Noun": "flexibility"
+  },
+  {
+    "TwoLetterLanguageCode": "en",
+    "Noun": "focus group"
+  },
+  {
+    "TwoLetterLanguageCode": "en",
+    "Noun": "forecast"
+  },
+  {
+    "TwoLetterLanguageCode": "en",
+    "Noun": "frame"
+  },
+  {
+    "TwoLetterLanguageCode": "en",
+    "Noun": "framework"
+  },
+  {
+    "TwoLetterLanguageCode": "en",
+    "Noun": "function"
+  },
+  {
+    "TwoLetterLanguageCode": "en",
+    "Noun": "functionalities"
+  },
+  {
+    "TwoLetterLanguageCode": "en",
+    "Noun": "Graphic Interface"
+  },
+  {
+    "TwoLetterLanguageCode": "en",
+    "Noun": "groupware"
+  },
+  {
+    "TwoLetterLanguageCode": "en",
+    "Noun": "Graphical User Interface"
+  },
+  {
+    "TwoLetterLanguageCode": "en",
+    "Noun": "hardware"
+  },
+  {
+    "TwoLetterLanguageCode": "en",
+    "Noun": "help-desk"
+  },
+  {
+    "TwoLetterLanguageCode": "en",
+    "Noun": "hierarchy"
+  },
+  {
+    "TwoLetterLanguageCode": "en",
+    "Noun": "hub"
+  },
+  {
+    "TwoLetterLanguageCode": "en",
+    "Noun": "implementation"
+  },
+  {
+    "TwoLetterLanguageCode": "en",
+    "Noun": "info-mediaries"
+  },
+  {
+    "TwoLetterLanguageCode": "en",
+    "Noun": "infrastructure"
+  },
+  {
+    "TwoLetterLanguageCode": "en",
+    "Noun": "initiative"
+  },
+  {
+    "TwoLetterLanguageCode": "en",
+    "Noun": "installation"
+  },
+  {
+    "TwoLetterLanguageCode": "en",
+    "Noun": "instruction set"
+  },
+  {
+    "TwoLetterLanguageCode": "en",
+    "Noun": "interface"
+  },
+  {
+    "TwoLetterLanguageCode": "en",
+    "Noun": "internet solution"
+  },
+  {
+    "TwoLetterLanguageCode": "en",
+    "Noun": "intranet"
+  },
+  {
+    "TwoLetterLanguageCode": "en",
+    "Noun": "knowledge user"
+  },
+  {
+    "TwoLetterLanguageCode": "en",
+    "Noun": "knowledge base"
+  },
+  {
+    "TwoLetterLanguageCode": "en",
+    "Noun": "local area network"
+  },
+  {
+    "TwoLetterLanguageCode": "en",
+    "Noun": "leverage"
+  },
+  {
+    "TwoLetterLanguageCode": "en",
+    "Noun": "matrices"
+  },
+  {
+    "TwoLetterLanguageCode": "en",
+    "Noun": "matrix"
+  },
+  {
+    "TwoLetterLanguageCode": "en",
+    "Noun": "methodology"
+  },
+  {
+    "TwoLetterLanguageCode": "en",
+    "Noun": "middleware"
+  },
+  {
+    "TwoLetterLanguageCode": "en",
+    "Noun": "migration"
+  },
+  {
+    "TwoLetterLanguageCode": "en",
+    "Noun": "model"
+  },
+  {
+    "TwoLetterLanguageCode": "en",
+    "Noun": "moderator"
+  },
+  {
+    "TwoLetterLanguageCode": "en",
+    "Noun": "monitoring"
+  },
+  {
+    "TwoLetterLanguageCode": "en",
+    "Noun": "moratorium"
+  },
+  {
+    "TwoLetterLanguageCode": "en",
+    "Noun": "neural-net"
+  },
+  {
+    "TwoLetterLanguageCode": "en",
+    "Noun": "open architecture"
+  },
+  {
+    "TwoLetterLanguageCode": "en",
+    "Noun": "open system"
+  },
+  {
+    "TwoLetterLanguageCode": "en",
+    "Noun": "orchestration"
+  },
+  {
+    "TwoLetterLanguageCode": "en",
+    "Noun": "paradigm"
+  },
+  {
+    "TwoLetterLanguageCode": "en",
+    "Noun": "parallelism"
+  },
+  {
+    "TwoLetterLanguageCode": "en",
+    "Noun": "policy"
+  },
+  {
+    "TwoLetterLanguageCode": "en",
+    "Noun": "portal"
+  },
+  {
+    "TwoLetterLanguageCode": "en",
+    "Noun": "pricing structure"
+  },
+  {
+    "TwoLetterLanguageCode": "en",
+    "Noun": "process improvement"
+  },
+  {
+    "TwoLetterLanguageCode": "en",
+    "Noun": "product"
+  },
+  {
+    "TwoLetterLanguageCode": "en",
+    "Noun": "productivity"
+  },
+  {
+    "TwoLetterLanguageCode": "en",
+    "Noun": "project"
+  },
+  {
+    "TwoLetterLanguageCode": "en",
+    "Noun": "projection"
+  },
+  {
+    "TwoLetterLanguageCode": "en",
+    "Noun": "protocol"
+  },
+  {
+    "TwoLetterLanguageCode": "en",
+    "Noun": "secured line"
+  },
+  {
+    "TwoLetterLanguageCode": "en",
+    "Noun": "service-desk"
+  },
+  {
+    "TwoLetterLanguageCode": "en",
+    "Noun": "software"
+  },
+  {
+    "TwoLetterLanguageCode": "en",
+    "Noun": "solution"
+  },
+  {
+    "TwoLetterLanguageCode": "en",
+    "Noun": "standardization"
+  },
+  {
+    "TwoLetterLanguageCode": "en",
+    "Noun": "strategy"
+  },
+  {
+    "TwoLetterLanguageCode": "en",
+    "Noun": "structure"
+  },
+  {
+    "TwoLetterLanguageCode": "en",
+    "Noun": "success"
+  },
+  {
+    "TwoLetterLanguageCode": "en",
+    "Noun": "superstructure"
+  },
+  {
+    "TwoLetterLanguageCode": "en",
+    "Noun": "support"
+  },
+  {
+    "TwoLetterLanguageCode": "en",
+    "Noun": "synergy"
+  },
+  {
+    "TwoLetterLanguageCode": "en",
+    "Noun": "system engine"
+  },
+  {
+    "TwoLetterLanguageCode": "en",
+    "Noun": "task-force"
+  },
+  {
+    "TwoLetterLanguageCode": "en",
+    "Noun": "throughput"
+  },
+  {
+    "TwoLetterLanguageCode": "en",
+    "Noun": "time-frame"
+  },
+  {
+    "TwoLetterLanguageCode": "en",
+    "Noun": "toolset"
+  },
+  {
+    "TwoLetterLanguageCode": "en",
+    "Noun": "utilisation"
+  },
+  {
+    "TwoLetterLanguageCode": "en",
+    "Noun": "website"
+  },
+  {
+    "TwoLetterLanguageCode": "en",
+    "Noun": "workforce"
+  },
+  {
+    "TwoLetterLanguageCode": "es",
+    "Noun": "habilidad"
+  },
+  {
+    "TwoLetterLanguageCode": "es",
+    "Noun": "acceso"
+  },
+  {
+    "TwoLetterLanguageCode": "es",
+    "Noun": "adaptador"
+  },
+  {
+    "TwoLetterLanguageCode": "es",
+    "Noun": "algoritmo"
+  },
+  {
+    "TwoLetterLanguageCode": "es",
+    "Noun": "alianza"
+  },
+  {
+    "TwoLetterLanguageCode": "es",
+    "Noun": "analista"
+  },
+  {
+    "TwoLetterLanguageCode": "es",
+    "Noun": "aplicación"
+  },
+  {
+    "TwoLetterLanguageCode": "es",
+    "Noun": "enfoque"
+  },
+  {
+    "TwoLetterLanguageCode": "es",
+    "Noun": "arquitectura"
+  },
+  {
+    "TwoLetterLanguageCode": "es",
+    "Noun": "archivo"
+  },
+  {
+    "TwoLetterLanguageCode": "es",
+    "Noun": "inteligencia artificial"
+  },
+  {
+    "TwoLetterLanguageCode": "es",
+    "Noun": "array"
+  },
+  {
+    "TwoLetterLanguageCode": "es",
+    "Noun": "actitud"
+  },
+  {
+    "TwoLetterLanguageCode": "es",
+    "Noun": "medición"
+  },
+  {
+    "TwoLetterLanguageCode": "es",
+    "Noun": "gestión presupuestaria"
+  },
+  {
+    "TwoLetterLanguageCode": "es",
+    "Noun": "capacidad"
+  },
+  {
+    "TwoLetterLanguageCode": "es",
+    "Noun": "desafío"
+  },
+  {
+    "TwoLetterLanguageCode": "es",
+    "Noun": "circuito"
+  },
+  {
+    "TwoLetterLanguageCode": "es",
+    "Noun": "colaboración"
+  },
+  {
+    "TwoLetterLanguageCode": "es",
+    "Noun": "complejidad"
+  },
+  {
+    "TwoLetterLanguageCode": "es",
+    "Noun": "concepto"
+  },
+  {
+    "TwoLetterLanguageCode": "es",
+    "Noun": "conglomeración"
+  },
+  {
+    "TwoLetterLanguageCode": "es",
+    "Noun": "contingencia"
+  },
+  {
+    "TwoLetterLanguageCode": "es",
+    "Noun": "núcleo"
+  },
+  {
+    "TwoLetterLanguageCode": "es",
+    "Noun": "fidelidad"
+  },
+  {
+    "TwoLetterLanguageCode": "es",
+    "Noun": "base de datos"
+  },
+  {
+    "TwoLetterLanguageCode": "es",
+    "Noun": "data-warehouse"
+  },
+  {
+    "TwoLetterLanguageCode": "es",
+    "Noun": "definición"
+  },
+  {
+    "TwoLetterLanguageCode": "es",
+    "Noun": "emulación"
+  },
+  {
+    "TwoLetterLanguageCode": "es",
+    "Noun": "codificar"
+  },
+  {
+    "TwoLetterLanguageCode": "es",
+    "Noun": "encriptar"
+  },
+  {
+    "TwoLetterLanguageCode": "es",
+    "Noun": "extranet"
+  },
+  {
+    "TwoLetterLanguageCode": "es",
+    "Noun": "firmware"
+  },
+  {
+    "TwoLetterLanguageCode": "es",
+    "Noun": "flexibilidad"
+  },
+  {
+    "TwoLetterLanguageCode": "es",
+    "Noun": "focus group"
+  },
+  {
+    "TwoLetterLanguageCode": "es",
+    "Noun": "previsión"
+  },
+  {
+    "TwoLetterLanguageCode": "es",
+    "Noun": "base de trabajo"
+  },
+  {
+    "TwoLetterLanguageCode": "es",
+    "Noun": "función"
+  },
+  {
+    "TwoLetterLanguageCode": "es",
+    "Noun": "funcionalidad"
+  },
+  {
+    "TwoLetterLanguageCode": "es",
+    "Noun": "Interfaz Gráfica"
+  },
+  {
+    "TwoLetterLanguageCode": "es",
+    "Noun": "groupware"
+  },
+  {
+    "TwoLetterLanguageCode": "es",
+    "Noun": "Interfaz gráfico de usuario"
+  },
+  {
+    "TwoLetterLanguageCode": "es",
+    "Noun": "hardware"
+  },
+  {
+    "TwoLetterLanguageCode": "es",
+    "Noun": "Soporte"
+  },
+  {
+    "TwoLetterLanguageCode": "es",
+    "Noun": "jerarquía"
+  },
+  {
+    "TwoLetterLanguageCode": "es",
+    "Noun": "conjunto"
+  },
+  {
+    "TwoLetterLanguageCode": "es",
+    "Noun": "implementación"
+  },
+  {
+    "TwoLetterLanguageCode": "es",
+    "Noun": "infraestructura"
+  },
+  {
+    "TwoLetterLanguageCode": "es",
+    "Noun": "iniciativa"
+  },
+  {
+    "TwoLetterLanguageCode": "es",
+    "Noun": "instalación"
+  },
+  {
+    "TwoLetterLanguageCode": "es",
+    "Noun": "conjunto de instrucciones"
+  },
+  {
+    "TwoLetterLanguageCode": "es",
+    "Noun": "interfaz"
+  },
+  {
+    "TwoLetterLanguageCode": "es",
+    "Noun": "intranet"
+  },
+  {
+    "TwoLetterLanguageCode": "es",
+    "Noun": "base del conocimiento"
+  },
+  {
+    "TwoLetterLanguageCode": "es",
+    "Noun": "red de area local"
+  },
+  {
+    "TwoLetterLanguageCode": "es",
+    "Noun": "aprovechar"
+  },
+  {
+    "TwoLetterLanguageCode": "es",
+    "Noun": "matrices"
+  },
+  {
+    "TwoLetterLanguageCode": "es",
+    "Noun": "metodologías"
+  },
+  {
+    "TwoLetterLanguageCode": "es",
+    "Noun": "middleware"
+  },
+  {
+    "TwoLetterLanguageCode": "es",
+    "Noun": "migración"
+  },
+  {
+    "TwoLetterLanguageCode": "es",
+    "Noun": "modelo"
+  },
+  {
+    "TwoLetterLanguageCode": "es",
+    "Noun": "moderador"
+  },
+  {
+    "TwoLetterLanguageCode": "es",
+    "Noun": "monitorizar"
+  },
+  {
+    "TwoLetterLanguageCode": "es",
+    "Noun": "arquitectura abierta"
+  },
+  {
+    "TwoLetterLanguageCode": "es",
+    "Noun": "sistema abierto"
+  },
+  {
+    "TwoLetterLanguageCode": "es",
+    "Noun": "orquestar"
+  },
+  {
+    "TwoLetterLanguageCode": "es",
+    "Noun": "paradigma"
+  },
+  {
+    "TwoLetterLanguageCode": "es",
+    "Noun": "paralelismo"
+  },
+  {
+    "TwoLetterLanguageCode": "es",
+    "Noun": "política"
+  },
+  {
+    "TwoLetterLanguageCode": "es",
+    "Noun": "portal"
+  },
+  {
+    "TwoLetterLanguageCode": "es",
+    "Noun": "estructura de precios"
+  },
+  {
+    "TwoLetterLanguageCode": "es",
+    "Noun": "proceso de mejora"
+  },
+  {
+    "TwoLetterLanguageCode": "es",
+    "Noun": "producto"
+  },
+  {
+    "TwoLetterLanguageCode": "es",
+    "Noun": "productividad"
+  },
+  {
+    "TwoLetterLanguageCode": "es",
+    "Noun": "proyecto"
+  },
+  {
+    "TwoLetterLanguageCode": "es",
+    "Noun": "proyección"
+  },
+  {
+    "TwoLetterLanguageCode": "es",
+    "Noun": "protocolo"
+  },
+  {
+    "TwoLetterLanguageCode": "es",
+    "Noun": "línea segura"
+  },
+  {
+    "TwoLetterLanguageCode": "es",
+    "Noun": "software"
+  },
+  {
+    "TwoLetterLanguageCode": "es",
+    "Noun": "solución"
+  },
+  {
+    "TwoLetterLanguageCode": "es",
+    "Noun": "estandardización"
+  },
+  {
+    "TwoLetterLanguageCode": "es",
+    "Noun": "estrategia"
+  },
+  {
+    "TwoLetterLanguageCode": "es",
+    "Noun": "estructura"
+  },
+  {
+    "TwoLetterLanguageCode": "es",
+    "Noun": "éxito"
+  },
+  {
+    "TwoLetterLanguageCode": "es",
+    "Noun": "superestructura"
+  },
+  {
+    "TwoLetterLanguageCode": "es",
+    "Noun": "sinergia"
+  },
+  {
+    "TwoLetterLanguageCode": "es",
+    "Noun": "mediante"
+  },
+  {
+    "TwoLetterLanguageCode": "es",
+    "Noun": "marco de tiempo"
+  },
+  {
+    "TwoLetterLanguageCode": "es",
+    "Noun": "caja de herramientas"
+  },
+  {
+    "TwoLetterLanguageCode": "es",
+    "Noun": "utilización"
+  },
+  {
+    "TwoLetterLanguageCode": "es",
+    "Noun": "website"
+  },
+  {
+    "TwoLetterLanguageCode": "es",
+    "Noun": "fuerza de trabajo"
+  },
+  {
+    "TwoLetterLanguageCode": "es",
+    "Noun": "habilidad"
+  },
+  {
+    "TwoLetterLanguageCode": "fa",
+    "Noun": "توانایی"
+  },
+  {
+    "TwoLetterLanguageCode": "fa",
+    "Noun": "دسترسی"
+  },
+  {
+    "TwoLetterLanguageCode": "fa",
+    "Noun": "آداپتور"
+  },
+  {
+    "TwoLetterLanguageCode": "fa",
+    "Noun": "الگوریتم"
+  },
+  {
+    "TwoLetterLanguageCode": "fa",
+    "Noun": "اتحاد"
+  },
+  {
+    "TwoLetterLanguageCode": "fa",
+    "Noun": "تحلیلگر"
+  },
+  {
+    "TwoLetterLanguageCode": "fa",
+    "Noun": "کاربرد"
+  },
+  {
+    "TwoLetterLanguageCode": "fa",
+    "Noun": "رویکرد"
+  },
+  {
+    "TwoLetterLanguageCode": "fa",
+    "Noun": "معماری"
+  },
+  {
+    "TwoLetterLanguageCode": "fa",
+    "Noun": "بایگانی"
+  },
+  {
+    "TwoLetterLanguageCode": "fa",
+    "Noun": "هوش مصنوعی"
+  },
+  {
+    "TwoLetterLanguageCode": "fa",
+    "Noun": "آرایه"
+  },
+  {
+    "TwoLetterLanguageCode": "fa",
+    "Noun": "نگرش"
+  },
+  {
+    "TwoLetterLanguageCode": "fa",
+    "Noun": "معیار"
+  },
+  {
+    "TwoLetterLanguageCode": "fa",
+    "Noun": "مدیریت بودجه"
+  },
+  {
+    "TwoLetterLanguageCode": "fa",
+    "Noun": "قابلیت"
+  },
+  {
+    "TwoLetterLanguageCode": "fa",
+    "Noun": "ظرفیت"
+  },
+  {
+    "TwoLetterLanguageCode": "fa",
+    "Noun": "چالش"
+  },
+  {
+    "TwoLetterLanguageCode": "fa",
+    "Noun": "جریان"
+  },
+  {
+    "TwoLetterLanguageCode": "fa",
+    "Noun": "همکاری"
+  },
+  {
+    "TwoLetterLanguageCode": "fa",
+    "Noun": "پیچیدگی"
+  },
+  {
+    "TwoLetterLanguageCode": "fa",
+    "Noun": "مفهوم"
+  },
+  {
+    "TwoLetterLanguageCode": "fa",
+    "Noun": "اجتماع"
+  },
+  {
+    "TwoLetterLanguageCode": "fa",
+    "Noun": "احتمالی"
+  },
+  {
+    "TwoLetterLanguageCode": "fa",
+    "Noun": "هسته"
+  },
+  {
+    "TwoLetterLanguageCode": "fa",
+    "Noun": "بانک اطلاعاتی"
+  },
+  {
+    "TwoLetterLanguageCode": "fa",
+    "Noun": "پایگاه داده تحلیلی"
+  },
+  {
+    "TwoLetterLanguageCode": "fa",
+    "Noun": "تعریف"
+  },
+  {
+    "TwoLetterLanguageCode": "fa",
+    "Noun": "شبیه سازی"
+  },
+  {
+    "TwoLetterLanguageCode": "fa",
+    "Noun": "رمزگذاری"
+  },
+  {
+    "TwoLetterLanguageCode": "fa",
+    "Noun": "اکسترانت"
+  },
+  {
+    "TwoLetterLanguageCode": "fa",
+    "Noun": "سیستم عامل"
+  },
+  {
+    "TwoLetterLanguageCode": "fa",
+    "Noun": "انعطاف پذیری"
+  },
+  {
+    "TwoLetterLanguageCode": "fa",
+    "Noun": "نیروی کار"
+  },
+  {
+    "TwoLetterLanguageCode": "it",
+    "Noun": "Abilità"
+  },
+  {
+    "TwoLetterLanguageCode": "it",
+    "Noun": "Access"
+  },
+  {
+    "TwoLetterLanguageCode": "it",
+    "Noun": "Adattatore"
+  },
+  {
+    "TwoLetterLanguageCode": "it",
+    "Noun": "Algoritmo"
+  },
+  {
+    "TwoLetterLanguageCode": "it",
+    "Noun": "Alleanza"
+  },
+  {
+    "TwoLetterLanguageCode": "it",
+    "Noun": "Analizzatore"
+  },
+  {
+    "TwoLetterLanguageCode": "it",
+    "Noun": "Applicazione"
+  },
+  {
+    "TwoLetterLanguageCode": "it",
+    "Noun": "Approccio"
+  },
+  {
+    "TwoLetterLanguageCode": "it",
+    "Noun": "Architettura"
+  },
+  {
+    "TwoLetterLanguageCode": "it",
+    "Noun": "Archivio"
+  },
+  {
+    "TwoLetterLanguageCode": "it",
+    "Noun": "Intelligenza artificiale"
+  },
+  {
+    "TwoLetterLanguageCode": "it",
+    "Noun": "Array"
+  },
+  {
+    "TwoLetterLanguageCode": "it",
+    "Noun": "Attitudine"
+  },
+  {
+    "TwoLetterLanguageCode": "it",
+    "Noun": "Benchmark"
+  },
+  {
+    "TwoLetterLanguageCode": "it",
+    "Noun": "Capacità"
+  },
+  {
+    "TwoLetterLanguageCode": "it",
+    "Noun": "Sfida"
+  },
+  {
+    "TwoLetterLanguageCode": "it",
+    "Noun": "Circuito"
+  },
+  {
+    "TwoLetterLanguageCode": "it",
+    "Noun": "Collaborazione"
+  },
+  {
+    "TwoLetterLanguageCode": "it",
+    "Noun": "Complessità"
+  },
+  {
+    "TwoLetterLanguageCode": "it",
+    "Noun": "Concetto"
+  },
+  {
+    "TwoLetterLanguageCode": "it",
+    "Noun": "Conglomerato"
+  },
+  {
+    "TwoLetterLanguageCode": "it",
+    "Noun": "Contingenza"
+  },
+  {
+    "TwoLetterLanguageCode": "it",
+    "Noun": "Core"
+  },
+  {
+    "TwoLetterLanguageCode": "it",
+    "Noun": "Database"
+  },
+  {
+    "TwoLetterLanguageCode": "it",
+    "Noun": "Data-warehouse"
+  },
+  {
+    "TwoLetterLanguageCode": "it",
+    "Noun": "Definizione"
+  },
+  {
+    "TwoLetterLanguageCode": "it",
+    "Noun": "Emulazione"
+  },
+  {
+    "TwoLetterLanguageCode": "it",
+    "Noun": "Codifica"
+  },
+  {
+    "TwoLetterLanguageCode": "it",
+    "Noun": "Criptazione"
+  },
+  {
+    "TwoLetterLanguageCode": "it",
+    "Noun": "Firmware"
+  },
+  {
+    "TwoLetterLanguageCode": "it",
+    "Noun": "Flessibilità"
+  },
+  {
+    "TwoLetterLanguageCode": "it",
+    "Noun": "Previsione"
+  },
+  {
+    "TwoLetterLanguageCode": "it",
+    "Noun": "Frame"
+  },
+  {
+    "TwoLetterLanguageCode": "it",
+    "Noun": "framework"
+  },
+  {
+    "TwoLetterLanguageCode": "it",
+    "Noun": "Funzione"
+  },
+  {
+    "TwoLetterLanguageCode": "it",
+    "Noun": "Funzionalità"
+  },
+  {
+    "TwoLetterLanguageCode": "it",
+    "Noun": "Interfaccia grafica"
+  },
+  {
+    "TwoLetterLanguageCode": "it",
+    "Noun": "Hardware"
+  },
+  {
+    "TwoLetterLanguageCode": "it",
+    "Noun": "Help-desk"
+  },
+  {
+    "TwoLetterLanguageCode": "it",
+    "Noun": "Gerarchia"
+  },
+  {
+    "TwoLetterLanguageCode": "it",
+    "Noun": "Hub"
+  },
+  {
+    "TwoLetterLanguageCode": "it",
+    "Noun": "Implementazione"
+  },
+  {
+    "TwoLetterLanguageCode": "it",
+    "Noun": "Infrastruttura"
+  },
+  {
+    "TwoLetterLanguageCode": "it",
+    "Noun": "Iniziativa"
+  },
+  {
+    "TwoLetterLanguageCode": "it",
+    "Noun": "Installazione"
+  },
+  {
+    "TwoLetterLanguageCode": "it",
+    "Noun": "Set di istruzioni"
+  },
+  {
+    "TwoLetterLanguageCode": "it",
+    "Noun": "Interfaccia"
+  },
+  {
+    "TwoLetterLanguageCode": "it",
+    "Noun": "Soluzione internet"
+  },
+  {
+    "TwoLetterLanguageCode": "it",
+    "Noun": "Intranet"
+  },
+  {
+    "TwoLetterLanguageCode": "it",
+    "Noun": "Conoscenza base"
+  },
+  {
+    "TwoLetterLanguageCode": "it",
+    "Noun": "Matrici"
+  },
+  {
+    "TwoLetterLanguageCode": "it",
+    "Noun": "Matrice"
+  },
+  {
+    "TwoLetterLanguageCode": "it",
+    "Noun": "Metodologia"
+  },
+  {
+    "TwoLetterLanguageCode": "it",
+    "Noun": "Middleware"
+  },
+  {
+    "TwoLetterLanguageCode": "it",
+    "Noun": "Migrazione"
+  },
+  {
+    "TwoLetterLanguageCode": "it",
+    "Noun": "Modello"
+  },
+  {
+    "TwoLetterLanguageCode": "it",
+    "Noun": "Moderazione"
+  },
+  {
+    "TwoLetterLanguageCode": "it",
+    "Noun": "Monitoraggio"
+  },
+  {
+    "TwoLetterLanguageCode": "it",
+    "Noun": "Moratoria"
+  },
+  {
+    "TwoLetterLanguageCode": "it",
+    "Noun": "Rete"
+  },
+  {
+    "TwoLetterLanguageCode": "it",
+    "Noun": "Architettura aperta"
+  },
+  {
+    "TwoLetterLanguageCode": "it",
+    "Noun": "Sistema aperto"
+  },
+  {
+    "TwoLetterLanguageCode": "it",
+    "Noun": "Orchestrazione"
+  },
+  {
+    "TwoLetterLanguageCode": "it",
+    "Noun": "Paradigma"
+  },
+  {
+    "TwoLetterLanguageCode": "it",
+    "Noun": "Parallelismo"
+  },
+  {
+    "TwoLetterLanguageCode": "it",
+    "Noun": "Policy"
+  },
+  {
+    "TwoLetterLanguageCode": "it",
+    "Noun": "Portale"
+  },
+  {
+    "TwoLetterLanguageCode": "it",
+    "Noun": "Struttura di prezzo"
+  },
+  {
+    "TwoLetterLanguageCode": "it",
+    "Noun": "Prodotto"
+  },
+  {
+    "TwoLetterLanguageCode": "it",
+    "Noun": "Produttività"
+  },
+  {
+    "TwoLetterLanguageCode": "it",
+    "Noun": "Progetto"
+  },
+  {
+    "TwoLetterLanguageCode": "it",
+    "Noun": "Proiezione"
+  },
+  {
+    "TwoLetterLanguageCode": "it",
+    "Noun": "Protocollo"
+  },
+  {
+    "TwoLetterLanguageCode": "it",
+    "Noun": "Servizio clienti"
+  },
+  {
+    "TwoLetterLanguageCode": "it",
+    "Noun": "Software"
+  },
+  {
+    "TwoLetterLanguageCode": "it",
+    "Noun": "Soluzione"
+  },
+  {
+    "TwoLetterLanguageCode": "it",
+    "Noun": "Standardizzazione"
+  },
+  {
+    "TwoLetterLanguageCode": "it",
+    "Noun": "Strategia"
+  },
+  {
+    "TwoLetterLanguageCode": "it",
+    "Noun": "Struttura"
+  },
+  {
+    "TwoLetterLanguageCode": "it",
+    "Noun": "Successo"
+  },
+  {
+    "TwoLetterLanguageCode": "it",
+    "Noun": "Sovrastruttura"
+  },
+  {
+    "TwoLetterLanguageCode": "it",
+    "Noun": "Supporto"
+  },
+  {
+    "TwoLetterLanguageCode": "it",
+    "Noun": "Sinergia"
+  },
+  {
+    "TwoLetterLanguageCode": "it",
+    "Noun": "Task-force"
+  },
+  {
+    "TwoLetterLanguageCode": "it",
+    "Noun": "Finestra temporale"
+  },
+  {
+    "TwoLetterLanguageCode": "it",
+    "Noun": "Strumenti"
+  },
+  {
+    "TwoLetterLanguageCode": "it",
+    "Noun": "Utilizzazione"
+  },
+  {
+    "TwoLetterLanguageCode": "it",
+    "Noun": "Sito web"
+  },
+  {
+    "TwoLetterLanguageCode": "it",
+    "Noun": "Forza lavoro"
+  }
+]

@@ -1,0 +1,1610 @@
+﻿[
+  {
+    "TwoLetterLanguageCode": "da",
+    "Descriptor": "24 timer"
+  },
+  {
+    "TwoLetterLanguageCode": "da",
+    "Descriptor": "24/7"
+  },
+  {
+    "TwoLetterLanguageCode": "da",
+    "Descriptor": "3. generation"
+  },
+  {
+    "TwoLetterLanguageCode": "da",
+    "Descriptor": "4. generation"
+  },
+  {
+    "TwoLetterLanguageCode": "da",
+    "Descriptor": "5. generation"
+  },
+  {
+    "TwoLetterLanguageCode": "da",
+    "Descriptor": "6. generation"
+  },
+  {
+    "TwoLetterLanguageCode": "da",
+    "Descriptor": "administrationsfri"
+  },
+  {
+    "TwoLetterLanguageCode": "da",
+    "Descriptor": "afbalanceret"
+  },
+  {
+    "TwoLetterLanguageCode": "da",
+    "Descriptor": "aktiverende"
+  },
+  {
+    "TwoLetterLanguageCode": "da",
+    "Descriptor": "analyserende"
+  },
+  {
+    "TwoLetterLanguageCode": "da",
+    "Descriptor": "asymmetrisk"
+  },
+  {
+    "TwoLetterLanguageCode": "da",
+    "Descriptor": "asynkron"
+  },
+  {
+    "TwoLetterLanguageCode": "da",
+    "Descriptor": "baggrund"
+  },
+  {
+    "TwoLetterLanguageCode": "da",
+    "Descriptor": "behovsbaseret"
+  },
+  {
+    "TwoLetterLanguageCode": "da",
+    "Descriptor": "bemyndigende"
+  },
+  {
+    "TwoLetterLanguageCode": "da",
+    "Descriptor": "brugervendt"
+  },
+  {
+    "TwoLetterLanguageCode": "da",
+    "Descriptor": "bundlinje"
+  },
+  {
+    "TwoLetterLanguageCode": "da",
+    "Descriptor": "båndbreddeovervåget"
+  },
+  {
+    "TwoLetterLanguageCode": "da",
+    "Descriptor": "client-server"
+  },
+  {
+    "TwoLetterLanguageCode": "da",
+    "Descriptor": "dedikeret"
+  },
+  {
+    "TwoLetterLanguageCode": "da",
+    "Descriptor": "didaktisk"
+  },
+  {
+    "TwoLetterLanguageCode": "da",
+    "Descriptor": "diskret"
+  },
+  {
+    "TwoLetterLanguageCode": "da",
+    "Descriptor": "dynamisk"
+  },
+  {
+    "TwoLetterLanguageCode": "da",
+    "Descriptor": "effektfuld"
+  },
+  {
+    "TwoLetterLanguageCode": "da",
+    "Descriptor": "efterspørgselsdrevet"
+  },
+  {
+    "TwoLetterLanguageCode": "da",
+    "Descriptor": "eksplicit"
+  },
+  {
+    "TwoLetterLanguageCode": "da",
+    "Descriptor": "ensartet"
+  },
+  {
+    "TwoLetterLanguageCode": "da",
+    "Descriptor": "fejltolerant"
+  },
+  {
+    "TwoLetterLanguageCode": "da",
+    "Descriptor": "forgrund"
+  },
+  {
+    "TwoLetterLanguageCode": "da",
+    "Descriptor": "frisktænkende"
+  },
+  {
+    "TwoLetterLanguageCode": "da",
+    "Descriptor": "fuldt dækkende"
+  },
+  {
+    "TwoLetterLanguageCode": "da",
+    "Descriptor": "førende"
+  },
+  {
+    "TwoLetterLanguageCode": "da",
+    "Descriptor": "gensidig"
+  },
+  {
+    "TwoLetterLanguageCode": "da",
+    "Descriptor": "global"
+  },
+  {
+    "TwoLetterLanguageCode": "da",
+    "Descriptor": "helhedsorienteret"
+  },
+  {
+    "TwoLetterLanguageCode": "da",
+    "Descriptor": "heuristisk"
+  },
+  {
+    "TwoLetterLanguageCode": "da",
+    "Descriptor": "holdningsorienteret"
+  },
+  {
+    "TwoLetterLanguageCode": "da",
+    "Descriptor": "homogen"
+  },
+  {
+    "TwoLetterLanguageCode": "da",
+    "Descriptor": "hybrid"
+  },
+  {
+    "TwoLetterLanguageCode": "da",
+    "Descriptor": "højniveau"
+  },
+  {
+    "TwoLetterLanguageCode": "da",
+    "Descriptor": "håndgribelig"
+  },
+  {
+    "TwoLetterLanguageCode": "da",
+    "Descriptor": "indholdsbaseret"
+  },
+  {
+    "TwoLetterLanguageCode": "da",
+    "Descriptor": "inkremental"
+  },
+  {
+    "TwoLetterLanguageCode": "da",
+    "Descriptor": "interaktiv"
+  },
+  {
+    "TwoLetterLanguageCode": "da",
+    "Descriptor": "klartænkende"
+  },
+  {
+    "TwoLetterLanguageCode": "da",
+    "Descriptor": "klientdrevet"
+  },
+  {
+    "TwoLetterLanguageCode": "da",
+    "Descriptor": "kontekstbaseret"
+  },
+  {
+    "TwoLetterLanguageCode": "da",
+    "Descriptor": "kontekstfølsom"
+  },
+  {
+    "TwoLetterLanguageCode": "da",
+    "Descriptor": "ledelsesmæssig"
+  },
+  {
+    "TwoLetterLanguageCode": "da",
+    "Descriptor": "logistisk"
+  },
+  {
+    "TwoLetterLanguageCode": "da",
+    "Descriptor": "lokal"
+  },
+  {
+    "TwoLetterLanguageCode": "da",
+    "Descriptor": "løsningsorienteret"
+  },
+  {
+    "TwoLetterLanguageCode": "da",
+    "Descriptor": "maksimeret"
+  },
+  {
+    "TwoLetterLanguageCode": "da",
+    "Descriptor": "mellemstation"
+  },
+  {
+    "TwoLetterLanguageCode": "da",
+    "Descriptor": "metodisk"
+  },
+  {
+    "TwoLetterLanguageCode": "da",
+    "Descriptor": "middleware"
+  },
+  {
+    "TwoLetterLanguageCode": "da",
+    "Descriptor": "missionskritisk"
+  },
+  {
+    "TwoLetterLanguageCode": "da",
+    "Descriptor": "mobil"
+  },
+  {
+    "TwoLetterLanguageCode": "da",
+    "Descriptor": "modulær"
+  },
+  {
+    "TwoLetterLanguageCode": "da",
+    "Descriptor": "motiverende"
+  },
+  {
+    "TwoLetterLanguageCode": "da",
+    "Descriptor": "multimedie"
+  },
+  {
+    "TwoLetterLanguageCode": "da",
+    "Descriptor": "multitasking"
+  },
+  {
+    "TwoLetterLanguageCode": "da",
+    "Descriptor": "national"
+  },
+  {
+    "TwoLetterLanguageCode": "da",
+    "Descriptor": "neutral"
+  },
+  {
+    "TwoLetterLanguageCode": "da",
+    "Descriptor": "objektorienteret"
+  },
+  {
+    "TwoLetterLanguageCode": "da",
+    "Descriptor": "omfavnende"
+  },
+  {
+    "TwoLetterLanguageCode": "da",
+    "Descriptor": "optimal"
+  },
+  {
+    "TwoLetterLanguageCode": "da",
+    "Descriptor": "optimerende"
+  },
+  {
+    "TwoLetterLanguageCode": "da",
+    "Descriptor": "overgang"
+  },
+  {
+    "TwoLetterLanguageCode": "da",
+    "Descriptor": "radikal"
+  },
+  {
+    "TwoLetterLanguageCode": "da",
+    "Descriptor": "realtid"
+  },
+  {
+    "TwoLetterLanguageCode": "da",
+    "Descriptor": "receptiv"
+  },
+  {
+    "TwoLetterLanguageCode": "da",
+    "Descriptor": "regional"
+  },
+  {
+    "TwoLetterLanguageCode": "da",
+    "Descriptor": "retningsbestemt"
+  },
+  {
+    "TwoLetterLanguageCode": "da",
+    "Descriptor": "sammenhængende"
+  },
+  {
+    "TwoLetterLanguageCode": "da",
+    "Descriptor": "sammenkoblet"
+  },
+  {
+    "TwoLetterLanguageCode": "da",
+    "Descriptor": "sammensat"
+  },
+  {
+    "TwoLetterLanguageCode": "da",
+    "Descriptor": "sekundær"
+  },
+  {
+    "TwoLetterLanguageCode": "da",
+    "Descriptor": "skalerbar"
+  },
+  {
+    "TwoLetterLanguageCode": "da",
+    "Descriptor": "stabil"
+  },
+  {
+    "TwoLetterLanguageCode": "da",
+    "Descriptor": "statisk"
+  },
+  {
+    "TwoLetterLanguageCode": "da",
+    "Descriptor": "systematisk"
+  },
+  {
+    "TwoLetterLanguageCode": "da",
+    "Descriptor": "systemisk"
+  },
+  {
+    "TwoLetterLanguageCode": "da",
+    "Descriptor": "systemværdig"
+  },
+  {
+    "TwoLetterLanguageCode": "da",
+    "Descriptor": "tertiær"
+  },
+  {
+    "TwoLetterLanguageCode": "da",
+    "Descriptor": "tovejs"
+  },
+  {
+    "TwoLetterLanguageCode": "da",
+    "Descriptor": "udstrålende"
+  },
+  {
+    "TwoLetterLanguageCode": "da",
+    "Descriptor": "uforanderlig"
+  },
+  {
+    "TwoLetterLanguageCode": "da",
+    "Descriptor": "velmoduleret"
+  },
+  {
+    "TwoLetterLanguageCode": "da",
+    "Descriptor": "vækstende"
+  },
+  {
+    "TwoLetterLanguageCode": "da",
+    "Descriptor": "værditilføjet"
+  },
+  {
+    "TwoLetterLanguageCode": "da",
+    "Descriptor": "webunderstøttet"
+  },
+  {
+    "TwoLetterLanguageCode": "da",
+    "Descriptor": "øko-centrisk"
+  },
+  {
+    "TwoLetterLanguageCode": "el",
+    "Descriptor": "24 ώρες το 24ώρο"
+  },
+  {
+    "TwoLetterLanguageCode": "el",
+    "Descriptor": "24/7"
+  },
+  {
+    "TwoLetterLanguageCode": "el",
+    "Descriptor": "3η γενιά"
+  },
+  {
+    "TwoLetterLanguageCode": "el",
+    "Descriptor": "4η γενικά"
+  },
+  {
+    "TwoLetterLanguageCode": "el",
+    "Descriptor": "5η γενιά"
+  },
+  {
+    "TwoLetterLanguageCode": "el",
+    "Descriptor": "6η γενιά"
+  },
+  {
+    "TwoLetterLanguageCode": "el",
+    "Descriptor": "asymmetric"
+  },
+  {
+    "TwoLetterLanguageCode": "el",
+    "Descriptor": "ασύγχρονο"
+  },
+  {
+    "TwoLetterLanguageCode": "el",
+    "Descriptor": "συνεχής"
+  },
+  {
+    "TwoLetterLanguageCode": "el",
+    "Descriptor": "αφιερωμένο"
+  },
+  {
+    "TwoLetterLanguageCode": "el",
+    "Descriptor": "διαδακτικό"
+  },
+  {
+    "TwoLetterLanguageCode": "el",
+    "Descriptor": "διακριτό"
+  },
+  {
+    "TwoLetterLanguageCode": "el",
+    "Descriptor": "δυναμικό"
+  },
+  {
+    "TwoLetterLanguageCode": "el",
+    "Descriptor": "παγκόσμιο"
+  },
+  {
+    "TwoLetterLanguageCode": "el",
+    "Descriptor": "υβριδικό"
+  },
+  {
+    "TwoLetterLanguageCode": "el",
+    "Descriptor": "δριαδραστικό"
+  },
+  {
+    "TwoLetterLanguageCode": "el",
+    "Descriptor": "τοπικό"
+  },
+  {
+    "TwoLetterLanguageCode": "el",
+    "Descriptor": "πολυμεσικό"
+  },
+  {
+    "TwoLetterLanguageCode": "el",
+    "Descriptor": "διεθνές"
+  },
+  {
+    "TwoLetterLanguageCode": "el",
+    "Descriptor": "επόμενης γενιάς"
+  },
+  {
+    "TwoLetterLanguageCode": "el",
+    "Descriptor": "αντικειμενοστραφή"
+  },
+  {
+    "TwoLetterLanguageCode": "el",
+    "Descriptor": "ιδανικό"
+  },
+  {
+    "TwoLetterLanguageCode": "el",
+    "Descriptor": "πραγματικού χρόνου"
+  },
+  {
+    "TwoLetterLanguageCode": "el",
+    "Descriptor": "δευτερεύων"
+  },
+  {
+    "TwoLetterLanguageCode": "el",
+    "Descriptor": "σταθερό"
+  },
+  {
+    "TwoLetterLanguageCode": "el",
+    "Descriptor": "στατικό"
+  },
+  {
+    "TwoLetterLanguageCode": "el",
+    "Descriptor": "προστιθέμενης αξίας"
+  },
+  {
+    "TwoLetterLanguageCode": "en",
+    "Descriptor": "24 hour"
+  },
+  {
+    "TwoLetterLanguageCode": "en",
+    "Descriptor": "24/7"
+  },
+  {
+    "TwoLetterLanguageCode": "en",
+    "Descriptor": "3rd generation"
+  },
+  {
+    "TwoLetterLanguageCode": "en",
+    "Descriptor": "4th generation"
+  },
+  {
+    "TwoLetterLanguageCode": "en",
+    "Descriptor": "5th generation"
+  },
+  {
+    "TwoLetterLanguageCode": "en",
+    "Descriptor": "6th generation"
+  },
+  {
+    "TwoLetterLanguageCode": "en",
+    "Descriptor": "actuating"
+  },
+  {
+    "TwoLetterLanguageCode": "en",
+    "Descriptor": "analyzing"
+  },
+  {
+    "TwoLetterLanguageCode": "en",
+    "Descriptor": "asymmetric"
+  },
+  {
+    "TwoLetterLanguageCode": "en",
+    "Descriptor": "asynchronous"
+  },
+  {
+    "TwoLetterLanguageCode": "en",
+    "Descriptor": "attitude-oriented"
+  },
+  {
+    "TwoLetterLanguageCode": "en",
+    "Descriptor": "background"
+  },
+  {
+    "TwoLetterLanguageCode": "en",
+    "Descriptor": "bandwidth-monitored"
+  },
+  {
+    "TwoLetterLanguageCode": "en",
+    "Descriptor": "bi-directional"
+  },
+  {
+    "TwoLetterLanguageCode": "en",
+    "Descriptor": "bifurcated"
+  },
+  {
+    "TwoLetterLanguageCode": "en",
+    "Descriptor": "bottom-line"
+  },
+  {
+    "TwoLetterLanguageCode": "en",
+    "Descriptor": "clear-thinking"
+  },
+  {
+    "TwoLetterLanguageCode": "en",
+    "Descriptor": "client-driven"
+  },
+  {
+    "TwoLetterLanguageCode": "en",
+    "Descriptor": "client-server"
+  },
+  {
+    "TwoLetterLanguageCode": "en",
+    "Descriptor": "coherent"
+  },
+  {
+    "TwoLetterLanguageCode": "en",
+    "Descriptor": "cohesive"
+  },
+  {
+    "TwoLetterLanguageCode": "en",
+    "Descriptor": "composite"
+  },
+  {
+    "TwoLetterLanguageCode": "en",
+    "Descriptor": "context-sensitive"
+  },
+  {
+    "TwoLetterLanguageCode": "en",
+    "Descriptor": "contextually-based"
+  },
+  {
+    "TwoLetterLanguageCode": "en",
+    "Descriptor": "content-based"
+  },
+  {
+    "TwoLetterLanguageCode": "en",
+    "Descriptor": "dedicated"
+  },
+  {
+    "TwoLetterLanguageCode": "en",
+    "Descriptor": "demand-driven"
+  },
+  {
+    "TwoLetterLanguageCode": "en",
+    "Descriptor": "didactic"
+  },
+  {
+    "TwoLetterLanguageCode": "en",
+    "Descriptor": "directional"
+  },
+  {
+    "TwoLetterLanguageCode": "en",
+    "Descriptor": "discrete"
+  },
+  {
+    "TwoLetterLanguageCode": "en",
+    "Descriptor": "disintermediate"
+  },
+  {
+    "TwoLetterLanguageCode": "en",
+    "Descriptor": "dynamic"
+  },
+  {
+    "TwoLetterLanguageCode": "en",
+    "Descriptor": "eco-centric"
+  },
+  {
+    "TwoLetterLanguageCode": "en",
+    "Descriptor": "empowering"
+  },
+  {
+    "TwoLetterLanguageCode": "en",
+    "Descriptor": "encompassing"
+  },
+  {
+    "TwoLetterLanguageCode": "en",
+    "Descriptor": "even-keeled"
+  },
+  {
+    "TwoLetterLanguageCode": "en",
+    "Descriptor": "executive"
+  },
+  {
+    "TwoLetterLanguageCode": "en",
+    "Descriptor": "explicit"
+  },
+  {
+    "TwoLetterLanguageCode": "en",
+    "Descriptor": "exuding"
+  },
+  {
+    "TwoLetterLanguageCode": "en",
+    "Descriptor": "fault-tolerant"
+  },
+  {
+    "TwoLetterLanguageCode": "en",
+    "Descriptor": "foreground"
+  },
+  {
+    "TwoLetterLanguageCode": "en",
+    "Descriptor": "fresh-thinking"
+  },
+  {
+    "TwoLetterLanguageCode": "en",
+    "Descriptor": "full-range"
+  },
+  {
+    "TwoLetterLanguageCode": "en",
+    "Descriptor": "global"
+  },
+  {
+    "TwoLetterLanguageCode": "en",
+    "Descriptor": "grid-enabled"
+  },
+  {
+    "TwoLetterLanguageCode": "en",
+    "Descriptor": "heuristic"
+  },
+  {
+    "TwoLetterLanguageCode": "en",
+    "Descriptor": "high-level"
+  },
+  {
+    "TwoLetterLanguageCode": "en",
+    "Descriptor": "holistic"
+  },
+  {
+    "TwoLetterLanguageCode": "en",
+    "Descriptor": "homogeneous"
+  },
+  {
+    "TwoLetterLanguageCode": "en",
+    "Descriptor": "human-resource"
+  },
+  {
+    "TwoLetterLanguageCode": "en",
+    "Descriptor": "hybrid"
+  },
+  {
+    "TwoLetterLanguageCode": "en",
+    "Descriptor": "impactful"
+  },
+  {
+    "TwoLetterLanguageCode": "en",
+    "Descriptor": "incremental"
+  },
+  {
+    "TwoLetterLanguageCode": "en",
+    "Descriptor": "intangible"
+  },
+  {
+    "TwoLetterLanguageCode": "en",
+    "Descriptor": "interactive"
+  },
+  {
+    "TwoLetterLanguageCode": "en",
+    "Descriptor": "intermediate"
+  },
+  {
+    "TwoLetterLanguageCode": "en",
+    "Descriptor": "leading edge"
+  },
+  {
+    "TwoLetterLanguageCode": "en",
+    "Descriptor": "local"
+  },
+  {
+    "TwoLetterLanguageCode": "en",
+    "Descriptor": "logistical"
+  },
+  {
+    "TwoLetterLanguageCode": "en",
+    "Descriptor": "maximized"
+  },
+  {
+    "TwoLetterLanguageCode": "en",
+    "Descriptor": "methodical"
+  },
+  {
+    "TwoLetterLanguageCode": "en",
+    "Descriptor": "mission-critical"
+  },
+  {
+    "TwoLetterLanguageCode": "en",
+    "Descriptor": "mobile"
+  },
+  {
+    "TwoLetterLanguageCode": "en",
+    "Descriptor": "modular"
+  },
+  {
+    "TwoLetterLanguageCode": "en",
+    "Descriptor": "motivating"
+  },
+  {
+    "TwoLetterLanguageCode": "en",
+    "Descriptor": "multimedia"
+  },
+  {
+    "TwoLetterLanguageCode": "en",
+    "Descriptor": "multi-state"
+  },
+  {
+    "TwoLetterLanguageCode": "en",
+    "Descriptor": "multi-tasking"
+  },
+  {
+    "TwoLetterLanguageCode": "en",
+    "Descriptor": "national"
+  },
+  {
+    "TwoLetterLanguageCode": "en",
+    "Descriptor": "needs-based"
+  },
+  {
+    "TwoLetterLanguageCode": "en",
+    "Descriptor": "neutral"
+  },
+  {
+    "TwoLetterLanguageCode": "en",
+    "Descriptor": "next generation"
+  },
+  {
+    "TwoLetterLanguageCode": "en",
+    "Descriptor": "non-volatile"
+  },
+  {
+    "TwoLetterLanguageCode": "en",
+    "Descriptor": "object-oriented"
+  },
+  {
+    "TwoLetterLanguageCode": "en",
+    "Descriptor": "optimal"
+  },
+  {
+    "TwoLetterLanguageCode": "en",
+    "Descriptor": "optimizing"
+  },
+  {
+    "TwoLetterLanguageCode": "en",
+    "Descriptor": "radical"
+  },
+  {
+    "TwoLetterLanguageCode": "en",
+    "Descriptor": "real-time"
+  },
+  {
+    "TwoLetterLanguageCode": "en",
+    "Descriptor": "reciprocal"
+  },
+  {
+    "TwoLetterLanguageCode": "en",
+    "Descriptor": "regional"
+  },
+  {
+    "TwoLetterLanguageCode": "en",
+    "Descriptor": "responsive"
+  },
+  {
+    "TwoLetterLanguageCode": "en",
+    "Descriptor": "scalable"
+  },
+  {
+    "TwoLetterLanguageCode": "en",
+    "Descriptor": "secondary"
+  },
+  {
+    "TwoLetterLanguageCode": "en",
+    "Descriptor": "solution-oriented"
+  },
+  {
+    "TwoLetterLanguageCode": "en",
+    "Descriptor": "stable"
+  },
+  {
+    "TwoLetterLanguageCode": "en",
+    "Descriptor": "static"
+  },
+  {
+    "TwoLetterLanguageCode": "en",
+    "Descriptor": "systematic"
+  },
+  {
+    "TwoLetterLanguageCode": "en",
+    "Descriptor": "systemic"
+  },
+  {
+    "TwoLetterLanguageCode": "en",
+    "Descriptor": "system-worthy"
+  },
+  {
+    "TwoLetterLanguageCode": "en",
+    "Descriptor": "tangible"
+  },
+  {
+    "TwoLetterLanguageCode": "en",
+    "Descriptor": "tertiary"
+  },
+  {
+    "TwoLetterLanguageCode": "en",
+    "Descriptor": "transitional"
+  },
+  {
+    "TwoLetterLanguageCode": "en",
+    "Descriptor": "uniform"
+  },
+  {
+    "TwoLetterLanguageCode": "en",
+    "Descriptor": "upward-trending"
+  },
+  {
+    "TwoLetterLanguageCode": "en",
+    "Descriptor": "user-facing"
+  },
+  {
+    "TwoLetterLanguageCode": "en",
+    "Descriptor": "value-added"
+  },
+  {
+    "TwoLetterLanguageCode": "en",
+    "Descriptor": "web-enabled"
+  },
+  {
+    "TwoLetterLanguageCode": "en",
+    "Descriptor": "well-modulated"
+  },
+  {
+    "TwoLetterLanguageCode": "en",
+    "Descriptor": "zero administration"
+  },
+  {
+    "TwoLetterLanguageCode": "en",
+    "Descriptor": "zero defect"
+  },
+  {
+    "TwoLetterLanguageCode": "en",
+    "Descriptor": "zero tolerance"
+  },
+  {
+    "TwoLetterLanguageCode": "es",
+    "Descriptor": "24 horas"
+  },
+  {
+    "TwoLetterLanguageCode": "es",
+    "Descriptor": "24/7"
+  },
+  {
+    "TwoLetterLanguageCode": "es",
+    "Descriptor": "3rd generación"
+  },
+  {
+    "TwoLetterLanguageCode": "es",
+    "Descriptor": "4th generación"
+  },
+  {
+    "TwoLetterLanguageCode": "es",
+    "Descriptor": "5th generación"
+  },
+  {
+    "TwoLetterLanguageCode": "es",
+    "Descriptor": "6th generación"
+  },
+  {
+    "TwoLetterLanguageCode": "es",
+    "Descriptor": "analizada"
+  },
+  {
+    "TwoLetterLanguageCode": "es",
+    "Descriptor": "asimétrica"
+  },
+  {
+    "TwoLetterLanguageCode": "es",
+    "Descriptor": "asíncrona"
+  },
+  {
+    "TwoLetterLanguageCode": "es",
+    "Descriptor": "monitorizada por red"
+  },
+  {
+    "TwoLetterLanguageCode": "es",
+    "Descriptor": "bidireccional"
+  },
+  {
+    "TwoLetterLanguageCode": "es",
+    "Descriptor": "bifurcada"
+  },
+  {
+    "TwoLetterLanguageCode": "es",
+    "Descriptor": "generada por el cliente"
+  },
+  {
+    "TwoLetterLanguageCode": "es",
+    "Descriptor": "cliente servidor"
+  },
+  {
+    "TwoLetterLanguageCode": "es",
+    "Descriptor": "coherente"
+  },
+  {
+    "TwoLetterLanguageCode": "es",
+    "Descriptor": "cohesiva"
+  },
+  {
+    "TwoLetterLanguageCode": "es",
+    "Descriptor": "compuesto"
+  },
+  {
+    "TwoLetterLanguageCode": "es",
+    "Descriptor": "sensible al contexto"
+  },
+  {
+    "TwoLetterLanguageCode": "es",
+    "Descriptor": "basado en el contexto"
+  },
+  {
+    "TwoLetterLanguageCode": "es",
+    "Descriptor": "basado en contenido"
+  },
+  {
+    "TwoLetterLanguageCode": "es",
+    "Descriptor": "dedicada"
+  },
+  {
+    "TwoLetterLanguageCode": "es",
+    "Descriptor": "generado por la demanda"
+  },
+  {
+    "TwoLetterLanguageCode": "es",
+    "Descriptor": "didactica"
+  },
+  {
+    "TwoLetterLanguageCode": "es",
+    "Descriptor": "direccional"
+  },
+  {
+    "TwoLetterLanguageCode": "es",
+    "Descriptor": "discreta"
+  },
+  {
+    "TwoLetterLanguageCode": "es",
+    "Descriptor": "dinámica"
+  },
+  {
+    "TwoLetterLanguageCode": "es",
+    "Descriptor": "potenciada"
+  },
+  {
+    "TwoLetterLanguageCode": "es",
+    "Descriptor": "acompasada"
+  },
+  {
+    "TwoLetterLanguageCode": "es",
+    "Descriptor": "ejecutiva"
+  },
+  {
+    "TwoLetterLanguageCode": "es",
+    "Descriptor": "explícita"
+  },
+  {
+    "TwoLetterLanguageCode": "es",
+    "Descriptor": "tolerante a fallos"
+  },
+  {
+    "TwoLetterLanguageCode": "es",
+    "Descriptor": "innovadora"
+  },
+  {
+    "TwoLetterLanguageCode": "es",
+    "Descriptor": "amplio ábanico"
+  },
+  {
+    "TwoLetterLanguageCode": "es",
+    "Descriptor": "global"
+  },
+  {
+    "TwoLetterLanguageCode": "es",
+    "Descriptor": "heurística"
+  },
+  {
+    "TwoLetterLanguageCode": "es",
+    "Descriptor": "alto nivel"
+  },
+  {
+    "TwoLetterLanguageCode": "es",
+    "Descriptor": "holística"
+  },
+  {
+    "TwoLetterLanguageCode": "es",
+    "Descriptor": "homogénea"
+  },
+  {
+    "TwoLetterLanguageCode": "es",
+    "Descriptor": "hibrida"
+  },
+  {
+    "TwoLetterLanguageCode": "es",
+    "Descriptor": "incremental"
+  },
+  {
+    "TwoLetterLanguageCode": "es",
+    "Descriptor": "intangible"
+  },
+  {
+    "TwoLetterLanguageCode": "es",
+    "Descriptor": "interactiva"
+  },
+  {
+    "TwoLetterLanguageCode": "es",
+    "Descriptor": "intermedia"
+  },
+  {
+    "TwoLetterLanguageCode": "es",
+    "Descriptor": "local"
+  },
+  {
+    "TwoLetterLanguageCode": "es",
+    "Descriptor": "logística"
+  },
+  {
+    "TwoLetterLanguageCode": "es",
+    "Descriptor": "maximizada"
+  },
+  {
+    "TwoLetterLanguageCode": "es",
+    "Descriptor": "metódica"
+  },
+  {
+    "TwoLetterLanguageCode": "es",
+    "Descriptor": "misión crítica"
+  },
+  {
+    "TwoLetterLanguageCode": "es",
+    "Descriptor": "móbil"
+  },
+  {
+    "TwoLetterLanguageCode": "es",
+    "Descriptor": "modular"
+  },
+  {
+    "TwoLetterLanguageCode": "es",
+    "Descriptor": "motivadora"
+  },
+  {
+    "TwoLetterLanguageCode": "es",
+    "Descriptor": "multimedia"
+  },
+  {
+    "TwoLetterLanguageCode": "es",
+    "Descriptor": "multiestado"
+  },
+  {
+    "TwoLetterLanguageCode": "es",
+    "Descriptor": "multitarea"
+  },
+  {
+    "TwoLetterLanguageCode": "es",
+    "Descriptor": "nacional"
+  },
+  {
+    "TwoLetterLanguageCode": "es",
+    "Descriptor": "basado en necesidades"
+  },
+  {
+    "TwoLetterLanguageCode": "es",
+    "Descriptor": "neutral"
+  },
+  {
+    "TwoLetterLanguageCode": "es",
+    "Descriptor": "nueva generación"
+  },
+  {
+    "TwoLetterLanguageCode": "es",
+    "Descriptor": "no-volátil"
+  },
+  {
+    "TwoLetterLanguageCode": "es",
+    "Descriptor": "orientado a objetos"
+  },
+  {
+    "TwoLetterLanguageCode": "es",
+    "Descriptor": "óptima"
+  },
+  {
+    "TwoLetterLanguageCode": "es",
+    "Descriptor": "optimizada"
+  },
+  {
+    "TwoLetterLanguageCode": "es",
+    "Descriptor": "radical"
+  },
+  {
+    "TwoLetterLanguageCode": "es",
+    "Descriptor": "tiempo real"
+  },
+  {
+    "TwoLetterLanguageCode": "es",
+    "Descriptor": "recíproca"
+  },
+  {
+    "TwoLetterLanguageCode": "es",
+    "Descriptor": "regional"
+  },
+  {
+    "TwoLetterLanguageCode": "es",
+    "Descriptor": "escalable"
+  },
+  {
+    "TwoLetterLanguageCode": "es",
+    "Descriptor": "secundaria"
+  },
+  {
+    "TwoLetterLanguageCode": "es",
+    "Descriptor": "orientada a soluciones"
+  },
+  {
+    "TwoLetterLanguageCode": "es",
+    "Descriptor": "estable"
+  },
+  {
+    "TwoLetterLanguageCode": "es",
+    "Descriptor": "estatica"
+  },
+  {
+    "TwoLetterLanguageCode": "es",
+    "Descriptor": "sistemática"
+  },
+  {
+    "TwoLetterLanguageCode": "es",
+    "Descriptor": "sistémica"
+  },
+  {
+    "TwoLetterLanguageCode": "es",
+    "Descriptor": "tangible"
+  },
+  {
+    "TwoLetterLanguageCode": "es",
+    "Descriptor": "terciaria"
+  },
+  {
+    "TwoLetterLanguageCode": "es",
+    "Descriptor": "transicional"
+  },
+  {
+    "TwoLetterLanguageCode": "es",
+    "Descriptor": "uniforme"
+  },
+  {
+    "TwoLetterLanguageCode": "es",
+    "Descriptor": "valor añadido"
+  },
+  {
+    "TwoLetterLanguageCode": "es",
+    "Descriptor": "vía web"
+  },
+  {
+    "TwoLetterLanguageCode": "es",
+    "Descriptor": "defectos cero"
+  },
+  {
+    "TwoLetterLanguageCode": "es",
+    "Descriptor": "tolerancia cero"
+  },
+  {
+    "TwoLetterLanguageCode": "fa",
+    "Descriptor": "24 ساعت"
+  },
+  {
+    "TwoLetterLanguageCode": "fa",
+    "Descriptor": "24/7"
+  },
+  {
+    "TwoLetterLanguageCode": "fa",
+    "Descriptor": "نسل سوم"
+  },
+  {
+    "TwoLetterLanguageCode": "fa",
+    "Descriptor": "نسل چهارم"
+  },
+  {
+    "TwoLetterLanguageCode": "fa",
+    "Descriptor": "نسل پنجم"
+  },
+  {
+    "TwoLetterLanguageCode": "fa",
+    "Descriptor": "نسل ششم"
+  },
+  {
+    "TwoLetterLanguageCode": "fa",
+    "Descriptor": "تجزیه و تحلیل"
+  },
+  {
+    "TwoLetterLanguageCode": "fa",
+    "Descriptor": "نامتقارن"
+  },
+  {
+    "TwoLetterLanguageCode": "fa",
+    "Descriptor": "ناهمگام"
+  },
+  {
+    "TwoLetterLanguageCode": "fa",
+    "Descriptor": "نگرش محور"
+  },
+  {
+    "TwoLetterLanguageCode": "fa",
+    "Descriptor": "پس زمینه"
+  },
+  {
+    "TwoLetterLanguageCode": "fa",
+    "Descriptor": "پهنای باند پایش"
+  },
+  {
+    "TwoLetterLanguageCode": "fa",
+    "Descriptor": "دو جهته"
+  },
+  {
+    "TwoLetterLanguageCode": "fa",
+    "Descriptor": "دوتایی"
+  },
+  {
+    "TwoLetterLanguageCode": "fa",
+    "Descriptor": "روشن اندیشی"
+  },
+  {
+    "TwoLetterLanguageCode": "fa",
+    "Descriptor": "مشتری محور"
+  },
+  {
+    "TwoLetterLanguageCode": "fa",
+    "Descriptor": "سرویس دهنده مشتری"
+  },
+  {
+    "TwoLetterLanguageCode": "fa",
+    "Descriptor": "منسجم"
+  },
+  {
+    "TwoLetterLanguageCode": "fa",
+    "Descriptor": "مرکب"
+  },
+  {
+    "TwoLetterLanguageCode": "fa",
+    "Descriptor": "حساس به متن"
+  },
+  {
+    "TwoLetterLanguageCode": "fa",
+    "Descriptor": "مبتنی بر متن"
+  },
+  {
+    "TwoLetterLanguageCode": "fa",
+    "Descriptor": "مبتنی بر محتوا"
+  },
+  {
+    "TwoLetterLanguageCode": "fa",
+    "Descriptor": "اختصاصی"
+  },
+  {
+    "TwoLetterLanguageCode": "fa",
+    "Descriptor": "تقاضا محور"
+  },
+  {
+    "TwoLetterLanguageCode": "fa",
+    "Descriptor": "اموزشی"
+  },
+  {
+    "TwoLetterLanguageCode": "fa",
+    "Descriptor": "جهت دار"
+  },
+  {
+    "TwoLetterLanguageCode": "fa",
+    "Descriptor": "گسسته"
+  },
+  {
+    "TwoLetterLanguageCode": "fa",
+    "Descriptor": "بی تفاوت"
+  },
+  {
+    "TwoLetterLanguageCode": "fa",
+    "Descriptor": "پویا"
+  },
+  {
+    "TwoLetterLanguageCode": "fa",
+    "Descriptor": "محیط زیست"
+  },
+  {
+    "TwoLetterLanguageCode": "fa",
+    "Descriptor": "توانمند سازی"
+  },
+  {
+    "TwoLetterLanguageCode": "fa",
+    "Descriptor": "اجرایی"
+  },
+  {
+    "TwoLetterLanguageCode": "fa",
+    "Descriptor": "صریح"
+  },
+  {
+    "TwoLetterLanguageCode": "fa",
+    "Descriptor": "خطاپذيری"
+  },
+  {
+    "TwoLetterLanguageCode": "fa",
+    "Descriptor": "پیش زمینه"
+  },
+  {
+    "TwoLetterLanguageCode": "fa",
+    "Descriptor": "پایدار"
+  },
+  {
+    "TwoLetterLanguageCode": "fa",
+    "Descriptor": "ثابت"
+  },
+  {
+    "TwoLetterLanguageCode": "fa",
+    "Descriptor": "سیستمی"
+  },
+  {
+    "TwoLetterLanguageCode": "fa",
+    "Descriptor": "شایسته سیستم"
+  },
+  {
+    "TwoLetterLanguageCode": "fa",
+    "Descriptor": "محسوس"
+  },
+  {
+    "TwoLetterLanguageCode": "fa",
+    "Descriptor": "انتقالی"
+  },
+  {
+    "TwoLetterLanguageCode": "fa",
+    "Descriptor": "یکسان"
+  },
+  {
+    "TwoLetterLanguageCode": "fa",
+    "Descriptor": "روند رو به بالا"
+  },
+  {
+    "TwoLetterLanguageCode": "fa",
+    "Descriptor": "تحمل صفر"
+  },
+  {
+    "TwoLetterLanguageCode": "it",
+    "Descriptor": "adattiva"
+  },
+  {
+    "TwoLetterLanguageCode": "it",
+    "Descriptor": "avanzata"
+  },
+  {
+    "TwoLetterLanguageCode": "it",
+    "Descriptor": "migliorata"
+  },
+  {
+    "TwoLetterLanguageCode": "it",
+    "Descriptor": "assimilata"
+  },
+  {
+    "TwoLetterLanguageCode": "it",
+    "Descriptor": "automatizzata"
+  },
+  {
+    "TwoLetterLanguageCode": "it",
+    "Descriptor": "bilanciata"
+  },
+  {
+    "TwoLetterLanguageCode": "it",
+    "Descriptor": "centralizzata"
+  },
+  {
+    "TwoLetterLanguageCode": "it",
+    "Descriptor": "compatibile"
+  },
+  {
+    "TwoLetterLanguageCode": "it",
+    "Descriptor": "configurabile"
+  },
+  {
+    "TwoLetterLanguageCode": "it",
+    "Descriptor": "cross-platform"
+  },
+  {
+    "TwoLetterLanguageCode": "it",
+    "Descriptor": "decentralizzata"
+  },
+  {
+    "TwoLetterLanguageCode": "it",
+    "Descriptor": "digitalizzata"
+  },
+  {
+    "TwoLetterLanguageCode": "it",
+    "Descriptor": "distribuita"
+  },
+  {
+    "TwoLetterLanguageCode": "it",
+    "Descriptor": "piccola"
+  },
+  {
+    "TwoLetterLanguageCode": "it",
+    "Descriptor": "ergonomica"
+  },
+  {
+    "TwoLetterLanguageCode": "it",
+    "Descriptor": "esclusiva"
+  },
+  {
+    "TwoLetterLanguageCode": "it",
+    "Descriptor": "espansa"
+  },
+  {
+    "TwoLetterLanguageCode": "it",
+    "Descriptor": "estesa"
+  },
+  {
+    "TwoLetterLanguageCode": "it",
+    "Descriptor": "fondamentale"
+  },
+  {
+    "TwoLetterLanguageCode": "it",
+    "Descriptor": "orizzontale"
+  },
+  {
+    "TwoLetterLanguageCode": "it",
+    "Descriptor": "implementata"
+  },
+  {
+    "TwoLetterLanguageCode": "it",
+    "Descriptor": "innovativa"
+  },
+  {
+    "TwoLetterLanguageCode": "it",
+    "Descriptor": "integrata"
+  },
+  {
+    "TwoLetterLanguageCode": "it",
+    "Descriptor": "intuitiva"
+  },
+  {
+    "TwoLetterLanguageCode": "it",
+    "Descriptor": "inversa"
+  },
+  {
+    "TwoLetterLanguageCode": "it",
+    "Descriptor": "gestita"
+  },
+  {
+    "TwoLetterLanguageCode": "it",
+    "Descriptor": "obbligatoria"
+  },
+  {
+    "TwoLetterLanguageCode": "it",
+    "Descriptor": "monitorata"
+  },
+  {
+    "TwoLetterLanguageCode": "it",
+    "Descriptor": "multi-canale"
+  },
+  {
+    "TwoLetterLanguageCode": "it",
+    "Descriptor": "multi-laterale"
+  },
+  {
+    "TwoLetterLanguageCode": "it",
+    "Descriptor": "open-source"
+  },
+  {
+    "TwoLetterLanguageCode": "it",
+    "Descriptor": "operativa"
+  },
+  {
+    "TwoLetterLanguageCode": "it",
+    "Descriptor": "ottimizzata"
+  },
+  {
+    "TwoLetterLanguageCode": "it",
+    "Descriptor": "organica"
+  },
+  {
+    "TwoLetterLanguageCode": "it",
+    "Descriptor": "persistente"
+  },
+  {
+    "TwoLetterLanguageCode": "it",
+    "Descriptor": "polarizzata"
+  },
+  {
+    "TwoLetterLanguageCode": "it",
+    "Descriptor": "proattiva"
+  },
+  {
+    "TwoLetterLanguageCode": "it",
+    "Descriptor": "programmabile"
+  },
+  {
+    "TwoLetterLanguageCode": "it",
+    "Descriptor": "progressiva"
+  },
+  {
+    "TwoLetterLanguageCode": "it",
+    "Descriptor": "reattiva"
+  },
+  {
+    "TwoLetterLanguageCode": "it",
+    "Descriptor": "riallineata"
+  },
+  {
+    "TwoLetterLanguageCode": "it",
+    "Descriptor": "ricontestualizzata"
+  },
+  {
+    "TwoLetterLanguageCode": "it",
+    "Descriptor": "ridotta"
+  },
+  {
+    "TwoLetterLanguageCode": "it",
+    "Descriptor": "robusta"
+  },
+  {
+    "TwoLetterLanguageCode": "it",
+    "Descriptor": "sicura"
+  },
+  {
+    "TwoLetterLanguageCode": "it",
+    "Descriptor": "condivisibile"
+  },
+  {
+    "TwoLetterLanguageCode": "it",
+    "Descriptor": "stand-alone"
+  },
+  {
+    "TwoLetterLanguageCode": "it",
+    "Descriptor": "switchabile"
+  },
+  {
+    "TwoLetterLanguageCode": "it",
+    "Descriptor": "sincronizzata"
+  },
+  {
+    "TwoLetterLanguageCode": "it",
+    "Descriptor": "sinergica"
+  },
+  {
+    "TwoLetterLanguageCode": "it",
+    "Descriptor": "totale"
+  },
+  {
+    "TwoLetterLanguageCode": "it",
+    "Descriptor": "universale"
+  },
+  {
+    "TwoLetterLanguageCode": "it",
+    "Descriptor": "user-friendly"
+  },
+  {
+    "TwoLetterLanguageCode": "it",
+    "Descriptor": "versatile"
+  },
+  {
+    "TwoLetterLanguageCode": "it",
+    "Descriptor": "virtuale"
+  },
+  {
+    "TwoLetterLanguageCode": "it",
+    "Descriptor": "visionaria"
+  }
+]

@@ -1,0 +1,50 @@
+﻿[
+  {
+    "TwoLetterLanguageCode": "ja",
+    "CompanyType": "株式会社"
+  },
+  {
+    "TwoLetterLanguageCode": "ja",
+    "CompanyType": "有限会社"
+  },
+  {
+    "TwoLetterLanguageCode": "ja",
+    "CompanyType": "合名会社"
+  },
+  {
+    "TwoLetterLanguageCode": "ja",
+    "CompanyType": "合資会社"
+  },
+  {
+    "TwoLetterLanguageCode": "ja",
+    "CompanyType": "合同会社"
+  },
+  {
+    "TwoLetterLanguageCode": "zh",
+    "CompanyType": "有限责任公司"
+  },
+  {
+    "TwoLetterLanguageCode": "zh",
+    "CompanyType": "股份有限公司"
+  },
+  {
+    "TwoLetterLanguageCode": "zh",
+    "CompanyType": "有限公司"
+  },
+  {
+    "TwoLetterLanguageCode": "zh",
+    "CompanyType": "（集团）有限公司"
+  },
+  {
+    "TwoLetterLanguageCode": "zh",
+    "CompanyType": "集团有限公司"
+  },
+  {
+    "TwoLetterLanguageCode": "zh",
+    "CompanyType": "无限公司"
+  },
+  {
+    "TwoLetterLanguageCode": "zh",
+    "CompanyType": "无限责任公司"
+  }
+]
