@@ -9,6 +9,11 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <None Remove="Datasets\.gitkeep" />
+    <None Remove="Datasets\JobSkills\.gitkeep" />
+  </ItemGroup>
+
+  <ItemGroup>
     <EmbeddedResource Include="..\Falsus.Providers.Person\Datasets\JobSkills\JobSkills_01.json" Link="Datasets\JobSkills\JobSkills_01.json" />
     <EmbeddedResource Include="..\Falsus.Providers.Person\Datasets\JobSkills\JobSkills_02.json" Link="Datasets\JobSkills\JobSkills_02.json" />
     <EmbeddedResource Include="..\Falsus.Providers.Person\Datasets\JobSkills\JobSkills_03.json" Link="Datasets\JobSkills\JobSkills_03.json" />
