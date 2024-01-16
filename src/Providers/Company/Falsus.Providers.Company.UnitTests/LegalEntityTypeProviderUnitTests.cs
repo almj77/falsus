@@ -6,7 +6,6 @@ namespace Falsus.Providers.Company.UnitTests
     using Falsus.GeneratorProperties;
     using Falsus.Shared.Helpers;
     using Falsus.Shared.Models;
-    using Microsoft.VisualStudio.TestTools.UnitTesting;
 
     [TestClass]
     public class LegalEntityTypeProviderUnitTests

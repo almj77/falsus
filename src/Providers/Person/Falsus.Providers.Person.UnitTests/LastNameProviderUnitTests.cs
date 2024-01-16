@@ -84,7 +84,7 @@
         {
             // Arrange
             int seed = 685724;
-            string expected = "Raivio";
+            string expected = "Rannikko";
 
             ProviderResult providerResult = CreateProvider(1, seed);
             LastNameProvider provider = providerResult.Provider;

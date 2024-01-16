@@ -25,7 +25,7 @@
 
         /// <summary>
         /// Gets or sets a value indicating whether or not the <see cref="LegalEntityTypeProvider"/>
-        /// should fallback to a specific country (define by <see cref="FallbackCountryAlpha2"/>) 
+        /// should fallback to a specific country (defined by <see cref="FallbackCountryAlpha2"/>) 
         /// if unable to generate a type of legal entity for the requested coountry.
         /// </summary>
         /// <value>

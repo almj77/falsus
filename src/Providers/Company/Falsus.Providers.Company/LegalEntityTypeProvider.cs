@@ -27,7 +27,7 @@
 
         /// <summary>
         /// A dictionary of <see cref="LegalEntityTypeModel"/> instances indexed by
-        /// the <see cref="CountryModel.Alpha2"/> property.
+        /// the <see cref="LegalEntityTypeModel.CountryAlpha2"/> property.
         /// </summary>
         private static Dictionary<string, LegalEntityTypeModel[]> legalEntityTypesByCountry;
 
@@ -182,7 +182,7 @@
         /// </returns>
         /// <remarks>
         /// If the <see cref="CountryArgumentName"/> is provided then this method will
-        /// return a type of legal entity that belogns to the specified <see cref="CountryModel"/>
+        /// return a type of legal entity that belongs to the specified <see cref="CountryModel"/>
         /// argument value.
         /// </remarks>
         public override LegalEntityTypeModel GetRowValue(DataGeneratorContext context, LegalEntityTypeModel[] excludedObjects)
@@ -285,6 +285,7 @@
 
             return value;
         }
+
         /// <summary>
         /// Gets a unique identifier for the provided <see cref="LegalEntityTypeModel"/>.
         /// </summary>

@@ -1,0 +1,198 @@
+﻿[
+	{
+		"TwoLetterLanguageCode": "az",
+		"Preffix": "ASC"
+	},
+	{
+		"TwoLetterLanguageCode": "az",
+		"Preffix": "MMC"
+	},
+	{
+		"TwoLetterLanguageCode": "az",
+		"Preffix": "QSC"
+	},
+	{
+		"TwoLetterLanguageCode": "id",
+		"Preffix": "PT"
+	},
+	{
+		"TwoLetterLanguageCode": "id",
+		"Preffix": "CV"
+	},
+	{
+		"TwoLetterLanguageCode": "id",
+		"Preffix": "UD"
+	},
+	{
+		"TwoLetterLanguageCode": "id",
+		"Preffix": "PD"
+	},
+	{
+		"TwoLetterLanguageCode": "id",
+		"Preffix": "Perum"
+	},
+	{
+		"TwoLetterLanguageCode": "id",
+		"Preffix": "Fa"
+	},
+	{
+		"TwoLetterLanguageCode": "id",
+		"Preffix": "Yayasan"
+	},
+	{
+		"TwoLetterLanguageCode": "id",
+		"Preffix": "KKB"
+	},
+	{
+		"TwoLetterLanguageCode": "ka",
+		"Preffix": "შპს"
+	},
+	{
+		"TwoLetterLanguageCode": "ka",
+		"Preffix": "სს"
+	},
+	{
+		"TwoLetterLanguageCode": "ka",
+		"Preffix": "ააიპ"
+	},
+	{
+		"TwoLetterLanguageCode": "ka",
+		"Preffix": "სსიპ"
+	},
+	{
+		"TwoLetterLanguageCode": "ko",
+		"Preffix": "주식회사"
+	},
+	{
+		"TwoLetterLanguageCode": "ko",
+		"Preffix": "한국"
+	},
+	{
+		"TwoLetterLanguageCode": "lv",
+		"Preffix": "SIA"
+	},
+	{
+		"TwoLetterLanguageCode": "lv",
+		"Preffix": "AS"
+	},
+	{
+		"TwoLetterLanguageCode": "lv",
+		"Preffix": "IU"
+	},
+	{
+		"TwoLetterLanguageCode": "lv",
+		"Preffix": "Bezp.Org."
+	},
+	{
+		"TwoLetterLanguageCode": "lv",
+		"Preffix": "Firma"
+	},
+	{
+		"TwoLetterLanguageCode": "lv",
+		"Preffix": "Biedrība"
+	},
+	{
+		"TwoLetterLanguageCode": "ru",
+		"Preffix": "AO"
+	},
+	{
+		"TwoLetterLanguageCode": "ru",
+		"Preffix": "ГУП"
+	},
+	{
+		"TwoLetterLanguageCode": "ru",
+		"Preffix": "ЗАО"
+	},
+	{
+		"TwoLetterLanguageCode": "ru",
+		"Preffix": "ИП"
+	},
+	{
+		"TwoLetterLanguageCode": "ru",
+		"Preffix": "МУП"
+	},
+	{
+		"TwoLetterLanguageCode": "ru",
+		"Preffix": "НКО"
+	},
+	{
+		"TwoLetterLanguageCode": "ru",
+		"Preffix": "ОП"
+	},
+	{
+		"TwoLetterLanguageCode": "ru",
+		"Preffix": "ООО"
+	},
+	{
+		"TwoLetterLanguageCode": "ru",
+		"Preffix": "ОАО"
+	},
+	{
+		"TwoLetterLanguageCode": "ru",
+		"Preffix": "ПАО"
+	},
+	{
+		"TwoLetterLanguageCode": "ru",
+		"Preffix": "ТСЖ"
+	},
+	{
+		"TwoLetterLanguageCode": "ru",
+		"Preffix": "ФГУП"
+	},
+	{
+		"TwoLetterLanguageCode": "uk",
+		"Preffix": "ТОВ"
+	},
+	{
+		"TwoLetterLanguageCode": "uk",
+		"Preffix": "ПАТ"
+	},
+	{
+		"TwoLetterLanguageCode": "uk",
+		"Preffix": "ПрАТ"
+	},
+	{
+		"TwoLetterLanguageCode": "uk",
+		"Preffix": "ТДВ"
+	},
+	{
+		"TwoLetterLanguageCode": "uk",
+		"Preffix": "КТ"
+	},
+	{
+		"TwoLetterLanguageCode": "uk",
+		"Preffix": "ПТ"
+	},
+	{
+		"TwoLetterLanguageCode": "uk",
+		"Preffix": "ДП"
+	},
+	{
+		"TwoLetterLanguageCode": "uk",
+		"Preffix": "ФОП"
+	},
+	{
+		"TwoLetterLanguageCode": "vi",
+		"Preffix": "Công ty"
+	},
+	{
+		"TwoLetterLanguageCode": "vi",
+		"Preffix": "Cty TNHH"
+	},
+	{
+		"TwoLetterLanguageCode": "vi",
+		"Preffix": "Cty"
+	},
+	{
+		"TwoLetterLanguageCode": "vi",
+		"Preffix": "Cửa hàng"
+	},
+	{
+		"TwoLetterLanguageCode": "vi",
+		"Preffix": "Trung tâm"
+	},
+	{
+		"TwoLetterLanguageCode": "vi",
+		"Preffix": "Chi nhánh"
+	}
+]

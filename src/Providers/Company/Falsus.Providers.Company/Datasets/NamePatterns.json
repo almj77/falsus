@@ -1,0 +1,330 @@
+﻿[
+  {
+    "TwoLetterLanguageCode": "AZ",
+    "Pattern": "{{company_prefix}} {{person_first_name}}"
+  },
+  {
+    "TwoLetterLanguageCode": "AZ",
+    "Pattern": "{{company_prefix}} {{person_last_name}}"
+  },
+  {
+    "TwoLetterLanguageCode": "CS",
+    "Pattern": "{{person_last_name}} {{company_suffix}}"
+  },
+  {
+    "TwoLetterLanguageCode": "CS",
+    "Pattern": "{{person_last_name}} a {{person_last_name}} {{company_suffix}}"
+  },
+  {
+    "TwoLetterLanguageCode": "DE",
+    "Pattern": "{{person_last_name}} {{company_suffix}}"
+  },
+  {
+    "TwoLetterLanguageCode": "DE",
+    "Pattern": "{{person_last_name}}-{{person_last_name}}"
+  },
+  {
+    "TwoLetterLanguageCode": "DE",
+    "Pattern": "{{person_last_name}}, {{person_last_name}} und {{person_last_name}}"
+  },
+  {
+    "TwoLetterLanguageCode": "DV",
+    "Pattern": "{{person_first_name}} {{company_suffix}}"
+  },
+  {
+    "TwoLetterLanguageCode": "DV",
+    "Pattern": "{{person_last_name}} {{company_suffix}}"
+  },
+  {
+    "TwoLetterLanguageCode": "DV",
+    "Pattern": "{{person_last_name}} & {{person_last_name}} {{company_noun}} {{company_suffix}}"
+  },
+  {
+    "TwoLetterLanguageCode": "DV",
+    "Pattern": "{{company_adjective}} {{company_noun}} {{company_suffix}}"
+  },
+  {
+    "TwoLetterLanguageCode": "DV",
+    "Pattern": "{{company_adjective}} {{person_last_name}} {{person_last_name}} {{company_suffix}}"
+  },
+  {
+    "TwoLetterLanguageCode": "EL",
+    "Pattern": "{{person_last_name}} {{company_suffix}}"
+  },
+  {
+    "TwoLetterLanguageCode": "EL",
+    "Pattern": "{{person_last_name}}-{{person_last_name}}"
+  },
+  {
+    "TwoLetterLanguageCode": "EL",
+    "Pattern": "{{person_last_name}}, {{person_last_name}} and {{person_last_name}}"
+  },
+  {
+    "TwoLetterLanguageCode": "EN",
+    "Pattern": "{{person_last_name}} {{company_suffix}}"
+  },
+  {
+    "TwoLetterLanguageCode": "EN",
+    "Pattern": "{{person_last_name}} - {{person_last_name}}"
+  },
+  {
+    "TwoLetterLanguageCode": "EN",
+    "Pattern": "{{person_last_name}}, {{person_last_name}} and {{person_last_name}}"
+  },
+  {
+    "TwoLetterLanguageCode": "ES",
+    "Pattern": "{{person_last_name}} {{company_suffix}}"
+  },
+  {
+    "TwoLetterLanguageCode": "ES",
+    "Pattern": "{{person_last_name}} y {{person_last_name}}"
+  },
+  {
+    "TwoLetterLanguageCode": "ES",
+    "Pattern": "{{person_last_name}} {{person_last_name}} {{company_suffix}}"
+  },
+  {
+    "TwoLetterLanguageCode": "ES",
+    "Pattern": "{{person_last_name}}, {{person_last_name}} y {{person_last_name}} Asociados"
+  },
+  {
+    "TwoLetterLanguageCode": "FA",
+    "Pattern": "{{person_last_name}} {{company_suffix}}"
+  },
+  {
+    "TwoLetterLanguageCode": "FA",
+    "Pattern": "{{person_last_name}}-{{person_last_name}}"
+  },
+  {
+    "TwoLetterLanguageCode": "FA",
+    "Pattern": "{{person_last_name}}, {{person_last_name}} و {{person_last_name}}"
+  },
+  {
+    "TwoLetterLanguageCode": "FR",
+    "Pattern": "{{person_last_name}} {{company_suffix}}"
+  },
+  {
+    "TwoLetterLanguageCode": "FR",
+    "Pattern": "{{person_last_name}} et {{person_last_name}}"
+  },
+  {
+    "TwoLetterLanguageCode": "HU",
+    "Pattern": "{{person_last_name}} {{company_suffix}}"
+  },
+  {
+    "TwoLetterLanguageCode": "HU",
+    "Pattern": "{{person_last_name}} és {{person_last_name}} {{company_suffix}}"
+  },
+  {
+    "TwoLetterLanguageCode": "HU",
+    "Pattern": "{{person_last_name}} és Tsa. {{company_suffix}}"
+  },
+  {
+    "TwoLetterLanguageCode": "ID",
+    "Pattern": "{{company_prefix}} {{person_last_name}}"
+  },
+  {
+    "TwoLetterLanguageCode": "ID",
+    "Pattern": "{{person_last_name}} {{company_suffix}}"
+  },
+  {
+    "TwoLetterLanguageCode": "ID",
+    "Pattern": "{{company_prefix}} {{person_last_name}} {{company_suffix}}"
+  },
+  {
+    "TwoLetterLanguageCode": "IT",
+    "Pattern": "{{person_last_name}} {{company_suffix}}"
+  },
+  {
+    "TwoLetterLanguageCode": "IT",
+    "Pattern": "{{person_last_name}}-{{person_last_name}} {{company_suffix}}"
+  },
+  {
+    "TwoLetterLanguageCode": "IT",
+    "Pattern": "{{person_last_name}}, {{person_last_name}} e {{person_last_name}} {{company_suffix}}"
+  },
+  {
+    "TwoLetterLanguageCode": "JA",
+    "Pattern": "{{company_type}}{{person_last_name}}{{company_type}}"
+  },
+  {
+    "TwoLetterLanguageCode": "JA",
+    "Pattern": "{{person_last_name}}{{company_category}}{{company_type}}"
+  },
+  {
+    "TwoLetterLanguageCode": "KA",
+    "Pattern": "{{company_prefix}} {{person_first_name}}"
+  },
+  {
+    "TwoLetterLanguageCode": "KA",
+    "Pattern": "{{company_prefix}} {{person_last_name}}"
+  },
+  {
+    "TwoLetterLanguageCode": "KA",
+    "Pattern": "{{company_prefix}} {{person_last_name}} {{company_suffix}}"
+  },
+  {
+    "TwoLetterLanguageCode": "KA",
+    "Pattern": "{{company_prefix}} {{person_first_name}} {{company_suffix}}"
+  },
+  {
+    "TwoLetterLanguageCode": "KA",
+    "Pattern": "{{company_prefix}} {{person_last_name}}-{{person_last_name}}"
+  },
+  {
+    "TwoLetterLanguageCode": "KO",
+    "Pattern": "{{company_prefix}} {{person_first_name}}"
+  },
+  {
+    "TwoLetterLanguageCode": "KO",
+    "Pattern": "{{person_first_name}} {{company_suffix}}"
+  },
+  {
+    "TwoLetterLanguageCode": "LV",
+    "Pattern": "{{company_prefix}} {{person_last_name}}"
+  },
+  {
+    "TwoLetterLanguageCode": "LV",
+    "Pattern": "{{company_prefix}} {{person_last_name}} {{company_suffix}}"
+  },
+  {
+    "TwoLetterLanguageCode": "LV",
+    "Pattern": "{{person_last_name}} un {{person_last_name}}"
+  },
+  {
+    "TwoLetterLanguageCode": "LV",
+    "Pattern": "{{person_last_name}}, {{person_last_name}} un {{person_last_name}}"
+  },
+  {
+    "TwoLetterLanguageCode": "MK",
+    "Pattern": "{{person_last_name}} {{company_suffix}}"
+  },
+  {
+    "TwoLetterLanguageCode": "MK",
+    "Pattern": "{{city_name}} {{company_suffix}}"
+  },
+  {
+    "TwoLetterLanguageCode": "MK",
+    "Pattern": "{{person_last_name}}, {{person_last_name}} и {{person_last_name}}"
+  },
+  {
+    "TwoLetterLanguageCode": "NO",
+    "Pattern": "{{person_last_name}} {{company_suffix}}"
+  },
+  {
+    "TwoLetterLanguageCode": "NO",
+    "Pattern": "{{person_last_name}}-{{person_last_name}}"
+  },
+  {
+    "TwoLetterLanguageCode": "NO",
+    "Pattern": "{{person_last_name}}, {{person_last_name}} og {{person_last_name}}"
+  },
+  {
+    "TwoLetterLanguageCode": "PL",
+    "Pattern": "{{person_last_name}} {{company_suffix}}"
+  },
+  {
+    "TwoLetterLanguageCode": "PL",
+    "Pattern": "{{person_last_name}}-{{person_last_name}}"
+  },
+  {
+    "TwoLetterLanguageCode": "PL",
+    "Pattern": "{{person_last_name}}, {{person_last_name}} and {{person_last_name}}"
+  },
+  {
+    "TwoLetterLanguageCode": "PT",
+    "Pattern": "{{person_last_name}} {{company_suffix}}"
+  },
+  {
+    "TwoLetterLanguageCode": "PT",
+    "Pattern": "{{person_last_name}}-{{person_last_name}}"
+  },
+  {
+    "TwoLetterLanguageCode": "PT",
+    "Pattern": "{{person_last_name}}, {{person_last_name}} e {{person_last_name}}"
+  },
+  {
+    "TwoLetterLanguageCode": "RU",
+    "Pattern": "{{company_prefix}} {{person_first_name}}"
+  },
+  {
+    "TwoLetterLanguageCode": "RU",
+    "Pattern": "{{company_prefix}} {{person_last_name}}"
+  },
+  {
+    "TwoLetterLanguageCode": "RU",
+    "Pattern": "{{company_prefix}} {{company_suffix}}{{company_suffix}}"
+  },
+  {
+    "TwoLetterLanguageCode": "RU",
+    "Pattern": "{{company_prefix}} {{company_suffix}}{{company_suffix}}{{company_suffix}}"
+  },
+  {
+    "TwoLetterLanguageCode": "RU",
+    "Pattern": "{{company_prefix}} {{city_name}}{{company_suffix}}"
+  },
+  {
+    "TwoLetterLanguageCode": "RU",
+    "Pattern": "{{company_prefix}} {{city_name}}{{company_suffix}}{{company_suffix}}"
+  },
+  {
+    "TwoLetterLanguageCode": "RU",
+    "Pattern": "{{company_prefix}} {{city_name}}{{company_suffix}}{{company_suffix}}{{company_suffix}}"
+  },
+  {
+    "TwoLetterLanguageCode": "SK",
+    "Pattern": "{{person_last_name}} {{company_suffix}}"
+  },
+  {
+    "TwoLetterLanguageCode": "SK",
+    "Pattern": "{{person_last_name}} a {{person_last_name}} {{company_suffix}}"
+  },
+  {
+    "TwoLetterLanguageCode": "SV",
+    "Pattern": "{{person_last_name}} {{company_suffix}}"
+  },
+  {
+    "TwoLetterLanguageCode": "SV",
+    "Pattern": "{{person_last_name}}-{{person_last_name}}"
+  },
+  {
+    "TwoLetterLanguageCode": "SV",
+    "Pattern": "{{person_last_name}}, {{person_last_name}} {{company_suffix}}"
+  },
+  {
+    "TwoLetterLanguageCode": "UK",
+    "Pattern": "{{company_prefix}} {{person_first_name}}"
+  },
+  {
+    "TwoLetterLanguageCode": "UK",
+    "Pattern": "{{company_prefix}} {{person_last_name}}"
+  },
+  {
+    "TwoLetterLanguageCode": "UK",
+    "Pattern": "{{company_prefix}} {{company_suffix}}{{company_suffix}}"
+  },
+  {
+    "TwoLetterLanguageCode": "UK",
+    "Pattern": "{{company_prefix}} {{company_suffix}}{{company_suffix}}{{company_suffix}}"
+  },
+  {
+    "TwoLetterLanguageCode": "UK",
+    "Pattern": "{{company_prefix}} {{city_name}}{{company_suffix}}"
+  },
+  {
+    "TwoLetterLanguageCode": "UK",
+    "Pattern": "{{company_prefix}} {{city_name}}{{company_suffix}}{{company_suffix}}"
+  },
+  {
+    "TwoLetterLanguageCode": "UK",
+    "Pattern": "{{company_prefix}} {{city_name}}{{company_suffix}}{{company_suffix}}{{company_suffix}}"
+  },
+  {
+    "TwoLetterLanguageCode": "VI",
+    "Pattern": "{{company_prefix}} {{person_last_name}}"
+  },
+  {
+    "TwoLetterLanguageCode": "ZH",
+    "Pattern": "{{city_name}}{{person_first_name}}{{company_category}}{{company_type}}"
+  }
+]
